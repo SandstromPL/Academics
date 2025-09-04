@@ -1,0 +1,15 @@
+Here arguments given are SWITCH_ON_IO and IO_RUN_IMMEDIATE
+
+There are total process running with pid 0, 1, and 2. On observing cpu switches process from one to another if IO is 
+called in current process and runs IO operation immediately.
+
+From the output:
+
+Total time: 15
+
+CPU Busy: 10 → 66.67% utilization
+
+I/O Busy: 12 → 80% utilization
+
+I/O utilization improves compared to Q1 because it starts right away, reducing I/O idle time. 
+But CPU utilization and total time remain the same because there are still moments when no process is ready to run.

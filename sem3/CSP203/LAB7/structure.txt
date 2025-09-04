@@ -1,0 +1,15 @@
+1. welcome page
+ 	->About
+ 		->description
+ 	->Doctors
+ 		->doc1
+ 		->doc2
+ 		->more...
+ 	->OPD Shedule
+ 		->table
+ 	->Facilities
+ 		->all machines(adv tech with images)
+ 	->Contact Us
+ 		->address
+ 		->phone number
+ 		->location

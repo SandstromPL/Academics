@@ -1,0 +1,13 @@
+This folder contains 2 files for respective questions in lab 4 assigment of Compiler Design CSL302.
+
+Q1:
+Implemented head, tail, cat and cp linux command using lex.
+
+Q2:
+It tells whether given file drectory or folder directory path is valid or not.
+
+To run lex file first we need to do : lex <filename> , which will generate lex.yy.c file.
+Then we use gcc lex.yy.c -o <output> to compile it and get a executalbe file <ouptput> and finally run it 
+./<outout>.
+
+**NOTE** : I have used google search, gfg, gemini 2.5 to understand and modify my code.

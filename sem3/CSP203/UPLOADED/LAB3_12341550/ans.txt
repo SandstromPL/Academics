@@ -1,0 +1,12 @@
+1. ls -I *.pdf -I *.txt
+2. cat vimm.c | sed '4,7s/\bint\b/float/' | sed 's/%d/%f/g' > vimm.c
+3.date +%m"-"%d"-"%Y
+4. du -h *txt *pdf
+5. cat file.txt | awk '/[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+/{ print $0 }'
+6.cat output.txt | sed -n '15,25p'
+7.cat vimm.c | sed -n '5,10p' | grep 'int'
+8.a.cat CSP203.txt | awk '/12340230/{ print $2 }'
+  b.sort CSP203.txt
+  c. uniq CSP203.TXT
+  d.sort CSP203.txt | uniq
+  e.grep -c A "CSP203.TXT"

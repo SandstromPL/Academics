@@ -1,0 +1,192 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{tikz}
+\usepackage{hyperref}
+\usepackage{geometry}
+\geometry{margin=1in}
+
+\title{ASSIGNMENT - CSL251}
+\author{Name - Paritosh Lahre \\ ID - 12341550}
+\date{}
+
+\begin{document}
+	
+	\maketitle
+	
+	\section*{Question 1}
+	
+	\subsection*{Problem Statement}
+	For this question, you’ll need the following definition:
+	
+	\textbf{Definition:} A sunlet is a graph with $2n$ vertices that consists of a cycle of length $n$, and each vertex in the cycle is directly connected to exactly one node of degree one.
+	
+	\textbf{Model:} Input is an undirected graph $G$ with $2n$ vertices. The algorithm can query an edge $(i, j)$ and it will be told whether or not edge $(i, j)$ is in graph $G$. Each query has cost 1.
+	
+	\textbf{Problem:} Output ``Yes'' if the input graph $G$ is a sunlet, otherwise output ``No''.
+	
+	\textbf{task:} Prove that every correct algorithm for the problem has worst-case cost at least $\binom{2n}{2}$.
+	
+	\subsection*{Claim}
+	In the worst case, any deterministic algorithm must make $\binom{2n}{2}$ edge queries to correctly identify whether the hidden graph is a sunlet.
+	
+	\subsection*{Proof (Detailed Explanation)}
+	Suppose there exists a deterministic algorithm $\mathcal{A}$ that can determine whether an unknown graph $G$ is a sunlet using fewer than $\binom{2n}{2}$ edge queries. This means that $\mathcal{A}$ does not check the existence of all possible edges between pairs of the $2n$ vertices.
+	
+	Let $U$ be the set of unordered vertex pairs whose edge status was never queried by $\mathcal{A}$. Then $U \neq \emptyset$ by assumption.
+	
+	We now consider an adversarial strategy. The adversary will respond to $\mathcal{A}$'s queries in a way that makes the graph appear to be a valid sunlet. Let $G_1$ be the actual sunlet graph (a cycle of $n$ nodes, each with a unique leaf attached). Now, consider a pair $(u,v) \in U$ — the algorithm never asked whether there was an edge between $u$ and $v$.
+	
+	Now the adversary constructs another graph $G_2$:
+	\begin{itemize}
+		\item $G_2$ is identical to $G_1$ in all queried edges.
+		\item But $G_2$ contains one additional edge $(u, v)$ where both $u$ and $v$ are degree-one leaf nodes.
+	\end{itemize}
+	
+	This new graph $G_2$ is no longer a valid sunlet. Why?
+	\begin{itemize}
+		\item In a sunlet, every non-cycle node must have degree exactly 1.
+		\item Adding an edge between two leaf nodes results in one or both of them having degree 2.
+		\item Therefore, $G_2$ violates the sunlet condition.
+	\end{itemize}
+	
+	Since $\mathcal{A}$ never queried $(u,v)$, it cannot distinguish between $G_1$ and $G_2$.
+	Thus, it will produce the same output for both graphs — either incorrectly rejecting the true sunlet or incorrectly accepting the non-sunlet.
+	
+	Hence, in order to avoid such adversarial constructions, any algorithm must query every pair $(i, j)$ with $1 \le i < j \le 2n$. That is:
+	\[
+	\boxed{\binom{2n}{2}} \text{ edge queries are necessary in the worst case.}
+	\]
+	
+	\subsection*{Example (n=3)}
+	\begin{itemize}
+		\item Vertices: $1$ to $6$
+		\item Cycle: $(1{-}2), (2{-}3), (3{-}1)$
+		\item Leaves: $(1{-}4), (2{-}5), (3{-}6)$
+		\item Suppose the algorithm does not query $(4,5)$
+		\item The adversary adds edge $(4,5)$ to break the sunlet condition (since now $4$ and $5$ have degree 2)
+		\item The algorithm cannot distinguish this from a valid sunlet and may output the wrong result.
+	\end{itemize}
+	
+	\vspace{1em}
+	
+	\section*{Problem 2}
+	Consider the following model and problem:
+	
+	\subsection*{Model}
+	For the range of numbers \( 1, 2, \ldots, n \), there is a special threshold value \( t \in \{0, 1, \ldots, n\} \). For all numbers \( i > t \), the number \( i \) is considered ``unsafe''. All other numbers in the range \( 1, 2, \ldots, t \) are considered ``safe''. The algorithm can query any number \( i \in \{1, 2, \ldots, n\} \), and it will be told whether \( i \) is ``safe'' or ``unsafe''. However, if the algorithm ever queries an ``unsafe'' \( i \), the system shuts down and no further queries are possible.
+	
+	\subsection*{Problem}
+	Determine the exact value of \( t \).
+	
+	\subsection*{Task}
+	\begin{enumerate}
+		\item[(a)] Prove that any algorithm that solves the problem must perform at least \( n \) queries in the worst case.
+		
+		\item[(b)] Let's change the model a bit: suppose that one ``unsafe'' query is allowed. That is, the system shuts down after exactly two ``unsafe'' queries. Prove that any algorithm that determines the exact value of \( t \) must use \( \Omega(\sqrt{n}) \) queries in the worst case.
+		
+		\item[(c)] Design an algorithm that uses \( O(\sqrt{n}) \) many queries for the problem in part (b).
+	\end{enumerate}
+	
+	\subsection*{(a) Claim: Worst-case $n$ Queries When No Unsafe Queries are Allowed}
+	
+	\subsubsection*{Problem Recap}
+	We are given a hidden threshold $t \in \{0, 1, \ldots, n\}$. For any queried number $i$:
+	\begin{itemize}
+		\item If $i \le t$, the query returns ``safe''.
+		\item If $i > t$, the query returns ``unsafe'' and the system shuts down immediately — no more queries can be made.
+	\end{itemize}
+	The goal is to find the **exact** value of $t$ using the minimum number of queries in the **worst case**.
+	
+	\subsubsection*{Worst-Case Lower Bound: $n$ Queries}
+	
+	Since making a single unsafe query ends the process, the only valid strategy is to:
+	\begin{itemize}
+		\item Query numbers sequentially from $1$ to $n$ in increasing order.
+		\item Stop just before the first unsafe number appears.
+	\end{itemize}
+	
+	\paragraph{Why can’t we skip values?}
+	Suppose the algorithm skips values and directly queries some $i > 1$:
+	\begin{itemize}
+		\item If $i > t$, and $i$ is unsafe, the system halts and we get no info about the skipped values.
+		\item We risk overshooting $t$ without knowing where the threshold lies.
+	\end{itemize}
+	Thus, querying must be cautious and strictly sequential.
+	
+
+	
+	\textbf{Explanation:}
+	\begin{itemize}
+		\item We test each $i$ from $1$ to $n$.
+		\item When we reach the first $i$ that is unsafe, we stop and return $t = i - 1$.
+		\item If all $n$ queries return safe, then $t = n$.
+	\end{itemize}
+	
+	\subsubsection*{Example}
+	Let $n = 5$, and $t = 3$:
+	\begin{center}
+		\begin{tabular}{c|c}
+			Query & Response \\
+			\hline
+			1     & safe     \\
+			2     & safe     \\
+			3     & safe     \\
+			4     & \textbf{unsafe (system shuts down)} \\
+		\end{tabular}
+	\end{center}
+	
+	The algorithm halts after 4 queries and concludes $t = 3$.
+	
+	\subsubsection*{Conclusion}
+	\[
+	\boxed{
+		\text{In the worst case (e.g., when } t = n \text{), the algorithm must make } n \text{ queries.}
+	}
+	\]
+	Thus, any correct algorithm under this constraint must perform \textbf{at least $n$ queries in the worst case}.
+	
+	
+	\subsection*{(b) Lower Bound: $\Omega(\sqrt{n})$ Queries with One Unsafe Allowed}
+	
+	\paragraph{Claim.}
+	Allowing one unsafe query (the second unsafe halts the algorithm) still forces a worst-case query cost of $\Omega(\sqrt{n})$.
+	
+	\paragraph{Decision-Tree Argument.}
+	Represent a deterministic algorithm by a decision tree of depth $k$.  Each root-to-leaf path contains at most two ``U'' (unsafe) labels before terminating.  The number of distinct sequences of length $k$ with at most two U's is
+	\[
+	\binom{k}{0} + \binom{k}{1} + \binom{k}{2}
+	%=1 + k + \frac{k(k-1)}2
+	=1 + k + \tfrac{k(k-1)}2.
+	\]
+	Since there are $n+1$ possible thresholds $0,1,\dots,n$, we must have
+	\[
+	1 + k + \tfrac{k(k-1)}2 \;\ge\; n+1
+	\quad\Longrightarrow\quad
+	k = \Omega(\sqrt{n}).
+	\]
+	
+	\paragraph{Intuitive Insight.}
+	Even though one unsafe probe is tolerated, any algorithm skipping too many positions ends up with too few possible S/U patterns to identify among all $n+1$ threshold values.
+	
+	\subsection*{(c) Upper Bound: $O(\sqrt{n})$ Queries}
+	
+	\paragraph{Two-Phase Search Algorithm.}
+	Let $m = \lceil\sqrt{n}\rceil$.  We perform:
+	\begin{enumerate}
+		\item \textbf{Block Search:} Query indices $m,2m,3m,\dots$ until the first unsafe at $jm$.  (At most one unsafe.)
+		\item \textbf{Local Scan:} Let $L=(j-1)m$.  Sequentially query $L+1, L+2,\dots$ until the next unsafe at index $i$.  Then $t=i-1$.  (Second unsafe shuts down, but only after this final probe.)
+	\end{enumerate}
+	
+	\paragraph{Complexity.}
+	At most $m$ block queries plus $m$ local probes, giving $2m=O(\sqrt{n})$ total.  We use at most two unsafe queries (one in each phase) without premature termination.
+	
+	\paragraph{Worked Example ($n=20,\;t=13$).}
+	Here $m=5$.  The algorithm runs:
+	\begin{itemize}
+		\item \emph{Block Search:} Query 5(S), 10(S), 15(U) \quad($j=3$).
+		\item Now $L=10$, so $t\in\{11,12,13,14\}$.
+		\item \emph{Local Scan:} Query 11(S), 12(S), 13(S), 14(U) \quad($i=14$). Conclude $t=14-1=13$.
+	\end{itemize}
+	Total queries $=3+4=7=O(\sqrt{20})$.
+	
+\end{document}

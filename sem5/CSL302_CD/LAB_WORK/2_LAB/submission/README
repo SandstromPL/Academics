@@ -1,0 +1,14 @@
+This folder contains two files : t3_tokens.l and t4_wc.l (lex file)
+
+Use lex <filename> which generates lex.yy.c file.
+Use gcc lex.yy.c -o <outName> to compile it and generate executable file with name <outName> and do ./<outName> to run it.
+
+t3_tokens.l : 
+generated C file can identify name, phone number, credit card number, DOB and email with correct format as given in assignment and 
+for any incorrect format it outputs nothing.
+
+t4_wc.l :
+generated C file performs same operation as wc command to print number of lines, words and characters in any given file ,
+used yyin for file operations.
+
+**Took help of google search and ChatGPT to learn how to write correct rules and about yyin for file operations. **

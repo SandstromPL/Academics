@@ -1,0 +1,10 @@
+This directory have code file : ans.c , input file : input.txt.
+
+To make it executable use gcc <file> -o <name>.
+Then run it using ./<name>.
+
+And we will get the desired output.
+
+This code prints identifiers and keywords list as per the question.
+
+** I have used gfg to recall few functions of C language and its uses. **

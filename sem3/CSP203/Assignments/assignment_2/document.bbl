@@ -1,0 +1,155 @@
+\begin{thebibliography}{26}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Association(2021)]{bot13}
+JEDEC Solid State~Technology Association.
+\newblock \emph{JEDEC Standard: DDR4 SDRAM}, Jul. 2021.
+
+\bibitem[Chang et~al.(2017)]{bot5}
+K.~K. Chang et~al.
+\newblock Understanding reduced-voltage operation in modern dram devices:
+  Experimental characterization, analysis, and mechanisms.
+\newblock \emph{Proc. ACM Meas. Anal. Comput. Syst.}, 1\penalty0 (1):\penalty0
+  1--42, 2017.
+
+\bibitem[Davis et~al.(2011)]{bot4}
+T.~A. Davis et~al.
+\newblock The university of florida sparse matrix collection.
+\newblock \emph{ACM TOMS}, 38\penalty0 (1):\penalty0 1--25, 2011.
+
+\bibitem[der Vorst(1992)]{bot19}
+H.~A.~Van der Vorst.
+\newblock Bi-cgstab: A fast and smoothly converging variant of bi-cg for the
+  solution of nonsymmetric linear systems.
+\newblock \emph{SIAM J. Scientific \& Statistical Comput.}, 13\penalty0
+  (2):\penalty0 631--644, 1992.
+
+\bibitem[Feinberg et~al.(2018)]{bot1}
+B.~Feinberg et~al.
+\newblock Enabling scientific computing on memristive accelerators.
+\newblock In \emph{Proc. ISCA}, pages 367--382, 2018.
+
+\bibitem[Feinberg et~al.(2021)]{bot2}
+B.~Feinberg et~al.
+\newblock An analog preconditioner for solving linear systems.
+\newblock In \emph{Proc. HPCA}, pages 761--774, 2021.
+
+\bibitem[Fredeman et~al.(2015)]{bot18}
+G.~Fredeman et~al.
+\newblock A 14 nm 1.1 mb embedded dram macro with 1 ns access.
+\newblock \emph{IEEE JSSC}, 51\penalty0 (1):\penalty0 230--239, 2015.
+
+\bibitem[Gallo et~al.(2018)]{bot3}
+M.~Le Gallo et~al.
+\newblock Mixed-precision in-memory computing.
+\newblock \emph{Nat. Electron.}, 1\penalty0 (4):\penalty0 246--253, 2018.
+
+\bibitem[Kim et~al.(2019)]{bot7}
+N.~S. Kim et~al.
+\newblock Ll-pcm: Low-latency phase change memory architecture.
+\newblock In \emph{Proc. DAC}, pages 1--6, 2019.
+
+\bibitem[Kim et~al.(2012)]{bot12}
+Y.~Kim et~al.
+\newblock A case for exploiting subarray-level parallelism (salp) in dram.
+\newblock \emph{ACM SIGARCH Comput. Archit. News}, 40\penalty0 (3):\penalty0
+  368--379, 2012.
+
+\bibitem[Lee et~al.(2013)]{bot22}
+D.~Lee et~al.
+\newblock Tiered-latency dram: A low latency and low cost dram architecture.
+\newblock In \emph{Proc. HPCA}, pages 615--626, 2013.
+
+\bibitem[Lung et~al.(2016)]{bot23}
+H.-L. Lung et~al.
+\newblock A double-data-rate 2 (ddr2) interface phase-change memory with
+  533mb/s read-write data rate and 37.5 ns access latency for memory-type
+  storage class memory applications.
+\newblock In \emph{Proc. IMW}, pages 1--5, 2016.
+
+\bibitem[Oh et~al.(2022)]{bot24}
+B.~Oh et~al.
+\newblock Rethinking dram’s page mode with stt-mram.
+\newblock \emph{IEEE TC}, pages 1--14, 2022.
+
+\bibitem[Park et~al.(2020)]{bot10}
+Y.~Park et~al.
+\newblock Unlocking wordline-level parallelism for fast inference on rram-based
+  dnn accelerator.
+\newblock In \emph{Proc. ICCAD}, pages 1--9, 2020.
+
+\bibitem[Redaelli et~al.(2022)]{bot8}
+A.~Redaelli et~al.
+\newblock \emph{Semiconductor Memories and Systems}.
+\newblock Woodhead Publishing, 2022.
+
+\bibitem[Saberi et~al.(2011)]{bot17}
+M.~Saberi et~al.
+\newblock Analysis of power consumption and linearity in capacitive
+  digital-to-analog converters used in successive approximation adcs.
+\newblock \emph{IEEE TCAS-I}, 58\penalty0 (8):\penalty0 1736--1748, 2011.
+
+\bibitem[Seongil et~al.(2014)]{bot14}
+O.~Seongil et~al.
+\newblock Row-buffer decoupling: A case for low-latency dram microarchitecture.
+\newblock In \emph{Proc. ISCA}, pages 337--348, 2014.
+
+\bibitem[Shafiee et~al.(2016)]{bot9}
+A.~Shafiee et~al.
+\newblock Isaac: A convolutional neural network accelerator with in-situ analog
+  arithmetic in crossbars.
+\newblock \emph{ACM SIGARCH Comput. Archit. News}, 44\penalty0 (3):\penalty0
+  14--26, 2016.
+
+\bibitem[Sun et~al.(2019)]{bot21}
+Z.~Sun et~al.
+\newblock Solving matrix equations in one step with cross-point resistive
+  arrays.
+\newblock \emph{PNAS}, 116\penalty0 (10):\penalty0 4123--4128, 2019.
+
+\bibitem[Wang et~al.(2020)]{bot15}
+C.~Wang et~al.
+\newblock Improving write performance on cross-point rram arrays by leveraging
+  multidimensional non-uniformity of cell effective voltage.
+\newblock \emph{IEEE TC}, 70\penalty0 (4):\penalty0 566--580, 2020.
+
+\bibitem[Wang et~al.(2018)]{bot26}
+Y.~Wang et~al.
+\newblock Reducing dram latency via charge-level-aware look-ahead partial
+  restoration.
+\newblock In \emph{Proc. MICRO}, pages 298--311, 2018.
+
+\bibitem[Yu(2022)]{bot6}
+S.~Yu.
+\newblock \emph{Semiconductor Memory Devices and Circuits}.
+\newblock CRC Press, 2022.
+
+\bibitem[Yu et~al.(2021)]{bot11}
+S.~Yu et~al.
+\newblock Compute-in-memory chips for deep learning: Recent trends and
+  prospects.
+\newblock \emph{IEEE Circuits Syst. Mag.}, 21\penalty0 (3):\penalty0 31--56,
+  2021.
+
+\bibitem[Zhang et~al.(2016)]{bot25}
+X.~Zhang et~al.
+\newblock Restore truncation for performance improvement in future dram
+  systems.
+\newblock In \emph{Proc. HPCA}, pages 543--554, 2016.
+
+\bibitem[Zheng et~al.(2017)]{bot16}
+P.~Zheng et~al.
+\newblock The anisotropic size effect of the electrical resistivity of metal
+  thin films: Tungsten.
+\newblock \emph{J. Appl. Phys.}, 122\penalty0 (13), 2017.
+
+\bibitem[Zidan et~al.(2018)]{bot20}
+M.~A. Zidan et~al.
+\newblock A general memristor-based partial differential equation solver.
+\newblock \emph{Nat. Electron.}, pages 411--420, 2018.
+
+\end{thebibliography}

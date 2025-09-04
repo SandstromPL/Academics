@@ -1,0 +1,9 @@
+This zip contain tow dir 1(q1) and 2(q2 and q3);
+
+to run each file:
+lex <lexfile>
+yacc -d <yaccfile>
+gcc lex.yy.c y.tab.c
+./a.out
+
+

@@ -1,0 +1,82 @@
+### Reading Guide for COA (William Stallings, 11th Edition)
+
+#### **1. Introduction**
+
+- **Digital Building Blocks & Number Representation**:
+  - **Chapter 12: Digital Logic**
+    - Sections: Boolean Algebra, Gates, Combinational Circuits, Sequential Circuits.
+  - **Chapter 10: Number Systems**
+    - Sections: Binary System, Hexadecimal Notation, Converting Between Binary and Decimal.
+
+- **Basic Structure of a Digital Computer**:
+  - **Chapter 1: Basic Concepts and Computer Evolution**
+    - Sections: Organization and Architecture, Structure and Function.
+
+#### **2. Machine Instructions and Programs**
+
+- **Assembly Language Programming**:
+  - **Chapter 15: Assembly Language and Related Topics**
+    - Sections: Assembly Language Concepts, Examples, Types of Assemblers.
+
+#### **3. Arithmetic Unit (ALU)**
+
+- **ALU Components**:
+  - **Chapter 11: Computer Arithmetic**
+    - Sections: Integer Representation, Integer Arithmetic, Floating-Point Representation, Floating-Point Arithmetic.
+
+- **Control Path (Microprogramming & Hardwired Control)**:
+  - **Chapter 19: Control Unit Operation and Microprogrammed Control**
+    - Sections: Micro-operations, Hardwired Implementation, Microprogrammed Control.
+
+#### **4. Memory Organization**
+
+- **Memory Technologies**:
+  - **Chapter 6: Internal Memory**
+    - Sections: Semiconductor Main Memory, Flash Memory.
+
+- **Cache Memories & Coherence**:
+  - **Chapter 5: Cache Memory**
+    - Sections: Cache Memory Principles, Elements of Cache Design.
+
+- **Virtual Memory**:
+  - **Chapter 9: Operating System Support**
+    - Sections: Memory Management.
+
+- **Secondary Storage**:
+  - **Chapter 7: External Memory**
+    - Sections: Magnetic Disk, Solid State Drives.
+
+#### **5. Input/Output Organization**
+
+- **I/O Techniques (Interrupts, Polling, DMA)**:
+  - **Chapter 8: Input/Output**
+    - Sections: Programmed I/O, Interrupt-Driven I/O, Direct Memory Access.
+
+#### **6. Pipelining**
+
+- **Instruction Pipeline & Hazards**:
+  - **Chapter 16: Processor Structure and Function**
+    - Sections: Instruction Cycle, Pipeline Hazards.
+
+
+
+14.3 Instruction Cycle
+14.4 Pipelining strategy
+
+Table 15.1.2 CISC vs RISC
+15.2 Register windows
+15.3 Register Optimization
+15.4 RISC
+15.5 n-stage pipelining
+
+16.1 Superscalar
+
+17.1 SM
+17.2 Organization
+17.3 MESI and Cache
+17.4 Multithreading
+17.5 Cluster
+
+19.1 CUDA
+19.2 CPU vs GPU
+19.3 GPU Architecture

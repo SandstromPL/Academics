@@ -1,0 +1,11 @@
+q2)grep -o -w 'char|int|unsigned|main|void|switch|float|for|else fib.c | sort | uniq
+Q3)head -n 15 fib.c |grep -o '{' |wc -l
+q4)ls -lS /usr/bin/a* | head -n 3
+q5)cat *.txt > merge.txt
+q6)sed -n '15,20p' fib.c
+q7)ps aux | grep 'pr'
+q8)gcc -o fib fib.c
+   ./fib 5
+q9)grep -o freq freq.sh
+chmod +x freq.sh
+./freq.sh fib.c

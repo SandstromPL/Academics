@@ -1,0 +1,14 @@
+The C preprocessor is a macro processor that is used automatically by the C compiler to transform
+our program before actual compilation.
+
+The C pre-processor supports the following features.
+1.​ Inclusion of header files
+2.​ Macro expansion
+3.​ Conditional compilation
+
+This dir contains the <>.l file.
+This lex script for all the recognized words it prints a corresponding token on the console.
+
+1. Use lex <filename>.l which gives lex.yy.c file
+2. Then use gcc lex.yy.c -o <outputName>
+3. Run the the script using ./<outputName>

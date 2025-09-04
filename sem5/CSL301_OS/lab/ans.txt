@@ -1,0 +1,4 @@
+The special process the adopts the orphan child is SYSTEMD. Its role is to serve as the first process started by the kernal, manage the system services, and automatically adopt and clean up orphaned processes to prevent resource leaks.
+
+optional : 
+When we kill that middle shell(mid child process) , then it terminates where shell was running but its child shell remain alive and get parented to SYSTEMD.As each bash process has its own interactive enviroment , now killing the parent shell only stops that instance not its child's.Then those orphans are assigns to SYSTEMD and continue running normally.

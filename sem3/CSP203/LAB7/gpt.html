@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mini hospital website providing details about doctors, services, facilities, and contact information.">
+    <title>Mini Hospital</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+        header {
+            background-color: #3498db;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #2980b9;
+        }
+        nav a {
+            padding: 5px;
+            color: white;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #1abc9c;
+        }
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        h1 {
+            color: #2980b9;
+        }
+        .doctor-profile, .facility {
+            display: inline-block;
+            width: 30%;
+            text-align: center;
+            margin: 10px;
+        }
+        .doctor-profile img, .facility img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 12px;
+            text-align: center;
+        }
+        th {
+            background-color: #3498db;
+            color: white;
+        }
+        footer {
+            background-color: #2980b9;
+            text-align: center;
+            padding: 10px;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .map {
+            width: 100%;
+            height: 300px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to Mini Hospital</h1>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#doctors">Doctors</a>
+    <a href="#opd">OPD Schedule</a>
+    <a href="#facilities">Facilities</a>
+    <a href="#contact">Contact Us</a>
+</nav>
+
+<div class="container">
+    <!-- About Section -->
+    <section id="about">
+        <h1>About Us</h1>
+        <p>Our mission is to provide high-quality healthcare with compassion. We aim to lead in medical innovations and patient care.</p>
+    </section>
+
+    <!-- Doctors Section -->
+    <section id="doctors">
+        <h1>Our Doctors</h1>
+        <div class="doctor-profile">
+            <img src="doctor1.jpg" alt="Dr. John Smith">
+            <h3>Dr. John Smith</h3>
+            <p>Specialization: Cardiology</p>
+        </div>
+        <div class="doctor-profile">
+            <img src="doctor2.jpg" alt="Dr. Jane Doe">
+            <h3>Dr. Jane Doe</h3>
+            <p>Specialization: Orthopedics</p>
+        </div>
+    </section>
+
+    <!-- OPD Schedule Section -->
+    <section id="opd">
+        <h1>OPD Schedule</h1>
+        <table>
+            <tr>
+                <th>Service</th>
+                <th>Doctor</th>
+                <th>Timings</th>
+            </tr>
+            <tr>
+                <td>Ophthalmology</td>
+                <td>Dr. John Smith</td>
+                <td>Mon - Fri, 9 AM - 1 PM</td>
+            </tr>
+            <tr>
+                <td>Orthopedics</td>
+                <td>Dr. Jane Doe</td>
+                <td>Mon - Fri, 2 PM - 5 PM</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Facilities Section -->
+    <section id="facilities">
+        <h1>Our Facilities</h1>
+        <div class="facility">
+            <img src="pathology.jpg" alt="Pathology Lab">
+            <h3>Pathology Lab</h3>
+            <p>Comprehensive diagnostic services with advanced equipment.</p>
+        </div>
+        <div class="facility">
+            <img src="xray.jpg" alt="X-Ray Facility">
+            <h3>X-Ray</h3>
+            <p>Digital X-Ray for clear and accurate imaging.</p>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact">
+        <h1>Contact Us</h1>
+        <p>Address: 123 Health St, Medical City</p>
+        <p>Phone: +1-234-567-8900</p>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?..."></iframe>
+        </div>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2024 Mini Hospital. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

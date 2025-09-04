@@ -1,0 +1,17 @@
+Here arguments given are SWITCH_ON_END and IO_RUN_IMMEDIATE.
+
+There 3 process running with pid 0 , 1 and 2. On observing the output according to given arguments cpu switches or 
+start next process only when current process ends.Which increases the overall cpu run time than previous Questions where
+switch happens on IO.
+
+From the output:
+
+Total time: 23
+
+CPU Busy: 10 → 43.48% utilization
+
+I/O Busy: 12 → 52.17% utilization
+
+This causes a big drop in CPU utilization and an increase in total execution time. 
+While a process is waiting for I/O, CPU stays idle even if other processes are ready. 
+This is inefficient for multitasking but may be seen in batch systems where context switching is expensive.

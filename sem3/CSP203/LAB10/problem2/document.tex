@@ -1,0 +1,37 @@
+\documentclass{article}
+\usepackage{amsmath}
+
+\begin{document}
+	
+	Each of the exercises below involves a choice among the master theorem templates discussed in lecture. For each, indicate which case applies and specify the asymptotic growth class of the function. If no case applies, simply state that fact; you are not required to attempt a solution when no master theorem case applies.\\
+	\\
+	\begin{enumerate}
+		\item \( T(n) = 2T\left(\frac{n}{4}\right) + n^{1/2} \).
+		\item \( T(n) = 3T\left(\frac{n}{2}\right) + n \lg n \).
+		\item \( T(n) = 5T\left(\frac{n}{5}\right) + \frac{n}{\lg n} \).
+		\item \( T(n) = 4T\left(\frac{n}{2}\right) + n^{2}\sqrt{n} \).
+		\item \( T(n) = 2T\left(\frac{n}{2}\right) + n \lg n \).
+	\end{enumerate}
+	
+	Solutions.\\
+	\\
+	For the second item: \( a = 3, b = 2 \) implies a reference function \( g(n) = n^{\log_2 3} \). Converting as follows,\\
+	\\
+	\begin{align*}
+		y &= \log_2 3,\\
+		2^y &= 3,\\
+		y \ln 2 &= \ln 3,\\
+		y &= \frac{\ln 3}{\ln 2} \approx 1.585.
+	\end{align*}
+	
+	We have \( g(n) = n^{1.585} \). The function is \( f(n) = n \lg n \). Let \( g_\epsilon(n) = n^{(1.585 - \epsilon)} \), for \( 0 < \epsilon < 0.5 \). Since\\
+	\\
+	\begin{align*}
+		\frac{f(n)}{g_\epsilon(n)} &= \frac{n \lg n}{n^{(1.585 - \epsilon)}} = \frac{\lg n}{n^{0.585 - \epsilon}}\\
+		&\leq \frac{\lg n}{n^{0.585}} \to 0 \text{ as } n \to \infty,
+	\end{align*}
+	
+	we have \( f(n) = o(g_\epsilon(n)) \), which implies \( f(n) = O(g_\epsilon(n)) \) and allows case (1) of the master template.\\
+	Therefore, \( T(n) = \Theta(g(n)) = \Theta(n^{1.585}) \).
+	
+\end{document}

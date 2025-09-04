@@ -1,0 +1,24 @@
+\documentclass{article}
+\usepackage{amsmath}
+\begin{document}
+	\textbf{Exercise 3.2.} What is an example of a proof with mathematical content?\\
+	\textbf{Solution:}\\
+	\\
+	$Proof.$ If you want to include math in a sentance, you use\$. For example (see latex file),\\
+	$\int x \, = \frac{1}{2} x^2 + C$.If you want to display math (centered on a new line), use \$\$. for example\\
+	(see latex file).
+	\begin{equation}
+		\sum_{i = 1}^{100} i = 5050. \notag
+	\end{equation}
+	\\
+	Next is an example of the align enviroment:\\
+	
+	\begin{align*}
+		\sum_{i = 1}^{k + 1} i &= (\sum_{i = 1}^{k} i) + (k + 1)\\
+							   &= \frac{k(k + 1)}{2} + k + 1 \\
+							   &= \frac{k(k + 1) + 2(k + 1)}{2} \\
+							   &= \frac{(k + 1)(k + 2)}{2} \\
+							   &= \frac{(k + 1)((k + 1) + 1)}{2}. \\
+	\end{align*}
+	
+\end{document}

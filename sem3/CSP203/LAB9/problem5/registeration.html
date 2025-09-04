@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <h2>Registration Form</h2>
+    <form action="register.php" method="post" enctype="multipart/form-data">
+
+        <p><label for="name">Name:</label>
+        <input type="text" name="name" id="name" required/></p>
+
+        <p><label for="email">Email Address:</label>
+        <input type="email" name="email" id="email" required/></p>
+
+        <p><label for="username">Username:</label>
+        <input type="text" name="username" id="username" required/></p>
+
+        <p><label for="pwd">Password:</label>
+        <input type="password" name="pwd" id="pwd" required/></p>
+
+        <p><label for="gnd">Gender:</label>
+        <input type="radio" name="gender" value="Male" id="male">Male<br>
+        <input type="radio" name="gender" value="Female" id="female">Female</p>
+
+        <p><label for="address">Address:</label>
+        <textarea name="address" id="address" rows="4" cols="50"></textarea></p>
+
+        <p><label for="cty">Country:</label>
+        <select name="country" id="cty">
+            <option value="India">India</option>
+            <option value="USA">USA</option>
+            <option value="UK">UK</option>
+            <option value="Canada">Canada</option>
+            <option value="Australia">Australia</option>
+            <option value="Germany">Germany</option>
+            <option value="France">France</option>
+            <option value="Japan">Japan</option>
+            <option value="China">China</option>
+            <option value="Brazil">Brazil</option>
+        </select></p>
+
+        <h3>Education Details</h3>
+        <p>
+            Degree: <input type="text" name="degree[]" required/>
+            Specialisation: <input type="text" name="specialisation[]" required/>
+            Academic Year: <input type="number" name="year[]" required/>
+            Percentage: <input type="number" name="percentage[]" step="0.01" required/>
+        </p>
+        <p>
+            Degree: <input type="text" name="degree[]" />
+            Specialisation: <input type="text" name="specialisation[]" />
+            Academic Year: <input type="number" name="year[]" />
+            Percentage: <input type="number" name="percentage[]" step="0.01" />
+        </p>
+
+        <h3>Hobbies</h3>
+        <p>
+            <input type="checkbox" name="hobbies[]" value="Reading">Reading<br>
+            <input type="checkbox" name="hobbies[]" value="Traveling">Traveling<br>
+            <input type="checkbox" name="hobbies[]" value="Sports">Sports<br>
+            <input type="checkbox" name="hobbies[]" value="Music">Music<br>
+            <input type="checkbox" name="hobbies[]" value="Photography">Photography
+        </p>
+
+        <p><label for="photo">Upload Photo:</label>
+        <input type="file" name="photo" id="photo" accept="image/*" required/></p>
+
+        <p><label for="signature">Upload Signature:</label>
+        <input type="file" name="signature" id="signature" accept="image/*" required/></p>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

@@ -1,0 +1,5 @@
+Rahul Reddy,(987) 347-8911,rahul@iitbhilai.ac.in,1234 7656 5473 1562,24-09-1982.
+Venu Katari,(772) 909-9434,venu@iitbhilai.ac.in,4566 6748 3467 4566,15-09-1980.
+Shanmuk Donga,(347) 234-4376,shanmuk@iitbhilai.ac.in,4532 4578 6784,27-05-1982.
+Charith Reddy,(435) 756-3567,charith@iitbhilai.ac.in,1234 3467 6874 1562,07-10-1978.
+Arjun Raju,(596) 734-7643,arjun@iitbhilai.ac.in,7653 3354 1435 5767,11-09-1999.

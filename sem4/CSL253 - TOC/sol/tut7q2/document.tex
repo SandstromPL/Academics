@@ -1,0 +1,103 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{enumitem}
+\usepackage{tikz}
+\usepackage{geometry}
+\usepackage{tcolorbox}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+\geometry{margin=1in}
+
+% Custom colors
+\definecolor{statecol}{RGB}{70,130,180}
+\definecolor{transitioncol}{RGB}{0,100,0}
+
+\title{\Large\textbf{CSL253 - Theory of Computation}\\[0.5em]
+	\large Tutorial 7}
+\author{}
+\date{}
+
+
+\newtheorem{theorem}{Theorem}
+
+\begin{document}
+	
+	\maketitle
+	
+	% Team members in a nice box
+	\begin{tcolorbox}[
+		title=\textbf{Team Members},
+		colback=white,
+		colframe=statecol,
+		arc=0mm
+		]
+		\begin{enumerate}[leftmargin=*]
+			\item Kartikeya Nainakhwal - 12341090
+			\item Paritosh Lahre - 12341550
+			\item Rahul Dev Reddy - 12342390
+		\end{enumerate}
+	\end{tcolorbox}
+	
+	% Question in a colored box
+	\begin{tcolorbox}[
+		title=\textbf{Question: 2},
+		colback=white,
+		colframe=transitioncol,
+		arc=0mm
+		]
+		Let 
+		\[
+		A_{ECFG} = \{\langle G \rangle \mid G \text{ is a CFG and } \varepsilon \in L(G)\}.
+		\]
+		Show that $A_{ECFG}$ is decidable.
+	\end{tcolorbox}
+	
+	\vspace{1em}
+	
+	% Solution Sections
+	\section*{Problem Statement}
+	We define the language
+	\[
+	A_{ECFG} = \{\langle G\rangle \mid G \text{ is a context-free grammar and } \varepsilon \in L(G)\}.
+	\]
+	Prove that $A_{ECFG}$ is decidable; that is, there exists a Turing machine that, given any encoding $\langle G\rangle$, halts and correctly decides whether $G$ generates the empty string $\varepsilon$.
+	
+	\section*{Proof Idea}
+	The key observation is that a CFG $G$ generates $\varepsilon$ precisely when its start symbol $S$ is ``nullable,'' meaning there exists a derivation $S \Rightarrow^*_R \varepsilon$.  We can compute the set of all nullable nonterminals by a simple fixpoint algorithm:
+	\begin{enumerate}[label=\arabic*.]
+		\item Initialize \textsf{Null} with any nonterminal that has a production directly deriving $\varepsilon$.
+		\item Repeatedly add any nonterminal $A$ if there is a production
+		\[A \to X_1 X_2 \cdots X_k\]
+		such that each $X_i$ is either $\varepsilon$ or already in \textsf{Null}.
+		\item Stop when no new symbols can be added.  At termination, $S\in\textsf{Null}$ iff $\varepsilon\in L(G)$.
+	\end{enumerate}
+	
+	\section*{Proof}
+	*	$A_{ECFG}$ is decidable.
+	\begin{proof}
+		We construct a deterministic Turing machine $M$ that decides $A_{ECFG}$.  On input $\langle G\rangle$, where $G=(V,\Sigma,R,S)$:
+		\begin{enumerate}[label=\arabic*.]
+			\item Parse the input into $(V,\Sigma,R,S)$; if malformed, \textbf{reject}.
+			\item Let
+			\[
+			\mathrm{Null} \leftarrow \{A\in V \mid A\to\varepsilon\in R\}.
+			\]
+			\item \textbf{Repeat} the following until fixpoint:
+			\begin{enumerate}[label=\alph*.]
+				\item For each production $A\to X_1X_2\cdots X_k$ in $R$, if $\forall i,\;X_i=\varepsilon$ or $X_i\in\mathrm{Null}$, add $A$ to $\mathrm{Null}$.
+			\end{enumerate}
+			\item If $S\in\mathrm{Null}$, \textbf{accept}; otherwise, \textbf{reject}.
+		\end{enumerate}
+		
+		\textbf{Correctness:}
+		\begin{itemize}
+			\item \emph{Soundness}: If $M$ accepts, then $S\in\mathrm{Null}$, so by construction there is a derivation $S\Rightarrow^*_R\varepsilon$, i.e.\ $\varepsilon\in L(G)$.
+			\item \emph{Completeness}: If $\varepsilon\in L(G)$, any leftmost derivation shows each nonterminal on the path to $\varepsilon$ must be nullable.  By induction, our loop adds each such nonterminal to $\mathrm{Null}$, including $S$, so $M$ accepts.
+			\item \emph{Termination}: Each iteration can only add new symbols to the finite set $\mathrm{Null}$ and proceeds until no additions are possible.  Since $|V|$ bounds the additions, $M$ halts after at most $|V|+1$ iterations.  All other steps are finite.  Thus $M$ always halts.
+		\end{itemize}
+	\end{proof}
+	
+	\section*{Conclusion}
+	We have exhibited a concrete algorithm that, given any CFG $G$, computes whether $\varepsilon$ is in its language by determining nullable nonterminals.  The procedure halts on every input and correctly decides membership in $A_{ECFG}$.  Hence, $A_{ECFG}$ is decidable.
+	
+\end{document}
