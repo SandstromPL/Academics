@@ -190,3 +190,17 @@ int sys_getptsize(void)
       count++;
   return count;
 }
+
+//HA3->step2c
+int sys_setpriority(void)
+{
+  int priority;
+  if (argint(0, &priority) < 0)
+  {
+    return -1;
+  }
+  // Assign the given priority value to the calling process ’s priority field 
+  struct proc * p = myproc();
+  p->priorityMark = priority;
+  return 0;
+}

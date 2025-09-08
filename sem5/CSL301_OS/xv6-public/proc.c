@@ -118,6 +118,7 @@ found:
   memset(p->context, 0, sizeof *p->context);
   p->context->eip = (uint)forkret;
   p->shed_count = 0; // LAB4-TA2-gmeet -> initializes new counter fields to 0 for process 'p'
+  p->priorityMark = 0;  //HA3->step2-> initializing priority-mark(defalutt priority)
   return p;
 }
 
@@ -333,7 +334,56 @@ int wait(void)
 //   - swtch to start running that process
 //   - eventually that process transfers control
 //       via swtch back to the scheduler.
+
+//HA3->step2a&2b->modified sheduler function
 void scheduler(void)
+{
+  struct proc *p;
+  struct cpu *c = mycpu();
+  c->proc = 0;
+  for (;;)
+  {
+    // Enable interrupts on this processor .
+    sti();
+    struct proc *highest_priority_p = 0;
+    int highest_priority = 1000; // Use a high number to ensure any priority is lower .
+    // Loop over process table to find highest priority runnable process .
+    acquire(&ptable.lock);
+
+    for (p = ptable.proc; p < &ptable.proc[NPROC]; p++)
+    {
+      if (p->state == RUNNABLE)
+      {
+        if (p->priorityMark < highest_priority)
+        {
+         // update highest priority
+          highest_priority_p = p;
+        }
+      }
+    }
+    if (highest_priority_p != 0)
+    {
+      p = highest_priority_p;
+      // Switch to chosen process . It is the process ’s job
+      // to release ptable . lock and then reacquire it
+      // before jumping back to us .
+      c->proc = p;
+      switchuvm(p);
+      p->state = RUNNING;
+
+      // LAB4-TA3-gmeet  -> increment its shed_count field right before context switch
+      p->shed_count++;
+
+      swtch(&(c->scheduler), p->context);
+      // Process is done running for now .
+      // It should have changed its p - > state before coming back .
+      c->proc = 0;
+    }
+    release(&ptable.lock);
+  }
+}
+
+/* void scheduler(void)
 {
   struct proc *p;
   struct cpu *c = mycpu();
@@ -370,7 +420,7 @@ void scheduler(void)
     }
     release(&ptable.lock);
   }
-}
+} */
 
 // Enter scheduler.  Must hold only ptable.lock
 // and have changed proc->state. Saves and restores

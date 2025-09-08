@@ -54,6 +54,7 @@ struct proc {
   int shed_count; //LAB4-TA1-gmeet -> how many times this process has been sheduled
   int run_ticks;  //LAB4-TA1-gmeet -> how many timer ticks this process has been running
   struct spinlock lock; //HA2 -> added spinlock.h
+  int priorityMark; //HA3->step1
 };
 
 // Process memory is laid out contiguously, low addresses first:

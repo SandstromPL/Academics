@@ -39,6 +39,7 @@ int get_proc_info(int,struct proc_info*);   //HA2
 int numvp(void);    //LAB5-CA4-step2
 int numpp(void);    //LAB5-CA4-step2
 int getptsize(void);    //LAB5-CA4-step2
+int setpriority(int);  //HA3->step4
 
 // ulib.c
 int stat(const char*, struct stat*);

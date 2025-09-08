@@ -111,6 +111,7 @@ extern int sys_get_proc_info(void); //HA2
 extern int sys_numvp(void); //LAB5-CA4-step4
 extern int sys_numpp(void); //LAB5-CA4-step4
 extern int sys_getptsize(void); //LAB5-CA4-step4
+extern int sys_setpriority(void); //HA3->step3
 
 static int (*syscalls[])(void) = {
 [SYS_fork]    sys_fork,
@@ -142,6 +143,7 @@ static int (*syscalls[])(void) = {
 [SYS_numvp] sys_numvp,  //LAB5-CA4-step4
 [SYS_numpp] sys_numpp,  //LAB5-CA4-step4
 [SYS_getptsize] sys_getptsize,  //LAB5-CA4-step4
+[SYS_setpriority] sys_setpriority,  //HA3->step3
 };
 
 void

@@ -187,7 +187,8 @@ UPROGS=\
 	_statstest\
 	_testproc\
 	_pinfo\
-	_memtest
+	_memtest\
+	_prioritytest\
 
 fs.img: mkfs README $(UPROGS)
 	./mkfs fs.img README $(UPROGS)

@@ -28,4 +28,5 @@
 #define SYS_numvp 27    //LAB5-CA4-step1
 #define SYS_numpp 28    //LAB5-CA4-step1
 #define SYS_getptsize 29    //LAB5-CA4-step1
+#define SYS_setpriority 30  //HA3->step3
 
