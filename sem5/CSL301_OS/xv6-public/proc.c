@@ -119,6 +119,7 @@ found:
   p->context->eip = (uint)forkret;
   p->shed_count = 0; // LAB4-TA2-gmeet -> initializes new counter fields to 0 for process 'p'
   p->priorityMark = 0;  //HA3->step2-> initializing priority-mark(defalutt priority)
+  p->page_faults = 0;   //LAB6->part1->step2->initialized page faults
   return p;
 }
 
@@ -171,11 +172,15 @@ int growproc(int n)
   {
     if ((sz = allocuvm(curproc->pgdir, sz, sz + n)) == 0)
       return -1;
+    sz += n; //LAB6
+      //sz += n;  //LAB6->part1->2
   }
   else if (n < 0)
   {
     if ((sz = deallocuvm(curproc->pgdir, sz, sz + n)) == 0)
       return -1;
+    
+      //sz = uvmdealloc(p->pagetable,sz,sz+n);  //LAB6->part1->2
   }
   curproc->sz = sz;
   switchuvm(curproc);

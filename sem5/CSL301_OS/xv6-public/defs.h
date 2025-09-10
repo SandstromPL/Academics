@@ -122,6 +122,7 @@ int             wait(void);
 void            wakeup(void*);
 void            yield(void);
 int             get_proc_info(int,struct proc_info*);   //HA2
+int             vmfault(pde_t *pagetable, uint va, int write);
 
 
 // swtch.S

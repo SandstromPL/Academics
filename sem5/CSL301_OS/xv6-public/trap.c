@@ -80,7 +80,21 @@ trap(struct trapframe *tf)
             cpuid(), tf->cs, tf->eip);
     lapiceoi();
     break;
+  
+  //LAB6->part2->step2
+  case T_PGFLT: {
+    struct proc *p = myproc();
+    if (p && (tf->cs & 3) == DPL_USER) {
+      p->page_faults++;
 
+      if (vmfault(p->pgdir, rcr2(), tf->err & 2) < 0) {
+        p->killed = 1;
+      }
+      switchuvm(p);
+      return;
+    }
+    break;
+  }
   //PAGEBREAK: 13
   default:
     if(myproc() == 0 || (tf->cs&3) == 0){

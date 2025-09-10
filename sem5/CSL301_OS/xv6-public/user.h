@@ -40,6 +40,7 @@ int numvp(void);    //LAB5-CA4-step2
 int numpp(void);    //LAB5-CA4-step2
 int getptsize(void);    //LAB5-CA4-step2
 int setpriority(int);  //HA3->step4
+int getpagefaults(void);    //LAB6->part1->step3
 
 // ulib.c
 int stat(const char*, struct stat*);

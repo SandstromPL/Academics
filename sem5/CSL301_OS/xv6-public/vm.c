@@ -386,6 +386,29 @@ copyout(pde_t *pgdir, uint va, void *p, uint len)
   return 0;
 }
 
+
+//LAB6->part2->step1
+int vmfault(pde_t *pgdir, uint va, int write)
+{
+  struct proc *p = myproc();
+  char *mem;
+  if (va >= p->sz)
+    return -1;
+  va = PGROUNDDOWN(va);
+  if (walkpgdir(pgdir, (void *)va, 0))
+    return 0;
+  mem = kalloc();
+  if (mem == 0)
+    return -1;
+  memset(mem, 0, PGSIZE);
+  if (mappages(pgdir, (void *)va, PGSIZE, V2P(mem), PTE_W | PTE_U) < 0)
+  {
+    kfree(mem);
+    return -1;
+  }
+  return 0;
+}
+
 //PAGEBREAK!
 // Blank page.
 //PAGEBREAK!

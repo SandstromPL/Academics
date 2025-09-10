@@ -189,6 +189,8 @@ UPROGS=\
 	_pinfo\
 	_memtest\
 	_prioritytest\
+	_tlbrun\
+	_tlbtest\
 
 fs.img: mkfs README $(UPROGS)
 	./mkfs fs.img README $(UPROGS)

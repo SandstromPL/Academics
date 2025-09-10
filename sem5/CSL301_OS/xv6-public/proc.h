@@ -55,6 +55,7 @@ struct proc {
   int run_ticks;  //LAB4-TA1-gmeet -> how many timer ticks this process has been running
   struct spinlock lock; //HA2 -> added spinlock.h
   int priorityMark; //HA3->step1
+  int page_faults;  //LAB6->part1->step1->count of page faults
 };
 
 // Process memory is laid out contiguously, low addresses first:

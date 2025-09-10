@@ -204,3 +204,9 @@ int sys_setpriority(void)
   p->priorityMark = priority;
   return 0;
 }
+
+//LAB6->part1->step3
+int sys_getpagefaults(void) {
+  struct proc *p = myproc();
+  return p->page_faults;
+}
