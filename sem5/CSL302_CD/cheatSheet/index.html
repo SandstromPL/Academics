@@ -1,0 +1,993 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0066)https://docs.oracle.com/cd/E19504-01/802-5880/6i9k05dgg/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link type="text/css" rel="stylesheet" href="./index_files/default.css"><link type="text/css" rel="stylesheet" href="./index_files/www.css"><link type="text/css" rel="stylesheet" href="./index_files/dsc.css"><script language="javascript1.2" type="text/javascript" src="./index_files/sniff.js"></script><script>window.ohcglobal || document.write('<script src="/en/dcommon/js/global.js">\x3C/script>')</script><script src="./index_files/global.js"></script><style id="banner_footer_style" type="text/css">#footer-banner ul li:nth-child(2) {  margin-left: 0;}#footer-banner {  z-index: 9999;  position: fixed;  margin: 0 auto 0 auto;  bottom: 0; left: 0; right: 0;  background-color: #EBEBEB !important;  border-top: 1px solid #ACB7BF;  color: #1958AA;  padding: 0.0em 1em;  text-align: center;  font-size: 12px !important;  line-height: 15px;  font-weight: normal;  font-family: Arial;  clear: both;}#teconsent {  display: inline-block;}#footer-banner ul {  list-style: none;  font-size: 12px !important;  padding: 0;  margin: 0;  margin-right: 20px;}#footer-banner li {  display: inline-block;}#footer-banner li + li:before {  content: "|";  margin-right: 4px;  margin-left: 4px;  color: #aaa;}#footer-banner a {  color: #1958AA;  text-decoration: none;  font-size: 12px !important;}#footer-banner a:focus, #footer-banner a:hover {  color: #1958AA;  text-decoration: underline;}</style><script type="text/javascript" src="./index_files/ora_docs.js"></script><script type="text/javascript" src="./index_files/odc.js"></script></head><body><div id="a0v0" class="a0 a0v0"><div class="a2w0"><div id="a2v7" class="a2"><div class="a2w1"><div class="a2w2"><div class="a2w3"><div class="a2w4"><div class="a2topiclinks"><div class="a2x1"></div><a id="sunlogo" title="Oracle Home Page" href="http://www.oracle.com/"><img width="98" height="58" border="0" alt="Oracle Homeage" src="./index_files/a.gif"></a><img width="1" height="33" border="0" alt="test" src="./index_files/a.gif" id="venuespacer"></div></div></div></div></div></div></div><div id="breadcrumb"><a href="http://www.oracle.com/technetwork/indexes/documentation/index.html">Documentation Home</a> &nbsp;&gt; <a href="https://docs.oracle.com/cd/E19504-01/802-5880/index.html">Programming Utilities Guide </a>   &nbsp;&gt; Chapter 2 Lexical Analysis</div><br><div class="pagetitle" id="sharepage">Programming Utilities Guide</div><div class="d8 d8v1" style="margin: 10px;"><div class="d8w1"><div class="d8w2"><div class="d8w3"><div class="d8w4"><ul><li class="d8left"><a href="https://docs.oracle.com/cd/E19504-01/802-5880/6i9k05dga/index.html"><em>Previous</em>: Chapter 1  Tracing Program Execution With the TNF Utilities    </a></li><li class="d8right"><a href="https://docs.oracle.com/cd/E19504-01/802-5880/6i9k05dgt/index.html"><em>Next</em>: Chapter 3 yacc -- A Compiler Compiler </a></li></ul></div></div></div></div></div><div class="pc11 imgMax-590" style="margin: 10px;"><a xmlns:str="http://xml.apache.org/xalan/java/java.lang.String" name="6i9k05dgg"></a><h1 class="sol">Chapter 2 Lexical Analysis</h1>
+<a name="lex-ix117"></a><a name=""></a><p>With the <tt>lex(1)</tt> software tool, you can solve problems from text processing, code enciphering, and compiler writing. In text processing, you might check the spelling of words for errors; in code enciphering, you might translate certain patterns of characters into others; and in compiler writing, you might determine what the tokens (smallest meaningful sequences of characters) are in the program to be compiled. </p>
+<p>The task common to all these problems is lexical analysis: recognizing different strings of characters that satisfy certain characteristics. Hence the name lex. You don't have to use lex to handle problems of this kind. You could write programs in a standard language like C to handle them. In fact, what lex does is produce such C programs: lex is therefore called a program generator. </p>
+<p>What lex offers you is typically a faster, easier way to create programs that perform these tasks. Its weakness is that it often produces C programs that are longer than necessary for the task at hand and that execute more slowly than they otherwise might. In many applications this is a minor consideration, and the advantages of using lex considerably outweigh it. </p>
+<p>lex can also be used to collect statistical data on features of an input text, such as character count, word length, number of occurrences of a word, and so forth. The remaining sections of this chapter include:</p>
+<a name=""></a><ul>
+<li>
+<p>Generating a lexical analyzer program </p>
+
+</li>
+</ul>
+<a name=""></a><ul>
+<li>
+<p>Writing lex source </p>
+
+</li>
+</ul>
+<a name=""></a><ul>
+<li>
+<p>Translating lex source </p>
+
+</li>
+</ul>
+<a name=""></a><ul>
+<li>
+<p>C++ Mangled Symbols</p>
+
+</li>
+</ul>
+<a name=""></a><ul>
+<li>
+<p>Using lex and yacc Together</p>
+
+</li>
+</ul>
+<a name=""></a><ul>
+<li>
+<p>Automaton </p>
+
+</li>
+</ul>
+<a name=""></a><ul>
+<li>
+<p>Summary of Source Format</p>
+
+</li>
+</ul>
+<a name="6i9k05dgi"></a><h1 class="sol">Internationalization </h1>
+<p>For information about using lex to develop applications in languages other than English, see <tt>lex (1)</tt>. </p>
+<a name="6i9k05dgj"></a><h1 class="sol">Generating a Lexical Analyzer Program </h1>
+<p>
+<kbd>lex</kbd> generates a C-language scanner from a source specification that you write. This specification contains a list of rules indicating sequences of characters -- expressions -- to be searched for in an input text, and the actions to take when an expression is found. To see how to write a lex specification see the section <a href="https://docs.oracle.com/cd/E19504-01/802-5880/6i9k05dgk/index.html">"Writing <kbd>lex</kbd> Source "</a>. <a name="lex-ix118"></a>
+</p>
+<p>The C source code for the lexical analyzer is generated when you enter </p>
+<a name=""></a><pre>$ <b><kbd>lex lex.l</kbd></b>
+</pre>
+<p>where <tt>lex.l</tt> is the file containing your lex specification. (The name <tt>lex.l</tt> is conventionally the favorite, but you can use whatever name you want. Keep in mind, though, that the <tt>.l</tt> suffix is a convention recognized by other system tools, <kbd>make</kbd> in particular.) The source code is written to an output file called <kbd>lex.yy.c</kbd> by default. That file contains the definition of a function called <kbd><b>yylex()</b></kbd> that returns 1 whenever an expression you have specified is found in the input text, 0 when end of file is encountered. Each call to <kbd><b>yylex()</b></kbd> parses one token (assuming a return); when <kbd><b>yylex()</b></kbd> is called again, it picks up where it left off. <a name="lex-ix119"></a>
+</p>
+<p>Note that running <kbd>lex</kbd> on a specification that is spread across several files, as in the following example, produces one <kbd>lex.yy.c</kbd>: </p>
+<a name=""></a><pre>$ <b><kbd>lex lex1.l lex2.l lex3.l</kbd></b>
+</pre>
+<p>Invoking <kbd>lex</kbd> with the <kbd><b>-t</b></kbd> option causes it to write its output to <tt>stdout</tt> rather than l<kbd>ex.yy.c</kbd>, so that it can be redirected: </p>
+<a name=""></a><pre>$ <b><kbd>lex -t lex.l &gt; lex.c</kbd></b>
+</pre>
+<p>Options to <kbd>lex</kbd> must appear between the command name and the filename argument. </p>
+<p>The lexical analyzer code stored in l<kbd>ex.yy.c</kbd> (or the <kbd>.c</kbd> file to which it was redirected) must be compiled to generate the executable object program, or scanner, that performs the lexical analysis of an input text. </p>
+<p>The <kbd>lex</kbd> library supplies a default <kbd><b>main()</b></kbd> that calls the function <kbd><b>yylex()</b></kbd>, so you need not supply your own <kbd><b>main()</b></kbd>. The library is accessed by invoking the <kbd><b>-ll</b></kbd> option to <kbd>cc</kbd>: <a name="lex-ix120"></a>
+</p>
+<a name=""></a><pre>$ <b><kbd>cc lex.yy.c -ll</kbd></b>
+</pre>
+<p>Alternatively, you might want to write your own driver. The following is similar to the library version: </p>
+<a name=""></a><pre>extern int yylex(); 
+
+int yywrap()
+{
+	    return(1); 
+}
+
+main()
+{
+     while (yylex());
+         ;
+}</pre>
+<p>For more information about the function <kbd><b>yywrap()</b></kbd>, see the <a href="https://docs.oracle.com/cd/E19504-01/802-5880/6i9k05dgk/index.html">"Writing <kbd>lex</kbd> Source "</a> section. When your driver file is compiled with <kbd>lex.yy.c</kbd>, as in the following example, its <kbd><b>main()</b></kbd> will call <kbd><b>yylex()</b></kbd> at run time exactly as if the <kbd>lex</kbd> library had been loaded: <a name="lex-ix121"></a>
+</p>
+<a name=""></a><pre>$ <b><kbd>cc lex.yy.c driver.c</kbd></b>
+</pre>
+<p>The resulting executable file reads <tt>stdin</tt> and writes its output to <tt>stdout</tt>. <a href="https://docs.oracle.com/cd/E19504-01/802-5880/6i9k05dgj/index.html#lex-fig-5">Figure 2-1</a> shows how <kbd>lex</kbd> works.    <a name="lex-ix122"></a> <a name="lex-ix123"></a> <a name="lex-ix124"></a>
+</p>
+<a name="lex-fig-5"></a><a name="lex-13872"></a><h5 class="sol">Figure 2-1  Creation and Use of a Lexical Analyzer with <kbd>lex</kbd>
+</h5><br><img alt="Graphic" title="Graphic" src="./index_files/lex.fig161.epsi.gif" width="786" height="1111"><p></p><a name="6i9k05dgk"></a><h1 class="sol">Writing <kbd>lex</kbd> Source </h1>
+<p>
+<kbd>lex</kbd> source consists of at most three sections: definitions, rules, and user-defined routines. The rules section is mandatory. Sections for definitions and user routines are optional, but must appear in the indicated order if present: <a name="lex-ix125"></a> <a name="lex-ix126"></a>
+</p>
+<a name=""></a><pre>definitions 
+%% 
+rules 
+%% 
+<var>user routines</var>
+</pre>
+<a name="lex-6"></a><h2 class="sol">The Fundamentals of <kbd>lex</kbd> Rules </h2>
+<p>The mandatory rules section opens with the delimiter <tt>%%</tt>. If a routines section follows, another <tt>%%</tt> delimiter ends the rules section. The <tt>%%</tt> delimiters must be entered at the beginning of a line, that is, without leading blanks. If there is no second delimiter, the rules section is presumed to continue to the end of the program. </p>
+<p>Lines in the rules section that begin with white space and that appear before the first rule are copied to the beginning of the function <kbd><b>yylex()</b></kbd>, immediately after the first brace. You might use this feature to declare local variables for <kbd><b>yylex()</b></kbd>. </p>
+<p>Each rule specifies the pattern sought and the actions to take on finding it. The pattern specification must be entered at the beginning of a line. The scanner writes input that does not match a pattern directly to the output file. So the simplest lexical analyzer program is just the beginning rules delimiter, <tt>%%</tt>. It writes out the entire input to the output with no changes at all.</p>
+<a name="lex-7"></a><h3 class="sol">Regular Expressions </h3>
+<p>You specify the patterns you are interested in with a notation called a regular expression. A regular expression is formed by stringing together characters with or without operators. The simplest regular expressions are strings of text characters with no operators at all: <a name="lex-ix127"></a>
+</p>
+<a name=""></a><pre>apple 
+orange
+pluto </pre>
+<p>These three regular expressions match any occurrences of those character strings in an input text. To have the scanner remove every occurrence of <tt>orange</tt> from the input text, you could specify the rule </p>
+<a name=""></a><pre>orange ;</pre>
+<p>Because you specified a null action on the right with the semicolon, the scanner does nothing but print the original input text with every occurrence of this regular expression removed, that is, without any occurrence of the string orange at all. </p>
+<a name="lex-8"></a><h3 class="sol">Operators </h3>
+<p>Unlike <tt>orange</tt>, most expressions cannot be specified so easily. The expression itself might be too long, or, more commonly, the class of desired expressions is too large; it might, in fact, be infinite. <a name="lex-ix128"></a>
+</p>
+<p>Using <kbd>lex</kbd> operators -- summarized in <a href="https://docs.oracle.com/cd/E19504-01/802-5880/6i9k05dgk/index.html#lex-36741">Table 2-1</a> -- you can form regular expressions for any expression of a certain class. The <tt>+</tt> operator, for instance, means one or more occurrences of the preceding expression, the <tt>?</tt> means 0 or 1 occurrences of the preceding expression (which is equivalent to saying that the preceding expression is optional), and the <tt>*</tt> means 0 or more occurrences of the preceding expression.  So <tt>m+</tt> is a regular expression that matches any string of <tt>m</tt>s: </p>
+<a name=""></a><pre>mmm 
+m 
+mmmmm </pre>
+<p>and <tt>7*</tt> is a regular expression that matches any string of zero or more <tt>7</tt>s: </p>
+<a name=""></a><pre>77 
+77777 
+
+777</pre>
+<p>The empty third line matches because it has no 7s in it at all. </p>
+<p>The <tt>|</tt> operator indicates alternation, so that <tt>ab|cd</tt> matches either <tt>ab</tt> or <tt>cd</tt>. The operators <tt>{} </tt> specify repetition, so that <tt>a{1,5}</tt> looks for 1 to 5 occurrences of <tt>a</tt>, and <tt>A(B{1,4})</tt> matches <tt>ABC</tt>, <tt>ABBC</tt>, <tt>ABBBC</tt>, and <tt>ABBBBC</tt> (notice the use of parentheses, <tt>()</tt>, as grouping symbols).</p>
+<p>Brackets, <tt>[]</tt>, indicate any one character from the string of characters specified between the brackets. Thus, <tt>[dgka]</tt> matches a single <tt>d</tt>, <tt>g</tt>, <tt>k</tt>, or <tt>a</tt>. The characters between brackets must be adjacent, without spaces or punctuation. </p>
+<p>The <tt>^</tt> operator, when it appears as the first character after the left bracket, indicates all characters in the standard set except those specified between the brackets. (Note that <tt>|</tt>, <tt>{</tt>,}<tt>}</tt> and <tt>^</tt> may serve other purposes as well.) </p>
+<p>Ranges within a standard alphabetic or numeric order (A through Z, a through z, 0 through 9) are specified with a hyphen. [a-z], for instance, indicates any lowercase letter.  </p>
+<a name=""></a><pre>[A-Za-z0-9*&amp;#]</pre>
+<p>This is a regular expression that matches any letter (whether upper or lowercase), any digit, an asterisk, an ampersand, or a <tt>#</tt>. </p>
+<p>Given the following input text, the lexical analyzer with the previous specification in one of its rules will recognize <tt>*</tt>, <tt>&amp;</tt>, <tt>r</tt>, and <tt>#</tt>, perform on each recognition whatever action the rule specifies (we have not indicated an action here), and print the rest of the text as it stands: </p>
+<a name=""></a><pre>$$$$?? ????!!!*$$ $$$$$$&amp;+====r~~# (( </pre>
+<p>To include the hyphen character in the class, have it appear as the first or last character in the brackets: <tt>[-A-Z]</tt> or <tt>[A-Z-]</tt>.</p>
+<p>The operators become especially powerful in combination. For example, the regular expression to recognize an identifier in many programming languages is: </p>
+<a name=""></a><pre>[a-zA-Z][0-9a-zA-Z]*</pre>
+<p>An identifier in these languages is defined to be a letter followed by zero or more letters or digits, and that is just what the regular expression says. The first pair of brackets matches any letter. The second, if it were not followed by a <tt>*</tt>, would match any digit or letter. </p>
+<p>The two pairs of brackets with their enclosed characters would then match any letter followed by a digit or a letter. But with the <tt>*</tt>, the example matches any letter followed by any number of letters or digits. In particular, it would recognize the following as identifiers: </p>
+<a name=""></a><pre>e 
+not 
+idenTIFIER 
+pH 
+EngineNo99 
+R2D2</pre>
+<p>Note that it would not recognize the following as identifiers because <tt>not_idenTIFIER</tt> has an embedded underscore; <tt>5times</tt> starts with a digit, not a letter; and <tt>$hello</tt> starts with a special character: </p>
+<a name=""></a><pre>not_idenTIFIER
+5times 
+$hello </pre>
+<p>A potential problem with operator characters is how to specify them as characters to look for in a search pattern. The previous example, for instance, does not recognize text with a <tt>*</tt> in it.  <kbd>lex</kbd> solves the problem in one of two ways: an operator character preceded by a backslash, or characters (except backslash) enclosed in double quotation marks, are taken literally, that is, as part of the text to be searched for. </p>
+<p>To use the backslash method to recognize, say, an <tt>*</tt> followed by any number of digits, you can use the pattern: </p>
+<a name=""></a><pre>\*[1-9]*</pre>
+<p>To recognize a <tt>\</tt> itself, we need two backslashes: <tt>\\</tt>. Similarly, <tt>"x\*x"</tt> matches <tt>x*x</tt>, and <tt>"y\"z"</tt> matches <tt>y"z</tt>. Other <kbd>lex</kbd> operators are noted as they arise; see Table 1-1:   <a name="lex-ix129"></a> <a name="lex-ix130"></a>
+</p>
+<a name="lex-36741"></a>Table 2-1  <kbd>lex</kbd> Operators<table width="100%" cellpadding="10" cellspacing="0" border="2">
+<caption>
+<b></b>
+</caption>
+<thead>
+<tr>
+<th scope="col" align="left" valign="bottom">
+<p>Expression&nbsp;</p>
+</th><th scope="col" align="left" valign="bottom">
+<p>Description &nbsp;</p>
+</th>
+</tr>
+
+</thead>
+<tbody>
+<tr>
+<td align="left" valign="top"><tt>\x</tt></td><td align="left" valign="top">
+<p>x, if x is a lex operator &nbsp;</p>
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top"><tt>"xy"</tt></td><td align="left" valign="top">
+<p>xy, even if x or y is a lex operator (except \) &nbsp;</p>
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top"><tt>[xy]</tt></td><td align="left" valign="top">
+<p>x or y &nbsp;</p>
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top"><tt>[x-z]</tt></td><td align="left" valign="top">
+<p>x, y, or z &nbsp;</p>
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top"><tt>[^x]</tt></td><td align="left" valign="top">
+<p>Any character but x &nbsp;</p>
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top"><tt>.</tt></td><td align="left" valign="top">
+<p>Any character but newline &nbsp;</p>
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top"><tt>^x</tt></td><td align="left" valign="top">
+<p>x at the beginning of a line &nbsp;</p>
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top"><tt>&lt;y&gt;x</tt></td><td align="left" valign="top">
+<p>x when lex is in start condition y &nbsp;</p>
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top"><tt>x$</tt></td><td align="left" valign="top">
+<p>x at the end of a line &nbsp;</p>
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top"><tt>x?</tt></td><td align="left" valign="top">
+<p>Optional x &nbsp;</p>
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top"><tt>x*</tt></td><td align="left" valign="top">
+<p>0, 1, 2, ...  instances of x &nbsp;</p>
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top"><tt>x+</tt></td><td align="left" valign="top">
+<p>1, 2, 3, ...  instances of x &nbsp;</p>
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top"><tt>x{m,n}</tt></td><td align="left" valign="top">
+<p>m through n occurrences of x&nbsp;</p>
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top"><tt>xx|yy</tt></td><td align="left" valign="top">
+<p>Either xx or yy &nbsp;</p>
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top"><tt>x |</tt></td><td align="left" valign="top">
+<p>The action on x is the action for the next rule &nbsp;</p>
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top"><tt>(x)</tt></td><td align="left" valign="top">
+<p>x &nbsp;</p>
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top"><tt>x/y</tt></td><td align="left" valign="top">
+<p>x but only if followed by y &nbsp;</p>
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top"><tt>{xx}</tt></td><td align="left" valign="top">
+<p>The translation of
+xx from the definitions section &nbsp;</p>
+</td>
+</tr>
+
+</tbody>
+</table>
+<p> 
+</p><a name="lex-9"></a><h3 class="sol">Actions </h3>
+<p>After the scanner recognizes a string matching the regular expression at the start of a rule, it looks to the right of the rule for the action to be performed. You supply the actions. </p>
+<p>Kinds of actions include recording the token type found and its value, if any; replacing one token with another; and counting the number of instances of a token or token type. You write these actions as program fragments in C. </p>
+<p>An action can consist of as many statements as are needed. You might want to change the text in some way or print a message noting that the text has been found. So, to recognize the expression <tt>Amelia Earhart</tt> and to note such recognition, apply the rule: </p>
+<a name=""></a><pre>"Amelia Earhart" printf("found Amelia"); </pre>
+<p>To replace lengthy medical terms in a text with their equivalent acronyms, a rule such as the following would work:   </p>
+<a name=""></a><pre>Electroencephalogram printf("EEG"); </pre>
+<p>To count the lines in a text, you recognize the ends of lines and increment a line counter. </p>
+<p>
+<kbd>lex</kbd> uses the standard C escape sequences, including <tt>\n</tt> for newline. So, to count lines you might have the following syntax, where <tt>lineno</tt>, like other C variables, is declared in the <a href="https://docs.oracle.com/cd/E19504-01/802-5880/6i9k05dgk/index.html#lex-65296">"Definitions "</a> section. </p>
+<a name=""></a><pre>\n	 lineno++; </pre>
+<p>Input is ignored when the C language null statement, a colon <tt>;</tt>, is specified. So the following rule causes blanks, tabs, and new-lines to be ignored: </p>
+<a name=""></a><pre>[ \t\n] ; </pre>
+<p>The alternation operator <tt>|</tt> can also be used to indicate that the action for a rule is the action for the next rule. The previous example could have been written with the same result:  </p>
+<a name=""></a><pre>" "	| 
+\t
+\n ;</pre>
+<p>The scanner stores text that matches an expression in a character array called <tt>yytext[]</tt>. You can print or manipulate the contents of this array as you like. In fact, <kbd>lex</kbd> provides a macro called <code>ECHO</code> that is equivalent to <tt>printf  ("%s", yytext)</tt>. <a name="lex-ix131"></a>
+</p>
+<p>When your action consists of a long C statement, or two or more C statements,  you might write it on several lines. To inform lex that the action is for one rule only,  enclose the C code in braces. </p>
+<p>For example, to count the total number of all digit strings in an input text, print the running total of the number of digit strings, and print out each one as soon as it is found, your <kbd>lex</kbd> code might be: </p>
+<a name=""></a><pre>\+?[1-9]+						{ digstrngcount++; 
+					            	printf("%d",digstrngcount); 
+					            	printf("%s", yytext); }</pre>
+<p>This specification matches digit strings whether or not they are preceded by a plus sign because the <tt>?</tt> indicates that the preceding plus sign is optional. In addition, it catches negative digit strings because that portion following the minus sign matches the specification. </p>
+<a name="lex-42143"></a><h2 class="sol"> Advanced <kbd>lex</kbd> Features </h2>
+<p>You can process input text riddled with complicated patterns by using a suite of features provided by <kbd>lex</kbd>. These include rules that decide which specification is relevant when more than one seems so at first, functions that transform one matching pattern into another, and the use of definitions and subroutines. </p>
+<p>Here is an example that draws together several of the points already covered: </p>
+<a name=""></a><pre>%% 
+-[0-9]+		   printf("negative integer"); 
+\+?[0-9]+ 	 printf("positive integer"); 
+-0.[0-9]+	 	printf("negative fraction, no whole number part");
+rail[ \t]+road			printf("railroad is one word"); 
+crook		    	printf("Here's a crook"); 
+function		  subprogcount++; 
+G[a-zA-Z]*		{ printf("may have a G word here:%s", yytext); 
+   		              			Gstringcount++; }</pre>
+<p>The first three rules recognize negative integers, positive integers, and negative fractions between 0 and -1. The terminating + in each specification ensures that one or more digits compose the number in question. </p>
+<p>Each of the following rules recognizes a specific pattern:</p>
+<a name=""></a><ul>
+<li>
+<p>The specification for railroad matches cases where one or more blanks intervene between the two syllables of the word. In the cases of railroad and crook, synonyms could have been printed rather than the messages. </p>
+
+</li>
+</ul>
+<a name=""></a><ul>
+<li>
+<p>The rule recognizing a function increments a counter. </p>
+
+<p>This rule illustrates several points: </p>
+
+<a name=""></a>
+<ul>
+<li>
+<p>The braces specify an action sequence that extends over several lines. </p>
+
+</li>
+</ul>
+
+<a name=""></a>
+<ul>
+<li>
+<p>The action uses the lex array <tt>yytext[]</tt>, which stores the recognized character string. </p>
+
+</li>
+</ul>
+
+<a name=""></a>
+<ul>
+<li>
+<p>The specification uses the * to indicate that zero or more letters can follow the G. </p>
+
+</li>
+</ul>
+
+</li>
+</ul>
+<a name="lex-10"></a><h3 class="sol">Some Special Features </h3>
+<p>Besides storing the matched input text in yytext[], the scanner automatically counts the number of characters in a match and stores it in the variable <tt>yyleng</tt>. You can use this variable to refer to any specific character just placed in the array <tt>yytext[]</tt>. </p>
+<p>Remember that C language array indexes start with 0, so to print the third digit (if there is one) in a just-recognized integer, you might enter: </p>
+<a name=""></a><pre>[1-9]+				{if (yyleng &gt; 2) 
+			         	printf("%c", yytext[2]); 
+            } </pre>
+<p>
+<kbd>lex</kbd> follows a number of high-level rules to resolve ambiguities that might arise from the set of rules that you write. In the following lexical analyzer example, the ``reserved word'' end could match the second rule as well as the eighth, the one for identifiers: </p>
+<a name=""></a><pre>begin						 return(BEGIN); 
+end					   	return(END); 
+while			  		return(WHILE); 
+if			       return(IF); 
+package					return(PACKAGE); 
+reverse					return(REVERSE); 
+loop				    return(LOOP); 
+[a-zA-Z][a-zA-Z0-9]*  { tokval = put_in_tabl();
+                         return(IDENTIFIER); }
+[0-9]+   { tokval = put_in_tabl();
+             return(INTEGER); }
+\+				   { tokval = PLUS;
+            return(ARITHOP); } 
+\-       { tokval = MINUS;
+            return(ARITHOP); }
+&gt;	       { tokval = GREATER;
+            return(RELOP); } 
+&gt;=		  			{ tokval = GREATEREQL;
+            return(RELOP); } </pre>
+<p>
+<kbd>lex</kbd> follows the rule that, where there is a match with two or more rules in a specification, the first rule is the one whose action is executed. Placing the rule for end and the other reserved words before the rule for identifiers ensures that the reserved words are recognized. <a name="lex-ix132"></a>
+</p>
+<p>Another potential problem arises from cases where one pattern you are searching for is the prefix of another. For instance, the last two rules in the lexical analyzer example above are designed to recognize <tt>&gt;</tt> and <tt>&gt;=</tt>. </p>
+<p>
+<kbd>lex</kbd> follows the rule that it matches the longest character string possible and executes the rule for that string. If the text has the string <tt>&gt;=</tt> at some point, the scanner recognizes the <tt>&gt;=</tt> and acts accordingly, instead of stopping at the <tt>&gt;</tt> and executing the <tt>&gt;</tt> rule. This rule also distinguishes <tt>+</tt> from <tt>++</tt> in a C program. <a name="lex-ix133"></a>
+</p>
+<p>When the analyzer must read characters beyond the string you are seeking, use trailing context. The classic example is the <tt>DO</tt> statement in FORTRAN. In the following <kbd><b>DO()</b></kbd> statement, the first 1 looks like the initial value of the index <tt>k</tt> until the first comma is read: </p>
+<a name=""></a><pre>DO 50 k = 1 , 20, 1 </pre>
+<p>Until then, this looks like the assignment statement: </p>
+<a name=""></a><pre>DO50k = 1 </pre>
+<p>Remember that FORTRAN ignores all blanks. Use the slash, <tt>/</tt>, to signify that what follows is trailing context, something not to be stored in <tt>yytext[]</tt>, because the slash is not part of the pattern itself. </p>
+<p>The rule to recognize the FORTRAN <tt>DO</tt> statement could be: </p>
+<a name=""></a><pre>DO/([ ]*[0-9]+[ ]*[a-zA-Z0-9]+=[a-zA-Z0-9]+,) { 
+	       printf("found DO");
+        }</pre>
+<p>While different versions of FORTRAN limit the identifier size, here the index name, this rule simplifies the example by accepting an index name of any length. See the <a href="https://docs.oracle.com/cd/E19504-01/802-5880/6i9k05dgk/index.html#lex-71437">"Start Conditions "</a> section for a discussion of a similar handling of prior context. </p>
+<p>
+<kbd>lex</kbd> uses the <tt>$</tt> symbol as an operator to mark a special trailing context -- the end of a line. An example would be a rule to ignore all blanks and tabs at the end of a line: </p>
+<a name=""></a><pre>[ \t]+$ ; </pre>
+<p>The previous example could also be written as: </p>
+<a name=""></a><pre>[ \t]+/\n ; </pre>
+<p>To match a pattern only when it starts a line or a file, use the <tt>^</tt> operator. Suppose a text-formatting program requires that you not start a line with a blank. You could check input to the program with the following rule: </p>
+<a name=""></a><pre>^[ ]		  printf("error: remove leading blank"); </pre>
+<p>Notice the difference in meaning when the <tt>^</tt> operator appears inside the left bracket.</p>
+<a name="lex-11"></a><h3 class="sol">
+<kbd>lex</kbd> Routines </h3>
+<p>The following macros enable you to perform special actions. <a name="lex-ix134"></a>
+</p>
+<a name=""></a><ul>
+<li>
+<p>
+<code>input()</code> reads another character</p>
+
+</li>
+</ul>
+<a name=""></a><ul>
+<li>
+<p>
+<code>unput()</code> puts a character back to be read again a moment later</p>
+
+</li>
+</ul>
+<a name=""></a><ul>
+<li>
+<p>
+<code>output()</code> writes a character on an output device  </p>
+
+</li>
+</ul>
+<p>One way to ignore all characters between two special characters, such as between a pair of double quotation marks, is to use <code>input()</code> like this: </p>
+<a name=""></a><pre>\"		    while (input() != '"'); </pre>
+<p>After the first double quotation mark, the scanner reads all subsequent characters, and does not look for a match, until it reads the second double quotation mark. (See the further examples of <code>input()</code> and <code>unput(c)</code> usage in the <a href="https://docs.oracle.com/cd/E19504-01/802-5880/6i9k05dgk/index.html#lex-11678">"User Routines "</a> section.) </p>
+<p>For special I/O needs that are not covered by these default macros, such as writing to several files, use standard I/O routines in C to rewrite the macro functions. <a name="lex-ix135"></a>
+</p>
+<p>These routines, however, must be modified consistently. In particular, the character set used must be consistent in all routines, and a value of 0 returned by <code>input()</code> must mean end of file. The relationship between <code>input()</code> and <code>unput(c)</code> must be maintained or the <kbd>lex</kbd> lookahead will not work.  </p>
+<p>If you do provide your own <code>input()</code>, <code>output(c)</code>, or <code>unput(c)</code>, write a <tt>#undef input</tt> and so on in your definitions section first: </p>
+<a name=""></a><pre>#undef input
+#undef output
+  . . .
+#define input() ...  etc.
+more declarations 
+  . . .</pre>
+<p>Your new routines will replace the standard ones. See the <a href="https://docs.oracle.com/cd/E19504-01/802-5880/6i9k05dgk/index.html#lex-65296">"Definitions "</a> section for further details. </p>
+<p>A <kbd>lex</kbd> library routine that you can redefine is <kbd><b>yywrap()</b></kbd>, which is called whenever the scanner reaches the end of file. If <kbd><b>yywrap()</b></kbd> returns 1, the scanner continues with normal wrapup on the end of input. To arrange for more input to arrive from a new source, redefine <kbd><b>yywrap()</b></kbd> to return 0 when more processing is required. The default <kbd><b>yywrap()</b></kbd> always returns 1. </p>
+<p>Note that it is not possible to write a normal rule that recognizes end of file; the only access to that condition is through <kbd><b>yywrap()</b></kbd>. Unless a private version of input() is supplied, a file containing nulls cannot be handled because a value of 0 returned by input() is taken to be end of file. <a name="lex-ix136"></a>
+</p>
+<p>lex routines that let you handle sequences of characters to be processed in more than one way include yymore(), yyless(n), and REJECT. Recall that the text that matches a given specification is stored in the array yytext[]. In general, once the action is performed for the specification, the characters in yytext[] are overwritten with succeeding characters in the input stream to form the next match. </p>
+<p>The function yymore(), by contrast, ensures that the succeeding characters recognized are appended to those already in yytext[]. This lets you do things sequentially, such as when one string of characters is significant and a longer one that includes the first is significant as well. </p>
+<p>Consider a language that defines a string as a set of characters between double quotation marks and specifies that to include a double quotation mark in a string, it must be preceded by a backslash. The regular expression matching that is somewhat confusing, so it might be preferable to write: </p>
+<a name=""></a><pre>\"[^"]* { 
+     if (yytext[yyleng-2] == '\\') 
+         yymore(); 
+     else
+         ... normal processing
+     }</pre>
+<p>When faced with the string <tt>"abc\"def"</tt>, the scanner first matches the characters <tt>"abc\</tt>. Then the call to <kbd><b>yymore()</b></kbd> causes the next part of the string <tt>"def</tt> to be tacked on the end. The double quotation mark terminating the string is picked up in the code labeled ``normal processing.'' </p>
+<p>With the function <tt>yyless(n)</tt> you can specify the number of matched characters on which an action is to be performed: only the first <tt>n</tt> characters of the expression are retained in <tt>yytext[]</tt>. Subsequent processing resumes at the <tt>nth + 1</tt> character. </p>
+<p>Suppose you are deciphering code, and working with only half the characters in a sequence that ends with a certain one, say an upper or lowercase Z. You could write: </p>
+<a name=""></a><pre>[a-yA-Y]+[Zz] { yyless(yyleng/2); 
+                	...  process first half of string
+                 ...
+                }</pre>
+<p>Finally, with the <tt>REJECT</tt> function,  you can more easily process strings of characters even when they overlap or contain one another as parts. <tt>REJECT</tt> does this by immediately jumping to the next rule and its specification without changing the contents of <tt>yytext[]</tt>. To count the number of occurrences both of the regular expression <tt>snapdragon</tt> and of its subexpression <tt>dragon</tt> in an input text, the following works: </p>
+<a name=""></a><pre>snapdragon				{countflowers++; REJECT;} 
+dragon			     	countmonsters++;</pre>
+<p>As an example of one pattern overlapping another, the following counts the number of occurrences of the expressions <tt>comedian</tt> and <tt>diana</tt>, even where the input text has sequences such as <tt>comediana</tt>: </p>
+<a name=""></a><pre>comedian				{comiccount++; REJECT;} 
+diana	      	princesscount++; </pre>
+<p>The actions here can be considerably more complicated than incrementing a counter. In all cases, you declare the counters and other necessary variables in the definitions section at the beginning of the <kbd>lex</kbd> specification. <a name="lex-ix137"></a>
+</p>
+<a name="lex-65296"></a><h3 class="sol">Definitions </h3>
+<p>The <kbd>lex</kbd> definitions section can contain any of several classes of items. The most critical are external definitions, preprocessor statements like <tt>#include</tt>, and abbreviations. For legal <kbd>lex</kbd> source this section is optional, but in most cases some of these items are necessary. Preprocessor statements and C source code appear between a line of the form <tt>%{</tt> and one of the form <tt>%}</tt>. <a name="lex-ix138"></a>
+</p>
+<p>All lines between these delimiters -- including those that begin with white space -- are copied to <kbd>lex.yy.c</kbd> immediately before the definition of <kbd><b>yylex()</b></kbd>.  (Lines in the definition section that are not enclosed by the delimiters are copied to the same place provided they begin with white space.) </p>
+<p>The definitions section is where you usually place C definitions of objects accessed by actions in the rules section or by routines with external linkage. </p>
+<p>For example, when using <kbd>lex</kbd> with <kbd>yacc</kbd>, which generates parsers that call a lexical analyzer, include the file <kbd>y.tab.h</kbd>, which can contain <tt>#define</tt>s for token names: <a name="lex-ix139"></a> <a name="lex-ix140"></a>
+</p>
+<a name=""></a><pre>%{ 
+#include "y.tab.h"
+extern int tokval; 
+int lineno;
+%} </pre>
+<p>After the <tt>%}</tt> that ends your <tt>#include</tt>s and declarations,  place your abbreviations for regular expressions in the rules section. The abbreviation appears on the left of the line and, separated by one or more spaces, its definition or translation appears on the right. </p>
+<p>When you later use abbreviations in your rules, be sure to enclose them within braces. Abbreviations avoid repetition in writing your specifications and make them easier to read. </p>
+<p>As an example, reconsider the <kbd>lex</kbd> source reviewed in the section <a href="https://docs.oracle.com/cd/E19504-01/802-5880/6i9k05dgk/index.html#lex-42143">" Advanced <kbd>lex</kbd> Features "</a>. Using definitions simplifies later reference to digits, letters, and blanks. </p>
+<p>This is especially true when the specifications appear several times:   <a name="lex-ix141"></a> <a name="lex-ix142"></a>
+</p>
+<a name=""></a><pre>D		             		[0-9]
+L		             		[a-zA-Z]
+B		             		[ \t]+
+%%
+-{D}+			          printf("negative integer");
+\+?{D}+		    	   	printf("positive integer");
+-0.{D}+ 	         printf("negative fraction"); 
+G{L}*		    	     	printf("may have a G word
+                          here"); 
+rail{B}road			   	printf("railroad is one word");
+crook		         		printf("criminal"); 
+ ...
+ ...</pre>
+<a name="lex-71437"></a><h3 class="sol">Start Conditions </h3>
+<p>Start conditions provide greater sensitivity to prior context than is afforded by the ^ operator alone. You might want to apply different rules to an expression depending on a prior context that is more complex than the end of a line or the start of a file. <a name="lex-ix143"></a>
+</p>
+<p>In this situation you could set a flag to mark the change in context that is the condition for the application of a rule, then write code to test the flag. Alternatively, you could define for lex the different ``start conditions'' under which it is to apply each rule. </p>
+<p>Consider this problem: </p>
+<a name=""></a><ul>
+<li>
+<p>Copy the input to the output, except change the word <tt>magic</tt> to the word <tt>first</tt> on every line that begins with the letter <tt>a</tt>.</p>
+
+</li>
+</ul>
+<a name=""></a><ul>
+<li>
+<p>Change <tt>magic</tt> to <tt>second</tt> on every line that begins with <tt>b</tt>.</p>
+
+</li>
+</ul>
+<a name=""></a><ul>
+<li>
+<p>Change <tt>magic</tt> to <tt>third</tt> on every line that begins with <tt>c</tt>. Here is how the problem might be handled with a flag. </p>
+
+<p>Recall that <tt>ECHO</tt> is a <kbd>lex</kbd> macro equivalent to <tt>printf("%s", yytext)</tt>: </p>
+
+<a name=""></a>
+<pre>int flag 
+%% 
+^a {flag = 'a'; ECHO;} 
+^b {flag = 'b'; ECHO;} 
+^c {flag = 'c'; ECHO;} 
+\n {flag = 0; ECHO;} 
+magic { 
+switch (flag) 
+     	{ 
+          		case 'a': printf("first"); break; 
+          		case 'b': printf("second"); break; 
+          		case 'c': printf("third"); break; 
+          		default: ECHO; break; 
+     	} 
+} </pre>
+
+</li>
+</ul>
+<p>To handle the same problem with start conditions, each start condition must be introduced to <kbd>lex</kbd> in the definitions section with a line, such as the following one, where the conditions can be named in any order: </p>
+<a name=""></a><pre>%Start name1 name2 ...  </pre>
+<p>The word <tt>Start</tt> can be abbreviated to <tt>S</tt> or <tt>s</tt>. The conditions are referenced at the head of a rule with <tt>&lt;&gt;</tt> brackets. So the following is a rule that is recognized only when the scanner is in start condition <tt>name1</tt>: </p>
+<a name=""></a><pre>&lt;name1&gt;expression </pre>
+<p>To enter a start condition, execute the action following statement: </p>
+<a name=""></a><pre>BEGIN name1; </pre>
+<p>The above statement changes the start condition to <tt>name1</tt>. To resume the normal state, use the following: </p>
+<a name=""></a><pre>BEGIN 0;</pre>
+<p>This resets the initial condition of the scanner. </p>
+<p>A rule can be active in several start conditions. For example, the following is a legal prefix: </p>
+<a name=""></a><pre>&lt;name1,name2,name3&gt; </pre>
+<p>Any rule not beginning with the <tt>&lt;&gt;</tt> prefix operators is always active. </p>
+<p>The example can be written with start conditions as follows:  <a name="lex-ix144"></a> <a name="lex-ix145"></a>
+</p>
+<a name=""></a><pre>%Start AA BB CC 
+%% 
+^a			{ECHO; BEGIN AA;} 
+^b			{ECHO; BEGIN BB;} 
+^c			{ECHO; BEGIN CC;} 
+\n			{ECHO; BEGIN 0;} 
+&lt;AA&gt;magic			printf("first"); 
+&lt;BB&gt;magic			printf("second"); 
+&lt;CC&gt;magic			printf("third"); </pre>
+<a name="lex-11678"></a><h3 class="sol">User Routines </h3>
+<a name="lex-ix146"></a><p>You can use your <kbd>lex</kbd> routines in the same ways you use routines in other programming languages. Action code used for several rules can be written once and called when needed. As with definitions, this simplifies program writing and reading. </p>
+<p>The <kbd><b>put_in_tabl()</b></kbd> function, discussed in the <a href="https://docs.oracle.com/cd/E19504-01/802-5880/6i9k05dgo/index.html">"Using <kbd>lex</kbd> and <kbd>yacc</kbd> Together"</a> section, fits well in the user routines section of a <kbd>lex</kbd> specification. </p>
+<p>Another reason to place a routine in this section is to highlight some code of interest or to simplify the rules section, even if the code is to be used for one rule only. As an example, consider the following routine to ignore comments in a language like C where comments occur between <tt>/*</tt> and <tt>*/</tt>: </p>
+<a name=""></a><pre>%{ 
+static skipcmnts(); 
+%} 
+%% 
+"/*"							skipcmnts(); 
+ ...
+ ...				/* rest of rules */
+%% 
+static 
+skipcmnts() 
+{ 
+      	for(;;) 
+      	{ 
+          		while (input() != '*') 
+               			; 
+         
+          		if (input() != '/') 
+             			unput(yytext[yyleng-1]) 
+         	 	else return; 
+      	} 
+}</pre>
+<p>There are three points of interest in this example. </p>
+<a name=""></a><ul>
+<li>
+<p>First, the <code>unput(c)</code> macro puts back the last character that was read to avoid missing the final <tt>/</tt> if the comment ends unusually with a <tt>**/</tt>. </p>
+
+<p>In this case,  after the scanner reads an <tt>*</tt>, it finds that the next character is not the terminal <tt>/</tt> and it continues reading. </p>
+
+</li>
+</ul>
+<a name=""></a><ul>
+<li>
+<p>Second, the expression <tt>yytext[yyleng-1]</tt> picks the last character read. </p>
+
+</li>
+</ul>
+<a name=""></a><ul>
+<li>
+<p>Third, this routine assumes that the comments are not nested, as is the case with the C language.   <a name="lex-ix147"></a> <a name="lex-ix148"></a>
+</p>
+
+</li>
+</ul>
+<a name="6i9k05dgm"></a><h1 class="sol">
+<kbd>C++</kbd> Mangled Symbols</h1>
+<a name="lex-ix149"></a><a name="lex-ix150"></a><a name="lex-ix151"></a><p>If the function name is a <kbd>C++</kbd> mangled symbol, <kbd>lex</kbd> prints its demangled format. All mangled <kbd>C++</kbd> symbols are bracketed by <tt>[]</tt> following the demangled symbol. For regular mangled <kbd>C++</kbd> function names (including member and non-member functions), the function prototype is used as its demangled format. </p>
+<p>For example,</p>
+<a name=""></a><pre>	_ct_13Iostream_initFv</pre>
+<p>is printed as:</p>
+<a name=""></a><pre>	Iostream_init::Iostream_init()</pre>
+<p>C++ static constructors and destructors are demangled and printed in the following format:</p>
+<a name=""></a><pre>	static constructor function for </pre>
+<p>or</p>
+<a name=""></a><pre>	static destructor function for </pre>
+<p>For example, </p>
+<a name=""></a><pre><kbd>	_std_stream_in_c_Fv</kbd> 
+</pre>
+<p>is demangled as </p>
+<a name=""></a><pre><kbd>	static destructor function for _stream_in_c</kbd>
+</pre>
+<p>For C++ virtual table symbols, its mangled name takes the following format:</p>
+<a name=""></a><pre>	_vtbl_class</pre>
+<a name=""></a><pre>	_vtbl_root_class_derived_class</pre>
+<p>In the <kbd>lex</kbd> output, the demangled names for the virtual table symbols are printed as</p>
+<a name=""></a><pre>	virtual table for class</pre>
+<a name=""></a><pre>	virtual table for class derived_class derived from root_class</pre>
+<p>For example, the demangled format of</p>
+<a name=""></a><pre>	_vtbl_7fstream</pre>
+<p>is</p>
+<a name=""></a><pre>	virtual table for fstreamH</pre>
+<p>And the demangled format of</p>
+<a name=""></a><pre>	_vtbl_3ios_18ostream_withassign</pre>
+<p>is</p>
+<a name=""></a><pre>virtual table for class ostream_withassign derived from ios</pre>
+<p>Some <kbd>C++</kbd> symbols are pointers to the virtual tables; their mangled names take the following format:</p>
+<a name=""></a><pre>	_ptbl_class_filename</pre>
+<a name=""></a><pre>	_ptbl_root_class_derived_class_filename</pre>
+<p>In the <kbd>lex</kbd> output, the demangled names for these symbols are printed as:</p>
+<a name=""></a><pre>pointer to virtual table for class in filename</pre>
+<a name=""></a><pre>pointer to virtual table for class derived class derived from
+ 	root_class in filename</pre>
+<p>For example, the demangled format of</p>
+<a name=""></a><pre>	_ptbl_3ios_stream_fstream_c</pre>
+<p>is</p>
+<a name=""></a><pre>	pointer to the virtual table for ios in _stream_fstream_c</pre>
+<p>and the demangled format of</p>
+<a name=""></a><pre>	_ptbl_3ios_11fstreambase_stream_fstream_c</pre>
+<p>is</p>
+<a name=""></a><pre>	_stream_fstream_c</pre>
+<a name=""></a><pre>	pointer to the virtual table for class fstreambase derived
+ 	from ios in _stream_fstream_c </pre>
+<a name="6i9k05dgo"></a><h1 class="sol">Using <kbd>lex</kbd> and <kbd>yacc</kbd> Together</h1>
+<p>If you work on a compiler project or develop a program to check the validity of an input language, you might want to use the system tool <kbd>yacc</kbd> (<a href="https://docs.oracle.com/cd/E19504-01/802-5880/6i9k05dgt/index.html">Chapter&nbsp;3, <kbd>yacc</kbd> -- A Compiler Compiler </a>). <kbd>yacc</kbd> generates parsers, programs that analyze input to insure that it is syntactically correct. <a name="lex-ix152"></a> <a name="lex-ix153"></a>
+</p>
+<p>
+<kbd>lex</kbd> and <kbd>yacc</kbd> often work well together for developing compilers.</p>
+<p>As noted, a program uses the lex-generated scanner by repeatedly calling the function <kbd><b>yylex()</b></kbd>. This name is convenient because a yacc-generated parser calls its lexical analyzer with this name. <a name="lex-ix154"></a>
+</p>
+<p>To use <kbd>lex</kbd> to create the lexical analyzer for a compiler, end each <kbd>lex</kbd> action with the statement return token, where token is a defined term with an integer value. </p>
+<p>The integer value of the token returned indicates to the parser what the lexical analyzer has found. The parser, called <kbd><b>yyparse()</b></kbd> by <kbd>yacc</kbd>, then resumes control and makes another call to the lexical analyzer to get another token. </p>
+<p>In a compiler, the different values of the token indicate what, if any, reserved word of the language has been found or whether an identifier, constant, arithmetic operator, or relational operator has been found. In the latter cases, the analyzer must also specify the exact value of the token: what the identifier is, whether the constant is, say, 9 or 888, whether the operator is <tt>+</tt> or <tt>*</tt>, and whether the relational operator is <tt>=</tt> or <tt>&gt;</tt>. </p>
+<p>Consider the following portion of <kbd>lex</kbd> source for a scanner that recognizes tokens in a "C-like" language: </p>
+<a name="lex-65974"></a>Table 2-2  Sample <kbd>lex</kbd> Source Recognizing Tokens<table width="100%" cellpadding="10" cellspacing="0" border="2">
+<caption>
+<b></b>
+</caption>
+<tbody>
+<tr>
+<td align="left" valign="top"><a name=""></a>
+<pre>begin				   	 		return(BEGIN); 
+end 			       		return(END); 
+while					     	return(WHILE); 
+if						       	return(IF); 
+package					 	 	return(PACKAGE); 
+reverse				 		 	return(REVERSE); 
+loop				    		 	return(LOOP); 
+[a-zA-Z][a-zA-Z0-9]*			
+             { tokval = put_in_tabl(); 
+           			          return(IDENTIFIER); } 
+[0-9]+						 { tokval = put_in_tabl(); 
+                        return(INTEGER); } 
+\+					     	{ tokval = PLUS;
+                        return(ARITHOP); } 
+\- 			      	{ tokval = MINUS;     		 			      
+                        return(ARITHOP); } 
+&gt;			      			{ tokval = GREATER;  							        
+                        return(RELOP); } 
+&gt;=				      	{ tokval = GREATEREQL; 			          
+                      		return(RELOP); } </pre>
+
+</td>
+</tr>
+
+</tbody>
+</table>
+<p> 
+</p><p>The tokens returned, and the values assigned to <tt>tokval</tt>, are integers. Good programming style suggests using informative terms such as <tt>BEGIN</tt>, <tt>END</tt>, and <tt>WHILE</tt>, to signify the integers the parser understands, rather than using the integers themselves. </p>
+<p>You establish the association by using <tt>#define</tt> statements in your C parser calling routine. For example:</p>
+<a name=""></a><pre>#define BEGIN 1 
+#define END 2 
+	... 
+#define PLUS 7 
+	...  </pre>
+<p>Then, to change the integer for some token type, change the <tt>#define</tt> statement in the parser rather than change every occurrence of the particular integer. </p>
+<p>To use <kbd>yacc</kbd> to generate your parser, insert the following statement in the definitions section of your <kbd>lex</kbd> source: </p>
+<a name=""></a><pre>#include "y.tab.h"</pre>
+<p>The file <kbd>y.tab.h</kbd>, which is created when <kbd>yacc</kbd> is invoked with the <kbd><b>-d</b></kbd> option, provides <tt>#define</tt> statements that associate token names such as <tt>BEGIN</tt> and <tt>END</tt> with the integers of significance to the generated parser. </p>
+<p>To indicate the reserved words in <a href="https://docs.oracle.com/cd/E19504-01/802-5880/6i9k05dgo/index.html#lex-65974">Table 2-2</a>, the returned integer values suffice. For the other token types, the integer value is stored in the variable tokval. </p>
+<p>This variable is globally defined so that the parser and the lexical analyzer can access it. yacc provides the variable yylval for the same purpose. </p>
+<p>Note that <a href="https://docs.oracle.com/cd/E19504-01/802-5880/6i9k05dgo/index.html#lex-65974">Table 2-2</a> shows two ways to assign a value to tokval. </p>
+<a name=""></a><ul>
+<li>
+<p>First, a function <kbd><b>put_in_tabl()</b></kbd> places the name and type of the identifier or constant in a symbol table so that the compiler can refer to it. </p>
+
+<p>More to the present point, <kbd><b>put_in_tabl()</b></kbd> assigns a type value to <tt>tokval</tt> so that the parser can use the information immediately to determine the syntactic correctness of the input text. The function <kbd><b>put_in_tabl()</b></kbd> is a routine that the compiler writer might place in the user routines section of the parser. </p>
+
+</li>
+</ul>
+<a name=""></a><ul>
+<li>
+<p>Second, in the last few actions of the example, <tt>tokval</tt> is assigned a specific integer indicating which arithmetic or relational operator the scanner recognized. </p>
+
+<p>If the variable <tt>PLUS</tt>, for instance, is associated with the integer 7 by means of the <tt>#define</tt> statement above, then when a <tt>+</tt> is recognized, the action assigns to tokval the value 7, which indicates the <tt>+</tt>. </p>
+
+<p>The scanner indicates the general class of operator by the value it returns to the parser (that is, the integer signified by <tt>ARITHOP</tt> or <tt>RELOP</tt>). </p>
+
+<p>When using <kbd>lex</kbd> with <kbd>yacc</kbd>, either can be run first. The following command generates a parser in the file <kbd>y.tab.c</kbd>: </p>
+
+<a name=""></a>
+<pre>$ <b><kbd>yacc d grammar.y</kbd></b>
+</pre>
+
+</li>
+</ul>
+<p>As noted, the <kbd><b>-d</b></kbd> option creates the file <kbd>y.tab.h</kbd>, which contains the <tt>#define</tt> statements that associate the yacc-assigned integer token values with the user-defined token names. Now you can invoke <kbd>lex</kbd> with the following command: </p>
+<a name=""></a><pre>$ <b><kbd>lex lex.l</kbd></b>
+</pre>
+<p>You can then compile and link the output files with the command: </p>
+<a name=""></a><pre>$ <b><kbd>cc lex.yy.c y.tab.c -ly -ll</kbd></b> 
+</pre>
+<p>The <kbd>yacc</kbd> library is loaded with the <kbd><b>-ly</b></kbd> option before the <kbd>lex</kbd> library with the <kbd><b>-ll</b></kbd> option to insure that the supplied <kbd><b>main()</b></kbd> calls the <kbd>yacc</kbd> parser.   <a name="lex-ix155"></a> <a name="lex-ix156"></a> <a name="lex-ix157"></a> <a name="lex-ix158"></a>
+</p>
+<p>Also, to use <kbd>yacc</kbd> with CC, especially when routines like <kbd><b>yyback()</b></kbd>, <kbd><b>yywrap()</b></kbd>, and <kbd><b>yylook()</b></kbd> in <kbd>.l</kbd> files are to be extern C functions, the command line must include the following. <a name="lex-ix159"></a> <a name="lex-ix160"></a> <a name="lex-ix161"></a>
+</p>
+<a name=""></a><pre>$ <b><kbd>CC -D__EXTERN_C__ ...</kbd></b> <var>filename</var>
+</pre>
+<a name="6i9k05dgr"></a><h1 class="sol">Automaton </h1>
+<p>Recognition of expressions in an input text is performed by a deterministic finite automaton generated by <kbd>lex</kbd>. The <kbd><b>-v</b></kbd> option prints a small set of statistics describing the finite automaton. (For a detailed account of finite automata and their importance for <kbd>lex</kbd>, see the Aho, Sethi, and Ullman text, Compilers: Principles, Techniques, and Tools, Addison-Wesley, 1986.) </p>
+<p>
+<kbd>lex</kbd> uses a table to represent its finite automaton. The maximum number of states that the finite automaton allows is set by default to 500. If your <kbd>lex</kbd> source has many rules or the rules are very complex, you can enlarge the default value by placing another entry in the definitions section of your <kbd>lex</kbd> source:  <a name="lex-ix162"></a>
+</p>
+<a name=""></a><pre>%n 700</pre>
+<p>This entry tells <kbd>lex</kbd> to make the table large enough to handle as many as 700 states. (The <kbd><b>-v</b></kbd> option indicates how large a number you should choose.) </p>
+<p>To increase the maximum number of state transitions beyond 2000, the designated parameter is <tt>a</tt>: </p>
+<a name=""></a><pre>%a 2800</pre>
+<p>Finally, see <tt>lex(1)</tt> for a list of all the options available with the <kbd>lex</kbd> command. </p>
+<a name="6i9k05dgs"></a><h1 class="sol">Summary of Source Format </h1>
+<a name="lex-ix163"></a><a name="lex-ix164"></a><p>The general form of a <kbd>lex</kbd> source file is: </p>
+<a name=""></a><pre>definitions
+%
+rules
+%
+user routines</pre>
+<p>The definitions section contains any combination of:</p>
+<a name=""></a><ul>
+<li>
+<p>Definitions of abbreviations in the form:</p>
+
+<a name=""></a>
+<pre><b>	name space translation</b>
+</pre>
+
+</li>
+</ul>
+<a name=""></a><ul>
+<li>
+<p>Included code in the form: </p>
+
+<a name=""></a>
+<pre>% {
+C code
+% }</pre>
+
+</li>
+</ul>
+<a name=""></a><ul>
+<li>
+<p>Start conditions in the form: </p>
+
+<a name=""></a>
+<pre>Start name1 name2 ...  </pre>
+
+</li>
+</ul>
+<a name=""></a><ul>
+<li>
+<p>Changes to internal array sizes in the form: </p>
+
+<a name=""></a>
+<pre>%x nnn </pre>
+
+</li>
+</ul>
+<p>where nnn is a decimal integer representing an array size and x selects the parameter. </p>
+<p>Changes to internal array sizes could be represented as follows: </p>
+<a name="lex-tbl-14"></a>Table 2-3  Internal Array Sizes<table width="100%" cellpadding="10" cellspacing="0" border="2">
+<caption>
+<b></b>
+</caption>
+<tbody>
+<tr>
+<td align="left" valign="top"><tt>p</tt></td><td align="left" valign="top">
+<p>Positions &nbsp;</p>
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top"><tt>n</tt></td><td align="left" valign="top">
+<p>States &nbsp;</p>
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top"><tt>e</tt></td><td align="left" valign="top">
+<p>Tree nodes &nbsp;</p>
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top"><tt>a</tt></td><td align="left" valign="top">
+<p>Transitions &nbsp;</p>
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top"><tt>k</tt></td><td align="left" valign="top">
+<p>Packed character classes &nbsp;</p>
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top"><tt>o</tt></td><td align="left" valign="top">
+<p>Output array size &nbsp;</p>
+</td>
+</tr>
+
+</tbody>
+</table>
+<p> 
+</p><p>Lines in the rules section have the form:</p>
+<a name=""></a><pre><b>	expression	action</b>
+</pre>
+<p>where the action can be continued on succeeding lines by using braces to mark it. </p>
+<p>The lex operator characters are: </p>
+<a name=""></a><pre>" \ [] ^ - ? .  * | () $ / {} &lt;&gt; + </pre>
+<p>Important lex variables, functions, and macros are: </p>
+<a name="lex-tbl-15"></a>Table 2-4  <kbd>lex</kbd> Variables, Functions, and Macros<table width="100%" cellpadding="10" cellspacing="0" border="2">
+<caption>
+<b></b>
+</caption>
+<tbody>
+<tr>
+<td align="left" valign="top"><tt>yytext[]</tt></td><td align="left" valign="top">
+<p>array of char &nbsp;</p>
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top"><tt>yyleng</tt></td><td align="left" valign="top">
+<p>int &nbsp;</p>
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top"><tt>yylex()</tt></td><td align="left" valign="top">
+<p>function &nbsp;</p>
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top"><tt>yywrap()</tt></td><td align="left" valign="top">
+<p>function &nbsp;</p>
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top"><tt>yymore()</tt></td><td align="left" valign="top">
+<p>function &nbsp;</p>
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top"><tt>yyless(n)</tt></td><td align="left" valign="top">
+<p>function &nbsp;</p>
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top"><tt>REJECT</tt></td><td align="left" valign="top">
+<p>macro &nbsp;</p>
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top"><tt>ECHO</tt></td><td align="left" valign="top">
+<p>macro &nbsp;</p>
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top"><tt>input()</tt></td><td align="left" valign="top">
+<p>macro &nbsp;</p>
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top"><tt>unput(c)</tt></td><td align="left" valign="top">
+<p>macro &nbsp;</p>
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top"><tt>output(c)</tt></td><td align="left" valign="top">
+<p>macro &nbsp;</p>
+</td>
+</tr>
+
+</tbody>
+</table>
+<p> 
+</p><p>   
+<a name="lex-ix165"></a> <a name="lex-ix166"></a> <a name="lex-ix167"></a>
+</p>
+</div><div class="d8 d8v1" style="margin: 10px;"><div class="d8w1"><div class="d8w2"><div class="d8w3"><div class="d8w4"><ul><li class="d8left"><a href="https://docs.oracle.com/cd/E19504-01/802-5880/6i9k05dga/index.html"><em>Previous</em>: Chapter 1  Tracing Program Execution With the TNF Utilities    </a></li><li class="d8right"><a href="https://docs.oracle.com/cd/E19504-01/802-5880/6i9k05dgt/index.html"><em>Next</em>: Chapter 3 yacc -- A Compiler Compiler </a></li></ul></div></div></div></div></div><div class="a5 a5v0" id="a5">
+<ul>
+    <li class="copyright">© 2010, Oracle Corporation and/or its affiliates</li>
+</ul>
+</div>
+</div><div id="give-freely-root-kkkbiiikppgjdiebcabomlbidfodipjg" class="give-freely-root" data-extension-id="kkkbiiikppgjdiebcabomlbidfodipjg" data-extension-name="Substital: Add subtitles to videos and movies" style="display: block;"><template shadowrootmode="open"><style>
+  :host {
+    all: initial;
+  }
+
+  .gf-scroll-remove::-webkit-scrollbar {
+    border-radius-bottom-right: 15px;
+  }
+
+  button {
+    cursor: pointer;
+    transition: transform 0.1s ease;
+  }
+
+  button:active {
+    transform: scale(0.98);
+  }
+
+  .give-freely-close-button:hover {
+    opacity: 0.7;
+  }
+
+  input[type="radio"] {
+    margin-right: 8px;
+  }
+
+  hr {
+    border: none;
+    border-top: 1px solid #e5e5e5;
+    margin: 1em 0;
+  }
+
+  @media (max-width: 600px), (max-height: 480px) {
+    #give-freely-checkout-popup {
+      display: none !important;
+    }
+  }
+</style><div><div class="gf-app"></div></div></template></div><div id="footer-banner" style="display: inline-block;"><ul><li><div id="teconsent"></div></li><li><a id="adchoices" class="new-window" target="_blank" href="https://www.oracle.com/legal/privacy/marketing-cloud-data-cloud-privacy-policy.html#12">Ad Choices</a></li></ul></div><script type="text/javascript" src="./index_files/notice"></script></body></html>
