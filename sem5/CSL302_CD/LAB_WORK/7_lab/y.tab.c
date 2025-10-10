@@ -165,7 +165,7 @@ extern int yydebug;
 #if ! defined YYSTYPE && ! defined YYSTYPE_IS_DECLARED
 union YYSTYPE
 {
-#line 16 "assembly.y"
+#line 10 "assembly.y"
 
     char* str;
 
@@ -212,11 +212,12 @@ enum yysymbol_kind_t
   YYSYMBOL_program = 20,                   /* program  */
   YYSYMBOL_statements = 21,                /* statements  */
   YYSYMBOL_statement = 22,                 /* statement  */
-  YYSYMBOL_arithmetic = 23,                /* arithmetic  */
-  YYSYMBOL_FIRST_ARITH = 24,               /* FIRST_ARITH  */
-  YYSYMBOL_conditional = 25,               /* conditional  */
-  YYSYMBOL_memory = 26,                    /* memory  */
-  YYSYMBOL_halt = 27                       /* halt  */
+  YYSYMBOL_optional = 23,                  /* optional  */
+  YYSYMBOL_arithmetic = 24,                /* arithmetic  */
+  YYSYMBOL_FIRST_ARITH = 25,               /* FIRST_ARITH  */
+  YYSYMBOL_conditional = 26,               /* conditional  */
+  YYSYMBOL_memory = 27,                    /* memory  */
+  YYSYMBOL_halt = 28                       /* halt  */
 };
 typedef enum yysymbol_kind_t yysymbol_kind_t;
 
@@ -542,16 +543,16 @@ union yyalloc
 #endif /* !YYCOPY_NEEDED */
 
 /* YYFINAL -- State number of the termination state.  */
-#define YYFINAL  23
+#define YYFINAL  9
 /* YYLAST -- Last index in YYTABLE.  */
-#define YYLAST   40
+#define YYLAST   27
 
 /* YYNTOKENS -- Number of terminals.  */
 #define YYNTOKENS  19
 /* YYNNTS -- Number of nonterminals.  */
-#define YYNNTS  9
+#define YYNNTS  10
 /* YYNRULES -- Number of rules.  */
-#define YYNRULES  20
+#define YYNRULES  21
 /* YYNSTATES -- Number of states.  */
 #define YYNSTATES  34
 
@@ -604,9 +605,9 @@ static const yytype_int8 yytranslate[] =
 /* YYRLINE[YYN] -- Source line where rule number YYN was defined.  */
 static const yytype_int8 yyrline[] =
 {
-       0,    26,    26,    30,    31,    32,    36,    37,    38,    39,
-      43,    44,    48,    49,    50,    51,    52,    55,    59,    60,
-      64
+       0,    26,    26,    30,    31,    35,    36,    37,    38,    40,
+      42,    45,    49,    56,    57,    58,    59,    60,    63,    70,
+      74,    81
 };
 #endif
 
@@ -625,8 +626,8 @@ static const char *const yytname[] =
   "\"end of file\"", "error", "\"invalid token\"", "MOV", "ADD", "SUB",
   "MUL", "DIV", "LOAD", "STORE", "JMP", "CMP", "HALT", "LABEL", "REGISTER",
   "IMMEDIATE_NUMBER", "COMMA", "SEMI_COLON", "COLON", "$accept", "program",
-  "statements", "statement", "arithmetic", "FIRST_ARITH", "conditional",
-  "memory", "halt", YY_NULLPTR
+  "statements", "statement", "optional", "arithmetic", "FIRST_ARITH",
+  "conditional", "memory", "halt", YY_NULLPTR
 };
 
 static const char *
@@ -636,12 +637,12 @@ yysymbol_name (yysymbol_kind_t yysymbol)
 }
 #endif
 
-#define YYPACT_NINF (-7)
+#define YYPACT_NINF (-8)
 
 #define yypact_value_is_default(Yyn) \
   ((Yyn) == YYPACT_NINF)
 
-#define YYTABLE_NINF (-1)
+#define YYTABLE_NINF (-4)
 
 #define yytable_value_is_error(Yyn) \
   0
@@ -650,10 +651,10 @@ yysymbol_name (yysymbol_kind_t yysymbol)
    STATE-NUM.  */
 static const yytype_int8 yypact[] =
 {
-      -3,    -7,    -7,    -7,    -7,    -7,    -6,     5,    10,    -7,
-       6,    25,    -7,    -3,    -7,    12,    -7,    -7,    -7,    11,
-      13,    -7,     8,    -7,    -7,    14,    16,    17,    -7,     7,
-      -7,    -7,    -7,    -7
+      -3,    -8,    -7,    14,    -8,     0,    -2,    -8,    -8,    -8,
+      -8,    -8,    -8,    -8,    -8,    -8,     3,     4,     6,    -8,
+       7,    -8,    -8,     8,     9,    -8,    10,     5,    12,     1,
+      -8,    -8,    -8,    -8
 };
 
 /* YYDEFACT[STATE-NUM] -- Default reduction number in state STATE-NUM.
@@ -661,22 +662,22 @@ static const yytype_int8 yypact[] =
    means the default is an error.  */
 static const yytype_int8 yydefact[] =
 {
-       0,    12,    13,    14,    15,    16,     0,     0,     0,    20,
-       0,     0,     2,     3,     6,     0,     7,     8,     9,     0,
-       0,    17,     0,     1,     4,     0,     0,     0,     5,     0,
-      18,    19,    10,    11
+       9,    21,     0,     0,     2,     9,     0,     8,    10,     1,
+       4,    13,    14,    15,    16,    17,     0,     0,     0,     5,
+       0,     6,     7,     0,     0,    18,     0,     0,     0,     0,
+      19,    20,    11,    12
 };
 
 /* YYPGOTO[NTERM-NUM].  */
 static const yytype_int8 yypgoto[] =
 {
-      -7,    -7,    15,    18,    -7,    -7,    -7,    -7,    -7
+      -8,    -8,    17,    -8,    -8,    -8,    -8,    -8,    -8,    -8
 };
 
 /* YYDEFGOTO[NTERM-NUM].  */
 static const yytype_int8 yydefgoto[] =
 {
-       0,    11,    12,    13,    14,    15,    16,    17,    18
+       0,     3,     4,     5,     6,    19,    20,    21,    22,     7
 };
 
 /* YYTABLE[YYPACT[STATE-NUM]] -- What to do in state STATE-NUM.  If
@@ -684,46 +685,42 @@ static const yytype_int8 yydefgoto[] =
    number is the opposite.  If YYTABLE_NINF, syntax error.  */
 static const yytype_int8 yytable[] =
 {
-       1,     2,     3,     4,     5,     6,     7,     8,    19,     9,
-      10,     1,     2,     3,     4,     5,     6,     7,     8,    20,
-       9,    32,    33,    21,    22,    23,    25,    26,    24,    27,
-      29,    30,    31,     0,     0,     0,     0,     0,     0,     0,
-      28
+      -3,    11,    12,    13,    14,    15,    16,    17,    18,     1,
+       2,     8,     1,     2,     9,    32,    33,    23,    24,    25,
+      30,    26,    10,     0,    27,    28,    29,    31
 };
 
 static const yytype_int8 yycheck[] =
 {
-       3,     4,     5,     6,     7,     8,     9,    10,    14,    12,
-      13,     3,     4,     5,     6,     7,     8,     9,    10,    14,
-      12,    14,    15,    13,    18,     0,    14,    16,    13,    16,
-      16,    15,    15,    -1,    -1,    -1,    -1,    -1,    -1,    -1,
-      22
+       0,     3,     4,     5,     6,     7,     8,     9,    10,    12,
+      13,    18,    12,    13,     0,    14,    15,    14,    14,    13,
+      15,    14,     5,    -1,    16,    16,    16,    15
 };
 
 /* YYSTOS[STATE-NUM] -- The symbol kind of the accessing symbol of
    state STATE-NUM.  */
 static const yytype_int8 yystos[] =
 {
-       0,     3,     4,     5,     6,     7,     8,     9,    10,    12,
-      13,    20,    21,    22,    23,    24,    25,    26,    27,    14,
-      14,    13,    18,     0,    21,    14,    16,    16,    22,    16,
+       0,    12,    13,    20,    21,    22,    23,    28,    18,     0,
+      21,     3,     4,     5,     6,     7,     8,     9,    10,    24,
+      25,    26,    27,    14,    14,    13,    14,    16,    16,    16,
       15,    15,    14,    15
 };
 
 /* YYR1[RULE-NUM] -- Symbol kind of the left-hand side of rule RULE-NUM.  */
 static const yytype_int8 yyr1[] =
 {
-       0,    19,    20,    21,    21,    21,    22,    22,    22,    22,
-      23,    23,    24,    24,    24,    24,    24,    25,    26,    26,
-      27
+       0,    19,    20,    21,    21,    22,    22,    22,    22,    23,
+      23,    24,    24,    25,    25,    25,    25,    25,    26,    27,
+      27,    28
 };
 
 /* YYR2[RULE-NUM] -- Number of symbols on the right-hand side of rule RULE-NUM.  */
 static const yytype_int8 yyr2[] =
 {
-       0,     2,     1,     1,     2,     3,     1,     1,     1,     1,
-       4,     4,     1,     1,     1,     1,     1,     2,     4,     4,
-       1
+       0,     2,     1,     1,     2,     2,     2,     2,     1,     0,
+       2,     4,     4,     1,     1,     1,     1,     1,     2,     4,
+       4,     1
 };
 
 
@@ -1186,8 +1183,57 @@ yyreduce:
   YY_REDUCE_PRINT (yyn);
   switch (yyn)
     {
+  case 11: /* arithmetic: FIRST_ARITH REGISTER COMMA REGISTER  */
+#line 46 "assembly.y"
+        {
+		printf("ARITHMETIC STATEMENT called successfuly.\n");
+	}
+#line 1192 "y.tab.c"
+    break;
 
-#line 1191 "y.tab.c"
+  case 12: /* arithmetic: FIRST_ARITH REGISTER COMMA IMMEDIATE_NUMBER  */
+#line 50 "assembly.y"
+        {
+		printf("ARITHMETIC STATEMENT called successfuly.\n");
+	}
+#line 1200 "y.tab.c"
+    break;
+
+  case 18: /* conditional: JMP LABEL  */
+#line 64 "assembly.y"
+        {
+		printf("CONDITIONAL STATEMENT called successfuly.\n");
+	}
+#line 1208 "y.tab.c"
+    break;
+
+  case 19: /* memory: LOAD REGISTER COMMA IMMEDIATE_NUMBER  */
+#line 71 "assembly.y"
+        {
+		printf("MEMORY STATEMENT called successfuly.\n");
+	}
+#line 1216 "y.tab.c"
+    break;
+
+  case 20: /* memory: STORE REGISTER COMMA IMMEDIATE_NUMBER  */
+#line 75 "assembly.y"
+        {
+		printf("MEMORY STATEMENT called successfuly.\n");
+	}
+#line 1224 "y.tab.c"
+    break;
+
+  case 21: /* halt: HALT  */
+#line 82 "assembly.y"
+        {
+		printf("HALT encountered. Program execution stopped.\n");
+        	exit(0);
+	}
+#line 1233 "y.tab.c"
+    break;
+
+
+#line 1237 "y.tab.c"
 
       default: break;
     }
@@ -1380,7 +1426,7 @@ yyreturnlab:
   return yyresult;
 }
 
-#line 66 "assembly.y"
+#line 88 "assembly.y"
 
 
 int main() {
