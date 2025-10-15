@@ -1,0 +1,1257 @@
+Terminals unused in grammar
+
+    SWITCH
+    CASE
+    COLON
+
+
+Grammar
+
+    0 $accept: program $end
+
+    1 program: STMTS
+
+    2 STMTS: STMTS STMT
+    3      | STMT
+
+    4 BLOCK: LEFT_CURL_BRAC STMTS RIGHT_CURL_BRAC
+
+    5 STMT: declaration
+    6     | ASSIGNMENT_SENTENCE SEMICOLON
+    7     | IF_THEN
+    8     | IF_THEN_ELSE
+    9     | IF_THEN_ELIF
+   10     | WHILE_LOOP
+   11     | DO_WHILE_LOOP
+   12     | FOR_LOOP SEMICOLON
+
+   13 declaration: DATATYPE IDENTIFIER SEMICOLON
+   14            | DATATYPE IDENTIFIERS SEMICOLON
+
+   15 ASSIGNMENT_SENTENCE: IDENTIFIER EQUAL EXPRESSION
+
+   16 IDENTIFIERS: IDENTIFIERS COMMA IDENTIFIER
+   17            | IDENTIFIER COMMA IDENTIFIER
+
+   18 DATATYPE: INT
+   19         | FLOAT
+   20         | CHAR
+
+   21 EXPRESSION: EXPRESSION '+' EXPRESSION
+   22           | EXPRESSION '-' EXPRESSION
+   23           | EXPRESSION '*' EXPRESSION
+   24           | EXPRESSION '/' EXPRESSION
+   25           | EXPRESSION '%' EXPRESSION
+   26           | LEFT_BRAC EXPRESSION RIGHT_BRAC
+   27           | EXPRESSION NOT_EQUAL EXPRESSION
+   28           | EXPRESSION GRT_EQUAL EXPRESSION
+   29           | EXPRESSION LES_EQUAL EXPRESSION
+   30           | EXPRESSION GRT EXPRESSION
+   31           | EXPRESSION LES EXPRESSION
+   32           | IDENTIFIER
+
+   33 FOR_LOOP: FOR_WORD LEFT_BRAC EXPRESSION SEMICOLON EXPRESSION SEMICOLON EXPRESSION RIGHT_BRAC ASSIGNMENT_SENTENCE
+
+   34 IF_THEN: IF LEFT_BRAC EXPRESSION RIGHT_BRAC THEN BLOCK
+
+   35 IF_THEN_ELSE: IF LEFT_BRAC EXPRESSION RIGHT_BRAC THEN BLOCK ELSE BLOCK
+
+   36 IF_THEN_ELIF: IF LEFT_BRAC EXPRESSION RIGHT_BRAC THEN BLOCK ELIF BLOCK ELSE BLOCK
+
+   37 WHILE_LOOP: WHILE LEFT_BRAC EXPRESSION RIGHT_BRAC BLOCK
+
+   38 DO_WHILE_LOOP: DO BLOCK WHILE LEFT_BRAC EXPRESSION RIGHT_BRAC SEMICOLON
+
+
+Terminals, with rules where they appear
+
+    $end (0) 0
+    '%' (37) 25
+    '*' (42) 23
+    '+' (43) 21
+    '-' (45) 22
+    '/' (47) 24
+    error (256)
+    INT (258) 18
+    FLOAT (259) 19
+    CHAR (260) 20
+    FOR_WORD (261) 33
+    IF (262) 34 35 36
+    THEN (263) 34 35 36
+    ELSE (264) 35 36
+    ELIF (265) 36
+    WHILE (266) 37 38
+    DO (267) 38
+    IDENTIFIER <str> (268) 13 15 16 17 32
+    SEMICOLON (269) 6 12 13 14 33 38
+    COMMA (270) 16 17
+    EQUAL (271) 15
+    NOT_EQUAL (272) 27
+    GRT_EQUAL (273) 28
+    LES_EQUAL (274) 29
+    GRT (275) 30
+    LES (276) 31
+    LEFT_BRAC <str> (277) 26 33 34 35 36 37 38
+    RIGHT_BRAC <str> (278) 26 33 34 35 36 37 38
+    LEFT_CURL_BRAC <str> (279) 4
+    RIGHT_CURL_BRAC <str> (280) 4
+    SWITCH (281)
+    CASE (282)
+    COLON (283)
+
+
+Nonterminals, with rules where they appear
+
+    $accept (34)
+        on left: 0
+    program (35)
+        on left: 1
+        on right: 0
+    STMTS (36)
+        on left: 2 3
+        on right: 1 2 4
+    BLOCK (37)
+        on left: 4
+        on right: 34 35 36 37 38
+    STMT (38)
+        on left: 5 6 7 8 9 10 11 12
+        on right: 2 3
+    declaration (39)
+        on left: 13 14
+        on right: 5
+    ASSIGNMENT_SENTENCE (40)
+        on left: 15
+        on right: 6 33
+    IDENTIFIERS <str> (41)
+        on left: 16 17
+        on right: 14 16
+    DATATYPE <str> (42)
+        on left: 18 19 20
+        on right: 13 14
+    EXPRESSION <str> (43)
+        on left: 21 22 23 24 25 26 27 28 29 30 31 32
+        on right: 15 21 22 23 24 25 26 27 28 29 30 31 33 34 35 36 37 38
+    FOR_LOOP (44)
+        on left: 33
+        on right: 12
+    IF_THEN (45)
+        on left: 34
+        on right: 7
+    IF_THEN_ELSE (46)
+        on left: 35
+        on right: 8
+    IF_THEN_ELIF (47)
+        on left: 36
+        on right: 9
+    WHILE_LOOP (48)
+        on left: 37
+        on right: 10
+    DO_WHILE_LOOP (49)
+        on left: 38
+        on right: 11
+
+
+State 0
+
+    0 $accept: • program $end
+
+    INT         shift, and go to state 1
+    FLOAT       shift, and go to state 2
+    CHAR        shift, and go to state 3
+    FOR_WORD    shift, and go to state 4
+    IF          shift, and go to state 5
+    WHILE       shift, and go to state 6
+    DO          shift, and go to state 7
+    IDENTIFIER  shift, and go to state 8
+
+    program              go to state 9
+    STMTS                go to state 10
+    STMT                 go to state 11
+    declaration          go to state 12
+    ASSIGNMENT_SENTENCE  go to state 13
+    DATATYPE             go to state 14
+    FOR_LOOP             go to state 15
+    IF_THEN              go to state 16
+    IF_THEN_ELSE         go to state 17
+    IF_THEN_ELIF         go to state 18
+    WHILE_LOOP           go to state 19
+    DO_WHILE_LOOP        go to state 20
+
+
+State 1
+
+   18 DATATYPE: INT •
+
+    $default  reduce using rule 18 (DATATYPE)
+
+
+State 2
+
+   19 DATATYPE: FLOAT •
+
+    $default  reduce using rule 19 (DATATYPE)
+
+
+State 3
+
+   20 DATATYPE: CHAR •
+
+    $default  reduce using rule 20 (DATATYPE)
+
+
+State 4
+
+   33 FOR_LOOP: FOR_WORD • LEFT_BRAC EXPRESSION SEMICOLON EXPRESSION SEMICOLON EXPRESSION RIGHT_BRAC ASSIGNMENT_SENTENCE
+
+    LEFT_BRAC  shift, and go to state 21
+
+
+State 5
+
+   34 IF_THEN: IF • LEFT_BRAC EXPRESSION RIGHT_BRAC THEN BLOCK
+   35 IF_THEN_ELSE: IF • LEFT_BRAC EXPRESSION RIGHT_BRAC THEN BLOCK ELSE BLOCK
+   36 IF_THEN_ELIF: IF • LEFT_BRAC EXPRESSION RIGHT_BRAC THEN BLOCK ELIF BLOCK ELSE BLOCK
+
+    LEFT_BRAC  shift, and go to state 22
+
+
+State 6
+
+   37 WHILE_LOOP: WHILE • LEFT_BRAC EXPRESSION RIGHT_BRAC BLOCK
+
+    LEFT_BRAC  shift, and go to state 23
+
+
+State 7
+
+   38 DO_WHILE_LOOP: DO • BLOCK WHILE LEFT_BRAC EXPRESSION RIGHT_BRAC SEMICOLON
+
+    LEFT_CURL_BRAC  shift, and go to state 24
+
+    BLOCK  go to state 25
+
+
+State 8
+
+   15 ASSIGNMENT_SENTENCE: IDENTIFIER • EQUAL EXPRESSION
+
+    EQUAL  shift, and go to state 26
+
+
+State 9
+
+    0 $accept: program • $end
+
+    $end  shift, and go to state 27
+
+
+State 10
+
+    1 program: STMTS •
+    2 STMTS: STMTS • STMT
+
+    INT         shift, and go to state 1
+    FLOAT       shift, and go to state 2
+    CHAR        shift, and go to state 3
+    FOR_WORD    shift, and go to state 4
+    IF          shift, and go to state 5
+    WHILE       shift, and go to state 6
+    DO          shift, and go to state 7
+    IDENTIFIER  shift, and go to state 8
+
+    $default  reduce using rule 1 (program)
+
+    STMT                 go to state 28
+    declaration          go to state 12
+    ASSIGNMENT_SENTENCE  go to state 13
+    DATATYPE             go to state 14
+    FOR_LOOP             go to state 15
+    IF_THEN              go to state 16
+    IF_THEN_ELSE         go to state 17
+    IF_THEN_ELIF         go to state 18
+    WHILE_LOOP           go to state 19
+    DO_WHILE_LOOP        go to state 20
+
+
+State 11
+
+    3 STMTS: STMT •
+
+    $default  reduce using rule 3 (STMTS)
+
+
+State 12
+
+    5 STMT: declaration •
+
+    $default  reduce using rule 5 (STMT)
+
+
+State 13
+
+    6 STMT: ASSIGNMENT_SENTENCE • SEMICOLON
+
+    SEMICOLON  shift, and go to state 29
+
+
+State 14
+
+   13 declaration: DATATYPE • IDENTIFIER SEMICOLON
+   14            | DATATYPE • IDENTIFIERS SEMICOLON
+
+    IDENTIFIER  shift, and go to state 30
+
+    IDENTIFIERS  go to state 31
+
+
+State 15
+
+   12 STMT: FOR_LOOP • SEMICOLON
+
+    SEMICOLON  shift, and go to state 32
+
+
+State 16
+
+    7 STMT: IF_THEN •
+
+    $default  reduce using rule 7 (STMT)
+
+
+State 17
+
+    8 STMT: IF_THEN_ELSE •
+
+    $default  reduce using rule 8 (STMT)
+
+
+State 18
+
+    9 STMT: IF_THEN_ELIF •
+
+    $default  reduce using rule 9 (STMT)
+
+
+State 19
+
+   10 STMT: WHILE_LOOP •
+
+    $default  reduce using rule 10 (STMT)
+
+
+State 20
+
+   11 STMT: DO_WHILE_LOOP •
+
+    $default  reduce using rule 11 (STMT)
+
+
+State 21
+
+   33 FOR_LOOP: FOR_WORD LEFT_BRAC • EXPRESSION SEMICOLON EXPRESSION SEMICOLON EXPRESSION RIGHT_BRAC ASSIGNMENT_SENTENCE
+
+    IDENTIFIER  shift, and go to state 33
+    LEFT_BRAC   shift, and go to state 34
+
+    EXPRESSION  go to state 35
+
+
+State 22
+
+   34 IF_THEN: IF LEFT_BRAC • EXPRESSION RIGHT_BRAC THEN BLOCK
+   35 IF_THEN_ELSE: IF LEFT_BRAC • EXPRESSION RIGHT_BRAC THEN BLOCK ELSE BLOCK
+   36 IF_THEN_ELIF: IF LEFT_BRAC • EXPRESSION RIGHT_BRAC THEN BLOCK ELIF BLOCK ELSE BLOCK
+
+    IDENTIFIER  shift, and go to state 33
+    LEFT_BRAC   shift, and go to state 34
+
+    EXPRESSION  go to state 36
+
+
+State 23
+
+   37 WHILE_LOOP: WHILE LEFT_BRAC • EXPRESSION RIGHT_BRAC BLOCK
+
+    IDENTIFIER  shift, and go to state 33
+    LEFT_BRAC   shift, and go to state 34
+
+    EXPRESSION  go to state 37
+
+
+State 24
+
+    4 BLOCK: LEFT_CURL_BRAC • STMTS RIGHT_CURL_BRAC
+
+    INT         shift, and go to state 1
+    FLOAT       shift, and go to state 2
+    CHAR        shift, and go to state 3
+    FOR_WORD    shift, and go to state 4
+    IF          shift, and go to state 5
+    WHILE       shift, and go to state 6
+    DO          shift, and go to state 7
+    IDENTIFIER  shift, and go to state 8
+
+    STMTS                go to state 38
+    STMT                 go to state 11
+    declaration          go to state 12
+    ASSIGNMENT_SENTENCE  go to state 13
+    DATATYPE             go to state 14
+    FOR_LOOP             go to state 15
+    IF_THEN              go to state 16
+    IF_THEN_ELSE         go to state 17
+    IF_THEN_ELIF         go to state 18
+    WHILE_LOOP           go to state 19
+    DO_WHILE_LOOP        go to state 20
+
+
+State 25
+
+   38 DO_WHILE_LOOP: DO BLOCK • WHILE LEFT_BRAC EXPRESSION RIGHT_BRAC SEMICOLON
+
+    WHILE  shift, and go to state 39
+
+
+State 26
+
+   15 ASSIGNMENT_SENTENCE: IDENTIFIER EQUAL • EXPRESSION
+
+    IDENTIFIER  shift, and go to state 33
+    LEFT_BRAC   shift, and go to state 34
+
+    EXPRESSION  go to state 40
+
+
+State 27
+
+    0 $accept: program $end •
+
+    $default  accept
+
+
+State 28
+
+    2 STMTS: STMTS STMT •
+
+    $default  reduce using rule 2 (STMTS)
+
+
+State 29
+
+    6 STMT: ASSIGNMENT_SENTENCE SEMICOLON •
+
+    $default  reduce using rule 6 (STMT)
+
+
+State 30
+
+   13 declaration: DATATYPE IDENTIFIER • SEMICOLON
+   17 IDENTIFIERS: IDENTIFIER • COMMA IDENTIFIER
+
+    SEMICOLON  shift, and go to state 41
+    COMMA      shift, and go to state 42
+
+
+State 31
+
+   14 declaration: DATATYPE IDENTIFIERS • SEMICOLON
+   16 IDENTIFIERS: IDENTIFIERS • COMMA IDENTIFIER
+
+    SEMICOLON  shift, and go to state 43
+    COMMA      shift, and go to state 44
+
+
+State 32
+
+   12 STMT: FOR_LOOP SEMICOLON •
+
+    $default  reduce using rule 12 (STMT)
+
+
+State 33
+
+   32 EXPRESSION: IDENTIFIER •
+
+    $default  reduce using rule 32 (EXPRESSION)
+
+
+State 34
+
+   26 EXPRESSION: LEFT_BRAC • EXPRESSION RIGHT_BRAC
+
+    IDENTIFIER  shift, and go to state 33
+    LEFT_BRAC   shift, and go to state 34
+
+    EXPRESSION  go to state 45
+
+
+State 35
+
+   21 EXPRESSION: EXPRESSION • '+' EXPRESSION
+   22           | EXPRESSION • '-' EXPRESSION
+   23           | EXPRESSION • '*' EXPRESSION
+   24           | EXPRESSION • '/' EXPRESSION
+   25           | EXPRESSION • '%' EXPRESSION
+   27           | EXPRESSION • NOT_EQUAL EXPRESSION
+   28           | EXPRESSION • GRT_EQUAL EXPRESSION
+   29           | EXPRESSION • LES_EQUAL EXPRESSION
+   30           | EXPRESSION • GRT EXPRESSION
+   31           | EXPRESSION • LES EXPRESSION
+   33 FOR_LOOP: FOR_WORD LEFT_BRAC EXPRESSION • SEMICOLON EXPRESSION SEMICOLON EXPRESSION RIGHT_BRAC ASSIGNMENT_SENTENCE
+
+    SEMICOLON  shift, and go to state 46
+    NOT_EQUAL  shift, and go to state 47
+    GRT_EQUAL  shift, and go to state 48
+    LES_EQUAL  shift, and go to state 49
+    GRT        shift, and go to state 50
+    LES        shift, and go to state 51
+    '+'        shift, and go to state 52
+    '-'        shift, and go to state 53
+    '*'        shift, and go to state 54
+    '/'        shift, and go to state 55
+    '%'        shift, and go to state 56
+
+
+State 36
+
+   21 EXPRESSION: EXPRESSION • '+' EXPRESSION
+   22           | EXPRESSION • '-' EXPRESSION
+   23           | EXPRESSION • '*' EXPRESSION
+   24           | EXPRESSION • '/' EXPRESSION
+   25           | EXPRESSION • '%' EXPRESSION
+   27           | EXPRESSION • NOT_EQUAL EXPRESSION
+   28           | EXPRESSION • GRT_EQUAL EXPRESSION
+   29           | EXPRESSION • LES_EQUAL EXPRESSION
+   30           | EXPRESSION • GRT EXPRESSION
+   31           | EXPRESSION • LES EXPRESSION
+   34 IF_THEN: IF LEFT_BRAC EXPRESSION • RIGHT_BRAC THEN BLOCK
+   35 IF_THEN_ELSE: IF LEFT_BRAC EXPRESSION • RIGHT_BRAC THEN BLOCK ELSE BLOCK
+   36 IF_THEN_ELIF: IF LEFT_BRAC EXPRESSION • RIGHT_BRAC THEN BLOCK ELIF BLOCK ELSE BLOCK
+
+    NOT_EQUAL   shift, and go to state 47
+    GRT_EQUAL   shift, and go to state 48
+    LES_EQUAL   shift, and go to state 49
+    GRT         shift, and go to state 50
+    LES         shift, and go to state 51
+    RIGHT_BRAC  shift, and go to state 57
+    '+'         shift, and go to state 52
+    '-'         shift, and go to state 53
+    '*'         shift, and go to state 54
+    '/'         shift, and go to state 55
+    '%'         shift, and go to state 56
+
+
+State 37
+
+   21 EXPRESSION: EXPRESSION • '+' EXPRESSION
+   22           | EXPRESSION • '-' EXPRESSION
+   23           | EXPRESSION • '*' EXPRESSION
+   24           | EXPRESSION • '/' EXPRESSION
+   25           | EXPRESSION • '%' EXPRESSION
+   27           | EXPRESSION • NOT_EQUAL EXPRESSION
+   28           | EXPRESSION • GRT_EQUAL EXPRESSION
+   29           | EXPRESSION • LES_EQUAL EXPRESSION
+   30           | EXPRESSION • GRT EXPRESSION
+   31           | EXPRESSION • LES EXPRESSION
+   37 WHILE_LOOP: WHILE LEFT_BRAC EXPRESSION • RIGHT_BRAC BLOCK
+
+    NOT_EQUAL   shift, and go to state 47
+    GRT_EQUAL   shift, and go to state 48
+    LES_EQUAL   shift, and go to state 49
+    GRT         shift, and go to state 50
+    LES         shift, and go to state 51
+    RIGHT_BRAC  shift, and go to state 58
+    '+'         shift, and go to state 52
+    '-'         shift, and go to state 53
+    '*'         shift, and go to state 54
+    '/'         shift, and go to state 55
+    '%'         shift, and go to state 56
+
+
+State 38
+
+    2 STMTS: STMTS • STMT
+    4 BLOCK: LEFT_CURL_BRAC STMTS • RIGHT_CURL_BRAC
+
+    INT              shift, and go to state 1
+    FLOAT            shift, and go to state 2
+    CHAR             shift, and go to state 3
+    FOR_WORD         shift, and go to state 4
+    IF               shift, and go to state 5
+    WHILE            shift, and go to state 6
+    DO               shift, and go to state 7
+    IDENTIFIER       shift, and go to state 8
+    RIGHT_CURL_BRAC  shift, and go to state 59
+
+    STMT                 go to state 28
+    declaration          go to state 12
+    ASSIGNMENT_SENTENCE  go to state 13
+    DATATYPE             go to state 14
+    FOR_LOOP             go to state 15
+    IF_THEN              go to state 16
+    IF_THEN_ELSE         go to state 17
+    IF_THEN_ELIF         go to state 18
+    WHILE_LOOP           go to state 19
+    DO_WHILE_LOOP        go to state 20
+
+
+State 39
+
+   38 DO_WHILE_LOOP: DO BLOCK WHILE • LEFT_BRAC EXPRESSION RIGHT_BRAC SEMICOLON
+
+    LEFT_BRAC  shift, and go to state 60
+
+
+State 40
+
+   15 ASSIGNMENT_SENTENCE: IDENTIFIER EQUAL EXPRESSION •
+   21 EXPRESSION: EXPRESSION • '+' EXPRESSION
+   22           | EXPRESSION • '-' EXPRESSION
+   23           | EXPRESSION • '*' EXPRESSION
+   24           | EXPRESSION • '/' EXPRESSION
+   25           | EXPRESSION • '%' EXPRESSION
+   27           | EXPRESSION • NOT_EQUAL EXPRESSION
+   28           | EXPRESSION • GRT_EQUAL EXPRESSION
+   29           | EXPRESSION • LES_EQUAL EXPRESSION
+   30           | EXPRESSION • GRT EXPRESSION
+   31           | EXPRESSION • LES EXPRESSION
+
+    NOT_EQUAL  shift, and go to state 47
+    GRT_EQUAL  shift, and go to state 48
+    LES_EQUAL  shift, and go to state 49
+    GRT        shift, and go to state 50
+    LES        shift, and go to state 51
+    '+'        shift, and go to state 52
+    '-'        shift, and go to state 53
+    '*'        shift, and go to state 54
+    '/'        shift, and go to state 55
+    '%'        shift, and go to state 56
+
+    $default  reduce using rule 15 (ASSIGNMENT_SENTENCE)
+
+
+State 41
+
+   13 declaration: DATATYPE IDENTIFIER SEMICOLON •
+
+    $default  reduce using rule 13 (declaration)
+
+
+State 42
+
+   17 IDENTIFIERS: IDENTIFIER COMMA • IDENTIFIER
+
+    IDENTIFIER  shift, and go to state 61
+
+
+State 43
+
+   14 declaration: DATATYPE IDENTIFIERS SEMICOLON •
+
+    $default  reduce using rule 14 (declaration)
+
+
+State 44
+
+   16 IDENTIFIERS: IDENTIFIERS COMMA • IDENTIFIER
+
+    IDENTIFIER  shift, and go to state 62
+
+
+State 45
+
+   21 EXPRESSION: EXPRESSION • '+' EXPRESSION
+   22           | EXPRESSION • '-' EXPRESSION
+   23           | EXPRESSION • '*' EXPRESSION
+   24           | EXPRESSION • '/' EXPRESSION
+   25           | EXPRESSION • '%' EXPRESSION
+   26           | LEFT_BRAC EXPRESSION • RIGHT_BRAC
+   27           | EXPRESSION • NOT_EQUAL EXPRESSION
+   28           | EXPRESSION • GRT_EQUAL EXPRESSION
+   29           | EXPRESSION • LES_EQUAL EXPRESSION
+   30           | EXPRESSION • GRT EXPRESSION
+   31           | EXPRESSION • LES EXPRESSION
+
+    NOT_EQUAL   shift, and go to state 47
+    GRT_EQUAL   shift, and go to state 48
+    LES_EQUAL   shift, and go to state 49
+    GRT         shift, and go to state 50
+    LES         shift, and go to state 51
+    RIGHT_BRAC  shift, and go to state 63
+    '+'         shift, and go to state 52
+    '-'         shift, and go to state 53
+    '*'         shift, and go to state 54
+    '/'         shift, and go to state 55
+    '%'         shift, and go to state 56
+
+
+State 46
+
+   33 FOR_LOOP: FOR_WORD LEFT_BRAC EXPRESSION SEMICOLON • EXPRESSION SEMICOLON EXPRESSION RIGHT_BRAC ASSIGNMENT_SENTENCE
+
+    IDENTIFIER  shift, and go to state 33
+    LEFT_BRAC   shift, and go to state 34
+
+    EXPRESSION  go to state 64
+
+
+State 47
+
+   27 EXPRESSION: EXPRESSION NOT_EQUAL • EXPRESSION
+
+    IDENTIFIER  shift, and go to state 33
+    LEFT_BRAC   shift, and go to state 34
+
+    EXPRESSION  go to state 65
+
+
+State 48
+
+   28 EXPRESSION: EXPRESSION GRT_EQUAL • EXPRESSION
+
+    IDENTIFIER  shift, and go to state 33
+    LEFT_BRAC   shift, and go to state 34
+
+    EXPRESSION  go to state 66
+
+
+State 49
+
+   29 EXPRESSION: EXPRESSION LES_EQUAL • EXPRESSION
+
+    IDENTIFIER  shift, and go to state 33
+    LEFT_BRAC   shift, and go to state 34
+
+    EXPRESSION  go to state 67
+
+
+State 50
+
+   30 EXPRESSION: EXPRESSION GRT • EXPRESSION
+
+    IDENTIFIER  shift, and go to state 33
+    LEFT_BRAC   shift, and go to state 34
+
+    EXPRESSION  go to state 68
+
+
+State 51
+
+   31 EXPRESSION: EXPRESSION LES • EXPRESSION
+
+    IDENTIFIER  shift, and go to state 33
+    LEFT_BRAC   shift, and go to state 34
+
+    EXPRESSION  go to state 69
+
+
+State 52
+
+   21 EXPRESSION: EXPRESSION '+' • EXPRESSION
+
+    IDENTIFIER  shift, and go to state 33
+    LEFT_BRAC   shift, and go to state 34
+
+    EXPRESSION  go to state 70
+
+
+State 53
+
+   22 EXPRESSION: EXPRESSION '-' • EXPRESSION
+
+    IDENTIFIER  shift, and go to state 33
+    LEFT_BRAC   shift, and go to state 34
+
+    EXPRESSION  go to state 71
+
+
+State 54
+
+   23 EXPRESSION: EXPRESSION '*' • EXPRESSION
+
+    IDENTIFIER  shift, and go to state 33
+    LEFT_BRAC   shift, and go to state 34
+
+    EXPRESSION  go to state 72
+
+
+State 55
+
+   24 EXPRESSION: EXPRESSION '/' • EXPRESSION
+
+    IDENTIFIER  shift, and go to state 33
+    LEFT_BRAC   shift, and go to state 34
+
+    EXPRESSION  go to state 73
+
+
+State 56
+
+   25 EXPRESSION: EXPRESSION '%' • EXPRESSION
+
+    IDENTIFIER  shift, and go to state 33
+    LEFT_BRAC   shift, and go to state 34
+
+    EXPRESSION  go to state 74
+
+
+State 57
+
+   34 IF_THEN: IF LEFT_BRAC EXPRESSION RIGHT_BRAC • THEN BLOCK
+   35 IF_THEN_ELSE: IF LEFT_BRAC EXPRESSION RIGHT_BRAC • THEN BLOCK ELSE BLOCK
+   36 IF_THEN_ELIF: IF LEFT_BRAC EXPRESSION RIGHT_BRAC • THEN BLOCK ELIF BLOCK ELSE BLOCK
+
+    THEN  shift, and go to state 75
+
+
+State 58
+
+   37 WHILE_LOOP: WHILE LEFT_BRAC EXPRESSION RIGHT_BRAC • BLOCK
+
+    LEFT_CURL_BRAC  shift, and go to state 24
+
+    BLOCK  go to state 76
+
+
+State 59
+
+    4 BLOCK: LEFT_CURL_BRAC STMTS RIGHT_CURL_BRAC •
+
+    $default  reduce using rule 4 (BLOCK)
+
+
+State 60
+
+   38 DO_WHILE_LOOP: DO BLOCK WHILE LEFT_BRAC • EXPRESSION RIGHT_BRAC SEMICOLON
+
+    IDENTIFIER  shift, and go to state 33
+    LEFT_BRAC   shift, and go to state 34
+
+    EXPRESSION  go to state 77
+
+
+State 61
+
+   17 IDENTIFIERS: IDENTIFIER COMMA IDENTIFIER •
+
+    $default  reduce using rule 17 (IDENTIFIERS)
+
+
+State 62
+
+   16 IDENTIFIERS: IDENTIFIERS COMMA IDENTIFIER •
+
+    $default  reduce using rule 16 (IDENTIFIERS)
+
+
+State 63
+
+   26 EXPRESSION: LEFT_BRAC EXPRESSION RIGHT_BRAC •
+
+    $default  reduce using rule 26 (EXPRESSION)
+
+
+State 64
+
+   21 EXPRESSION: EXPRESSION • '+' EXPRESSION
+   22           | EXPRESSION • '-' EXPRESSION
+   23           | EXPRESSION • '*' EXPRESSION
+   24           | EXPRESSION • '/' EXPRESSION
+   25           | EXPRESSION • '%' EXPRESSION
+   27           | EXPRESSION • NOT_EQUAL EXPRESSION
+   28           | EXPRESSION • GRT_EQUAL EXPRESSION
+   29           | EXPRESSION • LES_EQUAL EXPRESSION
+   30           | EXPRESSION • GRT EXPRESSION
+   31           | EXPRESSION • LES EXPRESSION
+   33 FOR_LOOP: FOR_WORD LEFT_BRAC EXPRESSION SEMICOLON EXPRESSION • SEMICOLON EXPRESSION RIGHT_BRAC ASSIGNMENT_SENTENCE
+
+    SEMICOLON  shift, and go to state 78
+    NOT_EQUAL  shift, and go to state 47
+    GRT_EQUAL  shift, and go to state 48
+    LES_EQUAL  shift, and go to state 49
+    GRT        shift, and go to state 50
+    LES        shift, and go to state 51
+    '+'        shift, and go to state 52
+    '-'        shift, and go to state 53
+    '*'        shift, and go to state 54
+    '/'        shift, and go to state 55
+    '%'        shift, and go to state 56
+
+
+State 65
+
+   21 EXPRESSION: EXPRESSION • '+' EXPRESSION
+   22           | EXPRESSION • '-' EXPRESSION
+   23           | EXPRESSION • '*' EXPRESSION
+   24           | EXPRESSION • '/' EXPRESSION
+   25           | EXPRESSION • '%' EXPRESSION
+   27           | EXPRESSION • NOT_EQUAL EXPRESSION
+   27           | EXPRESSION NOT_EQUAL EXPRESSION •
+   28           | EXPRESSION • GRT_EQUAL EXPRESSION
+   29           | EXPRESSION • LES_EQUAL EXPRESSION
+   30           | EXPRESSION • GRT EXPRESSION
+   31           | EXPRESSION • LES EXPRESSION
+
+    '+'  shift, and go to state 52
+    '-'  shift, and go to state 53
+    '*'  shift, and go to state 54
+    '/'  shift, and go to state 55
+    '%'  shift, and go to state 56
+
+    $default  reduce using rule 27 (EXPRESSION)
+
+
+State 66
+
+   21 EXPRESSION: EXPRESSION • '+' EXPRESSION
+   22           | EXPRESSION • '-' EXPRESSION
+   23           | EXPRESSION • '*' EXPRESSION
+   24           | EXPRESSION • '/' EXPRESSION
+   25           | EXPRESSION • '%' EXPRESSION
+   27           | EXPRESSION • NOT_EQUAL EXPRESSION
+   28           | EXPRESSION • GRT_EQUAL EXPRESSION
+   28           | EXPRESSION GRT_EQUAL EXPRESSION •
+   29           | EXPRESSION • LES_EQUAL EXPRESSION
+   30           | EXPRESSION • GRT EXPRESSION
+   31           | EXPRESSION • LES EXPRESSION
+
+    '+'  shift, and go to state 52
+    '-'  shift, and go to state 53
+    '*'  shift, and go to state 54
+    '/'  shift, and go to state 55
+    '%'  shift, and go to state 56
+
+    $default  reduce using rule 28 (EXPRESSION)
+
+
+State 67
+
+   21 EXPRESSION: EXPRESSION • '+' EXPRESSION
+   22           | EXPRESSION • '-' EXPRESSION
+   23           | EXPRESSION • '*' EXPRESSION
+   24           | EXPRESSION • '/' EXPRESSION
+   25           | EXPRESSION • '%' EXPRESSION
+   27           | EXPRESSION • NOT_EQUAL EXPRESSION
+   28           | EXPRESSION • GRT_EQUAL EXPRESSION
+   29           | EXPRESSION • LES_EQUAL EXPRESSION
+   29           | EXPRESSION LES_EQUAL EXPRESSION •
+   30           | EXPRESSION • GRT EXPRESSION
+   31           | EXPRESSION • LES EXPRESSION
+
+    '+'  shift, and go to state 52
+    '-'  shift, and go to state 53
+    '*'  shift, and go to state 54
+    '/'  shift, and go to state 55
+    '%'  shift, and go to state 56
+
+    $default  reduce using rule 29 (EXPRESSION)
+
+
+State 68
+
+   21 EXPRESSION: EXPRESSION • '+' EXPRESSION
+   22           | EXPRESSION • '-' EXPRESSION
+   23           | EXPRESSION • '*' EXPRESSION
+   24           | EXPRESSION • '/' EXPRESSION
+   25           | EXPRESSION • '%' EXPRESSION
+   27           | EXPRESSION • NOT_EQUAL EXPRESSION
+   28           | EXPRESSION • GRT_EQUAL EXPRESSION
+   29           | EXPRESSION • LES_EQUAL EXPRESSION
+   30           | EXPRESSION • GRT EXPRESSION
+   30           | EXPRESSION GRT EXPRESSION •
+   31           | EXPRESSION • LES EXPRESSION
+
+    '+'  shift, and go to state 52
+    '-'  shift, and go to state 53
+    '*'  shift, and go to state 54
+    '/'  shift, and go to state 55
+    '%'  shift, and go to state 56
+
+    $default  reduce using rule 30 (EXPRESSION)
+
+
+State 69
+
+   21 EXPRESSION: EXPRESSION • '+' EXPRESSION
+   22           | EXPRESSION • '-' EXPRESSION
+   23           | EXPRESSION • '*' EXPRESSION
+   24           | EXPRESSION • '/' EXPRESSION
+   25           | EXPRESSION • '%' EXPRESSION
+   27           | EXPRESSION • NOT_EQUAL EXPRESSION
+   28           | EXPRESSION • GRT_EQUAL EXPRESSION
+   29           | EXPRESSION • LES_EQUAL EXPRESSION
+   30           | EXPRESSION • GRT EXPRESSION
+   31           | EXPRESSION • LES EXPRESSION
+   31           | EXPRESSION LES EXPRESSION •
+
+    '+'  shift, and go to state 52
+    '-'  shift, and go to state 53
+    '*'  shift, and go to state 54
+    '/'  shift, and go to state 55
+    '%'  shift, and go to state 56
+
+    $default  reduce using rule 31 (EXPRESSION)
+
+
+State 70
+
+   21 EXPRESSION: EXPRESSION • '+' EXPRESSION
+   21           | EXPRESSION '+' EXPRESSION •
+   22           | EXPRESSION • '-' EXPRESSION
+   23           | EXPRESSION • '*' EXPRESSION
+   24           | EXPRESSION • '/' EXPRESSION
+   25           | EXPRESSION • '%' EXPRESSION
+   27           | EXPRESSION • NOT_EQUAL EXPRESSION
+   28           | EXPRESSION • GRT_EQUAL EXPRESSION
+   29           | EXPRESSION • LES_EQUAL EXPRESSION
+   30           | EXPRESSION • GRT EXPRESSION
+   31           | EXPRESSION • LES EXPRESSION
+
+    '*'  shift, and go to state 54
+    '/'  shift, and go to state 55
+    '%'  shift, and go to state 56
+
+    $default  reduce using rule 21 (EXPRESSION)
+
+
+State 71
+
+   21 EXPRESSION: EXPRESSION • '+' EXPRESSION
+   22           | EXPRESSION • '-' EXPRESSION
+   22           | EXPRESSION '-' EXPRESSION •
+   23           | EXPRESSION • '*' EXPRESSION
+   24           | EXPRESSION • '/' EXPRESSION
+   25           | EXPRESSION • '%' EXPRESSION
+   27           | EXPRESSION • NOT_EQUAL EXPRESSION
+   28           | EXPRESSION • GRT_EQUAL EXPRESSION
+   29           | EXPRESSION • LES_EQUAL EXPRESSION
+   30           | EXPRESSION • GRT EXPRESSION
+   31           | EXPRESSION • LES EXPRESSION
+
+    '*'  shift, and go to state 54
+    '/'  shift, and go to state 55
+    '%'  shift, and go to state 56
+
+    $default  reduce using rule 22 (EXPRESSION)
+
+
+State 72
+
+   21 EXPRESSION: EXPRESSION • '+' EXPRESSION
+   22           | EXPRESSION • '-' EXPRESSION
+   23           | EXPRESSION • '*' EXPRESSION
+   23           | EXPRESSION '*' EXPRESSION •
+   24           | EXPRESSION • '/' EXPRESSION
+   25           | EXPRESSION • '%' EXPRESSION
+   27           | EXPRESSION • NOT_EQUAL EXPRESSION
+   28           | EXPRESSION • GRT_EQUAL EXPRESSION
+   29           | EXPRESSION • LES_EQUAL EXPRESSION
+   30           | EXPRESSION • GRT EXPRESSION
+   31           | EXPRESSION • LES EXPRESSION
+
+    $default  reduce using rule 23 (EXPRESSION)
+
+
+State 73
+
+   21 EXPRESSION: EXPRESSION • '+' EXPRESSION
+   22           | EXPRESSION • '-' EXPRESSION
+   23           | EXPRESSION • '*' EXPRESSION
+   24           | EXPRESSION • '/' EXPRESSION
+   24           | EXPRESSION '/' EXPRESSION •
+   25           | EXPRESSION • '%' EXPRESSION
+   27           | EXPRESSION • NOT_EQUAL EXPRESSION
+   28           | EXPRESSION • GRT_EQUAL EXPRESSION
+   29           | EXPRESSION • LES_EQUAL EXPRESSION
+   30           | EXPRESSION • GRT EXPRESSION
+   31           | EXPRESSION • LES EXPRESSION
+
+    $default  reduce using rule 24 (EXPRESSION)
+
+
+State 74
+
+   21 EXPRESSION: EXPRESSION • '+' EXPRESSION
+   22           | EXPRESSION • '-' EXPRESSION
+   23           | EXPRESSION • '*' EXPRESSION
+   24           | EXPRESSION • '/' EXPRESSION
+   25           | EXPRESSION • '%' EXPRESSION
+   25           | EXPRESSION '%' EXPRESSION •
+   27           | EXPRESSION • NOT_EQUAL EXPRESSION
+   28           | EXPRESSION • GRT_EQUAL EXPRESSION
+   29           | EXPRESSION • LES_EQUAL EXPRESSION
+   30           | EXPRESSION • GRT EXPRESSION
+   31           | EXPRESSION • LES EXPRESSION
+
+    $default  reduce using rule 25 (EXPRESSION)
+
+
+State 75
+
+   34 IF_THEN: IF LEFT_BRAC EXPRESSION RIGHT_BRAC THEN • BLOCK
+   35 IF_THEN_ELSE: IF LEFT_BRAC EXPRESSION RIGHT_BRAC THEN • BLOCK ELSE BLOCK
+   36 IF_THEN_ELIF: IF LEFT_BRAC EXPRESSION RIGHT_BRAC THEN • BLOCK ELIF BLOCK ELSE BLOCK
+
+    LEFT_CURL_BRAC  shift, and go to state 24
+
+    BLOCK  go to state 79
+
+
+State 76
+
+   37 WHILE_LOOP: WHILE LEFT_BRAC EXPRESSION RIGHT_BRAC BLOCK •
+
+    $default  reduce using rule 37 (WHILE_LOOP)
+
+
+State 77
+
+   21 EXPRESSION: EXPRESSION • '+' EXPRESSION
+   22           | EXPRESSION • '-' EXPRESSION
+   23           | EXPRESSION • '*' EXPRESSION
+   24           | EXPRESSION • '/' EXPRESSION
+   25           | EXPRESSION • '%' EXPRESSION
+   27           | EXPRESSION • NOT_EQUAL EXPRESSION
+   28           | EXPRESSION • GRT_EQUAL EXPRESSION
+   29           | EXPRESSION • LES_EQUAL EXPRESSION
+   30           | EXPRESSION • GRT EXPRESSION
+   31           | EXPRESSION • LES EXPRESSION
+   38 DO_WHILE_LOOP: DO BLOCK WHILE LEFT_BRAC EXPRESSION • RIGHT_BRAC SEMICOLON
+
+    NOT_EQUAL   shift, and go to state 47
+    GRT_EQUAL   shift, and go to state 48
+    LES_EQUAL   shift, and go to state 49
+    GRT         shift, and go to state 50
+    LES         shift, and go to state 51
+    RIGHT_BRAC  shift, and go to state 80
+    '+'         shift, and go to state 52
+    '-'         shift, and go to state 53
+    '*'         shift, and go to state 54
+    '/'         shift, and go to state 55
+    '%'         shift, and go to state 56
+
+
+State 78
+
+   33 FOR_LOOP: FOR_WORD LEFT_BRAC EXPRESSION SEMICOLON EXPRESSION SEMICOLON • EXPRESSION RIGHT_BRAC ASSIGNMENT_SENTENCE
+
+    IDENTIFIER  shift, and go to state 33
+    LEFT_BRAC   shift, and go to state 34
+
+    EXPRESSION  go to state 81
+
+
+State 79
+
+   34 IF_THEN: IF LEFT_BRAC EXPRESSION RIGHT_BRAC THEN BLOCK •
+   35 IF_THEN_ELSE: IF LEFT_BRAC EXPRESSION RIGHT_BRAC THEN BLOCK • ELSE BLOCK
+   36 IF_THEN_ELIF: IF LEFT_BRAC EXPRESSION RIGHT_BRAC THEN BLOCK • ELIF BLOCK ELSE BLOCK
+
+    ELSE  shift, and go to state 82
+    ELIF  shift, and go to state 83
+
+    $default  reduce using rule 34 (IF_THEN)
+
+
+State 80
+
+   38 DO_WHILE_LOOP: DO BLOCK WHILE LEFT_BRAC EXPRESSION RIGHT_BRAC • SEMICOLON
+
+    SEMICOLON  shift, and go to state 84
+
+
+State 81
+
+   21 EXPRESSION: EXPRESSION • '+' EXPRESSION
+   22           | EXPRESSION • '-' EXPRESSION
+   23           | EXPRESSION • '*' EXPRESSION
+   24           | EXPRESSION • '/' EXPRESSION
+   25           | EXPRESSION • '%' EXPRESSION
+   27           | EXPRESSION • NOT_EQUAL EXPRESSION
+   28           | EXPRESSION • GRT_EQUAL EXPRESSION
+   29           | EXPRESSION • LES_EQUAL EXPRESSION
+   30           | EXPRESSION • GRT EXPRESSION
+   31           | EXPRESSION • LES EXPRESSION
+   33 FOR_LOOP: FOR_WORD LEFT_BRAC EXPRESSION SEMICOLON EXPRESSION SEMICOLON EXPRESSION • RIGHT_BRAC ASSIGNMENT_SENTENCE
+
+    NOT_EQUAL   shift, and go to state 47
+    GRT_EQUAL   shift, and go to state 48
+    LES_EQUAL   shift, and go to state 49
+    GRT         shift, and go to state 50
+    LES         shift, and go to state 51
+    RIGHT_BRAC  shift, and go to state 85
+    '+'         shift, and go to state 52
+    '-'         shift, and go to state 53
+    '*'         shift, and go to state 54
+    '/'         shift, and go to state 55
+    '%'         shift, and go to state 56
+
+
+State 82
+
+   35 IF_THEN_ELSE: IF LEFT_BRAC EXPRESSION RIGHT_BRAC THEN BLOCK ELSE • BLOCK
+
+    LEFT_CURL_BRAC  shift, and go to state 24
+
+    BLOCK  go to state 86
+
+
+State 83
+
+   36 IF_THEN_ELIF: IF LEFT_BRAC EXPRESSION RIGHT_BRAC THEN BLOCK ELIF • BLOCK ELSE BLOCK
+
+    LEFT_CURL_BRAC  shift, and go to state 24
+
+    BLOCK  go to state 87
+
+
+State 84
+
+   38 DO_WHILE_LOOP: DO BLOCK WHILE LEFT_BRAC EXPRESSION RIGHT_BRAC SEMICOLON •
+
+    $default  reduce using rule 38 (DO_WHILE_LOOP)
+
+
+State 85
+
+   33 FOR_LOOP: FOR_WORD LEFT_BRAC EXPRESSION SEMICOLON EXPRESSION SEMICOLON EXPRESSION RIGHT_BRAC • ASSIGNMENT_SENTENCE
+
+    IDENTIFIER  shift, and go to state 8
+
+    ASSIGNMENT_SENTENCE  go to state 88
+
+
+State 86
+
+   35 IF_THEN_ELSE: IF LEFT_BRAC EXPRESSION RIGHT_BRAC THEN BLOCK ELSE BLOCK •
+
+    $default  reduce using rule 35 (IF_THEN_ELSE)
+
+
+State 87
+
+   36 IF_THEN_ELIF: IF LEFT_BRAC EXPRESSION RIGHT_BRAC THEN BLOCK ELIF BLOCK • ELSE BLOCK
+
+    ELSE  shift, and go to state 89
+
+
+State 88
+
+   33 FOR_LOOP: FOR_WORD LEFT_BRAC EXPRESSION SEMICOLON EXPRESSION SEMICOLON EXPRESSION RIGHT_BRAC ASSIGNMENT_SENTENCE •
+
+    $default  reduce using rule 33 (FOR_LOOP)
+
+
+State 89
+
+   36 IF_THEN_ELIF: IF LEFT_BRAC EXPRESSION RIGHT_BRAC THEN BLOCK ELIF BLOCK ELSE • BLOCK
+
+    LEFT_CURL_BRAC  shift, and go to state 24
+
+    BLOCK  go to state 90
+
+
+State 90
+
+   36 IF_THEN_ELIF: IF LEFT_BRAC EXPRESSION RIGHT_BRAC THEN BLOCK ELIF BLOCK ELSE BLOCK •
+
+    $default  reduce using rule 36 (IF_THEN_ELIF)

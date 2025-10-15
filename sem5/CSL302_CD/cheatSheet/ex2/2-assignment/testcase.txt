@@ -1,0 +1,10 @@
+class pari { int  a;}
+
+
+void main () {
+
+    int a;
+
+}  
+
+

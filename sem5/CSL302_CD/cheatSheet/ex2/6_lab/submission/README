@@ -1,0 +1,9 @@
+This assignment is about lexical and parase analyzer. It can identify if-the, if-then-else, if-then-elif, while-loop, do-while loop, switch-cases.
+
+To run execute following:
+1. lex <lexfile>
+2. yacc -d <yaccfile>
+3.gcc lex.yy.c y.tab.c
+4. ./a.out
+
+
