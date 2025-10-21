@@ -6,6 +6,9 @@
 
 %%
 
+\/\/[^\n]*                       { ; }
+\/\*([^*]|\*+[^/])*\*+\/         { ; }
+
 "int"        { return INT; }
 "double"     { return DOUBLE; }
 "bool"       { return BOOL; }
@@ -63,10 +66,6 @@
 ","      { return COMMA; }
 "."      { return DOT; }
 
-
-
-"//".*                  { /* single-line comment */ }
-"/*"([^*]|\*+[^*/])*\*+"/" { /* multi-line comment */ }
 [ \t\r\n]+              { /* skip whitespace */ }
 \n {yylineno++;}
 .
