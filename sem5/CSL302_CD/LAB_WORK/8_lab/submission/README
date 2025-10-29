@@ -1,0 +1,21 @@
+NAME: Paritosh Lahre
+ID: 12341550
+Assignment: Lab 8
+
+This assignment is about implementation of TAC to arithmentic , boolean expressions also modifying symbol table to declare varaibles and identify already declared variable.
+
+To execute:
+
+bash:
+
+For Q1
+lex lex.l
+yacc -d yacc.y
+gcc lex.yy.c y.tab.c -o parser
+./parser
+
+For Q2
+lex lex.l
+yacc -d yacc.y
+gcc lex.yy.c y.tab.c symbol.c -o parser
+./parser
