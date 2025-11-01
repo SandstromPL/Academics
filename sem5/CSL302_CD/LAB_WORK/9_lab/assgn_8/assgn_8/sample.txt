@@ -1,0 +1,4 @@
+int a, b, c;
+float d, e, f;
+a = b * c - d / f;
+k = e or f >= g and h != i and not j;

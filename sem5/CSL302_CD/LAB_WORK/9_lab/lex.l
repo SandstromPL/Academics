@@ -5,13 +5,20 @@
 %}
 
 %%
-[0-9]+                  { yylval.str = strdup(yytext); return NUM; }
+[0-9]+                  { yylval.str = strdup(yytext);
+                          return NUM; }
 "and"	{return AND;}
 "or"	{return OR;}
 "not"	{return NOT;}
 "true"	{return TRUE;}
 "false"	{return FALSE;}
-[a-zA-Z][a-zA-Z0-9]*    { yylval.str = strdup(yytext); return ID; }
+"int"   {return INT;}
+"float" {return FLOAT;}
+"if"    {return IF;}
+"else"  {return ELSE;}
+"while" {return WHILE;}
+"then"  {return THEN;}
+[a-zA-Z][a-zA-Z0-9]* { yylval.str = strdup(yytext); return ID;}
 "+" {return PLUS;}
 "-" {return MINUS;}
 "*" {return MULTIPY;}
@@ -19,14 +26,17 @@
 "=" {return ASSIGN;}
 "(" {return LBRAC;}
 ")" {return RBRAC;}
+"{" {return LCURL;}
+"}" {return RCURL;}
 "<" {return LT;}
 ">" {return GT;}
 ">=" {return GE;}
 "<=" {return LE;}
 "==" {return EQ;}
 "!=" {return NE;}
-[ \t] ;   
-[\n] {return 0;}  
+"," {return COMMA;}
+";" {return SEMICOLON;}
+[ \t\n]+ {;}            
 . {return yytext[0];}
 %%
 
