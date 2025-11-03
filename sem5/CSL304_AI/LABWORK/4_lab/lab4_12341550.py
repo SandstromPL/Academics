@@ -65,8 +65,8 @@ def alphabeta(state, alpha, beta, maximizing, depth=0):
         return value, best_move
 
 if __name__ == "__main__":
-    initial_state = (1, 2, 3)
-    #initial_state = (3, 4, 5)
+    #initial_state = (1, 2, 3)
+    initial_state = (3, 4, 5)
     explored_nodes = 0
     pruned_nodes = 0
     print(f"Initial State: {initial_state}\n")
