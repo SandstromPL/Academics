@@ -89,11 +89,8 @@ sys_uptime(void)
   return xticks;
 }
 
-uint64 sys_memlayout(void)
+int
+sys_memlayout(void)
 {
-  printf("Code/data: %p\n", (void*) sys_memlayout);
-  printf("Heap: %p\n", malloc(1));
-  int x = 0;
-  printf("Stack: %p\n", (void*) &x);
   return 0;
 }
