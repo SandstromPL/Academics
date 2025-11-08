@@ -1,0 +1,83 @@
+START
+
+// Calculate the number of conflicting (attacking) queen pairs
+FUNCTION calculate_conflicts(board):
+    conflicts = 0
+    n = length of the board
+    FOR i from 0 to n-1:
+        FOR j from i+1 to n-1:
+            // Check for diagonal conflicts
+            IF absolute(board[i] - board[j]) is equal to absolute(i - j):
+                increment conflicts
+    RETURN conflicts
+
+// Print the board configuration
+FUNCTION print_board(board):
+    n = length of the board
+    PRINT "Board State (Conflicts: ", calculate_conflicts(board), "): ", board
+    FOR i from 0 to n-1:
+        row_string = ""
+        FOR j from 0 to n-1:
+            IF board[j] is equal to i + 1:
+                append " Q " to row_string
+            ELSE:
+                append " . " to row_string
+        PRINT row_string
+
+// Solve the 8-Queens problem using Simulated Annealing
+FUNCTION solve_8_queens_sa(initial_temp, cooling_rate, min_temp):
+    // Start with a random board configuration (a permutation of [1..8])
+    current_board = a shuffled list of numbers from 1 to 8
+    current_cost = calculate_conflicts(current_board)
+    T = initial_temp
+
+    // Gradually reduce the temperature
+    WHILE T is greater than min_temp:
+        // If a solution is found
+        IF current_cost is 0:
+            RETURN current_board
+
+        // Create a new board by swapping two random queens
+        new_board = a copy of current_board
+        i, j = two different random indices from 0 to 7
+        swap new_board[i] and new_board[j]
+        new_cost = calculate_conflicts(new_board)
+
+        // Calculate the change in cost
+        delta_E = new_cost - current_cost
+
+        // If the new state is better, accept it
+        IF delta_E is less than 0:
+            current_board = new_board
+            current_cost = new_cost
+        // If the new state is worse, accept it with a certain probability
+        ELSE:
+            acceptance_probability = e^(-delta_E / T)
+            IF a random number between 0 and 1 is less than acceptance_probability:
+                current_board = new_board
+                current_cost = new_cost
+
+        // Cool down the temperature
+        T = T * cooling_rate
+
+    // Return the best solution found
+    RETURN current_board
+
+// Main execution
+IF this is the main program:
+    INITIAL_TEMPERATURE = 1000
+    COOLING_RATE = 0.999
+    MIN_TEMPERATURE = 1e-5
+
+    PRINT "Solving 8-Queens using Simulated Annealing..."
+    solution = solve_8_queens_sa(INITIAL_TEMPERATURE, COOLING_RATE, MIN_TEMPERATURE)
+
+    PRINT "--- Final Solution Found ---"
+    print_board(solution)
+
+    IF calculate_conflicts(solution) is 0:
+        PRINT "Successfully found a zero-conflict solution!"
+    ELSE:
+        PRINT "Could not find a perfect solution. This is the best state found."
+
+END

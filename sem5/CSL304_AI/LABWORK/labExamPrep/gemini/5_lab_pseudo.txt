@@ -1,0 +1,164 @@
+START
+
+// --- 1. Problem Definition ---
+VARIABLES = list of 29 Indian states
+COLORS = ['Red', 'Green', 'Blue', 'Yellow']
+NEIGHBORS = an adjacency list representing the map of India
+
+// --- 2. Utility Functions ---
+FUNCTION is_valid(assignment, var, value):
+    FOR each neighbor of var:
+        IF the neighbor is in the assignment and has the same value:
+            RETURN FALSE
+    RETURN TRUE
+
+// --- 3. Visualization Function ---
+FUNCTION visualize_coloring(solution, title, graph, positions):
+    create a list of node colors based on the solution
+    create a new plot
+    draw the graph with node colors, labels, etc.
+    set the title of the plot
+    show the plot
+
+// --- 4. Algorithm 1: Plain Backtracking ---
+plain_steps = 0
+FUNCTION backtrack_plain(assignment):
+    increment plain_steps
+    IF the assignment is complete (all variables are assigned a color):
+        RETURN the assignment
+    
+    select the first unassigned variable
+    FOR each color in COLORS:
+        IF the assignment is valid with the current color for the variable:
+            assign the color to the variable
+            result = recursively call backtrack_plain(assignment)
+            IF the result is not None:
+                RETURN the result
+            remove the assignment (backtrack)
+    RETURN None
+
+// --- 5. Algorithm 2: Backtracking with MRV + LCV ---
+heuristic_steps = 0
+heuristic_log = []
+
+FUNCTION select_mrv(assignment):
+    unassigned_vars = get all unassigned variables
+    RETURN the variable with the minimum number of remaining legal values
+
+FUNCTION order_lcv(var, assignment):
+    create a list of color-conflict pairs
+    FOR each color:
+        IF the color is a valid assignment for the variable:
+            count the number of conflicts it would create for the neighbors
+            add the (color, conflicts) pair to the list
+    sort the list by the number of conflicts in ascending order
+    RETURN the sorted list of colors
+
+FUNCTION backtrack_heuristic(assignment):
+    increment heuristic_steps
+    IF the assignment is complete:
+        RETURN the assignment
+
+    var = select_mrv(assignment)
+    log the MRV choice
+    ordered_values = order_lcv(var, assignment)
+    log the LCV choice
+
+    FOR each value in ordered_values:
+        IF the assignment is valid with the current value for the variable:
+            assign the value to the variable
+            result = recursively call backtrack_heuristic(assignment)
+            IF the result is not None:
+                RETURN the result
+            remove the assignment (backtrack)
+    RETURN None
+
+// --- 6. Algorithm 3: Backtracking with MRV + LCV + AC-3 ---
+ac3_steps = 0
+ac3_log = []
+
+FUNCTION backtrack_ac3(assignment, domains):
+    increment ac3_steps
+    IF the assignment is complete:
+        RETURN the assignment
+
+    var = select the unassigned variable with the smallest domain (MRV)
+    log the MRV choice
+    ordered_values = order the values of the variable's domain by the least constraining value (LCV)
+    log the LCV choice
+
+    FOR each value in ordered_values:
+        assign the value to the variable
+        domains_copy = a deep copy of the current domains
+        set the domain of the current variable to just the chosen value
+        
+        create a queue of arcs with all neighbors of the current variable
+        IF ac3(domains, queue) is TRUE:
+            result = recursively call backtrack_ac3(assignment, domains)
+            IF the result is not None:
+                RETURN the result
+        
+        // Failure: backtrack
+        remove the assignment
+        restore the domains from the copy
+    RETURN None
+
+FUNCTION ac3(domains, queue):
+    WHILE the queue is not empty:
+        (xi, xj) = pop an arc from the queue
+        IF revise(domains, xi, xj) is TRUE:
+            IF the domain of xi is empty:
+                RETURN FALSE // Failure
+            FOR each neighbor xk of xi (excluding xj):
+                add the arc (xk, xi) to the queue
+    RETURN TRUE
+
+FUNCTION revise(domains, xi, xj):
+    revised = FALSE
+    colors_to_remove = an empty set
+    FOR each color_x in the domain of xi:
+        check if there is a color_y in the domain of xj that satisfies the constraint (color_x != color_y)
+        IF no such color_y exists:
+            add color_x to colors_to_remove
+            revised = TRUE
+    remove the colors in colors_to_remove from the domain of xi
+    RETURN revised
+
+// --- 7. Main Execution Block ---
+IF this is the main program:
+    // Setup the graph for visualization
+    create a graph G
+    add nodes (states) and edges (neighbors) to G
+    calculate the layout for the graph
+
+    // --- 1. Plain Backtracking ---
+    PRINT "--- 1. Solving with Plain Backtracking ---"
+    start_time = current time
+    plain_solution = call backtrack_plain with an empty assignment
+    time_plain = current time - start_time
+    PRINT the solution, steps, and time taken
+    visualize the solution
+
+    // --- 2. Backtracking with MRV + LCV ---
+    PRINT "--- 2. Solving with Backtracking + MRV + LCV ---"
+    start_time = current time
+    heuristic_solution = call backtrack_heuristic with an empty assignment
+    time_heuristic = current time - start_time
+    PRINT the solution, steps, and time taken
+    PRINT the MRV/LCV log
+    visualize the solution
+
+    // --- 3. Backtracking with MRV + LCV + AC-3 ---
+    PRINT "--- 3. Solving with Backtracking + MRV + LCV + AC-3 ---"
+    initialize domains for all variables
+    start_time = current time
+    ac3_solution = call backtrack_ac3 with an empty assignment and initial domains
+    time_ac3 = current time - start_time
+    PRINT the solution, steps, and time taken
+    PRINT the MRV/LCV log
+    visualize the solution
+
+    // --- 4. Final Comparison Table ---
+    PRINT a formatted table comparing the performance of the three algorithms
+
+END

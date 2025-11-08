@@ -1,0 +1,19 @@
+NAME: Paritosh Lahre
+ID: 12341550
+Assignment: Lab 10
+
+This assignment is about implementation of TAC to arithmentic , boolean expressions also modifying symbol table to declare varaibles and identify already declared variable.
+This assignment is an extention of lab 8 and lab 9 with addtion of if , if-else , boolean and while loop using short cicuit evaluation and backpatching and added function invocation.
+
+While doing this i encouter classical danglng if else case , which is not resolved yet, so sample test case do not contain if else.
+
+To execute:
+
+bash:
+lex lex.l
+yacc -d yacc.y
+gcc lex.yy.c y.tab.c symbol.c -o parser
+./parser
+
+check test case in sample.txt , to execute :
+./parser < input.txt

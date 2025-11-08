@@ -1,0 +1,24 @@
+int p, q, r, m, n;
+float val;
+
+p = 5;
+q = 10;
+
+p < q and q > r;
+
+
+if (p < q) then {
+    m = p + q;
+}
+
+if (p > q) then {
+    m = p;
+} else {
+    m = q;
+}
+
+while (p < 120) do {
+    p = p + 1;
+}
+
+p < q or r > m;

@@ -1,0 +1,77 @@
+START
+
+CLASS Graph:
+    // Initialize the graph with a given number of vertices
+    CONSTRUCTOR(vertices):
+        self.V = vertices
+        self.graph = a 2D matrix of size V x V, initialized to 0
+        self.path = an empty list to store the Hamiltonian path
+
+    // Add an undirected edge between two vertices
+    METHOD add_edge(u, v):
+        set graph[u][v] = 1
+        set graph[v][u] = 1
+
+    // Print the found Hamiltonian cycle
+    METHOD print_solution():
+        PRINT "Hamiltonian Cycle found:"
+        PRINT the path joined by " -> " and connect the last vertex to the first
+
+    // Check if a vertex can be safely added to the path
+    METHOD is_safe(v, pos):
+        // Check if there is an edge between the last vertex in the path and v
+        IF graph[path[pos - 1]][v] is 0:
+            RETURN FALSE
+        // Check if the vertex v is already in the path
+        IF v is in path:
+            RETURN FALSE
+        RETURN TRUE
+
+    // Recursive utility to find the Hamiltonian cycle
+    METHOD find_cycle_util(pos):
+        // Base case: If all vertices are included in the path
+        IF pos is equal to V:
+            // Check if the last vertex is connected to the first vertex
+            IF graph[path[pos - 1]][path[0]] is 1:
+                RETURN TRUE
+            ELSE:
+                RETURN FALSE
+
+        // Try different vertices as the next one in the path
+        FOR each vertex v from 1 to V-1:
+            IF is_safe(v, pos):
+                add v to the path
+                // Recur to find the rest of the path
+                IF find_cycle_util(pos + 1) is TRUE:
+                    RETURN TRUE
+                // If adding v doesn't lead to a solution, backtrack
+                remove v from the path
+
+        RETURN FALSE
+
+    // Main function to find the Hamiltonian cycle
+    METHOD find_hamiltonian_cycle():
+        // Start the path with the first vertex (0)
+        self.path = [0]
+
+        IF find_cycle_util(1) is FALSE:
+            PRINT "No Hamiltonian Cycle exists for this graph."
+            RETURN FALSE
+
+        print_solution()
+        RETURN TRUE
+
+// Main execution
+PRINT "--- Example 1: Square Graph (Cycle Exists) ---"
+g1 = new Graph(4)
+add edges to g1 to form a square
+
+g1.find_hamiltonian_cycle()
+
+PRINT "--- Example 2: Star Graph (No Cycle) ---"
+g2 = new Graph(5)
+add edges to g2 to form a star graph
+
+g2.find_hamiltonian_cycle()
+
+END

@@ -1,0 +1,102 @@
+START
+
+// Define the initial and goal states of the 8-puzzle
+INITIAL_STATE = [[1, 2, 3], [4, 0, 6], [7, 5, 8]] // 0 is the blank space
+GOAL_STATE = [[1, 2, 3], [4, 5, 6], [7, 8, 0]]
+
+// Heuristic Function 1: Calculate Misplaced Tiles
+FUNCTION calculate_misplaced_tiles(state, goal_state):
+    misplaced_count = 0
+    FOR each row in the state:
+        FOR each column in the row:
+            IF the tile at the current position is not the same as the goal state and is not the blank tile:
+                increment misplaced_count
+    RETURN misplaced_count
+
+// Heuristic Function 2: Calculate Manhattan Distance
+FUNCTION calculate_manhattan_distance(state, goal_positions):
+    total_distance = 0
+    FOR each row in the state:
+        FOR each column in the row:
+            tile = the tile at the current position
+            IF the tile is not the blank tile:
+                goal_row, goal_col = get the goal position of the tile from goal_positions
+                total_distance += absolute_difference(current_row, goal_row) + absolute_difference(current_col, goal_col)
+    RETURN total_distance
+
+// Helper Function: Get Blank Position
+FUNCTION get_blank_position(state):
+    FOR each row in the state:
+        FOR each column in the row:
+            IF the tile at the current position is the blank tile:
+                RETURN current_row, current_col
+    RETURN None
+
+// Helper Function: Get Neighbors
+FUNCTION get_neighbors(state):
+    find the blank tile's position (blank_row, blank_col)
+    neighbors_list = []
+    // Possible moves: Up, Down, Left, Right
+    FOR each possible move (dr, dc) in [(0, 1), (0, -1), (1, 0), (-1, 0)]:
+        new_row, new_col = blank_row + dr, blank_col + dc
+        IF the new position is within the grid boundaries:
+            create a new_state by copying the current state
+            swap the blank tile with the tile at the new position in the new_state
+            add the new_state to the neighbors_list
+    RETURN neighbors_list
+
+// Helper Function: Get Goal Positions
+FUNCTION get_goal_positions(goal_state):
+    positions_map = {}
+    FOR each row in the goal_state:
+        FOR each column in the row:
+            tile = the tile at the current position
+            store the position (row, col) of the tile in the positions_map
+    RETURN positions_map
+
+// A* Solver
+FUNCTION solve_puzzle(initial_state, goal_state, heuristic_function):
+    start_node = convert initial_state to a hashable format
+    goal_node = convert goal_state to a hashable format
+    goal_positions = pre-compute goal positions for Manhattan distance if needed
+
+    g_cost = 0
+    h_cost = calculate heuristic_function(start_node, goal_node or goal_positions)
+    f_cost = g_cost + h_cost
+
+    priority_queue = [(f_cost, g_cost, start_node, [start_node])] // (priority, cost, state, path)
+    visited_set = {start_node}
+
+    WHILE the priority_queue is not empty:
+        get the state with the lowest f_cost from the priority_queue (current_f, current_g, current_state, path)
+
+        IF current_state is the goal_node:
+            RETURN the path // Solution found
+
+        FOR each neighbor in get_neighbors(current_state):
+            IF the neighbor has not been visited:
+                add the neighbor to the visited_set
+                new_g = current_g + 1
+                new_h = calculate heuristic_function(neighbor, goal_node or goal_positions)
+                new_f = new_g + new_h
+                new_path = path + [neighbor]
+                add (new_f, new_g, neighbor, new_path) to the priority_queue
+
+    RETURN None // No solution found
+
+// Utility to print the solution path
+FUNCTION print_solution(path):
+    IF path is None:
+        PRINT "No solution found."
+    ELSE:
+        PRINT "Solution found in", len(path) - 1, "moves:"
+        FOR each step in the path:
+            PRINT the state in a user-friendly format
+
+// Main execution
+IF this is the main program:
+    PRINT "Solving 8-Puzzle using Manhattan Distance..."
+    solution_path = solve_puzzle(INITIAL_STATE, GOAL_STATE, calculate_manhattan_distance)
+    print_solution(solution_path)
+
+END

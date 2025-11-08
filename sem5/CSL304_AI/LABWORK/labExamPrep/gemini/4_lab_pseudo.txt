@@ -1,0 +1,101 @@
+START
+
+// Generate all possible successor states from the current state
+FUNCTION generate_successors(state):
+    successors = an empty list
+    FOR each heap_size in the state:
+        FOR stones_to_remove from 1 to heap_size:
+            create a new_state by removing stones_to_remove from the current heap
+            add the new_state to the successors list
+    RETURN successors
+
+// Alpha-Beta Pruning implementation
+FUNCTION alpha_beta_pruning(state, is_max_player, alpha, beta, counters, verbose, depth):
+    increment the explored nodes counter
+    
+    // Check for terminal state (no stones left)
+    IF the sum of stones in the state is 0:
+        RETURN -1 if is_max_player, else 1
+
+    IF is_max_player:
+        best_value = -infinity
+        FOR each next_state in generate_successors(state):
+            value = recursively call alpha_beta_pruning for the minimizing player (is_max_player = False)
+            best_value = max(best_value, value)
+            alpha = max(alpha, best_value)
+            // Pruning condition
+            IF alpha >= beta:
+                increment the pruned nodes counter
+                break from the loop
+        RETURN best_value
+    ELSE (minimizing player):
+        best_value = +infinity
+        FOR each next_state in generate_successors(state):
+            value = recursively call alpha_beta_pruning for the maximizing player (is_max_player = True)
+            best_value = min(best_value, value)
+            beta = min(beta, best_value)
+            // Pruning condition
+            IF alpha >= beta:
+                increment the pruned nodes counter
+                break from the loop
+        RETURN best_value
+
+// Plain Minimax implementation
+FUNCTION minimax(state, is_max_player, counters):
+    increment the explored nodes counter
+
+    IF the sum of stones in the state is 0:
+        RETURN -1 if is_max_player, else 1
+
+    IF is_max_player:
+        best_value = -infinity
+        FOR each next_state in generate_successors(state):
+            value = recursively call minimax for the minimizing player
+            best_value = max(best_value, value)
+        RETURN best_value
+    ELSE (minimizing player):
+        best_value = +infinity
+        FOR each next_state in generate_successors(state):
+            value = recursively call minimax for the maximizing player
+            best_value = min(best_value, value)
+        RETURN best_value
+
+// Main solver function to find the optimal move
+FUNCTION find_optimal_move(initial_state, use_pruning, verbose):
+    PRINT which algorithm is running
+    counters = {'explored': 0, 'pruned': 0}
+    best_move = None
+    best_value = -infinity
+    alpha = -infinity
+    beta = +infinity
+
+    FOR each move in generate_successors(initial_state):
+        IF use_pruning:
+            value = call alpha_beta_pruning for MIN's turn
+        ELSE:
+            value = call minimax for MIN's turn
+
+        IF value > best_value:
+            best_value = value
+            best_move = move
+        
+        IF use_pruning:
+            alpha = max(alpha, best_value)
+
+    PRINT the results: best move, outcome, nodes explored, and nodes pruned
+    RETURN the number of explored nodes
+
+// Main execution
+IF this is the main program:
+    INITIAL_STATE = (3, 4, 5)
+
+    // Run Alpha-Beta Pruning
+    ab_nodes = find_optimal_move(INITIAL_STATE, use_pruning=True, verbose=False)
+
+    // Run plain Minimax for comparison
+    mm_nodes = find_optimal_move(INITIAL_STATE, use_pruning=False, verbose=False)
+
+    // Show efficiency improvement
+    PRINT comparison of explored nodes between the two algorithms
+
+END
