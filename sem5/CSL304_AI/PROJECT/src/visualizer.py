@@ -224,7 +224,7 @@ class SimpleVisualizer:
         
         # Add obstacles
         for (x, y) in self.warehouse.obstacles:
-            grid[y][x] = '█'
+            grid[y][x] = 'O'
         
         # Add drop zones
         for (x, y) in self.warehouse.drop_zones:

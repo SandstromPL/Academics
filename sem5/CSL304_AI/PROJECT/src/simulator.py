@@ -120,7 +120,7 @@ class Simulator:
         # Check if all packages delivered and record the step (only once)
         if self.warehouse.all_packages_delivered() and not hasattr(self, 'completion_step'):
             self.completion_step = self.current_step
-            print(f"\n🎉 100% Delivery Complete! All packages delivered at step {self.completion_step}!")
+            print(f"\n 100% Delivery Complete! All packages delivered at step {self.completion_step}!")
             print(f"Robots will continue to park. Simulation will end when all robots are parked.\n")
         
         # Check if all packages delivered AND all robots are parked
@@ -262,13 +262,13 @@ class Simulator:
         # Show when 100% delivery was achieved if it happened
         if hasattr(self, 'completion_step'):
             parking_steps = self.current_step - self.completion_step
-            print(f"\n📦 100% Delivery achieved at step: {self.completion_step}")
+            print(f"\n 100% Delivery achieved at step: {self.completion_step}")
             print(f"   Additional parking steps: {parking_steps}")
             print(f"   (Total = {self.completion_step} delivery + {parking_steps} parking)")
         print(f"\nPACKAGE STATISTICS:")
-        print(f"   • Total Packages: {warehouse_stats['total_packages']}")
-        print(f"   • Delivered: {warehouse_stats['delivered_packages']}")
-        print(f"   • Success Rate: {100 * warehouse_stats['delivered_packages'] / warehouse_stats['total_packages']:.1f}%")
+        print(f"   -> Total Packages: {warehouse_stats['total_packages']}")
+        print(f"   -> Delivered: {warehouse_stats['delivered_packages']}")
+        print(f"   -> Success Rate: {100 * warehouse_stats['delivered_packages'] / warehouse_stats['total_packages']:.1f}%")
         
         print(f"\nROBOT STATISTICS:")
         total_distance = 0
@@ -282,17 +282,17 @@ class Simulator:
             total_blocked += stats['blocked_count']
             
             print(f"\n   Robot {robot.id}:")
-            print(f"      • Packages Delivered: {stats['packages_delivered']}")
-            print(f"      • Distance Traveled: {stats['distance_traveled']}")
-            print(f"      • Conflicts Resolved: {stats['conflicts_resolved']}")
-            print(f"      • Times Blocked: {stats['blocked_count']}")
-            print(f"      • Final State: {stats['state']}")
+            print(f"      -> Packages Delivered: {stats['packages_delivered']}")
+            print(f"      -> Distance Traveled: {stats['distance_traveled']}")
+            print(f"      -> Conflicts Resolved: {stats['conflicts_resolved']}")
+            print(f"      -> Times Blocked: {stats['blocked_count']}")
+            print(f"      -> Final State: {stats['state']}")
         
         print(f"\n   TOTALS:")
-        print(f"      • Total Distance: {total_distance}")
-        print(f"      • Total Conflicts: {total_conflicts}")
-        print(f"      • Total Blocks: {total_blocked}")
-        print(f"      • Avg Distance/Robot: {total_distance / len(self.robots):.1f}")
+        print(f"      -> Total Distance: {total_distance}")
+        print(f"      -> Total Conflicts: {total_conflicts}")
+        print(f"      -> Total Blocks: {total_blocked}")
+        print(f"      -> Avg Distance/Robot: {total_distance / len(self.robots):.1f}")
         
         # AI Techniques Summary
         all_techniques = set()
@@ -301,7 +301,7 @@ class Simulator:
         
         print(f"\nAI TECHNIQUES USED:")
         for technique in sorted(all_techniques):
-            print(f"      • {technique}")
+            print(f"      -> {technique}")
         
         print("\n" + "=" * 80)
     

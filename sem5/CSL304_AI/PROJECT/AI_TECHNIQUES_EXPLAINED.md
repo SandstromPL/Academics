@@ -515,25 +515,6 @@ Where:
 
 ---
 
-## 11. Further Reading
-
-### Books
-- "Artificial Intelligence: A Modern Approach" - Russell & Norvig
-- "Planning Algorithms" - Steven LaValle
-- "Multi-Agent Systems" - Gerhard Weiss
-
-### Papers
-- "A* Search Algorithm" - Hart, Nilsson, Raphael (1968)
-- "Cooperative Pathfinding" - Silver (2005)
-- "Multi-Robot Path Planning" - Lavalle & Hutchinson (1998)
-
-### Online Resources
-- [Stanford CS221: AI](https://stanford-cs221.github.io/)
-- [Berkeley CS188: AI](https://inst.eecs.berkeley.edu/~cs188/)
-- [Path Planning Algorithms](https://www.redblobgames.com/pathfinding/)
-
----
-
 **Document**: AI Techniques Explained  
 **Project**: Multi-Agent Warehouse Robot Simulator  
 **Course**: CSL304 - Artificial Intelligence  

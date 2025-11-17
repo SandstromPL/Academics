@@ -78,10 +78,8 @@ PROJECT/
 ├── setup.sh                       # Quick setup script
 │
 ├── README.md                      # This file
-├── README_NEW.md                  # Detailed command reference
 ├── QUICKSTART.md                  # Quick start guide
 ├── AI_TECHNIQUES_EXPLAINED.md     # Detailed AI concepts documentation
-├── ADVERSARIAL_INTEGRATION.md     # Minimax integration guide
 └── PROJECT_STRUCTURE.md           # Architecture documentation
 ```
 
@@ -136,9 +134,7 @@ python3 -c "import numpy, matplotlib, colorama; print('All dependencies installe
 Execute a moderate-scale simulation with visual feedback:
 
 ```bash
-python3 main.py --width 25 --height 25 --robots 8 --packages 15 \
-                --obstacles 60 --visualization matplotlib \
-                --delay 0.1 --conflict-resolution minimax
+python3 main.py --width 25 --height 25 --robots 8 --packages 15 --obstacles 60 --visualization matplotlib --delay 0.1 --conflict-resolution minimax
 ```
 
 ### What This Does:
@@ -231,6 +227,9 @@ python3 main.py --visualization simple --delay 0.05
 python3 main.py --visualization none --delay 0
 ```
 
+**Automatic Fallback:**
+If you specify `--visualization matplotlib` for very large grids (40×40+), the simulator will **automatically switch to simple terminal visualization**. This happens because matplotlib struggles to render large grids efficiently, causing freezing and lag. The system detects this and falls back to terminal mode to ensure smooth simulation performance.
+
 ---
 
 ### AI Strategy
@@ -265,31 +264,25 @@ python3 main.py --batch 10 --visualization none
 ### 1. Small Test (Quick Demo)
 
 ```bash
-python3 main.py --width 15 --height 15 --robots 3 --packages 5 \
-                --visualization matplotlib --delay 0.15
+python3 main.py --width 15 --height 15 --robots 3 --packages 5 --visualization matplotlib --delay 0.15
 ```
 
 ### 2. Moderate Test (Recommended)
 
 ```bash
-python3 main.py --width 25 --height 25 --robots 8 --packages 15 \
-                --obstacles 60 --visualization matplotlib \
-                --delay 0.1 --conflict-resolution minimax
+python3 main.py --width 25 --height 25 --robots 8 --packages 15 --obstacles 60 --visualization matplotlib --delay 0.1 --conflict-resolution minimax
 ```
 
 ### 3. Large Scale Test
 
 ```bash
-python3 main.py --width 50 --height 50 --robots 25 --packages 80 \
-                --obstacles 200 --visualization simple \
-                --delay 0.01 --conflict-resolution minimax
+python3 main.py --width 50 --height 50 --robots 25 --packages 80 --obstacles 200 --visualization simple --delay 0.01 --conflict-resolution minimax
 ```
 
 ### 4. Performance Benchmark
 
 ```bash
-python3 main.py --width 30 --height 30 --robots 10 --packages 20 \
-                --batch 5 --visualization none
+python3 main.py --width 30 --height 30 --robots 10 --packages 20 --batch 5 --visualization none
 ```
 
 ---
@@ -314,22 +307,10 @@ python3 main.py --width 30 --height 30 --robots 10 --packages 20 \
 
 ---
 
-## Performance Benchmarks
-
-| Grid | Robots | Packages | Time | Success |
-|------|--------|----------|------|---------|
-| 20×20 | 5 | 10 | 8.5s | 100% |
-| 25×25 | 8 | 15 | 15.2s | 100% |
-| 35×35 | 12 | 25 | 31.5s | 100% |
-| 50×50 | 25 | 80 | 5.6s | 100% |
-
----
-
 ## Additional Documentation
 
 - **PROJECT_STRUCTURE.md** - For quick view of directory structure
 - **QUICKSTART.md** - Minimal setup guide
 - **AI_TECHNIQUES_EXPLAINED.md** - Detailed AI algorithms
-- **ADVERSARIAL_INTEGRATION.md** - Minimax implementation
 
 ---

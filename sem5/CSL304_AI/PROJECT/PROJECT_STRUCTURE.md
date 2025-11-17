@@ -115,12 +115,6 @@ colorama>=0.4.6
 7. **Drop Zone Congestion Handling**: Priority-based waiting for deliveries
 8. **Compact Statistics Display**: Fits all robot data in visualization panel
 
-## 📈 Performance Characteristics
-
-- **Success Rate**: 100% delivery completion in all test cases
-- **Scalability**: Tested up to 50x50 grids, 20 robots, 50 packages
-- **Efficiency**: Typical completion in 80-150 steps for medium scenarios
-- **Conflict Resolution**: Zero deadlocks with priority system
 
 ## 🎓 Academic Context
 
