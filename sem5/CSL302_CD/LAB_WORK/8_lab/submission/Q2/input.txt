@@ -19,6 +19,6 @@ int a;
 
 x = ( (a + b) * (c - 10) ) / ( (y > 5) or not (a == b) );
 
-int z
+int z;
 
 z = 100;

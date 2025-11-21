@@ -191,6 +191,7 @@ UPROGS=\
 	_prioritytest\
 	_tlbrun\
 	_tlbtest\
+	_twostriketest\
 
 fs.img: mkfs README $(UPROGS)
 	./mkfs fs.img README $(UPROGS)

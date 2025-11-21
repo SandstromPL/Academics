@@ -210,3 +210,12 @@ int sys_getpagefaults(void) {
   struct proc *p = myproc();
   return p->page_faults;
 }
+
+int sys_twostrike(void){
+  int mode;
+  argint(0, &mode);
+  
+  struct proc *p = myproc();
+  p->twostrike_mode = 1;
+  return 0;
+}

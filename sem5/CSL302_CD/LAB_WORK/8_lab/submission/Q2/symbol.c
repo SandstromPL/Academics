@@ -18,6 +18,10 @@ void insertSymbol(char* name, char* type, int scope) {
         printf("Error: Redeclaration of %s\n", name);
         return;
     }
+    /*if (sym != NULL) {
+        fprintf(stderr, "Error: Redeclaration of %s\n", name); // Use stderr for errors 
+        exit(1); // Add this if you want to stop the compiler immediately
+    }*/
     sym = (Symbol*)malloc(sizeof(Symbol));
     strcpy(sym->name, name);
     strcpy(sym->type, type);

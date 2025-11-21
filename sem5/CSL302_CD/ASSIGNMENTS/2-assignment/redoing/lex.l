@@ -1,7 +1,7 @@
 %{
-	#include "y.tab.h"
-	#include<stdio.h>
-	extern int yylineno;
+    #include "y.tab.h"
+    #include <stdio.h>
+    extern int yylineno;
 %}
 
 %%
@@ -23,19 +23,15 @@
 "New"        { return NEW; }
 "main"       { return MAIN; }
 
+"true"       { return TRUE_CONST; }
+"false"      { return FALSE_CONST; }
 
-"true" {return TRUE_CONST;}
-"false" {return FALSE_CONST;}
+[a-zA-Z][a-zA-Z0-9_]{0,30} { return IDENTIFIER; }
 
-
-[a-zA-Z][a-zA-Z0-9_]{0,30} {return IDENTIFIER;}
-
-0[xX]([0-9a-fA-F])+ {return HEXA_CONST;}
-[0-9]+ {return INT_CONST;}
-[0-9]+\.[0-9]+([eE][+]?[0-9]+)? {return DOUBLE_CONST;}
-
-["]([^"]|\\(.|\n))*["] {return STR_CONST;}
-
+0[xX]([0-9a-fA-F])+        { return HEXA_CONST; }
+[0-9]+                     { return INT_CONST; }
+[0-9]+\.[0-9]+([eE][+]?[0-9]+)? { return DOUBLE_CONST; }
+["]([^"]|\\(.|\n))*["]     { return STR_CONST; }
 
 "="      { return ASSIGN; }
 "=="     { return EQ; }
@@ -63,15 +59,14 @@
 ","      { return COMMA; }
 "."      { return DOT; }
 
+"//".* { /* single-line comment */ }
+"/*"([^*]|\*+[^*/])*\*+"/"  { /* multi-line comment */ }
+[ \t\r]+                    { /* skip whitespace */ }
+\n                          { yylineno++; }
+.                           { return yytext[0]; }
 
-
-"//".*                  { /* single-line comment */ }
-"/*"([^*]|\*+[^*/])*\*+"/" { /* multi-line comment */ }
-[ \t\r\n]+              { /* skip whitespace */ }
-\n {yylineno++;}
-.
 %%
 
 int yywrap(){
-	return 1;
+    return 1;
 }

@@ -1,0 +1,8 @@
+if a < b goto L1
+goto L2
+L1 : t1 = a + b
+goto L3
+L2 : t2 = a - b
+c = t2
+
+t24232 = -123

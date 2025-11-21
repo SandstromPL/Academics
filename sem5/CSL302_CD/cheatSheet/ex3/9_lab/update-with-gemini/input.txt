@@ -1,0 +1,37 @@
+int a, b, count;
+int x, y, result;
+int is_valid;
+
+a = 100;
+b = 50;
+x = 2;
+y = 4;
+
+is_valid = (a > b) and (x < y) or not (a == 100);
+
+
+if (is_valid) {
+    int temp;
+    temp = a + b;
+    
+    if (temp > 140) {
+        result = 1000;
+    } else {
+        result = 500;
+    }
+} else {
+    result = 0;
+}
+
+
+count = 0;
+while (a > b) {
+    a = a - 10;
+    count = count + 1;
+    
+    if (count >= 3) {
+        b = b + 5;
+    }
+}
+
+result = (a + b) * count;

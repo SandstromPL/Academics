@@ -30,4 +30,5 @@
 #define SYS_getptsize 29    //LAB5-CA4-step1
 #define SYS_setpriority 30  //HA3->step3
 #define SYS_getpagefaults 31    //LAB6->part1->step3
+#define SYS_twostrike 32    //LAB12->Q1
 

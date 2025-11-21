@@ -191,11 +191,14 @@ struct {
 void
 consoleintr(int (*getc)(void))
 {
-  int c, doprocdump = 0;
+  int c, doprocdump = 0, do_twostrike = 0;
 
   acquire(&cons.lock);
   while((c = getc()) >= 0){
     switch(c){
+    case C('C'):
+      do_twostrike = 1;
+      break;
     case C('P'):  // Process listing.
       // procdump() locks cons.lock indirectly; invoke later
       doprocdump = 1;
@@ -229,6 +232,35 @@ consoleintr(int (*getc)(void))
   release(&cons.lock);
   if(doprocdump) {
     procdump();  // now call procdump() wo. cons.lock held
+  }
+  if (do_twostrike)
+  {
+    struct proc *p = myproc();
+    // BLANK 2: Process State Check
+    if (p != 0 && p->state == RUNNING)
+    {
+      if (p->twostrike_mode == 1)
+      {
+        // BLANK 3: Check if this is the FIRST strike
+        if (p->strike_count == 0)
+        {
+          // BLANK 4: Update the count
+          p->strike_count += 1;
+          cprintf("\n[Strike 1] Press Ctrl+C again to exit.\n");
+        }
+        else
+        {
+          cprintf("\n[Strike 2] Exiting.\n");
+          // BLANK 5: Mark process for termination
+          p->killed = 1;
+        }
+      }
+      else
+      {
+        // Not in two-strike mode, kill immediately
+        p->killed = 1;
+      }
+    }
   }
 }
 

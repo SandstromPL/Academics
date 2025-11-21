@@ -113,6 +113,7 @@ extern int sys_numpp(void); //LAB5-CA4-step4
 extern int sys_getptsize(void); //LAB5-CA4-step4
 extern int sys_setpriority(void); //HA3->step3
 extern int sys_getpagefaults(void); //LAB6->part1->step3
+extern int sys_twostrike(void);  //LAB12->Q1
 
 static int (*syscalls[])(void) = {
 [SYS_fork]    sys_fork,
@@ -146,6 +147,7 @@ static int (*syscalls[])(void) = {
 [SYS_getptsize] sys_getptsize,  //LAB5-CA4-step4
 [SYS_setpriority] sys_setpriority,  //HA3->step3
 [SYS_getpagefaults] sys_getpagefaults,  //LAB6->part1->step3
+[SYS_twostrike] sys_twostrike,  //LAB12->Q1
 };
 
 void

@@ -120,6 +120,8 @@ found:
   p->shed_count = 0; // LAB4-TA2-gmeet -> initializes new counter fields to 0 for process 'p'
   p->priorityMark = 0;  //HA3->step2-> initializing priority-mark(defalutt priority)
   p->page_faults = 0;   //LAB6->part1->step2->initialized page faults
+  p->twostrike_mode = 0;  //LA12->Q1
+  p->strike_count = 0;  //LAB12->Q1
   return p;
 }
 

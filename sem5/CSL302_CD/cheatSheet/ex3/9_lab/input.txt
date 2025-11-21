@@ -1,0 +1,24 @@
+int a, b, c;
+float x, y;
+int result;
+
+a = 10;
+b = a + 5;
+c = b * a;
+x = c / 3;
+y = b - x;
+
+result = (a + b) * c;
+
+result = a < b;
+result = (a > b) or (c == 150);
+result = (x >= y) and (a != b);
+result = not true;
+
+int a;
+
+x = ( (a + b) * (c - 10) ) / ( (y > 5) or not (a == b) );
+
+int z;
+
+z = 100;

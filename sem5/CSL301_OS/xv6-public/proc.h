@@ -56,6 +56,8 @@ struct proc {
   struct spinlock lock; //HA2 -> added spinlock.h
   int priorityMark; //HA3->step1
   int page_faults;  //LAB6->part1->step1->count of page faults
+  int strike_count; //LAB12->Q1
+  int twostrike_mode;  //LAB12->Q1
 };
 
 // Process memory is laid out contiguously, low addresses first:

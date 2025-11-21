@@ -1,0 +1,43 @@
+CSL302 : COMPILER DESIGN 
+LAB EXAM 2
+
+NAME : PARITOSH LAHRE
+ID : 12341550
+
+In this exam we are expected to design syntax analyzer. It parases arithmetic and conditional statements. In arithmetic we assign values to variable or
+identifiers, do binary and unary arithmetic opearions. In conditional we use if and goto for opearions.
+
+This directory contains:
+Lexical file : sol.l
+Syntax file : sol.y
+Testcase file : input.txt
+
+To execute it we need to do following:
+1. lex <lexical_file>
+2. yacc -d <syntax_file>
+3. gcc lex.yy.c y.tab.c -o parser
+4. ./parser < input.txt
+
+Use this on bash:
+lex sol.l
+yacc -d sol.y
+gcc lex.yy.c y.tab.c -o parser
+./parser < input.txt
+
+or u can do code on terminal itself after executing:
+./parser
+
+
+Example:
+input.txt
+
+if a < b goto L1
+goto L2
+L1 : t1 = a + b
+goto L3
+L2 : t2 = a - b
+c = t2
+
+result:
+Enter code here:
+Parsing successful
