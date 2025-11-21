@@ -8,7 +8,6 @@ void yyerror(const char *s);
 int yylex(void);
 extern int yylineno;
 
-// --- HELPER FUNCTIONS ---
 int temp_count = 0;
 int label_count = 0;
 char* new_temp();
@@ -16,12 +15,10 @@ char* new_label();
 void check_scope(char* id);
 %}
 
-/* 1. UNION DEFINITION */
 %union {
     char* str;
 }
 
-/* 2. TOKENS (Strings) */
 %token <str> INT DOUBLE BOOL STRING VOID 
 %token <str> IDENTIFIER HEXA_CONST INT_CONST DOUBLE_CONST STR_CONST TRUE_CONST FALSE_CONST
 
@@ -31,11 +28,9 @@ void check_scope(char* id);
 %token PLUS MINUS MUL DIV MOD
 %token L_RND_BRC R_RND_BRC L_CURL_BRC R_CURL_BRC L_SQR_BRC R_SQR_BRC SEMICOLON COMMA DOT
 
-/* 3. TYPES (FIXED: Added Call to this list) */
 %type <str> Type Expr LValue Constant ExprOpt ExprFor M Call
 %type <str> IfHead 
 
-/* 4. PRECEDENCE */
 %nonassoc LOWER_THAN_ELSE
 %nonassoc ELSE
 %right ASSIGN
@@ -52,13 +47,11 @@ void check_scope(char* id);
 
 %%
 
-/* --- MARKER RULE --- */
 M: /* empty */ { 
     $$ = new_label(); 
     printf("%s:\n", $$); 
 } ;
 
-/* --- PROGRAM STRUCTURE --- */
 Program:
     DeclList MainFunc
     ;
@@ -149,7 +142,6 @@ Stmt:
     | SEMICOLON
     ;
 
-/* --- CONTROL FLOW --- */
 
 IfHead: IF L_RND_BRC Expr R_RND_BRC {
     $$ = new_label(); 
@@ -174,10 +166,10 @@ WhileStmt:
     WHILE L_RND_BRC M Expr R_RND_BRC {
         char* L_EXIT = new_label();
         printf("ifFalse %s goto %s\n", $4, L_EXIT);
-        $<str>$ = L_EXIT; // Store exit label
+        $<str>$ = L_EXIT;
     } Stmt {
-        printf("goto %s\n", $3); // Jump to start
-        printf("%s:\n", $<str>6); // Print exit label
+        printf("goto %s\n", $3);
+        printf("%s:\n", $<str>6);
     }
     ;
 
@@ -232,7 +224,6 @@ Type:
     INT | DOUBLE | BOOL | STRING | VOID
     ;
 
-/* --- EXPRESSIONS --- */
 Expr:
     LValue ASSIGN Expr {
         printf("%s = %s\n", $1, $3);
