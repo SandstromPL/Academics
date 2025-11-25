@@ -20,10 +20,10 @@
         pthread_create(&tid,NULL,compute_square,&number);
         pthread_join(tid,&result);
 
-        int * value = (int*)result;
-        printf("Output : %d\n",*value);
+        //int * value = (int*)result;
+        printf("Output : %d\n",*(int*)result);
 
-        free(value);
+        free(result);
 
         return 0;
     }

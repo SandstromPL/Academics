@@ -20,21 +20,23 @@
   void* threadC(void* arg) 
   {
     sem_wait(&sem2);
-    printf("Hello from B\n");
+    printf("Hello from C\n");
     return NULL;
   }
   int main()
   {
-    pthread_t tA, tB;
+    pthread_t tA, tB, tC;
     
     sem_init(&sem1, 0, 0);
     sem_init(&sem2,0 ,0);
     
     pthread_create(&tA, NULL, threadA, NULL);
     pthread_create(&tB, NULL, threadB, NULL);
+    pthread_create(&tC, NULL, threadC, NULL);
     
     pthread_join(tA, NULL);
     pthread_join(tB, NULL);
+    pthread_join(tC,NULL);
     
     sem_destroy(&sem1);
     sem_destroy(&sem2);
