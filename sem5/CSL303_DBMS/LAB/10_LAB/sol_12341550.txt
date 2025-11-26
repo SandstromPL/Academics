@@ -1,0 +1,145 @@
+Lab Sheet 10: Advanced SQL, Indexing, and MongoDB
+Submission Solutions
+Name - Paritosh Lahre (12341550)
+-----------------------------------------------------------------------
+Question 1: Advanced SQL: Recursive CTEs for Hierarchical Data
+-----------------------------------------------------------------------
+
+-- Query to display the organizational hierarchy and levels
+WITH RECURSIVE EmployeeHierarchy AS (
+    -- Anchor Member: Select the CEO (who has no manager)
+    SELECT 
+        employee_id, 
+        employee_name, 
+        manager_id, 
+        1 AS hierarchy_level
+    FROM employees
+    WHERE manager_id IS NULL
+
+    UNION ALL
+
+    -- Recursive Member: Join employees with their managers from the CTE
+    SELECT 
+        e.employee_id, 
+        e.employee_name, 
+        e.manager_id, 
+        eh.hierarchy_level + 1
+    FROM employees e
+    INNER JOIN EmployeeHierarchy eh ON e.manager_id = eh.employee_id
+)
+SELECT * FROM EmployeeHierarchy
+ORDER BY hierarchy_level, employee_id;
+
+
+-----------------------------------------------------------------------
+Question 2: Advanced SQL: Window Functions for Trend Analysis
+-----------------------------------------------------------------------
+
+-- Query for moving average and percentage change
+SELECT 
+    sale_id,
+    product_id,
+    sale_date,
+    sale_amount,
+    -- Moving average over a 7-day window (current row + 6 previous)
+    AVG(sale_amount) OVER (
+        PARTITION BY product_id 
+        ORDER BY sale_date 
+        ROWS BETWEEN 6 PRECEDING AND CURRENT ROW
+    ) AS moving_avg_7_days,
+    -- Percentage change calculation comparing to previous day
+    CASE 
+        WHEN LAG(sale_amount) OVER (PARTITION BY product_id ORDER BY sale_date) = 0 THEN NULL
+        ELSE (sale_amount - LAG(sale_amount) OVER (PARTITION BY product_id ORDER BY sale_date)) / 
+             LAG(sale_amount) OVER (PARTITION BY product_id ORDER BY sale_date) * 100 
+    END AS pct_change_prev_day
+FROM sales;
+
+
+-----------------------------------------------------------------------
+Question 3: Indexing: Optimizing a Complex Query
+-----------------------------------------------------------------------
+
+Recommended Indexes:
+
+1. Table: customers
+   Index Columns: (customer_segment, customer_id, customer_name)
+   Reasoning: The query filters by 'customer_segment'. Including 'customer_id' (the join key) and 'customer_name' (the SELECT column) allows the database to retrieve all required data from the index leaf nodes without looking up the main table storage (heap).
+
+2. Table: products
+   Index Columns: (product_category, product_id, product_name)
+   Reasoning: Similar to customers, this index handles the WHERE clause filter ('product_category'), the JOIN condition ('product_id'), and the SELECT requirement ('product_name').
+
+3. Table: orders
+   Index Columns: (order_date, customer_id, product_id)
+   Reasoning: Since the query filters by a date range, placing 'order_date' first in the index allows the engine to quickly narrow down the relevant rows. Including the foreign keys ('customer_id', 'product_id') speeds up the subsequent joins.
+
+Concept of a Covering Index:
+A covering index is an index that contains all the columns required by a specific query (columns used in SELECT, JOIN, WHERE, ORDER BY, etc.). 
+
+Application to this scenario:
+By creating the composite indexes described above, we ensure that every piece of data the query needs is present in the index structures themselves. The database engine can execute the query solely by scanning the B-Tree indexes. This avoids "key lookups" or "table scans" to fetch the actual data rows from the disk, resulting in maximum performance (often called an "Index Only Scan").
+
+
+-----------------------------------------------------------------------
+Question 4: MongoDB: Aggregation Pipeline for Data Analysis
+-----------------------------------------------------------------------
+
+db.articles.aggregate([
+    // 4.a. Filter for articles with more than 1000 views
+    {
+        $match: {
+            views: { $gt: 1000 }
+        }
+    },
+    // Projection: Calculate comment counts and total likes per article first
+    // This optimizes the process before unwinding the tags
+    {
+        $project: {
+            tags: 1,
+            numberOfComments: { $size: "$comments" },
+            totalLikes: { $sum: "$comments.likes" } 
+        }
+    },
+    // 4.b. Unwind the tags array
+    {
+        $unwind: "$tags"
+    },
+    // 4.c. Group by tag to find the average number of comments and likes per tag
+    {
+        $group: {
+            _id: "$tags",
+            avgComments: { $avg: "$numberOfComments" },
+            avgLikes: { $avg: "$totalLikes" }
+        }
+    },
+    // 4.d. Sort the results by the average number of likes in descending order
+    {
+        $sort: {
+            avgLikes: -1
+        }
+    }
+]);
+
+
+-----------------------------------------------------------------------
+Question 5: MongoDB: Geospatial Queries
+-----------------------------------------------------------------------
+
+Part 1: Creating the Index
+// To support geospatial queries on a sphere, we create a '2dsphere' index.
+db.restaurants.createIndex({ location: "2dsphere" });
+
+Part 2: The Query
+// Find restaurants within 5km (5000 meters) of coordinates [-73.98, 40.77]
+db.restaurants.find({
+    location: {
+        $near: {
+            $geometry: {
+                type: "Point",
+                coordinates: [-73.98, 40.77] // Format is [longitude, latitude]
+            },
+            $maxDistance: 5000 // Distance in meters
+        }
+    }
+});
