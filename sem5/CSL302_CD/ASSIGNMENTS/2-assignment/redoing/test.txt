@@ -1,0 +1,760 @@
+// COMPREHENSIVE TEST CASE
+// This file tests every construct supported by the parser
+
+// SECTION 1: GLOBAL VARIABLE DECLARATIONS (All Types)
+
+int globalInt;
+double globalDouble;
+bool globalBool;
+string globalString;
+void globalVoid;
+
+// Array declarations using identifier syntax
+intArray NewArray(100, int);
+doubleArray NewArray(50, double);
+boolArray NewArray(20, bool);
+stringArray NewArray(10, string);
+
+
+// SECTION 2: SIMPLE FUNCTIONS (Various Return Types and Parameters)
+
+// Function with no parameters, void return
+void simpleVoidFunction() {
+    int x;
+    x = 10;
+}
+
+// Function with int return
+int getInteger() {
+    return 42;
+}
+
+// Function with double return
+double getDouble() {
+    return 3.14159;
+}
+
+// Function with bool return
+bool getBoolean() {
+    return true;
+}
+
+// Function with string return
+string getString() {
+    return "Hello World";
+}
+
+// Function with one parameter
+int increment(int n) {
+    return n + 1;
+}
+
+// Function with multiple parameters (all types)
+double calculate(int a, double b, bool flag, string msg) {
+    double result;
+    if (flag) {
+        result = a + b;
+    } else {
+        result = a - b;
+    }
+    return result;
+}
+
+// Function with array parameter
+void processArray(int arr) {
+    int i;
+    for (i = 0; i < 10; i = i + 1) {
+        arr[i] = i * 2;
+    }
+}
+
+
+
+// SECTION 3: BASIC CLASS (No Inheritance/Interface)
+
+class SimpleClass {
+    int field1;
+    double field2;
+    bool field3;
+    string field4;
+    
+    void setField1(int value) {
+        field1 = value;
+    }
+    
+    int getField1() {
+        return field1;
+    }
+    
+    void initialize() {
+        field1 = 0;
+        field2 = 0.0;
+        field3 = false;
+        field4 = "";
+    }
+}
+
+
+
+// SECTION 4: CLASS WITH EXTENDS
+
+class BaseClass {
+    int baseField;
+    
+    void setBase(int value) {
+        baseField = value;
+    }
+    
+    int getBase() {
+        return baseField;
+    }
+}
+
+class DerivedClass extends BaseClass {
+    int derivedField;
+    
+    void setDerived(int value) {
+        derivedField = value;
+    }
+    
+    int getDerived() {
+        return derivedField;
+    }
+    
+    int getSum() {
+        return baseField + derivedField;
+    }
+}
+
+
+
+// SECTION 5: CLASS WITH IMPLEMENTS
+
+class InterfaceImpl implements SomeInterface {
+    int data;
+    
+    void setData(int value) {
+        data = value;
+    }
+    
+    int getData() {
+        return data;
+    }
+}
+
+// Empty class with extends
+class EmptyDerived extends BaseClass {
+}
+
+// Empty class with implements
+class EmptyImpl implements SomeInterface {
+}
+
+
+
+// SECTION 6: COMPLEX CLASS WITH THIS KEYWORD
+
+class ComplexClass {
+    int value;
+    double rate;
+    bool active;
+    
+    void setValue(int v) {
+        this.value = v;
+    }
+    
+    int getValue() {
+        return this.value;
+    }
+    
+    void useThis() {
+        int local;
+        local = this.value;
+        this.value = local + 1;
+    }
+}
+
+
+
+
+
+
+void main() {
+    // Local variable declarations (all types)
+    int intVar;
+    double doubleVar;
+    bool boolVar;
+    string stringVar;
+    
+    // Object declarations
+    SimpleClass obj1;
+    DerivedClass obj2;
+    InterfaceImpl obj3;
+    ComplexClass obj4;
+    
+    // Array declarations (local)
+    int localIntArray;
+    double localDoubleArray;
+    bool localBoolArray;
+    string localStringArray;
+    
+    
+    // CONSTANTS - All Types
+    
+    intVar = 12345;
+    doubleVar = 123.456;
+    boolVar = true;
+    boolVar = false;
+    stringVar = "Test string";
+    intVar = null;
+    
+    // OBJECT CREATION - NEW Expressions
+    
+    obj1 = New(SimpleClass);
+    obj2 = New(DerivedClass);
+    obj3 = New(InterfaceImpl);
+    obj4 = New(ComplexClass);
+    
+    // ARRAY CREATION - NEWARRAY Expressions
+    
+    localIntArray = NewArray(100, int);
+    localDoubleArray = NewArray(50, double);
+    localBoolArray = NewArray(20, bool);
+    localStringArray = NewArray(10, string);
+    
+    // NewArray with expression for size
+    intVar = 25;
+    localIntArray = NewArray(intVar * 2, int);
+    localDoubleArray = NewArray(intVar + 10, double);
+    
+    // ARITHMETIC EXPRESSIONS - All Operators
+    
+    intVar = 10 + 20;
+    intVar = 30 - 15;
+    intVar = 5 * 6;
+    intVar = 100 / 10;
+    intVar = 17 % 5;
+    
+    // Complex arithmetic with precedence
+    intVar = 10 + 20 * 3 - 8 / 2;
+    intVar = (10 + 20) * (30 - 15) / (2 + 3);
+    
+    // Unary minus
+    intVar = -100;
+    intVar = -intVar;
+    intVar = -(10 + 20);
+    doubleVar = -3.14;
+    
+    // Mixed operations
+    doubleVar = 10 + 20.5;
+    doubleVar = intVar + doubleVar;
+    
+    // RELATIONAL EXPRESSIONS - All Operators
+    
+    boolVar = intVar < 100;
+    boolVar = intVar <= 100;
+    boolVar = intVar > 50;
+    boolVar = intVar >= 50;
+    boolVar = intVar == 75;
+    boolVar = intVar != 0;
+    
+    // Complex relational expressions
+    boolVar = (intVar + 10) < (doubleVar * 2);
+    boolVar = (10 + 20) >= (30 - 5);
+    
+    // LOGICAL EXPRESSIONS - All Operators
+    
+    boolVar = true && false;
+    boolVar = true || false;
+    boolVar = !true;
+    boolVar = !boolVar;
+    
+    // Complex logical expressions
+    boolVar = (intVar > 0) && (doubleVar < 100.0);
+    boolVar = (intVar == 0) || (boolVar == true);
+    boolVar = !(intVar > 100);
+    boolVar = (intVar > 0) && ((doubleVar < 50.0) || (boolVar == false));
+    boolVar = !((intVar < 0) || (doubleVar > 100.0));
+    
+    // LVALUE ASSIGNMENTS - All Types
+    
+    // Simple identifier
+    intVar = 100;
+    
+    // Array access
+    localIntArray[0] = 10;
+    localIntArray[1] = 20;
+    localIntArray[intVar] = 30;
+    localIntArray[intVar + 5] = 40;
+    
+    // Nested array access
+    localIntArray[localIntArray[0]] = 50;
+    
+    // Object field access with dot operator
+    obj1.field1 = 100;
+    obj2.baseField = 200;
+    obj4.value = 300;
+    
+    // Complex lvalue with expression
+    obj1.field2 = doubleVar + 10.5;
+    localDoubleArray[intVar] = obj1.field2 * 2.0;
+    
+    // FUNCTION CALLS - All Varieties
+    
+    // Function call with no arguments
+    simpleVoidFunction();
+    intVar = getInteger();
+    doubleVar = getDouble();
+    boolVar = getBoolean();
+    stringVar = getString();
+    
+    // Function call with one argument
+    intVar = increment(10);
+    intVar = increment(intVar + 5);
+    
+    // Function call with multiple arguments
+    doubleVar = calculate(10, 20.5, true, "test");
+    doubleVar = calculate(intVar, doubleVar, boolVar, stringVar);
+    
+    // Function call with array
+    processArray(localIntArray);
+    
+    // Nested function calls
+    intVar = increment(getInteger());
+    intVar = increment(increment(10));
+    
+    // METHOD CALLS - All Varieties
+    
+    // Method call with no arguments
+    obj1.initialize();
+    intVar = obj1.getField1();
+    
+    // Method call with arguments
+    obj1.setField1(100);
+    obj2.setBase(200);
+    obj2.setDerived(300);
+    
+    // Method calls on complex objects
+    obj4.setValue(400);
+    intVar = obj4.getValue();
+    obj4.useThis();
+    
+    // Chained method calls in expressions
+    intVar = obj2.getBase() + obj2.getDerived();
+    intVar = obj2.getSum();
+    
+    // Method calls with complex arguments
+    obj1.setField1(intVar + obj2.getBase());
+    obj4.setValue(increment(intVar));
+    
+    // READINTEGER and READLINE Functions
+    
+    intVar = ReadInteger();
+    stringVar = ReadLine();
+    
+    // In expressions
+    intVar = ReadInteger() + 10;
+    boolVar = ReadInteger() > 0;
+    
+    // PRINT STATEMENTS - All Varieties
+    
+    // Print with no arguments
+    Print();
+    
+    // Print with single argument
+    Print(intVar);
+    Print(doubleVar);
+    Print(boolVar);
+    Print(stringVar);
+    Print("Literal string");
+    
+    // Print with multiple arguments
+    Print(intVar, doubleVar);
+    Print("Value: ", intVar);
+    Print("Multiple: ", intVar, doubleVar, boolVar);
+    
+    // Print with expressions
+    Print(intVar + 10);
+    Print("Sum: ", intVar + doubleVar);
+    Print(obj1.getField1());
+    Print("Result: ", increment(intVar));
+    
+    // IF STATEMENTS - All Forms
+    
+    // Simple if
+    if (intVar > 0) {
+        intVar = intVar + 1;
+    }
+    
+    // If with single statement (no braces tested via precedence)
+    if (boolVar)
+        intVar = 10;
+    
+    // If-else
+    if (intVar > 100) {
+        intVar = 100;
+    } else {
+        intVar = 0;
+    }
+    
+    // Nested if-else (dangling else resolution)
+    if (intVar > 0) {
+        if (doubleVar > 0.0) {
+            intVar = 1;
+        } else {
+            intVar = 2;
+        }
+    }
+    
+    // Complex condition
+    if ((intVar > 0) && (doubleVar < 100.0) || (boolVar == true)) {
+        intVar = intVar * 2;
+    }
+    
+    // WHILE LOOPS
+    
+    // Simple while
+    while (intVar > 0) {
+        intVar = intVar - 1;
+    }
+    
+    // While with complex condition
+    while ((intVar < 100) && (boolVar == true)) {
+        intVar = intVar + 1;
+        if (intVar == 50) {
+            boolVar = false;
+        }
+    }
+    
+    // While with function call
+    while (getBoolean()) {
+        intVar = intVar + 1;
+        break;
+    }
+    
+    // DO-WHILE LOOPS
+    
+    // Simple do-while
+    do {
+        intVar = intVar + 1;
+    } while (intVar < 100);
+    
+    // Do-while with complex condition
+    do {
+        doubleVar = doubleVar + 0.1;
+        intVar = intVar - 1;
+    } while ((intVar > 0) && (doubleVar < 50.0));
+    
+    // Do-while with break
+    do {
+        intVar = intVar * 2;
+        if (intVar > 1000) {
+            break;
+        }
+    } while (true);
+    
+    // FOR LOOPS - All Variations
+    
+    // Standard for loop
+    for (intVar = 0; intVar < 100; intVar = intVar + 1) {
+        localIntArray[intVar] = intVar * intVar;
+    }
+    
+    // For with empty initialization
+    for (; intVar < 100; intVar = intVar + 1) {
+        intVar = intVar + 1;
+    }
+    
+    // For with empty condition
+    for (intVar = 0; ; intVar = intVar + 1) {
+        if (intVar > 100) {
+            break;
+        }
+    }
+    
+    // For with empty increment
+    for (intVar = 0; intVar < 100; ) {
+        intVar = intVar + 1;
+    }
+    
+    // For with all empty (infinite loop with break)
+    for (; ; ) {
+        intVar = intVar + 1;
+        if (intVar > 1000) {
+            break;
+        }
+    }
+    
+    // For with complex expressions
+    for (intVar = 0; (intVar < 100) && (boolVar == true); intVar = intVar + 2) {
+        localIntArray[intVar] = intVar;
+    }
+    
+    // Nested for loops
+    for (intVar = 0; intVar < 10; intVar = intVar + 1) {
+        for (doubleVar = 0.0; doubleVar < 10.0; doubleVar = doubleVar + 1.0) {
+            localDoubleArray[intVar] = doubleVar;
+        }
+    }
+    
+    // BREAK STATEMENTS
+    
+    // Break in while
+    while (true) {
+        break;
+    }
+    
+    // Break in do-while
+    do {
+        break;
+    } while (true);
+    
+    // Break in for
+    for (intVar = 0; intVar < 100; intVar = intVar + 1) {
+        if (intVar == 50) {
+            break;
+        }
+    }
+    
+    // Break in nested loops
+    for (intVar = 0; intVar < 10; intVar = intVar + 1) {
+        while (boolVar) {
+            if (intVar == 5) {
+                break;
+            }
+        }
+    }
+    
+    // RETURN STATEMENTS    
+    return;
+    
+    // STATEMENT BLOCKS - All Variations
+    
+    // Block with variables and statements
+    {
+        int blockVar;
+        blockVar = 100;
+        Print(blockVar);
+    }
+    
+    // Block with only statements
+    {
+        intVar = 200;
+        Print(intVar);
+    }
+    
+    // Block with only variables
+    {
+        int var1;
+        int var2;
+        double var3;
+    }
+    
+    // Empty block
+    {
+    }
+    
+    // Nested blocks
+    {
+        int outer;
+        outer = 1;
+        {
+            int inner;
+            inner = 2;
+            {
+                int innermost;
+                innermost = 3;
+            }
+        }
+    }
+    
+    // EMPTY STATEMENTS
+    
+    ;
+    ;
+    ;
+    
+    // COMPLEX NESTED EXPRESSIONS
+    
+    // All operators combined
+    intVar = ((10 + 20) * (30 - 15)) / ((5 * 2) % 3);
+    boolVar = ((intVar > 0) && (doubleVar < 100.0)) || ((intVar == 0) && (!boolVar));
+    
+    // Array access in complex expression
+    intVar = localIntArray[0] + localIntArray[1] * localIntArray[2];
+    localIntArray[intVar] = localIntArray[intVar + 1] - localIntArray[intVar - 1];
+    
+    // Method calls in complex expression
+    intVar = obj1.getField1() + obj2.getBase() - obj2.getDerived();
+    obj1.setField1(obj2.getSum() * increment(intVar));
+    
+    // Mixed expression with all features
+    doubleVar = (obj1.getField1() + ReadInteger()) * (localIntArray[intVar] - increment(5)) / (doubleVar + 2.5);
+    
+    // THIS in expressions
+    obj4.value = obj4.getValue() + 10;
+    intVar = obj4.value;
+    
+    // Assignment in complex contexts
+    localIntArray[intVar = 5] = (boolVar = (intVar > 0)) && true;
+    
+    // PARENTHESIZED EXPRESSIONS
+    
+    intVar = (((10)));
+    intVar = ((10 + 20));
+    intVar = (10 + (20 * (30 - (40 / (5)))));
+    boolVar = (((intVar > 0) && (doubleVar < 100.0)));
+    
+    // ALL FEATURES IN SINGLE STATEMENT
+    
+    if ((obj1.getField1() > ReadInteger()) && (localIntArray[increment(intVar)] < 100)) {
+        for (intVar = 0; intVar < NewArray(10, int); intVar = increment(intVar)) {
+            while ((boolVar = getBoolean()) && (doubleVar < 100.0)) {
+                do {
+                    Print("Complex: ", obj4.getValue() + localIntArray[intVar]);
+                    obj4.setValue(obj4.getValue() + 1);
+                    if (obj4.getValue() > 50) {
+                        break;
+                    }
+                } while (true);
+            }
+        }
+    } else {
+        Print("Done");
+    }
+}
+
+
+// SECTION 8: ADDITIONAL HELPER FUNCTIONS
+
+// Recursive function
+int factorial(int n) {
+    if (n <= 1) {
+        return 1;
+    }
+    return n * factorial(n - 1);
+}
+
+// Function using all statement types
+void allStatements(int param) {
+    int local;
+    double d;
+    bool b;
+    string s;
+    int arr;
+    SimpleClass obj;
+    
+    // Variable initialization
+    local = param;
+    d = 3.14;
+    b = true;
+    s = "test";
+    arr = NewArray(10, int);
+    obj = New(SimpleClass);
+    
+    // Expression statement
+    local = local + 1;
+    
+    // If statement
+    if (local > 0) {
+        Print("Positive");
+    }
+    
+    // While statement
+    while (local > 0) {
+        local = local - 1;
+    }
+    
+    // Do-while statement
+    do {
+        local = local + 1;
+    } while (local < 10);
+    
+    // For statement
+    for (local = 0; local < 10; local = local + 1) {
+        arr[local] = local;
+    }
+    
+    // Break statement
+    while (true) {
+        break;
+    }
+    
+    // Return statement
+    return;
+    
+    // Print statement
+    Print("End");
+    
+    // Statement block
+    {
+        int nested;
+        nested = 100;
+    }
+}
+
+// Empty function
+void emptyFunction() {
+}
+
+// Function with all expression types
+int allExpressions() {
+    int result;
+    SimpleClass obj;
+    int arr;
+    
+    // Assignment
+    result = 10;
+    
+    // Constants
+    result = 42;
+    result = null;
+    
+    // Identifiers
+    result = result;
+    
+    // Function calls
+    result = getInteger();
+    simpleVoidFunction();
+    
+    // Method calls
+    obj = New(SimpleClass);
+    obj.initialize();
+    result = obj.getField1();
+    
+    // Object creation
+    obj = New(SimpleClass);
+    
+    // Array creation
+    arr = NewArray(10, int);
+    
+    // Arithmetic
+    result = 10 + 20 - 5 * 2 / 1 % 3;
+    
+    // Relational
+    result = 10 < 20;
+    result = 10 <= 20;
+    result = 10 > 5;
+    result = 10 >= 5;
+    result = 10 == 10;
+    result = 10 != 5;
+    
+    // Logical
+    result = true && false;
+    result = true || false;
+    result = !true;
+    
+    // Unary
+    result = -10;
+    
+    // Parentheses
+    result = (10 + 20) * 30;
+    
+    // ReadInteger and ReadLine
+    result = ReadInteger();
+    
+    // THIS keyword (in class context)
+    // this.field = 10; // Would be used in class methods
+    
+    return result;
+}
