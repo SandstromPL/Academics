@@ -1,0 +1,18 @@
+-Tool Overview
+-Why Tulip in Network Science?
+-Architecture (High‑Level)
+-Backend Details
+-Frontend & Extensibility
+-Input / Output Formats
+-Supported Network Types
+-Handling Temporal / Multilayer
+-Core Features: Construction
+-Core Features: Metrics
+-Core Features: Layouts & Visualization
+-Core Features: Scripting
+-Scalability & Performance
+-Strengths
+-Limitations
+-Use Case 1 (Social Network)
+-Use Case 2 (Software / Biological)
+-Conclusion

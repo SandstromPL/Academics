@@ -1,0 +1,26 @@
+\providecommand{\bysame}{\leavevmode\hbox to3em{\hrulefill}\thinspace}
+\providecommand{\MR}{\relax\ifhmode\unskip\space\fi MR }
+% \MRhref is called by the amsart/book/proc definition of \MR.
+\providecommand{\MRhref}[2]{%
+  \href{http://www.ams.org/mathscinet-getitem?mr=#1}{#2}
+}
+\providecommand{\href}[2]{#2}
+\begin{thebibliography}{Aub03}
+
+\bibitem[Aub03]{auber2003tulipgd}
+David Auber, \emph{Tulip: An information visualization software for huge
+  graphs}, Graph Drawing (GD 2003), Springer, 2003.
+
+\bibitem[con25]{tulipWikipedia}
+Wikipedia contributors, \emph{Tulip (software)},
+  \url{https://en.wikipedia.org/wiki/Tulip_(software)}, 2025.
+
+\bibitem[Dev25]{tulipGithub}
+Tulip Developers, \emph{Tulip: Large graphs analysis, drawing and visualization
+  framework}, \url{https://github.com/Tulip-Dev/tulip}, 2025.
+
+\bibitem[Pro25]{tulipWebsite}
+Tulip Project, \emph{Tulip: Data visualization framework},
+  \url{https://tulip.labri.fr}, 2025, LaBRI, University of Bordeaux.
+
+\end{thebibliography}

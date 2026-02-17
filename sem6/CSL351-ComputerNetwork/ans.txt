@@ -1,0 +1,48 @@
+Q1)
+Given link rate are:
+R1 = 10 Mbps
+R2 = 500Kbps = 0.5Mbps
+R3 = 5 Mbps
+
+1.
+the throughput for the file transfer is (given no other traffic in the network):
+Throughput = min(10, 0.5, 5) = 0.5Mbps
+
+2.
+Time = File Size/Throughput
+here X = 8 (name - Paritosh)
+then,
+file size = 8 million bytes = 8 * 10 ^ 6 Bytes = 8 * 8 Megabits(Mbits)
+throughput = 0.5Mbps
+
+time = 64 Mbits / 0.5Mbps = 128 seconds
+
+3.
+If all rates are doubled ,then :
+R1 = 20 Mbps
+R2 = 1 Mbps
+R3 = 10 Mbps
+
+new throughput = min(20, 1, 10) = 1Mbps
+
+time = 64 / 1 = 64 seconds
+
+
+Q2)
+1. 
+-Straight-through
+-Both ends use the same standard (e.g., both T568B). Pins connect 1-to-1.
+-Connecting dissimilar devices: PC to Switch, Switch to Router, or Router to Cable/DSL modem.
+
+2.
+-Crossover
+-Transmit and receive pairs are swapped at one end (Pin 1 to Pin 3, Pin 2 to Pin 6).
+-Connecting similar devices: PC to PC, Switch to Switch, or Router to Router.
+
+3.
+-Rollover
+-The pinout is completely reversed (Pin 1 connects to Pin 8 at the other end).
+-Console access: Connecting a PC's serial port to the console port of a router or switch for configuration.
+
+
+

@@ -1,0 +1,230 @@
+Slide 1 – Title
+Tulip
+
+Network Science, IIT Bhilai
+​
+
+Group No: ___
+
+Member 1 – Reg. No. ___
+
+Member 2 – Reg. No. ___
+
+Member 3 – Reg. No. ___
+
+Date of presentation: ___
+
+Slide 2 – Outline
+Overview
+​
+
+Architecture & Design
+​
+
+Supported Network Types
+​
+
+Core Functionalities
+​
+
+Scalability & Performance
+​
+
+Strengths
+​
+
+Limitations
+​
+
+Use Cases
+​
+
+Conclusion
+​
+
+Slide 3 – Tool Overview
+Open‑source graph visualization & analysis framework
+
+Focus on large networks (up to ≈10⁶ nodes)
+​
+
+C++ core, Qt GUI, Python scripting
+
+Domains: social, biological, software, communication networks
+
+Users: researchers, analysts, students
+
+Slide 4 – Why Tulip in Network Science?
+Designed for very large graphs
+
+Interactive visual exploration of complex structure
+
+Many built‑in layouts & metrics
+
+Plugin system for custom algorithms
+​
+
+Slide 5 – Architecture (High‑Level)
+C++ core framework
+
+Graph data model with node/edge properties & hierarchies
+
+Plugin‑based algorithms & import/export
+​
+
+Qt‑based GUI on top of the core
+
+Slide 6 – Backend Details
+Property‑based graph storage
+
+Support for nested subgraphs / clusters
+
+Filtering and inheritance mechanisms
+
+OpenGL rendering engine
+
+Slide 7 – Frontend & Extensibility
+Multiple linked views (graph, matrix, histograms, scatter plots)
+
+Rich styling: color, size, shape, labels from properties
+
+C++/Python plugins for layouts, metrics, importers
+​
+Python scripting interface for automation
+
+Slide 8 – Input / Output Formats
+Native: TLP (text, binary, JSON)
+
+Common imports: GML, CSV
+​
+
+Export: TLP, images/screenshots, property tables
+
+Good interoperability with other graph tools
+
+Slide 9 – Supported Network Types
+Directed & undirected graphs
+
+Weighted networks via properties
+​
+
+Hierarchical / clustered graphs
+
+Large static networks (≈10⁶ nodes, ≈5×10⁶ edges, hardware‑dependent)
+​
+
+Slide 10 – Handling Temporal / Multilayer
+Time / layer encoded as node/edge properties
+
+Filters for specific time ranges or layers
+
+No dedicated dynamic animation engine (workarounds only)
+
+Slide 11 – Core Features: Construction
+Import from TLP, GML, CSV
+
+Manual editing inside GUI
+​
+
+Programmatic construction via C++ / Python
+
+Flexible attribute types (numeric, string, categorical)
+
+Slide 12 – Core Features: Metrics
+Degree, betweenness, closeness, etc. (via plugins)
+
+Clustering / community detection algorithms
+
+Path‑based and connectivity measures
+
+Distribution plots of properties (histograms)
+
+Slide 13 – Core Features: Layouts & Visualization
+Force‑directed and stress layouts
+
+Access to OGDF layouts through plugins
+​
+
+Node size/color mapped to properties
+
+Multiple coordinated views (graph + plots)
+
+Slide 14 – Core Features: Scripting
+Python console inside Tulip
+
+Batch pipelines for import → layout → metrics → export
+​
+
+Easy prototyping of new algorithms
+​
+
+Integration with external Python ecosystem (e.g., pandas, NumPy)
+​
+
+Slide 15 – Scalability & Performance
+Optimized in‑memory graph representation
+
+Efficient rendering for large graphs via OpenGL
+
+Handles ≈10⁶ nodes / ≈5×10⁶ edges in typical scenarios
+​
+
+Some algorithms can use multi‑threading (plugin‑dependent)
+
+Slide 16 – Strengths
+Strong focus on large‑scale graph visualization
+
+Rich set of built‑in layouts and metrics
+
+Highly extensible via plugins and Python scripts
+​
+
+Multiple, coordinated visual views
+
+Slide 17 – Limitations
+Steep learning curve for new users
+​
+
+Visualization‑centric, not a full ML/statistical suite
+
+Limited native support for animated dynamic networks
+
+Performance depends strongly on hardware
+
+Slide 18 – Use Case 1 (Social Network)
+Input: small social / collaboration graph
+
+Apply force‑directed layout
+​
+
+Color by community, size by degree
+
+Observe hubs and community structure
+
+(Show your screenshot here.)
+
+Slide 19 – Use Case 2 (Software / Biological)
+Pick whichever you will actually demo.
+
+Software: function/module dependency graph
+​
+
+Highlight tightly coupled modules
+
+Biological: protein interaction network
+
+Identify hubs and functional modules
+
+In both: use layouts + centrality + clustering
+
+(Again, show your own Tulip view.)
+
+Slide 20 – Conclusion
+Tulip = scalable framework for large graph visualization and analysis
+
+Best when networks are big and structure is complex
+
+Strengths: layouts, metrics, extensibility, visual analytics
+
+Good choice for research‑oriented network science projects
+

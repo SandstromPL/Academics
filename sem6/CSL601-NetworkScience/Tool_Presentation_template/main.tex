@@ -1,0 +1,89 @@
+\documentclass{beamer}
+\usetheme{Boadilla}
+\usecolortheme{seahorse}
+\usefonttheme{serif}
+
+\usepackage{lipsum}
+\usepackage{graphicx,xcolor}
+\usepackage{amsmath,amssymb,amsfonts}
+
+%\AtBeginSection[]{ 
+%\    \begin{frame}{Outline} 
+  %      \tableofcontents[currentsection] 
+%    \end{frame} }
+
+\title[Tulip]{Tulip}
+% \subtitle{Tool Presentation}
+\author[Group No 1]{Agastya Nath 12340140\\Paritosh Lahre 12341550\\ Rahul Dev Reddy 12342390}
+\institute[IIT Bhilai]{Network Science\\Indian Institute of Technology Bhilai}
+\date{February 10, 2026}
+\titlegraphic{\includegraphics[width=2cm]{images/logo/IIT_Bhilai.png}}
+
+\begin{document}
+	
+	\begin{frame}
+		\titlepage
+	\end{frame}
+\section{Overview}
+\input{segments/1_intro}
+
+\section{Why}
+\input{segments/2_why}
+
+\section{Architecture / Design (High Level)}
+\input{segments/3_Design}
+
+\section{Backend}
+\input{segments/4_Backend}
+
+\section{Frontend}
+\input{segments/5_Frontend}
+
+\section{Input Output}
+\input{segments/6_In_Out}
+
+\section{Network Types}
+\input{segments/7_Network_Types}
+
+\section{Handling}
+\input{segments/8_Handling}
+
+\section{Core Feature 1}
+\input{segments/9_Construction}
+
+\section{Core Feature 2}
+\input{segments/10_Metrics}
+
+\section{Core Feature 3}
+\input{segments/11_Layouts_Visual}
+
+\section{Core Feature 4}
+\input{segments/12_Scripting}
+
+\section{Scalability $&$ Performance}
+\input{segments/13_Scalability}
+
+\section{Strengths}
+\input{segments/14_Strength}
+
+\section{Limitations}
+\input{segments/15_Limitation}
+
+\section{Use Case 1}
+\input{segments/16_Case_1}
+
+\section{Use Case 2}
+\input{segments/17_Case_2}
+
+\section{Conclusion}
+\input{segments/18_conclude}
+
+\nocite{*} % optional, if you want everything
+\section*{References}
+\begin{frame}
+    \frametitle{References}
+    \bibliographystyle{amsalpha}
+    \bibliography{ref}
+\end{frame}
+
+\end{document}

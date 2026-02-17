@@ -1,0 +1,54 @@
+<anim ver="netanim-3.109" filetype="animation" >
+<node id="0" sysId="0" locX="87" locY="8" />
+<node id="1" sysId="0" locX="3" locY="32" />
+<nu p="c" t="0" id="0" r="255" g="0" b="0" />
+<nu p="c" t="0" id="1" r="255" g="0" b="0" />
+<link fromId="0" toId="1" fd="10.1.1.1~00:00:00:00:00:01" td="10.1.1.2~00:00:00:00:00:02" ld="" />
+<nonp2plinkproperties id="0" ipAddress="127.0.0.1~00:00:00:00:00:00" channelType="Unknown channel" />
+<nonp2plinkproperties id="1" ipAddress="127.0.0.1~00:00:00:00:00:00" channelType="Unknown channel" />
+<ip n="0" >
+<address >10.1.1.1</address>
+
+<address >127.0.0.1</address>
+
+</ip>
+<ip n="0" >
+<address >10.1.1.1</address>
+
+<address >127.0.0.1</address>
+
+</ip>
+<ip n="1" >
+<address >10.1.1.2</address>
+
+<address >127.0.0.1</address>
+
+</ip>
+<ip n="1" >
+<address >10.1.1.2</address>
+
+<address >127.0.0.1</address>
+
+</ip>
+<ipv6 n="0" >
+<address >::1</address>
+
+</ipv6>
+<ipv6 n="1" >
+<address >::1</address>
+
+</ipv6>
+<nu p="s" t="0" id="0" w="1" h="1" />
+<nu p="s" t="0" id="1" w="1" h="1" />
+<ncs ncId="0" n="RemainingEnergy" t="DOUBLE" />
+<p fId="0" fbTx="2" lbTx="2.0004576" tId="1" fbRx="2.005" lbRx="2.0054576" />
+<p fId="0" fbTx="2.0004576" lbTx="2.0009152" tId="1" fbRx="2.0054576" lbRx="2.0059152" />
+<p fId="0" fbTx="2.0009152" lbTx="2.0013728" tId="1" fbRx="2.0059152" lbRx="2.0063728" />
+<p fId="0" fbTx="2.0013728" lbTx="2.0018304" tId="1" fbRx="2.0063728" lbRx="2.0068304" />
+<p fId="0" fbTx="2.0018304" lbTx="2.002288" tId="1" fbRx="2.0068304" lbRx="2.007288" />
+<p fId="0" fbTx="2.002288" lbTx="2.0027456" tId="1" fbRx="2.007288" lbRx="2.0077456" />
+<p fId="0" fbTx="2.0027456" lbTx="2.0032032" tId="1" fbRx="2.0077456" lbRx="2.0082032" />
+<p fId="0" fbTx="2.0032032" lbTx="2.0036608" tId="1" fbRx="2.0082032" lbRx="2.0086608" />
+<p fId="0" fbTx="2.0036608" lbTx="2.0041184" tId="1" fbRx="2.0086608" lbRx="2.0091184" />
+<p fId="0" fbTx="2.0041184" lbTx="2.004576" tId="1" fbRx="2.0091184" lbRx="2.009576" />
+</anim>

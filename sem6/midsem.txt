@@ -1,0 +1,5 @@
+20 feb -> DSL353(information security) -> 3 pm - 5 pm
+21 feb -> CSL601(network science) -> 10:30 am - 12:30 pm
+23 feb -> PHL509(nuclear physics) -> 9 am - 11 am
+24 feb -> CSL511(formal verification) -> 9 am - 11 am
+26 feb -> CSL351(computer network) -> 3 pm - 5 pm
