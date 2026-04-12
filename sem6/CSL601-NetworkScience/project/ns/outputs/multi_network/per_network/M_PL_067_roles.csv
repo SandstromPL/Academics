@@ -1,0 +1,37 @@
+species,kind,gnn_cluster,gnn_role,pca1,pca2
+Allamanda blanchetii,plant,0,Connector,0.33914363,0.15588187
+Anadenanthera macrocarpa,plant,3,Specialist,0.64352983,-0.35501304
+Bauhinia cheilantha,plant,0,Connector,-0.19507426,0.82449734
+Caesalpinia pyramidalis,plant,3,Specialist,0.6435295,-0.35501352
+Ceiba glaziovii,plant,0,Connector,0.33949536,0.15638544
+Cissus simsiana,plant,3,Specialist,0.62993646,-0.37152284
+Cissus verticillata,plant,3,Specialist,0.6432582,-0.35534412
+Cnidoscolus halteris,plant,0,Connector,-0.70265937,0.4135397
+Cnidoscolus obtusifolius,plant,3,Specialist,0.62946945,-0.37208813
+Conocliniopsis prasiifolia,plant,3,Specialist,0.6433938,-0.35517883
+Croton blanchetianus,plant,0,Connector,0.25198495,1.4521023
+Dioclea grandiflora,plant,0,Connector,0.37491095,-0.085373946
+Encholirium spectabile,plant,0,Connector,0.037434023,0.5400076
+Hyptis pectinata,plant,3,Specialist,0.64346164,-0.35509622
+Ipomoea sp1 M_PL_067,plant,0,Connector,0.33782804,0.15399343
+Jatropha mollissima,plant,0,Connector,-0.2036766,0.7189698
+Melocactus zehntneri,plant,0,Connector,0.027781546,0.14715713
+Melochia tomentosa,plant,0,Connector,-0.18365823,0.46906358
+Oxalis psoraleoides,plant,3,Specialist,0.58220327,-0.4285696
+Pilosocereus gounellei,plant,3,Specialist,0.6435295,-0.35501352
+Pilosocereus sp1 M_PL_067,plant,0,Connector,-0.118921116,1.5787904
+Pithecoseris pacourinoides,plant,3,Specialist,0.6432582,-0.35534412
+Plumbago scandens,plant,0,Connector,0.09117404,0.24800012
+Psidium sp1 M_PL_067,plant,3,Specialist,0.6435295,-0.35501352
+Ruellia asperula,plant,3,Specialist,0.6423769,-0.35641778
+Staelia galioides,plant,3,Specialist,0.6435295,-0.35501352
+Tabebuia impetiginosa,plant,0,Connector,-0.21126506,0.7988291
+Tacinga inamoena,plant,0,Connector,0.09719927,0.25780955
+Tacinga palmadora,plant,0,Connector,-0.46165296,0.8240211
+Unidentified sp1 M_PL_067,plant,3,Specialist,0.6222958,-0.38075444
+Walteria rotundifolia,plant,3,Specialist,0.6435295,-0.35501352
+Calliphlox amethystina,pollinator,1,Keystone,-1.8756982,0.28177294
+Chlorostilbon lucidus,pollinator,2,Generalist,-1.2575927,-2.8727934
+Chrysolampis mosquitus,pollinator,1,Keystone,-2.0709875,0.19338012
+Eupetomena macroura,pollinator,1,Keystone,-2.129864,-0.28449097
+Heliomaster squamosus,pollinator,1,Keystone,-2.0267327,-0.5111457

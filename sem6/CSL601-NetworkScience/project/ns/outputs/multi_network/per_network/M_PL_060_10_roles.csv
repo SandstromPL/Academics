@@ -1,0 +1,40 @@
+species,kind,gnn_cluster,gnn_role,pca1,pca2
+Diospyros revaughanii,plant,0,Generalist,-1.9787395,0.70525986
+Embelia angustifolia,plant,0,Generalist,-0.6574567,-0.948974
+Euodia obtusifolia,plant,0,Generalist,-1.0263237,-0.46515197
+Gaertnera sp1 M_PL_069,plant,0,Generalist,-3.54743,-0.061132792
+Labourdonnaisia callophylloides,plant,2,Keystone,-0.91417557,2.1486027
+Memecylon ovatifolium,plant,0,Generalist,-0.79627675,-0.46234953
+Pyrostria fasciculata,plant,0,Generalist,-2.6172993,0.8203808
+Stillingia lineata,plant,0,Generalist,-3.340215,-1.7617239
+Syzygium commersonii,plant,2,Keystone,-0.21191561,1.0453658
+Syzygium coriaceum,plant,0,Generalist,-3.6285372,-0.9832935
+Syzygium petrinese,plant,2,Keystone,0.74841565,1.8877336
+Tabernaemontana persicarifolia,plant,3,Specialist,1.8087587,0.99164087
+Tristhema mauritiana,plant,2,Keystone,1.0606216,1.466282
+Xyris sp1 M_PL_069,plant,3,Specialist,1.8087587,0.99164087
+Allograpta sp1 M_PL_069,pollinator,3,Specialist,0.44564205,0.7212747
+Apis mellifera,pollinator,2,Keystone,-1.2912972,1.8426179
+Brachymyrmex sp1 M_PL_069,pollinator,1,Connector,1.0949134,-0.3781117
+Chrysomya megacephala ,pollinator,0,Generalist,-0.7462348,-1.0982286
+Conocephalus sp1 M_PL_069,pollinator,3,Specialist,2.0709963,0.84171724
+Dolichopodidae sp1 M_PL_069,pollinator,1,Connector,2.0714135,-1.1769577
+Graphomya maculata,pollinator,1,Connector,0.8293439,-1.2743863
+Hydrillodes sp1 M_PL_069,pollinator,1,Connector,0.7914102,0.2620655
+Macroglossum milvus,pollinator,1,Connector,0.9692615,-0.011397786
+Melanostoma annulipes,pollinator,3,Specialist,1.056013,0.02269076
+Musca domestica,pollinator,0,Generalist,-0.8257898,-0.98021525
+Nacoleia sp1 M_PL_069,pollinator,0,Generalist,-1.8993245,-0.5492433
+Panara naso,pollinator,1,Connector,0.10682251,0.120338865
+Paragus borbonicus,pollinator,1,Connector,0.82137924,-1.0515623
+Phelsuma cepediana,pollinator,0,Generalist,-0.48782343,0.58092374
+Phorinia sp1 M_PL_069,pollinator,1,Connector,0.10375676,-1.4464408
+Pteromalidae sp1 M_PL_069,pollinator,1,Connector,2.1070094,-1.2167279
+Scopariinae sp1 M_PL_069,pollinator,1,Connector,0.9692615,-0.011397786
+Stomorhina lunata,pollinator,1,Connector,-0.23202395,-1.402575
+Stomoxys calcitrans,pollinator,1,Connector,2.1070094,-1.2167279
+Strictopterinae sp1 M_PL_069,pollinator,3,Specialist,2.0709963,0.84171736
+Syritta sp1 M_PL_069,pollinator,1,Connector,1.2480798,-0.5627649
+Technomyrmex albipes ,pollinator,2,Keystone,-2.0346637,1.4508736
+Trirhithrum sp1 M_PL_069,pollinator,1,Connector,2.0714138,-1.1769578
+Villa unifasciata,pollinator,2,Keystone,-0.1257517,1.4951924

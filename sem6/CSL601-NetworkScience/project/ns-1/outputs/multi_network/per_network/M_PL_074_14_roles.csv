@@ -1,0 +1,40 @@
+species,kind,gnn_cluster,gnn_role,pca1,pca2
+Arachnothryx gonzaleoides,plant,3,Specialist,-1.8218257,1.2602055
+Bejaria aestuans,plant,0,Connector,-0.12885314,-0.9595998
+Calliandra magdalenae,plant,0,Connector,-0.0982541,0.19825453
+Clethra mexicana,plant,0,Connector,0.12317195,0.4570829
+Cuphea nitidula,plant,2,Generalist,-0.68686694,-1.1575984
+Erythrina chiapasana,plant,0,Connector,-1.2648144,-0.4027951
+Fuchsia paniculata,plant,2,Generalist,0.6137334,-1.4664292
+Heliconia adflexa,plant,2,Generalist,0.116351984,-1.6677675
+Heliconia collinsiana,plant,2,Generalist,0.13535853,-1.6207292
+Inga densiflora,plant,0,Connector,0.43103227,1.3413697
+Ipomoea cholulensis,plant,2,Generalist,-0.4549703,-1.5977379
+Ipomoea tricolor,plant,0,Connector,-0.43962556,1.1578959
+Malvaviscus arboreus,plant,2,Generalist,0.12178736,-1.6548309
+Moussonia deppeana,plant,0,Connector,-0.42425227,0.13634709
+Psittacanthus rhynchanthus,plant,3,Specialist,-1.8441343,1.2399734
+Psychotria costivenia,plant,0,Connector,-0.8944046,-0.4935719
+Rogiera cordata,plant,2,Generalist,-0.7448382,-1.2889404
+Rovaeanthus strigosus,plant,3,Specialist,-1.8441343,1.2399734
+Russelia sarmentosa,plant,0,Connector,-0.14406767,-0.10320271
+Salvia tonalensis,plant,3,Specialist,-1.8218259,1.260206
+Saurauia scabrida,plant,0,Connector,-0.29500246,-0.00810928
+Serjania mexicana,plant,0,Connector,-0.89648503,0.21001305
+Symplocos longipes,plant,3,Specialist,-1.8273981,1.2551526
+Triplaris americana,plant,3,Specialist,-1.8413422,1.2425054
+Triumfetta speciosa,plant,2,Generalist,1.1673306,-0.9182853
+Unidentified sp2 M_PL_074_14,plant,2,Generalist,-0.36131948,-0.34949318
+Unidentified sp3 M_PL_074_14,plant,3,Specialist,-1.8385512,1.2450365
+Unidentified sp4 M_PL_074_14,plant,0,Connector,-0.90076953,-0.50167704
+Abeillia abeillei,pollinator,0,Connector,0.95499635,0.0051924186
+Amazilia beryllina,pollinator,1,Keystone,5.0827446,3.870472
+Amazilia candida,pollinator,0,Connector,1.3618039,1.2683128
+Amazilia rutila,pollinator,0,Connector,-0.4601472,0.742672
+Archilochus colubris,pollinator,2,Generalist,2.4734097,-0.081653535
+Atthis ellioti,pollinator,0,Connector,1.0119941,0.15334876
+Campylopterus hemileucurus,pollinator,2,Generalist,3.0425422,-0.61619216
+Campylopterus rufus,pollinator,2,Generalist,1.8749187,-1.3010031
+Heliomaster constantii,pollinator,0,Connector,-0.90384763,-0.34883827
+Lampornis viridipallens,pollinator,2,Generalist,2.4535608,-0.4784444
+Tilmatura dupontii,pollinator,2,Generalist,0.9729923,-1.2671167

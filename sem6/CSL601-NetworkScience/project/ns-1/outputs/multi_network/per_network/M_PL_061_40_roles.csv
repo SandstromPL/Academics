@@ -1,0 +1,36 @@
+species,kind,gnn_cluster,gnn_role,pca1,pca2
+Chrysobalanus icaco,plant,3,Generalist,-2.7451522,-1.4152782
+Dillenia ferruginea,plant,3,Generalist,-2.1527624,-0.81300753
+Erythroxylum sechellarum,plant,3,Generalist,-1.4613656,-1.5905725
+Ixora pudica,plant,2,Specialist,4.7929707,-3.5025642
+Nephrosperma vanhoutteanum,plant,3,Generalist,-3.2384906,-1.602079
+Northea hornei,plant,3,Generalist,-1.7406514,-1.0893457
+Paragenipa wrightii,plant,3,Generalist,-1.9094107,-0.6781539
+Phoenicophorium borsigianum,plant,3,Generalist,-2.146942,-1.3587149
+Pittosporum senacia,plant,3,Generalist,-3.3036819,-1.4673246
+Apis mellifera,pollinator,1,Keystone,-2.5338054,0.8694018
+Chalcidoma disjunctum,pollinator,0,Connector,1.08019,0.224323
+Cratopus aurostriatus,pollinator,0,Connector,0.6137339,0.60042316
+Dichaetomyia fasciculifera,pollinator,0,Connector,1.3575871,0.65781003
+Diptera sp2 M_PL_123,pollinator,0,Connector,0.25330156,0.54413754
+Eagris sabadius,pollinator,0,Connector,0.79512316,0.6144234
+Eristalinus vicarians,pollinator,0,Connector,1.2250208,0.8946939
+Hemipyrellia germana,pollinator,1,Keystone,-0.31952026,0.6670618
+Hemipyrellia sp1 M_PL_123,pollinator,0,Connector,1.3575871,0.65781003
+Lampides boeticus ,pollinator,0,Connector,1.2250208,0.8946939
+Lasioglossum mahense,pollinator,1,Keystone,-1.7654512,0.8033095
+Mabuya sechellensis,pollinator,0,Connector,1.2250208,0.8946939
+Megachile seychellensis,pollinator,0,Connector,0.76114357,0.89587766
+Nectarinia dussumieri,pollinator,1,Keystone,-1.3696861,0.6019492
+Neophyllomyza approximatonervis,pollinator,0,Connector,0.22908604,0.37404448
+Ornidia obesa,pollinator,1,Keystone,-0.51470983,0.8010394
+Phelsuma sp1 M_PL_123,pollinator,1,Keystone,-0.92009205,0.48054904
+Polistes olivaceus,pollinator,0,Connector,0.7827224,0.6127129
+Rhiparida seychellensis,pollinator,1,Keystone,-0.6165182,0.7170656
+Rhynchium brunneum,pollinator,0,Connector,0.7702097,0.61100006
+Scaptodrosophila sp1 M_PL_123,pollinator,2,Specialist,5.116176,-2.3292518
+Tricimba seychellensis,pollinator,0,Connector,1.3485918,0.65609026
+Unidentified sp1 M_PL_123,pollinator,0,Connector,1.08019,0.224323
+Unidentified sp3 M_PL_123,pollinator,0,Connector,1.1576222,0.6245983
+Unidentified sp4 M_PL_123,pollinator,0,Connector,0.9781444,0.34051695
+Unidentified sp5 M_PL_123,pollinator,0,Connector,0.58879703,0.5837445

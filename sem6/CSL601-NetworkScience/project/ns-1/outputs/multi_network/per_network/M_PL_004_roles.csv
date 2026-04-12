@@ -1,0 +1,115 @@
+species,kind,gnn_cluster,gnn_role,pca1,pca2
+Aralia nudicaulis,plant,2,Keystone,-3.971578,0.6694501
+Chimaphila umbellata,plant,2,Keystone,-2.8196385,0.5572362
+Clintonia borealis,plant,2,Keystone,-3.5922742,0.30760556
+Cornus canadensis,plant,3,Generalist,-5.4453025,4.246495
+Cypripedium acaule,plant,2,Keystone,-1.8665508,-0.27515146
+Linnaea borealis,plant,2,Keystone,-3.869173,0.61707646
+Maianthemum canadense,plant,2,Keystone,-4.4500937,1.503922
+Medeola virginiana,plant,0,Connector,-1.0690799,-1.9462345
+Oxalis montana,plant,2,Keystone,-3.1243918,0.034952838
+Pyrola secunda,plant,2,Keystone,-2.332333,-0.80775934
+Trientalis borealis,plant,2,Keystone,-2.2013175,-0.92227495
+Trillium undulatum,plant,2,Keystone,-2.7162597,-0.087760404
+Acmaeopsoides rufula,pollinator,1,Specialist,1.6308951,0.35737216
+Agiotes stabilis,pollinator,0,Connector,-0.05003967,-0.22985525
+Ancistrocerus sp1 M_PL_004,pollinator,1,Specialist,1.6299483,0.3613764
+Andrena melanochroa,pollinator,1,Specialist,1.6289914,0.3653751
+Andrena miranda,pollinator,0,Connector,0.29253465,0.2949355
+Andrena nivalis,pollinator,0,Connector,0.26625887,0.36548042
+Andrena rufosignata,pollinator,1,Specialist,1.6299481,0.3613764
+Andrena sigmundi,pollinator,1,Specialist,1.6308951,0.35737213
+Andrena thaspii,pollinator,1,Specialist,1.6308951,0.35737213
+Andrena w-scripta,pollinator,0,Connector,-0.0780441,0.21268205
+Andrena wheeleri,pollinator,0,Connector,-0.29901323,-0.62542874
+Andrena wilkella,pollinator,0,Connector,-0.37645876,-0.90428525
+Anthaxia expansa,pollinator,0,Connector,-0.5128135,0.019545209
+Anthonomus sp1 M_PL_004,pollinator,1,Specialist,1.6308951,0.35737213
+Blera badia,pollinator,1,Specialist,1.6308951,0.35737213
+Blera confusa,pollinator,1,Specialist,1.6220043,0.39325184
+Blera nigripes,pollinator,1,Specialist,1.6308951,0.35737213
+Bombus perplexus,pollinator,0,Connector,-0.06563482,0.19336396
+Bombus ternarius,pollinator,0,Connector,-0.18059596,0.0740631
+Bombus terricola,pollinator,0,Connector,-1.1631647,0.00012262659
+Bombus vagans,pollinator,2,Keystone,-1.9140869,0.17305464
+Bombylius major,pollinator,0,Connector,0.28059152,0.3176496
+Bombylius pigmaeus,pollinator,0,Connector,-0.044349793,-0.23636536
+Cantharis sp1 M_PL_004,pollinator,1,Specialist,1.6308951,0.35737213
+Carposcalis confusus,pollinator,0,Connector,-1.3030863,-0.53618294
+Carposcalis obscura,pollinator,0,Connector,-0.42429742,-1.4157416
+Cateres pennatus,pollinator,0,Connector,-0.29901323,-0.62542874
+Celastrina argiolus,pollinator,1,Specialist,1.6299481,0.3613764
+Chalcosyrphus curvarius,pollinator,1,Specialist,1.6308951,0.35737213
+Chalcosyrphus inarmatus,pollinator,1,Specialist,1.6308951,0.35737213
+Chalcosyrphus memorum,pollinator,1,Specialist,1.6308951,0.35737213
+Chalcosyrphus nigra,pollinator,1,Specialist,1.6299481,0.3613764
+Cheilosia pallipes,pollinator,0,Connector,-0.39802417,-0.7010519
+Cheilosia sialia,pollinator,1,Specialist,1.6299481,0.3613764
+Cheilosia slossonae,pollinator,0,Connector,-0.044349793,-0.23636536
+Cheilosia tristis,pollinator,0,Connector,-0.29901323,-0.62542874
+Crabro sp1 M_PL_004,pollinator,0,Connector,-0.06769298,0.18024065
+Dalopius sp1 M_PL_004,pollinator,1,Specialist,1.6308951,0.35737213
+Dialictus cressoni,pollinator,0,Connector,-1.0464312,-0.3757549
+Dialictus imitatus,pollinator,0,Connector,-0.69845253,-0.65803
+Dialictus sp1 M_PL_004,pollinator,2,Keystone,-1.8122995,0.18560866
+Eclimus harrisi,pollinator,0,Connector,-0.068789475,0.140677
+Ephemerella sp1 M_PL_004,pollinator,0,Connector,-0.30851123,-1.7279382
+Eremomyioides setosa,pollinator,0,Connector,-0.044349793,-0.23636536
+Eudasyphora cyanicolor,pollinator,1,Specialist,1.6308951,0.35737213
+Eupyses vestris,pollinator,0,Connector,-0.3644632,-0.71003765
+Eusphalerum convexum,pollinator,0,Connector,-0.7141393,-0.55136883
+Eusphalerum phothos,pollinator,0,Connector,-0.7774665,0.10996114
+Eusphalerum sp1 M_PL_004,pollinator,2,Keystone,-1.7656757,0.082303494
+Evodinus monticola,pollinator,1,Specialist,1.6308951,0.35737213
+Evylaeus divergens,pollinator,0,Connector,0.26625887,0.36548042
+Evylaeus quebecensis,pollinator,0,Connector,-0.85057014,0.122636594
+Fannia ungulata,pollinator,0,Connector,-0.37076885,-0.70342994
+Halictus confusus,pollinator,1,Specialist,1.6308951,0.35737213
+Halictus rubicundus,pollinator,0,Connector,-0.5459557,-0.31488553
+Hoplitis producta,pollinator,0,Connector,-0.5070977,-1.2864021
+Hylaeus basalis,pollinator,1,Specialist,1.6308951,0.35737213
+Hylaeus ellipticus,pollinator,0,Connector,-0.38981,-0.6835586
+Hylaeus stevensi,pollinator,0,Connector,-0.3644632,-0.71003765
+Judolia montivagans,pollinator,1,Specialist,1.6308951,0.35737213
+Lygus refidorsus,pollinator,1,Specialist,1.6308951,0.35737213
+Mallota posticata,pollinator,0,Connector,-0.1212107,0.33112067
+Melagyna lasiophthalma,pollinator,0,Connector,-0.57254755,-0.37153664
+Melanostoma sp1 M_PL_004,pollinator,0,Connector,-0.39802417,-0.7010519
+Nomada cuneata,pollinator,0,Connector,-0.044349793,-0.23636536
+Nomada sayi,pollinator,1,Specialist,1.6308951,0.35737213
+Orsodacne atra,pollinator,1,Specialist,1.6308951,0.35737213
+Orthoneura pulchella,pollinator,0,Connector,0.29253462,0.2949355
+Osmia lignaria,pollinator,0,Connector,-0.37645876,-0.90428525
+Osmia proxima,pollinator,0,Connector,-0.064085275,0.133925
+Osmia pumila,pollinator,0,Connector,-0.3644632,-0.71003765
+Paramyia nitens,pollinator,0,Connector,-0.5825045,0.4987797
+Parasyrphus relictus,pollinator,0,Connector,-0.72236353,0.36228782
+Passaloecus sp1 M_PL_004,pollinator,0,Connector,-0.3644632,-0.71003765
+Pegohylemyia fugax,pollinator,0,Connector,-0.044349793,-0.23636536
+Phalaenophana pyramusalis,pollinator,0,Connector,-0.044349793,-0.23636536
+Phaonia serva,pollinator,0,Connector,-0.064085275,0.133925
+Pidonia ruficolis,pollinator,0,Connector,-0.21276174,0.11599079
+Pieris napi,pollinator,1,Specialist,1.6308951,0.35737213
+Poanes hobomok,pollinator,0,Connector,-0.37645876,-0.90428525
+Psithyrus sp1 M_PL_004,pollinator,1,Specialist,1.6308951,0.35737213
+Pyrophaena rosarum,pollinator,0,Connector,-0.3644632,-0.71003765
+Rhopalum sp1 M_PL_004,pollinator,0,Connector,-0.37645876,-0.90428525
+Sarcophaga nearctica,pollinator,0,Connector,-0.18802983,0.18751366
+Sphaerophoria bifurcata,pollinator,0,Connector,-1.2516174,0.0059166965
+Sphaerophoria longipilosa,pollinator,1,Specialist,1.6308953,0.35737216
+Sphaerophoria sp1 M_PL_004,pollinator,0,Connector,-0.86601,-0.4127348
+Sphecodes sp1 M_PL_004,pollinator,1,Specialist,1.6299483,0.36137637
+Syritta pipiens,pollinator,1,Specialist,1.6308953,0.3573722
+Syritta rectus,pollinator,1,Specialist,1.6308953,0.3573722
+Temnostoma alternans,pollinator,1,Specialist,1.6308953,0.3573722
+Temnostoma balyras,pollinator,1,Specialist,1.6289912,0.36537516
+Temnostoma barberi,pollinator,1,Specialist,1.6299481,0.36137643
+Thamnotettix confinis,pollinator,0,Connector,-0.044349805,-0.2363654
+Trachysida aspera,pollinator,0,Connector,-0.29901332,-0.62542874
+Tropidia quadrata,pollinator,0,Connector,0.28953886,0.30065694
+Tychius stephensi,pollinator,1,Specialist,1.6289914,0.36537516
+Vespula arenaria,pollinator,0,Connector,-0.50709784,-1.2864019
+Xylota bigelowi,pollinator,1,Specialist,1.6220043,0.39325184
+Xylota hinei,pollinator,0,Connector,0.29253462,0.2949356
+Xylota sp1 M_PL_004,pollinator,1,Specialist,1.6308953,0.3573722
+Zeraea americana,pollinator,0,Connector,-0.06769299,0.18024059

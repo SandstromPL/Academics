@@ -1,0 +1,31 @@
+species,kind,gnn_cluster,gnn_role,pca1,pca2
+Chrysobalanus icaco,plant,0,Generalist,-1.8185053,-1.4407815
+Cinnamomum verum,plant,0,Generalist,-2.1860433,-1.2121401
+Dillenia ferruginea,plant,0,Generalist,-3.0266352,-0.32115674
+Nepenthes pervillei,plant,0,Generalist,-1.7840065,-1.9421122
+Nephrosperma vanhoutteanum,plant,0,Generalist,-4.794581,1.004759
+Paragenipa wrightii,plant,0,Generalist,-2.984705,-1.1597071
+Phoenicophorium borsigianum,plant,0,Generalist,-3.613622,0.33388412
+Apis mellifera,pollinator,2,Keystone,-1.747798,0.2672644
+Cratopus aurostriatus,pollinator,2,Keystone,-0.67023695,0.6596367
+Dichaetomyia fasciculifera,pollinator,1,Specialist,2.4776323,-1.6867687
+Diptera sp3 M_PL_122,pollinator,1,Specialist,1.6313862,-0.32634693
+Eristalinus vicarians,pollinator,1,Specialist,1.5361632,0.079537615
+Eristalodes seychellarum,pollinator,1,Specialist,1.5361632,0.07953753
+Hemipyrellia germana,pollinator,2,Keystone,-0.83840483,0.4773051
+Lasioglossum mahense,pollinator,2,Keystone,-1.3995638,0.50415504
+Megachile seychellensis,pollinator,3,Connector,1.6071333,1.7034496
+Nectarinia dussumieri,pollinator,1,Specialist,1.5689948,-0.9960586
+Neophyllomyza approximatonervis,pollinator,3,Connector,0.79164743,0.12496572
+Ornidia obesa,pollinator,3,Connector,0.741827,0.1292215
+Pachycerina seychellensis,pollinator,1,Specialist,1.6579359,-0.32463267
+Phelsuma sp1 M_PL_122,pollinator,2,Keystone,-0.23679854,0.8682713
+Physiphoa azurea ,pollinator,1,Specialist,1.6491055,-0.48549238
+Plagiostenopterina cyanosoma,pollinator,3,Connector,0.42840236,1.3010902
+Polistes olivaceus,pollinator,1,Specialist,1.6491055,-0.48549238
+Rhiparida seychellensis,pollinator,3,Connector,0.5585385,0.99269694
+Scaptodrosophila sp1 M_PL_122,pollinator,3,Connector,0.44511133,1.3297582
+Simosyrphus aegyptius,pollinator,1,Specialist,2.5381305,-1.6877668
+Unidentified sp1 M_PL_122,pollinator,3,Connector,1.4543465,1.7264522
+Unidentified sp2 M_PL_122,pollinator,1,Specialist,1.6843835,-0.3228867
+Xylocopa caffra,pollinator,3,Connector,1.1448916,0.80935836

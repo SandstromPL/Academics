@@ -1,0 +1,13 @@
+species,kind,gnn_cluster,gnn_role,pca1,pca2
+"Abundance""",plant,0,Keystone,0.4736288,-0.7025075
+Aechmea cylindrata,plant,0,Keystone,0.45817223,-0.7161822
+Aegiphila obducta,plant,0,Keystone,2.1037822,-1.2433994
+Fuchsia regia,plant,0,Keystone,1.8830454,2.268073
+Gaylussacia brasiliensis,plant,0,Keystone,1.4275798,-0.9592101
+Nematanthus australis,plant,0,Keystone,1.1381873,0.3623914
+Nidularium inocentii,plant,3,Specialist,2.8659055,0.10017735
+Vriesea altodaserrae,plant,0,Keystone,1.7364213,-0.029544903
+Amazilia versicolor,pollinator,2,Connector,-3.5191307,-3.1249151
+Clytolaema rubricauda,pollinator,1,Generalist,-3.0767996,1.4010617
+Stephanoxis lalandi,pollinator,1,Generalist,-2.9743245,0.66750944
+Thalurania glaucopis,pollinator,1,Generalist,-2.516468,1.9765452

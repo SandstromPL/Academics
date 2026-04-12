@@ -1,0 +1,75 @@
+species,kind,gnn_cluster,gnn_role,pca1,pca2
+Byrsonima spicata,plant,2,Connector,-2.523123,-0.78615457
+Calliandra tergemina,plant,0,Generalist,-2.3267713,1.2808423
+Centrosema virginianum,plant,2,Connector,-2.3200972,-2.1720233
+Chamaecrista glandulosa,plant,0,Generalist,-2.4273632,1.669182
+Coccoloba sp1 M_PL_041,plant,2,Connector,-3.0913897,-1.1264547
+Cordia martinicensis,plant,0,Generalist,-1.7475224,5.316004
+Cordia sp1 M_PL_041,plant,0,Generalist,-2.0590444,3.195811
+Cornutia pyramidata,plant,2,Connector,-2.5344853,0.76868826
+Croton flavens,plant,2,Connector,-2.7919626,0.43544677
+Daphnopsis americana,plant,2,Connector,-2.5556157,-1.0373919
+Desmodium adscendens,plant,2,Connector,-2.7529712,-1.6248295
+Gonzalagunia hirsuta,plant,0,Generalist,-2.2545495,0.96104527
+Guettarda scabra,plant,2,Connector,-2.4429038,0.2090029
+Ipomoea tiliacea,plant,2,Connector,-2.367083,0.4329707
+Lantana camara,plant,0,Generalist,-2.4718904,1.1739053
+Lantana involucrata,plant,0,Generalist,-2.2187958,0.6927606
+Ludwigia octovalvis,plant,2,Connector,-2.7440894,-1.3735131
+Miconia striata,plant,2,Connector,-2.6567698,-0.18208414
+Mimosa casta,plant,2,Connector,-2.4304342,0.5029504
+Odontonema nitidum,plant,2,Connector,-2.517255,-1.4011415
+Oxalis barrelieri,plant,2,Connector,-2.320098,-2.1720226
+Oxalis frutescens,plant,2,Connector,-2.5219922,-1.4133033
+Palicourea crocea ,plant,2,Connector,-2.517255,-1.4011414
+Sida rhombifolia,plant,2,Connector,-2.556613,-0.13539274
+Spermacoce assurgens,plant,2,Connector,-2.6285985,-1.1186562
+Stigmaphyllon diversifolium,plant,2,Connector,-2.557956,-2.2203925
+Tetrazygia angustifolia,plant,2,Connector,-2.7324786,-1.2348093
+Unidentified sp21 M_PL_041,plant,0,Generalist,-2.1321454,2.503561
+Vernonia sp1 M_PL_041,plant,0,Generalist,-1.9921938,3.1899514
+Wedelia calycina,plant,0,Generalist,-2.0174823,3.0162506
+Wedelia trilobata,plant,2,Connector,-2.4421146,0.4552626
+Agraulis vanillae,pollinator,3,Keystone,1.9800811,0.24778976
+Allosmaitia piplea,pollinator,1,Specialist,1.8775595,-0.61562175
+Anartia jatrophae,pollinator,1,Specialist,1.6578201,-1.5790261
+Anolis oculatus,pollinator,1,Specialist,1.0035242,-1.5313338
+Apis mellifera,pollinator,3,Keystone,2.1263864,2.6647983
+Appias drusilla,pollinator,3,Keystone,2.2068903,1.1665851
+Ascia monuste,pollinator,3,Keystone,1.9004483,0.4068026
+Coereba flaveola ,pollinator,3,Keystone,1.5575194,1.2107958
+Cyanophaia bicolor,pollinator,1,Specialist,0.8204827,-1.3110167
+Dryas iulia,pollinator,3,Keystone,2.1349063,0.64605486
+Electrostrymon angerona,pollinator,3,Keystone,1.9658388,0.08945511
+Eulampis holosericeus,pollinator,1,Specialist,1.8671495,-1.0805261
+Eulampis jugularis,pollinator,1,Specialist,1.4814532,-0.38951883
+Hemiargus hanno,pollinator,1,Specialist,1.5781964,-1.6593298
+Janonia evarete,pollinator,3,Keystone,2.1060102,0.15686254
+Loxigilla noctis,pollinator,1,Specialist,0.67703694,-1.1833335
+Marpesia petreus,pollinator,1,Specialist,1.3712776,-1.7006682
+Orthorhyncus cristatus,pollinator,3,Keystone,1.7773038,3.6127512
+Phoebis sp1 M_PL_041,pollinator,3,Keystone,2.0370047,0.04393504
+Polygonus sp1 M_PL_041,pollinator,3,Keystone,1.8076224,0.20831878
+Pyrgus oileus,pollinator,1,Specialist,0.8458064,-2.4102786
+Unidentified sp1 M_PL_041,pollinator,3,Keystone,1.8973032,2.5968344
+Unidentified sp10 M_PL_041,pollinator,3,Keystone,2.125529,0.11313686
+Unidentified sp11 M_PL_041,pollinator,1,Specialist,1.4832814,-1.2737391
+Unidentified sp12 M_PL_041,pollinator,1,Specialist,0.8458064,-2.4102786
+Unidentified sp13 M_PL_041,pollinator,1,Specialist,1.2316123,-1.906737
+Unidentified sp15 M_PL_041,pollinator,1,Specialist,1.5781964,-1.6593298
+Unidentified sp16 M_PL_041,pollinator,1,Specialist,1.9869986,-1.5817096
+Unidentified sp17 M_PL_041,pollinator,1,Specialist,1.9853871,-1.5898813
+Unidentified sp18 M_PL_041,pollinator,1,Specialist,1.8671495,-1.0805261
+Unidentified sp19 M_PL_041,pollinator,1,Specialist,2.119752,-1.0084944
+Unidentified sp2 M_PL_041,pollinator,3,Keystone,2.2986708,1.753907
+Unidentified sp20 M_PL_041,pollinator,1,Specialist,1.3686806,-1.7057762
+Unidentified sp3 M_PL_041,pollinator,3,Keystone,2.3050094,1.1427424
+Unidentified sp4 M_PL_041,pollinator,3,Keystone,2.2255967,1.5860776
+Unidentified sp5 M_PL_041,pollinator,3,Keystone,2.1754322,0.8922744
+Unidentified sp6 M_PL_041,pollinator,3,Keystone,2.2212977,0.565316
+Unidentified sp7 M_PL_041,pollinator,3,Keystone,2.2484794,0.44492722
+Unidentified sp8 M_PL_041,pollinator,3,Keystone,1.8019239,0.08962597
+Unidentified sp9 M_PL_041,pollinator,1,Specialist,1.5207921,-0.31077993
+Urbanus sp1 M_PL_041,pollinator,3,Keystone,2.1398106,0.00749144
+Wasmannia auropunctata,pollinator,3,Keystone,1.6390091,0.20167217
+Xylocopa sp1 M_PL_041,pollinator,3,Keystone,1.807003,1.7354177

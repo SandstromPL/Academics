@@ -1,0 +1,33 @@
+species,kind,gnn_cluster,gnn_role,pca1,pca2
+Aphloia theiformis,plant,0,Specialist,0.8895143,0.17017986
+Campnosperma seychellarum,plant,0,Specialist,0.8044946,-2.2326236
+Cinnamomum verum,plant,2,Connector,-0.5019303,1.2541057
+Dillenia ferruginea,plant,3,Keystone,-1.8044568,1.1903044
+Erythroxylum sechellarum,plant,1,Generalist,-2.844744,-1.0068535
+Gastonia crassa,plant,3,Keystone,-2.8909733,0.4334374
+Memecylon eleagni,plant,3,Keystone,-0.7460974,0.97068655
+Nephrosperma vanhoutteanum,plant,1,Generalist,-2.4587271,-1.2536182
+Paragenipa wrightii,plant,2,Connector,0.539085,0.8611719
+Psychotria pervillei,plant,1,Generalist,-1.6386188,-0.6474849
+Roscheria melanochaetes,plant,1,Generalist,-1.0927184,-2.0580385
+Apis mellifera,pollinator,3,Keystone,-2.7544205,0.26470023
+Cratopus aurostriatus,pollinator,2,Connector,-0.1774839,0.45306745
+Dichaetomyia fasciculifera,pollinator,2,Connector,1.3214302,0.25834456
+Diptera sp1 M_PL_102,pollinator,1,Generalist,-0.8761481,-2.6805582
+Diptera sp2 M_PL_102,pollinator,0,Specialist,1.9928777,-0.7147389
+Diptera sp5 M_PL_102,pollinator,2,Connector,1.3214302,0.25834438
+Foudia madagascariensis,pollinator,2,Connector,1.0832616,1.1951239
+Lasioglossum mahense,pollinator,3,Keystone,-2.3932683,1.4210445
+Lygistorrhina sp1 M_PL_102,pollinator,2,Connector,0.5536046,-0.477031
+Mabuya sechellensis,pollinator,2,Connector,0.9298878,1.2372384
+Neavella albipectus,pollinator,2,Connector,1.2444372,0.28945294
+Nectarinia dussumieri,pollinator,2,Connector,-0.010689995,0.9071377
+Ornidia obesa,pollinator,3,Keystone,-0.95609045,0.28355843
+Pachycerina seychellensis,pollinator,2,Connector,1.2832301,0.27366066
+Parasarcophaga hirticeps,pollinator,0,Specialist,1.5767533,-1.3588933
+Phelsuma sp1 M_PL_102,pollinator,2,Connector,0.096480876,0.61970484
+Plagiostenopterina cyanosoma,pollinator,2,Connector,1.3214302,0.25834438
+Polistes olivaceus,pollinator,2,Connector,1.045181,1.2057408
+Scaptodrosophila sp1 M_PL_102,pollinator,2,Connector,1.0840385,0.0596064
+Unidentified sp3 M_PL_102,pollinator,0,Specialist,2.0296142,-0.7175587
+Unidentified sp4 M_PL_102,pollinator,0,Specialist,2.0296142,-0.7175587

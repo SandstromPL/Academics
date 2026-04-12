@@ -1,0 +1,55 @@
+species,kind,gnn_cluster,gnn_role,pca1,pca2
+Campanula gieseckiana,plant,1,Keystone,1.3837235,-0.5357801
+Cerastium alpinum,plant,3,Generalist,3.5627048,0.5581849
+Dryas integrifolia,plant,1,Keystone,2.4114926,-0.39968622
+Epilobium latifolium,plant,3,Generalist,4.0662317,1.2245582
+Ledum palustre,plant,1,Keystone,3.0075285,0.031163447
+Papaver radicatum,plant,1,Keystone,1.8625051,-0.043131907
+Pedicularis lapponica,plant,1,Keystone,1.8695517,-0.12735948
+Polygonum viviparum,plant,1,Keystone,2.1669078,-0.621464
+Pyrola grandiflora,plant,1,Keystone,2.1618035,-0.18154836
+Rhododendron lapponicum,plant,1,Keystone,1.2303108,-0.523998
+Salix glauca,plant,3,Generalist,5.298195,3.3039932
+Saxifraga triscupidata,plant,1,Keystone,2.5439265,-0.054385547
+Stellaria longiceps,plant,1,Keystone,1.2097439,-0.56683165
+Tofieldia pusilla,plant,1,Keystone,1.247576,-0.10231178
+Vaccinium uliginosum,plant,0,Connector,-1.2251815,-0.90440845
+Aedes impiger,pollinator,0,Connector,-1.0614759,-1.0486006
+Aedes nigripes,pollinator,0,Connector,-0.99519444,0.74596274
+Botanophila profuga,pollinator,0,Connector,-1.3219475,-1.2103934
+Bradysia sp1 M_PL_052,pollinator,2,Specialist,-3.0248551,1.8090299
+Clossiana chariclea,pollinator,0,Connector,-1.4410928,-1.3298054
+Colias hecla,pollinator,0,Connector,-1.3980557,0.16893724
+Dasyhelea sp1 M_PL_052,pollinator,0,Connector,-1.3216462,-0.8074047
+Delia fabricii,pollinator,0,Connector,-0.65954006,0.6337311
+Delia platura ,pollinator,0,Connector,0.058773436,-1.4494492
+Dolichopus groenlandicus,pollinator,0,Connector,-0.6722181,0.5654338
+Drymeia groenlandica,pollinator,2,Specialist,-3.0248551,1.8090299
+Eupeodes curtus,pollinator,1,Keystone,1.387603,-0.18762836
+Eupeodes luniger,pollinator,1,Keystone,1.4036449,-0.23973593
+Eupithesia sobrinata,pollinator,0,Connector,0.076779164,-0.05333741
+Eurois occulta,pollinator,0,Connector,-1.3980557,0.16893724
+Forcipomyia sp1 M_PL_052,pollinator,0,Connector,-2.2829049,-1.3444763
+Helophilus borealis,pollinator,0,Connector,-0.44205424,-0.85499346
+Helophilus groenlandicus,pollinator,0,Connector,-0.50506324,-0.15380815
+Hymenoptera sp1 M_PL_052,pollinator,0,Connector,-1.3216462,-0.8074047
+Hymenoptera sp2 M_PL_052,pollinator,2,Specialist,-3.0248551,1.8090299
+Lasiestra leucocycla,pollinator,2,Specialist,-1.3758768,1.1323563
+Nowickia sp1 M_PL_052,pollinator,2,Specialist,-1.3758768,1.1323563
+Nysius groenlandicus,pollinator,1,Keystone,2.1242158,-0.15856656
+Oedemagena tarandi,pollinator,0,Connector,-1.1882751,-1.1665008
+Paregle audacula,pollinator,0,Connector,-1.2533507,-0.31217384
+Pegoplata tundrica,pollinator,0,Connector,-1.2654672,-1.0996865
+Periscepsia stylata,pollinator,0,Connector,-1.2533507,-0.31217384
+Phaonia pallidisquama,pollinator,0,Connector,0.19613764,-0.057041816
+Platycheirus hyperboreus,pollinator,2,Specialist,-3.0248551,1.8090299
+Platycheirus lundbecki,pollinator,2,Specialist,-3.0248551,1.8090299
+Platycheirus varipes,pollinator,0,Connector,-1.2533507,-0.31217384
+Ramphomyia nigrita,pollinator,0,Connector,-1.1456686,0.9433433
+Smittia sp1 M_PL_052,pollinator,1,Keystone,1.4786737,-0.44582447
+Sphaerophoria scripta,pollinator,1,Keystone,1.3572903,-0.5952636
+Spilogona sanctpauli,pollinator,1,Keystone,2.0707755,0.0729502
+Stenomacrus sp1 M_PL_052,pollinator,0,Connector,-0.983673,-1.0276389
+Syngrapha borea,pollinator,0,Connector,0.0043048053,0.27646965
+Syngrapha u-aureum,pollinator,0,Connector,-1.3980557,0.16893725
+Thysanoptera sp1 M_PL_052,pollinator,0,Connector,-0.5171128,-1.1374713

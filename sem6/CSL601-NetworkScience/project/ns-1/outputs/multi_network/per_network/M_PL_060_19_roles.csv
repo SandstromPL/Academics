@@ -1,0 +1,32 @@
+species,kind,gnn_cluster,gnn_role,pca1,pca2
+Antidesma madagascariense,plant,3,Generalist,0.37955165,1.3709227
+Badula platiphylla,plant,1,Specialist,1.7964046,0.14783402
+Eugenia orbiculata,plant,1,Specialist,1.1289662,-0.17268029
+Euodia chapelieri,plant,1,Specialist,1.7964044,0.14783393
+Euodia obtusifolia,plant,1,Specialist,1.7484806,0.06359571
+Gaertnera sp1 M_PL_078,plant,1,Specialist,1.1289649,-0.17268008
+Grangeria borbonica,plant,3,Generalist,0.16531008,0.6709019
+Helichrysum proteoides,plant,3,Generalist,-0.15043789,0.77698755
+Homalanthus populifolius,plant,1,Specialist,1.7724615,0.106261246
+Labourdonnaisia callophylloides,plant,3,Generalist,0.30906463,0.7094736
+Olea lancea,plant,1,Specialist,1.185593,0.23947677
+Phyllanthus phillyreifolius,plant,1,Specialist,1.7724615,0.106261246
+Psiadia terebinthina,plant,3,Generalist,-0.7638682,0.42238522
+Psidium cattleianum,plant,1,Specialist,0.7094988,-0.8027748
+Sideroxylon puberulum,plant,0,Keystone,-0.20630871,-2.0212374
+Stillingia lineata,plant,1,Specialist,0.93846405,0.11043338
+Warneckea trinervis,plant,1,Specialist,1.0781872,-1.3096484
+Wikstroemia indica,plant,1,Specialist,1.7724615,0.10626123
+Apis mellifera,pollinator,0,Keystone,-3.021295,-1.9514176
+Cerambycidae sp1 M_PL_078,pollinator,2,Connector,-0.491003,-0.56758016
+Chaetocnema sp1 M_PL_078,pollinator,3,Generalist,-2.436082,2.10087
+Chrysomya megacephala ,pollinator,2,Connector,-1.412663,-0.68736637
+Dysauxes florida,pollinator,2,Connector,-0.61164695,-0.19256437
+Lygaeidae sp1 M_PL_078,pollinator,2,Connector,-0.46051872,-0.52388567
+Musca domestica,pollinator,2,Connector,-1.0627949,-0.10574658
+Pachycerina crinicornis ,pollinator,3,Generalist,-1.5441656,1.0908136
+Pelecophora intemipta,pollinator,2,Connector,-1.2268999,-0.27153778
+Scolia carniflex,pollinator,2,Connector,-0.46051872,-0.52388567
+Stomorhina lunata,pollinator,2,Connector,-0.9957998,0.29469404
+Technomyrmex albipes ,pollinator,2,Connector,-0.83818424,0.45535335
+Villa unifasciata,pollinator,2,Connector,-2.000087,0.38264492

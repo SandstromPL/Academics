@@ -1,0 +1,28 @@
+species,kind,gnn_cluster,gnn_role,pca1,pca2
+Dracaena concinna,plant,2,Connector,-1.3017418,0.35745096
+Gastonia mauritiana,plant,3,Generalist,2.4964104,-1.552449
+Hibiscus tiliaceus,plant,2,Connector,-2.024854,1.3854996
+Ipomoea macrantha,plant,2,Connector,-3.0242743,1.0588216
+Leucaena leucocephala,plant,2,Connector,-0.61219454,1.5023149
+Morinda citrifolia,plant,2,Connector,-0.6879221,1.0911869
+Passiflora suberosa,plant,2,Connector,-2.024854,1.3854996
+Pemphis acidula,plant,1,Keystone,1.1763781,0.88421345
+Scaevola sericea,plant,1,Keystone,0.05280524,0.6713981
+Stachytapheta jamaicensis,plant,1,Keystone,1.0989096,0.36109832
+Suriana maritima,plant,0,Specialist,-1.5108281,-0.65011656
+Thespesia populnea,plant,1,Keystone,0.27575353,1.3193212
+Tourneortia argentea,plant,1,Keystone,0.31749988,0.13815837
+Turnera angustifolia,plant,1,Keystone,0.6058288,0.5171772
+Apis mellifera,pollinator,3,Generalist,3.8415287,0.11333599
+Leptotes pirithous,pollinator,1,Keystone,1.3309004,-0.6939916
+Lucilia sp1 M_PL_011,pollinator,0,Specialist,-2.3498766,-1.6060324
+Ornidia obesa,pollinator,0,Specialist,-2.3498766,-1.6060324
+Phalantha phalantha,pollinator,1,Keystone,-0.038537554,-0.105042025
+Phelsuma ornata,pollinator,3,Generalist,3.7122698,0.06030373
+Protaetia aurichalcea,pollinator,0,Specialist,-2.3498766,-1.6060324
+Syrphid sp1 M_PL_011,pollinator,1,Keystone,0.4155016,-0.74840766
+Unidentified sp1 M_PL_011,pollinator,1,Keystone,2.0768628,0.1755615
+Unidentified sp2 M_PL_011,pollinator,1,Keystone,-0.109172575,-0.80207574
+Unidentified sp3 M_PL_011,pollinator,1,Keystone,0.67636585,-0.057326797
+Unidentified sp4 M_PL_011,pollinator,0,Specialist,-0.41009018,-1.4438592
+Xylocopa fenestrata,pollinator,1,Keystone,0.71708596,-0.14997599

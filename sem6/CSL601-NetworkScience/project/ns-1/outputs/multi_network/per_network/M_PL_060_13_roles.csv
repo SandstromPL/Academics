@@ -1,0 +1,39 @@
+species,kind,gnn_cluster,gnn_role,pca1,pca2
+Claoxylon linostachys,plant,3,Specialist,2.3146245,-2.6645381
+Croton fothergillifolius,plant,0,Generalist,-2.4897888,-0.7573654
+Dodonaea viscosa,plant,0,Generalist,-3.5478032,-1.1350935
+Erythroxylum macrocarpum,plant,0,Generalist,-1.7249337,-1.2525781
+Psiadia terebinthina,plant,0,Generalist,-3.2787254,-1.0828204
+Sideroxylon cinereum,plant,0,Generalist,-5.879389,1.4112929
+Trochetia blackburniana,plant,1,Keystone,-1.0654697,-0.078722574
+Apis mellifera,pollinator,1,Keystone,-0.82554096,0.9314782
+Ceratitis roas,pollinator,1,Keystone,0.5326888,-0.597305
+Chaetocnema sp1 M_PL_072,pollinator,1,Keystone,-0.32655123,0.6622164
+Chrysomya megacephala ,pollinator,2,Connector,1.1138848,1.080798
+Diptera sp1 M_PL_072,pollinator,3,Specialist,2.8406742,-1.7411128
+Diptera sp2 M_PL_072,pollinator,1,Keystone,0.67848223,-0.35546762
+Dysauxes florida,pollinator,1,Keystone,0.026278814,0.20726001
+Eristalinus flaveolus,pollinator,2,Connector,1.1138848,1.080798
+Fannia pusio ,pollinator,1,Keystone,0.20135334,0.49253657
+Graphomya maculata,pollinator,1,Keystone,0.67848223,-0.35546762
+Henotesia narcissus,pollinator,2,Connector,1.1138848,1.080798
+Homoneura sp1 M_PL_072,pollinator,1,Keystone,0.67848223,-0.35546762
+Homoneura sp2 M_PL_072,pollinator,2,Connector,1.1138848,1.080798
+Limnophora quaterna ,pollinator,2,Connector,1.1138848,1.080798
+Lygistorrhina sp1 M_PL_072,pollinator,1,Keystone,0.67848223,-0.35546762
+Melanostoma annulipes,pollinator,1,Keystone,0.27243924,-0.8106384
+Musca domestica,pollinator,1,Keystone,-0.08636952,-0.39025727
+Nacoleia sp1 M_PL_072,pollinator,1,Keystone,0.5980702,-0.4450002
+Nacoleia sp2 M_PL_072,pollinator,1,Keystone,0.026278814,0.20726001
+Ophyra capensis ,pollinator,1,Keystone,-0.20018366,-0.14813834
+Orchisia costata ,pollinator,1,Keystone,0.05752015,-0.490969
+Orthellia albigena ,pollinator,2,Connector,1.1138848,1.080798
+Pachycerina crinicornis ,pollinator,1,Keystone,-0.33726794,0.21858492
+Paragus borbonicus,pollinator,2,Connector,1.1138848,1.080798
+Phorinia sp1 M_PL_072,pollinator,2,Connector,1.1138848,1.080798
+Sapromyza sp1 M_PL_072,pollinator,2,Connector,1.1138848,1.080798
+Stomorhina lunata,pollinator,1,Keystone,-0.39852783,0.14069507
+Stomoxys calcitrans,pollinator,1,Keystone,-0.6273552,-0.2797227
+Stomoxys niger,pollinator,1,Keystone,-0.03208429,0.25039867
+Technomyrmex albipes ,pollinator,1,Keystone,0.67848223,-0.3554675
+Unidentified sp1 M_PL_072,pollinator,1,Keystone,0.53268886,-0.5973049

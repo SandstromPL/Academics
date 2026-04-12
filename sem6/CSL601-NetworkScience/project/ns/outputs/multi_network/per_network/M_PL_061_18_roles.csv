@@ -1,0 +1,30 @@
+species,kind,gnn_cluster,gnn_role,pca1,pca2
+Aphloia theiformis,plant,0,Keystone,-3.1315355,0.36616915
+Craterispermum microdon,plant,2,Generalist,0.46844733,-1.7028084
+Dillenia ferruginea,plant,0,Keystone,-2.1071699,-0.31895867
+Erythroxylum sechellarum,plant,2,Generalist,-1.2989609,-0.71221316
+Glionnetia sericea,plant,1,Specialist,0.91033685,0.5850341
+Memecylon eleagni,plant,2,Generalist,-0.17783982,-1.6292174
+Mimusops sechellarum,plant,0,Keystone,-2.112312,0.14376593
+Paragenipa wrightii,plant,2,Generalist,-0.18776257,-1.6769881
+Roscheria melanochaetes,plant,0,Keystone,-2.8455367,0.6614816
+Soulamea terminaloides,plant,0,Keystone,-1.2678869,2.3994563
+Syzygium wrightii,plant,0,Keystone,-1.7023432,1.5916289
+Apis mellifera,pollinator,0,Keystone,-3.4057314,-0.412238
+Coleoptera sp7 M_PL_101,pollinator,1,Specialist,1.5879157,-0.45756674
+Dichaetomyia fasciculifera,pollinator,2,Generalist,-0.025385594,-0.5757806
+Diptera sp1 M_PL_101,pollinator,3,Connector,1.2139537,0.7815489
+Diptera sp5 M_PL_101,pollinator,3,Connector,1.642492,-0.5489827
+Diptera sp6 M_PL_101,pollinator,1,Specialist,1.4927158,-0.5946988
+Diptera sp8 M_PL_101,pollinator,1,Specialist,1.7334642,-0.33960882
+Eristalinus vicarians,pollinator,3,Connector,2.3365698,1.3926051
+Lasioglossum mahense,pollinator,0,Keystone,-4.0198503,-0.5714853
+Neavella albipectus,pollinator,1,Specialist,0.76021457,0.51386064
+Ornidia obesa,pollinator,2,Generalist,0.19939308,-0.24200833
+Parasarcophaga hirticeps,pollinator,3,Connector,1.3308339,1.4011993
+Perissoma aenescens,pollinator,2,Generalist,0.6791525,-0.51457316
+Phelsuma sp1 M_PL_101,pollinator,3,Connector,1.7855133,0.65936756
+Scaptodrosophila sp1 M_PL_101,pollinator,3,Connector,1.3308339,1.4011993
+Unidentified sp2 M_PL_101,pollinator,1,Specialist,1.6154155,-0.48366186
+Unidentified sp3 M_PL_101,pollinator,1,Specialist,1.5679348,-0.5412329
+Unidentified sp4 M_PL_101,pollinator,3,Connector,1.6271262,-0.5752942

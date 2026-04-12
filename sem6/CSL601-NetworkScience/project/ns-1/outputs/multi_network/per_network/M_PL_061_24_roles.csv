@@ -1,0 +1,30 @@
+species,kind,gnn_cluster,gnn_role,pca1,pca2
+Craterispermum microdon,plant,2,Connector,0.900783,0.8794774
+Dillenia ferruginea,plant,3,Keystone,1.9344331,-0.31970137
+Diospyros seychellarum,plant,3,Keystone,2.0518968,-1.20276
+Erythroxylum sechellarum,plant,2,Connector,0.5559239,1.1359255
+Excoecaria benthiamiana,plant,2,Connector,-0.96054566,1.3328451
+Memecylon eleagni,plant,2,Connector,-0.34882364,1.446844
+Nephrosperma vanhoutteanum,plant,1,Generalist,2.5722184,0.49921018
+Northea hornei,plant,3,Keystone,3.0966687,-1.6027561
+Paragenipa wrightii,plant,2,Connector,0.67979884,1.0034292
+Soulamea terminaloides,plant,3,Keystone,0.95640343,-1.706267
+Syzygium wrightii,plant,3,Keystone,1.8112916,-1.0167459
+Apis mellifera,pollinator,1,Generalist,2.4369252,1.7346984
+Dichaetomyia fasciculifera,pollinator,0,Specialist,-2.189128,-0.115748525
+Diptera sp1 M_PL_107,pollinator,2,Connector,-0.09906822,0.71610945
+Diptera sp4 M_PL_107,pollinator,2,Connector,-0.72157264,0.37423146
+Hemipyrellia germana,pollinator,0,Specialist,-0.0255313,-0.60385376
+Hemipyrellia sp1 M_PL_107,pollinator,0,Specialist,-1.4519877,-0.091089204
+Lasioglossum mahense,pollinator,1,Generalist,2.1088977,1.5125028
+Lygistorrhina sp1 M_PL_107,pollinator,0,Specialist,-1.6614332,-0.76979464
+Mabuya sechellensis,pollinator,0,Specialist,-2.1692607,-0.08916663
+Melanostoma annulipes,pollinator,0,Specialist,-2.189128,-0.115748525
+Nectarinia dussumieri,pollinator,0,Specialist,-0.93612415,-0.13528736
+Neophyllomyza approximatonervis,pollinator,0,Specialist,-1.1599175,0.49647853
+Phelsuma sp1 M_PL_107,pollinator,0,Specialist,-1.1484255,-0.4373138
+Rhiparida seychellensis,pollinator,0,Specialist,-0.013081406,-1.1554677
+Scaptodrosophila sp1 M_PL_107,pollinator,0,Specialist,-2.1692607,-0.08916663
+Tricimba seychellensis,pollinator,0,Specialist,-0.252861,-0.62670314
+Unidentified sp2 M_PL_107,pollinator,0,Specialist,-1.4735543,-0.11384533
+Unidentified sp3 M_PL_107,pollinator,0,Specialist,-0.13553938,-0.94033605

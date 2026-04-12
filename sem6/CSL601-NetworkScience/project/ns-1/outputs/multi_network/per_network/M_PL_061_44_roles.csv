@@ -1,0 +1,22 @@
+species,kind,gnn_cluster,gnn_role,pca1,pca2
+Canthium bibracteatum,plant,2,Generalist,0.6728655,0.8964364
+Chrysobalanus icaco,plant,0,Keystone,0.15851973,1.895277
+Dillenia suffruticosa,plant,0,Keystone,-0.20040797,0.94260705
+Erythroxylum sechellarum,plant,0,Keystone,0.06807008,0.6106277
+Memecylon eleagni,plant,0,Keystone,0.15851927,1.895277
+Nepenthes pervillei,plant,2,Generalist,0.68858635,0.37692776
+Nephrosperma vanhoutteanum,plant,2,Generalist,0.6975111,0.1985291
+Paragenipa wrightii,plant,0,Keystone,0.15792927,1.8951063
+Psychotria pervillei,plant,0,Keystone,0.2480046,1.0056728
+Roscheria melanochaetes,plant,3,Specialist,-4.030833,0.3813069
+Apis mellifera,pollinator,2,Generalist,1.9194202,-0.1461526
+Cratopus aurostriatus,pollinator,3,Specialist,-3.67025,-0.8217356
+Diptera sp1 M_PL_127,pollinator,1,Connector,0.1896734,-1.2460679
+Eristalinus vicarians,pollinator,1,Connector,0.234895,-0.90932435
+Hemipyrellia sp1 M_PL_127,pollinator,1,Connector,0.21056744,-0.85813624
+Lasioglossum mahense,pollinator,1,Connector,0.63549215,-0.86314297
+Leptotes pirithous,pollinator,1,Connector,0.234895,-0.90932435
+Lygistorrhina sp1 M_PL_127,pollinator,2,Generalist,1.028447,-1.1383628
+Megachile seychellensis,pollinator,1,Connector,0.21712495,-1.0593648
+Unidentified sp2 M_PL_127,pollinator,1,Connector,0.22017111,-1.0659553
+Xylocopa caffra,pollinator,1,Connector,0.16080071,-1.0801992

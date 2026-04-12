@@ -1,0 +1,23 @@
+species,kind,gnn_cluster,gnn_role,pca1,pca2
+Azorina vidalii,plant,2,Generalist,-2.951937,-1.368616
+Beta maritima,plant,0,Keystone,0.4702085,0.84128296
+Crithmum maritimum,plant,0,Keystone,-1.180977,0.673995
+Daucus carota,plant,0,Keystone,-0.93247163,0.530696
+Freesia sp1 M_PL_036,plant,1,Connector,-0.1766224,0.23775096
+Leucanthemum vulgare,plant,0,Keystone,-0.82557803,0.945698
+Lotus corniculatus,plant,1,Connector,-0.75487614,0.09331469
+Reseada luteola,plant,0,Keystone,-0.3308289,0.40789786
+Silene vulgaris,plant,0,Keystone,-0.3221943,0.7107537
+Solidago sempervirens,plant,0,Keystone,-0.004201959,1.9952829
+Apis mellifera,pollinator,1,Connector,0.06857782,-0.9536664
+Bombus sp1 M_PL_036,pollinator,1,Connector,0.13300885,-0.91199875
+Calliphora sp1 M_PL_036,pollinator,3,Specialist,1.9485605,-1.4153947
+Hymenoptera sp1 M_PL_036,pollinator,0,Keystone,-1.5278708,-0.24691848
+Lepidoptera sp4 M_PL_036,pollinator,1,Connector,0.13300885,-0.91199875
+Lucilia sp1 M_PL_036,pollinator,1,Connector,0.75741726,-0.27809486
+Moth sp1 M_PL_036,pollinator,3,Specialist,1.8249907,1.6142553
+Unidentified sp2 M_PL_036,pollinator,0,Keystone,-0.6405791,-0.51075095
+Unidentified sp3 M_PL_036,pollinator,0,Keystone,-0.59792435,-0.2666111
+Unidentified sp5 M_PL_036,pollinator,3,Specialist,1.4976841,0.32386455
+Unidentified sp6 M_PL_036,pollinator,3,Specialist,1.4640437,-0.09534912
+Unidentified sp7 M_PL_036,pollinator,3,Specialist,1.9485605,-1.4153945

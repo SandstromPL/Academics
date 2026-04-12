@@ -1,0 +1,48 @@
+species,kind,gnn_cluster,gnn_role,pca1,pca2
+Aechmea coelestis,plant,3,Generalist,-0.33071917,0.16542357
+Aechmea nudicaulis,plant,3,Generalist,-0.041486684,0.5566161
+Aechmea ornata,plant,3,Generalist,-0.824917,1.1984644
+Aechmea pectinata,plant,3,Generalist,0.21998996,0.36808798
+Apocynaceae sp1 M_PL_074_10,plant,3,Generalist,-0.64538556,0.4079549
+Calathea communis,plant,3,Generalist,-0.16357052,1.0619116
+Canistrum cyathiforme,plant,1,Specialist,-1.501544,-0.64310366
+Canistrum fragrans,plant,1,Specialist,-1.9827273,-0.58026034
+Citharexylum myrianthum,plant,0,Connector,0.85462266,-0.9518887
+Costus spiralis,plant,1,Specialist,-1.9353263,-0.66723716
+Dahlstedtia pinnata,plant,3,Generalist,-0.3142715,0.1380937
+Dyssochroma viridiflora,plant,1,Specialist,-1.501544,-0.64310366
+Elleanthus brasiliensis,plant,1,Specialist,-2.3580813,-1.0299766
+Fuchsia regia,plant,3,Generalist,1.1211555,0.7651157
+Hedychium coronarium,plant,3,Generalist,-0.68304664,1.40619
+Heliconia sp4 M_PL_074_10,plant,3,Generalist,1.2180521,1.000497
+Hillia illustris,plant,1,Specialist,-1.9827273,-0.5802603
+Inga edulis,plant,1,Specialist,-2.3273962,-1.0879793
+Justicia carnea,plant,3,Generalist,-0.2550321,0.42039973
+Mendoncia coccinea,plant,3,Generalist,-0.40609682,-0.1549329
+Musa ornata,plant,3,Generalist,1.2320707,0.82697934
+Nematanthus gregarius,plant,3,Generalist,-0.27750987,0.7017139
+Nematanthus striatus,plant,3,Generalist,0.56795186,0.7477671
+Nidularium billbergioides,plant,1,Specialist,-2.2748935,-1.1791345
+Nidularium krisgreeniae,plant,3,Generalist,-0.26327226,0.043430336
+Psittacanthus dichrous,plant,1,Specialist,-2.3273962,-1.0879793
+Schwartzia brasiliensis,plant,3,Generalist,-0.009078782,0.5879309
+Sinningia sp1 M_PL_074_10,plant,3,Generalist,-0.8965349,1.3344322
+Spirotheca rivieri,plant,0,Connector,0.9255263,-0.45461318
+Tillandsia stricta,plant,1,Specialist,-2.3529863,-1.0398381
+Vriesea ensiformis,plant,1,Specialist,-1.8734977,-0.77472496
+Vriesea philippocoburgii,plant,3,Generalist,0.3785732,0.35608616
+Vriesea platynema,plant,3,Generalist,-0.58345616,0.73893714
+Vriesea rodigasiana,plant,1,Specialist,-1.3629315,-0.8917051
+Vriesea vagans,plant,1,Specialist,-1.2647461,-0.6945413
+Amazilia versicolor,pollinator,0,Connector,2.2173336,1.0947324
+Anthracothorax nigricollis,pollinator,0,Connector,2.4388952,-0.46641997
+Aphantochroa cirrochloris,pollinator,0,Connector,0.49256676,1.0126866
+Chlorostilbon lucidus,pollinator,0,Connector,-0.2842262,-0.9644172
+Clytolaema rubricauda,pollinator,0,Connector,0.34778574,1.249869
+Florisuga fusca,pollinator,0,Connector,2.5660808,1.0404863
+Leucochloris albicollis,pollinator,0,Connector,0.3239113,0.98545396
+Lophornis chalybeus,pollinator,0,Connector,0.31279355,-0.38934958
+Phaethornis eurynome,pollinator,0,Connector,0.25922617,0.53634644
+Phaethornis squalidus,pollinator,2,Keystone,4.2356224,0.001335575
+Ramphodon naevius,pollinator,2,Keystone,5.556978,-1.9591618
+Thalurania glaucopis,pollinator,2,Keystone,5.7552657,-2.5063152

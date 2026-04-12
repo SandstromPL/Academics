@@ -1,0 +1,36 @@
+species,kind,gnn_cluster,gnn_role,pca1,pca2
+Canthium bibracteatum,plant,0,Keystone,-1.723289,0.13819832
+Deckenia nobilis,plant,0,Keystone,-2.2745905,0.020799963
+Dillenia ferruginea,plant,0,Keystone,-1.5468017,-0.48915648
+Diospyros seychellarum,plant,0,Keystone,-1.98327,0.7477728
+Erythroxylum sechellarum,plant,0,Keystone,-2.1605415,-0.60588187
+Memecylon eleagni,plant,0,Keystone,-0.75397116,-0.3253576
+Nephrosperma vanhoutteanum,plant,0,Keystone,-3.3767588,1.5282248
+Phoenicophorium borsigianum,plant,0,Keystone,-2.7396486,0.09559194
+Premna serratifolia,plant,0,Keystone,-2.1467729,0.3713561
+Psychotria pervillei,plant,0,Keystone,-1.7914438,-0.87457174
+Syzygium wrightii,plant,0,Keystone,-2.6306098,-2.0421872
+Apis mellifera,pollinator,0,Keystone,-2.4048188,1.1840285
+Ceratina tabescens,pollinator,1,Specialist,1.2980973,0.056494426
+Chalcidoma disjunctum,pollinator,1,Specialist,1.4100053,-0.40200135
+Cratopus aurostriatus,pollinator,1,Specialist,1.5759178,0.10673341
+Dichaetomyia fasciculifera,pollinator,1,Specialist,1.0344051,-0.3289556
+Diptera sp1 M_PL_089,pollinator,1,Specialist,1.7260823,-0.77420026
+Eagris sabadius,pollinator,1,Specialist,1.4920918,-1.5478754
+Hemipyrellia germana,pollinator,3,Generalist,-0.76697594,-0.5358822
+Hymenoptera sp5 M_PL_089,pollinator,1,Specialist,1.4750326,0.09745407
+Lasioglossum mahense,pollinator,3,Generalist,-1.3899751,1.0724843
+Lygistorrhina sp1 M_PL_089,pollinator,2,Connector,2.4982772,1.5920911
+Mabuya sechellensis,pollinator,1,Specialist,1.4776204,-1.5401909
+Megachile seychellensis,pollinator,3,Generalist,-0.8644402,0.30640468
+Nectarinia dussumieri,pollinator,1,Specialist,0.85928136,-1.1575937
+Neophyllomyza approximatonervis,pollinator,2,Connector,1.0915793,0.9797087
+Ornidia obesa,pollinator,1,Specialist,1.2578526,-0.94851494
+Phelsuma sp1 M_PL_089,pollinator,1,Specialist,1.4776204,-1.5401909
+Polistes olivaceus,pollinator,1,Specialist,1.5174915,0.06636615
+Rhiparida seychellensis,pollinator,3,Generalist,-0.06791387,0.7649824
+Rhynchium brunneum,pollinator,1,Specialist,0.8033671,0.61457324
+Unidentified sp2 M_PL_089,pollinator,2,Connector,2.419128,1.6507465
+Unidentified sp3 M_PL_089,pollinator,2,Connector,2.523629,1.5721529
+Unidentified sp4 M_PL_089,pollinator,2,Connector,1.3888223,1.0427011
+Unidentified sp6 M_PL_089,pollinator,1,Specialist,1.2955202,-0.8963054

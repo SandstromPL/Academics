@@ -1,0 +1,21 @@
+species,kind,gnn_cluster,gnn_role,pca1,pca2
+Canthium bibracteatum,plant,0,Generalist,1.5847441,-0.2982322
+Chrysobalanus icaco,plant,0,Generalist,0.7383426,1.0388211
+Deckenia nobilis,plant,2,Keystone,3.4656746,-1.1565493
+Euphorbia pyrifolia,plant,0,Generalist,1.4078109,-0.47428775
+Memecylon eleagni,plant,3,Connector,1.1324714,-2.1648993
+Nephrosperma vanhoutteanum,plant,2,Keystone,3.1369326,0.59884065
+Phoenicophorium borsigianum,plant,2,Keystone,2.706229,1.1545998
+Apis mellifera,pollinator,0,Generalist,1.0494992,1.2596078
+Ceratina tabescens,pollinator,1,Specialist,-0.5562528,0.3257802
+Cratopus aurostriatus,pollinator,1,Specialist,-1.3749841,1.0028425
+Hemipyrellia germana,pollinator,1,Specialist,-2.411031,-0.5364155
+Lasioglossum mahense,pollinator,0,Generalist,1.5338466,0.6549672
+Megachile seychellensis,pollinator,3,Connector,-0.27821368,-1.2413881
+Neophyllomyza approximatonervis,pollinator,1,Specialist,-0.99689454,-0.17460862
+Ornidia obesa,pollinator,1,Specialist,-2.4115753,-0.58952063
+Pachycerina seychellensis,pollinator,1,Specialist,-2.41173,-0.6422539
+Phelsuma sp1 M_PL_113,pollinator,1,Specialist,-1.7863239,-0.27220926
+Rhiparida seychellensis,pollinator,1,Specialist,-1.2654532,2.33947
+Simosyrphus aegyptius,pollinator,3,Connector,-0.76319766,-1.9040861
+Unidentified sp1 M_PL_113,pollinator,1,Specialist,-2.4998963,1.0795217

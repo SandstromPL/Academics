@@ -1,0 +1,50 @@
+species,kind,gnn_cluster,gnn_role,pca1,pca2
+Argyranthemum frutescencs,plant,2,Generalist,-3.557054,1.0619218
+Ceballosia fruticosa,plant,3,Connector,-0.7287719,-0.09291332
+Convolvulus sp1 M_PL_050,plant,2,Generalist,-3.2542758,0.7185461
+Echium aculeatum,plant,3,Connector,-0.5180029,-0.6259495
+Echium bonnetii,plant,2,Generalist,-1.9712621,-0.2811201
+Euphorbia canariensis,plant,2,Generalist,-2.798897,0.6886815
+Euphorbia obtusifolia,plant,2,Generalist,-4.2679873,3.9577045
+Fagonia albiflora,plant,3,Connector,0.32818532,-0.10847904
+Lavandula buchii,plant,2,Generalist,-2.8711174,0.02002251
+Lotus sp1 M_PL_050,plant,3,Connector,0.32818532,-0.10847904
+Noechamaelea pulverulenta,plant,3,Connector,0.34846777,0.036824305
+Parolinea intermedia,plant,2,Generalist,-3.423472,0.3787531
+Periploca laevigata,plant,2,Generalist,-1.6172253,-0.19524743
+Plocama pendula,plant,2,Generalist,-2.2699525,0.2214366
+Amegilla canifrons,pollinator,1,Keystone,0.38268784,-1.0114318
+Amegilla quadrifasciata,pollinator,3,Connector,-0.33767927,-1.2107759
+Amegilla sp1 M_PL_050,pollinator,1,Keystone,-0.026600026,-0.8490865
+Anthophora alluardii,pollinator,1,Keystone,0.9555484,-1.0411177
+Anthophora orotavae,pollinator,1,Keystone,-0.11476633,-1.1449193
+Apis mellifera,pollinator,1,Keystone,0.29872948,-1.0633094
+Camponotus rufoglaucus,pollinator,2,Generalist,-1.828209,-0.33021063
+Coleoptera sp15 M_PL_050,pollinator,1,Keystone,1.2935246,-0.4452654
+Diptera sp18 M_PL_050,pollinator,0,Specialist,2.738404,1.170953
+Diptera sp19 M_PL_050,pollinator,0,Specialist,2.738404,1.170953
+Diptera sp20 M_PL_050,pollinator,0,Specialist,2.738404,1.170953
+Diptera sp21 M_PL_050,pollinator,0,Specialist,2.738404,1.170953
+Diptera sp4 M_PL_050,pollinator,1,Keystone,-0.14043699,-0.46135372
+Diptera sp7 M_PL_050,pollinator,1,Keystone,0.7635922,0.25459164
+Eucera gracilipes,pollinator,2,Generalist,-1.7899638,-0.39519313
+Gallotia galloti,pollinator,3,Connector,0.8166958,-1.1327205
+Hylaeus sp1 M_PL_050,pollinator,1,Keystone,-0.06405226,-0.26913664
+Hymenoptera sp10 M_PL_050,pollinator,0,Specialist,2.738404,1.170953
+Hymenoptera sp13 M_PL_050,pollinator,0,Specialist,2.738404,1.170953
+Hymenoptera sp14 M_PL_050,pollinator,0,Specialist,2.738404,1.170953
+Hymenoptera sp9 M_PL_050,pollinator,1,Keystone,0.29872942,-1.0633094
+Lasioglossum evylaeus,pollinator,2,Generalist,-1.5820048,-0.06273003
+Lucilia sp1 M_PL_050,pollinator,1,Keystone,0.19700342,-1.4581012
+Sphecodes marginatus ,pollinator,2,Generalist,-1.3270053,-0.28297055
+Thysanoptera sp17 M_PL_050,pollinator,1,Keystone,1.2935246,-0.4452654
+Unidentified sp1 M_PL_050,pollinator,1,Keystone,-0.65324,-0.051227722
+Unidentified sp11 M_PL_050,pollinator,1,Keystone,1.2935246,-0.4452654
+Unidentified sp12 M_PL_050,pollinator,1,Keystone,1.1444216,-0.32356873
+Unidentified sp16 M_PL_050,pollinator,0,Specialist,2.738404,1.1709529
+Unidentified sp2 M_PL_050,pollinator,1,Keystone,-0.5935284,-0.36207986
+Unidentified sp22 M_PL_050,pollinator,0,Specialist,2.738404,1.1709529
+Unidentified sp3 M_PL_050,pollinator,1,Keystone,0.058814835,-0.61963385
+Unidentified sp5 M_PL_050,pollinator,1,Keystone,0.51512843,-0.685905
+Unidentified sp6 M_PL_050,pollinator,3,Connector,0.18067339,-0.8483802
+Unidentified sp8 M_PL_050,pollinator,1,Keystone,0.59243876,-0.4619143

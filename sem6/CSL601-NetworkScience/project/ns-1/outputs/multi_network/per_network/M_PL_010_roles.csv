@@ -1,0 +1,108 @@
+species,kind,gnn_cluster,gnn_role,pca1,pca2
+Arenaria pseudofrigida,plant,1,Connector,3.2923195,0.4429718
+Armeria scabra,plant,1,Connector,2.8662024,1.5920101
+Arnica angustifolia,plant,1,Connector,3.3840048,0.36469334
+Cassiope tetragona,plant,1,Connector,3.6661804,0.27980438
+Cerastium arcticum,plant,1,Connector,3.423075,-0.38515267
+Cochlearia groenlandica,plant,1,Connector,2.908037,0.95186
+Draba arctica,plant,1,Connector,2.584847,1.5930291
+Draba lactea,plant,1,Connector,3.0390754,1.7116125
+Dryas octopetala,plant,3,Generalist,4.247866,-1.6876074
+Epilobium latifolium,plant,1,Connector,2.9709392,1.286667
+Erigeron compositus,plant,1,Connector,2.4678874,2.335396
+Lesquerella arctica,plant,1,Connector,2.3883152,2.555193
+Melandrium triflorum,plant,1,Connector,3.1956265,0.3840398
+Papaver radicatum,plant,3,Generalist,3.7416809,-0.23404866
+Pedicularis flammea,plant,1,Connector,2.029259,2.4690635
+Pedicularis hirsuta,plant,1,Connector,2.851509,1.5913594
+Polygonum viviparum,plant,3,Generalist,3.958612,-0.7645777
+Potentilla hyparctica,plant,1,Connector,3.3888998,-0.051000617
+Potentilla rubricaulis,plant,3,Generalist,3.9020214,-1.1035308
+Ranunculus sulphureus,plant,1,Connector,3.2743044,0.8736035
+Rhododendron lapponicum,plant,1,Connector,3.1580591,1.627187
+Salix arctica,plant,3,Generalist,4.1794815,-1.4238362
+Saxifraga caespitosa,plant,3,Generalist,4.3442817,-1.1172353
+Saxifraga cernua,plant,1,Connector,3.0801342,0.4512038
+Saxifraga hirculus,plant,1,Connector,2.791856,1.9828895
+Saxifraga nivalis,plant,1,Connector,3.34044,0.16573961
+Saxifraga oppositifolia,plant,3,Generalist,4.289979,-1.496015
+Silene acaulis,plant,3,Generalist,3.8713977,-0.70093817
+Stellaria longipes,plant,1,Connector,2.9957032,1.0059727
+Taraxacum phymatocarpum,plant,1,Connector,2.9505565,1.237635
+Vaccinium uliginosum,plant,1,Connector,2.8407135,1.8468589
+Aedes impiger,pollinator,0,Keystone,-0.67156184,-1.7282758
+Aedes nigripes,pollinator,0,Keystone,-0.35751417,-2.3657897
+Aphidius sp1 M_PL_010,pollinator,2,Specialist,-2.0833905,0.81221867
+Bombus sp1 M_PL_010,pollinator,2,Specialist,-1.568845,0.022304617
+Brachypogon sp1 M_PL_010,pollinator,0,Keystone,-1.3827983,-0.7563281
+Bradysia sp1 M_PL_010,pollinator,0,Keystone,-0.23040083,-2.272975
+Chironomus sp1 M_PL_010,pollinator,2,Specialist,-1.9157735,1.5940806
+Clossiana chariclea,pollinator,0,Keystone,-0.35856718,-2.258144
+Colias hecla,pollinator,0,Keystone,-1.2084156,-0.6066102
+Cricotopus sp1 M_PL_010,pollinator,2,Specialist,-1.7033716,-0.4286509
+Culicoides sp1 M_PL_010,pollinator,0,Keystone,-1.2709414,-0.7366594
+Delia echinata,pollinator,2,Specialist,-1.5960833,0.0556122
+Drymeia groenlandica,pollinator,2,Specialist,-1.7150276,0.5404445
+Drymeia segnis,pollinator,0,Keystone,-0.5549313,-1.6927059
+Entephria puncticeps,pollinator,2,Specialist,-1.9282154,0.09593268
+Eukiefferiella sp1 M_PL_010,pollinator,2,Specialist,-1.756291,1.2216028
+Eupeodes curtus,pollinator,2,Specialist,-1.5465587,0.060019854
+Eupeodes nigroventris,pollinator,2,Specialist,-1.5779618,0.18996674
+Forcipomyia sp1 M_PL_010,pollinator,2,Specialist,-2.0212226,1.0838859
+Gonarcticus arcticus,pollinator,2,Specialist,-2.0064225,2.1812184
+Lasiopiophila pilosa,pollinator,2,Specialist,-1.4713643,-0.34541532
+Limnophora sinuata,pollinator,0,Keystone,-0.9388155,-1.1947421
+Limnophyes brachytomus,pollinator,0,Keystone,-0.013874329,-2.3823879
+Limnophyes sp1 M_PL_010,pollinator,0,Keystone,-0.4237383,-1.9343446
+Lophosceles minimus,pollinator,2,Specialist,-1.720899,0.6582988
+Megaselia sp1 M_PL_010,pollinator,2,Specialist,-1.7219932,0.73260754
+Neoleria prominens,pollinator,2,Specialist,-1.7246238,0.7817944
+Nysius groenlandicus,pollinator,0,Keystone,-0.86342186,-1.2742288
+Olethreutes inquitana,pollinator,2,Specialist,-2.1009293,1.8446033
+Olethreutes mengelana,pollinator,2,Specialist,-2.0334036,0.5980759
+Orthocladius sp1 M_PL_010,pollinator,2,Specialist,-2.10378,1.2479935
+Paraphaenocladius sp1 M_PL_010,pollinator,0,Keystone,-0.3377531,-2.2946916
+Parasyrphus tarsatus,pollinator,0,Keystone,-1.24392,-0.8689657
+Peleteria aenea,pollinator,0,Keystone,-1.2616556,-1.0222068
+Phaonia bidentata,pollinator,2,Specialist,-1.4074113,0.90262324
+Phytomyza fuscula,pollinator,2,Specialist,-1.769962,0.9868484
+Platycheirus carinatus,pollinator,0,Keystone,-0.818198,-1.361004
+Platycheirus lundbecki,pollinator,0,Keystone,-0.3002651,-2.2383356
+Plebeius glandon,pollinator,2,Specialist,-1.9282154,0.09593268
+Polia richardsoni,pollinator,2,Specialist,-1.726705,0.67266715
+Procladius sp1 M_PL_010,pollinator,2,Specialist,-1.8232944,0.10552312
+Protophormia terraenovae,pollinator,2,Specialist,-1.7219932,0.73260754
+Pseudosmittia sp1 M_PL_010,pollinator,0,Keystone,-0.4976653,-2.3143492
+Rhamphomyia filicauda,pollinator,0,Keystone,-0.67704725,-1.6985126
+Rhamphomyia nigrita,pollinator,0,Keystone,-0.57983077,-1.9738731
+Rheocricotopus sp1 M_PL_010,pollinator,0,Keystone,-1.281567,-0.6353432
+Scathophaga furcata,pollinator,2,Specialist,-1.593344,-0.44488585
+Scatopsciara sp1 M_PL_010,pollinator,2,Specialist,-1.68846,0.98794854
+Smittia sp1 M_PL_010,pollinator,0,Keystone,-0.58210754,-1.9840533
+Spilogona almqvistii,pollinator,0,Keystone,-0.37706542,-2.4994538
+Spilogona arcticola,pollinator,2,Specialist,-1.9021206,1.4927614
+Spilogona deflorata,pollinator,2,Specialist,-1.9157735,1.5940804
+Spilogona denudata,pollinator,0,Keystone,-0.60023445,-1.7855282
+Spilogona dorsata,pollinator,0,Keystone,-0.3057658,-2.653383
+Spilogona extensa,pollinator,0,Keystone,-0.37355092,-2.3991244
+Spilogona malaisei,pollinator,2,Specialist,-2.0680256,2.4698138
+Spilogona melanosoma,pollinator,2,Specialist,-1.7720019,0.4459338
+Spilogona micans,pollinator,0,Keystone,-0.86952347,-1.5482388
+Spilogona obsoleta,pollinator,2,Specialist,-2.2475228,2.4282947
+Spilogona sanctipauli,pollinator,0,Keystone,-0.04425799,-2.6563532
+Spilogona tornensis,pollinator,0,Keystone,-1.4410992,-0.9986759
+Spilogona tundrae,pollinator,2,Specialist,-1.4902159,0.05308147
+Stenomacrus sp1 M_PL_010,pollinator,0,Keystone,-0.901731,-0.88989526
+Stenomacrus sp2 M_PL_010,pollinator,2,Specialist,-1.4782467,1.3379395
+Stenomacrus sp3 M_PL_010,pollinator,2,Specialist,-1.9021206,1.4927614
+Sympistis lapponica,pollinator,2,Specialist,-1.6864918,0.90037954
+Sympistis zetterstedti,pollinator,0,Keystone,-1.242505,-1.0840963
+Syngrapha parilis,pollinator,2,Specialist,-1.9777398,1.2719373
+Unidentified sp1 M_PL_010,pollinator,2,Specialist,-1.3419074,0.0006278224
+Unidentified sp2 M_PL_010,pollinator,2,Specialist,-1.3906826,-0.34212533
+Unidentified sp3 M_PL_010,pollinator,2,Specialist,-1.2401937,0.2052183
+Unidentified sp4 M_PL_010,pollinator,2,Specialist,-1.7453495,0.33809614
+Unidentified sp5 M_PL_010,pollinator,2,Specialist,-1.7147136,0.60409135
+Unidentified sp6 M_PL_010,pollinator,2,Specialist,-2.0659347,1.9302104
+Unidentified sp7 M_PL_010,pollinator,2,Specialist,-2.1687593,1.76467
+Zaphne frontata,pollinator,0,Keystone,-1.3491892,-0.6492163

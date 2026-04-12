@@ -1,0 +1,45 @@
+species,kind,gnn_cluster,gnn_role,pca1,pca2
+Aechmea contracta,plant,0,Generalist,0.40360835,1.5825428
+Aechmea williamsii,plant,2,Connector,1.4990298,1.2237916
+Calathea capitata,plant,2,Connector,1.6371455,0.20822795
+Combretum llewelynii,plant,0,Generalist,0.8727399,-1.2377303
+Costus scaber,plant,0,Generalist,-0.06283883,1.4167436
+Costus spiralis,plant,2,Connector,1.8686446,0.38837206
+Cuphea melvilla,plant,0,Generalist,0.3842824,0.43383503
+Erythrina fusca,plant,0,Generalist,-0.8401254,-0.26678678
+Genipa americana,plant,0,Generalist,-0.599423,-0.6647399
+Gesneriaceae sp4 M_PL_074_06,plant,2,Connector,2.5255923,-1.2734516
+Gurania lobata,plant,0,Generalist,-0.23086916,1.174851
+Gurania rhizantha,plant,2,Connector,1.0209328,0.884554
+Heliconia juruana,plant,2,Connector,2.4785922,0.36167446
+Heliconia schumanniana,plant,2,Connector,2.4825494,0.3623553
+Heliconia stricta,plant,2,Connector,1.1706592,1.3744289
+Inga leiocalycina,plant,2,Connector,1.5195376,-0.217551
+Palicourea crocea,plant,0,Generalist,-0.6826031,1.3196051
+Palicourea fastigiata,plant,0,Generalist,0.80957353,-0.15846926
+Palicourea lasiantha,plant,2,Connector,1.3480823,1.0031364
+Palicourea sp2 M_PL_074_06,plant,2,Connector,2.5228977,-1.2746388
+Passiflora involucrata,plant,2,Connector,1.9910072,0.80301756
+Passiflora quadriglandulosa,plant,0,Generalist,1.0058709,-0.9327488
+Passiflora spinosa,plant,2,Connector,1.5233368,0.84659153
+Psittacanthus cucullaris,plant,0,Generalist,0.3385215,-0.7700879
+Quararibea lasiocalyx,plant,2,Connector,1.8103614,-1.3285505
+Sanchezia munita,plant,2,Connector,1.1259209,1.4507594
+Sanchezia putumayensis,plant,0,Generalist,0.64213216,0.4552493
+Syzygium malaccense,plant,0,Generalist,-0.9401077,-0.6616123
+Tachigali paniculata,plant,2,Connector,1.8079187,-0.97077423
+Amazilia fimbriata,pollinator,1,Keystone,-4.8865905,-0.73084164
+Anthracothorax nigricollis,pollinator,3,Specialist,-2.2235308,-1.4500297
+Campylopterus largipennis,pollinator,3,Specialist,-0.875921,-0.51471734
+Chlorestes notata,pollinator,3,Specialist,-1.4108301,-2.558461
+Chlorostilbon mellisugus,pollinator,3,Specialist,-1.4638203,-0.7774954
+Chrysuronia oenone,pollinator,1,Keystone,-2.753611,0.73817295
+Florisuga mellivora,pollinator,3,Specialist,-2.2690523,-2.235753
+Glaucis hirsutus,pollinator,1,Keystone,-2.6724808,2.3361824
+Heliodoxa aurescens,pollinator,3,Specialist,0.5557022,-3.352628
+Phaethornis bourcieri,pollinator,1,Keystone,-1.2583873,-0.1508346
+Phaethornis hispidus,pollinator,1,Keystone,-2.0975585,0.84278035
+Phaethornis ruber,pollinator,3,Specialist,-1.6408314,-0.34821576
+Phaethornis superciliosus,pollinator,1,Keystone,-2.5209515,2.7754357
+Thalurania furcata,pollinator,1,Keystone,-2.191688,-0.12362899
+Threnetes leucurus,pollinator,3,Specialist,-1.7234156,0.017441561

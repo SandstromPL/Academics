@@ -1,0 +1,17 @@
+species,kind,gnn_cluster,gnn_role,pca1,pca2
+Bouvardia ternifolia,plant,1,Generalist,2.7441967,2.1224747
+Castilleja scorzonerifolia,plant,3,Specialist,1.875095,-1.6034229
+Castilleja tenuiflora,plant,1,Generalist,1.7449374,-0.5221433
+Penstemon gentianoides,plant,1,Generalist,2.2005112,0.8609814
+Penstemon roseus,plant,1,Generalist,2.0989861,0.6786603
+Prunella vulgaris,plant,1,Generalist,1.3362937,-2.0321631
+Salvia elegans,plant,1,Generalist,2.205678,0.5441073
+Salvia mocinoi,plant,3,Specialist,1.857912,-1.6190375
+Archilochus colubris,pollinator,0,Keystone,-1.6860185,1.7507651
+Colibri thalassinus,pollinator,0,Keystone,-2.0666308,1.4079102
+Eugenes fulgens,pollinator,0,Keystone,-1.1767771,-0.7784266
+Hylocharis leucotis,pollinator,0,Keystone,-0.9310312,0.43813708
+Lampornis clemenciae,pollinator,0,Keystone,-1.9769311,1.6059467
+Selasphorus platycercus,pollinator,2,Connector,-2.7260873,-0.90203905
+Selasphorus rufus,pollinator,2,Connector,-2.7526004,-0.8305423
+Selasphorus sasin,pollinator,2,Connector,-2.7475333,-1.1212062

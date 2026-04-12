@@ -1,0 +1,27 @@
+species,kind,gnn_cluster,gnn_role,pca1,pca2
+Caesalpinia pulcherrima,plant,3,Specialist,1.6038089,-0.34411883
+Ceiba aesculifolia,plant,1,Connector,0.23217273,-0.94991416
+Combretum farinosum,plant,0,Generalist,0.61559916,1.0496429
+Cordia seleriana,plant,0,Generalist,0.9829395,1.2130402
+Erythrina lanata,plant,1,Connector,0.6596963,-1.5243012
+Groton suberosus,plant,3,Specialist,1.5975704,-0.40555677
+Hamelia versicolor,plant,0,Generalist,0.4525767,0.8387864
+Ipomoea bracteata,plant,1,Connector,-0.19359076,-0.71610224
+Ipomoea quamoclit,plant,1,Connector,-0.39387733,0.8290228
+Ipomoea wolcottiana,plant,1,Connector,0.18294251,-0.4803686
+Justicia mexicana,plant,1,Connector,0.70055383,-0.52833295
+Mirabilis sp1 M_PL_065,plant,1,Connector,0.8148218,-0.11185189
+Nopalea karwinskiana,plant,1,Connector,0.59334195,-1.0153482
+Opuntia excelsa,plant,1,Connector,0.40573895,0.21397686
+Pithecellobium mangens,plant,0,Generalist,1.1273427,2.7094395
+Psittacanthus calyculatus,plant,1,Connector,0.4537609,-0.57640207
+Tabebuia donnell-smithii,plant,1,Connector,0.6595345,-1.5252413
+Tillandsia bartramii,plant,3,Specialist,1.5997498,-0.38528666
+Tillandsia dasyrifolia,plant,3,Specialist,1.5985562,-0.39658663
+Tillandsia paucifolia,plant,1,Connector,-0.35390854,-0.59791124
+Vitex mollis,plant,0,Generalist,1.2422464,1.9344646
+Amazilia rutila,pollinator,2,Keystone,-3.9373493,0.40178522
+Archilochus colubris,pollinator,2,Keystone,-1.7177916,-0.7885061
+Chlorostilbon canivetii,pollinator,2,Keystone,-2.3395126,2.589778
+Cynanthus latirostris,pollinator,2,Keystone,-3.3907256,-0.06048375
+Heliomaster constantii,pollinator,2,Keystone,-3.196199,-1.373623

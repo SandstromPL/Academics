@@ -1,0 +1,35 @@
+species,kind,gnn_cluster,gnn_role,pca1,pca2
+Dillenia ferruginea,plant,1,Generalist,-1.9226835,1.0402168
+Dillenia suffruticosa,plant,1,Generalist,-0.61166936,-0.14213271
+Erythroxylum sechellarum,plant,1,Generalist,-1.4200995,-1.0883245
+Excoecaria benthiamiana,plant,3,Connector,0.41048715,-0.5894886
+Gastonia crassa,plant,2,Keystone,-0.08506907,3.4854996
+Memecylon eleagni,plant,1,Generalist,-1.8315661,-0.02244261
+Nephrosperma vanhoutteanum,plant,1,Generalist,-3.775921,-0.30603808
+Phoenicophorium borsigianum,plant,1,Generalist,-3.7045698,-0.30763647
+Psychotria pervillei,plant,1,Generalist,-1.8180231,0.89072466
+Roscheria melanochaetes,plant,1,Generalist,-2.0047534,-1.0064507
+Syzygium wrightii,plant,2,Keystone,-0.14571196,1.2959924
+Apis mellifera,pollinator,1,Generalist,-2.8329,-0.12984522
+Chalcidoma disjunctum,pollinator,0,Specialist,1.8900961,-0.22406808
+Cratopus aurostriatus,pollinator,3,Connector,0.34331685,-0.75088924
+Diptera sp1 M_PL_128,pollinator,3,Connector,-0.12573963,-0.6885696
+Diptera sp2 M_PL_128,pollinator,3,Connector,0.92830944,-0.7344973
+Diptera sp7 M_PL_128,pollinator,3,Connector,1.1964185,-0.7616224
+Forcipomyia sp1 M_PL_128,pollinator,3,Connector,0.3719936,-1.2105035
+Hemipyrellia germana,pollinator,0,Specialist,2.2166264,0.4781315
+Hymenoptera sp5 M_PL_128,pollinator,0,Specialist,1.9928312,-1.05069
+Lasioglossum mahense,pollinator,1,Generalist,-1.7994586,-0.5024911
+Lygistorrhina sp1 M_PL_128,pollinator,3,Connector,-0.5328911,-1.125422
+Mabuya sechellensis,pollinator,2,Keystone,1.630982,1.8897405
+Nectarinia dussumieri,pollinator,2,Keystone,-0.238466,2.617648
+Neophyllomyza approximatonervis,pollinator,3,Connector,-0.5924555,-0.65550196
+Ornidia obesa,pollinator,0,Specialist,2.1341991,0.44117728
+Phelsuma sp1 M_PL_128,pollinator,2,Keystone,-0.27793378,1.8777299
+Polistes olivaceus,pollinator,0,Specialist,1.8900961,-0.22406808
+Rhiparida seychellensis,pollinator,0,Specialist,2.2166264,0.4781315
+Simosyrphus aegyptius,pollinator,0,Specialist,1.7858887,-0.43324417
+Unidentified sp3 M_PL_128,pollinator,3,Connector,1.2519215,-0.73884606
+Unidentified sp4 M_PL_128,pollinator,3,Connector,1.2519215,-0.73884606
+Unidentified sp6 M_PL_128,pollinator,3,Connector,1.0109304,-0.8321629
+Xylocopa caffra,pollinator,0,Specialist,1.1972643,-0.23121212

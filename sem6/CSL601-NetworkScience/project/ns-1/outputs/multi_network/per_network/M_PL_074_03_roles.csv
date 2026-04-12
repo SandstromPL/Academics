@@ -1,0 +1,62 @@
+species,kind,gnn_cluster,gnn_role,pca1,pca2
+Besleria riparia,plant,0,Connector,-2.2527013,1.0820962
+Besleria solanoides,plant,0,Connector,-0.5780521,1.5075423
+Bomarea carderi,plant,1,Keystone,-0.6150694,-1.409302
+Bomarea multiflora,plant,1,Keystone,-1.0813571,-0.611926
+Bomarea patinii,plant,1,Keystone,-0.14786723,-0.8206196
+Cavendishia bracteata,plant,0,Connector,-0.673374,2.035738
+Cavendishia nitida,plant,1,Keystone,-1.2583576,-0.8143966
+Cavendishia sp1 M_PL_074_03,plant,1,Keystone,-0.9197059,-0.06428828
+Centropogon curvatus,plant,3,Specialist,-2.1291227,-2.3988237
+Centropogon ferrugineus,plant,1,Keystone,-0.619107,-0.8941311
+Columnea dimidiata,plant,3,Specialist,-2.6797898,-1.8665036
+Columnea sp3 M_PL_074_03,plant,3,Specialist,-2.6797895,-1.8665032
+Columnea strigosa,plant,1,Keystone,-0.5307101,-0.5037415
+Elleanthus aurantiacus,plant,0,Connector,-1.1459754,1.2872299
+Fuchsia venusta,plant,1,Keystone,-0.25827676,1.20745
+Gasteranthus calcaratus,plant,0,Connector,-1.0051279,0.3537005
+Glossoloma baguense,plant,1,Keystone,-1.2945373,-0.69973594
+Glossoloma ichthyoderma,plant,1,Keystone,0.17444488,1.0740569
+Glossoloma schultzei,plant,3,Specialist,-2.6773736,-1.8472754
+Guzmania gloriosa,plant,1,Keystone,-0.63160115,0.33628774
+Guzmania multiflora,plant,1,Keystone,-0.8242073,0.11640534
+Heliconia burleana,plant,1,Keystone,-1.0478463,-1.1500154
+Heliconia griggsiana,plant,3,Specialist,-2.3962264,-1.0790354
+Heliconia sp7 M_PL_074_03,plant,3,Specialist,-1.7035618,-1.8873339
+Heliconia venusta,plant,1,Keystone,-0.58292013,0.24094445
+Iochroma gesnerioides,plant,1,Keystone,-0.7787457,0.38446206
+Kohleria affinis,plant,1,Keystone,-0.34579128,0.94147795
+Kohleria inaequalis,plant,0,Connector,-1.329775,1.4363185
+Kohleria spicata,plant,0,Connector,-0.58213645,1.8795193
+Kohleria trianae,plant,1,Keystone,-0.31135052,-0.045743372
+Kohleria warszewiczii,plant,0,Connector,-1.3917081,-0.22049773
+Macrocarpaea macrophylla,plant,0,Connector,-0.9102833,1.458476
+Meriania tomentosa,plant,0,Connector,-1.0975591,1.2080911
+Mezobromelia capituligera,plant,1,Keystone,-0.08187842,-0.18670596
+Palicourea acetosoides,plant,0,Connector,-0.48144895,1.5850024
+Palicourea angustifolia,plant,0,Connector,-0.6320831,1.6792967
+Palicourea cuatrecasasii,plant,0,Connector,-0.43790355,1.63479
+Palicourea ovalis,plant,0,Connector,-0.75734174,0.9175578
+Pitcairnia sp2 M_PL_074_03,plant,1,Keystone,-0.8055078,0.65831274
+Reldia grandiflora,plant,0,Connector,-1.3133483,0.5644028
+Salvia scutellarioides,plant,0,Connector,-0.70600945,1.1211542
+Siphocampylus sp2 M_PL_074_03,plant,3,Specialist,-1.1515652,-1.6608375
+Stenostephanus sanguineus,plant,0,Connector,-2.0099003,0.4544371
+Streptosolen jamesonii,plant,0,Connector,-0.87233883,1.4408461
+Thibaudia floribunda,plant,0,Connector,-0.39554328,1.4254267
+Vriesea tequendamae,plant,1,Keystone,-0.84297305,-1.0740051
+Adelomyia melanogenys,pollinator,2,Generalist,3.953323,0.04920772
+Aglaiocercus kingii,pollinator,2,Generalist,3.4137805,1.5857073
+Chaetocercus mulsant,pollinator,2,Generalist,2.8255734,0.7477652
+Coeligena coeligena,pollinator,2,Generalist,4.322152,-0.20911302
+Coeligena torquata,pollinator,2,Generalist,3.5321722,-0.15051442
+Colibri coruscans,pollinator,2,Generalist,2.432754,-0.8934201
+Colibri cyanotus,pollinator,2,Generalist,2.605988,0.4717968
+Doryfera ludovicae,pollinator,2,Generalist,2.750284,-1.8191438
+Eutoxeres aquila,pollinator,3,Specialist,1.1219529,-3.4407208
+Haplophaedia aureliae,pollinator,2,Generalist,3.4726236,0.43088722
+Heliangelus exortis,pollinator,2,Generalist,3.9076407,0.2322103
+Heliodoxa rubinoides,pollinator,2,Generalist,2.7758715,-1.6649048
+Lafresnaya lafresnayi,pollinator,2,Generalist,2.8168626,-1.4516754
+Ocreatus underwoodii,pollinator,2,Generalist,3.0937245,0.5447789
+Phaethornis syrmatophorus,pollinator,2,Generalist,3.7686985,-1.3624657

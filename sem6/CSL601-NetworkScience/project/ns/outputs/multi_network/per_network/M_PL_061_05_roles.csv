@@ -1,0 +1,35 @@
+species,kind,gnn_cluster,gnn_role,pca1,pca2
+Canthium bibracteatum,plant,1,Keystone,1.2544353,0.13591349
+Deckenia nobilis,plant,1,Keystone,2.0774677,0.20270449
+Diospyros seychellarum,plant,1,Keystone,0.54969203,0.43981063
+Erythroxylum sechellarum,plant,1,Keystone,1.6348575,0.9146766
+Medusagyne oppositifolia,plant,3,Generalist,3.7934465,-0.48679993
+Memecylon eleagni,plant,1,Keystone,0.21668151,0.12425583
+Mimusops sechellarum,plant,0,Connector,-0.094834745,1.0939001
+Nephrosperma vanhoutteanum,plant,3,Generalist,4.2307115,-1.8285664
+Phoenicophorium borsigianum,plant,1,Keystone,2.3312051,0.8396586
+Psychotria pervillei,plant,1,Keystone,1.7358288,0.31244048
+Syzygium wrightii,plant,0,Connector,-0.8624931,1.8744373
+Timonius sechellensis,plant,0,Connector,-1.49866,1.5366595
+Apis mellifera,pollinator,1,Keystone,3.1345546,-0.6175848
+Cratopus aurostriatus,pollinator,2,Specialist,-1.0986922,0.86464286
+Diptera sp1 M_PL_088,pollinator,2,Specialist,-2.3236394,-1.7193044
+Eristalinus vicarians,pollinator,2,Specialist,-1.683089,-0.2351507
+Geron seychellarum,pollinator,2,Specialist,-0.6253713,-0.43382457
+Hemipyrellia germana,pollinator,2,Specialist,-1.1525836,-1.0369838
+Hemipyrellia sp1 M_PL_088,pollinator,2,Specialist,-1.683089,-0.2351507
+Lampides boeticus ,pollinator,2,Specialist,-1.0961634,1.0905607
+Lasioglossum mahense,pollinator,1,Keystone,1.9506676,-0.12924413
+Lygistorrhina sp1 M_PL_088,pollinator,2,Specialist,-2.3236394,-1.7193044
+Mabuya sechellensis,pollinator,0,Connector,-1.7615873,1.8825189
+Megachile seychellensis,pollinator,2,Specialist,-0.6047041,-0.31283364
+Musca domestica,pollinator,2,Specialist,-1.6604376,-0.23847267
+Nectarinia dussumieri,pollinator,0,Connector,0.70219743,1.3632605
+Neophyllomyza approximatonervis,pollinator,1,Keystone,0.8381181,-0.39503413
+Ornidia obesa,pollinator,1,Keystone,0.7986544,-0.5436518
+Parasarcophaga hirticeps,pollinator,2,Specialist,-0.98794186,-1.505903
+Phelsuma sp1 M_PL_088,pollinator,1,Keystone,0.915261,0.09455458
+Rhiparida seychellensis,pollinator,2,Specialist,-1.0763464,0.8635798
+Rhynchium brunneum,pollinator,2,Specialist,-1.6604376,-0.23847267
+Scaptodrosophila sp1 M_PL_088,pollinator,2,Specialist,-1.683089,-0.2351507
+Unidentified sp2 M_PL_088,pollinator,2,Specialist,-2.2869813,-1.7221382

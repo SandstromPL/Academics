@@ -1,0 +1,17 @@
+species,kind,gnn_cluster,gnn_role,pca1,pca2
+Cinnamomum verum,plant,2,Connector,-0.66853034,1.9283546
+Dillenia ferruginea,plant,3,Keystone,-0.22930396,-0.5702593
+Erythroxylum sechellarum,plant,0,Generalist,3.3479702,1.2574927
+Memecylon eleagni,plant,0,Generalist,3.5312757,-1.4829283
+Roscheria melanochaetes,plant,3,Keystone,-0.41235054,0.09109949
+Soulamea terminaloides,plant,0,Generalist,1.7200235,-1.819493
+Amblypsilopus sp1 M_PL_092,pollinator,3,Keystone,-1.4296205,-0.7251735
+Apis mellifera,pollinator,3,Keystone,-0.09589462,-0.35694164
+Cratopus aurostriatus,pollinator,1,Specialist,-1.7133157,-0.44520423
+Diptera sp1 M_PL_092,pollinator,3,Keystone,0.2075825,0.72953445
+Eristalinus vicarians,pollinator,1,Specialist,-1.7133157,-0.44520423
+Hymenoptera sp4 M_PL_092,pollinator,2,Connector,0.041943174,2.1437361
+Lasioglossum mahense,pollinator,3,Keystone,0.7006732,0.9936932
+Lygistorrhina sp1 M_PL_092,pollinator,3,Keystone,-0.14420055,-0.12832965
+Unidentified sp2 M_PL_092,pollinator,3,Keystone,-1.4296207,-0.7251736
+Unidentified sp3 M_PL_092,pollinator,1,Specialist,-1.7133155,-0.44520405

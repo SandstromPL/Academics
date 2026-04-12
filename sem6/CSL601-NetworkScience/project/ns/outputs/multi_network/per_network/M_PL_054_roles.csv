@@ -1,0 +1,432 @@
+species,kind,gnn_cluster,gnn_role,pca1,pca2
+Abelia grandiflora,plant,2,Keystone,-1.5591108,-1.750957
+Abelia sp1 M_PL_054,plant,2,Keystone,-1.1281544,-1.4937207
+Aesculus camea,plant,2,Keystone,-2.0697632,-1.1667354
+Aster ageratoides,plant,2,Keystone,-1.9627714,-1.1415063
+Astragalus sinicus,plant,2,Keystone,-1.8088741,-1.7582315
+Aucuba japonica,plant,2,Keystone,0.18108726,-2.457658
+Baccharis trimera,plant,3,Generalist,-4.4383016,0.6179328
+Berberis thunbergii,plant,2,Keystone,-1.5713539,-1.5677141
+Besella rubra,plant,3,Generalist,-2.908427,-0.07398248
+Buddleia davidii,plant,2,Keystone,0.13053226,-1.2995254
+Callicarpa japonica,plant,2,Keystone,-1.0989618,-1.7226511
+Calystegia japonica,plant,2,Keystone,0.4246385,-2.3873336
+Camellia japonica,plant,2,Keystone,-0.3341546,-2.4417748
+Camellia sasanqua,plant,2,Keystone,-0.7286602,-1.7369138
+Campsis grandiflora,plant,2,Keystone,-1.4364322,-1.6821507
+Cardamine regeliana,plant,2,Keystone,0.065018654,-2.4941146
+Cayratia japonica,plant,3,Generalist,-4.4077616,0.60944664
+Cercis siliquastrum,plant,2,Keystone,0.13053226,-1.2995254
+Cinnamomum camphora,plant,3,Generalist,-3.5028543,-0.59771544
+Cirsium nipponica,plant,2,Keystone,-2.7046962,-0.5696152
+Citrus tachibana,plant,3,Generalist,-3.1678429,-0.2611161
+Cladrastis sikokiana,plant,2,Keystone,-0.76031816,-1.6459664
+Clerodendron trichotomum,plant,2,Keystone,-1.0101862,-1.4933192
+Coreopsis basalis,plant,2,Keystone,-1.443821,-1.5498765
+Desmodium padocarpum,plant,2,Keystone,0.60116744,-2.4393408
+Deutzia crenata,plant,3,Generalist,-4.2779655,0.9099325
+Deutzia gracilis,plant,2,Keystone,-0.8455254,-1.7429233
+Deutzia maximowicziana,plant,2,Keystone,-0.3343792,-1.5205032
+Deutzia scabra,plant,3,Generalist,-3.4815373,0.5267546
+Edgeworthia chrysantha,plant,2,Keystone,-0.9776168,-1.8807697
+Elaeagnus multiflora,plant,2,Keystone,-1.1256447,-1.1830428
+Enkianthus perulatus,plant,2,Keystone,-0.92862153,-1.9164877
+Euonymus fo rtunei,plant,2,Keystone,1.2696252,-0.9839674
+Fatsia japonica,plant,2,Keystone,-1.0339036,-2.1789577
+Forsythia suspensa,plant,2,Keystone,-0.09517074,-2.40455
+Fraxinus griffithii,plant,2,Keystone,-1.0697646,-1.4255835
+Hibiscus syriacus,plant,2,Keystone,-1.5620135,-1.4591217
+Hydrangea macrophylla,plant,2,Keystone,-2.0730238,-1.3067551
+Hypericum patulum,plant,2,Keystone,-0.4747355,-1.8823816
+Idesia polycarpa,plant,2,Keystone,-0.22006536,-1.3080446
+Ilex serrata,plant,2,Keystone,-1.0860981,-1.5604839
+Indigofera tinctoria,plant,2,Keystone,-2.6342847,-1.2788874
+Iris japonica,plant,2,Keystone,0.60116744,-2.4393408
+Iris pseudacorus,plant,2,Keystone,-1.9687386,-1.2205018
+Itea parviflora,plant,3,Generalist,-4.2392225,0.7190666
+Ixeris debilis,plant,2,Keystone,-0.6024747,-2.3030267
+Ixeris dentata,plant,2,Keystone,-0.9636928,-1.8357077
+Justicia procumbens,plant,2,Keystone,-2.8760579,-0.9491453
+Kerria japonica,plant,2,Keystone,-1.1725615,-1.5347272
+Lespedeza thunbergii,plant,3,Generalist,-3.550234,-0.2793005
+Ligustrum japonicum,plant,3,Generalist,-3.9357917,0.106248975
+Ligustrum obtusifolium,plant,3,Generalist,-3.0737982,-0.28476387
+Liriope platyphylla,plant,2,Keystone,-1.4666426,-1.3466892
+Lonicera morrowii,plant,2,Keystone,-2.570557,-1.1231326
+Lyonia ovalifolia,plant,2,Keystone,-1.5443969,-1.8508902
+Lythrum anceps,plant,3,Generalist,-4.298482,0.9300939
+Mahonia japonica,plant,2,Keystone,-1.963768,-1.2560385
+Malus halliana,plant,2,Keystone,-2.162806,-1.5658083
+Nandina domestica,plant,2,Keystone,-1.6830128,-1.0561506
+Oxalis corniculata,plant,2,Keystone,-0.7231672,-1.9382788
+Oxalis corymbosa,plant,2,Keystone,-2.89311,-1.0847416
+Paederia scandens,plant,2,Keystone,-0.326535,-2.2053213
+Persicaria thunbergii,plant,3,Generalist,-5.2257814,1.5839223
+Persicaria yokusaiana,plant,2,Keystone,-1.4559977,-1.8503895
+Philadelphus coronarius,plant,2,Keystone,-1.8939033,-1.3025681
+Phlox subulata,plant,2,Keystone,-1.0150106,-1.8225186
+Photinia glabra,plant,3,Generalist,-3.044261,0.68808293
+Phytolacca americana,plant,2,Keystone,-0.326535,-2.2053213
+Pieris japonica,plant,2,Keystone,-1.2425871,-1.2982508
+Pollia japonica,plant,2,Keystone,-1.668184,-1.3219392
+Polygonum aubertii,plant,2,Keystone,0.60116744,-2.4393408
+Prunus sp1 M_PL_054,plant,3,Generalist,-3.4134579,-0.67105037
+Prunus tomentosa,plant,2,Keystone,-0.984058,-1.7000206
+Pyracantha angustifolia,plant,3,Generalist,-4.1951766,0.3349819
+Pyracantha crenulata,plant,2,Keystone,-2.7315147,-1.2821823
+Ranunculus silerifolius,plant,2,Keystone,-0.09420514,-2.4232845
+Rhododendron macrosepalum,plant,2,Keystone,-0.8411168,-1.5679475
+Rhododendron mucronata,plant,2,Keystone,-1.576511,-1.4515947
+Rhododendron oomurasalei,plant,3,Generalist,-4.3959656,1.2595917
+Rhus javanica,plant,2,Keystone,-2.0921621,-1.0853127
+Rhus sylvestris,plant,3,Generalist,-3.5657454,-0.44050035
+Rorippa indica,plant,2,Keystone,0.60116744,-2.4393408
+Rosa borboniana,plant,3,Generalist,-4.061838,0.53985476
+Securinega suffruticosa,plant,2,Keystone,-2.1376333,-1.0826776
+Serissa japonica,plant,2,Keystone,-0.25006342,-1.9525
+Spiraea blumei,plant,2,Keystone,-1.4223768,-1.3146273
+Spiraea cantoniensis,plant,2,Keystone,-1.230352,-1.9299884
+Spiraea thunbergii,plant,2,Keystone,-1.1152022,-1.6847512
+Spiraea tossensis,plant,2,Keystone,-0.3862319,-1.0276157
+Spiranthes sinensis,plant,2,Keystone,-2.097466,-1.1780092
+Stellaria media,plant,2,Keystone,-0.09517074,-2.40455
+Stenactis annuus,plant,3,Generalist,-7.129258,5.7362514
+Stewartia monadelpha,plant,2,Keystone,-2.6545153,-1.0309966
+Swida macrophylla,plant,3,Generalist,-5.050012,1.4021652
+Swida stlonifera,plant,2,Keystone,-1.5890138,-0.6793215
+Syringa vulgaris,plant,3,Generalist,-3.191087,-0.033012778
+Taraxacum japonicum,plant,3,Generalist,-3.4445398,-0.30378306
+Tilia japonica,plant,2,Keystone,-2.7401621,-0.8811487
+Tilia miqueliana,plant,3,Generalist,-3.2032633,-0.13742347
+Torilis japonica,plant,2,Keystone,-0.47170472,-1.679309
+Tradescantia ohiensis,plant,2,Keystone,-1.9347916,-1.2691053
+Trifolium repens,plant,2,Keystone,-2.8795364,-1.0234829
+Ulmus davidiana,plant,2,Keystone,-0.8989247,-1.6745684
+Vaccinium oldhami,plant,2,Keystone,-1.0345702,-1.7194061
+Veronica persica,plant,2,Keystone,-0.47170472,-1.679309
+Veronicastrum sibiricum,plant,2,Keystone,-3.0651321,-1.0389007
+Viburnum dilatatum,plant,2,Keystone,-1.925709,-1.4047158
+Viburnum erosum,plant,2,Keystone,-1.9394372,-1.3298368
+Viburnum suspensum,plant,2,Keystone,-0.77680695,-2.1313393
+Viola mandshurica,plant,2,Keystone,-0.25006342,-1.9525
+Vitex cannabifolia,plant,3,Generalist,-6.7680044,6.4743166
+Weigela hortensis,plant,2,Keystone,-2.0421622,-1.6386645
+Wisteria floribunda,plant,2,Keystone,0.11650276,-1.2671251
+Agrypnus binodulusllis ,pollinator,0,Connector,0.7248125,0.021519184
+Ammophila clavus ,pollinator,1,Specialist,3.5431716,0.7568902
+Andrena benefica,pollinator,0,Connector,0.5759139,-0.17540747
+Andrena brassicae ,pollinator,0,Connector,0.5759139,-0.17540747
+Andrena japonica ,pollinator,0,Connector,-0.4487381,0.07220891
+Andrena Knuthi,pollinator,0,Connector,-0.42785883,0.7635801
+Andrena komachi ,pollinator,0,Connector,1.2032833,-0.40236306
+Andrena opacifovea opacifovea,pollinator,0,Connector,-1.0959313,0.2990851
+Andrena protomias ,pollinator,0,Connector,-0.6654588,1.2796932
+Andrena yamamotoi ,pollinator,0,Connector,-0.124317884,0.22946915
+Anomala albopilosa ,pollinator,0,Connector,0.59486127,0.00087714195
+Anterhynchium flavomarginatum micado ,pollinator,0,Connector,0.7073064,0.74508965
+Anthaxia Proteus ,pollinator,0,Connector,-0.18044615,0.5357177
+Anthidium septemspinosum ,pollinator,0,Connector,-0.7416054,1.8606266
+Anthocris scolymus ,pollinator,0,Connector,1.210295,-0.42250896
+Anthophora pilipes villosula ,pollinator,0,Connector,-0.7069731,0.2592382
+Anthrenus verbasci ,pollinator,3,Generalist,-2.8042283,5.0267496
+Apis cerana japonica ,pollinator,3,Generalist,-3.286511,2.7668638
+Apis mellifera,pollinator,3,Generalist,-2.843128,2.0099761
+Araneidae sp18 M_PL_054,pollinator,1,Specialist,3.3523757,0.46287754
+Araneidae sp19 M_PL_054,pollinator,1,Specialist,3.3523757,0.46287754
+Araneidae sp20 M_PL_054,pollinator,1,Specialist,3.3523757,0.46287754
+Araneidae sp36 M_PL_054,pollinator,1,Specialist,3.358309,0.45488927
+Araneidae sp37 M_PL_054,pollinator,0,Connector,0.6100273,-0.18631712
+Araneidae sp38 M_PL_054,pollinator,1,Specialist,3.358309,0.45488927
+Araneidae sp39 M_PL_054,pollinator,1,Specialist,3.358309,0.45488927
+Araneidae sp40 M_PL_054,pollinator,1,Specialist,3.358309,0.45488927
+Araneidae sp41 M_PL_054,pollinator,0,Connector,0.6265452,0.09991121
+Araneidae sp42 M_PL_054,pollinator,1,Specialist,3.358309,0.45488927
+Araneidae sp43 M_PL_054,pollinator,1,Specialist,3.358309,0.45488927
+Araneidae sp44 M_PL_054,pollinator,1,Specialist,3.358309,0.45488927
+Araneidae sp45 M_PL_054,pollinator,1,Specialist,3.358309,0.45488927
+Araneidae sp46 M_PL_054,pollinator,1,Specialist,3.358309,0.45488927
+Araneidae sp47 M_PL_054,pollinator,0,Connector,0.57101727,0.11882606
+Araneidae sp48 M_PL_054,pollinator,0,Connector,0.49085546,-0.17677596
+Araneidae sp49 M_PL_054,pollinator,1,Specialist,3.358309,0.45488927
+Araneidae sp50 M_PL_054,pollinator,0,Connector,0.6265452,0.09991121
+Araneidae sp51 M_PL_054,pollinator,0,Connector,1.008538,-0.41899797
+Araneidae sp9 M_PL_054,pollinator,1,Specialist,3.3404224,0.47897032
+Arge similis ,pollinator,0,Connector,-1.2152506,0.88154054
+Asclera nigrocya ,pollinator,0,Connector,0.64592886,-0.45190144
+Athalia japonica ,pollinator,0,Connector,0.09713364,-0.24260193
+Aulacophora nigripennis ,pollinator,0,Connector,-0.28287458,0.7821417
+Blitopertha conspurcata ,pollinator,0,Connector,-0.28107595,0.2973322
+Blitopertha orientalis ,pollinator,0,Connector,0.49729228,0.10832596
+Bombus ardens,pollinator,3,Generalist,-1.9886814,0.9737495
+Bombus diversus diversus,pollinator,0,Connector,-0.51421165,-0.037473768
+Bombus hypocrita hypocrita,pollinator,3,Generalist,-1.8738334,0.79085493
+Bombus ignitus,pollinator,3,Generalist,-2.0900319,1.2558033
+Bombylius major,pollinator,0,Connector,-0.72814226,0.11606613
+Brachymeria fiskei ,pollinator,1,Specialist,3.358309,0.45488927
+Bruchidius dorsalis ,pollinator,0,Connector,-0.2981081,0.1062935
+Bruchidius urbanus ,pollinator,1,Specialist,2.84115,0.8709495
+Byasa alcinous ,pollinator,0,Connector,1.2355452,-0.5082134
+Callosobruchus chinensis ,pollinator,0,Connector,-0.1460185,0.9596399
+Camponotus japonicus,pollinator,0,Connector,-0.10960245,0.22210172
+Campsomeris annulata ,pollinator,0,Connector,0.6660681,-0.11606473
+Campsomeris grossa matsumurai ,pollinator,0,Connector,-1.3177295,1.093254
+Campsomeris primatica ,pollinator,0,Connector,-0.91216433,1.064535
+Campsomeris testaceipes ,pollinator,0,Connector,-0.55458486,0.3925548
+Carpophilus chalybeus ,pollinator,0,Connector,-0.050225258,0.28630766
+Ceratina esakii ,pollinator,0,Connector,1.2355452,-0.5082134
+Ceratina flavipes ,pollinator,3,Generalist,-2.2185812,1.6920596
+Ceratina iwatai,pollinator,0,Connector,0.48202538,-0.0041059256
+Ceratina japonica ,pollinator,0,Connector,0.38158202,0.75616515
+Cerceris albofasciata ,pollinator,1,Specialist,3.5157673,0.79719496
+Cerceris japonica ,pollinator,0,Connector,1.1692898,0.9416152
+Chalicodoma disjunctiformis ,pollinator,0,Connector,0.4773872,0.8636644
+Chalicodoma sculpturalis ,pollinator,1,Specialist,3.4749372,0.8587409
+Chalicodoma sp1 M_PL_054,pollinator,0,Connector,0.26121402,1.9704424
+Cheilosia sp1 M_PL_054,pollinator,0,Connector,-0.15436459,0.15128496
+Chlorophorus japonicus ,pollinator,0,Connector,0.59486127,0.00087714195
+Cletus rusticus ,pollinator,0,Connector,0.33067656,-0.20939744
+Cletus trigonus ,pollinator,0,Connector,0.58177066,0.094193995
+Coelioxys fenestrata ,pollinator,1,Specialist,3.536363,0.76687574
+Coelioxys yanonis ,pollinator,0,Connector,0.35604215,0.13672087
+Colletes sp1 M_PL_054,pollinator,0,Connector,0.5759139,-0.17540747
+Colletes sp2 M_PL_054,pollinator,0,Connector,0.6660681,-0.11606473
+Cyphononyx dorsalis ,pollinator,0,Connector,1.1232231,-0.20975077
+Dasytes vulgaris ,pollinator,0,Connector,0.4627061,-0.35542372
+Dere thoracica ,pollinator,1,Specialist,3.358309,0.45488927
+Dermestes haemorrhoidalis ,pollinator,0,Connector,-0.061967373,0.23272905
+Didea fasciata ,pollinator,0,Connector,0.8010063,0.24696311
+Dybowskia reticulata ,pollinator,0,Connector,0.587816,0.018265843
+Ectemnius rubicola,pollinator,0,Connector,0.9330785,0.2131128
+Episyrphus balteatus,pollinator,3,Generalist,-2.4220006,1.1836349
+Eristalis cerealis ,pollinator,3,Generalist,-2.3485205,1.5499154
+Eristalomya tenax ,pollinator,1,Specialist,3.358309,0.45488927
+Euapis basalis ,pollinator,1,Specialist,3.5157673,0.79719496
+Eucetonia pilifera,pollinator,3,Generalist,-2.02997,1.242773
+Eumenes decorata ,pollinator,1,Specialist,3.5431716,0.7568902
+Eumenes rubronotatus ,pollinator,1,Specialist,3.5431716,0.7568902
+Eurema hecabe ,pollinator,0,Connector,-0.5235958,0.50119674
+Eurystylus coelestialium ,pollinator,0,Connector,-0.10649371,0.922703
+Eusphalerum parallelum ,pollinator,0,Connector,0.9330785,0.2131128
+Everes argiades ,pollinator,0,Connector,0.49085546,-0.17677596
+Formica japonica ,pollinator,3,Generalist,-1.8339964,1.1834108
+Graphium sarpedon nipponum ,pollinator,3,Generalist,-1.8535684,1.4174206
+Gymnosoma rotundatum ,pollinator,0,Connector,0.45850992,0.5325366
+Halictus aerarius ,pollinator,0,Connector,-0.37814188,1.0309199
+Helophilus virgatus ,pollinator,0,Connector,-1.4158881,0.58686125
+Hylaeus floralis ,pollinator,0,Connector,0.8010063,0.24696311
+Hylaeus nippon ,pollinator,0,Connector,0.6660681,-0.11606473
+Ivela auripes,pollinator,0,Connector,0.5391464,0.062379003
+Lasiogiossum japonicum ,pollinator,0,Connector,0.29425502,-0.18548754
+Lasiogiossum Proximatum ,pollinator,0,Connector,0.7175312,-0.28100863
+Lasioglossum baleicum,pollinator,0,Connector,0.55202246,0.10500741
+Lasioglossum duplex,pollinator,0,Connector,-0.6866344,0.04873255
+Lasioglossum exiliceps,pollinator,0,Connector,0.46712685,-0.36053032
+Lasioglossum japonicum,pollinator,3,Generalist,-2.204485,1.0705806
+Lasioglossum mutilum ,pollinator,0,Connector,0.75800204,0.84047365
+Lasioglossum occidens,pollinator,3,Generalist,-3.013104,2.1993175
+Lasioglossum proximatum,pollinator,0,Connector,0.56269336,0.105437875
+Lasioglossum scitulum ,pollinator,0,Connector,-0.16966152,0.15645847
+Lasioglossum sibiriacum,pollinator,1,Specialist,3.3523757,0.46287754
+Lasioglossum sp1 M_PL_054,pollinator,3,Generalist,-1.6473463,0.98975253
+Lasioglossum sp2 M_PL_054,pollinator,0,Connector,0.58177066,0.094193995
+Lasioglossum taniolellum,pollinator,0,Connector,-1.3977314,0.4888716
+Lasius niger,pollinator,0,Connector,-1.4560019,0.72360206
+Lathrophthalmus ocularis ,pollinator,0,Connector,0.8010063,0.24696311
+Leptocorixa corbetti ,pollinator,1,Specialist,3.358309,0.45488927
+Libythea celtis ,pollinator,0,Connector,0.70767474,-0.084463835
+Linoetis coeruleipennis ,pollinator,0,Connector,0.49729228,0.10832596
+Linotetis coeruleipennis ,pollinator,0,Connector,-0.5470232,0.51395786
+Lithurgus collaris ,pollinator,0,Connector,0.29927802,-0.28120312
+Loderus insulicola ,pollinator,0,Connector,0.5972624,0.188113
+Lycaena phlaeas ,pollinator,0,Connector,0.9513738,0.58268964
+Macrophya falsifica ,pollinator,0,Connector,-0.17586827,0.2630413
+Megachile kobensis ,pollinator,0,Connector,-0.28277612,0.9460684
+Megachile nipponica ,pollinator,0,Connector,0.0768168,1.0723536
+Megachile pseudomonticola ,pollinator,1,Specialist,3.5431716,0.7568902
+Megachile remota sakagamii ,pollinator,0,Connector,0.7540312,0.7847332
+Megachile subalbuta ,pollinator,0,Connector,-1.1487395,1.0225846
+Megachile tsurugensis ,pollinator,0,Connector,-1.3125129,1.1135998
+Megaspis zonata ,pollinator,0,Connector,-0.20083475,0.8316965
+Melanostoma scalare,pollinator,0,Connector,-0.70161843,0.47262487
+Metasyrphus corollae,pollinator,0,Connector,0.57213974,-0.45430762
+Metasyrphus nintens ,pollinator,0,Connector,0.30777287,-0.28317028
+Mordellina sp1 M_PL_054,pollinator,0,Connector,-0.70816827,0.253934
+Mordellistena sp1 M_PL_054,pollinator,3,Generalist,-2.0416205,1.4676144
+Neuroptera sp132 M_PL_054,pollinator,0,Connector,0.81358147,0.051612735
+Neuroptera sp35 M_PL_054,pollinator,0,Connector,-0.31997466,0.05971527
+Nipponovalgus angusticollis ,pollinator,0,Connector,0.47336483,-0.0006759465
+Nomada ginran ,pollinator,0,Connector,-0.464211,-0.041784167
+Nomada japonica,pollinator,0,Connector,-0.022707224,-0.24884799
+Nomada shepparadana okubira ,pollinator,1,Specialist,3.358309,0.45488927
+Nonartha cyaneum ,pollinator,3,Generalist,-3.0573223,2.266084
+Nysius sp1 M_PL_054,pollinator,1,Specialist,3.3404224,0.47897032
+Oracistrocerus drewseni drewseni ,pollinator,0,Connector,-0.5861895,0.37202427
+Orthoptera sp133 M_PL_054,pollinator,0,Connector,0.59266186,-0.17856401
+Orthoptera sp134 M_PL_054,pollinator,0,Connector,0.6100273,-0.18631712
+Orthoptera sp135 M_PL_054,pollinator,1,Specialist,3.358309,0.45488927
+Orthoptera sp136 M_PL_054,pollinator,0,Connector,1.210295,-0.42250896
+Osmia imaii ,pollinator,0,Connector,-0.84571946,0.1563724
+Osmia orientalis ,pollinator,0,Connector,0.7706661,-0.27852565
+Osmia taurus ,pollinator,0,Connector,0.12458539,-0.24094056
+Oxycetonia jucunda ,pollinator,3,Generalist,-2.4607043,2.1869242
+Pachyprotasis sp1 M_PL_054,pollinator,0,Connector,1.2032833,-0.40236306
+Panurginus crawfordi ,pollinator,0,Connector,-0.11469889,0.10215604
+Papilio xuthus ,pollinator,0,Connector,-1.2460145,0.940734
+Papilix Protenor demetrius ,pollinator,0,Connector,1.0527239,0.7936175
+Paragus tibialis ,pollinator,0,Connector,0.49085546,-0.17677596
+Parnara guttata ,pollinator,3,Generalist,-1.8566667,0.8691547
+Philopota nigroaenea ,pollinator,3,Generalist,-1.6799524,0.727566
+Phyllopertha irregularis ,pollinator,0,Connector,0.7248125,0.021519184
+Pieris melete,pollinator,0,Connector,-0.16780734,0.26469627
+Pieris rapae ,pollinator,0,Connector,-1.0773679,1.2174729
+Pipiza inornata ,pollinator,0,Connector,0.58177066,0.094193995
+Polistes jadwigae ,pollinator,3,Generalist,-1.5120053,0.9553373
+Polistes mandarinus ,pollinator,0,Connector,-0.55131793,0.44697222
+Polistes rothoneyi iwatai ,pollinator,0,Connector,0.29425502,-0.18548754
+Polistes snelleni ,pollinator,0,Connector,0.5644443,0.13554177
+Popillia japonica ,pollinator,0,Connector,-0.13998294,0.3880836
+Priophorus nigricans ,pollinator,0,Connector,0.6784084,-0.011756808
+Pristomyrmex punger ,pollinator,3,Generalist,-1.8382316,0.91698706
+Protaetia orientalis ,pollinator,0,Connector,-0.27148962,0.68301475
+Pseudomerdon takasaqoensis ,pollinator,0,Connector,0.8010063,0.24696311
+Psocoptera sp138 M_PL_054,pollinator,0,Connector,1.1232231,-0.20975077
+Sastragala scutellata ,pollinator,1,Specialist,3.5431716,0.7568902
+Scolia historionica japonica ,pollinator,1,Specialist,3.536363,0.76687574
+Scolia oculata ,pollinator,0,Connector,-0.27712035,0.75611556
+Sphaerophoria macrogaster ,pollinator,3,Generalist,-2.7608116,1.8433548
+Sphaerophoria menthastri,pollinator,0,Connector,-1.2156634,0.46182856
+Sphex diabolicus flammitrichus ,pollinator,0,Connector,0.5644443,0.13554177
+Stenodryas clavigera ,pollinator,0,Connector,0.56269336,0.105437875
+Stenodynerus chinensis simillimus ,pollinator,0,Connector,-0.36871362,0.15298411
+Stenodynerus frauenfeldi ,pollinator,0,Connector,0.008802891,0.12600207
+Stenodynerus tokyanus tokyanus ,pollinator,1,Specialist,3.358309,0.45488927
+Strogylogaster onocleae ,pollinator,0,Connector,1.2099037,-0.4195166
+Syritta pipiens,pollinator,0,Connector,1.2624705,1.0050129
+Syrphus japonica ,pollinator,0,Connector,0.23509884,-0.43355376
+Syrphus vitripennis ,pollinator,0,Connector,0.5759139,-0.17540747
+Tetralonia mitsukurii ,pollinator,0,Connector,0.5289366,0.23005489
+Tetralonia nipponens ,pollinator,3,Generalist,-2.5751061,1.4396459
+Tiphia sp1 M_PL_054,pollinator,0,Connector,-0.026374578,-0.1529419
+Trichius japonicus ,pollinator,0,Connector,0.49729228,0.10832596
+Trichoptera sp139 M_PL_054,pollinator,0,Connector,0.81358147,0.051612735
+Trichoptera sp140 M_PL_054,pollinator,1,Specialist,3.358309,0.45488927
+Unidentified sp1 M_PL_054,pollinator,3,Generalist,-1.8192146,1.7373179
+Unidentified sp10 M_PL_054,pollinator,0,Connector,0.11104345,0.3942074
+Unidentified sp100 M_PL_054,pollinator,0,Connector,0.55202246,0.10500741
+Unidentified sp101 M_PL_054,pollinator,0,Connector,0.8010063,0.24696311
+Unidentified sp102 M_PL_054,pollinator,0,Connector,1.2355452,-0.5082134
+Unidentified sp103 M_PL_054,pollinator,0,Connector,-0.016680479,-0.35435346
+Unidentified sp104 M_PL_054,pollinator,0,Connector,0.09814596,-0.42037916
+Unidentified sp105 M_PL_054,pollinator,0,Connector,0.7777722,-0.29665202
+Unidentified sp106 M_PL_054,pollinator,1,Specialist,3.358309,0.45488927
+Unidentified sp107 M_PL_054,pollinator,0,Connector,0.8010063,0.24696311
+Unidentified sp108 M_PL_054,pollinator,1,Specialist,3.358309,0.45488927
+Unidentified sp109 M_PL_054,pollinator,0,Connector,0.57101727,0.11882606
+Unidentified sp11 M_PL_054,pollinator,0,Connector,-0.49578452,0.5608866
+Unidentified sp110 M_PL_054,pollinator,0,Connector,0.6265452,0.09991121
+Unidentified sp111 M_PL_054,pollinator,0,Connector,1.2355452,-0.5082134
+Unidentified sp112 M_PL_054,pollinator,0,Connector,0.8010063,0.24696311
+Unidentified sp113 M_PL_054,pollinator,1,Specialist,3.358309,0.45488927
+Unidentified sp114 M_PL_054,pollinator,0,Connector,0.6265452,0.09991121
+Unidentified sp115 M_PL_054,pollinator,0,Connector,0.54311466,-0.30989763
+Unidentified sp116 M_PL_054,pollinator,0,Connector,0.656466,-0.35239932
+Unidentified sp117 M_PL_054,pollinator,0,Connector,0.9330785,0.2131128
+Unidentified sp118 M_PL_054,pollinator,0,Connector,0.55202246,0.10500741
+Unidentified sp119 M_PL_054,pollinator,0,Connector,0.6100273,-0.18631712
+Unidentified sp12 M_PL_054,pollinator,0,Connector,0.6443033,0.6028404
+Unidentified sp120 M_PL_054,pollinator,0,Connector,0.9330785,0.2131128
+Unidentified sp121 M_PL_054,pollinator,1,Specialist,3.358309,0.45488927
+Unidentified sp122 M_PL_054,pollinator,1,Specialist,3.358309,0.45488927
+Unidentified sp123 M_PL_054,pollinator,0,Connector,0.7248125,0.021519184
+Unidentified sp124 M_PL_054,pollinator,0,Connector,0.2959826,-0.050753176
+Unidentified sp125 M_PL_054,pollinator,0,Connector,0.9330785,0.2131128
+Unidentified sp126 M_PL_054,pollinator,1,Specialist,3.5431716,0.7568902
+Unidentified sp127 M_PL_054,pollinator,0,Connector,0.57101727,0.11882606
+Unidentified sp128 M_PL_054,pollinator,0,Connector,1.2099037,-0.4195166
+Unidentified sp129 M_PL_054,pollinator,0,Connector,0.7248125,0.021519184
+Unidentified sp13 M_PL_054,pollinator,0,Connector,-0.5963316,0.39958075
+Unidentified sp130 M_PL_054,pollinator,0,Connector,0.6265452,0.09991121
+Unidentified sp131 M_PL_054,pollinator,1,Specialist,3.5431716,0.7568902
+Unidentified sp137 M_PL_054,pollinator,1,Specialist,3.358309,0.45488927
+Unidentified sp14 M_PL_054,pollinator,1,Specialist,3.5295265,0.77692056
+Unidentified sp15 M_PL_054,pollinator,0,Connector,0.9173107,0.24502423
+Unidentified sp16 M_PL_054,pollinator,0,Connector,0.07578468,0.28846142
+Unidentified sp17 M_PL_054,pollinator,0,Connector,0.6131847,0.1331918
+Unidentified sp2 M_PL_054,pollinator,0,Connector,-0.5571383,0.9999869
+Unidentified sp21 M_PL_054,pollinator,0,Connector,-0.3560555,0.011723608
+Unidentified sp22 M_PL_054,pollinator,0,Connector,-0.1264031,0.20141396
+Unidentified sp23 M_PL_054,pollinator,0,Connector,0.74927735,0.6226076
+Unidentified sp24 M_PL_054,pollinator,0,Connector,0.831898,0.8021928
+Unidentified sp25 M_PL_054,pollinator,0,Connector,0.5669215,0.48139015
+Unidentified sp26 M_PL_054,pollinator,1,Specialist,2.84115,0.8709495
+Unidentified sp27 M_PL_054,pollinator,0,Connector,1.2167666,0.8723941
+Unidentified sp28 M_PL_054,pollinator,0,Connector,0.831898,0.8021928
+Unidentified sp29 M_PL_054,pollinator,1,Specialist,3.536363,0.76687574
+Unidentified sp3 M_PL_054,pollinator,0,Connector,-1.0375248,0.61892927
+Unidentified sp30 M_PL_054,pollinator,0,Connector,0.5558479,0.12191886
+Unidentified sp31 M_PL_054,pollinator,0,Connector,0.99916005,0.5836537
+Unidentified sp32 M_PL_054,pollinator,0,Connector,0.0895164,-0.27131006
+Unidentified sp33 M_PL_054,pollinator,0,Connector,0.6913614,0.8038752
+Unidentified sp34 M_PL_054,pollinator,0,Connector,1.2557743,0.8403536
+Unidentified sp4 M_PL_054,pollinator,0,Connector,0.7561872,0.2055426
+Unidentified sp5 M_PL_054,pollinator,0,Connector,-0.6935911,0.7673178
+Unidentified sp52 M_PL_054,pollinator,0,Connector,0.5908618,0.073818356
+Unidentified sp53 M_PL_054,pollinator,0,Connector,0.49729228,0.10832596
+Unidentified sp54 M_PL_054,pollinator,0,Connector,0.47336483,-0.0006759465
+Unidentified sp55 M_PL_054,pollinator,0,Connector,0.22657919,-0.17793943
+Unidentified sp56 M_PL_054,pollinator,1,Specialist,3.5431716,0.7568902
+Unidentified sp57 M_PL_054,pollinator,0,Connector,0.38696814,0.048021674
+Unidentified sp58 M_PL_054,pollinator,0,Connector,0.9330785,0.2131128
+Unidentified sp59 M_PL_054,pollinator,0,Connector,0.9330785,0.2131128
+Unidentified sp6 M_PL_054,pollinator,0,Connector,-0.90335476,0.48735073
+Unidentified sp60 M_PL_054,pollinator,0,Connector,0.9330785,0.2131128
+Unidentified sp61 M_PL_054,pollinator,0,Connector,0.724061,-0.29847044
+Unidentified sp62 M_PL_054,pollinator,0,Connector,0.8010063,0.24696311
+Unidentified sp63 M_PL_054,pollinator,0,Connector,0.81358147,0.051612735
+Unidentified sp64 M_PL_054,pollinator,0,Connector,0.4884274,-0.021178246
+Unidentified sp65 M_PL_054,pollinator,0,Connector,0.7777722,-0.29665202
+Unidentified sp66 M_PL_054,pollinator,1,Specialist,3.358309,0.45488927
+Unidentified sp67 M_PL_054,pollinator,0,Connector,0.59486127,0.00087714195
+Unidentified sp68 M_PL_054,pollinator,1,Specialist,3.358309,0.45488927
+Unidentified sp69 M_PL_054,pollinator,0,Connector,0.5391464,0.062379003
+Unidentified sp7 M_PL_054,pollinator,0,Connector,0.05006957,0.34885272
+Unidentified sp70 M_PL_054,pollinator,0,Connector,0.7248125,0.021519184
+Unidentified sp71 M_PL_054,pollinator,0,Connector,0.8010063,0.24696311
+Unidentified sp72 M_PL_054,pollinator,0,Connector,0.9330785,0.2131128
+Unidentified sp73 M_PL_054,pollinator,0,Connector,0.8010063,0.24696311
+Unidentified sp74 M_PL_054,pollinator,0,Connector,0.071363926,-0.32471657
+Unidentified sp75 M_PL_054,pollinator,0,Connector,0.59486127,0.00087714195
+Unidentified sp76 M_PL_054,pollinator,1,Specialist,3.5431716,0.7568902
+Unidentified sp77 M_PL_054,pollinator,1,Specialist,3.5431716,0.7568902
+Unidentified sp78 M_PL_054,pollinator,0,Connector,0.70767474,-0.084463835
+Unidentified sp79 M_PL_054,pollinator,0,Connector,0.14505863,-0.047897547
+Unidentified sp8 M_PL_054,pollinator,0,Connector,0.11849141,0.0207313
+Unidentified sp80 M_PL_054,pollinator,0,Connector,0.4884274,-0.021178246
+Unidentified sp81 M_PL_054,pollinator,0,Connector,1.1232231,-0.20975077
+Unidentified sp82 M_PL_054,pollinator,1,Specialist,3.358309,0.45488927
+Unidentified sp83 M_PL_054,pollinator,0,Connector,0.656466,-0.35239932
+Unidentified sp84 M_PL_054,pollinator,1,Specialist,3.5431716,0.7568902
+Unidentified sp85 M_PL_054,pollinator,0,Connector,1.0901718,-0.32939327
+Unidentified sp86 M_PL_054,pollinator,0,Connector,0.4884274,-0.021178246
+Unidentified sp87 M_PL_054,pollinator,1,Specialist,3.358309,0.45488927
+Unidentified sp88 M_PL_054,pollinator,1,Specialist,3.358309,0.45488927
+Unidentified sp89 M_PL_054,pollinator,0,Connector,0.58177066,0.094193995
+Unidentified sp90 M_PL_054,pollinator,0,Connector,0.12435627,-0.24619687
+Unidentified sp91 M_PL_054,pollinator,1,Specialist,3.358309,0.45488927
+Unidentified sp92 M_PL_054,pollinator,0,Connector,0.59486127,0.00087714195
+Unidentified sp93 M_PL_054,pollinator,0,Connector,0.56269336,0.105437875
+Unidentified sp94 M_PL_054,pollinator,0,Connector,0.22657919,-0.17793943
+Unidentified sp95 M_PL_054,pollinator,1,Specialist,3.5431716,0.7568902
+Unidentified sp96 M_PL_054,pollinator,0,Connector,0.56269336,0.105437875
+Unidentified sp97 M_PL_054,pollinator,0,Connector,0.8010063,0.24696311
+Unidentified sp98 M_PL_054,pollinator,0,Connector,0.6100273,-0.18631712
+Unidentified sp99 M_PL_054,pollinator,0,Connector,0.7248125,0.021519184
+Vespa analis insularis ,pollinator,0,Connector,0.2114799,0.9133861
+Vespa xanthoptera ,pollinator,3,Generalist,-2.7316067,1.8944732
+Vespula flaviceps lewisi ,pollinator,0,Connector,1.0901718,-0.32939327
+Vollucella tabanoides ,pollinator,0,Connector,0.09303236,-0.053691447
+Xptocopa appendiculata circumvolan ,pollinator,0,Connector,0.124221325,-0.3789277
+Xylocopa appendicuiata circumvolan ,pollinator,0,Connector,0.9173107,0.24502423
+Xylocopa appendiculata circumvolan ,pollinator,3,Generalist,-3.8425155,2.8473108
+Ypthima argus ,pollinator,3,Generalist,-1.6094438,1.1084841
+Zizeeria maha ,pollinator,0,Connector,-0.68287814,0.7715367

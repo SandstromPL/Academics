@@ -1,0 +1,38 @@
+species,kind,gnn_cluster,gnn_role,pca1,pca2
+Abutilon bedfordianum,plant,2,Connector,0.35377938,-0.020772168
+Aechmea nudicaulis,plant,2,Connector,0.5463494,-0.21194226
+Aechmea vanhoutteana,plant,2,Connector,0.23795152,-0.41893187
+Billbergia distachya,plant,2,Connector,-0.05256443,-0.07096149
+Billbergia vitata,plant,2,Connector,0.196152,-0.13748828
+Bomarea edulis,plant,2,Connector,-0.07206866,-0.0853557
+Fuchsia regia,plant,2,Connector,-0.05080002,-0.069650255
+Hippeastrum aulicum,plant,2,Connector,-0.07206866,-0.0853557
+Justicia sebastianopolitanae,plant,0,Specialist,-0.8783839,0.7303878
+Manettia mirtis,plant,2,Connector,-0.0792445,-0.09074139
+Mendoncia sp1 M_PL_066,plant,2,Connector,0.50245595,0.17303024
+Nematanthus crassifolius,plant,0,Specialist,-0.8771465,0.7325065
+Nematanthus fornix,plant,2,Connector,-0.05786589,-0.07489488
+Nematanthus lanceolatus,plant,0,Specialist,-0.44492844,0.2284439
+Nidularium itatiaiae,plant,0,Specialist,-0.8759053,0.7346303
+Odontonema barlerioides,plant,0,Specialist,-0.46058863,0.21388492
+Pitcaimia flammea,plant,2,Connector,-0.05786589,-0.07489488
+Psittacanthus flavo viridis,plant,2,Connector,0.8240158,0.48598292
+Pyrostegia venusta,plant,2,Connector,0.21330346,-0.37343404
+Quesnelia augusto-coburgii,plant,0,Specialist,-0.8796175,0.72827333
+Salvia sellowiana,plant,0,Specialist,-0.4563428,0.21787068
+Sinningia cooperi,plant,2,Connector,-0.059635956,-0.0762044
+Sinningia gigantifolia,plant,0,Specialist,-0.45492333,0.21919674
+Siphocampylus longepedunculatus,plant,0,Specialist,-0.8790012,0.72932994
+Staurogyne itatiaiae,plant,0,Specialist,-0.44922468,0.2244883
+Stromanthe thalia,plant,2,Connector,0.41074187,0.035933465
+Tillandsia gardneri,plant,2,Connector,0.19467361,0.31017223
+Velloziela dracocephaloides,plant,0,Specialist,-0.87776566,0.7314466
+Vriesea carinata,plant,0,Specialist,-0.5175571,0.05666991
+Vriesea longicaulis,plant,0,Specialist,-0.3944596,0.24547653
+Vriesea sp1 M_PL_066,plant,2,Connector,0.5544461,1.0391449
+Number of flowers,pollinator,1,Keystone,-0.9597366,-2.0148828
+Clytolaema rubricauda,pollinator,3,Generalist,2.4419646,0.12371186
+Leucochloris albicollis,pollinator,3,Generalist,2.3769135,1.077567
+Phaethornis eurynome,pollinator,1,Keystone,-0.8351117,-2.1156032
+Phaethornis squalidus,pollinator,1,Keystone,0.86101174,-1.6188755
+Thalurania glaucopis,pollinator,1,Keystone,1.0290481,-1.4981586

@@ -1,0 +1,21 @@
+species,kind,gnn_cluster,gnn_role,pca1,pca2
+Canthium bibracteatum,plant,1,Keystone,-1.3604228,-1.3988346
+Cinnamomum verum,plant,2,Connector,-0.850836,-0.506792
+Erythroxylum sechellarum,plant,2,Connector,-0.45583984,-0.7647967
+Memecylon eleagni,plant,0,Specialist,0.16021699,0.7886048
+Nephrosperma vanhoutteanum,plant,3,Generalist,-2.008181,2.2590847
+Paragenipa wrightii,plant,2,Connector,-0.59523517,-0.87925047
+Apis mellifera,pollinator,3,Generalist,-1.5684053,0.6570341
+Diptera sp1 M_PL_086,pollinator,0,Specialist,0.5530836,1.0625718
+Diptera sp3 M_PL_086,pollinator,0,Specialist,1.1326438,0.69501555
+Diptera sp4 M_PL_086,pollinator,2,Connector,0.82739174,-0.6990202
+Hemipyrellia sp1 M_PL_086,pollinator,1,Keystone,-0.64766186,-0.8468912
+Lasioglossum mahense,pollinator,2,Connector,-0.1931242,0.38418043
+Lygistorrhina sp1 M_PL_086,pollinator,2,Connector,0.65625566,-0.64489675
+Megachile seychellensis,pollinator,1,Keystone,-1.1059742,-0.49870676
+Musca domestica,pollinator,2,Connector,0.6994804,-0.4591692
+Nectarinia dussumieri,pollinator,2,Connector,0.83731353,-0.70811003
+Phelsuma sp1 M_PL_086,pollinator,0,Specialist,1.0496973,0.7412453
+Physiphoa azurea ,pollinator,0,Specialist,1.1326436,0.6950153
+Plagiostenopterina cyanosoma,pollinator,2,Connector,0.8174017,-0.6899528
+Unidentified sp2 M_PL_086,pollinator,0,Specialist,0.91955197,0.8136689

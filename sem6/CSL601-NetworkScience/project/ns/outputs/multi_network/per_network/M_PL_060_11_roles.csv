@@ -1,0 +1,35 @@
+species,kind,gnn_cluster,gnn_role,pca1,pca2
+Calophyllum eputamen,plant,3,Generalist,-1.9951545,0.3619246
+Casearia coriacea,plant,2,Keystone,-0.4035245,-1.6363212
+Cordemoya integrifolia,plant,0,Specialist,1.2182939,-1.4324585
+Diospyros revaughanii,plant,2,Keystone,-0.2394344,-1.1120228
+Euodia obtusifolia,plant,0,Specialist,0.5844672,0.57455546
+Gaertnera sp1 M_PL_070,plant,3,Generalist,-2.4132893,1.3987043
+Labourdonnaisia callophylloides,plant,2,Keystone,0.84086347,-1.6672044
+Ocotea laevigata,plant,3,Generalist,-1.4111192,1.2386959
+Stillingia lineata,plant,3,Generalist,-1.0045158,0.94050187
+Syzygium commersonii,plant,0,Specialist,0.8950259,0.048209287
+Syzygium coriaceum,plant,3,Generalist,-4.2998304,-0.20045249
+Syzygium mauritianum,plant,0,Specialist,0.08192288,-0.5075508
+Syzygium petrinese,plant,2,Keystone,-1.3354555,-0.9486451
+Tristhema mauritiana,plant,2,Keystone,1.5028152,-1.7194611
+Anthomyia faciata,pollinator,1,Connector,1.3260778,1.3342636
+Apis mellifera,pollinator,3,Generalist,-2.2105887,-1.4825486
+Brachymyrmex sp1 M_PL_070,pollinator,2,Keystone,0.11727693,-0.6962503
+Chaetocnema sp1 M_PL_070,pollinator,3,Generalist,-0.62411803,0.568661
+Chrysomya megacephala ,pollinator,3,Generalist,-1.3553139,1.4101553
+Episyrphus sp1 M_PL_070,pollinator,0,Specialist,-0.022168394,0.7908286
+Eristalinus flaveolus,pollinator,1,Connector,0.2956785,1.4669822
+Macroglossum milvus,pollinator,1,Connector,1.3260778,1.3342636
+Melanagromyza sojae ,pollinator,1,Connector,1.65221,0.017641377
+Musca domestica,pollinator,1,Connector,-0.23922372,0.9259721
+Nacoleia sp1 M_PL_070,pollinator,0,Specialist,1.1325991,-0.60921884
+Ornidia obesa,pollinator,1,Connector,1.65221,0.017641377
+Panara naso,pollinator,1,Connector,1.3157352,1.2986711
+Paragus borbonicus,pollinator,1,Connector,0.22652343,0.054190498
+Phelsuma cepediana,pollinator,3,Generalist,-1.0152109,0.09092328
+Phorinia sp1 M_PL_070,pollinator,1,Connector,1.65221,0.017641377
+Polistes hebraeus,pollinator,1,Connector,1.3083907,-0.40544066
+Syritta sp1 M_PL_070,pollinator,1,Connector,1.65221,0.017641377
+Technomyrmex albipes ,pollinator,2,Keystone,-1.3709888,-2.240385
+Thelairodrino sp1 M_PL_070,pollinator,1,Connector,1.1593454,0.74988943

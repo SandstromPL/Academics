@@ -1,0 +1,35 @@
+species,kind,gnn_cluster,gnn_role,pca1,pca2
+Canthium bibracteatum,plant,0,Generalist,-1.5981379,-0.39726216
+Chrysobalanus icaco,plant,0,Generalist,-1.3731372,-0.24425669
+Dillenia ferruginea,plant,0,Generalist,-2.0266757,-0.10251583
+Dillenia suffruticosa,plant,2,Connector,-0.6057547,-0.32992235
+Erythroxylum sechellarum,plant,0,Generalist,-1.8638924,-0.4869634
+Excoecaria benthiamiana,plant,3,Specialist,1.656125,-2.1567836
+Memecylon eleagni,plant,0,Generalist,-1.3573312,0.2754682
+Nepenthes pervillei,plant,1,Keystone,-2.1082892,1.4015325
+Nephrosperma vanhoutteanum,plant,0,Generalist,-1.0139458,-1.2526567
+Phoenicophorium borsigianum,plant,2,Connector,-1.5522659,0.9982066
+Pittosporum senacia,plant,2,Connector,0.5006728,1.6862819
+Soulamea terminaloides,plant,1,Keystone,-1.9731964,3.1214113
+Syzygium wrightii,plant,0,Generalist,-2.4472375,0.4031861
+Apis mellifera,pollinator,0,Generalist,-3.552275,-2.0771625
+Chalcidoma disjunctum,pollinator,3,Specialist,1.2370673,0.12574024
+Dichaetomyia fasciculifera,pollinator,3,Specialist,2.0907323,0.89116645
+Diptera sp1 M_PL_129,pollinator,1,Keystone,0.049918372,1.312872
+Eristalinus vicarians,pollinator,3,Specialist,1.049754,0.165714
+Hemipyrellia germana,pollinator,3,Specialist,-0.21342732,-0.565149
+Hemipyrellia sp1 M_PL_129,pollinator,3,Specialist,1.9172143,-0.010632017
+Lasioglossum mahense,pollinator,0,Generalist,-2.0405102,-1.0357312
+Mabuya sechellensis,pollinator,3,Specialist,1.9362009,-0.7619256
+Nectarinia dussumieri,pollinator,3,Specialist,0.4771558,-0.50977206
+Neophyllomyza approximatonervis,pollinator,3,Specialist,2.0907323,0.89116645
+Ornidia obesa,pollinator,3,Specialist,1.0598007,-0.22262384
+Pachycerina seychellensis,pollinator,3,Specialist,0.7300174,-0.77405435
+Phelsuma sp1 M_PL_129,pollinator,3,Specialist,0.5736228,-0.6474882
+Rhiparida seychellensis,pollinator,3,Specialist,0.94009197,0.19835414
+Rhynchium brunneum,pollinator,3,Specialist,0.92741466,-0.59384084
+Simosyrphus aegyptius,pollinator,3,Specialist,1.9200063,-1.0198637
+Tricimba seychellensis,pollinator,3,Specialist,2.0907323,0.89116645
+Unidentified sp2 M_PL_129,pollinator,2,Connector,1.0545211,0.40697724
+Unidentified sp3 M_PL_129,pollinator,2,Connector,1.0121115,0.38405323
+Xylocopa caffra,pollinator,2,Connector,0.41218507,0.0353062

@@ -1,0 +1,1301 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd" version="1.2">
+  <meta lastmodifieddate="2026-03-30">
+    <creator>NetworkX 3.6.1</creator>
+  </meta>
+  <graph defaultedgetype="undirected" mode="static" name="">
+    <attributes mode="static" class="node">
+      <attribute id="0" title="type" type="string" />
+    </attributes>
+    <nodes>
+      <node id="Acaena pinn" label="Acaena pinn">
+        <attvalues>
+          <attvalue for="0" value="plant" />
+        </attvalues>
+      </node>
+      <node id="Scaeva melanostoma" label="Scaeva melanostoma">
+        <attvalues>
+          <attvalue for="0" value="pollinator" />
+        </attvalues>
+      </node>
+      <node id="Adesmia aconcaguensis" label="Adesmia aconcaguensis">
+        <attvalues>
+          <attvalue for="0" value="plant" />
+        </attvalues>
+      </node>
+      <node id="Chilimelissa sp1 M_PL_001" label="Chilimelissa sp1 M_PL_001">
+        <attvalues>
+          <attvalue for="0" value="pollinator" />
+        </attvalues>
+      </node>
+      <node id="Diptera sp2 M_PL_001" label="Diptera sp2 M_PL_001">
+        <attvalues>
+          <attvalue for="0" value="pollinator" />
+        </attvalues>
+      </node>
+      <node id="Villa semifuscata" label="Villa semifuscata">
+        <attvalues>
+          <attvalue for="0" value="pollinator" />
+        </attvalues>
+      </node>
+      <node id="Villa sp1 M_PL_001" label="Villa sp1 M_PL_001">
+        <attvalues>
+          <attvalue for="0" value="pollinator" />
+        </attvalues>
+      </node>
+      <node id="Xanthocolletes sicheli" label="Xanthocolletes sicheli">
+        <attvalues>
+          <attvalue for="0" value="pollinator" />
+        </attvalues>
+      </node>
+      <node id="Adesmia brachy" label="Adesmia brachy">
+        <attvalues>
+          <attvalue for="0" value="plant" />
+        </attvalues>
+      </node>
+      <node id="Anthidium decapsilum" label="Anthidium decapsilum">
+        <attvalues>
+          <attvalue for="0" value="pollinator" />
+        </attvalues>
+      </node>
+      <node id="Centris cineraria" label="Centris cineraria">
+        <attvalues>
+          <attvalue for="0" value="pollinator" />
+        </attvalues>
+      </node>
+      <node id="Megachile semirufa" label="Megachile semirufa">
+        <attvalues>
+          <attvalue for="0" value="pollinator" />
+        </attvalues>
+      </node>
+      <node id="Adesmia conferta" label="Adesmia conferta">
+        <attvalues>
+          <attvalue for="0" value="plant" />
+        </attvalues>
+      </node>
+      <node id="Alloscirtetica rufitarsis" label="Alloscirtetica rufitarsis">
+        <attvalues>
+          <attvalue for="0" value="pollinator" />
+        </attvalues>
+      </node>
+      <node id="Alloscirtetica sp1 M_PL_001" label="Alloscirtetica sp1 M_PL_001">
+        <attvalues>
+          <attvalue for="0" value="pollinator" />
+        </attvalues>
+      </node>
+      <node id="Anthidium chilensis" label="Anthidium chilensis">
+        <attvalues>
+          <attvalue for="0" value="pollinator" />
+        </attvalues>
+      </node>
+      <node id="Anthidium gayi" label="Anthidium gayi">
+        <attvalues>
+          <attvalue for="0" value="pollinator" />
+        </attvalues>
+      </node>
+      <node id="Cadeguala occidentalis" label="Cadeguala occidentalis">
+        <attvalues>
+          <attvalue for="0" value="pollinator" />
+        </attvalues>
+      </node>
+      <node id="Chilicola sp2 M_PL_001" label="Chilicola sp2 M_PL_001">
+        <attvalues>
+          <attvalue for="0" value="pollinator" />
+        </attvalues>
+      </node>
+      <node id="Lithurgomma wagenknechti" label="Lithurgomma wagenknechti">
+        <attvalues>
+          <attvalue for="0" value="pollinator" />
+        </attvalues>
+      </node>
+      <node id="Megachile sp2 M_PL_001" label="Megachile sp2 M_PL_001">
+        <attvalues>
+          <attvalue for="0" value="pollinator" />
+        </attvalues>
+      </node>
+      <node id="Mesonychium gayi" label="Mesonychium gayi">
+        <attvalues>
+          <attvalue for="0" value="pollinator" />
+        </attvalues>
+      </node>
+      <node id="Pseudolucia chilensis" label="Pseudolucia chilensis">
+        <attvalues>
+          <attvalue for="0" value="pollinator" />
+        </attvalues>
+      </node>
+      <node id="Adesmia exilis" label="Adesmia exilis">
+        <attvalues>
+          <attvalue for="0" value="plant" />
+        </attvalues>
+      </node>
+      <node id="Xanthocolletes incahuasi" label="Xanthocolletes incahuasi">
+        <attvalues>
+          <attvalue for="0" value="pollinator" />
+        </attvalues>
+      </node>
+      <node id="Xanthocolletes sp1 M_PL_001" label="Xanthocolletes sp1 M_PL_001">
+        <attvalues>
+          <attvalue for="0" value="pollinator" />
+        </attvalues>
+      </node>
+      <node id="Adesmia montana" label="Adesmia montana">
+        <attvalues>
+          <attvalue for="0" value="plant" />
+        </attvalues>
+      </node>
+      <node id="Liphanthus sabulosus" label="Liphanthus sabulosus">
+        <attvalues>
+          <attvalue for="0" value="pollinator" />
+        </attvalues>
+      </node>
+      <node id="Adesmia radicifolia" label="Adesmia radicifolia">
+        <attvalues>
+          <attvalue for="0" value="plant" />
+        </attvalues>
+      </node>
+      <node id="Caupolicana dimidiata" label="Caupolicana dimidiata">
+        <attvalues>
+          <attvalue for="0" value="pollinator" />
+        </attvalues>
+      </node>
+      <node id="Alstroemeria pallida" label="Alstroemeria pallida">
+        <attvalues>
+          <attvalue for="0" value="plant" />
+        </attvalues>
+      </node>
+      <node id="Alloscirtetica gayi" label="Alloscirtetica gayi">
+        <attvalues>
+          <attvalue for="0" value="pollinator" />
+        </attvalues>
+      </node>
+      <node id="Anthidium funereum" label="Anthidium funereum">
+        <attvalues>
+          <attvalue for="0" value="pollinator" />
+        </attvalues>
+      </node>
+      <node id="Megachile sp1 M_PL_001" label="Megachile sp1 M_PL_001">
+        <attvalues>
+          <attvalue for="0" value="pollinator" />
+        </attvalues>
+      </node>
+      <node id="Panur sp1 M_PL_001" label="Panur sp1 M_PL_001">
+        <attvalues>
+          <attvalue for="0" value="pollinator" />
+        </attvalues>
+      </node>
+      <node id="Anarthrophyllum cumingii" label="Anarthrophyllum cumingii">
+        <attvalues>
+          <attvalue for="0" value="plant" />
+        </attvalues>
+      </node>
+      <node id="Etcheverrius chilensis" label="Etcheverrius chilensis">
+        <attvalues>
+          <attvalue for="0" value="pollinator" />
+        </attvalues>
+      </node>
+      <node id="Hypodynerus sp2 M_PL_001" label="Hypodynerus sp2 M_PL_001">
+        <attvalues>
+          <attvalue for="0" value="pollinator" />
+        </attvalues>
+      </node>
+      <node id="Yramea lathonoides" label="Yramea lathonoides">
+        <attvalues>
+          <attvalue for="0" value="pollinator" />
+        </attvalues>
+      </node>
+      <node id="Asteriscium aemocarpon" label="Asteriscium aemocarpon">
+        <attvalues>
+          <attvalue for="0" value="plant" />
+        </attvalues>
+      </node>
+      <node id="Villa hypoxantha" label="Villa hypoxantha">
+        <attvalues>
+          <attvalue for="0" value="pollinator" />
+        </attvalues>
+      </node>
+      <node id="Astragalus curvicaulis" label="Astragalus curvicaulis">
+        <attvalues>
+          <attvalue for="0" value="plant" />
+        </attvalues>
+      </node>
+      <node id="Caenohalictus sp1 M_PL_001" label="Caenohalictus sp1 M_PL_001">
+        <attvalues>
+          <attvalue for="0" value="pollinator" />
+        </attvalues>
+      </node>
+      <node id="Colletes fulvipes" label="Colletes fulvipes">
+        <attvalues>
+          <attvalue for="0" value="pollinator" />
+        </attvalues>
+      </node>
+      <node id="Colletes sp1 M_PL_001" label="Colletes sp1 M_PL_001">
+        <attvalues>
+          <attvalue for="0" value="pollinator" />
+        </attvalues>
+      </node>
+      <node id="Unidentified sp3 M_PL_001" label="Unidentified sp3 M_PL_001">
+        <attvalues>
+          <attvalue for="0" value="pollinator" />
+        </attvalues>
+      </node>
+      <node id="Astragalus sp1 M_PL_001" label="Astragalus sp1 M_PL_001">
+        <attvalues>
+          <attvalue for="0" value="plant" />
+        </attvalues>
+      </node>
+      <node id="Hymenoptera sp1 M_PL_001" label="Hymenoptera sp1 M_PL_001">
+        <attvalues>
+          <attvalue for="0" value="pollinator" />
+        </attvalues>
+      </node>
+      <node id="Barneoudia chilensis" label="Barneoudia chilensis">
+        <attvalues>
+          <attvalue for="0" value="plant" />
+        </attvalues>
+      </node>
+      <node id="Berberis empetrifolia" label="Berberis empetrifolia">
+        <attvalues>
+          <attvalue for="0" value="plant" />
+        </attvalues>
+      </node>
+      <node id="Hypodynerus sp1 M_PL_001" label="Hypodynerus sp1 M_PL_001">
+        <attvalues>
+          <attvalue for="0" value="pollinator" />
+        </attvalues>
+      </node>
+      <node id="Unidentified sp5 M_PL_001" label="Unidentified sp5 M_PL_001">
+        <attvalues>
+          <attvalue for="0" value="pollinator" />
+        </attvalues>
+      </node>
+      <node id="Berberis montana" label="Berberis montana">
+        <attvalues>
+          <attvalue for="0" value="plant" />
+        </attvalues>
+      </node>
+      <node id="Bowlesia tropaeolifolia" label="Bowlesia tropaeolifolia">
+        <attvalues>
+          <attvalue for="0" value="plant" />
+        </attvalues>
+      </node>
+      <node id="Calandrinia affinis" label="Calandrinia affinis">
+        <attvalues>
+          <attvalue for="0" value="plant" />
+        </attvalues>
+      </node>
+      <node id="Habromyia lipoflava" label="Habromyia lipoflava">
+        <attvalues>
+          <attvalue for="0" value="pollinator" />
+        </attvalues>
+      </node>
+      <node id="Phulia nymphula" label="Phulia nymphula">
+        <attvalues>
+          <attvalue for="0" value="pollinator" />
+        </attvalues>
+      </node>
+      <node id="Prosopochaeta sp1 M_PL_001" label="Prosopochaeta sp1 M_PL_001">
+        <attvalues>
+          <attvalue for="0" value="pollinator" />
+        </attvalues>
+      </node>
+      <node id="Unidentified sp10 M_PL_001" label="Unidentified sp10 M_PL_001">
+        <attvalues>
+          <attvalue for="0" value="pollinator" />
+        </attvalues>
+      </node>
+      <node id="Unidentified sp11 M_PL_001" label="Unidentified sp11 M_PL_001">
+        <attvalues>
+          <attvalue for="0" value="pollinator" />
+        </attvalues>
+      </node>
+      <node id="Unidentified sp8 M_PL_001" label="Unidentified sp8 M_PL_001">
+        <attvalues>
+          <attvalue for="0" value="pollinator" />
+        </attvalues>
+      </node>
+      <node id="Calandrinia uspallatensis" label="Calandrinia uspallatensis">
+        <attvalues>
+          <attvalue for="0" value="plant" />
+        </attvalues>
+      </node>
+      <node id="Calceolaria arachnoidea" label="Calceolaria arachnoidea">
+        <attvalues>
+          <attvalue for="0" value="plant" />
+        </attvalues>
+      </node>
+      <node id="Centris nigerrima" label="Centris nigerrima">
+        <attvalues>
+          <attvalue for="0" value="pollinator" />
+        </attvalues>
+      </node>
+      <node id="Calceolaria biflora" label="Calceolaria biflora">
+        <attvalues>
+          <attvalue for="0" value="plant" />
+        </attvalues>
+      </node>
+      <node id="Centris sp1 M_PL_001" label="Centris sp1 M_PL_001">
+        <attvalues>
+          <attvalue for="0" value="pollinator" />
+        </attvalues>
+      </node>
+      <node id="Calceolaria indet" label="Calceolaria indet">
+        <attvalues>
+          <attvalue for="0" value="plant" />
+        </attvalues>
+      </node>
+      <node id="Calceolaria montana" label="Calceolaria montana">
+        <attvalues>
+          <attvalue for="0" value="plant" />
+        </attvalues>
+      </node>
+      <node id="Cardamine nivalis" label="Cardamine nivalis">
+        <attvalues>
+          <attvalue for="0" value="plant" />
+        </attvalues>
+      </node>
+      <node id="Cerastium arvense" label="Cerastium arvense">
+        <attvalues>
+          <attvalue for="0" value="plant" />
+        </attvalues>
+      </node>
+      <node id="Coleoptera sp4 M_PL_001" label="Coleoptera sp4 M_PL_001">
+        <attvalues>
+          <attvalue for="0" value="pollinator" />
+        </attvalues>
+      </node>
+      <node id="Unidentified sp13 M_PL_001" label="Unidentified sp13 M_PL_001">
+        <attvalues>
+          <attvalue for="0" value="pollinator" />
+        </attvalues>
+      </node>
+      <node id="Unidentified sp14 M_PL_001" label="Unidentified sp14 M_PL_001">
+        <attvalues>
+          <attvalue for="0" value="pollinator" />
+        </attvalues>
+      </node>
+      <node id="Chaetanthera euphrasioides" label="Chaetanthera euphrasioides">
+        <attvalues>
+          <attvalue for="0" value="plant" />
+        </attvalues>
+      </node>
+      <node id="Lyophlaeba lugubris" label="Lyophlaeba lugubris">
+        <attvalues>
+          <attvalue for="0" value="pollinator" />
+        </attvalues>
+      </node>
+      <node id="Spathipalpus philippii" label="Spathipalpus philippii">
+        <attvalues>
+          <attvalue for="0" value="pollinator" />
+        </attvalues>
+      </node>
+      <node id="Villa arenarus" label="Villa arenarus">
+        <attvalues>
+          <attvalue for="0" value="pollinator" />
+        </attvalues>
+      </node>
+      <node id="Villa flavicura" label="Villa flavicura">
+        <attvalues>
+          <attvalue for="0" value="pollinator" />
+        </attvalues>
+      </node>
+      <node id="Villa gayi" label="Villa gayi">
+        <attvalues>
+          <attvalue for="0" value="pollinator" />
+        </attvalues>
+      </node>
+      <node id="Chaetanthera microphylla" label="Chaetanthera microphylla">
+        <attvalues>
+          <attvalue for="0" value="plant" />
+        </attvalues>
+      </node>
+      <node id="Euryglostromyia philippii" label="Euryglostromyia philippii">
+        <attvalues>
+          <attvalue for="0" value="pollinator" />
+        </attvalues>
+      </node>
+      <node id="Faunula leucoglene" label="Faunula leucoglene">
+        <attvalues>
+          <attvalue for="0" value="pollinator" />
+        </attvalues>
+      </node>
+      <node id="Chuquiraga oppositifolia" label="Chuquiraga oppositifolia">
+        <attvalues>
+          <attvalue for="0" value="plant" />
+        </attvalues>
+      </node>
+      <node id="Bombus dahlbomii" label="Bombus dahlbomii">
+        <attvalues>
+          <attvalue for="0" value="pollinator" />
+        </attvalues>
+      </node>
+      <node id="Clarkia tenella" label="Clarkia tenella">
+        <attvalues>
+          <attvalue for="0" value="plant" />
+        </attvalues>
+      </node>
+      <node id="Collomia biflora" label="Collomia biflora">
+        <attvalues>
+          <attvalue for="0" value="plant" />
+        </attvalues>
+      </node>
+      <node id="Cynoglossum sp1 M_PL_001" label="Cynoglossum sp1 M_PL_001">
+        <attvalues>
+          <attvalue for="0" value="plant" />
+        </attvalues>
+      </node>
+      <node id="Erodium cicutarium" label="Erodium cicutarium">
+        <attvalues>
+          <attvalue for="0" value="plant" />
+        </attvalues>
+      </node>
+      <node id="Euphorbia portulacoides" label="Euphorbia portulacoides">
+        <attvalues>
+          <attvalue for="0" value="plant" />
+        </attvalues>
+      </node>
+      <node id="Unidentified sp16 M_PL_001" label="Unidentified sp16 M_PL_001">
+        <attvalues>
+          <attvalue for="0" value="pollinator" />
+        </attvalues>
+      </node>
+      <node id="Unidentified sp9 M_PL_001" label="Unidentified sp9 M_PL_001">
+        <attvalues>
+          <attvalue for="0" value="pollinator" />
+        </attvalues>
+      </node>
+      <node id="Haplopappus chysanthemifolius" label="Haplopappus chysanthemifolius">
+        <attvalues>
+          <attvalue for="0" value="plant" />
+        </attvalues>
+      </node>
+      <node id="Lepidoptera sp6 M_PL_001" label="Lepidoptera sp6 M_PL_001">
+        <attvalues>
+          <attvalue for="0" value="pollinator" />
+        </attvalues>
+      </node>
+      <node id="Haplopappus sericeus" label="Haplopappus sericeus">
+        <attvalues>
+          <attvalue for="0" value="plant" />
+        </attvalues>
+      </node>
+      <node id="Auca coctei" label="Auca coctei">
+        <attvalues>
+          <attvalue for="0" value="pollinator" />
+        </attvalues>
+      </node>
+      <node id="Hippeastrum uni" label="Hippeastrum uni">
+        <attvalues>
+          <attvalue for="0" value="plant" />
+        </attvalues>
+      </node>
+      <node id="Unidentified sp17 M_PL_001" label="Unidentified sp17 M_PL_001">
+        <attvalues>
+          <attvalue for="0" value="pollinator" />
+        </attvalues>
+      </node>
+      <node id="Hypochoeris sp1 M_PL_001" label="Hypochoeris sp1 M_PL_001">
+        <attvalues>
+          <attvalue for="0" value="plant" />
+        </attvalues>
+      </node>
+      <node id="Ruizantheda mutabilis" label="Ruizantheda mutabilis">
+        <attvalues>
+          <attvalue for="0" value="pollinator" />
+        </attvalues>
+      </node>
+      <node id="Tatochila mercedis" label="Tatochila mercedis">
+        <attvalues>
+          <attvalue for="0" value="pollinator" />
+        </attvalues>
+      </node>
+      <node id="Unidentified sp18 M_PL_001" label="Unidentified sp18 M_PL_001">
+        <attvalues>
+          <attvalue for="0" value="pollinator" />
+        </attvalues>
+      </node>
+      <node id="Lathyrus subandinus" label="Lathyrus subandinus">
+        <attvalues>
+          <attvalue for="0" value="plant" />
+        </attvalues>
+      </node>
+      <node id="Lepidium suffruticosum" label="Lepidium suffruticosum">
+        <attvalues>
+          <attvalue for="0" value="plant" />
+        </attvalues>
+      </node>
+      <node id="Ruiziella luctuosa" label="Ruiziella luctuosa">
+        <attvalues>
+          <attvalue for="0" value="pollinator" />
+        </attvalues>
+      </node>
+      <node id="Leuceria landbeckii" label="Leuceria landbeckii">
+        <attvalues>
+          <attvalue for="0" value="plant" />
+        </attvalues>
+      </node>
+      <node id="Leucocoryne ixioides" label="Leucocoryne ixioides">
+        <attvalues>
+          <attvalue for="0" value="plant" />
+        </attvalues>
+      </node>
+      <node id="Leucocoryne pauciflora" label="Leucocoryne pauciflora">
+        <attvalues>
+          <attvalue for="0" value="plant" />
+        </attvalues>
+      </node>
+      <node id="Loasa heterophylla" label="Loasa heterophylla">
+        <attvalues>
+          <attvalue for="0" value="plant" />
+        </attvalues>
+      </node>
+      <node id="Loasa sigmoidea" label="Loasa sigmoidea">
+        <attvalues>
+          <attvalue for="0" value="plant" />
+        </attvalues>
+      </node>
+      <node id="Lupinus microcarpus" label="Lupinus microcarpus">
+        <attvalues>
+          <attvalue for="0" value="plant" />
+        </attvalues>
+      </node>
+      <node id="Madia sativa" label="Madia sativa">
+        <attvalues>
+          <attvalue for="0" value="plant" />
+        </attvalues>
+      </node>
+      <node id="Corynurus sp1 M_PL_001" label="Corynurus sp1 M_PL_001">
+        <attvalues>
+          <attvalue for="0" value="pollinator" />
+        </attvalues>
+      </node>
+      <node id="Dialictus sp1 M_PL_001" label="Dialictus sp1 M_PL_001">
+        <attvalues>
+          <attvalue for="0" value="pollinator" />
+        </attvalues>
+      </node>
+      <node id="Hemicolletes ruizii" label="Hemicolletes ruizii">
+        <attvalues>
+          <attvalue for="0" value="pollinator" />
+        </attvalues>
+      </node>
+      <node id="Unidentified sp7 M_PL_001" label="Unidentified sp7 M_PL_001">
+        <attvalues>
+          <attvalue for="0" value="pollinator" />
+        </attvalues>
+      </node>
+      <node id="Malesherbia linearifolius" label="Malesherbia linearifolius">
+        <attvalues>
+          <attvalue for="0" value="plant" />
+        </attvalues>
+      </node>
+      <node id="Mulinum spinosum" label="Mulinum spinosum">
+        <attvalues>
+          <attvalue for="0" value="plant" />
+        </attvalues>
+      </node>
+      <node id="Villa guttapennis" label="Villa guttapennis">
+        <attvalues>
+          <attvalue for="0" value="pollinator" />
+        </attvalues>
+      </node>
+      <node id="Villa verdensis" label="Villa verdensis">
+        <attvalues>
+          <attvalue for="0" value="pollinator" />
+        </attvalues>
+      </node>
+      <node id="Mustisia acerosa" label="Mustisia acerosa">
+        <attvalues>
+          <attvalue for="0" value="plant" />
+        </attvalues>
+      </node>
+      <node id="Mustisia sinuata" label="Mustisia sinuata">
+        <attvalues>
+          <attvalue for="0" value="plant" />
+        </attvalues>
+      </node>
+      <node id="Isepeolus niveiventris" label="Isepeolus niveiventris">
+        <attvalues>
+          <attvalue for="0" value="pollinator" />
+        </attvalues>
+      </node>
+      <node id="Mustisia subulata" label="Mustisia subulata">
+        <attvalues>
+          <attvalue for="0" value="plant" />
+        </attvalues>
+      </node>
+      <node id="Nardophyllum lanatum" label="Nardophyllum lanatum">
+        <attvalues>
+          <attvalue for="0" value="plant" />
+        </attvalues>
+      </node>
+      <node id="Nassauvia heterophylla" label="Nassauvia heterophylla">
+        <attvalues>
+          <attvalue for="0" value="plant" />
+        </attvalues>
+      </node>
+      <node id="Dasybasis sp1 M_PL_001" label="Dasybasis sp1 M_PL_001">
+        <attvalues>
+          <attvalue for="0" value="pollinator" />
+        </attvalues>
+      </node>
+      <node id="Vibrissomyia sp1 M_PL_001" label="Vibrissomyia sp1 M_PL_001">
+        <attvalues>
+          <attvalue for="0" value="pollinator" />
+        </attvalues>
+      </node>
+      <node id="Nothoscordum andinum" label="Nothoscordum andinum">
+        <attvalues>
+          <attvalue for="0" value="plant" />
+        </attvalues>
+      </node>
+      <node id="Oenothera acaulis" label="Oenothera acaulis">
+        <attvalues>
+          <attvalue for="0" value="plant" />
+        </attvalues>
+      </node>
+      <node id="Oxalis cinerea" label="Oxalis cinerea">
+        <attvalues>
+          <attvalue for="0" value="plant" />
+        </attvalues>
+      </node>
+      <node id="Oxalis geminata" label="Oxalis geminata">
+        <attvalues>
+          <attvalue for="0" value="plant" />
+        </attvalues>
+      </node>
+      <node id="Unidentified sp15 M_PL_001" label="Unidentified sp15 M_PL_001">
+        <attvalues>
+          <attvalue for="0" value="pollinator" />
+        </attvalues>
+      </node>
+      <node id="Oxalis sp1 M_PL_001" label="Oxalis sp1 M_PL_001">
+        <attvalues>
+          <attvalue for="0" value="plant" />
+        </attvalues>
+      </node>
+      <node id="Perezia carthamoides" label="Perezia carthamoides">
+        <attvalues>
+          <attvalue for="0" value="plant" />
+        </attvalues>
+      </node>
+      <node id="Truphloechus bellus" label="Truphloechus bellus">
+        <attvalues>
+          <attvalue for="0" value="pollinator" />
+        </attvalues>
+      </node>
+      <node id="Phacelia secunda" label="Phacelia secunda">
+        <attvalues>
+          <attvalue for="0" value="plant" />
+        </attvalues>
+      </node>
+      <node id="Anthidium adriani" label="Anthidium adriani">
+        <attvalues>
+          <attvalue for="0" value="pollinator" />
+        </attvalues>
+      </node>
+      <node id="Anthophora incerta" label="Anthophora incerta">
+        <attvalues>
+          <attvalue for="0" value="pollinator" />
+        </attvalues>
+      </node>
+      <node id="Anthophora sp1 M_PL_001" label="Anthophora sp1 M_PL_001">
+        <attvalues>
+          <attvalue for="0" value="pollinator" />
+        </attvalues>
+      </node>
+      <node id="Colletes aruacariae" label="Colletes aruacariae">
+        <attvalues>
+          <attvalue for="0" value="pollinator" />
+        </attvalues>
+      </node>
+      <node id="Hypodynerus sp3 M_PL_001" label="Hypodynerus sp3 M_PL_001">
+        <attvalues>
+          <attvalue for="0" value="pollinator" />
+        </attvalues>
+      </node>
+      <node id="Scaptia atra" label="Scaptia atra">
+        <attvalues>
+          <attvalue for="0" value="pollinator" />
+        </attvalues>
+      </node>
+      <node id="Svastrides melanura" label="Svastrides melanura">
+        <attvalues>
+          <attvalue for="0" value="pollinator" />
+        </attvalues>
+      </node>
+      <node id="Quinchamalium chilensis" label="Quinchamalium chilensis">
+        <attvalues>
+          <attvalue for="0" value="plant" />
+        </attvalues>
+      </node>
+      <node id="Rhodophiala montana" label="Rhodophiala montana">
+        <attvalues>
+          <attvalue for="0" value="plant" />
+        </attvalues>
+      </node>
+      <node id="Salpiglossus sp1 M_PL_001" label="Salpiglossus sp1 M_PL_001">
+        <attvalues>
+          <attvalue for="0" value="plant" />
+        </attvalues>
+      </node>
+      <node id="Sanicula graveolens" label="Sanicula graveolens">
+        <attvalues>
+          <attvalue for="0" value="plant" />
+        </attvalues>
+      </node>
+      <node id="Prosopochaeta caliginosa" label="Prosopochaeta caliginosa">
+        <attvalues>
+          <attvalue for="0" value="pollinator" />
+        </attvalues>
+      </node>
+      <node id="Schizanthus grahamii" label="Schizanthus grahamii">
+        <attvalues>
+          <attvalue for="0" value="plant" />
+        </attvalues>
+      </node>
+      <node id="Scypanthus elegans" label="Scypanthus elegans">
+        <attvalues>
+          <attvalue for="0" value="plant" />
+        </attvalues>
+      </node>
+      <node id="Coelioxys sp1 M_PL_001" label="Coelioxys sp1 M_PL_001">
+        <attvalues>
+          <attvalue for="0" value="pollinator" />
+        </attvalues>
+      </node>
+      <node id="Senecio bustillosianus" label="Senecio bustillosianus">
+        <attvalues>
+          <attvalue for="0" value="plant" />
+        </attvalues>
+      </node>
+      <node id="Eristalis tenax" label="Eristalis tenax">
+        <attvalues>
+          <attvalue for="0" value="pollinator" />
+        </attvalues>
+      </node>
+      <node id="Senecio erucaeformis" label="Senecio erucaeformis">
+        <attvalues>
+          <attvalue for="0" value="plant" />
+        </attvalues>
+      </node>
+      <node id="Andinus venustus" label="Andinus venustus">
+        <attvalues>
+          <attvalue for="0" value="pollinator" />
+        </attvalues>
+      </node>
+      <node id="Chilicola sp1 M_PL_001" label="Chilicola sp1 M_PL_001">
+        <attvalues>
+          <attvalue for="0" value="pollinator" />
+        </attvalues>
+      </node>
+      <node id="Tatochila sp1 M_PL_001" label="Tatochila sp1 M_PL_001">
+        <attvalues>
+          <attvalue for="0" value="pollinator" />
+        </attvalues>
+      </node>
+      <node id="Senecio francisci" label="Senecio francisci">
+        <attvalues>
+          <attvalue for="0" value="plant" />
+        </attvalues>
+      </node>
+      <node id="Hypsochila wagenknechti" label="Hypsochila wagenknechti">
+        <attvalues>
+          <attvalue for="0" value="pollinator" />
+        </attvalues>
+      </node>
+      <node id="Senecio lithostaurus" label="Senecio lithostaurus">
+        <attvalues>
+          <attvalue for="0" value="plant" />
+        </attvalues>
+      </node>
+      <node id="Sisyrinchium arenarium" label="Sisyrinchium arenarium">
+        <attvalues>
+          <attvalue for="0" value="plant" />
+        </attvalues>
+      </node>
+      <node id="Caenohalictus sp2 M_PL_001" label="Caenohalictus sp2 M_PL_001">
+        <attvalues>
+          <attvalue for="0" value="pollinator" />
+        </attvalues>
+      </node>
+      <node id="Caenohalictus sp3 M_PL_001" label="Caenohalictus sp3 M_PL_001">
+        <attvalues>
+          <attvalue for="0" value="pollinator" />
+        </attvalues>
+      </node>
+      <node id="Tapinotaspis caerulea" label="Tapinotaspis caerulea">
+        <attvalues>
+          <attvalue for="0" value="pollinator" />
+        </attvalues>
+      </node>
+      <node id="Tapinotaspis herbsti" label="Tapinotaspis herbsti">
+        <attvalues>
+          <attvalue for="0" value="pollinator" />
+        </attvalues>
+      </node>
+      <node id="Sisyrinchium junceum" label="Sisyrinchium junceum">
+        <attvalues>
+          <attvalue for="0" value="plant" />
+        </attvalues>
+      </node>
+      <node id="Elaphroptera relicta" label="Elaphroptera relicta">
+        <attvalues>
+          <attvalue for="0" value="pollinator" />
+        </attvalues>
+      </node>
+      <node id="Sisyrinchium philippii" label="Sisyrinchium philippii">
+        <attvalues>
+          <attvalue for="0" value="plant" />
+        </attvalues>
+      </node>
+      <node id="Solanum tomatillo" label="Solanum tomatillo">
+        <attvalues>
+          <attvalue for="0" value="plant" />
+        </attvalues>
+      </node>
+      <node id="Solenomelus sisyrinchium" label="Solenomelus sisyrinchium">
+        <attvalues>
+          <attvalue for="0" value="plant" />
+        </attvalues>
+      </node>
+      <node id="Stachys albi" label="Stachys albi">
+        <attvalues>
+          <attvalue for="0" value="plant" />
+        </attvalues>
+      </node>
+      <node id="Tetraglochin alatum" label="Tetraglochin alatum">
+        <attvalues>
+          <attvalue for="0" value="plant" />
+        </attvalues>
+      </node>
+      <node id="Trichocereus chiloensis" label="Trichocereus chiloensis">
+        <attvalues>
+          <attvalue for="0" value="plant" />
+        </attvalues>
+      </node>
+      <node id="Liphanthus sp1 M_PL_001" label="Liphanthus sp1 M_PL_001">
+        <attvalues>
+          <attvalue for="0" value="pollinator" />
+        </attvalues>
+      </node>
+      <node id="Liphanthus sp2 M_PL_001" label="Liphanthus sp2 M_PL_001">
+        <attvalues>
+          <attvalue for="0" value="pollinator" />
+        </attvalues>
+      </node>
+      <node id="Tristagma sessile" label="Tristagma sessile">
+        <attvalues>
+          <attvalue for="0" value="plant" />
+        </attvalues>
+      </node>
+      <node id="Tropaeolum polyph" label="Tropaeolum polyph">
+        <attvalues>
+          <attvalue for="0" value="plant" />
+        </attvalues>
+      </node>
+      <node id="Tropaeolum sessilifolium" label="Tropaeolum sessilifolium">
+        <attvalues>
+          <attvalue for="0" value="plant" />
+        </attvalues>
+      </node>
+      <node id="Tropaeolum tricolor" label="Tropaeolum tricolor">
+        <attvalues>
+          <attvalue for="0" value="plant" />
+        </attvalues>
+      </node>
+      <node id="Valeriana gracileps" label="Valeriana gracileps">
+        <attvalues>
+          <attvalue for="0" value="plant" />
+        </attvalues>
+      </node>
+      <node id="Unidentified sp12 M_PL_001" label="Unidentified sp12 M_PL_001">
+        <attvalues>
+          <attvalue for="0" value="pollinator" />
+        </attvalues>
+      </node>
+      <node id="Verbena scoparia" label="Verbena scoparia">
+        <attvalues>
+          <attvalue for="0" value="plant" />
+        </attvalues>
+      </node>
+      <node id="Chaetodemoticus chilensis" label="Chaetodemoticus chilensis">
+        <attvalues>
+          <attvalue for="0" value="pollinator" />
+        </attvalues>
+      </node>
+      <node id="Villa durvillei" label="Villa durvillei">
+        <attvalues>
+          <attvalue for="0" value="pollinator" />
+        </attvalues>
+      </node>
+      <node id="Viviania marifolia" label="Viviania marifolia">
+        <attvalues>
+          <attvalue for="0" value="plant" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="Acaena pinn" target="Scaeva melanostoma" id="0" />
+      <edge source="Scaeva melanostoma" target="Adesmia aconcaguensis" id="1" />
+      <edge source="Scaeva melanostoma" target="Adesmia brachy" id="2" />
+      <edge source="Scaeva melanostoma" target="Adesmia conferta" id="3" />
+      <edge source="Scaeva melanostoma" target="Adesmia radicifolia" id="4" />
+      <edge source="Scaeva melanostoma" target="Berberis empetrifolia" id="5" />
+      <edge source="Scaeva melanostoma" target="Bowlesia tropaeolifolia" id="6" />
+      <edge source="Scaeva melanostoma" target="Calandrinia affinis" id="7" />
+      <edge source="Scaeva melanostoma" target="Calandrinia uspallatensis" id="8" />
+      <edge source="Scaeva melanostoma" target="Cerastium arvense" id="9" />
+      <edge source="Scaeva melanostoma" target="Chaetanthera euphrasioides" id="10" />
+      <edge source="Scaeva melanostoma" target="Chaetanthera microphylla" id="11" />
+      <edge source="Scaeva melanostoma" target="Chuquiraga oppositifolia" id="12" />
+      <edge source="Scaeva melanostoma" target="Erodium cicutarium" id="13" />
+      <edge source="Scaeva melanostoma" target="Euphorbia portulacoides" id="14" />
+      <edge source="Scaeva melanostoma" target="Haplopappus chysanthemifolius" id="15" />
+      <edge source="Scaeva melanostoma" target="Haplopappus sericeus" id="16" />
+      <edge source="Scaeva melanostoma" target="Hypochoeris sp1 M_PL_001" id="17" />
+      <edge source="Scaeva melanostoma" target="Leuceria landbeckii" id="18" />
+      <edge source="Scaeva melanostoma" target="Leucocoryne pauciflora" id="19" />
+      <edge source="Scaeva melanostoma" target="Mulinum spinosum" id="20" />
+      <edge source="Scaeva melanostoma" target="Mustisia sinuata" id="21" />
+      <edge source="Scaeva melanostoma" target="Oxalis cinerea" id="22" />
+      <edge source="Scaeva melanostoma" target="Phacelia secunda" id="23" />
+      <edge source="Scaeva melanostoma" target="Quinchamalium chilensis" id="24" />
+      <edge source="Scaeva melanostoma" target="Rhodophiala montana" id="25" />
+      <edge source="Scaeva melanostoma" target="Sanicula graveolens" id="26" />
+      <edge source="Scaeva melanostoma" target="Senecio bustillosianus" id="27" />
+      <edge source="Scaeva melanostoma" target="Senecio lithostaurus" id="28" />
+      <edge source="Scaeva melanostoma" target="Sisyrinchium philippii" id="29" />
+      <edge source="Scaeva melanostoma" target="Stachys albi" id="30" />
+      <edge source="Scaeva melanostoma" target="Tetraglochin alatum" id="31" />
+      <edge source="Scaeva melanostoma" target="Tristagma sessile" id="32" />
+      <edge source="Scaeva melanostoma" target="Valeriana gracileps" id="33" />
+      <edge source="Adesmia aconcaguensis" target="Chilimelissa sp1 M_PL_001" id="34" />
+      <edge source="Adesmia aconcaguensis" target="Diptera sp2 M_PL_001" id="35" />
+      <edge source="Adesmia aconcaguensis" target="Villa semifuscata" id="36" />
+      <edge source="Adesmia aconcaguensis" target="Villa sp1 M_PL_001" id="37" />
+      <edge source="Adesmia aconcaguensis" target="Xanthocolletes sicheli" id="38" />
+      <edge source="Diptera sp2 M_PL_001" target="Asteriscium aemocarpon" id="39" />
+      <edge source="Diptera sp2 M_PL_001" target="Barneoudia chilensis" id="40" />
+      <edge source="Diptera sp2 M_PL_001" target="Berberis montana" id="41" />
+      <edge source="Diptera sp2 M_PL_001" target="Bowlesia tropaeolifolia" id="42" />
+      <edge source="Diptera sp2 M_PL_001" target="Calandrinia affinis" id="43" />
+      <edge source="Diptera sp2 M_PL_001" target="Calandrinia uspallatensis" id="44" />
+      <edge source="Diptera sp2 M_PL_001" target="Cardamine nivalis" id="45" />
+      <edge source="Diptera sp2 M_PL_001" target="Cerastium arvense" id="46" />
+      <edge source="Diptera sp2 M_PL_001" target="Erodium cicutarium" id="47" />
+      <edge source="Diptera sp2 M_PL_001" target="Euphorbia portulacoides" id="48" />
+      <edge source="Diptera sp2 M_PL_001" target="Mulinum spinosum" id="49" />
+      <edge source="Diptera sp2 M_PL_001" target="Nardophyllum lanatum" id="50" />
+      <edge source="Diptera sp2 M_PL_001" target="Oxalis sp1 M_PL_001" id="51" />
+      <edge source="Diptera sp2 M_PL_001" target="Quinchamalium chilensis" id="52" />
+      <edge source="Diptera sp2 M_PL_001" target="Sanicula graveolens" id="53" />
+      <edge source="Diptera sp2 M_PL_001" target="Senecio bustillosianus" id="54" />
+      <edge source="Diptera sp2 M_PL_001" target="Senecio erucaeformis" id="55" />
+      <edge source="Diptera sp2 M_PL_001" target="Valeriana gracileps" id="56" />
+      <edge source="Diptera sp2 M_PL_001" target="Verbena scoparia" id="57" />
+      <edge source="Diptera sp2 M_PL_001" target="Viviania marifolia" id="58" />
+      <edge source="Villa semifuscata" target="Chaetanthera euphrasioides" id="59" />
+      <edge source="Villa semifuscata" target="Chuquiraga oppositifolia" id="60" />
+      <edge source="Villa sp1 M_PL_001" target="Calandrinia uspallatensis" id="61" />
+      <edge source="Villa sp1 M_PL_001" target="Chaetanthera euphrasioides" id="62" />
+      <edge source="Villa sp1 M_PL_001" target="Hypochoeris sp1 M_PL_001" id="63" />
+      <edge source="Villa sp1 M_PL_001" target="Mulinum spinosum" id="64" />
+      <edge source="Villa sp1 M_PL_001" target="Nassauvia heterophylla" id="65" />
+      <edge source="Villa sp1 M_PL_001" target="Senecio bustillosianus" id="66" />
+      <edge source="Villa sp1 M_PL_001" target="Verbena scoparia" id="67" />
+      <edge source="Xanthocolletes sicheli" target="Adesmia brachy" id="68" />
+      <edge source="Xanthocolletes sicheli" target="Adesmia exilis" id="69" />
+      <edge source="Xanthocolletes sicheli" target="Adesmia radicifolia" id="70" />
+      <edge source="Adesmia brachy" target="Anthidium decapsilum" id="71" />
+      <edge source="Adesmia brachy" target="Centris cineraria" id="72" />
+      <edge source="Adesmia brachy" target="Megachile semirufa" id="73" />
+      <edge source="Anthidium decapsilum" target="Adesmia conferta" id="74" />
+      <edge source="Anthidium decapsilum" target="Adesmia radicifolia" id="75" />
+      <edge source="Anthidium decapsilum" target="Phacelia secunda" id="76" />
+      <edge source="Centris cineraria" target="Adesmia conferta" id="77" />
+      <edge source="Centris cineraria" target="Adesmia radicifolia" id="78" />
+      <edge source="Centris cineraria" target="Anarthrophyllum cumingii" id="79" />
+      <edge source="Centris cineraria" target="Astragalus curvicaulis" id="80" />
+      <edge source="Centris cineraria" target="Hypochoeris sp1 M_PL_001" id="81" />
+      <edge source="Centris cineraria" target="Lathyrus subandinus" id="82" />
+      <edge source="Centris cineraria" target="Madia sativa" id="83" />
+      <edge source="Centris cineraria" target="Phacelia secunda" id="84" />
+      <edge source="Centris cineraria" target="Schizanthus grahamii" id="85" />
+      <edge source="Centris cineraria" target="Senecio bustillosianus" id="86" />
+      <edge source="Centris cineraria" target="Sisyrinchium philippii" id="87" />
+      <edge source="Centris cineraria" target="Stachys albi" id="88" />
+      <edge source="Megachile semirufa" target="Adesmia radicifolia" id="89" />
+      <edge source="Megachile semirufa" target="Astragalus curvicaulis" id="90" />
+      <edge source="Megachile semirufa" target="Calandrinia uspallatensis" id="91" />
+      <edge source="Megachile semirufa" target="Haplopappus sericeus" id="92" />
+      <edge source="Megachile semirufa" target="Loasa heterophylla" id="93" />
+      <edge source="Megachile semirufa" target="Mustisia sinuata" id="94" />
+      <edge source="Megachile semirufa" target="Phacelia secunda" id="95" />
+      <edge source="Megachile semirufa" target="Schizanthus grahamii" id="96" />
+      <edge source="Megachile semirufa" target="Scypanthus elegans" id="97" />
+      <edge source="Megachile semirufa" target="Senecio bustillosianus" id="98" />
+      <edge source="Megachile semirufa" target="Senecio erucaeformis" id="99" />
+      <edge source="Megachile semirufa" target="Senecio francisci" id="100" />
+      <edge source="Megachile semirufa" target="Stachys albi" id="101" />
+      <edge source="Megachile semirufa" target="Tropaeolum polyph" id="102" />
+      <edge source="Adesmia conferta" target="Alloscirtetica rufitarsis" id="103" />
+      <edge source="Adesmia conferta" target="Alloscirtetica sp1 M_PL_001" id="104" />
+      <edge source="Adesmia conferta" target="Anthidium chilensis" id="105" />
+      <edge source="Adesmia conferta" target="Anthidium gayi" id="106" />
+      <edge source="Adesmia conferta" target="Cadeguala occidentalis" id="107" />
+      <edge source="Adesmia conferta" target="Chilicola sp2 M_PL_001" id="108" />
+      <edge source="Adesmia conferta" target="Lithurgomma wagenknechti" id="109" />
+      <edge source="Adesmia conferta" target="Megachile sp2 M_PL_001" id="110" />
+      <edge source="Adesmia conferta" target="Mesonychium gayi" id="111" />
+      <edge source="Adesmia conferta" target="Pseudolucia chilensis" id="112" />
+      <edge source="Alloscirtetica rufitarsis" target="Phacelia secunda" id="113" />
+      <edge source="Alloscirtetica rufitarsis" target="Stachys albi" id="114" />
+      <edge source="Alloscirtetica sp1 M_PL_001" target="Adesmia radicifolia" id="115" />
+      <edge source="Alloscirtetica sp1 M_PL_001" target="Alstroemeria pallida" id="116" />
+      <edge source="Alloscirtetica sp1 M_PL_001" target="Astragalus curvicaulis" id="117" />
+      <edge source="Alloscirtetica sp1 M_PL_001" target="Astragalus sp1 M_PL_001" id="118" />
+      <edge source="Alloscirtetica sp1 M_PL_001" target="Phacelia secunda" id="119" />
+      <edge source="Alloscirtetica sp1 M_PL_001" target="Scypanthus elegans" id="120" />
+      <edge source="Alloscirtetica sp1 M_PL_001" target="Senecio lithostaurus" id="121" />
+      <edge source="Alloscirtetica sp1 M_PL_001" target="Stachys albi" id="122" />
+      <edge source="Anthidium chilensis" target="Calandrinia uspallatensis" id="123" />
+      <edge source="Anthidium chilensis" target="Loasa heterophylla" id="124" />
+      <edge source="Anthidium chilensis" target="Mustisia subulata" id="125" />
+      <edge source="Anthidium chilensis" target="Phacelia secunda" id="126" />
+      <edge source="Anthidium chilensis" target="Scypanthus elegans" id="127" />
+      <edge source="Anthidium chilensis" target="Senecio bustillosianus" id="128" />
+      <edge source="Anthidium chilensis" target="Sisyrinchium arenarium" id="129" />
+      <edge source="Anthidium gayi" target="Astragalus curvicaulis" id="130" />
+      <edge source="Anthidium gayi" target="Astragalus sp1 M_PL_001" id="131" />
+      <edge source="Anthidium gayi" target="Phacelia secunda" id="132" />
+      <edge source="Anthidium gayi" target="Stachys albi" id="133" />
+      <edge source="Cadeguala occidentalis" target="Adesmia radicifolia" id="134" />
+      <edge source="Cadeguala occidentalis" target="Phacelia secunda" id="135" />
+      <edge source="Cadeguala occidentalis" target="Stachys albi" id="136" />
+      <edge source="Lithurgomma wagenknechti" target="Phacelia secunda" id="137" />
+      <edge source="Megachile sp2 M_PL_001" target="Astragalus sp1 M_PL_001" id="138" />
+      <edge source="Megachile sp2 M_PL_001" target="Calceolaria montana" id="139" />
+      <edge source="Megachile sp2 M_PL_001" target="Phacelia secunda" id="140" />
+      <edge source="Megachile sp2 M_PL_001" target="Scypanthus elegans" id="141" />
+      <edge source="Megachile sp2 M_PL_001" target="Sisyrinchium arenarium" id="142" />
+      <edge source="Megachile sp2 M_PL_001" target="Stachys albi" id="143" />
+      <edge source="Mesonychium gayi" target="Astragalus curvicaulis" id="144" />
+      <edge source="Pseudolucia chilensis" target="Astragalus sp1 M_PL_001" id="145" />
+      <edge source="Adesmia exilis" target="Xanthocolletes incahuasi" id="146" />
+      <edge source="Adesmia exilis" target="Xanthocolletes sp1 M_PL_001" id="147" />
+      <edge source="Xanthocolletes incahuasi" target="Adesmia radicifolia" id="148" />
+      <edge source="Adesmia montana" target="Liphanthus sabulosus" id="149" />
+      <edge source="Liphanthus sabulosus" target="Calandrinia uspallatensis" id="150" />
+      <edge source="Adesmia radicifolia" target="Caupolicana dimidiata" id="151" />
+      <edge source="Alstroemeria pallida" target="Alloscirtetica gayi" id="152" />
+      <edge source="Alstroemeria pallida" target="Anthidium funereum" id="153" />
+      <edge source="Alstroemeria pallida" target="Megachile sp1 M_PL_001" id="154" />
+      <edge source="Alstroemeria pallida" target="Panur sp1 M_PL_001" id="155" />
+      <edge source="Alloscirtetica gayi" target="Stachys albi" id="156" />
+      <edge source="Anthidium funereum" target="Chuquiraga oppositifolia" id="157" />
+      <edge source="Anthidium funereum" target="Scypanthus elegans" id="158" />
+      <edge source="Anthidium funereum" target="Senecio bustillosianus" id="159" />
+      <edge source="Anthidium funereum" target="Senecio erucaeformis" id="160" />
+      <edge source="Anthidium funereum" target="Senecio francisci" id="161" />
+      <edge source="Megachile sp1 M_PL_001" target="Astragalus curvicaulis" id="162" />
+      <edge source="Megachile sp1 M_PL_001" target="Chuquiraga oppositifolia" id="163" />
+      <edge source="Megachile sp1 M_PL_001" target="Cynoglossum sp1 M_PL_001" id="164" />
+      <edge source="Megachile sp1 M_PL_001" target="Leuceria landbeckii" id="165" />
+      <edge source="Megachile sp1 M_PL_001" target="Loasa heterophylla" id="166" />
+      <edge source="Megachile sp1 M_PL_001" target="Mustisia sinuata" id="167" />
+      <edge source="Megachile sp1 M_PL_001" target="Phacelia secunda" id="168" />
+      <edge source="Megachile sp1 M_PL_001" target="Scypanthus elegans" id="169" />
+      <edge source="Megachile sp1 M_PL_001" target="Senecio bustillosianus" id="170" />
+      <edge source="Megachile sp1 M_PL_001" target="Senecio erucaeformis" id="171" />
+      <edge source="Megachile sp1 M_PL_001" target="Stachys albi" id="172" />
+      <edge source="Megachile sp1 M_PL_001" target="Tropaeolum sessilifolium" id="173" />
+      <edge source="Panur sp1 M_PL_001" target="Berberis empetrifolia" id="174" />
+      <edge source="Panur sp1 M_PL_001" target="Haplopappus sericeus" id="175" />
+      <edge source="Panur sp1 M_PL_001" target="Mulinum spinosum" id="176" />
+      <edge source="Panur sp1 M_PL_001" target="Senecio bustillosianus" id="177" />
+      <edge source="Panur sp1 M_PL_001" target="Senecio erucaeformis" id="178" />
+      <edge source="Panur sp1 M_PL_001" target="Senecio francisci" id="179" />
+      <edge source="Anarthrophyllum cumingii" target="Etcheverrius chilensis" id="180" />
+      <edge source="Anarthrophyllum cumingii" target="Hypodynerus sp2 M_PL_001" id="181" />
+      <edge source="Anarthrophyllum cumingii" target="Yramea lathonoides" id="182" />
+      <edge source="Etcheverrius chilensis" target="Haplopappus sericeus" id="183" />
+      <edge source="Etcheverrius chilensis" target="Mustisia acerosa" id="184" />
+      <edge source="Etcheverrius chilensis" target="Mustisia sinuata" id="185" />
+      <edge source="Etcheverrius chilensis" target="Mustisia subulata" id="186" />
+      <edge source="Etcheverrius chilensis" target="Perezia carthamoides" id="187" />
+      <edge source="Etcheverrius chilensis" target="Senecio bustillosianus" id="188" />
+      <edge source="Etcheverrius chilensis" target="Senecio erucaeformis" id="189" />
+      <edge source="Hypodynerus sp2 M_PL_001" target="Calandrinia affinis" id="190" />
+      <edge source="Yramea lathonoides" target="Collomia biflora" id="191" />
+      <edge source="Yramea lathonoides" target="Haplopappus sericeus" id="192" />
+      <edge source="Asteriscium aemocarpon" target="Villa hypoxantha" id="193" />
+      <edge source="Villa hypoxantha" target="Calandrinia affinis" id="194" />
+      <edge source="Villa hypoxantha" target="Chaetanthera euphrasioides" id="195" />
+      <edge source="Villa hypoxantha" target="Mulinum spinosum" id="196" />
+      <edge source="Villa hypoxantha" target="Quinchamalium chilensis" id="197" />
+      <edge source="Astragalus curvicaulis" target="Caenohalictus sp1 M_PL_001" id="198" />
+      <edge source="Astragalus curvicaulis" target="Colletes fulvipes" id="199" />
+      <edge source="Astragalus curvicaulis" target="Colletes sp1 M_PL_001" id="200" />
+      <edge source="Astragalus curvicaulis" target="Unidentified sp3 M_PL_001" id="201" />
+      <edge source="Caenohalictus sp1 M_PL_001" target="Berberis empetrifolia" id="202" />
+      <edge source="Caenohalictus sp1 M_PL_001" target="Calandrinia affinis" id="203" />
+      <edge source="Caenohalictus sp1 M_PL_001" target="Chaetanthera euphrasioides" id="204" />
+      <edge source="Caenohalictus sp1 M_PL_001" target="Leucocoryne pauciflora" id="205" />
+      <edge source="Caenohalictus sp1 M_PL_001" target="Phacelia secunda" id="206" />
+      <edge source="Caenohalictus sp1 M_PL_001" target="Rhodophiala montana" id="207" />
+      <edge source="Caenohalictus sp1 M_PL_001" target="Senecio erucaeformis" id="208" />
+      <edge source="Caenohalictus sp1 M_PL_001" target="Sisyrinchium arenarium" id="209" />
+      <edge source="Caenohalictus sp1 M_PL_001" target="Sisyrinchium junceum" id="210" />
+      <edge source="Caenohalictus sp1 M_PL_001" target="Sisyrinchium philippii" id="211" />
+      <edge source="Unidentified sp3 M_PL_001" target="Berberis empetrifolia" id="212" />
+      <edge source="Unidentified sp3 M_PL_001" target="Bowlesia tropaeolifolia" id="213" />
+      <edge source="Unidentified sp3 M_PL_001" target="Calandrinia affinis" id="214" />
+      <edge source="Unidentified sp3 M_PL_001" target="Leucocoryne pauciflora" id="215" />
+      <edge source="Unidentified sp3 M_PL_001" target="Senecio bustillosianus" id="216" />
+      <edge source="Unidentified sp3 M_PL_001" target="Sisyrinchium junceum" id="217" />
+      <edge source="Astragalus sp1 M_PL_001" target="Hymenoptera sp1 M_PL_001" id="218" />
+      <edge source="Hymenoptera sp1 M_PL_001" target="Berberis montana" id="219" />
+      <edge source="Hymenoptera sp1 M_PL_001" target="Calandrinia affinis" id="220" />
+      <edge source="Hymenoptera sp1 M_PL_001" target="Calceolaria indet" id="221" />
+      <edge source="Hymenoptera sp1 M_PL_001" target="Calceolaria montana" id="222" />
+      <edge source="Hymenoptera sp1 M_PL_001" target="Clarkia tenella" id="223" />
+      <edge source="Hymenoptera sp1 M_PL_001" target="Haplopappus chysanthemifolius" id="224" />
+      <edge source="Hymenoptera sp1 M_PL_001" target="Loasa sigmoidea" id="225" />
+      <edge source="Hymenoptera sp1 M_PL_001" target="Lupinus microcarpus" id="226" />
+      <edge source="Hymenoptera sp1 M_PL_001" target="Oxalis cinerea" id="227" />
+      <edge source="Hymenoptera sp1 M_PL_001" target="Oxalis geminata" id="228" />
+      <edge source="Hymenoptera sp1 M_PL_001" target="Oxalis sp1 M_PL_001" id="229" />
+      <edge source="Hymenoptera sp1 M_PL_001" target="Perezia carthamoides" id="230" />
+      <edge source="Hymenoptera sp1 M_PL_001" target="Phacelia secunda" id="231" />
+      <edge source="Hymenoptera sp1 M_PL_001" target="Salpiglossus sp1 M_PL_001" id="232" />
+      <edge source="Hymenoptera sp1 M_PL_001" target="Senecio bustillosianus" id="233" />
+      <edge source="Hymenoptera sp1 M_PL_001" target="Sisyrinchium arenarium" id="234" />
+      <edge source="Hymenoptera sp1 M_PL_001" target="Solanum tomatillo" id="235" />
+      <edge source="Hymenoptera sp1 M_PL_001" target="Solenomelus sisyrinchium" id="236" />
+      <edge source="Hymenoptera sp1 M_PL_001" target="Tropaeolum sessilifolium" id="237" />
+      <edge source="Hymenoptera sp1 M_PL_001" target="Tropaeolum tricolor" id="238" />
+      <edge source="Hymenoptera sp1 M_PL_001" target="Verbena scoparia" id="239" />
+      <edge source="Berberis empetrifolia" target="Hypodynerus sp1 M_PL_001" id="240" />
+      <edge source="Berberis empetrifolia" target="Unidentified sp5 M_PL_001" id="241" />
+      <edge source="Hypodynerus sp1 M_PL_001" target="Nothoscordum andinum" id="242" />
+      <edge source="Hypodynerus sp1 M_PL_001" target="Senecio erucaeformis" id="243" />
+      <edge source="Unidentified sp5 M_PL_001" target="Euphorbia portulacoides" id="244" />
+      <edge source="Unidentified sp5 M_PL_001" target="Senecio francisci" id="245" />
+      <edge source="Unidentified sp5 M_PL_001" target="Sisyrinchium junceum" id="246" />
+      <edge source="Calandrinia affinis" target="Habromyia lipoflava" id="247" />
+      <edge source="Calandrinia affinis" target="Phulia nymphula" id="248" />
+      <edge source="Calandrinia affinis" target="Prosopochaeta sp1 M_PL_001" id="249" />
+      <edge source="Calandrinia affinis" target="Unidentified sp10 M_PL_001" id="250" />
+      <edge source="Calandrinia affinis" target="Unidentified sp11 M_PL_001" id="251" />
+      <edge source="Calandrinia affinis" target="Unidentified sp8 M_PL_001" id="252" />
+      <edge source="Habromyia lipoflava" target="Cerastium arvense" id="253" />
+      <edge source="Unidentified sp8 M_PL_001" target="Sanicula graveolens" id="254" />
+      <edge source="Calceolaria arachnoidea" target="Centris nigerrima" id="255" />
+      <edge source="Centris nigerrima" target="Calceolaria montana" id="256" />
+      <edge source="Centris nigerrima" target="Chuquiraga oppositifolia" id="257" />
+      <edge source="Centris nigerrima" target="Stachys albi" id="258" />
+      <edge source="Calceolaria biflora" target="Centris sp1 M_PL_001" id="259" />
+      <edge source="Centris sp1 M_PL_001" target="Malesherbia linearifolius" id="260" />
+      <edge source="Cerastium arvense" target="Coleoptera sp4 M_PL_001" id="261" />
+      <edge source="Cerastium arvense" target="Unidentified sp13 M_PL_001" id="262" />
+      <edge source="Cerastium arvense" target="Unidentified sp14 M_PL_001" id="263" />
+      <edge source="Coleoptera sp4 M_PL_001" target="Oxalis cinerea" id="264" />
+      <edge source="Coleoptera sp4 M_PL_001" target="Oxalis geminata" id="265" />
+      <edge source="Coleoptera sp4 M_PL_001" target="Oxalis sp1 M_PL_001" id="266" />
+      <edge source="Coleoptera sp4 M_PL_001" target="Sisyrinchium junceum" id="267" />
+      <edge source="Coleoptera sp4 M_PL_001" target="Sisyrinchium philippii" id="268" />
+      <edge source="Chaetanthera euphrasioides" target="Lyophlaeba lugubris" id="269" />
+      <edge source="Chaetanthera euphrasioides" target="Spathipalpus philippii" id="270" />
+      <edge source="Chaetanthera euphrasioides" target="Villa arenarus" id="271" />
+      <edge source="Chaetanthera euphrasioides" target="Villa flavicura" id="272" />
+      <edge source="Chaetanthera euphrasioides" target="Villa gayi" id="273" />
+      <edge source="Lyophlaeba lugubris" target="Quinchamalium chilensis" id="274" />
+      <edge source="Lyophlaeba lugubris" target="Verbena scoparia" id="275" />
+      <edge source="Spathipalpus philippii" target="Senecio bustillosianus" id="276" />
+      <edge source="Villa flavicura" target="Mulinum spinosum" id="277" />
+      <edge source="Chaetanthera microphylla" target="Euryglostromyia philippii" id="278" />
+      <edge source="Chaetanthera microphylla" target="Faunula leucoglene" id="279" />
+      <edge source="Euryglostromyia philippii" target="Stachys albi" id="280" />
+      <edge source="Faunula leucoglene" target="Chuquiraga oppositifolia" id="281" />
+      <edge source="Faunula leucoglene" target="Senecio bustillosianus" id="282" />
+      <edge source="Chuquiraga oppositifolia" target="Bombus dahlbomii" id="283" />
+      <edge source="Bombus dahlbomii" target="Loasa heterophylla" id="284" />
+      <edge source="Bombus dahlbomii" target="Mustisia sinuata" id="285" />
+      <edge source="Bombus dahlbomii" target="Phacelia secunda" id="286" />
+      <edge source="Bombus dahlbomii" target="Senecio bustillosianus" id="287" />
+      <edge source="Bombus dahlbomii" target="Senecio erucaeformis" id="288" />
+      <edge source="Bombus dahlbomii" target="Stachys albi" id="289" />
+      <edge source="Euphorbia portulacoides" target="Unidentified sp16 M_PL_001" id="290" />
+      <edge source="Euphorbia portulacoides" target="Unidentified sp9 M_PL_001" id="291" />
+      <edge source="Haplopappus chysanthemifolius" target="Lepidoptera sp6 M_PL_001" id="292" />
+      <edge source="Lepidoptera sp6 M_PL_001" target="Leucocoryne ixioides" id="293" />
+      <edge source="Lepidoptera sp6 M_PL_001" target="Mustisia acerosa" id="294" />
+      <edge source="Lepidoptera sp6 M_PL_001" target="Oenothera acaulis" id="295" />
+      <edge source="Haplopappus sericeus" target="Auca coctei" id="296" />
+      <edge source="Auca coctei" target="Mustisia acerosa" id="297" />
+      <edge source="Auca coctei" target="Mustisia subulata" id="298" />
+      <edge source="Auca coctei" target="Nardophyllum lanatum" id="299" />
+      <edge source="Auca coctei" target="Perezia carthamoides" id="300" />
+      <edge source="Auca coctei" target="Senecio bustillosianus" id="301" />
+      <edge source="Auca coctei" target="Senecio erucaeformis" id="302" />
+      <edge source="Auca coctei" target="Senecio francisci" id="303" />
+      <edge source="Auca coctei" target="Senecio lithostaurus" id="304" />
+      <edge source="Hippeastrum uni" target="Unidentified sp17 M_PL_001" id="305" />
+      <edge source="Hypochoeris sp1 M_PL_001" target="Ruizantheda mutabilis" id="306" />
+      <edge source="Hypochoeris sp1 M_PL_001" target="Tatochila mercedis" id="307" />
+      <edge source="Hypochoeris sp1 M_PL_001" target="Unidentified sp18 M_PL_001" id="308" />
+      <edge source="Ruizantheda mutabilis" target="Phacelia secunda" id="309" />
+      <edge source="Tatochila mercedis" target="Senecio bustillosianus" id="310" />
+      <edge source="Lepidium suffruticosum" target="Ruiziella luctuosa" id="311" />
+      <edge source="Ruiziella luctuosa" target="Perezia carthamoides" id="312" />
+      <edge source="Ruiziella luctuosa" target="Senecio bustillosianus" id="313" />
+      <edge source="Madia sativa" target="Corynurus sp1 M_PL_001" id="314" />
+      <edge source="Madia sativa" target="Dialictus sp1 M_PL_001" id="315" />
+      <edge source="Madia sativa" target="Hemicolletes ruizii" id="316" />
+      <edge source="Madia sativa" target="Unidentified sp7 M_PL_001" id="317" />
+      <edge source="Unidentified sp7 M_PL_001" target="Nassauvia heterophylla" id="318" />
+      <edge source="Unidentified sp7 M_PL_001" target="Senecio francisci" id="319" />
+      <edge source="Mulinum spinosum" target="Villa guttapennis" id="320" />
+      <edge source="Mulinum spinosum" target="Villa verdensis" id="321" />
+      <edge source="Villa verdensis" target="Nassauvia heterophylla" id="322" />
+      <edge source="Villa verdensis" target="Phacelia secunda" id="323" />
+      <edge source="Villa verdensis" target="Schizanthus grahamii" id="324" />
+      <edge source="Villa verdensis" target="Senecio bustillosianus" id="325" />
+      <edge source="Mustisia sinuata" target="Isepeolus niveiventris" id="326" />
+      <edge source="Nassauvia heterophylla" target="Dasybasis sp1 M_PL_001" id="327" />
+      <edge source="Nassauvia heterophylla" target="Vibrissomyia sp1 M_PL_001" id="328" />
+      <edge source="Oxalis geminata" target="Unidentified sp15 M_PL_001" id="329" />
+      <edge source="Perezia carthamoides" target="Truphloechus bellus" id="330" />
+      <edge source="Truphloechus bellus" target="Phacelia secunda" id="331" />
+      <edge source="Truphloechus bellus" target="Verbena scoparia" id="332" />
+      <edge source="Phacelia secunda" target="Anthidium adriani" id="333" />
+      <edge source="Phacelia secunda" target="Anthophora incerta" id="334" />
+      <edge source="Phacelia secunda" target="Anthophora sp1 M_PL_001" id="335" />
+      <edge source="Phacelia secunda" target="Colletes aruacariae" id="336" />
+      <edge source="Phacelia secunda" target="Hypodynerus sp3 M_PL_001" id="337" />
+      <edge source="Phacelia secunda" target="Scaptia atra" id="338" />
+      <edge source="Phacelia secunda" target="Svastrides melanura" id="339" />
+      <edge source="Anthophora incerta" target="Senecio bustillosianus" id="340" />
+      <edge source="Anthophora sp1 M_PL_001" target="Stachys albi" id="341" />
+      <edge source="Hypodynerus sp3 M_PL_001" target="Senecio bustillosianus" id="342" />
+      <edge source="Sanicula graveolens" target="Prosopochaeta caliginosa" id="343" />
+      <edge source="Scypanthus elegans" target="Coelioxys sp1 M_PL_001" id="344" />
+      <edge source="Senecio bustillosianus" target="Eristalis tenax" id="345" />
+      <edge source="Senecio erucaeformis" target="Andinus venustus" id="346" />
+      <edge source="Senecio erucaeformis" target="Chilicola sp1 M_PL_001" id="347" />
+      <edge source="Senecio erucaeformis" target="Tatochila sp1 M_PL_001" id="348" />
+      <edge source="Senecio francisci" target="Hypsochila wagenknechti" id="349" />
+      <edge source="Sisyrinchium arenarium" target="Caenohalictus sp2 M_PL_001" id="350" />
+      <edge source="Sisyrinchium arenarium" target="Caenohalictus sp3 M_PL_001" id="351" />
+      <edge source="Sisyrinchium arenarium" target="Tapinotaspis caerulea" id="352" />
+      <edge source="Sisyrinchium arenarium" target="Tapinotaspis herbsti" id="353" />
+      <edge source="Sisyrinchium junceum" target="Elaphroptera relicta" id="354" />
+      <edge source="Trichocereus chiloensis" target="Liphanthus sp1 M_PL_001" id="355" />
+      <edge source="Trichocereus chiloensis" target="Liphanthus sp2 M_PL_001" id="356" />
+      <edge source="Valeriana gracileps" target="Unidentified sp12 M_PL_001" id="357" />
+      <edge source="Verbena scoparia" target="Chaetodemoticus chilensis" id="358" />
+      <edge source="Verbena scoparia" target="Villa durvillei" id="359" />
+      <edge source="Chaetodemoticus chilensis" target="Viviania marifolia" id="360" />
+    </edges>
+  </graph>
+</gexf>

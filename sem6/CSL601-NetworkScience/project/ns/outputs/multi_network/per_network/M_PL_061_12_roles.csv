@@ -1,0 +1,20 @@
+species,kind,gnn_cluster,gnn_role,pca1,pca2
+Canthium bibracteatum,plant,1,Generalist,0.3701936,-0.18263787
+Dillenia ferruginea,plant,1,Generalist,0.9025731,0.43126175
+Memecylon eleagni,plant,2,Specialist,-0.3693777,-3.5752163
+Nephrosperma vanhoutteanum,plant,1,Generalist,1.430615,0.17949787
+Phoenicophorium borsigianum,plant,1,Generalist,0.8587369,0.55226916
+Psidium cattleianum,plant,3,Keystone,-0.5193833,0.88638246
+Psychotria pervillei,plant,1,Generalist,0.8931646,-0.38796014
+Apis mellifera,pollinator,1,Generalist,2.7327554,-0.31213686
+Diptera sp1 M_PL_095,pollinator,0,Connector,-0.742898,-0.11727989
+Eristalinus vicarians,pollinator,3,Keystone,-1.568761,1.007848
+Hemipyrellia germana,pollinator,0,Connector,-0.9053103,0.090902746
+Hemipyrellia sp1 M_PL_095,pollinator,0,Connector,-1.0564151,-0.22875609
+Lasioglossum mahense,pollinator,1,Generalist,2.1304138,0.6542015
+Nectarinia dussumieri,pollinator,0,Connector,-0.2145968,0.03322214
+Ornidia obesa,pollinator,3,Keystone,-0.7172461,0.88608015
+Parasarcophaga hirticeps,pollinator,0,Connector,-0.9053103,0.090902746
+Rhiparida seychellensis,pollinator,0,Connector,-0.71409416,-0.11181609
+Unidentified sp2 M_PL_095,pollinator,0,Connector,-0.65583223,-0.10033421
+Unidentified sp3 M_PL_095,pollinator,0,Connector,-0.9492282,0.20356937

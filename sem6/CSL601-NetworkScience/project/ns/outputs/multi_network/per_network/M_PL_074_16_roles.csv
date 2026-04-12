@@ -1,0 +1,37 @@
+species,kind,gnn_cluster,gnn_role,pca1,pca2
+Besleria solanoides,plant,3,Connector,-0.13948618,-0.14218137
+Bomarea carderi,plant,3,Connector,-0.24024452,-0.8581346
+Bomarea sp1 M_PL_074_16,plant,3,Connector,-0.73859555,-0.18434067
+Cavendishia bracteata,plant,3,Connector,-0.65623176,-0.9417615
+Centropogon cornutus,plant,0,Specialist,-3.5074656,0.81971496
+Centropogon latisepalus,plant,0,Specialist,-3.5387983,0.8097974
+Columnea dimidiata,plant,0,Specialist,-3.5544147,0.80481607
+Costus sp1 M_PL_074_16,plant,0,Specialist,-3.5544147,0.80481595
+Elleanthus aurantiacus,plant,3,Connector,-0.9157697,-0.29009953
+Erythrina rubrinervia,plant,1,Generalist,0.9865831,-1.1110955
+Eucalyptus globulus,plant,3,Connector,-0.08006931,-1.5983822
+Guzmania sp1 M_PL_074_16,plant,3,Connector,0.12120612,-0.8873244
+Hamelia patens,plant,1,Generalist,1.4765061,-1.2075905
+Heliconia griggsiana,plant,0,Specialist,-3.4759989,0.8295726
+Heliconia latispatha,plant,3,Connector,-1.1856905,-0.6140701
+Heliconia venusta,plant,0,Specialist,-3.5474782,0.8070321
+Inga ingoides,plant,1,Generalist,2.108311,-0.793868
+Kohleria affinis,plant,3,Connector,-0.8349375,-1.0991888
+Kohleria inaequalis,plant,3,Connector,-0.40049186,-0.26194477
+Mezobromelia sp1 M_PL_074_16,plant,3,Connector,-2.2964065,-0.4051895
+Musa velutina,plant,3,Connector,-1.298507,-0.6395152
+Palicourea acetosoides,plant,1,Generalist,0.45929524,-0.9386928
+Trichanthera gigantea,plant,1,Generalist,0.31111798,-1.4550056
+Adelomyia melanogenys,pollinator,2,Keystone,1.9833261,0.75365627
+Aglaiocercus kingii,pollinator,2,Keystone,1.5607276,0.05927204
+Amazilia franciae,pollinator,2,Keystone,1.8175026,0.9763216
+Amazilia saucerottei,pollinator,2,Keystone,2.7463193,0.4533589
+Amazilia tzacatl,pollinator,2,Keystone,1.9546758,0.067259245
+Anthracothorax nigricollis,pollinator,1,Generalist,1.1367916,-0.13311173
+Boissonneaua flavescens,pollinator,2,Keystone,2.358036,0.6657918
+Coeligena coeligena,pollinator,2,Keystone,1.6713307,0.7286105
+Colibri coruscans,pollinator,2,Keystone,2.7888856,0.0081295855
+Doryfera ludovicae,pollinator,2,Keystone,1.572155,0.6414293
+Florisuga mellivora,pollinator,1,Generalist,0.6937218,0.13520756
+Ocreatus underwoodii,pollinator,2,Keystone,1.8860188,0.9425758
+Phaethornis guy,pollinator,2,Keystone,2.3324869,3.2541356

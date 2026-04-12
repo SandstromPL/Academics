@@ -1,0 +1,56 @@
+species,kind,gnn_cluster,gnn_role,pca1,pca2
+Acritopappus longifolius,plant,0,Specialist,-1.6431276,0.6429276
+Aechmea lamarchei,plant,2,Connector,0.5873707,-0.45133644
+Agalinis angustifolia,plant,2,Connector,0.4181327,-0.4840702
+Agarista coriifolia,plant,0,Specialist,-1.6418976,0.64583033
+Barbacenia flava,plant,2,Connector,0.2795901,-1.2762463
+Barbacenia gentianoides,plant,2,Connector,0.35143784,-1.5381144
+Barbacenia luzulifolia,plant,2,Connector,0.5466544,-1.2568978
+Billbergia amoena,plant,2,Connector,1.0075215,-1.2698747
+Billbergia vittata,plant,2,Connector,0.3531551,-1.5354123
+Calolisianthus pendulus,plant,2,Connector,0.28056034,-1.274879
+Chronopappus bifrons,plant,2,Connector,0.15639998,-1.0478779
+Cipocereus minensis,plant,2,Connector,0.21366256,-1.1159034
+Cuphea ericoides,plant,0,Specialist,-1.6431288,0.642928
+Dyckia sp1 M_PL_074_17,plant,2,Connector,0.22397636,-1.1001899
+Encholirium subsecundum,plant,2,Connector,0.6631103,-0.3436771
+Eremanthus crotonoides,plant,2,Connector,0.12070294,-0.11210162
+Eremanthus erythropappus,plant,0,Specialist,-1.5807596,0.7979186
+Erythroxylum vaccinifolium,plant,0,Specialist,-1.6400491,0.6501889
+Esterhazya splendida,plant,2,Connector,0.6526714,-1.0794319
+Gaylussacia brasiliensis,plant,0,Specialist,-1.633317,0.66621184
+Gaylussacia montana,plant,0,Specialist,-1.6363615,0.65893066
+Gaylussacia oleifolia,plant,2,Connector,0.7656527,-0.09236381
+Gordonia fruticosa,plant,0,Specialist,-1.6339245,0.6647574
+Hippeastrum cipoanum,plant,2,Connector,0.35143787,-1.5381145
+Hololepis pedunculata,plant,2,Connector,0.8584867,-0.3631146
+Hyptis sp1 M_PL_074_17,plant,0,Specialist,-1.5698848,0.8289004
+Lepidaploa sp1 M_PL_074_17,plant,0,Specialist,-1.6154326,0.70943063
+Lessingianthus roseus,plant,0,Specialist,-1.6406658,0.6487348
+Lobelia fistulosa,plant,2,Connector,1.3216347,-0.4704298
+Malvaceae sp1 M_PL_074_17,plant,0,Specialist,-1.6016424,0.7433743
+Myrcia lasiantha,plant,0,Specialist,-1.6443586,0.64003015
+Nematanthus strigillosus,plant,0,Specialist,-1.5892568,0.7751187
+Neoregelia bahiana,plant,2,Connector,0.543607,-1.2615235
+Paliavana sericiflora,plant,2,Connector,0.6155128,-1.2501729
+Pilosocereus aurisetus,plant,2,Connector,0.7267449,-0.35069254
+Piptolepis leptospermoides,plant,0,Specialist,-1.6345326,0.6633021
+Protium sp1 M_PL_074_17,plant,0,Specialist,-1.6400493,0.6501889
+Psychotria vellosiana,plant,2,Connector,0.4476431,-0.087306745
+Siphocampylus fimbriatus,plant,2,Connector,0.35573345,-1.5313478
+Stachytarpheta glabra,plant,0,Specialist,-1.5403185,0.93647176
+Stachytarpheta mexiae,plant,2,Connector,0.08428154,0.038092446
+Tillandsia gardneri,plant,2,Connector,0.15941283,-1.0437775
+Trixis vauthieri,plant,0,Specialist,-1.6425134,0.6443783
+Vellozia epidendroides,plant,0,Specialist,-1.6308953,0.67201966
+Vernonanthura phosphorica,plant,0,Specialist,-1.6400493,0.6501889
+Vochysia emarginata,plant,2,Connector,0.24254835,0.5427771
+Vochysia sp1 M_PL_074_17,plant,0,Specialist,-1.6406658,0.6487348
+Vriesea medusa,plant,2,Connector,0.21264198,-1.1174697
+Vriesea procera,plant,2,Connector,0.56599736,-1.2271081
+Augastes scutatus,pollinator,3,Generalist,3.9311678,5.4655256
+Campylopterus largipennis,pollinator,1,Keystone,3.9761314,1.041062
+Chlorostilbon lucidus,pollinator,1,Keystone,2.8793297,1.0804201
+Colibri serrirostris,pollinator,1,Keystone,3.3032582,0.56250113
+Eupetomena macroura,pollinator,1,Keystone,2.5893197,0.14745384
+Phaethornis pretrei,pollinator,1,Keystone,4.2973485,0.76103324

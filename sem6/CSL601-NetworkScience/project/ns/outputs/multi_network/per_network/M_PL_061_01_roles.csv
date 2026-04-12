@@ -1,0 +1,18 @@
+species,kind,gnn_cluster,gnn_role,pca1,pca2
+Memecylon eleagni,plant,0,Keystone,2.2851362,-0.33488438
+Mimusops sechellarum,plant,3,Connector,2.0366907,0.75498724
+Nephrosperma vanhoutteanum,plant,2,Generalist,0.5148208,-3.2843916
+Paragenipa wrightii,plant,0,Keystone,2.1022382,0.2806632
+Soulamea terminaloides,plant,3,Connector,1.3066608,0.100695744
+Apis mellifera,pollinator,0,Keystone,0.4467537,-0.52219117
+Diptera sp1 M_PL_084,pollinator,3,Connector,0.073209666,-0.3551294
+Diptera sp3 M_PL_084,pollinator,1,Specialist,-1.5218027,-0.117800705
+Geron seychellarum,pollinator,1,Specialist,-1.5218027,-0.117800705
+Lasioglossum mahense,pollinator,1,Specialist,-0.38969094,1.3164173
+Lygistorrhina sp1 M_PL_084,pollinator,1,Specialist,-1.450655,-0.13400732
+Phelsuma sp1 M_PL_084,pollinator,1,Specialist,-1.5218027,-0.117800705
+Polistes olivaceus,pollinator,1,Specialist,-0.44388905,1.2989967
+Rhiparida seychellensis,pollinator,1,Specialist,-1.3973165,-0.145172
+Scaptodrosophila sp1 M_PL_084,pollinator,3,Connector,0.21010387,1.323872
+Unidentified sp2 M_PL_084,pollinator,1,Specialist,-1.3214555,-0.1571387
+Xylocopa caffra,pollinator,0,Keystone,0.592801,0.2106839

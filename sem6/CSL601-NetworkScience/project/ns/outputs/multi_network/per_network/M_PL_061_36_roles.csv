@@ -1,0 +1,25 @@
+species,kind,gnn_cluster,gnn_role,pca1,pca2
+Dillenia ferruginea,plant,1,Generalist,-2.2615726,1.1784462
+Erythroxylum sechellarum,plant,0,Keystone,-2.7222,-0.118350275
+Memecylon eleagni,plant,1,Generalist,-1.1065744,0.16293758
+Nepenthes pervillei,plant,1,Generalist,-2.3177686,1.9706459
+Nephrosperma vanhoutteanum,plant,1,Generalist,-3.5850036,-2.5560434
+Paragenipa wrightii,plant,1,Generalist,-2.637023,-0.8982627
+Roscheria melanochaetes,plant,1,Generalist,-1.7671596,-0.39831296
+Apis mellifera,pollinator,1,Generalist,-1.5266967,-0.9486615
+Cratopus aurostriatus,pollinator,2,Specialist,2.4494858,-1.0424263
+Dichaetomyia fasciculifera,pollinator,3,Connector,1.1350704,2.549707
+Diptera sp1 M_PL_119,pollinator,0,Keystone,0.8598737,-0.386321
+Diptera sp3 M_PL_119,pollinator,2,Specialist,2.4494858,-1.0424263
+Diptera sp4 M_PL_119,pollinator,3,Connector,0.6877362,0.33535495
+Hemipyrellia germana,pollinator,3,Connector,-0.3159361,1.4185615
+Hemipyrellia sp1 M_PL_119,pollinator,3,Connector,0.90557593,0.54129404
+Lasioglossum mahense,pollinator,0,Keystone,-0.8744383,-1.2148656
+Lygistorrhina sp1 M_PL_119,pollinator,2,Specialist,2.4050322,-1.0865811
+Nectarinia dussumieri,pollinator,3,Connector,0.8542027,-0.17564526
+Ornidia obesa,pollinator,0,Keystone,0.40352115,1.1048594
+Parasarcophaga hirticeps,pollinator,0,Keystone,0.50150144,1.6264706
+Phelsuma sp1 M_PL_119,pollinator,2,Specialist,2.3828795,-1.1082075
+Rhiparida seychellensis,pollinator,3,Connector,1.065935,1.5702372
+Unidentified sp2 M_PL_119,pollinator,2,Specialist,2.3387754,-1.1505098
+Unidentified sp5 M_PL_119,pollinator,3,Connector,0.675299,-0.33190024

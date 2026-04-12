@@ -1,0 +1,26 @@
+species,kind,gnn_cluster,gnn_role,pca1,pca2
+Canthium bibracteatum,plant,0,Connector,-0.16825464,0.19213831
+Chrysobalanus icaco,plant,1,Keystone,1.4891908,-0.6323188
+Cinnamomum verum,plant,1,Keystone,0.8050279,-0.62713915
+Dillenia suffruticosa,plant,2,Specialist,-0.07572555,-3.27456
+Memecylon eleagni,plant,1,Keystone,1.7432759,0.582228
+Mimusops sechellarum,plant,1,Keystone,1.5493104,0.83311766
+Nepenthes pervillei,plant,1,Keystone,1.4200217,-0.62402475
+Nephrosperma vanhoutteanum,plant,3,Generalist,4.0627995,0.22865064
+Roscheria melanochaetes,plant,1,Keystone,2.2241845,-0.2980822
+Apis mellifera,pollinator,3,Generalist,3.1132438,0.40553093
+Chalcidoma disjunctum,pollinator,0,Connector,-1.1464231,0.8262938
+Diptera sp1 M_PL_126,pollinator,1,Keystone,0.384603,1.2077671
+Diptera sp2 M_PL_126,pollinator,0,Connector,-0.57518625,0.50864
+Diptera sp3 M_PL_126,pollinator,0,Connector,-2.1458373,0.5581049
+Diptera sp4 M_PL_126,pollinator,0,Connector,-2.1458373,0.5581049
+Hemipyrellia germana,pollinator,0,Connector,-1.2418287,-0.15201463
+Hemipyrellia sp1 M_PL_126,pollinator,0,Connector,-0.51021725,-0.59500635
+Lasioglossum mahense,pollinator,1,Keystone,0.6148056,1.3632066
+Lygistorrhina sp1 M_PL_126,pollinator,0,Connector,-0.29778478,1.0327553
+Neavella albipectus,pollinator,0,Connector,-2.1894543,0.5681758
+Nectarinia dussumieri,pollinator,0,Connector,-1.2932788,-0.13752167
+Parasarcophaga hirticeps,pollinator,0,Connector,-1.2883652,-0.14532265
+Polistes olivaceus,pollinator,0,Connector,-1.2932789,-0.13752164
+Unidentified sp5 M_PL_126,pollinator,0,Connector,-2.1894543,0.5681758
+Xylocopa caffra,pollinator,2,Specialist,-0.84553796,-2.809377

@@ -1,0 +1,38 @@
+species,kind,gnn_cluster,gnn_role,pca1,pca2
+Aphloia theiformis,plant,2,Generalist,3.199616,0.3409356
+Badula insularis,plant,2,Generalist,3.3159366,0.2953374
+Calophyllum eputamen,plant,2,Generalist,1.7909619,0.6473048
+Diospyros revaughanii,plant,2,Generalist,1.5907654,0.83763266
+Pandanus rigidifolius,plant,2,Generalist,0.84017515,0.7455654
+Pleurostylia leucocarpa ,plant,2,Generalist,2.7104867,0.76320374
+Stillingia lineata,plant,2,Generalist,2.8650253,0.7770938
+Syzygium glomeratum,plant,2,Generalist,2.768064,0.4579533
+Syzygium petrinese,plant,2,Generalist,0.80546004,1.8927518
+Turraea rigida,plant,3,Specialist,-3.2041538,3.149634
+Xyris sp1 M_PL_071,plant,1,Connector,-0.5271215,0.4175703
+Apis mellifera,pollinator,0,Keystone,1.707056,0.23339084
+Chrysomya megacephala ,pollinator,0,Keystone,0.92336714,-0.9274171
+Episyrphus sp1 M_PL_071,pollinator,1,Connector,-1.2308758,-1.0346034
+Eristalinus flaveolus,pollinator,0,Keystone,0.7265825,-0.64323163
+Graphomya maculata,pollinator,1,Connector,-1.4674425,-0.84393203
+Lecithoceridae sp1 M_PL_071,pollinator,1,Connector,-1.3175659,-1.0627356
+Lygistorrhina sp1 M_PL_071,pollinator,1,Connector,-1.2709368,-0.6392686
+Musca domestica,pollinator,0,Keystone,0.65936613,-0.9566348
+Nacoleia sp1 M_PL_071,pollinator,1,Connector,-1.4665209,0.17496817
+Ophyra capensis ,pollinator,0,Keystone,0.7033103,-0.36135593
+Ornidia obesa,pollinator,0,Keystone,0.35439107,-0.5983628
+Pachycerina crinicornis ,pollinator,1,Connector,-1.5425183,-0.8621562
+Paleorhiza sp1 M_PL_071,pollinator,1,Connector,-2.0678608,0.8578249
+Paragus borbonicus,pollinator,0,Keystone,0.8601276,-0.016943654
+Phelsuma cepediana,pollinator,1,Connector,-0.94851035,0.91273385
+Phorinia sp1 M_PL_071,pollinator,1,Connector,-0.45048514,-1.1500021
+Polistes hebraeus,pollinator,1,Connector,-0.7907559,0.74567115
+Scolia carniflex,pollinator,1,Connector,-1.079751,-1.3604404
+Sepsis lateralis ,pollinator,1,Connector,-1.4295608,-0.8356243
+Simulium sp1 M_PL_071,pollinator,1,Connector,-1.3036548,-0.6493615
+Simulium sp2 M_PL_071,pollinator,1,Connector,-1.5425183,-0.8621562
+Stomorhina lunata,pollinator,0,Keystone,1.8328288,-0.18669951
+Syritta sp1 M_PL_071,pollinator,1,Connector,-1.2709368,-0.6392687
+Trirhithrum sp1 M_PL_071,pollinator,0,Keystone,0.24040401,-0.7960756
+Zizeeria knysa,pollinator,1,Connector,-1.2130047,-1.4457529
+Zosterops mauritianus,pollinator,3,Specialist,-3.7697484,2.6224496

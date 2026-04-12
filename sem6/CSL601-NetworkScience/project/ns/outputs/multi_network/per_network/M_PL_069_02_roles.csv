@@ -1,0 +1,16 @@
+species,kind,gnn_cluster,gnn_role,pca1,pca2
+"Abundance""",plant,1,Specialist,0.4487059,0.1843152
+Aegiphila obducta,plant,1,Specialist,-0.9200817,0.8047084
+Fuchsia regia,plant,3,Connector,-1.2015785,-1.7848665
+Heliconia farinosa,plant,3,Connector,-1.9445564,-0.41476092
+Inga sp1 M_PL_069_02,plant,3,Connector,-1.3578472,-1.5771079
+Justicia carnea,plant,1,Specialist,-1.3514094,2.143242
+Nematanthus australis,plant,3,Connector,-1.5988287,-1.5170845
+Nidularium inocentii,plant,1,Specialist,-1.3577898,2.1484945
+Spirotheca rivieri,plant,3,Connector,-1.3339288,-1.6055849
+Vriesea altodaserrae,plant,0,Keystone,0.33998322,-0.30762586
+Vriesea incurvata,plant,1,Specialist,-1.3530027,2.1445556
+Amazilia versicolor,pollinator,0,Keystone,1.6176059,0.53702533
+Clytolaema rubricauda,pollinator,2,Generalist,3.201825,-2.449218
+Phaethornis eurynome,pollinator,2,Generalist,3.6290333,3.1330836
+Thalurania glaucopis,pollinator,2,Generalist,3.1818702,-1.4391757

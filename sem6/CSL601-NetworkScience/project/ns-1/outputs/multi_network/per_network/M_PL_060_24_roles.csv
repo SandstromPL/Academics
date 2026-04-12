@@ -1,0 +1,39 @@
+species,kind,gnn_cluster,gnn_role,pca1,pca2
+Aphloia theiformis,plant,0,Generalist,2.6077247,-0.5853011
+Badula insularis,plant,1,Keystone,0.7628702,-0.03562007
+Calophyllum eputamen,plant,1,Keystone,0.37159112,0.9693636
+Croton grangeroides,plant,0,Generalist,2.691998,-0.36616656
+Diospyros revaughanii,plant,1,Keystone,0.92718095,0.83187664
+Embelia angustifolia,plant,0,Generalist,0.5466537,0.12158566
+Molinaea macrantha,plant,1,Keystone,-0.33884388,0.32486057
+Phyllanthus phillyreifolius,plant,1,Keystone,1.2553023,1.1869882
+Psiadia terebinthina,plant,1,Keystone,0.4207761,1.9466677
+Psidium cattleianum,plant,0,Generalist,1.0711825,0.3813819
+Rubus alcefolius,plant,1,Keystone,0.0415993,1.2617899
+Stillingia lineata,plant,0,Generalist,3.064005,-1.2383883
+Syzygium petrinese,plant,0,Generalist,2.5576634,0.3722153
+Tabernaemontana persicarifolia,plant,2,Specialist,-2.4994102,1.6394631
+Apis mellifera,pollinator,0,Generalist,1.5705429,0.79601467
+Brachymyrmex sp1 M_PL_083,pollinator,1,Keystone,-1.0392771,1.6848884
+Chaetocnema sp1 M_PL_083,pollinator,1,Keystone,0.6910764,-0.82113093
+Chrysomya megacephala ,pollinator,0,Generalist,0.89838,-0.947915
+Dysauxes florida,pollinator,3,Connector,-1.2382276,-0.8797323
+Eristalinus flaveolus,pollinator,3,Connector,-0.9352205,-1.2570792
+Fannia pusio ,pollinator,3,Connector,-1.531272,-0.2608546
+Macroglossum milvus,pollinator,1,Keystone,-1.4126664,0.41563764
+Musca confiscata,pollinator,3,Connector,-1.2567399,-1.9279816
+Musca domestica,pollinator,0,Generalist,1.2251267,-0.45401868
+Nacoleia sp1 M_PL_083,pollinator,2,Specialist,-3.090793,1.171545
+Ophyra capensis ,pollinator,1,Keystone,0.3990299,0.9105849
+Ornidia obesa,pollinator,1,Keystone,-0.47299835,0.22246157
+Orthellia albigena ,pollinator,3,Connector,-0.30013305,-1.6856964
+Paragus borbonicus,pollinator,0,Generalist,0.68815637,-0.22059263
+Pheidole megacephala,pollinator,1,Keystone,-0.9771143,0.66973263
+Phelsuma cepediana,pollinator,3,Connector,-1.531272,-0.2608546
+Polistes hebraeus,pollinator,1,Keystone,-1.2552843,1.0325605
+Sapromyza sp1 M_PL_083,pollinator,3,Connector,-1.4643326,-0.9804618
+Sarcophaga arno ,pollinator,3,Connector,-1.2567399,-1.9279816
+Simulium sp1 M_PL_083,pollinator,3,Connector,-1.2567399,-1.9279816
+Stomorhina lunata,pollinator,1,Keystone,-0.13598311,0.5129053
+Syritta sp1 M_PL_083,pollinator,3,Connector,-1.4643327,-0.9804617
+Technomyrmex albipes ,pollinator,1,Keystone,1.6665224,0.3056965

@@ -1,0 +1,27 @@
+species,kind,gnn_cluster,gnn_role,pca1,pca2
+Alstonia macrophylla,plant,0,Connector,-0.10315484,1.470064
+Deckenia nobilis,plant,2,Generalist,2.5950248,0.5259127
+Erythroxylum sechellarum,plant,3,Keystone,1.4540524,0.4504628
+Memecylon eleagni,plant,3,Keystone,0.8654335,-0.09491489
+Nephrosperma vanhoutteanum,plant,2,Generalist,3.9935958,-0.4044743
+Ochna kirkii,plant,3,Keystone,0.4778586,1.961209
+Premna serratifolia,plant,2,Generalist,3.0806048,-1.8282806
+Psidium cattleianum,plant,3,Keystone,2.1591785,0.43866372
+Apis mellifera,pollinator,3,Keystone,1.524666,-0.62614906
+Chalcidoma disjunctum,pollinator,1,Specialist,-1.3138298,-0.39186287
+Diptera sp2 M_PL_112,pollinator,0,Connector,-1.1994532,0.5202774
+Eagris sabadius,pollinator,1,Specialist,-1.9080083,-0.79694194
+Eristalinus vicarians,pollinator,1,Specialist,-1.9080083,-0.79694194
+Hemipyrellia germana,pollinator,0,Connector,0.09697151,-0.16548485
+Hemipyrellia sp1 M_PL_112,pollinator,1,Specialist,-1.8611283,-0.7786567
+Lasioglossum mahense,pollinator,3,Keystone,1.5839682,-0.33347663
+Lygistorrhina sp1 M_PL_112,pollinator,0,Connector,-0.4665273,-0.09005965
+Megachile seychellensis,pollinator,1,Specialist,-0.99225545,-0.91779435
+Neophyllomyza approximatonervis,pollinator,0,Connector,-0.64657444,0.1897191
+Ornidia obesa,pollinator,0,Connector,0.5367415,0.49529535
+Phelsuma sp1 M_PL_112,pollinator,0,Connector,-0.64854074,0.22029635
+Rhiparida seychellensis,pollinator,1,Specialist,-1.9080083,-0.79694194
+Rhynchium brunneum,pollinator,1,Specialist,-1.6068873,-0.6926228
+Simosyrphus aegyptius,pollinator,0,Connector,-1.6282343,1.8173429
+Unidentified sp1 M_PL_112,pollinator,1,Specialist,-1.6087586,-0.40690553
+Xylocopa caffra,pollinator,0,Connector,-0.56872344,1.0322638

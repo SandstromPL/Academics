@@ -1,0 +1,30 @@
+species,kind,gnn_cluster,gnn_role,pca1,pca2
+Arnica alpina,plant,2,Keystone,0.9378702,-0.4082092
+Astragalus alpinus,plant,2,Keystone,1.1800584,2.4751394
+Caltha palustris ,plant,0,Generalist,2.6573899,-0.9124
+Cerastium alpinum,plant,2,Keystone,0.46775684,0.7288032
+Dryas integrifolia,plant,0,Generalist,3.2168405,0.83486444
+Geum rossii ,plant,1,Connector,-1.1937358,-1.1860139
+Oxytropis arctica ,plant,3,Specialist,-1.6070449,0.4843204
+Papaver radicatum,plant,2,Keystone,0.6286229,-0.5867993
+Petasites frigidus ,plant,3,Specialist,-1.3043773,1.4440987
+Potentilla vahliana ,plant,0,Generalist,4.791439,0.56800944
+Taraxacum sp1 M_PL_024,plant,0,Generalist,2.4253418,-0.7624413
+Anarta richardsoni,pollinator,3,Specialist,-1.8319951,0.2559947
+Boloria improba ,pollinator,1,Connector,-1.1266137,0.18565111
+Bombus polaris,pollinator,3,Specialist,-0.43722278,1.6145859
+Boreellus atriceps,pollinator,1,Connector,-0.9437603,-0.76670295
+Colias hecla,pollinator,3,Specialist,-1.6550125,1.4202728
+Colias nastes ,pollinator,3,Specialist,-2.1334414,1.110309
+Eupogonomyia probilofensis ,pollinator,2,Keystone,0.4644503,-0.021198977
+Pogonomyiodes segnis ,pollinator,2,Keystone,0.3676665,-0.36712858
+Protocalliphora sp1 M_PL_024,pollinator,1,Connector,-1.9488494,-0.40702105
+Rhamphomyia sp1 M_PL_024,pollinator,1,Connector,-1.3290212,-0.9262353
+Spilogona aesturium ,pollinator,1,Connector,-1.2822492,-0.89198387
+Spilogona almquistii ,pollinator,0,Generalist,2.3686416,-1.5595869
+Spilogona dorsata,pollinator,1,Connector,-1.0147,-0.60535586
+Spilogona hurdiana ,pollinator,1,Connector,-1.1760185,-1.0645925
+Spilogona latilamina,pollinator,1,Connector,-1.7888529,-0.28579617
+Spilogona melanosoma,pollinator,1,Connector,-0.9248878,-1.0192043
+Spilogona projecta ,pollinator,2,Keystone,0.009493863,0.49798346
+Spilogona sanctipauli,pollinator,0,Generalist,2.1822104,0.1506381

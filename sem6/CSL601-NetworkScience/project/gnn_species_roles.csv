@@ -1,0 +1,186 @@
+species,kind,gnn_cluster,gnn_role,pca1,pca2,classical_role
+Acaena pinn,plant,2,Specialist,2.0526755,1.7310807,
+Adesmia aconcaguensis,plant,0,Keystone,1.7565583,-1.8266834,
+Adesmia brachy,plant,0,Keystone,1.67369,-1.4140466,
+Adesmia conferta,plant,0,Keystone,0.80224144,-3.1054604,
+Adesmia exilis,plant,0,Keystone,2.557752,-0.38819155,
+Adesmia montana,plant,2,Specialist,3.0326118,0.95221704,
+Adesmia radicifolia,plant,0,Keystone,1.2913465,-2.5804305,
+Alstroemeria pallida,plant,0,Keystone,1.8540326,-1.0377057,
+Anarthrophyllum cumingii,plant,0,Keystone,2.2647605,-0.8394015,
+Asteriscium aemocarpon,plant,2,Specialist,2.501108,0.2072544,
+Astragalus curvicaulis,plant,0,Keystone,1.248622,-2.4508076,
+Astragalus sp1 M_PL_001,plant,0,Keystone,1.775151,-1.1644841,
+Barneoudia chilensis,plant,2,Specialist,2.4448476,1.1468397,
+Berberis empetrifolia,plant,0,Keystone,1.7905768,-1.6214212,
+Berberis montana,plant,2,Specialist,2.173203,0.5003876,
+Bowlesia tropaeolifolia,plant,2,Specialist,1.8224674,-0.33325928,
+Calandrinia affinis,plant,0,Keystone,0.88387734,-3.659057,
+Calandrinia uspallatensis,plant,0,Keystone,1.6205095,-1.6814748,
+Calceolaria arachnoidea,plant,2,Specialist,2.9423335,0.9622427,
+Calceolaria biflora,plant,2,Specialist,3.1491275,1.5888574,
+Calceolaria indet,plant,2,Specialist,2.414963,1.0878001,
+Calceolaria montana,plant,0,Keystone,2.2754688,-0.39842144,
+Cardamine nivalis,plant,2,Specialist,2.4448473,1.1468394,
+Cerastium arvense,plant,0,Keystone,1.7650361,-1.8943019,
+Chaetanthera euphrasioides,plant,0,Keystone,1.3100752,-2.7466884,
+Chaetanthera microphylla,plant,0,Keystone,1.9396878,-0.93518937,
+Chuquiraga oppositifolia,plant,0,Keystone,1.563931,-1.8415366,
+Clarkia tenella,plant,2,Specialist,2.4149632,1.0878001,
+Collomia biflora,plant,2,Specialist,3.0988574,1.0131625,
+Cynoglossum sp1 M_PL_001,plant,2,Specialist,2.5147889,0.8996767,
+Erodium cicutarium,plant,2,Specialist,1.9333731,0.72269887,
+Euphorbia portulacoides,plant,0,Keystone,1.8670262,-1.6060002,
+Haplopappus chysanthemifolius,plant,2,Specialist,2.0174968,-0.38647792,
+Haplopappus sericeus,plant,0,Keystone,1.7503369,-1.5891694,
+Hippeastrum uni,plant,2,Specialist,3.102249,1.5343305,
+Hypochoeris sp1 M_PL_001,plant,0,Keystone,1.5783787,-1.9679909,
+Lathyrus subandinus,plant,2,Specialist,2.6123488,0.7047047,
+Lepidium suffruticosum,plant,2,Specialist,2.8579514,0.6740253,
+Leuceria landbeckii,plant,2,Specialist,1.8511564,0.25533247,
+Leucocoryne ixioides,plant,2,Specialist,3.1768024,1.164757,
+Leucocoryne pauciflora,plant,0,Keystone,1.8875161,-0.6290547,
+Loasa heterophylla,plant,0,Keystone,1.8471631,-0.69531184,
+Loasa sigmoidea,plant,2,Specialist,2.4149635,1.0878001,
+Lupinus microcarpus,plant,2,Specialist,2.4149635,1.0878001,
+Madia sativa,plant,0,Keystone,2.127559,-1.474433,
+Malesherbia linearifolius,plant,2,Specialist,3.1491275,1.5888574,
+Mulinum spinosum,plant,0,Keystone,1.4828829,-2.2114935,
+Mustisia acerosa,plant,0,Keystone,2.543341,-0.20274168,
+Mustisia sinuata,plant,0,Keystone,1.5645043,-1.600826,
+Mustisia subulata,plant,0,Keystone,2.3250244,-0.29023325,
+Nardophyllum lanatum,plant,2,Specialist,2.445722,0.31742778,
+Nassauvia heterophylla,plant,0,Keystone,2.087426,-1.3902972,
+Nothoscordum andinum,plant,2,Specialist,2.951266,0.8447969,
+Oenothera acaulis,plant,2,Specialist,3.1768024,1.164757,
+Oxalis cinerea,plant,2,Specialist,1.9512546,-0.30677342,
+Oxalis geminata,plant,0,Keystone,2.4591806,-0.45446715,
+Oxalis sp1 M_PL_001,plant,2,Specialist,2.208607,-0.22956434,
+Perezia carthamoides,plant,0,Keystone,1.9912149,-1.1783371,
+Phacelia secunda,plant,3,Generalist,-0.32662836,-5.353323,
+Quinchamalium chilensis,plant,0,Keystone,1.8628106,-0.9811416,
+Rhodophiala montana,plant,2,Specialist,1.9266485,0.11279722,
+Salpiglossus sp1 M_PL_001,plant,2,Specialist,2.4149635,1.0878001,
+Sanicula graveolens,plant,0,Keystone,1.8614929,-1.2295376,
+Schizanthus grahamii,plant,0,Keystone,2.1353106,-0.45451128,
+Scypanthus elegans,plant,0,Keystone,1.5833637,-1.6266756,
+Senecio bustillosianus,plant,3,Generalist,-0.0058526024,-4.988128,
+Senecio erucaeformis,plant,0,Keystone,0.99390876,-3.1550708,
+Senecio francisci,plant,0,Keystone,1.7985976,-1.7370682,
+Senecio lithostaurus,plant,0,Keystone,1.8967706,-0.5331261,
+Sisyrinchium arenarium,plant,0,Keystone,1.5360909,-2.46352,
+Sisyrinchium junceum,plant,0,Keystone,2.1147478,-1.1254984,
+Sisyrinchium philippii,plant,0,Keystone,1.862498,-0.94858235,
+Solanum tomatillo,plant,2,Specialist,2.4149635,1.0878001,
+Solenomelus sisyrinchium,plant,2,Specialist,2.4149635,1.0878001,
+Stachys albi,plant,0,Keystone,0.77246684,-3.1746986,
+Tetraglochin alatum,plant,2,Specialist,2.0526772,1.7310797,
+Trichocereus chiloensis,plant,2,Specialist,2.8866541,0.72723,
+Tristagma sessile,plant,2,Specialist,2.0526772,1.7310797,
+Tropaeolum polyph,plant,2,Specialist,2.4813893,0.83843255,
+Tropaeolum sessilifolium,plant,2,Specialist,2.1926882,0.2494643,
+Tropaeolum tricolor,plant,2,Specialist,2.4149635,1.0878001,
+Valeriana gracileps,plant,2,Specialist,1.8779595,-0.5651928,
+Verbena scoparia,plant,0,Keystone,1.7007028,-1.9579,
+Viviania marifolia,plant,2,Specialist,2.623718,0.18583475,
+Alloscirtetica gayi,pollinator,1,Connector,-1.9087342,0.8985698,Specialist
+Alloscirtetica rufitarsis,pollinator,1,Connector,-2.2067657,0.61579186,Specialist
+Alloscirtetica sp1 M_PL_001,pollinator,1,Connector,-2.6985781,-1.2222066,Keystone
+Andinus venustus,pollinator,1,Connector,-1.6133151,1.5868564,Specialist
+Anthidium adriani,pollinator,1,Connector,-1.5606058,2.0465367,Specialist
+Anthidium chilensis,pollinator,1,Connector,-2.6442804,-1.2834975,Keystone
+Anthidium decapsilum,pollinator,1,Connector,-2.39104,-0.12746125,Generalist
+Anthidium funereum,pollinator,1,Connector,-2.4431303,-0.5773443,Keystone
+Anthidium gayi,pollinator,1,Connector,-2.448317,-0.15648985,Generalist
+Anthophora incerta,pollinator,1,Connector,-1.8235058,1.2555625,Specialist
+Anthophora sp1 M_PL_001,pollinator,1,Connector,-2.0060992,1.1124243,Specialist
+Auca coctei,pollinator,1,Connector,-2.590323,-1.631471,Keystone
+Bombus dahlbomii,pollinator,1,Connector,-2.671147,-0.8281928,Keystone
+Cadeguala occidentalis,pollinator,1,Connector,-2.3430588,0.13802868,Generalist
+Caenohalictus sp1 M_PL_001,pollinator,3,Generalist,-2.7131138,-2.3301744,Keystone
+Caenohalictus sp2 M_PL_001,pollinator,1,Connector,-1.166896,1.484552,Specialist
+Caenohalictus sp3 M_PL_001,pollinator,1,Connector,-1.166896,1.484552,Specialist
+Caupolicana dimidiata,pollinator,1,Connector,-1.5154405,1.3048086,Specialist
+Centris cineraria,pollinator,3,Generalist,-2.7770994,-2.8691275,Keystone
+Centris nigerrima,pollinator,1,Connector,-1.9671512,-0.34029418,Keystone
+Centris sp1 M_PL_001,pollinator,1,Connector,-0.2213008,1.023709,Specialist
+Chaetodemoticus chilensis,pollinator,1,Connector,-1.5080285,0.64443195,Specialist
+Chilicola sp1 M_PL_001,pollinator,1,Connector,-1.6133151,1.5868564,Specialist
+Chilicola sp2 M_PL_001,pollinator,1,Connector,-1.6470675,1.5774053,Specialist
+Chilimelissa sp1 M_PL_001,pollinator,1,Connector,-1.386425,1.1200608,Specialist
+Coelioxys sp1 M_PL_001,pollinator,1,Connector,-1.5419831,1.5062677,Specialist
+Coleoptera sp4 M_PL_001,pollinator,1,Connector,-2.2388387,-1.1291826,Keystone
+Colletes aruacariae,pollinator,1,Connector,-1.5606058,2.0465367,Specialist
+Colletes fulvipes,pollinator,1,Connector,-1.5599763,1.5623119,Specialist
+Colletes sp1 M_PL_001,pollinator,1,Connector,-1.5599763,1.5623119,Specialist
+Corynurus sp1 M_PL_001,pollinator,1,Connector,-0.64459336,1.4948431,Specialist
+Dasybasis sp1 M_PL_001,pollinator,1,Connector,-0.6980225,1.5273052,Specialist
+Dialictus sp1 M_PL_001,pollinator,1,Connector,-0.64459336,1.4948431,Specialist
+Diptera sp2 M_PL_001,pollinator,3,Generalist,-3.1220682,-4.35846,Keystone
+Elaphroptera relicta,pollinator,1,Connector,-0.9473275,1.4774935,Specialist
+Eristalis tenax,pollinator,1,Connector,-1.4793909,1.5894965,Specialist
+Etcheverrius chilensis,pollinator,1,Connector,-2.4999492,-1.318831,Keystone
+Euryglostromyia philippii,pollinator,1,Connector,-1.8698206,0.56045556,Specialist
+Faunula leucoglene,pollinator,1,Connector,-2.192664,-0.06864611,Specialist
+Habromyia lipoflava,pollinator,1,Connector,-1.7612509,0.63531214,Specialist
+Hemicolletes ruizii,pollinator,1,Connector,-0.64459336,1.4948431,Specialist
+Hymenoptera sp1 M_PL_001,pollinator,3,Generalist,-3.2235975,-5.063682,Keystone
+Hypodynerus sp1 M_PL_001,pollinator,1,Connector,-1.6987772,0.06536729,Connector
+Hypodynerus sp2 M_PL_001,pollinator,1,Connector,-1.5862408,0.651079,Specialist
+Hypodynerus sp3 M_PL_001,pollinator,1,Connector,-1.8235058,1.2555625,Specialist
+Hypsochila wagenknechti,pollinator,1,Connector,-1.2007961,1.5486163,Specialist
+Isepeolus niveiventris,pollinator,1,Connector,-1.6730689,1.1478332,Specialist
+Lepidoptera sp6 M_PL_001,pollinator,1,Connector,-1.315422,-0.75266474,Keystone
+Liphanthus sabulosus,pollinator,1,Connector,-1.1527457,0.37415212,Connector
+Liphanthus sp1 M_PL_001,pollinator,1,Connector,-0.08819347,1.9209931,Specialist
+Liphanthus sp2 M_PL_001,pollinator,1,Connector,-0.08819347,1.9209931,Specialist
+Lithurgomma wagenknechti,pollinator,1,Connector,-1.9658728,1.1248685,Specialist
+Lyophlaeba lugubris,pollinator,1,Connector,-1.969741,0.13013335,Specialist
+Megachile semirufa,pollinator,3,Generalist,-2.9546814,-2.8175306,Keystone
+Megachile sp1 M_PL_001,pollinator,3,Generalist,-2.922894,-2.330389,Keystone
+Megachile sp2 M_PL_001,pollinator,1,Connector,-2.5334408,-0.8491088,Keystone
+Mesonychium gayi,pollinator,1,Connector,-1.9293481,0.97247666,Specialist
+Panur sp1 M_PL_001,pollinator,1,Connector,-2.534781,-0.9592099,Keystone
+Phulia nymphula,pollinator,1,Connector,-1.4220598,1.4014015,Specialist
+Prosopochaeta caliginosa,pollinator,1,Connector,-1.2614868,1.0113951,Specialist
+Prosopochaeta sp1 M_PL_001,pollinator,1,Connector,-1.4220598,1.4014015,Specialist
+Pseudolucia chilensis,pollinator,1,Connector,-1.892512,0.8404758,Specialist
+Ruizantheda mutabilis,pollinator,1,Connector,-1.977172,0.7320226,Specialist
+Ruiziella luctuosa,pollinator,1,Connector,-1.8187267,-0.13429959,Connector
+Scaeva melanostoma,pollinator,3,Generalist,-4.038481,-6.556301,Keystone
+Scaptia atra,pollinator,1,Connector,-1.5606058,2.0465367,Specialist
+Spathipalpus philippii,pollinator,1,Connector,-1.825652,0.7715874,Specialist
+Svastrides melanura,pollinator,1,Connector,-1.5606058,2.0465367,Specialist
+Tapinotaspis caerulea,pollinator,1,Connector,-1.166896,1.484552,Specialist
+Tapinotaspis herbsti,pollinator,1,Connector,-1.166896,1.484552,Specialist
+Tatochila mercedis,pollinator,1,Connector,-1.935935,0.52282214,Specialist
+Tatochila sp1 M_PL_001,pollinator,1,Connector,-1.6133151,1.5868564,Specialist
+Truphloechus bellus,pollinator,1,Connector,-2.129936,0.21864286,Specialist
+Unidentified sp10 M_PL_001,pollinator,1,Connector,-1.4220598,1.4014015,Specialist
+Unidentified sp11 M_PL_001,pollinator,1,Connector,-1.4220598,1.4014015,Specialist
+Unidentified sp12 M_PL_001,pollinator,1,Connector,-1.2164352,0.7777082,Specialist
+Unidentified sp13 M_PL_001,pollinator,1,Connector,-1.2961437,1.2711363,Specialist
+Unidentified sp14 M_PL_001,pollinator,1,Connector,-1.2961438,1.2711363,Specialist
+Unidentified sp15 M_PL_001,pollinator,1,Connector,-0.9628711,1.1783249,Specialist
+Unidentified sp16 M_PL_001,pollinator,1,Connector,-1.2507923,1.1637137,Specialist
+Unidentified sp17 M_PL_001,pollinator,1,Connector,0.108322755,1.830515,Specialist
+Unidentified sp18 M_PL_001,pollinator,1,Connector,-1.3746752,1.1892244,Specialist
+Unidentified sp3 M_PL_001,pollinator,1,Connector,-2.5498264,-1.2944251,Keystone
+Unidentified sp5 M_PL_001,pollinator,1,Connector,-1.9673768,-0.16426036,Generalist
+Unidentified sp7 M_PL_001,pollinator,1,Connector,-1.3871462,0.38923234,Specialist
+Unidentified sp8 M_PL_001,pollinator,1,Connector,-1.764244,0.4907158,Specialist
+Unidentified sp9 M_PL_001,pollinator,1,Connector,-1.2507925,1.1637137,Specialist
+Vibrissomyia sp1 M_PL_001,pollinator,1,Connector,-0.6980225,1.5273052,Specialist
+Villa arenarus,pollinator,1,Connector,-1.3350558,1.5068346,Specialist
+Villa durvillei,pollinator,1,Connector,-1.2790822,1.3908587,Specialist
+Villa flavicura,pollinator,1,Connector,-1.7946613,0.7611333,Specialist
+Villa gayi,pollinator,1,Connector,-1.3350558,1.5068347,Specialist
+Villa guttapennis,pollinator,1,Connector,-1.5418609,1.2779292,Specialist
+Villa hypoxantha,pollinator,1,Connector,-2.319696,-0.60661906,Generalist
+Villa semifuscata,pollinator,1,Connector,-2.0241904,0.19200315,Specialist
+Villa sp1 M_PL_001,pollinator,1,Connector,-2.5009868,-1.512142,Keystone
+Villa verdensis,pollinator,1,Connector,-2.3449447,-0.68152684,Keystone
+Xanthocolletes incahuasi,pollinator,1,Connector,-1.2700893,0.7288043,Specialist
+Xanthocolletes sicheli,pollinator,1,Connector,-1.9694442,-0.48264024,Keystone
+Xanthocolletes sp1 M_PL_001,pollinator,1,Connector,-0.3505837,1.5614628,Specialist
+Yramea lathonoides,pollinator,1,Connector,-1.4294647,-0.0010880753,Connector

@@ -1,0 +1,31 @@
+species,kind,gnn_cluster,gnn_role,pca1,pca2
+Chrysobalanus icaco,plant,3,Connector,0.32474586,1.854812
+Dillenia ferruginea,plant,2,Keystone,0.89485073,0.39248592
+Dracaena reflexa,plant,0,Generalist,0.9021762,-1.2287014
+Erythroxylum sechellarum,plant,2,Keystone,1.8049005,0.19959098
+Mimusops sechellarum,plant,3,Connector,-0.5930875,0.4472608
+Nephrosperma vanhoutteanum,plant,2,Keystone,2.569632,1.126263
+Northea hornei,plant,1,Specialist,-1.1653079,-0.94229555
+Paragenipa wrightii,plant,1,Specialist,-0.30620876,-2.225243
+Phoenicophorium borsigianum,plant,2,Keystone,2.5318468,0.13370825
+Roscheria melanochaetes,plant,0,Generalist,2.2938168,-0.76718724
+Syzygium wrightii,plant,0,Generalist,2.5761085,-0.122159496
+Apis mellifera,pollinator,2,Keystone,2.1304147,2.2284038
+Cratopus aurostriatus,pollinator,1,Specialist,-1.5477883,0.13102245
+Dichaetomyia fasciculifera,pollinator,1,Specialist,-0.31119353,-0.21511967
+Eagris sabadius,pollinator,1,Specialist,-1.7983252,-0.2313193
+Hemipyrellia germana,pollinator,1,Specialist,-0.5332407,0.23565388
+Lasioglossum mahense,pollinator,0,Generalist,2.9517434,-2.0640688
+Lygistorrhina sp1 M_PL_120,pollinator,1,Specialist,-1.4661894,0.17032954
+Megachile seychellensis,pollinator,1,Specialist,-1.5143619,0.94165975
+Nectarinia dussumieri,pollinator,3,Connector,-0.31150344,1.3397943
+Neophyllomyza approximatonervis,pollinator,1,Specialist,-0.6359607,-0.55625045
+Ornidia obesa,pollinator,3,Connector,-1.0510358,0.5693027
+Phelsuma sp1 M_PL_120,pollinator,0,Generalist,1.3579162,-0.7561789
+Rhynchium brunneum,pollinator,1,Specialist,-1.133871,0.12014785
+Scaptodrosophila sp1 M_PL_120,pollinator,1,Specialist,-1.133871,0.12014785
+Unidentified sp1 M_PL_120,pollinator,1,Specialist,-1.5960073,-0.8017525
+Unidentified sp2 M_PL_120,pollinator,1,Specialist,-0.8314524,0.5483793
+Unidentified sp3 M_PL_120,pollinator,1,Specialist,-1.554691,-0.7862366
+Unidentified sp4 M_PL_120,pollinator,1,Specialist,-1.2094742,0.2994496
+Xylocopa caffra,pollinator,1,Specialist,-1.6445792,-0.16189729

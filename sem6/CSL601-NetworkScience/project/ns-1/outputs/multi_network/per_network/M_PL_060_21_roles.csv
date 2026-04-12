@@ -1,0 +1,29 @@
+species,kind,gnn_cluster,gnn_role,pca1,pca2
+Aphloia theiformis,plant,2,Keystone,-2.1921196,1.8992192
+Euodia chapelieri,plant,2,Keystone,-1.2163324,0.18614288
+Gaertnera sp1 M_PL_080,plant,1,Generalist,-4.053125,-0.40050334
+Stillingia lineata,plant,1,Generalist,-5.609852,-2.9379137
+Syzygium coriaceum,plant,2,Keystone,-2.270718,0.8638105
+Warneckea trinervis,plant,2,Keystone,-0.65986854,1.551119
+Ahasverus advena ,pollinator,0,Specialist,1.3385409,-0.98439956
+Allograpta nasuta,pollinator,0,Specialist,0.35896873,-0.43981367
+Apis mellifera,pollinator,3,Connector,0.6377187,0.37024128
+Brachymyrmex sp1 M_PL_080,pollinator,3,Connector,0.76502436,1.974657
+Chaetocnema sp1 M_PL_080,pollinator,2,Keystone,-1.1987038,0.33256492
+Chrysomya megacephala ,pollinator,3,Connector,0.411216,-0.34577692
+Episyrphus sp1 M_PL_080,pollinator,3,Connector,0.70482844,0.4362406
+Lecithoceridae sp1 M_PL_080,pollinator,3,Connector,0.70482844,0.4362406
+Mauritiborium undulatus ,pollinator,0,Specialist,1.349397,-0.96694905
+Melanostoma bituberculatum ,pollinator,3,Connector,0.82460105,2.0007515
+Mordellidae sp1 M_PL_080,pollinator,0,Specialist,1.349397,-0.96694905
+Musca domestica,pollinator,0,Specialist,1.349397,-0.96694905
+Nacoleia sp1 M_PL_080,pollinator,2,Keystone,-0.8905657,1.2163312
+Pachycerina crinicornis ,pollinator,0,Specialist,1.349397,-0.96694905
+Pelecophora intemipta,pollinator,0,Specialist,1.349397,-0.96694905
+Phorinia sp1 M_PL_080,pollinator,0,Specialist,1.3281457,-1.0017191
+Polistes hebraeus,pollinator,3,Connector,0.70482844,0.4362406
+Sarcophaga arno ,pollinator,0,Specialist,1.349397,-0.96694905
+Stomorhina lunata,pollinator,3,Connector,0.10143019,1.5865088
+Syritta nigrofemorata,pollinator,0,Specialist,1.3385409,-0.98439956
+Technomyrmex albipes ,pollinator,0,Specialist,1.349397,-0.96694905
+Villa unifasciata,pollinator,2,Keystone,-0.57316476,0.57309973

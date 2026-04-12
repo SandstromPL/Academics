@@ -1,0 +1,85 @@
+species,kind,gnn_cluster,gnn_role,pca1,pca2
+Abutilon darwinii,plant,3,Connector,0.132256,0.36366802
+Alloplectus sp1 M_PL_074_01,plant,1,Specialist,-1.4774493,0.27728316
+Besleria solanoides,plant,3,Connector,0.647637,0.5996202
+Bomarea pardina,plant,3,Connector,0.2478012,-0.5681639
+Bougainvillea sp1 M_PL_074_01,plant,1,Specialist,-1.4723161,0.35808074
+Brugmansia arborea,plant,3,Connector,0.36548063,-1.4818242
+Burmeistera cyclostigmata,plant,3,Connector,-0.817694,-0.6592111
+Burmeistera sp1 M_PL_074_01,plant,1,Specialist,-1.3547945,0.64085305
+Canna sp1 M_PL_074_01,plant,1,Specialist,-1.4723167,0.3580808
+Cavendishia grandifolia,plant,3,Connector,-0.08362993,0.46066797
+Cavendishia tarapotana,plant,0,Keystone,1.3414884,-0.14469387
+Centropogon sp3 M_PL_074_01,plant,3,Connector,-0.35033843,0.47813183
+Cestrum sp1 M_PL_074_01,plant,1,Specialist,-1.4774497,0.27728307
+Clusia sp4 M_PL_074_01,plant,3,Connector,0.13826494,-0.06426643
+Columnea ciliata,plant,1,Specialist,-1.8173553,0.5673485
+Columnea medicinalis,plant,3,Connector,-0.80884516,-0.6582353
+Columnea strigosa,plant,1,Specialist,-0.7657561,0.6383502
+Ericaceae sp1 M_PL_074_01,plant,3,Connector,0.58928454,0.80870956
+Erythrina sp1 M_PL_074_01,plant,3,Connector,-0.62211496,-0.29606414
+Fuchsia macrostigma,plant,3,Connector,-0.8176938,-0.6592109
+Furcraea sp1 M_PL_074_01,plant,3,Connector,0.40047637,-1.9749348
+Gasteranthus sp1 M_PL_074_01,plant,3,Connector,-0.62821287,0.033941668
+Gesneriaceae sp1 M_PL_074_01,plant,3,Connector,-0.1235953,0.21604873
+Gesneriaceae sp2 M_PL_074_01,plant,3,Connector,-0.8110665,-0.6584802
+Gesneriaceae sp3 M_PL_074_01,plant,1,Specialist,-1.387379,0.59272295
+Glossoloma bolivianum,plant,0,Keystone,1.0756277,-0.15982975
+Guzmania danielii,plant,3,Connector,-0.1185156,0.6875087
+Guzmania jaramilloi,plant,1,Specialist,-1.1389016,0.7141615
+Guzmania sp1 M_PL_074_01,plant,3,Connector,0.38125953,0.21674338
+Guzmania sp2 M_PL_074_01,plant,3,Connector,-0.115882985,1.116059
+Guzmania teuscheri,plant,3,Connector,0.045154244,0.27960438
+Heliconia burleana,plant,1,Specialist,-1.4723167,0.35808074
+Heliconia sp2 M_PL_074_01,plant,1,Specialist,-1.8143958,0.56675726
+Hibiscus rosa-sinensis,plant,3,Connector,0.40047637,-1.9749348
+Impatiens sp1 M_PL_074_01,plant,0,Keystone,1.7174621,0.033365507
+Inga sp2 M_PL_074_01,plant,0,Keystone,3.358027,-0.56594324
+Iridaceae sp1 M_PL_074_01,plant,3,Connector,-0.8176939,-0.659211
+Kalanchoe sp1 M_PL_074_01,plant,1,Specialist,-1.4723167,0.35808074
+Kohleria spicata,plant,1,Specialist,-0.7736499,0.54305565
+Lamiaceae sp1 M_PL_074_01,plant,1,Specialist,-1.4575593,0.2738834
+Lecythidaceae sp1 M_PL_074_01,plant,1,Specialist,-1.8173553,0.56734854
+Leguminosae sp1 M_PL_074_01,plant,1,Specialist,-0.8855379,0.36881164
+Macleania pentaptera,plant,1,Specialist,-1.4774497,0.27728313
+Macleania recumbens,plant,3,Connector,0.58133346,0.0068227984
+Malvaviscus arboreus,plant,3,Connector,-0.61733973,-0.29614657
+Melastomataceae sp1 M_PL_074_01,plant,1,Specialist,-1.1012897,0.70596516
+Musa sp2 M_PL_074_01,plant,1,Specialist,-1.8099527,0.5658728
+Orchidaceae sp1 M_PL_074_01,plant,1,Specialist,-1.4475929,0.27208513
+Palicourea anderssoniana,plant,1,Specialist,-1.1142119,0.7089582
+Palicourea demissa,plant,0,Keystone,1.4109298,0.04882943
+Palicourea sodiroi,plant,3,Connector,1.2322822,0.29622605
+Passifloraceae sp1 M_PL_074_01,plant,1,Specialist,-0.8794445,0.36826727
+Pitcairnia nigra,plant,3,Connector,-0.63852334,0.059138782
+Psammisia aberrans,plant,1,Specialist,-1.4509047,0.35460797
+Psammisia ecuadorensis,plant,3,Connector,-0.09196043,0.42358777
+Psammisia oreogenes,plant,1,Specialist,-1.798069,0.5635235
+Psammisia pauciflora,plant,1,Specialist,-1.3805387,0.64535826
+Psammisia sodiroi,plant,1,Specialist,-1.387379,0.59272295
+Psammisia ulbrichiana,plant,3,Connector,0.5884172,0.19554566
+Renealmia sessilifolia,plant,3,Connector,-0.5420792,0.621377
+Rubiaceae sp3 M_PL_074_01,plant,1,Specialist,-1.4774497,0.27728313
+Rutaceae sp1 M_PL_074_01,plant,1,Specialist,-0.7570686,0.5402786
+Salvia sp1 M_PL_074_01,plant,1,Specialist,-1.4691668,0.2759083
+Sambucus sp1 M_PL_074_01,plant,1,Specialist,-1.4724807,0.2764654
+Sarcopera sp1 M_PL_074_01,plant,0,Keystone,1.6887399,-0.118057415
+Adelomyia melanogenys,pollinator,0,Keystone,0.6066024,-1.0074489
+Aglaiocercus coelestis,pollinator,2,Generalist,3.9970198,2.2159507
+Amazilia franciae,pollinator,0,Keystone,2.3816152,-1.337154
+Amazilia tzacatl,pollinator,2,Generalist,3.574343,1.1006957
+Boissonneaua flavescens,pollinator,0,Keystone,0.5053065,-1.5241488
+Boissonneaua jardini,pollinator,0,Keystone,2.3234887,-0.33484176
+Calliphlox mitchellii,pollinator,0,Keystone,1.9499909,-0.97750914
+Coeligena wilsoni,pollinator,2,Generalist,3.812467,1.8095564
+Colibri coruscans,pollinator,0,Keystone,1.3527727,-1.2489828
+Colibri cyanotus,pollinator,1,Specialist,-1.2811879,-1.9720154
+Colibri delphinae,pollinator,0,Keystone,1.7887233,-1.2561984
+Doryfera ludovicae,pollinator,0,Keystone,2.5239446,-0.37730548
+Florisuga mellivora,pollinator,1,Specialist,-1.2822896,-1.9725412
+Heliodoxa imperatrix,pollinator,0,Keystone,0.40232733,-1.4458076
+Heliodoxa rubinoides,pollinator,0,Keystone,1.7103525,-1.2065341
+Ocreatus underwoodii,pollinator,2,Generalist,4.034498,1.9461118
+Phaethornis syrmatophorus,pollinator,2,Generalist,3.1837401,0.22549187
+Thalurania colombica,pollinator,1,Specialist,-1.2800857,-1.971491
+Urosticte benjamini,pollinator,0,Keystone,2.439016,-0.55698067

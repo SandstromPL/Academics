@@ -1,0 +1,53 @@
+species,kind,gnn_cluster,gnn_role,pca1,pca2
+Aechmea chantiniii,plant,0,Keystone,-0.3319653,0.33090085
+Aechmea contracta,plant,0,Keystone,0.05220804,-0.014640448
+Aechmea corymbosa,plant,2,Connector,1.8701036,-0.7278439
+Aechmea rubiginosa,plant,2,Connector,1.8811513,-0.7104071
+Alloplectus savanarum,plant,0,Keystone,0.37599903,-0.46542445
+Amasonia arborea,plant,0,Keystone,-0.14330076,0.8841032
+Aphelandra macrostachya,plant,0,Keystone,0.32091114,-0.5628281
+Billbergia decora,plant,0,Keystone,0.37106133,-0.47548005
+Bromelia sp1 M_PL_071,plant,0,Keystone,0.40116906,-0.40773103
+Calathea zingiberea,plant,0,Keystone,0.3455189,-0.38023603
+Columnea ericae,plant,0,Keystone,0.3441029,-0.3836317
+Costus scaber,plant,2,Connector,1.874854,-0.7203842
+Decagonocarpus cornutus,plant,3,Specialist,0.37927774,1.7015375
+Drymonia semicordata,plant,0,Keystone,0.36429626,-0.48879215
+Ferdinandusa sprucei,plant,0,Keystone,-0.2213095,-0.2763114
+Gurania rufipila,plant,2,Connector,1.8811514,-0.710407
+Heliconia sp1 M_PL_071,plant,0,Keystone,0.3727204,-0.47213507
+Heliconia tarumaensis,plant,0,Keystone,0.40116906,-0.40773103
+Ischnosiphon lasiocoleus,plant,0,Keystone,0.062128477,0.003982928
+Isertia hypoleuca,plant,0,Keystone,-1.1244744,0.6958703
+Isertia rosea,plant,0,Keystone,0.07269625,0.821185
+Justicia cuatrecasii,plant,2,Connector,1.8811514,-0.710407
+Markea coccinea,plant,0,Keystone,0.33098692,-0.41388592
+Monotagma secundum,plant,0,Keystone,-0.34441873,0.058341943
+Palicourea sp1 M_PL_071,plant,2,Connector,1.8589296,-0.74516976
+Palicourea subspicata,plant,2,Connector,1.8811514,-0.710407
+Passiflora sp1 M_PL_071,plant,0,Keystone,-0.816514,-0.6845778
+Passiflora vitifolia,plant,0,Keystone,0.37106133,-0.47548005
+Payparola hulkiana,plant,0,Keystone,-0.5920469,0.030668058
+Pepinia sp1 M_PL_071,plant,0,Keystone,0.37922153,-0.4586899
+Psittacanthus lasianthus,plant,0,Keystone,0.3417714,0.07014922
+Pslicourea quadrifolia,plant,0,Keystone,-0.7133588,-0.1598391
+Psychotria bahiensis,plant,0,Keystone,-0.35301375,0.10266718
+Psychotria peppigiana,plant,2,Connector,1.8669231,-0.73280543
+Psychotria platypoda,plant,0,Keystone,0.34072307,0.96520704
+Renealmia sp1 M_PL_071,plant,3,Specialist,0.4046862,1.974923
+Retiniphyllum rhabdocalyx,plant,0,Keystone,-0.26801077,-0.064362116
+Ryania pyrifera,plant,0,Keystone,0.32946035,-0.4172204
+Satyria panurensis,plant,0,Keystone,-0.17395532,0.098209344
+Symphonia globulifera,plant,0,Keystone,0.32791948,-0.42054945
+Tabernamontana macrocalyx,plant,2,Connector,1.8653291,-0.73528284
+Tachia occidentalis,plant,0,Keystone,0.35550883,-0.5052858
+Vriesea chrysostachys,plant,0,Keystone,0.345886,0.0806539
+Zygia lathetica,plant,0,Keystone,-0.12365272,-0.17433369
+Amazilia versicolor,pollinator,3,Specialist,-0.026164245,2.6190636
+Chlorostilbon olivaresi,pollinator,1,Generalist,-2.5378113,1.0815465
+Florisuga mellivora,pollinator,3,Specialist,0.19727515,2.417159
+Phaethornis bourcieri,pollinator,1,Generalist,-6.326361,-2.7138126
+Phaethornis malaris,pollinator,1,Generalist,-4.1237416,-0.23543744
+Phaethornis ruber,pollinator,1,Generalist,-2.6194448,1.1570389
+Thalurania furcata,pollinator,1,Generalist,-3.8062406,0.05116991
+Topaza pyra,pollinator,3,Specialist,0.19727515,2.417159

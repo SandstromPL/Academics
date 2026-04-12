@@ -1,0 +1,60 @@
+species,kind,gnn_cluster,gnn_role,pca1,pca2
+Aechmea bromeliifolia,plant,1,Connector,-0.23645853,0.34196565
+Aechmea phanerophlebia,plant,1,Connector,-0.81888473,-0.44534197
+Agalinis angustifolia,plant,1,Connector,-0.8050622,-0.97301537
+Aspilia foliosa,plant,2,Specialist,1.6935393,0.28331593
+Barbacenia flava,plant,1,Connector,-0.21643926,-0.5408924
+Barbacenia gardneri,plant,1,Connector,-0.21622926,-0.5402802
+Barbacenia longiflora,plant,1,Connector,-0.2158002,-0.53904957
+Caamembeca oleifolia,plant,1,Connector,-0.7571772,-1.3683095
+Calolisianthus pulcherrimus,plant,1,Connector,-0.2164392,-0.5408926
+Cipocereus minensis,plant,1,Connector,-0.21622933,-0.54028004
+Cuphea diosmifolia,plant,2,Specialist,1.6945451,0.28236338
+Cuphea disperma,plant,2,Specialist,1.6948847,0.28204513
+Cuphea ericoides,plant,2,Specialist,1.6915821,0.2852164
+Declieuxia fruticosa,plant,1,Connector,-0.58812654,-0.8817949
+Encholirium subsecundum,plant,2,Specialist,1.6935399,0.28331625
+Eremanthus bicolor,plant,2,Specialist,1.6952266,0.28172645
+Esterhazya nanuzae,plant,1,Connector,0.37185544,0.1271452
+Gaylussacia brasiliensis,plant,1,Connector,0.05197368,0.03461485
+Gaylussacia virgata,plant,2,Specialist,1.6925528,0.28426644
+Hyptis passerina,plant,2,Specialist,1.6952266,0.28172645
+Lepidaploa lilacina,plant,1,Connector,0.042110015,0.06315282
+Lepidaploa rufogrisea,plant,2,Specialist,1.6948847,0.28204516
+Lepidaploa sp2 M_PL_074_09,plant,1,Connector,-0.58133537,-0.2880843
+Lippia sp2 M_PL_074_09,plant,2,Specialist,1.6906055,0.28618523
+Lippia sp3 M_PL_074_09,plant,2,Specialist,1.6952266,0.28172645
+Lychnophora pohlii,plant,1,Connector,-0.78529245,-0.5357138
+Lychnophora sp1 M_PL_074_09,plant,2,Specialist,1.6952266,0.28172645
+Lychnophora tomentosa,plant,2,Specialist,1.6938726,0.28299898
+Mandevilla pycnantha,plant,1,Connector,-1.3971528,-1.046714
+Mikania sp1 M_PL_074_09,plant,2,Specialist,1.6952266,0.28172645
+Mimosa aurivillus,plant,2,Specialist,1.6948847,0.2820451
+Minasia scapigera,plant,2,Specialist,1.6928794,0.28394982
+Oocephalus sp1 M_PL_074_09,plant,1,Connector,-1.4414059,-1.192386
+Oocephalus sp2 M_PL_074_09,plant,1,Connector,-1.3416656,-1.5105578
+Paliavana sericiflora,plant,1,Connector,-0.43379343,-0.23489617
+Palicourea marcgravii,plant,2,Specialist,1.6948854,0.2820452
+Palicourea rigida,plant,1,Connector,-1.0829834,-0.48101136
+Pavonia schwackei,plant,2,Specialist,1.6948854,0.2820452
+Periandra mediterranea,plant,1,Connector,-0.21643922,-0.54089254
+Physocalyx major,plant,2,Specialist,1.6948854,0.28204516
+Piptolepis imbricata,plant,2,Specialist,1.6938726,0.282999
+Proteopsis argentea,plant,2,Specialist,1.6942078,0.2826814
+Psyllocarpus laricoides,plant,2,Specialist,1.692553,0.2842664
+Psylocarpus sp1 M_PL_074_09,plant,2,Specialist,1.6952271,0.2817265
+Ruellia densa,plant,1,Connector,0.051705968,0.035441592
+Schwartzia adamantium,plant,1,Connector,-1.0027233,-0.561505
+Stachytarpheta sp2 M_PL_074_09,plant,1,Connector,-1.0408223,-0.48743662
+Vellozia hirsuta,plant,1,Connector,-0.8188092,-1.3991851
+Vochysia discolor,plant,1,Connector,-1.5291798,-0.7125211
+Waltheria sp1 M_PL_074_09,plant,2,Specialist,1.6948854,0.28204516
+Anthracothorax nigricollis,pollinator,0,Keystone,-2.4089644,-0.5693292
+Augastes scutatus,pollinator,3,Generalist,-3.0275376,4.6198597
+Calliphlox amethystina,pollinator,0,Keystone,-2.5139713,-0.22335343
+Campylopterus largipennis,pollinator,0,Keystone,-2.7468445,0.31908453
+Chlorostilbon lucidus,pollinator,0,Keystone,-2.8760767,1.5533261
+Colibri serrirostris,pollinator,0,Keystone,-2.786319,-0.0262419
+Eupetomena macroura,pollinator,0,Keystone,-2.8189828,0.46219644
+Phaethornis pretrei,pollinator,0,Keystone,-3.3868804,1.4955752
+Thalurania furcata,pollinator,0,Keystone,-2.6529171,0.34108087

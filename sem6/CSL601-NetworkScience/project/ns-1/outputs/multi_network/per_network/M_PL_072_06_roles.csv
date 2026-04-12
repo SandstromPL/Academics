@@ -1,0 +1,95 @@
+species,kind,gnn_cluster,gnn_role,pca1,pca2
+Achyrocline satureoides,plant,2,Generalist,4.6447444,0.021676654
+Adesmia incana,plant,3,Connector,-0.63964474,-0.55614924
+Arjona tuberosa,plant,0,Specialist,-2.0105472,-1.6905916
+Baccharis articulata,plant,1,Keystone,2.487739,0.95393044
+Baccharis coridifolia,plant,3,Connector,-0.25757813,-0.8476702
+Baccharis tandilensis,plant,2,Generalist,3.3840525,0.6459414
+Carduus acanthoides,plant,1,Keystone,0.4594687,-1.0486435
+Cleanthes brasiliensis,plant,0,Specialist,-2.0105476,-1.6905911
+Conyza bonariensis,plant,3,Connector,-0.47304922,-0.10973595
+Cytisus monspessulanus,plant,1,Keystone,0.32935706,-0.28537613
+Echium plantagineum,plant,3,Connector,0.02098917,-0.78589433
+Eryngium stenophyllum,plant,2,Generalist,5.231846,0.31902587
+Eupatorium squarrulosum,plant,1,Keystone,1.0606737,-0.7787875
+Eupatorium subhastatum,plant,2,Generalist,3.3682055,-0.5273655
+Eupatorium tenacetifolium,plant,3,Connector,-0.23649734,0.31029546
+Gamochaeta stachydifolia,plant,3,Connector,-0.44096074,0.08444152
+Gerardia genistifolia,plant,1,Keystone,2.395361,-0.69892627
+Gnaphalium cheirantifolium,plant,1,Keystone,0.930067,0.6733885
+Gomphrena perennis,plant,3,Connector,-1.4752965,-1.682578
+Habranthus gracilifolius,plant,3,Connector,0.21388386,-1.5966638
+Hypochaeris rosengurtii,plant,1,Keystone,2.157384,0.8239476
+Hysterionica pinifolia,plant,1,Keystone,1.3648268,-1.1102431
+Lathyrus nervosus,plant,3,Connector,-0.5888473,-0.9015843
+Lathyrus pubescens,plant,1,Keystone,2.036353,-0.5048335
+Oenothera indecora,plant,1,Keystone,1.0482013,-0.662027
+Oxalis articulata,plant,3,Connector,-0.4291841,-0.58550954
+Picris echioides,plant,0,Specialist,-0.64115703,-1.054043
+Rodophiala bifida,plant,0,Specialist,-2.0105479,-1.6905917
+Senecio arechavaletae,plant,0,Specialist,-2.0105479,-1.6905917
+Senecio bravensis,plant,3,Connector,0.055518016,-0.24165736
+Senecio madagascariensis,plant,2,Generalist,3.404272,0.5349632
+Solidago chilensis,plant,1,Keystone,1.6639313,-1.3837821
+Sonchus oleraceus,plant,1,Keystone,0.8430422,-1.307121
+Spilanthes stolonifera,plant,1,Keystone,0.5947444,0.5275115
+Valeriana polystachya,plant,3,Connector,0.051515684,-0.63203686
+Vernonia echioides,plant,1,Keystone,2.1394389,-0.70538723
+Agraulis vanillae,pollinator,3,Connector,-0.18421906,-0.21971458
+Allograpta sp1 M_PL_072,pollinator,1,Keystone,1.0181795,0.46206245
+Anthomyiidae sp1 M_PL_072,pollinator,3,Connector,0.32277316,-0.08111383
+Apis mellifera,pollinator,2,Generalist,3.452051,-0.1534677
+Astylus quadrilineatus,pollinator,1,Keystone,1.9192344,0.79630363
+Augochlora semiramis,pollinator,2,Generalist,4.9326253,-1.2038615
+Augochlorella ephyra,pollinator,1,Keystone,0.8599008,0.2689658
+Augochloropsis erato,pollinator,1,Keystone,1.808835,0.1276552
+Augochloropsis sp2 M_PL_072,pollinator,0,Specialist,-1.8550782,0.52577543
+Bibionidae sp1 M_PL_072,pollinator,3,Connector,-1.3434039,1.2147185
+Bombus bellicosus,pollinator,1,Keystone,0.8106098,-0.16477953
+Brachygastra lechiguana,pollinator,3,Connector,-0.6338291,1.1543155
+Camponotus sp1 M_PL_072,pollinator,1,Keystone,1.2104939,1.080177
+Cantharidae sp1 M_PL_072,pollinator,3,Connector,-1.0179913,1.2096999
+Ceratina rupestris,pollinator,3,Connector,-1.1633538,-0.34219038
+Chalcidoidea sp1 M_PL_072,pollinator,0,Specialist,-2.6035774,0.8413283
+Chauliognathus sp2 M_PL_072,pollinator,0,Specialist,-2.6035774,0.8413283
+Chilicola sp1 M_PL_072,pollinator,3,Connector,-0.116007656,0.3768557
+Chrysodina sp1 M_PL_072,pollinator,3,Connector,-0.7467094,0.7374706
+Chrysopa sp1 M_PL_072,pollinator,3,Connector,-1.1761379,-1.1168362
+Cochliomyia macellaria,pollinator,3,Connector,-1.0179913,1.2096999
+Coelioxys sp1 M_PL_072,pollinator,3,Connector,-1.368214,-0.16265117
+Colletes sp1 M_PL_072,pollinator,0,Specialist,-1.8550782,0.52577543
+Colletes sp2 M_PL_072,pollinator,3,Connector,-0.6540554,0.2836699
+Corticea immocerina,pollinator,3,Connector,-1.368214,-0.16265117
+Drosophilidae sp1 M_PL_072,pollinator,3,Connector,-0.6338291,1.1543155
+Entypus sp1 M_PL_072,pollinator,0,Specialist,-1.8550782,0.52577543
+Eristalinus taeniops,pollinator,0,Specialist,-2.6035774,0.8413283
+Euptoieta claudia hortensia,pollinator,3,Connector,-0.19559063,-0.15896171
+Gaesischia sp1 M_PL_072,pollinator,3,Connector,-1.130435,-0.31192175
+Halictillus sp1 M_PL_072,pollinator,1,Keystone,1.4986129,0.8481289
+Lerodea eufala,pollinator,3,Connector,-0.53646123,-0.4392618
+Lucilia sericata,pollinator,3,Connector,-0.1620158,1.5424159
+Megachile sp4 M_PL_072,pollinator,3,Connector,-1.1633537,-0.34219047
+Megachilidae sp1 M_PL_072,pollinator,3,Connector,-0.3618966,-0.3811429
+Megacyllene spixi,pollinator,3,Connector,-1.2281584,1.1640785
+Melissoptila tandilensis,pollinator,3,Connector,-0.6029062,0.56401515
+Melyridae sp1 M_PL_072,pollinator,3,Connector,0.20758972,0.22177088
+Mordellidae sp1 M_PL_072,pollinator,0,Specialist,-2.6035774,0.8413284
+Palpada sp1 M_PL_072,pollinator,1,Keystone,0.39754567,1.7491279
+Parachytas sp1 M_PL_072,pollinator,3,Connector,-1.176138,-1.1168363
+Paroxystoglossa sp1 M_PL_072,pollinator,3,Connector,-0.5349686,-1.189215
+Phalacridae sp1 M_PL_072,pollinator,3,Connector,0.28545663,-0.5209481
+Platycheirus sp1 M_PL_072,pollinator,3,Connector,0.15647271,0.67927575
+Polistes sp1 M_PL_072,pollinator,3,Connector,-0.40240195,1.282719
+Polybia scutellaris,pollinator,0,Specialist,-2.6035774,0.8413284
+Sarcophagidae sp1 M_PL_072,pollinator,3,Connector,-0.1450706,1.572791
+Staphylinidae sp1 M_PL_072,pollinator,3,Connector,-0.4709168,0.05134842
+Tachinidae sp1 M_PL_072,pollinator,0,Specialist,-1.8550786,0.5257755
+Tachypompilus sp1 M_PL_072,pollinator,3,Connector,-1.9771171,-1.3395138
+Thespieus catochra,pollinator,3,Connector,-1.368214,-0.16265117
+Toxomerus sp1 M_PL_072,pollinator,1,Keystone,1.4949827,1.5304165
+Trichopoda giacomelli,pollinator,0,Specialist,-1.8550786,0.5257755
+Vanessa sp1 M_PL_072,pollinator,1,Keystone,1.6731513,0.7000164
+Villa sp1 M_PL_072,pollinator,3,Connector,0.050801855,-0.39513206
+Xylocopa augusti,pollinator,3,Connector,-1.0205576,-0.15484048
+Zeta canaliculata,pollinator,3,Connector,-0.7120166,0.6498404
+Zethus sp1 M_PL_072,pollinator,0,Specialist,-1.8550786,0.5257755

@@ -1,0 +1,40 @@
+species,kind,gnn_cluster,gnn_role,pca1,pca2
+Aphloia theiformis,plant,1,Generalist,-3.9604065,1.8433448
+Casearia coriacea,plant,1,Generalist,-2.0858107,0.53307205
+Cordemoya integrifolia,plant,3,Keystone,0.66618437,-1.4538172
+Croton grangeroides,plant,3,Keystone,-1.3642417,-1.045705
+Erythroxylum macrocarpum,plant,3,Keystone,-1.1323572,-1.4402603
+Gaertnera sp1 M_PL_082,plant,1,Generalist,-2.991643,-1.3780365
+Labourdonnaisia callophylloides,plant,1,Generalist,-1.0280334,0.06430813
+Molinaea macrantha,plant,3,Keystone,-0.15666345,0.70593256
+Phyllanthus phillyreifolius,plant,3,Keystone,-1.8276862,-1.1439168
+Stillingia lineata,plant,1,Generalist,-3.7434309,0.64195955
+Syzygium coriaceum,plant,1,Generalist,-1.492444,1.743305
+Syzygium petrinese,plant,1,Generalist,-1.9904568,0.45175776
+Allograpta nasuta,pollinator,2,Specialist,1.6958153,0.26201344
+Apis mellifera,pollinator,1,Generalist,-1.5603974,0.19764015
+Brachymyrmex sp1 M_PL_082,pollinator,2,Specialist,0.011637415,1.6944098
+Chaetocnema sp1 M_PL_082,pollinator,3,Keystone,-1.537299,-1.356097
+Chrysomya megacephala ,pollinator,2,Specialist,1.201991,0.80599
+Dysauxes florida,pollinator,0,Connector,0.18503197,-1.595327
+Episyrphus sp1 M_PL_082,pollinator,0,Connector,1.3895265,-1.4480718
+Eristalinus flaveolus,pollinator,1,Generalist,-0.47460714,0.9811058
+Hippotion eson,pollinator,0,Connector,1.3895265,-1.4480718
+Leptotes pirithous,pollinator,2,Specialist,1.6958153,0.26201344
+Lygaeidae sp1 M_PL_082,pollinator,2,Specialist,2.046042,1.0374559
+Macroglossum milvus,pollinator,2,Specialist,2.046042,1.0374559
+Melanostoma annulipes,pollinator,2,Specialist,2.0225036,1.0424241
+Mordellidae sp1 M_PL_082,pollinator,2,Specialist,2.046042,1.0374559
+Musca domestica,pollinator,1,Generalist,-1.9953369,0.07950249
+Nacoleia sp1 M_PL_082,pollinator,0,Connector,0.5195805,-2.0158126
+Ornidia obesa,pollinator,0,Connector,1.0210704,-0.2617124
+Orthellia albigena ,pollinator,2,Specialist,1.6958153,0.26201344
+Panara naso,pollinator,2,Specialist,1.9986875,1.047504
+Paragus borbonicus,pollinator,0,Connector,0.4424816,-0.21771753
+Phorinia sp1 M_PL_082,pollinator,3,Keystone,0.9044402,-1.134305
+Sarcophaga arno ,pollinator,0,Connector,0.7467524,-0.095214196
+Stomorhina lunata,pollinator,2,Specialist,0.6194152,0.56608677
+Stomoxys calcitrans,pollinator,0,Connector,1.3895265,-1.4480718
+Syritta sp1 M_PL_082,pollinator,2,Specialist,1.6958152,0.26201344
+Technomyrmex albipes ,pollinator,3,Keystone,-0.5732298,0.24144262
+Villa unifasciata,pollinator,2,Specialist,0.48430353,0.6819307

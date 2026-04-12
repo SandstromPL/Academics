@@ -1,0 +1,96 @@
+species,kind,gnn_cluster,gnn_role,pca1,pca2
+Adesmia retrofracta,plant,0,Connector,0.092428304,-1.7325276
+Arjona patagonica,plant,0,Connector,1.3913422,-1.2422979
+Baccharis pingraea,plant,3,Keystone,4.0850215,0.60787106
+Discaria trinervis,plant,2,Generalist,5.7931404,3.834826
+Grindelia chiloensis,plant,2,Generalist,5.6425023,4.602072
+Hysterionica jasionoides,plant,3,Keystone,2.6842616,-0.25661358
+Junellia tonini,plant,0,Connector,1.3913422,-1.2422981
+Larrea divaricata,plant,3,Keystone,3.176228,-0.062574044
+Lathyrus sp1 M_PL_023,plant,0,Connector,1.7395898,-0.69692516
+Lecanophora heterophylla,plant,0,Connector,1.1677899,-1.074545
+Mimulus sp1 M_PL_023,plant,0,Connector,0.09242842,-1.7325281
+Mutisia decurrens,plant,0,Connector,0.1315161,-2.003678
+Oenothera mendocinensis,plant,0,Connector,0.1315162,-2.0036778
+Opuntia corrugata,plant,3,Keystone,2.5944977,-0.48967692
+Oxalis sp1 M_PL_023,plant,0,Connector,0.9054651,-1.5660566
+Phacelia secunda,plant,0,Connector,0.19385701,-2.1316583
+Polygala stenophylla,plant,0,Connector,0.46080315,-1.9498984
+Pyrrhocactus strausianum,plant,3,Keystone,2.0852888,-0.94176203
+Rapistrum rugosum,plant,3,Keystone,1.9236783,-0.6119694
+Rosa rubiginosa,plant,3,Keystone,2.9959626,-0.271598
+Senecio filaginoides,plant,0,Connector,1.1573644,-1.106281
+Senecio subulatus,plant,3,Keystone,2.7438025,-0.24389428
+Thelesperma megapotamicum,plant,3,Keystone,2.3473227,-0.32021943
+Alipumilio sp1 M_PL_023,pollinator,1,Specialist,-1.4640048,0.4092101
+Alloscirtetica herbsti,pollinator,1,Specialist,-2.3905303,0.5528891
+Ammophila sp1 M_PL_023,pollinator,0,Connector,0.31454876,-0.7377789
+Anthidium rubriceps,pollinator,0,Connector,0.013968088,-1.484977
+Apis mellifera,pollinator,0,Connector,0.051647533,0.3376867
+Arhysosage bifasciata,pollinator,0,Connector,0.8538726,-0.7970301
+Augochloropsis sp1 M_PL_023,pollinator,1,Specialist,-1.4640048,0.4092101
+Caenohalictus sp1 M_PL_023,pollinator,0,Connector,-0.23129526,-0.4990369
+Caenohalictus sp2 M_PL_023,pollinator,1,Specialist,-1.4640048,0.4092101
+Callonychium mandibulare,pollinator,0,Connector,1.0750409,0.2875173
+Carposcalis punctulata,pollinator,0,Connector,-0.11501399,0.92980826
+Carposcalis saltana,pollinator,1,Specialist,-1.4640048,0.4092101
+Centris muralis,pollinator,0,Connector,-0.07459548,-0.7302654
+Centris sp1 M_PL_023,pollinator,0,Connector,0.74812275,-0.82515585
+Chalepogenus caeruleus,pollinator,1,Specialist,-2.3905303,0.5528891
+Colletes lycii,pollinator,0,Connector,0.7140417,-0.76952714
+Compsomyiops fulvicrura ,pollinator,1,Specialist,-1.3109157,0.89261913
+Copestylum aricia,pollinator,3,Keystone,2.4644303,1.3803734
+Copestylum sp1 M_PL_023,pollinator,0,Connector,-0.12918639,0.39509994
+Diadasia patagonica,pollinator,1,Specialist,-2.3905303,0.5528891
+Dialictus sp1 M_PL_023,pollinator,0,Connector,0.7379021,0.4668102
+Dialictus sp2 M_PL_023,pollinator,0,Connector,0.97195417,0.5978661
+Entypus sp1 M_PL_023,pollinator,1,Specialist,-2.3905303,0.5528891
+Epicauta sp1 M_PL_023,pollinator,0,Connector,-0.07459548,-0.7302654
+Eriopis conexa,pollinator,1,Specialist,-2.3905303,0.5528891
+Eristalis bogotensis,pollinator,0,Connector,0.49878433,-0.8350159
+Eristalis tenax,pollinator,1,Specialist,-1.4640048,0.4092101
+Hemiptera sp27 M_PL_023,pollinator,0,Connector,0.36982065,-0.75400764
+Hemiptera sp28 M_PL_023,pollinator,1,Specialist,-2.3905303,0.5528891
+Hypodinerus sp1 M_PL_023,pollinator,1,Specialist,-1.4640048,0.4092101
+Megachile sp1 M_PL_023,pollinator,0,Connector,1.1332618,0.07586411
+Megachile sp2 M_PL_023,pollinator,0,Connector,1.7684711,-0.5155287
+Microcerella sp1 M_PL_023,pollinator,1,Specialist,-1.4640048,0.4092101
+Notiphila sp1 M_PL_023,pollinator,0,Connector,-0.23129526,-0.4990369
+Ocyptamus meridionalis,pollinator,1,Specialist,-1.4640048,0.4092101
+Oxybelus sp1 M_PL_023,pollinator,0,Connector,-0.23129526,-0.4990369
+Prionyx sp1 M_PL_023,pollinator,0,Connector,-0.23129526,-0.4990369
+Psaenythia rufipes,pollinator,0,Connector,1.4344971,0.28698656
+Sappho sp1 M_PL_023,pollinator,0,Connector,0.8534766,-1.2637352
+Scaeva occidentalis,pollinator,3,Keystone,1.6935306,1.0593445
+Svastrides zebra,pollinator,0,Connector,-0.12918639,0.39509994
+Tatochila sp1 M_PL_023,pollinator,0,Connector,0.843294,-0.99071443
+Thyridanthrax sp1 M_PL_023,pollinator,1,Specialist,-1.4640049,0.4092101
+Thysanoptera sp29 M_PL_023,pollinator,1,Specialist,-1.4640048,0.40921012
+Toxomerus sp1 M_PL_023,pollinator,0,Connector,0.16896434,-0.83393353
+Unidentified sp1 M_PL_023,pollinator,0,Connector,-0.084348805,0.32394686
+Unidentified sp10 M_PL_023,pollinator,1,Specialist,-1.4640048,0.40921012
+Unidentified sp11 M_PL_023,pollinator,1,Specialist,-1.4640048,0.40921012
+Unidentified sp12 M_PL_023,pollinator,1,Specialist,-2.3905303,0.5528891
+Unidentified sp13 M_PL_023,pollinator,1,Specialist,-1.3109162,0.8926192
+Unidentified sp14 M_PL_023,pollinator,1,Specialist,-1.3109162,0.8926192
+Unidentified sp15 M_PL_023,pollinator,0,Connector,0.4436639,-0.9923831
+Unidentified sp16 M_PL_023,pollinator,0,Connector,0.8482978,0.43874434
+Unidentified sp17 M_PL_023,pollinator,1,Specialist,-1.4640048,0.40921012
+Unidentified sp18 M_PL_023,pollinator,1,Specialist,-1.3109161,0.8926192
+Unidentified sp19 M_PL_023,pollinator,1,Specialist,-1.4640048,0.40921012
+Unidentified sp2 M_PL_023,pollinator,1,Specialist,-2.3905303,0.5528891
+Unidentified sp20 M_PL_023,pollinator,1,Specialist,-2.3905303,0.5528891
+Unidentified sp21 M_PL_023,pollinator,1,Specialist,-1.4640048,0.4092101
+Unidentified sp22 M_PL_023,pollinator,1,Specialist,-2.3905303,0.5528891
+Unidentified sp23 M_PL_023,pollinator,0,Connector,-0.23129526,-0.49903688
+Unidentified sp24 M_PL_023,pollinator,1,Specialist,-2.3905303,0.5528891
+Unidentified sp25 M_PL_023,pollinator,1,Specialist,-1.310916,0.8926192
+Unidentified sp26 M_PL_023,pollinator,0,Connector,0.75019765,0.9538585
+Unidentified sp3 M_PL_023,pollinator,0,Connector,0.8109946,-0.55195194
+Unidentified sp4 M_PL_023,pollinator,1,Specialist,-1.4640048,0.40921012
+Unidentified sp5 M_PL_023,pollinator,1,Specialist,-2.3905303,0.5528891
+Unidentified sp6 M_PL_023,pollinator,0,Connector,0.051647488,0.33768663
+Unidentified sp7 M_PL_023,pollinator,1,Specialist,-2.3905303,0.5528891
+Unidentified sp8 M_PL_023,pollinator,1,Specialist,-1.4640048,0.40921012
+Unidentified sp9 M_PL_023,pollinator,1,Specialist,-1.310916,0.8926192
+Vanessa cardui ,pollinator,0,Connector,1.0522866,0.17684059

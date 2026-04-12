@@ -1,0 +1,67 @@
+species,kind,gnn_cluster,gnn_role,pca1,pca2
+Abarema jupunba,plant,2,Connector,0.5393611,-1.6928377
+Aechmea aquilega,plant,2,Connector,0.30896136,0.37656194
+Aechmea dichlamydea,plant,0,Specialist,1.2033553,0.5908007
+Aechmea fendleri,plant,0,Specialist,1.2188175,0.57846653
+Aechmea nudicaulis,plant,0,Specialist,0.8525367,0.3618583
+Aegiphila perplexa,plant,2,Connector,0.74038047,-1.0509862
+Albizia saman,plant,2,Connector,-0.6134316,-1.7149239
+Billbergia pyramidalis,plant,0,Specialist,1.480357,1.0744171
+Brownea coccinea capitella,plant,0,Specialist,1.0431272,0.8063981
+Calliandra guildingii,plant,2,Connector,-0.4970482,-0.12784396
+Centropogon cornutus,plant,0,Specialist,0.84715474,0.99918306
+Chelonanthus alatus,plant,0,Specialist,0.7858785,0.32312018
+Citrus sp1 M_PL_074_04,plant,2,Connector,0.33613613,-1.8839114
+Clathrotropis brachypetala,plant,0,Specialist,1.0710106,-0.07683501
+Cordia bicolor,plant,2,Connector,0.44706836,-1.2475084
+Cordia curassavica,plant,2,Connector,0.5224663,-0.99192005
+Costus sp1 M_PL_074_04,plant,0,Specialist,2.331702,1.5128828
+Costus spiralis,plant,2,Connector,0.07155215,0.53548515
+Cuspidaria inaequalis,plant,0,Specialist,1.0610132,-0.052018702
+Dolichandra unguis-cati,plant,2,Connector,0.06055727,-0.5993392
+Erythrina corallodendron,plant,0,Specialist,1.3865622,0.52567554
+Erythrina fusca,plant,2,Connector,0.5095899,-2.251255
+Erythrina poeppigiana,plant,2,Connector,-0.45862237,-1.3997089
+Gonzalagunia hirsuta,plant,0,Specialist,0.77730525,0.33157375
+Gurania lobata,plant,2,Connector,-0.1940361,-0.54636496
+Guzmania monostachia,plant,0,Specialist,1.0657874,0.84258384
+Hamelia patens,plant,0,Specialist,1.4866542,1.0102202
+Heliconia bihai,plant,2,Connector,-0.44571805,0.668768
+Heliconia hirsuta,plant,0,Specialist,0.51787335,0.42965877
+Heliconia psittacorum,plant,0,Specialist,2.3197625,1.5269566
+Heliconia sp6 M_PL_074_04,plant,0,Specialist,1.9820786,0.80189514
+Inga ingoides,plant,2,Connector,0.13030931,-1.8975453
+Inga sp3 M_PL_074_04,plant,2,Connector,0.48484242,-0.43687272
+Inga venosa,plant,2,Connector,0.018140372,-0.90701264
+Ischnosiphon arouma,plant,0,Specialist,2.3317022,1.5128828
+Isertia parviflora,plant,2,Connector,-0.66781974,-0.5250104
+Justicia sp3 M_PL_074_04,plant,2,Connector,0.07395958,0.11997178
+Lantana camara,plant,0,Specialist,1.6117873,-0.844447
+Mandevilla hirsuta,plant,2,Connector,0.3214398,-0.29037693
+Marcgravia sp1 M_PL_074_04,plant,0,Specialist,1.2749339,0.6841424
+Norantea guianensis,plant,2,Connector,-0.27243793,-1.345565
+Pachystachys coccinea,plant,2,Connector,-0.550205,0.2720214
+Palicourea crocea,plant,2,Connector,-0.23214665,0.37648627
+Psychotria mapourioides,plant,0,Specialist,1.5642158,1.0938344
+Psychotria muscosa,plant,0,Specialist,0.4791331,0.4038374
+Psychotria sp1 M_PL_074_04,plant,2,Connector,0.40639922,-0.03879463
+Renealmia sp1 M_PL_074_04,plant,0,Specialist,1.5428001,1.1419674
+Ryania speciosa,plant,2,Connector,0.10493104,-0.7024491
+Symphonia globulifera,plant,2,Connector,-0.10458493,-1.6338483
+Syzygium jambos,plant,0,Specialist,1.0710106,-0.07683523
+Tabebuia stenocalyx,plant,2,Connector,0.9012951,-0.8403815
+Tabernaemontana cymosa,plant,0,Specialist,0.8728428,0.41562194
+Tillandsia fasciculata,plant,0,Specialist,1.7819874,0.96166396
+Tillandsia utriculata,plant,0,Specialist,1.5428001,1.1419674
+Vitex divaricata,plant,2,Connector,0.90206623,-2.1006887
+Vriesea procera,plant,0,Specialist,2.3287055,1.5164293
+Warszewiczia coccinea,plant,2,Connector,0.1579828,-1.2492476
+Amazilia brevirostris,pollinator,1,Generalist,-4.9845243,0.33880433
+Amazilia tobaci,pollinator,1,Generalist,-5.53097,1.0922065
+Anthracothorax nigricollis,pollinator,3,Keystone,-3.6253176,-1.1254338
+Chlorestes notata,pollinator,1,Generalist,-4.956085,0.29183966
+Chrysolampis mosquitus,pollinator,3,Keystone,-3.8332026,-1.6512926
+Florisuga mellivora,pollinator,3,Keystone,-2.8104584,-1.478039
+Glaucis hirsutus,pollinator,1,Generalist,-4.7204804,1.6177421
+Phaethornis guy,pollinator,1,Generalist,-4.9969854,2.0612795
+Phaethornis longuemareus,pollinator,1,Generalist,-5.3762503,2.4400842

@@ -1,0 +1,51 @@
+species,kind,gnn_cluster,gnn_role,pca1,pca2
+Antirhea borbonica,plant,1,Keystone,-0.7091704,-0.5578531
+Aphloia theiformis,plant,2,Generalist,-3.6983716,0.6108494
+Claoxylon linostachys,plant,2,Generalist,-2.1841974,-0.6865118
+Croton fothergillifolius,plant,2,Generalist,-3.2495027,-0.45899233
+Erythroxylum macrocarpum,plant,2,Generalist,-2.8953154,0.0052670687
+Geniostoma borbonicum,plant,2,Generalist,-3.6435137,-0.09699938
+Molinaea alternifolia,plant,3,Connector,-1.4487389,-2.096148
+Psiadia terebinthina,plant,2,Generalist,-3.164417,-0.83255804
+Roussea simplex ,plant,3,Connector,0.928131,-2.443724
+Sideroxylon cinereum,plant,2,Generalist,-3.4048274,1.3864121
+Toddalia asiatica,plant,2,Generalist,-2.7720723,-1.7558727
+Apis mellifera,pollinator,0,Specialist,1.3926711,1.9905193
+Brachymyrmex sp1 M_PL_060,pollinator,3,Connector,1.7928847,-1.3594679
+Ceratitis roas,pollinator,1,Keystone,0.25803375,0.17559712
+Chaetocnema sp1 M_PL_060,pollinator,0,Specialist,0.70958644,-1.0354347
+Chironomidae sp1 M_PL_060,pollinator,0,Specialist,1.8033499,1.5638928
+Chrysomya megacephala ,pollinator,1,Keystone,-0.08946991,0.12432082
+Cicadellidae sp1 M_PL_060,pollinator,0,Specialist,1.3843145,-0.7359748
+Dysauxes florida,pollinator,0,Specialist,1.7206038,0.011655808
+Episyrphus sp1 M_PL_060,pollinator,0,Specialist,1.5739222,-1.3326083
+Eristalinus flaveolus,pollinator,0,Specialist,1.5885675,0.5131296
+Fannia pusio ,pollinator,1,Keystone,-0.29325804,1.1421981
+Henotesia narcissus,pollinator,3,Connector,0.34527534,-2.0554554
+Homoneura quadrivittata ,pollinator,0,Specialist,1.5796468,0.53293985
+Ischiodon aegyptius ,pollinator,0,Specialist,1.7206038,0.011655808
+Limnophora quaterna ,pollinator,0,Specialist,1.0350292,1.066258
+Lygistorrhina sp1 M_PL_060,pollinator,3,Connector,1.1738828,-0.63621277
+Melanostoma annulipes,pollinator,1,Keystone,-2.0521343,0.10745496
+Miridae sp1 M_PL_060,pollinator,1,Keystone,-0.2687519,-0.7945476
+Musca domestica,pollinator,1,Keystone,-0.92004746,1.4246353
+Nacoleia sp1 M_PL_060,pollinator,1,Keystone,-0.624779,0.03949093
+Nyctemera insulare,pollinator,0,Specialist,0.606345,0.8916426
+Ophyra capensis ,pollinator,1,Keystone,0.28994015,-0.32744285
+Orchisia costata ,pollinator,0,Specialist,0.64635897,-0.48366994
+Ornidia obesa,pollinator,0,Specialist,1.720604,0.01165584
+Orthellia albigena ,pollinator,0,Specialist,0.69040585,0.069261104
+Pachycerina crinicornis ,pollinator,1,Keystone,-1.3150467,1.3282493
+Pelecophora intemipta,pollinator,0,Specialist,1.0350292,1.066258
+Psyllidae sp1 M_PL_060,pollinator,0,Specialist,1.720604,0.01165584
+Sapromyza sp1 M_PL_060,pollinator,0,Specialist,1.8033499,1.5638928
+Scirtidae sp1 M_PL_060,pollinator,0,Specialist,1.573922,-1.3326082
+Scirtidae sp2 M_PL_060,pollinator,0,Specialist,1.5885676,0.51312953
+Stomorhina lunata,pollinator,1,Keystone,-1.1687143,1.0750929
+Stomoxys calcitrans,pollinator,1,Keystone,-1.2481058,0.37862527
+Stomoxys niger,pollinator,1,Keystone,-0.8724149,1.3127367
+Syritta nigrofemorata,pollinator,0,Specialist,1.720604,0.01165584
+Tarundia servillei,pollinator,0,Specialist,1.5885676,0.51312953
+Technomyrmex albipes ,pollinator,1,Keystone,-0.012994802,-0.18722883
+Tettigoniidae sp1 M_PL_060,pollinator,3,Connector,1.9918307,-1.5923976
+Zosterops mauritianus,pollinator,1,Keystone,0.053215627,1.3484416

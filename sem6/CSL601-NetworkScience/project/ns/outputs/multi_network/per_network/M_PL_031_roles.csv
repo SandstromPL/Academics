@@ -1,0 +1,98 @@
+species,kind,gnn_cluster,gnn_role,pca1,pca2
+Befaria glauca,plant,2,Connector,-1.3298908,-0.94537735
+Bonnetia sessilis,plant,1,Keystone,-2.4180398,0.5000621
+Borreria capitata,plant,2,Connector,-1.3130274,-0.70250505
+Brocchinia acuminata,plant,1,Keystone,-2.7441788,1.1022383
+Calea lucidivenia,plant,1,Keystone,-2.4871886,0.77173173
+Catasetum discolor,plant,2,Connector,-0.39814472,-2.421199
+Chromolanea sp1 M_PL_031,plant,2,Connector,-0.95978403,-1.0741061
+Clusia grandiflora,plant,1,Keystone,-1.8313521,-0.1937689
+Clusia pusilla,plant,1,Keystone,-2.4180393,0.5000618
+Cybianthus quelchii,plant,1,Keystone,-1.6479791,0.31962898
+Cyrilla racemiflora,plant,2,Connector,-0.94093275,-1.4799061
+Declieuxia fruticosa,plant,2,Connector,-0.99237376,-0.72213197
+Digomphia laurifolia,plant,1,Keystone,-1.8313519,-0.19376883
+Epidendrum ibaguense,plant,2,Connector,-1.113295,-1.1311362
+Epistephium duckei,plant,2,Connector,-0.81215775,-1.4873048
+Eriopsis biloba,plant,2,Connector,-1.1010995,-1.370832
+Galactophora schomburgkiana,plant,2,Connector,-1.1013943,-1.2898741
+Heliamphora heterodoxa,plant,2,Connector,-1.5664604,-0.81269616
+Humiria balsamifera,plant,1,Keystone,-3.7938206,1.8947016
+Ilex retusa,plant,1,Keystone,-2.687744,1.0195326
+Irlbachia nemorosa,plant,2,Connector,-0.49970737,-1.8444252
+Macairea pachyphylla,plant,2,Connector,-1.6712465,-0.80752057
+Macairea parvifolia,plant,2,Connector,-0.5937514,-1.6963625
+Mandevilla benthamii,plant,2,Connector,-1.1672833,-1.19857
+Marcetia taxifolia,plant,2,Connector,-1.4052761,-0.47263506
+Meriana sclerophylla,plant,2,Connector,-1.2120873,-0.834833
+Miconia ciliata,plant,2,Connector,-0.810225,-2.2521968
+Mikania psilotachya,plant,2,Connector,-0.8944586,-1.6856922
+Notopora schomburgkii,plant,2,Connector,-0.5353925,-1.7448258
+Pagameopsis garryoides,plant,2,Connector,-1.7557563,-1.1242273
+Philodendron ptarianum,plant,2,Connector,-0.810225,-2.2521968
+Phthirusa adunca,plant,1,Keystone,-2.768752,1.4013003
+Poecilandra retusa,plant,1,Keystone,-2.712966,0.8695112
+Pogonia stricta,plant,2,Connector,-0.5353925,-1.7448258
+Remijia densiflora,plant,2,Connector,-0.8132537,-1.1997354
+Sauvagesia angustifolia,plant,2,Connector,-0.7878635,-1.3269321
+Sipanea galioides,plant,2,Connector,-0.945107,-1.5321587
+Siphanthera cordifolia,plant,2,Connector,-1.9704468,-0.4598541
+Sobralia liliastrum,plant,2,Connector,-0.87893987,-1.4806333
+Stegolepsis angustata,plant,1,Keystone,-2.5758817,0.7637746
+Ternstroemia crassifolia,plant,2,Connector,-1.2176243,-1.698083
+Tibouchina fraterna,plant,1,Keystone,-2.0736094,0.12242645
+Tococa nitens,plant,2,Connector,-0.5937514,-1.6963625
+Vaccinium euryanthum,plant,2,Connector,-1.446844,-0.94989735
+Vaccinium puberulum,plant,1,Keystone,-2.2328854,-0.092878334
+Vernonia bolivariensis,plant,2,Connector,-1.6208025,-0.7491012
+Vismia lauriformis,plant,1,Keystone,-2.145212,-0.16699012
+Xyris setigera,plant,2,Connector,-1.2176243,-1.698083
+Apis mellifera,pollinator,3,Generalist,-2.6403713,3.572973
+Augochlora sp1 M_PL_031,pollinator,0,Specialist,1.5687852,0.922264
+Augochloropsis sp1 M_PL_031,pollinator,3,Generalist,0.7663899,1.9765564
+Augochloropsis sp2 M_PL_031,pollinator,0,Specialist,2.6403587,-1.4786015
+Augochloropsis sp3 M_PL_031,pollinator,0,Specialist,2.6403587,-1.4786015
+Bombus atratus,pollinator,3,Generalist,0.67492956,2.0856984
+Bombus pullatus,pollinator,3,Generalist,0.20190285,2.3796377
+Bombus volucelloides,pollinator,3,Generalist,-0.5242543,2.8395696
+Brachygastra lecheguana,pollinator,0,Specialist,2.5257254,-0.08490269
+Calicopis sp1 M_PL_031,pollinator,0,Specialist,1.2343161,1.2861674
+Campsomeris sp1 M_PL_031,pollinator,0,Specialist,1.1604704,1.4198823
+Ceratina sp1 M_PL_031,pollinator,3,Generalist,0.7542699,1.9026332
+Cerciris sp1 M_PL_031,pollinator,3,Generalist,0.405905,1.9476105
+Coereba flaveola ,pollinator,0,Specialist,2.6368048,-0.41306764
+Copestylum sp1 M_PL_031,pollinator,0,Specialist,1.0338796,1.6024913
+Cyclocephala sp1 M_PL_031,pollinator,0,Specialist,2.6403587,-1.4786015
+Cyclocephala sp2 M_PL_031,pollinator,0,Specialist,2.6403587,-1.4786015
+Cylindromia sp1 M_PL_031,pollinator,0,Specialist,2.1162963,-0.15449752
+Dialictus sp1 M_PL_031,pollinator,0,Specialist,1.557922,0.8814588
+Dialictus sp2 M_PL_031,pollinator,0,Specialist,2.1919227,0.77870613
+Eristalis sp1 M_PL_031,pollinator,0,Specialist,2.2447674,0.18772921
+Euglossa sp1 M_PL_031,pollinator,3,Generalist,-0.45971298,2.727745
+Eulaema meriana,pollinator,0,Specialist,2.025543,0.086248055
+Exomalopsis sp1 M_PL_031,pollinator,0,Specialist,1.6315159,1.3298402
+Hylaeus sp1 M_PL_031,pollinator,0,Specialist,2.1162963,-0.15449755
+Melipona compresipes,pollinator,0,Specialist,2.2447672,0.18772922
+Melipona scutellaris,pollinator,3,Generalist,-1.4635509,3.185744
+Montezumia azurescens,pollinator,0,Specialist,2.5966973,-0.9223343
+Oxybelus sp1 M_PL_031,pollinator,0,Specialist,2.6060321,-0.86534846
+Pachodynerus nasidens,pollinator,0,Specialist,1.7812777,0.18990022
+Panoquina bola,pollinator,0,Specialist,1.6712099,0.8960693
+Pepsis sp1 M_PL_031,pollinator,0,Specialist,2.1162963,-0.15449753
+Pereirapsis sp1 M_PL_031,pollinator,0,Specialist,2.573953,-0.3943085
+Polistes lanio,pollinator,0,Specialist,1.3347884,1.3804923
+Polistes vibex,pollinator,0,Specialist,2.4424953,-0.32928586
+Politmus milleri,pollinator,3,Generalist,-0.10694525,2.2452035
+Polybia occidentalis,pollinator,0,Specialist,1.5844275,0.64591163
+Polybia scrobalis,pollinator,3,Generalist,0.3920323,1.9848714
+Psedagochloropsis sp1 M_PL_031,pollinator,0,Specialist,1.6712099,0.8960693
+Pyrrhogige sp1 M_PL_031,pollinator,0,Specialist,2.2205443,0.65590614
+Sarcodexia innota,pollinator,0,Specialist,2.4105334,0.025730062
+Sphex ichneumoneus,pollinator,0,Specialist,1.0127686,1.4369594
+Sphex sp1 M_PL_031,pollinator,0,Specialist,1.2872195,0.77415854
+Sticia sp1 M_PL_031,pollinator,0,Specialist,1.4055461,0.10670515
+Tachites sp1 M_PL_031,pollinator,0,Specialist,1.4055461,0.10670515
+Vehilius inca,pollinator,0,Specialist,2.5719972,-0.6586731
+Volucella sp1 M_PL_031,pollinator,0,Specialist,2.0110338,0.19014235
+Xylocopa sp1 M_PL_031,pollinator,3,Generalist,-0.8108016,2.8920474
+Zonotrichia capensis,pollinator,0,Specialist,2.6368053,-0.41306767

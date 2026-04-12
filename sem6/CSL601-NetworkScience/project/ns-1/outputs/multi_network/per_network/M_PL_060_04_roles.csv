@@ -1,0 +1,68 @@
+species,kind,gnn_cluster,gnn_role,pca1,pca2
+Agauria salicifolia,plant,0,Keystone,-0.029752629,0.8419292
+Antidesma madagascariense,plant,0,Keystone,-1.4243026,-1.4256973
+Antirhea borbonica,plant,0,Keystone,-1.7879692,-1.1517367
+Aphloia theiformis,plant,3,Generalist,-4.0279064,0.70800996
+Bertiera zaluzania ,plant,0,Keystone,-1.3152735,-1.0756449
+Chassalia coriacea,plant,0,Keystone,-1.8410752,-0.8995274
+Claoxylon linostachys,plant,0,Keystone,-1.071719,-1.2129517
+Coffea mauritiana,plant,0,Keystone,-0.77003103,-0.57677555
+Croton fothergillifolius,plant,3,Generalist,-3.5218828,0.046606906
+Dracaena reflexa,plant,3,Generalist,-3.3553617,-0.59188557
+Erythroxylum macrocarpum,plant,0,Keystone,-0.30275115,-0.15822458
+Flagellaria indica,plant,1,Connector,0.46075252,0.8619301
+Molinaea alternifolia,plant,3,Generalist,-4.43086,0.86563605
+Pandanus wiehii,plant,2,Specialist,0.6114706,-1.2071134
+Polyscias mauritiana,plant,1,Connector,1.607212,-0.17790402
+Psiadia terebinthina,plant,0,Keystone,-2.3615332,-0.1496813
+Roussea simplex ,plant,0,Keystone,-1.2226294,0.61980015
+Sideroxylon cinereum,plant,3,Generalist,-3.6396906,1.2821294
+Stillingia lineata,plant,0,Keystone,-1.6053548,-0.9213981
+Syzygium venosum,plant,0,Keystone,-1.4894518,0.42812008
+Toddalia asiatica,plant,0,Keystone,-0.72263634,-0.6706215
+Allograpta nasuta,pollinator,0,Keystone,-0.7654777,-0.98585343
+Apis mellifera,pollinator,0,Keystone,-1.5987366,0.37459323
+Brachymyrmex sp1 M_PL_063,pollinator,0,Keystone,-1.5478381,-0.07910427
+Cephonodes trochilus,pollinator,2,Specialist,0.92248863,-0.7153855
+Chaetocnema sp1 M_PL_063,pollinator,2,Specialist,0.7620978,-0.5201094
+Chrysomya megacephala ,pollinator,1,Connector,1.9569834,1.8572836
+Cryptinae sp1 M_PL_063,pollinator,2,Specialist,1.6602186,-0.5832026
+Dioxyna sororcula ,pollinator,0,Keystone,-0.08762258,0.49662498
+Dysauxes florida,pollinator,1,Connector,2.0840142,1.3606683
+Episyrphus sp1 M_PL_063,pollinator,1,Connector,2.0840142,1.3606683
+Eristalinus flaveolus,pollinator,0,Keystone,-0.47016558,0.50732905
+Fannia pusio ,pollinator,1,Connector,0.11039695,1.0918479
+Graphomya maculata,pollinator,2,Specialist,1.7264774,-0.12654577
+Homoneura sp1 M_PL_063,pollinator,2,Specialist,2.1126504,-0.8113879
+Hydrillodes sp1 M_PL_063,pollinator,2,Specialist,1.662936,-0.42234406
+Ischiodon aegyptius ,pollinator,0,Keystone,-0.23584205,0.8682782
+Lecithoceridae sp1 M_PL_063,pollinator,2,Specialist,0.86912555,-0.8952838
+Leptotes pirithous,pollinator,1,Connector,0.99355596,0.5279118
+Lygistorrhina sp1 M_PL_063,pollinator,1,Connector,1.0095872,0.8951423
+Macroglossum milvus,pollinator,2,Specialist,1.7414435,-0.87725425
+Mauritiborium undulatus ,pollinator,2,Specialist,2.0565615,-1.0632378
+Melanostoma bituberculatum ,pollinator,1,Connector,2.0028114,1.3831325
+Musca domestica,pollinator,3,Generalist,-2.0652444,0.3364515
+Nacoleia sp1 M_PL_063,pollinator,2,Specialist,0.9871235,-0.010006219
+Nacoleia sp2 M_PL_063,pollinator,1,Connector,0.9623353,1.3393251
+Ophyra capensis ,pollinator,1,Connector,1.0971822,1.6598641
+Ornidia obesa,pollinator,1,Connector,0.06847368,0.90716493
+Orthellia albigena ,pollinator,1,Connector,2.037197,1.8227926
+Pachycerina crinicornis ,pollinator,3,Generalist,-2.5520205,-0.2526274
+Panara naso,pollinator,0,Keystone,-0.32866853,-0.120982654
+Phelsuma cepediana,pollinator,2,Specialist,0.39350078,-0.96045095
+Phorinia sp1 M_PL_063,pollinator,1,Connector,1.3307072,1.4270786
+Polistes hebraeus,pollinator,2,Specialist,0.32138687,-0.10873056
+Psilopa iceryae ,pollinator,2,Specialist,1.3784528,-1.280422
+Remigia frugalis ,pollinator,2,Specialist,2.1873834,-1.2717623
+Sarcophaga arno ,pollinator,2,Specialist,0.9565645,0.048354533
+Scatopsidae sp1 M_PL_063,pollinator,2,Specialist,2.0565615,-1.0632375
+Stomorhina lunata,pollinator,3,Generalist,-2.4261372,0.75901306
+Stomoxys calcitrans,pollinator,0,Keystone,-1.0416288,0.37256604
+Stomoxys niger,pollinator,1,Connector,1.9204363,1.4775596
+Syritta nigrofemorata,pollinator,2,Specialist,0.8590516,-1.1665866
+Syritta sp1 M_PL_063,pollinator,2,Specialist,0.619718,-0.7153548
+Tarundia servillei,pollinator,2,Specialist,2.1126504,-0.811388
+Technomyrmex albipes ,pollinator,0,Keystone,-1.8441527,-0.029438842
+Trichoplusia indicator ,pollinator,2,Specialist,1.8944523,-0.36694607
+Zosterops mauritianus,pollinator,2,Specialist,2.2657464,-1.0710071

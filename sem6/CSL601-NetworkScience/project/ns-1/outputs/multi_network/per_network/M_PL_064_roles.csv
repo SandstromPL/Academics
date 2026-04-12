@@ -1,0 +1,23 @@
+species,kind,gnn_cluster,gnn_role,pca1,pca2
+Corymborkis flava,plant,2,Connector,-1.1560678,0.74468297
+Fridericia speciosa,plant,2,Connector,-0.8464538,1.4147953
+Geissomeria schottiana,plant,1,Generalist,1.8999416,-0.8454426
+Heliconia simulans,plant,1,Generalist,-0.046448864,-0.86113757
+Hyptis asperrima,plant,2,Connector,-1.4819285,2.021823
+Justicia scheidweileri,plant,1,Generalist,0.2692582,-1.1386437
+Lantana camara,plant,0,Specialist,-1.2555618,-0.61277974
+Mendoncia velloziana,plant,1,Generalist,0.3701451,-0.20112412
+Mutisia speciosa,plant,0,Specialist,-1.7440021,-0.7125439
+Passiflora kermesina,plant,0,Specialist,-1.781227,-0.6938341
+Passiflora speciosa,plant,0,Specialist,-1.3805594,-0.9309042
+Rubus rosaefolius,plant,0,Specialist,-1.2555618,-0.61277974
+Ruellia brevifolia,plant,1,Generalist,0.2360284,-0.37499693
+Ruellia subsessilis,plant,0,Specialist,-1.805666,-0.68143064
+Amazilia fimbriata,pollinator,1,Generalist,-0.078602485,-1.2216179
+Amazilia lactea,pollinator,1,Generalist,0.047109567,0.02941052
+Calliphlox amethystina,pollinator,2,Connector,-1.2116184,2.0420196
+Chlorostilbon aureoventris,pollinator,2,Connector,-0.2331867,2.1178877
+Phaethornis pretrei,pollinator,1,Generalist,1.1073856,-0.20651385
+Phaethornis ruber,pollinator,3,Keystone,4.1711006,0.7212106
+Phaethornis squalidus,pollinator,3,Keystone,3.5560338,0.68749255
+Thalurania glucopis,pollinator,1,Generalist,2.6198847,-0.685572

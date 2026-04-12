@@ -1,0 +1,48 @@
+species,kind,gnn_cluster,gnn_role,pca1,pca2
+Aphloia theiformis,plant,3,Generalist,1.0577909,0.46029875
+Cordemoya integrifolia,plant,2,Connector,-1.0332575,-1.0257995
+Diospyros revaughanii,plant,0,Keystone,1.2740225,-1.2654842
+Euodia chapelieri,plant,2,Connector,0.33456644,0.2471039
+Euodia obtusifolia,plant,3,Generalist,0.4403105,0.8259044
+Gaertnera petrinensis,plant,2,Connector,0.48369288,-0.5853467
+Gaertnera rotundifolia,plant,2,Connector,-0.21002504,-0.101836696
+Gaertnera sp1 M_PL_067,plant,3,Generalist,1.2422323,-0.12824751
+Labourdonnaisia callophylloides,plant,2,Connector,0.52882636,-0.980091
+Ochna mauritiana,plant,2,Connector,-0.01581656,0.24636883
+Pandanus barklyi,plant,0,Keystone,1.4987129,-2.0881536
+Phyllanthus phillyreifolius,plant,2,Connector,0.3005114,-0.7281007
+Pittosporum senacia,plant,3,Generalist,2.0982747,1.0375588
+Psiadia terebinthina,plant,0,Keystone,2.0212197,-0.43972123
+Smilax anceps,plant,2,Connector,-0.51949227,-0.08494109
+Stillingia lineata,plant,3,Generalist,3.0498521,2.1311905
+Syzygium coriaceum,plant,3,Generalist,2.1800444,1.6452881
+Tabernaemontana persicarifolia,plant,2,Connector,0.91809577,-0.6513563
+Turraea rigida,plant,2,Connector,0.031935547,0.37193617
+Allograpta nasuta,pollinator,1,Specialist,-1.9780759,0.8334151
+Apis mellifera,pollinator,0,Keystone,2.3764951,-1.4234462
+Brachymyrmex sp1 M_PL_067,pollinator,1,Specialist,-1.8893105,0.8207851
+Cephonodes trochilus,pollinator,2,Connector,-0.9294189,-0.17064765
+Chrysomya megacephala ,pollinator,1,Specialist,-0.58982533,1.3737234
+Episyrphus sp1 M_PL_067,pollinator,2,Connector,-1.5168612,-1.4423661
+Eristalinus flaveolus,pollinator,1,Specialist,-0.80197746,1.3563204
+Fannia pusio ,pollinator,1,Specialist,-1.9780759,0.8334151
+Hippotion eson,pollinator,2,Connector,-0.79331124,-0.20832841
+Ischiodon aegyptius ,pollinator,2,Connector,-1.5168612,-1.4423661
+Lecithoceridae sp1 M_PL_067,pollinator,2,Connector,-0.30834424,-0.95437855
+Lygaeidae sp1 M_PL_067,pollinator,1,Specialist,-1.489109,-0.47595057
+Melanagromyza sojae ,pollinator,1,Specialist,-1.9780759,0.8334151
+Musca domestica,pollinator,1,Specialist,-1.0163786,1.1669914
+Nacoleia sp1 M_PL_067,pollinator,3,Generalist,1.9593009,-0.31624594
+Nacoleia sp2 M_PL_067,pollinator,2,Connector,-0.5066773,-0.7193812
+Nogodinidae sp1 M_PL_067,pollinator,1,Specialist,-1.3716553,-0.49378398
+Pachycerina crinicornis ,pollinator,1,Specialist,-0.5550939,1.3987641
+Paragus borbonicus,pollinator,0,Keystone,0.5420505,-0.056203086
+Pheidole megacephala,pollinator,2,Connector,-0.4407763,-0.9608526
+Phelsuma cepediana,pollinator,2,Connector,-0.028543029,-1.232081
+Phorinia sp1 M_PL_067,pollinator,3,Generalist,0.5330809,1.2691908
+Sarrothripinae sp1 M_PL_067,pollinator,2,Connector,-0.79320204,-0.6804419
+Stomorhina lunata,pollinator,1,Specialist,-1.9780759,0.8334151
+Syritta sp1 M_PL_067,pollinator,1,Specialist,-1.9485381,0.8292371
+Technomyrmex albipes ,pollinator,3,Generalist,2.0667737,0.14043686
+Villa unifasciata,pollinator,3,Generalist,1.969592,0.7519439
+Zosterops mauritianus,pollinator,2,Connector,-0.72060496,-0.75115013

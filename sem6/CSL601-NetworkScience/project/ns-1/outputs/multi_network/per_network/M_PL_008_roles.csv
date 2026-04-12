@@ -1,0 +1,50 @@
+species,kind,gnn_cluster,gnn_role,pca1,pca2
+Adenocarpus viscosus,plant,1,Connector,-0.5000015,0.88179845
+Argyranthemum teneriffae,plant,0,Generalist,-2.410187,0.0019062244
+Echium wildpretii,plant,0,Generalist,-4.7203174,-2.2890668
+Erysimum scoparium,plant,0,Generalist,-3.2034285,0.36514032
+Mentha longifolia,plant,0,Generalist,-3.7206829,-1.3708767
+Nepeta teydea,plant,0,Generalist,-1.5638454,0.7383905
+Pimpinella cumbrae,plant,0,Generalist,-3.9860165,-1.5223769
+Pterocephalus lasiospermus,plant,0,Generalist,-3.9242322,-0.6019607
+Scrophularia glabrata,plant,0,Generalist,-2.4530194,-0.024728144
+Spartocytisus supranubius,plant,0,Generalist,-2.7760596,0.67186
+Tolpis webbii,plant,0,Generalist,-2.5992398,0.6759456
+Anastoechus latifrons,pollinator,2,Keystone,-0.81256276,1.1397041
+Andrena wollestoni,pollinator,1,Connector,0.8177631,1.5504657
+Anthidium manicatum,pollinator,1,Connector,1.553743,1.1100923
+Anthophora alluaudi,pollinator,2,Keystone,-0.65397125,0.82482785
+Anthrax anthrax,pollinator,2,Keystone,0.12653321,-0.2578845
+Apis mellifera,pollinator,2,Keystone,-0.6523018,0.4297014
+Bibio elmoi,pollinator,3,Specialist,1.9343975,-0.5433778
+Cephalodromia sp1 M_PL_008,pollinator,1,Connector,0.4886541,0.93878055
+Colletes dimidiatus,pollinator,1,Connector,1.0176145,0.5742412
+Cyclyrius webbianus,pollinator,2,Keystone,0.4323676,0.48028362
+Dermasothes gracile,pollinator,3,Specialist,1.9259548,-1.0002693
+Drosophila sp1 M_PL_008,pollinator,1,Connector,1.9557779,1.0267619
+Eristalis tenax,pollinator,2,Keystone,-0.21069302,-0.2183445
+Estheria simonyi,pollinator,3,Specialist,0.7886222,-0.68616194
+Eucera gracilipes,pollinator,2,Keystone,-0.21016926,1.0012877
+Euodynerus reflexus,pollinator,2,Keystone,-0.5557299,1.0662632
+Gasteruption sp1 M_PL_008,pollinator,3,Specialist,1.1934719,-0.48452753
+Geron hesperidon,pollinator,2,Keystone,-0.58916223,1.2183092
+Hyleaus canariensis,pollinator,2,Keystone,-0.16282052,0.30339506
+Lasioglossum actifrons,pollinator,1,Connector,0.56488466,0.14770626
+Lasioglossum chalcodes,pollinator,3,Specialist,2.3442278,-1.6587373
+Lasioglossum viride,pollinator,2,Keystone,0.12653321,-0.2578845
+Leptochilus eatoni,pollinator,3,Specialist,1.9259549,-1.0002693
+Linnaemyia soror,pollinator,2,Keystone,0.25771242,-0.50788194
+Lucilia sericata,pollinator,1,Connector,1.1046889,0.66847265
+Macroglossum stellatarum,pollinator,3,Specialist,0.99240726,-0.35453457
+Megachile canariensis,pollinator,2,Keystone,-0.56551236,0.9858009
+Melecta curvispina,pollinator,2,Keystone,0.45392656,-0.05756853
+Nyctia lugubris,pollinator,3,Specialist,1.9259549,-1.0002693
+Osmia canariensis,pollinator,1,Connector,0.36394238,1.3004231
+Peleteria ruficornis,pollinator,3,Specialist,1.9343973,-0.54337794
+Phylloscopus collybita,pollinator,3,Specialist,2.3442278,-1.6587373
+Scaeva albomaculata,pollinator,1,Connector,1.0626341,0.65772855
+Serinus canarius,pollinator,3,Specialist,2.3442278,-1.6587373
+Stomorhina lunata,pollinator,3,Specialist,1.4074923,-1.0893157
+Tachina canariensis,pollinator,3,Specialist,1.9343975,-0.5433779
+Tachysphex unicolor,pollinator,1,Connector,1.8665507,0.9986391
+Unidentified sp1 M_PL_008,pollinator,3,Specialist,1.0808924,-0.42765474

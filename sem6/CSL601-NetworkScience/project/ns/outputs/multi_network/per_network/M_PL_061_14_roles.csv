@@ -1,0 +1,18 @@
+species,kind,gnn_cluster,gnn_role,pca1,pca2
+Alstonia macrophylla,plant,0,Specialist,-5.500445,0.39876714
+Canthium bibracteatum,plant,1,Connector,0.18659472,-0.8037731
+Erythroxylum sechellarum,plant,3,Generalist,0.95313877,0.03117599
+Memecylon eleagni,plant,2,Keystone,1.1421616,2.5623286
+Nephrosperma vanhoutteanum,plant,3,Generalist,1.2464669,0.40512338
+Phoenicophorium borsigianum,plant,3,Generalist,1.0894835,0.5280707
+Apis mellifera,pollinator,2,Keystone,1.0312765,1.4090159
+Cratopus aurostriatus,pollinator,2,Keystone,0.8504635,1.29196
+Diptera sp1 M_PL_097,pollinator,1,Connector,0.6042499,-1.0426259
+Eagris sabadius,pollinator,0,Specialist,-5.4592943,0.3932298
+Hemipyrellia germana,pollinator,1,Connector,0.7315942,-0.8824395
+Hemipyrellia sp1 M_PL_097,pollinator,1,Connector,0.4975024,-0.7437711
+Lasioglossum mahense,pollinator,3,Generalist,1.0796977,0.72951543
+Neophyllomyza approximatonervis,pollinator,1,Connector,0.06120105,-1.3925222
+Phelsuma sp1 M_PL_097,pollinator,1,Connector,0.74005485,-0.8794841
+Rhiparida seychellensis,pollinator,1,Connector,0.68465316,-0.612049
+Rhynchium brunneum,pollinator,1,Connector,0.061201036,-1.3925225

@@ -1,0 +1,27 @@
+species,kind,gnn_cluster,gnn_role,pca1,pca2
+Banisteriopsis muricata,plant,0,Keystone,-2.678822,-2.1125538
+Banisteriopsis schizoptera,plant,1,Generalist,1.3304751,1.3647481
+Banisteriopsis stellaris,plant,1,Generalist,1.3275604,1.40032
+Byrsonima gardnerana,plant,1,Generalist,-0.18226524,0.6297053
+Carolus chasei,plant,1,Generalist,1.2736889,1.386568
+Dicella bracteosa,plant,1,Generalist,0.65848255,1.3292905
+Diplopterys pubipetala,plant,0,Keystone,-1.6011631,0.21609145
+Heteropterys sp1 M_PL_059,plant,0,Keystone,-1.2045667,0.16870959
+Heteropterys sp2 M_PL_059,plant,0,Keystone,-0.82298017,0.25248387
+Janusia anisandra,plant,1,Generalist,1.6156346,1.1485016
+Stigmaphyllon auriculatum,plant,1,Generalist,1.0406699,1.4452267
+Stigmaphyllon ciliatum,plant,1,Generalist,1.375146,1.5918344
+Stigmaphyllon paralias,plant,1,Generalist,2.45737,2.0873604
+Apis mellifera,pollinator,3,Connector,-0.676072,-1.482528
+Centris aenea,pollinator,0,Keystone,-3.0564752,0.76517355
+Centris caxiensis,pollinator,0,Keystone,-2.616679,0.16690461
+Centris flavifrons,pollinator,0,Keystone,-1.9785978,-0.1601466
+Centris fuscata,pollinator,0,Keystone,-2.9390373,0.88138616
+Centris obsoleta,pollinator,2,Specialist,2.748376,-2.095833
+Centris sp1 M_PL_059,pollinator,3,Connector,1.0399661,-0.7727682
+Centris sp2 M_PL_059,pollinator,2,Specialist,2.7585592,-2.1266525
+Centris tarsata,pollinator,0,Keystone,-2.6449547,-0.44347847
+Centris trigonoides,pollinator,3,Connector,-0.39043593,-0.89599353
+Epicharis sp1 M_PL_059,pollinator,3,Connector,-0.40293422,-0.9841809
+Xylocopa grisescens,pollinator,2,Specialist,2.764579,-2.1421762
+Xylocopa sp1 M_PL_059,pollinator,3,Connector,0.8044755,-1.6179953

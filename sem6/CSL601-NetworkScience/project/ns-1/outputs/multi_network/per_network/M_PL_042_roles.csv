@@ -1,0 +1,19 @@
+species,kind,gnn_cluster,gnn_role,pca1,pca2
+Chiococa alba,plant,0,Connector,1.1990377,0.30370075
+Cordia lutea,plant,0,Connector,1.060453,1.8632138
+Cordia revoluta,plant,0,Connector,1.0604537,1.8632138
+Darwiniothamnus tenuifolius,plant,0,Connector,1.199038,0.30370057
+Jasminoserius thouarsii,plant,0,Connector,1.060454,1.8632138
+Lippia rosmarinifolia,plant,0,Connector,1.060454,1.8632141
+Opuntia echios,plant,0,Connector,1.1990379,0.30370075
+Passiflora foetida,plant,0,Connector,1.060454,1.8632141
+Pectis tenuifolia,plant,3,Keystone,0.45241487,-0.3808174
+Plumbago scandens,plant,1,Specialist,-5.645052,1.0285325
+Scalesia affinis,plant,0,Connector,1.1990379,0.30370075
+Waltheria ovata,plant,0,Connector,1.1990379,0.30370075
+Halmenus cuspidatus,pollinator,2,Generalist,0.105710655,-3.1624043
+Lepidanthrax tinctus,pollinator,2,Generalist,0.1912436,-2.8577168
+Phoebis sennae,pollinator,1,Specialist,-5.8049264,0.55248773
+Unidentified sp1 M_PL_042,pollinator,3,Keystone,-0.721241,-1.1017327
+Unidentified sp2 M_PL_042,pollinator,3,Keystone,-0.721241,-1.1017327
+Xylocopa darwini,pollinator,2,Generalist,0.8456321,-3.8111892

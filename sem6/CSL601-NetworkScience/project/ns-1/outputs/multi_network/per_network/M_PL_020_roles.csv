@@ -1,0 +1,112 @@
+species,kind,gnn_cluster,gnn_role,pca1,pca2
+Arnica alpina,plant,0,Generalist,2.6887617,0.4138056
+Cassiope tetragona,plant,3,Connector,0.6590313,0.9683287
+Cerastium alpinum,plant,3,Connector,1.4283222,-0.023894314
+Draba sp1 M_PL_020,plant,3,Connector,1.3452291,0.23274936
+Dryas integrifolia,plant,0,Generalist,5.9650393,-5.231013
+Erigeron compositus,plant,3,Connector,0.1716005,2.3589299
+Erigeron eriocephalus,plant,3,Connector,0.661529,0.974475
+Erysimum pallasii,plant,3,Connector,1.5742074,0.40485334
+Lesquerella arctica,plant,0,Generalist,3.0353262,0.20675951
+Papaver radicatum,plant,0,Generalist,3.3378272,0.030375766
+Pedicularis arctica,plant,0,Generalist,3.4103596,-0.25906134
+Pedicularis capitata,plant,3,Connector,0.65903157,0.9683285
+Polygonum viviparum,plant,0,Generalist,3.249629,-0.05866151
+Potentilla nivea,plant,0,Generalist,3.520431,-0.20782048
+Ranumculus sulphureus,plant,3,Connector,0.66152924,0.9744748
+Salix arctica,plant,0,Generalist,4.787084,-1.7012595
+Saxifraga hirculus,plant,3,Connector,1.1115474,1.4392184
+Saxifraga oppositifolia,plant,0,Generalist,4.528777,-1.2927676
+Stellaria longipes,plant,3,Connector,1.8511474,0.9963071
+Taraxacum arctogenum,plant,0,Generalist,2.618491,0.55576444
+Acarina sp1 M_PL_020,pollinator,1,Keystone,-0.7259139,0.32636008
+Acarina sp4 M_PL_020,pollinator,1,Keystone,-0.64559215,0.43202338
+Aedes impiger,pollinator,2,Specialist,-2.1728272,-0.67396575
+Aedes nigripes,pollinator,2,Specialist,-2.1728272,-0.67396575
+Aedes sp1 M_PL_020,pollinator,1,Keystone,-0.122666255,-0.21293163
+Allopiophila fulviceps,pollinator,2,Specialist,-2.1728272,-0.67396575
+Anarta richardsoni,pollinator,1,Keystone,0.28737828,-0.18816216
+Apanteles sp1 M_PL_020,pollinator,2,Specialist,-2.1728272,-0.67396575
+Arctoseius cetratus,pollinator,1,Keystone,-0.6455921,0.43202338
+Atractodes sp1 M_PL_020,pollinator,3,Connector,0.15748678,1.2447622
+Boloria chariclea,pollinator,1,Keystone,0.66807634,0.14985974
+Boloria polaris,pollinator,1,Keystone,-0.099779956,-0.36140987
+Bombus sp1 M_PL_020,pollinator,1,Keystone,1.6161673,-0.10863196
+Boreellus atriceps,pollinator,1,Keystone,1.0250621,-0.07376039
+Bryobia praetiosa,pollinator,1,Keystone,0.5574529,0.035665493
+Calliphoridae sp1 M_PL_020,pollinator,1,Keystone,-0.15273263,0.24816605
+Carposcalis carinata,pollinator,1,Keystone,1.4468971,-0.101960875
+Cecidophyes sp1 M_PL_020,pollinator,1,Keystone,-0.6455921,0.43202338
+Ceratopogon sp1 M_PL_020,pollinator,1,Keystone,-0.122666255,-0.21293163
+Ceratopogon sp2 M_PL_020,pollinator,2,Specialist,-2.1728272,-0.67396575
+Chalcidae sp1 M_PL_020,pollinator,3,Connector,0.17816672,1.4638301
+Colias hecla,pollinator,1,Keystone,0.6416761,0.12773916
+Corynoneura scutellata,pollinator,1,Keystone,-0.13048069,0.86051184
+Cricotopus sp1 M_PL_020,pollinator,2,Specialist,-2.1728272,-0.67396575
+Crymodes exulis,pollinator,1,Keystone,0.6676716,0.11020358
+Cryptus arcticus,pollinator,1,Keystone,-0.7259139,0.32636008
+Culicoides sp1 M_PL_020,pollinator,2,Specialist,-2.1728272,-0.67396575
+Dictyna borealis,pollinator,1,Keystone,0.8546956,0.54637027
+Diptera sp5 M_PL_020,pollinator,2,Specialist,-2.1728272,-0.67396575
+Dolichopus dasyops,pollinator,1,Keystone,-0.13834128,0.9830423
+Entomobrya comparata,pollinator,1,Keystone,-0.07836869,0.9550992
+Erigone pyschrophila,pollinator,2,Specialist,-2.1728272,-0.67396575
+Eupogonomyia groenlandica,pollinator,1,Keystone,0.8629548,-0.20077342
+Forcipomyia sp1 M_PL_020,pollinator,2,Specialist,-2.1728272,-0.67396575
+Fucellia pictipennis,pollinator,1,Keystone,-0.15273263,0.24816605
+Helophilus borealis,pollinator,2,Specialist,-2.1728272,-0.67396575
+Ichneumonidae sp1 M_PL_020,pollinator,2,Specialist,-2.1728272,-0.67396575
+Lasiestra leucocycla,pollinator,1,Keystone,0.6676716,0.11020358
+Lasiopiophila pilosa,pollinator,2,Specialist,-2.1728272,-0.67396575
+Limnophyes sp1 M_PL_020,pollinator,1,Keystone,1.6175576,-0.10976572
+Lycaena feildeni,pollinator,1,Keystone,0.3355647,0.97291416
+Metasyrphus chillcotti,pollinator,1,Keystone,-0.099779956,-0.36140987
+Microspectra sp1 M_PL_020,pollinator,1,Keystone,-0.7259139,0.32636008
+Microspectra sp2 M_PL_020,pollinator,2,Specialist,-2.1728272,-0.67396575
+Nematus sp1 M_PL_020,pollinator,1,Keystone,-0.15273263,0.24816605
+Olethreutes inquietana,pollinator,1,Keystone,0.31877682,0.91858804
+Oresbius sp1 M_PL_020,pollinator,1,Keystone,-0.7259139,0.32636008
+Orthocladiinae sp1 M_PL_020,pollinator,2,Specialist,-2.1728272,-0.67396575
+Paraphaenocladius despectus,pollinator,1,Keystone,0.42071983,0.32071218
+Pardosa glacialis,pollinator,1,Keystone,-0.7259139,0.32636008
+Pectinarctica stylata,pollinator,1,Keystone,-0.7259139,0.32636008
+Pegomyia sp1 M_PL_020,pollinator,2,Specialist,-2.1728272,-0.67396575
+Peleteria aenea,pollinator,1,Keystone,1.2535347,0.26811615
+Periscepsia sp1 M_PL_020,pollinator,1,Keystone,-0.099779956,-0.36140987
+Phalacrodira nigropilosa,pollinator,1,Keystone,-0.15273263,0.24816605
+Phormia terraenovae,pollinator,1,Keystone,-0.7259139,0.32636008
+Phytomyza erigerontophaga,pollinator,3,Connector,0.16209812,1.722813
+Plebius aquilo,pollinator,1,Keystone,0.24369778,0.8104559
+Pogonomyoides segnis,pollinator,1,Keystone,-0.22752148,-0.21222834
+Procladius sp1 M_PL_020,pollinator,2,Specialist,-2.1728272,-0.67396575
+Psectrocladius sp1 M_PL_020,pollinator,2,Specialist,-2.1728272,-0.67396575
+Rhamphomyia filicauda,pollinator,1,Keystone,1.3249372,0.17499094
+Rhamphomyia hoeli,pollinator,1,Keystone,-0.122666255,-0.21293163
+Rhamphomyia sp1 M_PL_020,pollinator,1,Keystone,0.5410434,0.044381108
+Rhamphomyia sp2 M_PL_020,pollinator,1,Keystone,-0.07179367,-0.16600634
+Rhamphomyia ursinella,pollinator,2,Specialist,-2.1728272,-0.67396575
+Saotis sp1 M_PL_020,pollinator,2,Specialist,-2.1728272,-0.67396575
+Scatophaga apicaulis,pollinator,1,Keystone,-0.099779956,-0.36140987
+Scatophaga multisetosa,pollinator,1,Keystone,-0.7259139,0.32636008
+Scatophaga sp1 M_PL_020,pollinator,1,Keystone,-0.64559215,0.43202338
+Sciari sp1 M_PL_020,pollinator,1,Keystone,1.3482982,0.096796535
+Smittia sp1 M_PL_020,pollinator,1,Keystone,1.1693195,-0.11716514
+Smittia velutina,pollinator,1,Keystone,0.9003754,-0.15989262
+Spilogona denudata,pollinator,2,Specialist,-2.1728272,-0.67396575
+Spilogona dorsata,pollinator,1,Keystone,0.44243577,-0.078255095
+Spilogona extensa,pollinator,2,Specialist,-2.1728272,-0.67396575
+Spilogona melanosoma,pollinator,2,Specialist,-2.172827,-0.6739659
+Spilogona obsoleta,pollinator,2,Specialist,-2.172827,-0.6739659
+Spilogona sanctipauli,pollinator,1,Keystone,-0.08999624,-0.15355407
+Spilogona tornensis,pollinator,2,Specialist,-2.1728275,-0.6739658
+Spilogona tundrae,pollinator,2,Specialist,-2.1728272,-0.6739658
+Stenomacrus sp1 M_PL_020,pollinator,1,Keystone,0.8820102,0.280256
+Sympistris labradoris,pollinator,1,Keystone,-0.18531412,0.95157725
+Tachinidae sp1 M_PL_020,pollinator,1,Keystone,0.6147788,0.10270076
+Tarentula exasperans,pollinator,1,Keystone,-0.6455922,0.43202332
+Tipula arctica,pollinator,1,Keystone,-0.7259139,0.32636002
+Tridymus sp1 M_PL_020,pollinator,1,Keystone,-0.18531412,0.95157725
+Unidentified sp1 M_PL_020,pollinator,1,Keystone,-0.17082673,-0.17867054
+Unidentified sp2 M_PL_020,pollinator,1,Keystone,-0.22752132,-0.21222842
+Unidentified sp3 M_PL_020,pollinator,1,Keystone,-0.17082672,-0.17867039
+Xysticus deichmanni,pollinator,1,Keystone,0.8376324,-0.19581337

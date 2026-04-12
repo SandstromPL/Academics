@@ -1,0 +1,73 @@
+species,kind,gnn_cluster,gnn_role,pca1,pca2
+Aechmea paniculigera,plant,2,Connector,-2.3432276,0.24121694
+Blakea trinervia,plant,2,Connector,-1.5364853,0.3888477
+Byrsonima sp1 M_PL_040,plant,0,Generalist,-1.9928929,1.283827
+Dendropanax arboreus ,plant,0,Generalist,-1.5043931,4.199241
+Dendropanax sp1 M_PL_040,plant,0,Generalist,-1.4516459,3.6104627
+Guarea swartzii,plant,2,Connector,-1.9002037,-1.3562834
+Impatiens walleriana,plant,2,Connector,-1.6890793,0.34917903
+Miconia sp1 M_PL_040,plant,0,Generalist,-1.6255841,1.9488518
+Nectandra coriacea,plant,2,Connector,-1.9694685,-0.9368256
+Passiflora sp1 M_PL_040,plant,2,Connector,-1.9244716,-0.76160026
+Petiveria sp1 M_PL_040,plant,2,Connector,-1.955164,-0.80259126
+Pilea sp1 M_PL_040,plant,2,Connector,-1.4669313,-0.82332623
+Pilea sp2 M_PL_040,plant,2,Connector,-0.9265383,-2.915113
+Portlandia grandiflora,plant,2,Connector,-1.5421067,0.6402157
+Psidium montanum,plant,2,Connector,-2.0459468,-0.80038273
+Spermacoce assurgens,plant,2,Connector,-1.5538795,-0.028572584
+Tradescantia zebrina,plant,2,Connector,-2.0780702,-2.0735066
+Unidentified sp13 M_PL_040,plant,0,Generalist,-1.5476031,2.3755462
+Unidentified sp14 M_PL_040,plant,0,Generalist,-1.5067391,1.9365932
+Unidentified sp15 M_PL_040,plant,0,Generalist,-1.9286808,1.520172
+Unidentified sp16 M_PL_040,plant,2,Connector,-2.390219,0.27399507
+Unidentified sp17 M_PL_040,plant,2,Connector,-2.2469149,-0.1185805
+Unidentified sp18 M_PL_040,plant,2,Connector,-2.0925026,-0.33683923
+Unidentified sp19 M_PL_040,plant,2,Connector,-1.8292127,-1.108272
+Unidentified sp20 M_PL_040,plant,2,Connector,-1.6233964,-1.0920329
+Unidentified sp21 M_PL_040,plant,2,Connector,-1.9455097,-0.5055725
+Unidentified sp22 M_PL_040,plant,2,Connector,-2.056784,-1.2883179
+Unidentified sp23 M_PL_040,plant,2,Connector,-1.8784618,-1.5954912
+Wallenia laurifolia,plant,2,Connector,-1.3380839,-2.3017046
+Adelpha abyla,pollinator,1,Specialist,1.0238729,0.07403391
+Agapostemon sp1 M_PL_040,pollinator,3,Keystone,1.2406071,0.0072092144
+Aguna asander jasper,pollinator,1,Specialist,1.2326285,-0.47149926
+Anolis grahami,pollinator,1,Specialist,1.2015638,-0.7726234
+Anolis sagrei,pollinator,1,Specialist,1.6223323,-2.5369287
+Apis mellifera,pollinator,3,Keystone,1.1838784,2.0447423
+Atlantea pantoni,pollinator,1,Specialist,1.0605388,-1.6485268
+Camponotus hannani,pollinator,3,Keystone,0.9833215,1.8194112
+Camponotus subdepilis,pollinator,3,Keystone,1.5583535,0.15231736
+Centris sp1 M_PL_040,pollinator,3,Keystone,1.5710266,0.5728765
+Centris sp2 M_PL_040,pollinator,3,Keystone,1.2276058,0.8092944
+Coereba flaveola ,pollinator,3,Keystone,0.93158776,0.92512023
+Conotelus obscurus,pollinator,1,Specialist,1.3275717,-0.865563
+Crematogaster steinheili,pollinator,3,Keystone,1.2217187,2.413092
+Dione vanillae insularis,pollinator,1,Specialist,1.0605388,-1.6485268
+Diptera sp1 M_PL_040,pollinator,1,Specialist,1.16727,-0.9632244
+Dryas iulia delila,pollinator,1,Specialist,0.96291155,-1.4490337
+Euglossa jamaicensis,pollinator,3,Keystone,1.340397,1.9107594
+Euneornis campestris,pollinator,1,Specialist,1.363109,-1.1741246
+Eurytides marcellinus,pollinator,1,Specialist,1.2505652,-0.50815374
+Heliconius charitonius simulator,pollinator,1,Specialist,0.97342855,-1.4710059
+Marpesia chiron,pollinator,1,Specialist,1.2564471,-0.52051723
+Mellisuga minima,pollinator,3,Keystone,1.1852384,0.79813004
+Nesopsar nigerrimus,pollinator,1,Specialist,1.3598995,-1.1694303
+Papilio thersites,pollinator,1,Specialist,1.0372529,-1.6013372
+Paragymnetis lanius,pollinator,1,Specialist,1.2358155,-0.83946913
+Paraphrissopoda chrysostoma,pollinator,1,Specialist,1.2872641,0.00094360317
+Polistes sp1 M_PL_040,pollinator,1,Specialist,1.2871729,-0.74296397
+Sphex jamaicensis,pollinator,1,Specialist,1.1188489,-0.27801266
+Trochilus polytmus polytmus,pollinator,3,Keystone,0.75229347,1.5893018
+Unidentified sp1 M_PL_040,pollinator,3,Keystone,1.3123076,1.4392735
+Unidentified sp11 M_PL_040,pollinator,1,Specialist,1.1569071,-0.94576967
+Unidentified sp12 M_PL_040,pollinator,1,Specialist,1.1603609,-0.95157105
+Unidentified sp2 M_PL_040,pollinator,3,Keystone,1.0525945,1.753104
+Unidentified sp3 M_PL_040,pollinator,1,Specialist,1.3984461,0.7446105
+Unidentified sp4 M_PL_040,pollinator,1,Specialist,1.1503413,0.6967002
+Unidentified sp5 M_PL_040,pollinator,1,Specialist,1.2316169,0.24508378
+Unidentified sp6 M_PL_040,pollinator,1,Specialist,1.0141147,0.14892071
+Unidentified sp7 M_PL_040,pollinator,1,Specialist,1.2446339,-0.4958687
+Unidentified sp8 M_PL_040,pollinator,1,Specialist,1.4053087,-1.173008
+Unidentified sp9 M_PL_040,pollinator,1,Specialist,1.3056617,-0.6638681
+Wasmannia auropunctata,pollinator,3,Keystone,0.9202739,3.2031024
+Xylocopa sp1 M_PL_040,pollinator,3,Keystone,1.5125659,1.619857

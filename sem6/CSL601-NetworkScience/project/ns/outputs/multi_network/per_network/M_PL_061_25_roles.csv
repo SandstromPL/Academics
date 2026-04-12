@@ -1,0 +1,17 @@
+species,kind,gnn_cluster,gnn_role,pca1,pca2
+Canthium bibracteatum,plant,2,Keystone,2.5281677,0.5815635
+Cinnamomum verum,plant,3,Generalist,3.387376,-2.698852
+Memecylon eleagni,plant,2,Keystone,2.5274444,0.7859996
+Ochna kirkii,plant,2,Keystone,2.084871,1.8593117
+Paragenipa wrightii,plant,2,Keystone,1.6829288,0.62963265
+Apis mellifera,pollinator,0,Connector,0.1918528,-0.2710036
+Chalcidoma disjunctum,pollinator,1,Specialist,-1.1004944,0.5370892
+Diptera sp1 M_PL_108,pollinator,1,Specialist,-2.4216592,0.24259284
+Hemipyrellia germana,pollinator,1,Specialist,-2.5311298,0.18757375
+Hemipyrellia sp1 M_PL_108,pollinator,1,Specialist,-1.2203901,-1.3463335
+Lasioglossum mahense,pollinator,0,Connector,0.049422607,-0.6454915
+Lygistorrhina sp1 M_PL_108,pollinator,1,Specialist,-1.126811,-1.1371924
+Nectarinia dussumieri,pollinator,1,Specialist,-0.9360784,1.2144995
+Phalanta phalantha,pollinator,1,Specialist,-1.396403,-1.3186599
+Scaptodrosophila sp1 M_PL_108,pollinator,1,Specialist,-1.0524443,0.57841665
+Xylocopa caffra,pollinator,0,Connector,-0.6666529,0.8008538

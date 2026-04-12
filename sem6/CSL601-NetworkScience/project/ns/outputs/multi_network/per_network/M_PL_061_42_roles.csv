@@ -1,0 +1,18 @@
+species,kind,gnn_cluster,gnn_role,pca1,pca2
+Chrysobalanus icaco,plant,0,Generalist,-1.4703404,-0.4665564
+Dillenia suffruticosa,plant,1,Specialist,1.3796759,-0.32949302
+Excoecaria benthiamiana,plant,1,Specialist,1.3959265,-0.33856234
+Memecylon eleagni,plant,2,Connector,-0.08242874,2.7276566
+Mimusops sechellarum,plant,0,Generalist,-1.2581943,-0.28532076
+Nephrosperma vanhoutteanum,plant,0,Generalist,-1.7814091,-1.2564031
+Apis mellifera,pollinator,0,Generalist,-2.6197705,0.6436281
+Diptera sp1 M_PL_125,pollinator,3,Keystone,-0.3638127,0.02213067
+Diptera sp3 M_PL_125,pollinator,3,Keystone,0.5894384,-0.07107125
+Lasioglossum mahense,pollinator,3,Keystone,-0.38702348,-0.5003744
+Lygistorrhina sp1 M_PL_125,pollinator,3,Keystone,0.38957942,0.062027592
+Nectarinia dussumieri,pollinator,3,Keystone,0.4538305,0.08813721
+Ornidia obesa,pollinator,3,Keystone,0.42058185,0.2398384
+Rhynchium brunneum,pollinator,3,Keystone,0.4382133,0.24619459
+Unidentified sp2 M_PL_125,pollinator,3,Keystone,0.5894384,-0.07107125
+Unidentified sp4 M_PL_125,pollinator,1,Specialist,1.1623192,-0.3602102
+Xylocopa caffra,pollinator,1,Specialist,1.1439759,-0.35055092

@@ -1,0 +1,19 @@
+species,kind,gnn_cluster,gnn_role,pca1,pca2
+Canthium bibracteatum,plant,2,Generalist,-0.3194729,-1.821952
+Cinnamomum verum,plant,2,Generalist,0.17612776,-1.5817275
+Colea seychellarum,plant,1,Specialist,4.8586674,0.6786801
+Erythroxylum sechellarum,plant,3,Connector,0.43082815,0.48850298
+Phoenicophorium borsigianum,plant,0,Keystone,-2.885043,1.5702674
+Roscheria melanochaetes,plant,3,Connector,0.1460411,0.18140656
+Apis mellifera,pollinator,2,Generalist,-1.0928245,-0.89106965
+Diptera sp1 M_PL_094,pollinator,3,Connector,0.37234208,0.5672702
+Diptera sp2 M_PL_094,pollinator,0,Keystone,-1.0084105,0.6298849
+Hemipyrellia germana,pollinator,2,Generalist,-0.10135433,-0.91809934
+Lasioglossum mahense,pollinator,0,Keystone,-0.9531585,0.9980834
+Leptotes pirithous,pollinator,3,Connector,0.033843227,-0.6262106
+Nectarinia dussumieri,pollinator,1,Specialist,3.5550277,0.766693
+Ornidia obesa,pollinator,2,Generalist,-0.36856717,-1.1486996
+Parasarcophaga hirticeps,pollinator,2,Generalist,-0.08330047,-0.9658513
+Rhiparida seychellensis,pollinator,0,Keystone,-1.1438501,1.1560951
+Unidentified sp3 M_PL_094,pollinator,0,Keystone,-1.0483446,0.7582622
+Unidentified sp4 M_PL_094,pollinator,3,Connector,-0.56855166,0.15846391

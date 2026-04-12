@@ -1,0 +1,69 @@
+species,kind,gnn_cluster,gnn_role,pca1,pca2
+Agauria salicifolia,plant,2,Connector,1.0584441,0.57673174
+Antidesma madagascariense,plant,2,Connector,0.9900662,0.9618618
+Badula platiphylla,plant,2,Connector,0.84506154,0.8698177
+Bakerella hoyifolia,plant,2,Connector,1.2114623,1.1901466
+Cordemoya integrifolia,plant,2,Connector,0.44303107,1.6027719
+Erythrospermum monticolum,plant,1,Keystone,1.4749136,0.315562
+Eugenia orbiculata,plant,2,Connector,1.4480858,1.0070993
+Euodia chapelieri,plant,1,Keystone,1.9224684,0.7549986
+Euodia obtusifolia,plant,1,Keystone,1.6114327,0.96004677
+Flagellaria indica,plant,1,Keystone,1.597414,0.76988405
+Gaertnera petrinensis,plant,1,Keystone,1.5327893,0.6666574
+Gaertnera rotundifolia,plant,2,Connector,-0.07614829,0.9574179
+Gaertnera sp1 M_PL_066,plant,1,Keystone,2.0531619,0.36748677
+Grangeria borbonica,plant,2,Connector,0.4395366,1.5868555
+Helichrysum proteoides,plant,2,Connector,-0.0114546195,1.7556556
+Labourdonnaisia callophylloides,plant,2,Connector,1.6847243,0.40311122
+Mimusops erythroxylon,plant,2,Connector,0.8882438,1.1609788
+Monimiastrum globosum,plant,2,Connector,0.7578083,1.4744706
+Ocotea laevigata,plant,2,Connector,0.610665,0.9671508
+Olea lancea,plant,1,Keystone,1.6955029,0.6832715
+Pandanus barklyi,plant,1,Keystone,1.7037799,0.38849992
+Pandanus wiehii,plant,2,Connector,-0.11041841,0.97935796
+Phyllanthus phillyreifolius,plant,1,Keystone,2.0386565,-0.34232152
+Psiadia terebinthina,plant,1,Keystone,2.7428143,-0.3038174
+Pyrostria fasciculata,plant,1,Keystone,1.5078896,0.5211422
+Sideroxylon puberulum,plant,3,Generalist,4.078045,-2.407102
+Smilax anceps,plant,1,Keystone,1.3302402,0.8372928
+Stillingia lineata,plant,1,Keystone,2.1705096,-0.052365646
+Warneckea trinervis,plant,2,Connector,1.3175166,1.1652617
+Ahasverus advena ,pollinator,0,Specialist,-1.9344826,-0.47624278
+Allograpta nasuta,pollinator,0,Specialist,-1.7241977,0.11804401
+Apis mellifera,pollinator,3,Generalist,4.2376175,-2.529212
+Bactrocera cucurbitae,pollinator,0,Specialist,-1.8095757,-0.26667783
+Brachymyrmex sp1 M_PL_066,pollinator,0,Specialist,-1.2271016,-0.39708868
+Cerambycidae sp1 M_PL_066,pollinator,0,Specialist,-1.0595142,-0.58565956
+Ceratitis roas,pollinator,0,Specialist,-1.8281417,-0.16082408
+Chaetocnema sp1 M_PL_066,pollinator,0,Specialist,-1.7817826,-0.07242606
+Chrysomya megacephala ,pollinator,1,Keystone,1.1520108,-1.334694
+Dioxyna sororcula ,pollinator,0,Specialist,-1.8667991,-0.15614092
+Fannia pusio ,pollinator,0,Specialist,-1.2114278,-0.43924636
+Hippotion eson,pollinator,0,Specialist,-1.16129,-0.3687404
+Ischiodon aegyptius ,pollinator,0,Specialist,-1.6522906,-0.28465474
+Lauxania sp1 M_PL_066,pollinator,0,Specialist,-1.8310978,-0.05234922
+Lygistorrhina sp1 M_PL_066,pollinator,0,Specialist,-1.748971,-0.16763872
+Macroglossum milvus,pollinator,0,Specialist,-1.6764119,-0.44794148
+Melanostoma bituberculatum ,pollinator,0,Specialist,-1.021619,-0.49269617
+Mordellidae sp1 M_PL_066,pollinator,0,Specialist,-1.8368242,0.08158237
+Musca domestica,pollinator,0,Specialist,-1.2074345,-0.33664474
+Nacoleia sp1 M_PL_066,pollinator,0,Specialist,-1.0139568,-0.8575522
+Ornidia obesa,pollinator,0,Specialist,-1.8667991,-0.15614092
+Orthellia albigena ,pollinator,0,Specialist,-1.8667991,-0.15614092
+Pachycerina crinicornis ,pollinator,1,Keystone,0.95147234,-1.1640816
+Panara naso,pollinator,0,Specialist,-1.4325848,-0.046388548
+Paragus borbonicus,pollinator,1,Keystone,1.0827696,-1.1845278
+Phalanta phalantha,pollinator,0,Specialist,-1.7787172,-0.029056357
+Phelsuma cepediana,pollinator,0,Specialist,-0.30618888,-1.1058415
+Phorinia sp1 M_PL_066,pollinator,0,Specialist,-1.7787176,-0.029056244
+Polistes hebraeus,pollinator,0,Specialist,-1.6290188,-0.6921837
+Psilopa iceryae ,pollinator,0,Specialist,-0.68592936,-0.73916113
+Sapromyza sp1 M_PL_066,pollinator,0,Specialist,-1.8214053,0.12373796
+Sepsis lateralis ,pollinator,0,Specialist,-1.8667991,-0.15614092
+Siphona sp1 M_PL_066,pollinator,0,Specialist,-1.8095757,-0.26667777
+Stomorhina lunata,pollinator,0,Specialist,-0.82138634,-0.50910133
+Stomoxys calcitrans,pollinator,0,Specialist,-1.8667991,-0.15614092
+Syritta sp1 M_PL_066,pollinator,0,Specialist,-1.7225032,-0.92737037
+Technomyrmex albipes ,pollinator,3,Generalist,3.403622,-2.2333107
+Villa unifasciata,pollinator,1,Keystone,0.9292067,-1.0073982
+Zosterops mauritianus,pollinator,0,Specialist,-1.8667985,-0.156141

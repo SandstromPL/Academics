@@ -1,0 +1,53 @@
+species,kind,gnn_cluster,gnn_role,pca1,pca2
+Centaurea nigra,plant,2,Generalist,-5.643274,1.9621806
+Cerastium fontanum,plant,1,Connector,1.1892812,0.33559474
+Cirsium arvense,plant,3,Keystone,-2.5577002,0.41489148
+Cirsium palustre,plant,3,Keystone,-1.9972761,0.58186346
+Filipendula ulmaria,plant,3,Keystone,-2.6668308,-0.9763068
+Galium verum,plant,3,Keystone,-0.34486082,-0.46391007
+Hypochoeris radicata,plant,3,Keystone,-1.4889175,0.19364204
+Lathyrus pratensis,plant,1,Connector,0.28352773,-0.1954153
+Leucanthemum vulgare,plant,2,Generalist,-4.7346644,-1.4814494
+Lotus corniculatus,plant,1,Connector,-0.2210494,0.36521688
+Orchis morio,plant,3,Keystone,-0.7535686,-0.7083296
+Primula veris,plant,3,Keystone,-1.5886164,-0.021594506
+Ranunculus acris,plant,3,Keystone,-3.086455,-2.1145508
+Taraxacum officinale,plant,3,Keystone,-0.68161404,-1.1606654
+Trifolium dubium,plant,1,Connector,0.748899,0.90733355
+Trifolium repens,plant,1,Connector,0.289917,-0.19910692
+Andrena chrysosceles,pollinator,0,Specialist,1.9708874,-0.47518718
+Andrena pubescens,pollinator,0,Specialist,1.6169013,-1.0627438
+Anthophora plumipes,pollinator,1,Connector,0.76384556,0.3713278
+Apis mellifera,pollinator,1,Connector,1.9173464,2.744069
+Bombus hortorum,pollinator,1,Connector,1.9500483,2.7286162
+Bombus lapidarius,pollinator,2,Generalist,-3.4350777,0.59757775
+Bombus pascuorum,pollinator,3,Keystone,-2.0816033,-0.4387003
+Bombus pratorum,pollinator,1,Connector,-0.18101516,0.8607252
+Bombus terrestris/lucorum,pollinator,1,Connector,0.020739615,0.7792895
+Calocoris bipunctatus,pollinator,1,Connector,0.07089874,1.8010204
+Cephus pygmaeus,pollinator,0,Specialist,1.6169013,-1.0627438
+Cheilosia bergenstammi,pollinator,0,Specialist,1.6063702,-1.0569035
+Empis livida,pollinator,1,Connector,-0.068657205,0.88259923
+Episyrphus balteatus,pollinator,3,Keystone,-1.0610486,0.09470553
+Eriothrix rufomaculatus,pollinator,1,Connector,0.64776695,0.55575633
+Eristalis intricarius,pollinator,1,Connector,0.77899194,0.3632632
+Eristalis nemorum,pollinator,0,Specialist,1.9682266,-0.4735013
+Eristalis tenax,pollinator,1,Connector,0.05125317,0.44131023
+Helophilus sp1 M_PL_007,pollinator,1,Connector,0.22243014,0.27952096
+Lasioglossum calceatum,pollinator,0,Specialist,1.6169013,-1.0627438
+Lasioglossum villosulum,pollinator,1,Connector,0.40422982,0.46638116
+Lucillia sp1 M_PL_007,pollinator,0,Specialist,1.9655625,-0.4718134
+Lycaena phlaeas ,pollinator,1,Connector,1.5889367,0.38537505
+Maniola jurtina,pollinator,1,Connector,-0.68617433,0.61940235
+Melanostoma sp1 M_PL_007,pollinator,0,Specialist,0.51643246,-1.1561271
+Meliscaeva sp1 M_PL_007,pollinator,0,Specialist,1.2789123,-0.95473963
+Panameria tenebrata,pollinator,1,Connector,1.2156327,-0.30499515
+Platycheirus sp1 M_PL_007,pollinator,1,Connector,-0.083023965,0.1262513
+Pollenia sp1 M_PL_007,pollinator,0,Specialist,1.9708874,-0.47518718
+Psithyrus vest,pollinator,1,Connector,-0.20049424,0.8724274
+Sarcophagus sp1 M_PL_007,pollinator,0,Specialist,1.9735453,-0.47687104
+Scathophaga stercoraria,pollinator,0,Specialist,0.584465,-0.92209095
+Sphaerophoria sp1 M_PL_007,pollinator,3,Keystone,-0.6442275,-1.3043855
+Syrphus sp1 M_PL_007,pollinator,1,Connector,-0.5706781,0.24346521
+Tropidia scitta,pollinator,0,Specialist,1.9735453,-0.47687116
+Volucella bombylans,pollinator,0,Specialist,1.9735453,-0.4768711

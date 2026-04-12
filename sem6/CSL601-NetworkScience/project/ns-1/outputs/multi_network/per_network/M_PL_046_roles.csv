@@ -1,0 +1,61 @@
+species,kind,gnn_cluster,gnn_role,pca1,pca2
+Angelica archangelica,plant,1,Generalist,-4.0747375,1.1773657
+Anthriscus sylvestris,plant,1,Generalist,-3.8502407,1.0709697
+Chamaenerium angustifolium,plant,1,Generalist,-2.875214,0.6748849
+Cirsium arvense,plant,1,Generalist,-4.1367736,0.753778
+Cirsium pratensis,plant,1,Generalist,-2.8864827,0.5488268
+Epilobium hirsutum,plant,1,Generalist,-3.6013381,0.33998862
+Lathyrus pratensis,plant,1,Generalist,-3.2260253,0.9034057
+Ranunculus sp1 M_PL_046,plant,2,Keystone,-1.0715404,0.75101054
+Rubus fruticosus,plant,2,Keystone,-2.4011242,0.41615614
+Silene dioica,plant,2,Keystone,-0.7227123,1.290708
+Stachys sylvatica,plant,2,Keystone,-1.7717146,0.6927594
+Torilis japonica,plant,2,Keystone,-2.0015714,1.0402352
+Trfolium sp1 M_PL_046,plant,2,Keystone,-2.1999435,0.6382239
+Trifolium arvense,plant,2,Keystone,-2.1071157,0.697986
+Umbellifer sp1 M_PL_046,plant,1,Generalist,-3.6902597,1.1116749
+Unidentified sp27 M_PL_046,plant,1,Generalist,-3.1918194,0.68959
+Andreana sp1 M_PL_046,pollinator,0,Specialist,1.3566663,-0.21249394
+Apis mellifera,pollinator,3,Connector,1.002672,-0.38911992
+Asilus sp1 M_PL_046,pollinator,3,Connector,1.2147093,-0.122269794
+Bombus lapidarius,pollinator,3,Connector,0.7877866,-0.66076046
+Bombus pascuorum,pollinator,3,Connector,0.20688044,-1.3691317
+Bombus terrestris,pollinator,3,Connector,0.14750738,-1.2694858
+Cetonia aurata,pollinator,0,Specialist,1.4403242,-0.0683056
+Coleoptera sp4 M_PL_046,pollinator,3,Connector,-0.31236714,-1.5507059
+Colias croceus,pollinator,0,Specialist,1.3268158,-0.035532326
+Diptera sp11 M_PL_046,pollinator,3,Connector,0.6211505,-0.47815531
+Diptera sp12 M_PL_046,pollinator,3,Connector,0.6211505,-0.47815531
+Diptera sp13 M_PL_046,pollinator,3,Connector,0.61463064,-0.32926026
+Diptera sp15 M_PL_046,pollinator,3,Connector,0.8600593,-0.4529202
+Diptera sp16 M_PL_046,pollinator,3,Connector,0.8222623,-0.24673648
+Diptera sp17 M_PL_046,pollinator,3,Connector,1.037507,-0.3377739
+Diptera sp18 M_PL_046,pollinator,0,Specialist,1.6034415,0.2860794
+Diptera sp19 M_PL_046,pollinator,0,Specialist,1.870106,0.91551924
+Diptera sp2 M_PL_046,pollinator,3,Connector,-0.7480322,-1.9332981
+Diptera sp21 M_PL_046,pollinator,0,Specialist,2.0380194,0.18456396
+Diptera sp24 M_PL_046,pollinator,0,Specialist,1.9337409,1.3354437
+Diptera sp25 M_PL_046,pollinator,0,Specialist,2.786978,1.5001749
+Diptera sp26 M_PL_046,pollinator,0,Specialist,2.7545805,1.4109219
+Diptera sp5 M_PL_046,pollinator,3,Connector,-0.055487823,-1.5743507
+Diptera sp6 M_PL_046,pollinator,3,Connector,-0.101673685,-1.2477769
+Diptera sp7 M_PL_046,pollinator,3,Connector,0.28411663,-1.1208653
+Diptera sp9 M_PL_046,pollinator,3,Connector,0.62695324,-0.63456845
+Ichneumonidae 1,pollinator,0,Specialist,2.6924644,1.220336
+Inachis io,pollinator,0,Specialist,2.47237,1.0729539
+Lepidoptera sp14 M_PL_046,pollinator,3,Connector,0.99636966,-0.3594145
+Lucilia sp1 M_PL_046,pollinator,3,Connector,0.14252494,-1.3749033
+Meligethes sp1 M_PL_046,pollinator,3,Connector,-0.9582318,-1.8429962
+Meligethes sp2 M_PL_046,pollinator,3,Connector,0.70257384,-0.73330706
+Musca sp1 M_PL_046,pollinator,3,Connector,-0.6376382,-1.808342
+Pararge aegeria,pollinator,0,Specialist,2.8736246,1.4550085
+Pieris sp1 M_PL_046,pollinator,3,Connector,0.036441796,-0.96292275
+Rhynconycha sp1 M_PL_046,pollinator,0,Specialist,1.9595602,0.7370161
+Unidentified sp1 M_PL_046,pollinator,3,Connector,-0.7480323,-1.9332981
+Unidentified sp10 M_PL_046,pollinator,3,Connector,0.73398036,-0.5654248
+Unidentified sp20 M_PL_046,pollinator,0,Specialist,2.1982808,1.0012082
+Unidentified sp22 M_PL_046,pollinator,0,Specialist,2.1005256,0.7269638
+Unidentified sp23 M_PL_046,pollinator,0,Specialist,2.5526776,1.1251191
+Unidentified sp3 M_PL_046,pollinator,3,Connector,-0.6967075,-1.6476707
+Unidentified sp8 M_PL_046,pollinator,3,Connector,0.36585262,-0.9985705
+Vespula sp1 M_PL_046,pollinator,0,Specialist,2.2814813,0.9696412

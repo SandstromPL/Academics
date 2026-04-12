@@ -1,0 +1,58 @@
+species,kind,gnn_cluster,gnn_role,pca1,pca2
+Aesculus sylvatica,plant,3,Connector,0.65608025,1.5186367
+Cardamine angustata angustata,plant,2,Keystone,4.2264185,1.5075971
+Claytonia virginica,plant,2,Keystone,4.789615,-1.0525473
+Erythronium umbilicatum,plant,2,Keystone,3.3235831,-0.86340123
+Hepatica americana,plant,2,Keystone,2.5728934,-0.48695955
+Podophyllum peltatum,plant,3,Connector,0.23769659,1.4017842
+Sangiunaria canadensis,plant,3,Connector,1.9894396,0.25950557
+Stellaria pubera,plant,2,Keystone,4.010366,0.2821796
+Thalictrum thalictroides,plant,2,Keystone,2.8117685,-0.554421
+Tiarella cordifolia collina,plant,3,Connector,1.8103791,0.37478226
+Trillium catesbei,plant,3,Connector,0.7481381,1.364282
+Uvularia sessilifolia,plant,3,Connector,1.5241017,-0.4751888
+Viola papilionacea,plant,3,Connector,1.4095354,0.8480941
+Andrena arabis,pollinator,0,Specialist,-2.2365246,1.2892569
+Andrena carlini,pollinator,1,Generalist,0.77021533,0.56577593
+Andrena ceanothi,pollinator,0,Specialist,-2.6522655,-1.27257
+Andrena dunningi,pollinator,0,Specialist,-2.2382383,1.2909012
+Andrena erigeniae,pollinator,1,Generalist,0.047665156,-0.6661562
+Andrena imatrix,pollinator,0,Specialist,-2.6522655,-1.27257
+Andrena nasonii,pollinator,0,Specialist,-1.0912278,-0.028683156
+Andrena nigrihirta,pollinator,1,Generalist,0.6155681,-0.91476554
+Andrena personata,pollinator,0,Specialist,-1.4419366,0.23053724
+Andrena tridens,pollinator,1,Generalist,0.2486681,-0.66062194
+Andrena violae,pollinator,3,Connector,-0.96691847,0.7978197
+Andrena ziziaeformis,pollinator,1,Generalist,-0.59559065,-0.82164955
+Apis mellifera,pollinator,1,Generalist,0.44512087,-0.4825989
+Augochlora pura,pollinator,1,Generalist,-0.50475466,-0.29919094
+Augochorella striata,pollinator,1,Generalist,-1.2114129,-1.4763354
+Bombus bimaculatus,pollinator,3,Connector,0.79249734,0.72607726
+Bombus pennsylvanicus,pollinator,3,Connector,-0.6206505,1.4046731
+Bombylius major,pollinator,1,Generalist,1.2298213,-1.1546803
+Ceratina calcarata,pollinator,1,Generalist,-0.6102367,-0.82877415
+Dialictus abanci,pollinator,1,Generalist,0.3090659,-0.8881297
+Dialictus cressonii,pollinator,1,Generalist,-0.1339219,-0.3100164
+Ephemoropsis laboriosa,pollinator,3,Connector,-0.48606825,0.82438064
+Euchlo creusa lotta,pollinator,0,Specialist,-1.6656988,-0.007212498
+Evylaeus macoupinensis,pollinator,1,Generalist,0.43836603,-0.24270436
+Gonia sp1 M_PL_025,pollinator,1,Generalist,-0.035259947,-0.39812508
+Halictid sp1 M_PL_025,pollinator,1,Generalist,-0.36426038,-1.098713
+Hylema platura,pollinator,1,Generalist,-0.9380743,-1.2121831
+Lassioglossum fuscipenne,pollinator,0,Specialist,-2.2382383,1.2909013
+Lycaenopsis argiolus,pollinator,0,Specialist,-2.650634,-1.2733566
+Nomada bishopii,pollinator,0,Specialist,-1.4419366,0.23053724
+Nomada luteola,pollinator,0,Specialist,-1.4374545,0.22668213
+Nomada perplexa,pollinator,1,Generalist,-0.51819336,-0.40594602
+Nomada pygmaea,pollinator,0,Specialist,-1.0893819,-0.029981833
+Nomada sayi,pollinator,0,Specialist,-1.4419366,0.23053724
+Nomada sp1 M_PL_025,pollinator,1,Generalist,0.30308673,-0.5256007
+Osmia atriventris,pollinator,3,Connector,-0.6947526,0.4969108
+Osmia conjucta,pollinator,1,Generalist,0.43209937,0.40480298
+Osmia lignaria,pollinator,1,Generalist,-0.81577516,-0.47096625
+Osmia simillima,pollinator,3,Connector,-0.9716978,0.80170757
+Osmia sp1 M_PL_025,pollinator,1,Generalist,0.0076020085,-0.13772315
+Platycheirus obscurus,pollinator,1,Generalist,-0.39948612,-0.10297781
+Toxomerous geminatus,pollinator,1,Generalist,-0.46235743,-0.5116193
+Unidentified sp1 M_PL_025,pollinator,0,Specialist,-2.2365246,1.2892569
+Xylocopa virginica virginica,pollinator,3,Connector,1.0938835,1.268752

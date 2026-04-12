@@ -1,0 +1,23 @@
+species,kind,gnn_cluster,gnn_role,pca1,pca2
+Campnosperma seychellarum,plant,0,Connector,-0.74189055,-1.0559794
+Cinnamomum verum,plant,3,Specialist,0.047221743,1.2623432
+Colea seychellarum,plant,0,Connector,-1.1393175,-0.8722776
+Craterispermum microdon,plant,3,Specialist,0.7675072,-0.09814773
+Dillenia ferruginea,plant,1,Generalist,2.3943667,-0.6525281
+Erythroxylum sechellarum,plant,1,Generalist,1.9106677,-0.6131821
+Excoecaria benthiamiana,plant,2,Keystone,-0.87586874,0.017926833
+Memecylon eleagni,plant,3,Specialist,0.07586589,1.2522647
+Soulamea terminaloides,plant,2,Keystone,-0.06952594,-0.8705334
+Apis mellifera,pollinator,1,Generalist,2.073442,-0.21121927
+Cratopus aurostriatus,pollinator,3,Specialist,0.06992332,1.0093569
+Diptera sp2 M_PL_100,pollinator,3,Specialist,-0.1085179,0.88659096
+Diptera sp3 M_PL_100,pollinator,3,Specialist,-0.1085179,0.88659096
+Eristalinus vicarians,pollinator,2,Keystone,-0.8626725,0.1490335
+Hymenoptera sp1 M_PL_100,pollinator,0,Connector,-1.161422,-0.37312418
+Lasioglossum mahense,pollinator,1,Generalist,2.0113504,-0.39763772
+Lygistorrhina sp1 M_PL_100,pollinator,2,Keystone,-0.4831909,-0.42476323
+Nectarinia dussumieri,pollinator,0,Connector,-1.3639103,-1.0409446
+Parasarcophaga hirticeps,pollinator,2,Keystone,-0.8626725,0.1490335
+Phelsuma sp1 M_PL_100,pollinator,3,Specialist,0.07906758,1.0133352
+Rhiparida seychellensis,pollinator,0,Connector,-1.2795082,-0.33610213
+Scaptodrosophila sp1 M_PL_100,pollinator,3,Specialist,-0.372399,0.31996334

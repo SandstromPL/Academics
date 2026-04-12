@@ -1,0 +1,95 @@
+species,kind,gnn_cluster,gnn_role,pca1,pca2
+Achyrocline satureoides,plant,2,Generalist,4.021949,-5.2879524
+Baccharis tandilensis,plant,2,Generalist,3.933433,-2.242434
+Bidens pilosa,plant,1,Connector,2.098006,2.1016614
+Canna glauca,plant,1,Connector,1.8500872,2.5795534
+Colletia paradoxa,plant,1,Connector,2.7781832,1.2262073
+Cynara cardunculus,plant,1,Connector,1.7356865,3.0969996
+Eryngium stenophyllum,plant,2,Generalist,4.0023966,-3.666459
+Eupatorium bupleurifolium,plant,1,Connector,3.1646256,0.13720728
+Eupatorium macrocephalum,plant,1,Connector,3.1533947,0.41118318
+Eupatorium tenacetifolium,plant,1,Connector,1.8433063,2.8245716
+Foeniculum vulgare,plant,2,Generalist,3.5771987,-0.89288545
+Gerardia genistifolia,plant,2,Generalist,3.906563,-2.5888686
+Gomphrena perennis,plant,1,Connector,1.5694786,3.1864927
+Lathyrus nervosus,plant,1,Connector,1.4030318,3.36488
+Lathyrus pubescens,plant,1,Connector,3.2295702,-0.06229379
+Melilotus officinalis,plant,1,Connector,1.6653721,3.0522761
+Passiflora caerulea,plant,1,Connector,2.074715,2.4345078
+Rapistrum rugosum,plant,1,Connector,1.4075829,3.3526187
+Rodophiala bifida,plant,1,Connector,2.0231478,2.2210348
+Senecio madagascariensis,plant,1,Connector,3.085896,0.2938658
+Senecio selloi,plant,1,Connector,2.352677,1.8108472
+Spartium junceum,plant,1,Connector,1.6365696,3.128609
+Spilanthes stolonifera,plant,1,Connector,2.8439124,0.88699
+Verbena intermedia,plant,1,Connector,2.6411195,1.4631873
+Vernonia echioides,plant,1,Connector,0.70283324,3.3322568
+Agraulis vanillae,pollinator,3,Keystone,-0.37173232,-1.0002476
+Allograpta sp1 M_PL_072,pollinator,3,Keystone,0.23340613,-2.002144
+Anthomyiidae sp1 M_PL_072,pollinator,3,Keystone,-0.1907786,-1.5771521
+Apis mellifera,pollinator,3,Keystone,0.47572768,-2.5636275
+Astylus quadrilineatus,pollinator,3,Keystone,0.52541876,-2.0592039
+Augochlora semiramis,pollinator,3,Keystone,0.33003628,-2.2261124
+Augochlorella ephyra,pollinator,3,Keystone,-0.46078962,-1.2392805
+Augochloropsis erato,pollinator,3,Keystone,0.49679312,-2.1079855
+Augochloropsis sp2 M_PL_072,pollinator,0,Specialist,-1.0648537,0.8268134
+Bibionidae sp1 M_PL_072,pollinator,0,Specialist,-1.2551323,0.3509129
+Bombus atratus,pollinator,0,Specialist,-1.3903551,0.41204056
+Bombus bellicosus,pollinator,3,Keystone,-0.37443653,-1.1859689
+Bombyliidae sp2 M_PL_072,pollinator,0,Specialist,-1.5697616,-0.19495165
+Brachygastra lechiguana,pollinator,3,Keystone,0.31516466,-2.1907241
+Camponotus sp1 M_PL_072,pollinator,0,Specialist,-1.7655993,-0.12599722
+Campsomeris sp2 M_PL_072,pollinator,0,Specialist,-1.3903551,0.41204056
+Cantharidae sp1 M_PL_072,pollinator,3,Keystone,-0.5513214,-1.433592
+Ceratina montana,pollinator,0,Specialist,-1.1944557,0.86802256
+Ceratina rupestris,pollinator,0,Specialist,-1.1944557,0.86802256
+Chalcidoidea sp2 M_PL_072,pollinator,0,Specialist,-1.0075676,0.44551373
+Chauliognathus sp2 M_PL_072,pollinator,0,Specialist,-1.5454514,0.22184727
+Chilicola sp1 M_PL_072,pollinator,0,Specialist,-1.7655993,-0.12599722
+Chlorion sp1 M_PL_072,pollinator,3,Keystone,-0.58149856,-0.9834532
+Chlorostilbon aureoventris,pollinator,0,Specialist,-1.0075676,0.44551373
+Chrysodina sp1 M_PL_072,pollinator,0,Specialist,-0.95351166,0.9028736
+Cochliomyia macellaria,pollinator,0,Specialist,-1.5454514,0.22184727
+Colias lesbia,pollinator,0,Specialist,-1.3903551,0.41204056
+Colletes cyaneus,pollinator,0,Specialist,-0.91223323,0.61049116
+Colletes sp2 M_PL_072,pollinator,0,Specialist,-1.7655993,-0.12599722
+Corticea immocerina,pollinator,3,Keystone,-0.3011301,-0.20434906
+Discodon sp1 M_PL_072,pollinator,0,Specialist,-1.2551323,0.3509129
+Discodon sp2 M_PL_072,pollinator,0,Specialist,-1.4340854,-0.32788065
+Drosophilidae sp1 M_PL_072,pollinator,3,Keystone,-0.8256773,-0.93960154
+Entypus ferruginipennis,pollinator,0,Specialist,-2.6160557,0.73639643
+Entypus sp1 M_PL_072,pollinator,0,Specialist,-1.5454514,0.22184727
+Gaesischia sp1 M_PL_072,pollinator,0,Specialist,-1.30504,1.3944
+Hedriodiscus pulcher,pollinator,0,Specialist,-1.0648537,0.8268134
+Leioproctus indigoticus,pollinator,0,Specialist,-1.5697616,-0.19495165
+Lerodea eufala,pollinator,3,Keystone,-0.023876192,-1.5256487
+Leucospis sp1 M_PL_072,pollinator,0,Specialist,-2.6160557,0.73639643
+Lucilia sericata,pollinator,3,Keystone,-0.7010467,-1.1402335
+Megachilidae sp1 M_PL_072,pollinator,3,Keystone,0.1014683,-1.033613
+Megacyllene insignita,pollinator,0,Specialist,-1.2551323,0.35091293
+Melissoptila tandilensis,pollinator,0,Specialist,-1.390355,0.41204053
+Melyridae sp1 M_PL_072,pollinator,0,Specialist,-0.92123926,0.76608276
+Mischocyttarus drewseni,pollinator,0,Specialist,-0.9728444,-0.8242691
+Mordellidae sp1 M_PL_072,pollinator,3,Keystone,-0.13278584,-1.2439518
+Palpada sp1 M_PL_072,pollinator,0,Specialist,-1.5454514,0.22184731
+Pampasatyrus gyrtone,pollinator,0,Specialist,-0.64073265,0.2408451
+Parachytas sp1 M_PL_072,pollinator,0,Specialist,-1.0505347,-0.7634414
+Paramoecerus barbicornis,pollinator,0,Specialist,-1.2551323,0.35091296
+Phalacridae sp1 M_PL_072,pollinator,0,Specialist,-1.5697614,-0.19495167
+Platycheirus sp1 M_PL_072,pollinator,3,Keystone,-0.04620385,-1.3555223
+Podagritus sp1 M_PL_072,pollinator,0,Specialist,-1.4340854,-0.32788062
+Polistes sp1 M_PL_072,pollinator,3,Keystone,-0.36453542,-1.4483026
+Polybia scutellaris,pollinator,3,Keystone,-0.14212134,-1.731502
+Pompilidae sp1 M_PL_072,pollinator,0,Specialist,-1.5454514,0.22184733
+Ruizantheda divaricata,pollinator,0,Specialist,-1.7655991,-0.1259972
+Sarcophagidae sp1 M_PL_072,pollinator,3,Keystone,-0.7010468,-1.1402338
+Staphylinidae sp1 M_PL_072,pollinator,0,Specialist,-1.390355,0.41204053
+Strymon eurytulus,pollinator,0,Specialist,-1.0065213,0.8538736
+Syrphidae sp1 M_PL_072,pollinator,0,Specialist,-2.6160557,0.7363965
+Tachinidae sp1 M_PL_072,pollinator,3,Keystone,-0.14243262,-1.8324356
+Thespieus catochra,pollinator,0,Specialist,-0.9632277,-0.5314772
+Toxomerus sp1 M_PL_072,pollinator,3,Keystone,-0.06657472,-1.6304878
+Vanessa sp1 M_PL_072,pollinator,3,Keystone,-0.11330883,-0.52906775
+Villa sp1 M_PL_072,pollinator,0,Specialist,-1.4340854,-0.32788062
+Xylocopa augusti,pollinator,3,Keystone,-0.10552898,-0.72885543
+Xylocopa ciliata,pollinator,3,Keystone,-0.10062382,-0.7506305

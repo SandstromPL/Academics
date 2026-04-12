@@ -1,0 +1,20 @@
+species,kind,gnn_cluster,gnn_role,pca1,pca2
+Dillenia ferruginea,plant,2,Generalist,-1.9651848,-1.353538
+Erythroxylum sechellarum,plant,2,Generalist,-3.1337757,-0.84480387
+Memecylon eleagni,plant,0,Keystone,-1.5566604,0.49885824
+Nephrosperma vanhoutteanum,plant,2,Generalist,-3.9192452,0.9859931
+Soulamea terminaloides,plant,3,Connector,-0.40054607,-2.5949707
+Apis mellifera,pollinator,0,Keystone,-0.72996074,0.92799217
+Cratopus aurostriatus,pollinator,1,Specialist,0.9940955,-0.41451243
+Diptera sp1 M_PL_093,pollinator,0,Keystone,0.2172848,-0.015537249
+Diptera sp3 M_PL_093,pollinator,1,Specialist,1.3174955,1.1931611
+Diptera sp5 M_PL_093,pollinator,1,Specialist,1.0902715,-0.058285642
+Hemipyrellia sp1 M_PL_093,pollinator,3,Connector,1.7879469,-2.1063228
+Lasioglossum mahense,pollinator,0,Keystone,-0.821682,1.1404479
+Lygistorrhina sp1 M_PL_093,pollinator,0,Keystone,0.33647674,1.1914572
+Ornidia obesa,pollinator,1,Specialist,0.9940955,-0.41451237
+Pachycerina seychellensis,pollinator,1,Specialist,1.0902715,-0.058285642
+Phelsuma sp1 M_PL_093,pollinator,1,Specialist,1.3174955,1.1931611
+Plagiostenopterina cyanosoma,pollinator,1,Specialist,1.0902715,-0.0582855
+Unidentified sp2 M_PL_093,pollinator,1,Specialist,1.2972542,1.2024971
+Unidentified sp4 M_PL_093,pollinator,1,Specialist,0.99409574,-0.4145124

@@ -1,0 +1,31 @@
+species,kind,gnn_cluster,gnn_role,pca1,pca2
+Antidesma madagascariense,plant,2,Keystone,0.5745543,-1.3754861
+Euodia obtusifolia,plant,2,Keystone,-0.6032964,-0.28021994
+Gaertnera sp1 M_PL_079,plant,0,Generalist,1.8327372,0.14664651
+Labourdonnaisia callophylloides,plant,2,Keystone,0.23957865,-0.43683398
+Olea lancea,plant,3,Connector,-0.9457904,0.6777784
+Psathura terniflora,plant,2,Keystone,0.27903506,0.04613403
+Psiadia terebinthina,plant,0,Generalist,3.780748,1.6911924
+Psidium cattleianum,plant,3,Connector,-0.9457904,0.6777784
+Stillingia lineata,plant,0,Generalist,2.71216,0.37961203
+Syzygium coriaceum,plant,2,Keystone,2.0963795,-1.3330643
+Tabernaemontana persicarifolia,plant,2,Keystone,-0.17243105,-0.49062613
+Tristhema mauritiana,plant,2,Keystone,0.33599016,-1.0470673
+Ahasverus advena ,pollinator,3,Connector,-0.100175835,0.9909524
+Allograpta nasuta,pollinator,3,Connector,-0.7440395,1.0831863
+Apis mellifera,pollinator,2,Keystone,0.5190128,0.020079514
+Brachymyrmex sp1 M_PL_079,pollinator,1,Specialist,-1.383209,-0.9592869
+Chaetocnema sp1 M_PL_079,pollinator,2,Keystone,1.2750261,0.02391334
+Chrysomya megacephala ,pollinator,1,Specialist,-1.479595,-0.9282273
+Dysauxes florida,pollinator,2,Keystone,0.7518388,-0.1923036
+Miridae sp1 M_PL_079,pollinator,3,Connector,-1.6941372,1.2992662
+Nacoleia sp1 M_PL_079,pollinator,2,Keystone,0.33079606,0.023533942
+Orthellia albigena ,pollinator,3,Connector,-1.4667388,0.3214135
+Pachycerina crinicornis ,pollinator,3,Connector,-1.4667388,0.3214135
+Phalanta phalantha,pollinator,1,Specialist,0.0702651,-1.5154148
+Phorinia sp1 M_PL_079,pollinator,1,Specialist,-1.479595,-0.9282273
+Polistes hebraeus,pollinator,3,Connector,-1.3664868,0.015367502
+Stomorhina lunata,pollinator,3,Connector,-1.6941372,1.2992662
+Syritta nigrofemorata,pollinator,3,Connector,-1.6620498,1.2926937
+Technomyrmex albipes ,pollinator,1,Specialist,-0.24313723,-1.4156889
+Villa unifasciata,pollinator,0,Generalist,2.6492279,0.5922189

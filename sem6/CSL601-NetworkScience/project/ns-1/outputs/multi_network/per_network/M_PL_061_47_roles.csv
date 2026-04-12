@@ -1,0 +1,36 @@
+species,kind,gnn_cluster,gnn_role,pca1,pca2
+Alstonia macrophylla,plant,1,Generalist,3.4258344,-0.7078209
+Chrysobalanus icaco,plant,3,Keystone,0.56152767,-0.635676
+Erythroxylum sechellarum,plant,3,Keystone,1.4677265,-0.6616984
+Excoecaria benthiamiana,plant,2,Specialist,-2.6673431,-2.9115
+Gastonia crassa,plant,3,Keystone,2.0677757,-1.1199703
+Nephrosperma vanhoutteanum,plant,1,Generalist,4.444248,-0.32668945
+Paragenipa wrightii,plant,3,Keystone,0.56799394,-0.8203472
+Phoenicophorium borsigianum,plant,1,Generalist,4.626476,-0.41012695
+Roscheria melanochaetes,plant,1,Generalist,1.6200823,-2.4290688
+Apis mellifera,pollinator,3,Keystone,1.7153375,0.96500283
+Ceratina tabescens,pollinator,0,Connector,-1.0161924,-0.5426636
+Cratopus aurostriatus,pollinator,0,Connector,-1.4751834,0.8868568
+Diptera sp1 M_PL_130,pollinator,0,Connector,0.11686666,0.789653
+Diptera sp6 M_PL_130,pollinator,0,Connector,-0.79418296,-0.15227357
+Diptera sp7 M_PL_130,pollinator,2,Specialist,-1.6647669,-1.0865366
+Forcipomyia sp1 M_PL_130,pollinator,0,Connector,-0.80942243,1.1423608
+Hemipyrellia germana,pollinator,0,Connector,0.6311544,1.0127649
+Hemipyrellia sp1 M_PL_130,pollinator,0,Connector,-0.035672914,1.1135244
+Lasioglossum mahense,pollinator,3,Keystone,1.6463934,0.91562647
+Lygistorrhina sp1 M_PL_130,pollinator,0,Connector,-0.21985073,0.51587564
+Mabuya sechellensis,pollinator,0,Connector,-1.1278236,-0.081925705
+Megachile seychellensis,pollinator,2,Specialist,-2.8620327,-1.9240767
+Nectarinia dussumieri,pollinator,0,Connector,-0.54796225,0.28280503
+Neophyllomyza approximatonervis,pollinator,0,Connector,0.64276654,0.76003724
+Ornidia obesa,pollinator,0,Connector,0.1377045,1.1579483
+Phelsuma sp1 M_PL_130,pollinator,0,Connector,-1.0700283,-0.07401784
+Polistes olivaceus,pollinator,0,Connector,-1.0857687,0.44236055
+Rhiparida seychellensis,pollinator,2,Specialist,-1.7305802,-1.0913589
+Rhynchium brunneum,pollinator,0,Connector,-0.25550568,0.032660082
+Scaptodrosophila sp1 M_PL_130,pollinator,0,Connector,-1.163392,1.155093
+Simosyrphus aegyptius,pollinator,0,Connector,-0.5932649,0.91746294
+Unidentified sp2 M_PL_130,pollinator,0,Connector,-1.0844712,1.1768838
+Unidentified sp3 M_PL_130,pollinator,0,Connector,-1.2942502,0.9426716
+Unidentified sp4 M_PL_130,pollinator,0,Connector,-0.81885695,-0.15748757
+Unidentified sp5 M_PL_130,pollinator,0,Connector,-1.35533,0.92364997

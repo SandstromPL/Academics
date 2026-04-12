@@ -1,0 +1,33 @@
+species,kind,gnn_cluster,gnn_role,pca1,pca2
+Alstonia macrophylla,plant,0,Generalist,1.6716017,-2.6483738
+Canthium bibracteatum,plant,0,Generalist,1.474009,-2.2307029
+Deckenia nobilis,plant,0,Generalist,1.2921894,-1.8138114
+Medusagyne oppositifolia,plant,0,Generalist,0.6345437,-1.7672907
+Nephrosperma vanhoutteanum,plant,0,Generalist,2.0332878,-2.773158
+Paragenipa wrightii,plant,0,Generalist,1.7001244,-2.4342606
+Phoenicophorium borsigianum,plant,0,Generalist,1.4602982,-1.9314618
+Psychotria pervillei,plant,3,Keystone,0.59766036,-0.5957276
+Syzygium wrightii,plant,2,Specialist,-7.3654833,-2.5176454
+Apis mellifera,pollinator,3,Keystone,1.9081862,-0.45149538
+Ceratina tabescens,pollinator,1,Connector,-0.4462554,1.7841074
+Diptera sp1 M_PL_090,pollinator,1,Connector,-0.034553286,1.2655797
+Diptera sp4 M_PL_090,pollinator,1,Connector,-0.26885122,1.4641097
+Eagris sabadius,pollinator,1,Connector,-0.5518672,1.5959579
+Euodynerus cylindricus,pollinator,1,Connector,-0.5419662,1.5867441
+Hemipyrellia germana,pollinator,3,Keystone,0.71928513,0.35544848
+Lasioglossum mahense,pollinator,3,Keystone,1.3049651,-0.27993962
+Megachile seychellensis,pollinator,3,Keystone,1.0354618,0.112377256
+Melanostoma annulipes,pollinator,3,Keystone,0.3606005,0.7066524
+Nectarinia dussumieri,pollinator,2,Specialist,-7.427424,-1.5981727
+Neophyllomyza approximatonervis,pollinator,3,Keystone,0.49380514,0.51164126
+Ornidia obesa,pollinator,3,Keystone,0.8425988,0.13751556
+Pachycerina seychellensis,pollinator,1,Connector,-0.26885125,1.4641097
+Phelsuma sp1 M_PL_090,pollinator,3,Keystone,0.6562613,0.4491831
+Polistes olivaceus,pollinator,3,Keystone,1.0155866,0.3523094
+Rhiparida seychellensis,pollinator,1,Connector,-0.4462554,1.7841074
+Rhynchium brunneum,pollinator,1,Connector,-0.5469268,1.5913527
+Scaptodrosophila sp1 M_PL_090,pollinator,1,Connector,-0.19768356,1.2749879
+Tricimba seychellensis,pollinator,1,Connector,-0.46845075,1.7983156
+Unidentified sp2 M_PL_090,pollinator,1,Connector,-0.048625525,0.8860176
+Unidentified sp3 M_PL_090,pollinator,1,Connector,-0.5182164,0.88256925
+Unidentified sp5 M_PL_090,pollinator,1,Connector,-0.06905406,1.038954

@@ -1,0 +1,20 @@
+species,kind,gnn_cluster,gnn_role,pca1,pca2
+Cinnamomum verum,plant,2,Keystone,3.5159705,-1.9978293
+Erythroxylum sechellarum,plant,0,Connector,-0.7559885,1.3075387
+Memecylon eleagni,plant,3,Generalist,2.2483323,0.22325964
+Ochna kirkii,plant,0,Connector,0.057814654,1.1674803
+Premna serratifolia,plant,0,Connector,0.8582701,1.1451567
+Psidium cattleianum,plant,2,Keystone,3.6437685,0.48003656
+Apis mellifera,pollinator,3,Generalist,1.7078493,-2.5315263
+Chalcidoma disjunctum,pollinator,0,Connector,0.2237567,0.8973118
+Cratopus aurostriatus,pollinator,1,Specialist,-2.004415,-1.0001183
+Dichaetomyia fasciculifera,pollinator,1,Specialist,-2.004415,-1.0001183
+Eristalinus vicarians,pollinator,1,Specialist,-1.9751819,-1.0221101
+Hemipyrellia sp1 M_PL_110,pollinator,0,Connector,-0.12512743,1.045579
+Lasioglossum mahense,pollinator,0,Connector,-0.15704042,0.97208697
+Megachile seychellensis,pollinator,0,Connector,-1.1881372,0.8401717
+Neavella albipectus,pollinator,0,Connector,-0.5226266,0.6723258
+Ornidia obesa,pollinator,0,Connector,-0.06105428,0.014511277
+Parasarcophaga hirticeps,pollinator,1,Specialist,-1.9456471,-1.0443876
+Polistes olivaceus,pollinator,1,Specialist,-1.9456471,-1.0443876
+Xylocopa caffra,pollinator,0,Connector,0.42951834,0.8750173

@@ -1,0 +1,11 @@
+species,kind,gnn_cluster,gnn_role,pca1,pca2
+Chrysobalanus icaco,plant,2,Connector,-3.609967,-0.63180834
+Dillenia ferruginea,plant,1,Keystone,0.37724376,2.6411884
+Nepenthes pervillei,plant,3,Specialist,1.5870135,-0.6538374
+Apis mellifera,pollinator,0,Generalist,-1.9682088,2.4485464
+Eristalinus vicarians,pollinator,2,Connector,-2.9770708,-3.4802897
+Hemipyrellia germana,pollinator,1,Keystone,0.6262192,0.43203762
+Hemipyrellia sp1 M_PL_117,pollinator,3,Specialist,4.1787033,-2.1202776
+Lasioglossum mahense,pollinator,1,Keystone,0.5336296,0.50036585
+Ornidia obesa,pollinator,1,Keystone,0.6262192,0.43203762
+Rhiparida seychellensis,pollinator,1,Keystone,0.6262192,0.43203753

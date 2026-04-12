@@ -1,0 +1,21 @@
+species,kind,gnn_cluster,gnn_role,pca1,pca2
+Canthium bibracteatum,plant,2,Keystone,-1.8747641,-1.2231369
+Cinnamomum verum,plant,3,Generalist,-2.5041173,1.1014049
+Erythroxylum sechellarum,plant,2,Keystone,-1.9391545,-0.6084819
+Memecylon eleagni,plant,1,Specialist,0.1615793,-1.4002262
+Ochna kirkii,plant,1,Specialist,1.2033347,-1.1615365
+Premna serratifolia,plant,3,Generalist,-3.3970923,2.2802463
+Psidium cattleianum,plant,2,Keystone,-1.5313709,-0.7291414
+Apis mellifera,pollinator,2,Keystone,-1.0465138,-1.4334202
+Dichaetomyia fasciculifera,pollinator,0,Connector,2.3460016,1.1521952
+Hemipyrellia germana,pollinator,0,Connector,0.60122156,-0.023970025
+Hemipyrellia sp1 M_PL_109,pollinator,0,Connector,1.0795637,1.6931971
+Hymenoptera sp1 M_PL_109,pollinator,0,Connector,2.2912505,1.0933257
+Lasioglossum mahense,pollinator,2,Keystone,-0.7987647,-0.5932005
+Lygistorrhina sp1 M_PL_109,pollinator,1,Specialist,1.148841,-0.8952572
+Ornidia obesa,pollinator,0,Connector,-0.35792422,0.64806294
+Pachycerina seychellensis,pollinator,0,Connector,0.88868684,1.0044525
+Parasarcophaga hirticeps,pollinator,0,Connector,0.318266,0.57126623
+Plagiostenopterina cyanosoma,pollinator,0,Connector,1.3708282,0.362859
+Simosyrphus aegyptius,pollinator,1,Specialist,1.5970992,-0.8264658
+Xylocopa caffra,pollinator,1,Specialist,0.44302806,-1.0121733

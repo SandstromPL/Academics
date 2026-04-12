@@ -1,0 +1,25 @@
+species,kind,gnn_cluster,gnn_role,pca1,pca2
+Canthium bibracteatum,plant,2,Generalist,-3.1428564,-1.1452441
+Erythroxylum sechellarum,plant,3,Keystone,-2.3583775,0.111087866
+Nephrosperma vanhoutteanum,plant,2,Generalist,-4.876042,-0.12359811
+Ochna kirkii,plant,0,Specialist,2.1590786,-3.54341
+Paragenipa wrightii,plant,3,Keystone,-2.0575202,-0.56282246
+Premna serratifolia,plant,2,Generalist,-1.333742,-1.5367846
+Apis mellifera,pollinator,3,Keystone,-1.110321,0.44021302
+Ceratina tabescens,pollinator,1,Connector,0.907113,0.2611641
+Diptera sp1 M_PL_115,pollinator,3,Keystone,-0.15613714,0.8658093
+Hemipyrellia germana,pollinator,1,Connector,0.92470473,0.26592845
+Hemipyrellia sp1 M_PL_115,pollinator,1,Connector,0.907113,0.2611641
+Lasioglossum mahense,pollinator,3,Keystone,-1.4111118,-0.10704403
+Lygistorrhina sp1 M_PL_115,pollinator,3,Keystone,0.027507724,1.4124671
+Megachile seychellensis,pollinator,1,Connector,0.026262365,-0.3717317
+Neophyllomyza approximatonervis,pollinator,1,Connector,1.1503209,1.0956075
+Ornidia obesa,pollinator,1,Connector,0.92470473,0.26592845
+Phelsuma sp1 M_PL_115,pollinator,1,Connector,1.199973,1.1100897
+Rhiparida seychellensis,pollinator,1,Connector,0.8762125,1.0099328
+Rhynchium brunneum,pollinator,1,Connector,0.68904114,-0.60084695
+Tricimba seychellensis,pollinator,1,Connector,1.183397,1.1052918
+Unidentified sp2 M_PL_115,pollinator,1,Connector,1.1668415,1.1004626
+Unidentified sp3 M_PL_115,pollinator,1,Connector,0.48560363,0.28326282
+Unidentified sp4 M_PL_115,pollinator,1,Connector,1.183397,1.1052916
+Xylocopa caffra,pollinator,0,Specialist,2.6348386,-2.7022176

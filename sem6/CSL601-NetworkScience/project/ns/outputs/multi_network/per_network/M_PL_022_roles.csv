@@ -1,0 +1,67 @@
+species,kind,gnn_cluster,gnn_role,pca1,pca2
+Adesmia haemisphaerica,plant,2,Keystone,-2.4105442,-0.3917666
+Astragalus cruckshanksii,plant,0,Connector,0.19548008,-0.5116714
+Astragalus nivicola,plant,2,Keystone,-1.266024,0.32578495
+Azorella monanthos,plant,3,Generalist,-4.2486258,1.7482721
+Calandrinia caespitosa,plant,0,Connector,0.062254842,0.9255067
+Cerastium arvense,plant,0,Connector,-0.4334575,0.30606753
+Discaria nana,plant,3,Generalist,-4.9529047,4.913567
+Epilobium nivale ,plant,0,Connector,0.78031844,-0.70160085
+Hypochoeris montana ,plant,0,Connector,0.9666626,-0.9338249
+Jaborosa laciniata ,plant,2,Keystone,-2.8636465,-0.18327758
+Leuceria candidissima ,plant,0,Connector,0.46713138,-0.9884149
+Loasa incurva ,plant,0,Connector,0.047164846,-1.2342696
+Menonvillea hookeri ,plant,0,Connector,0.35245833,-1.2437352
+Montiopsis gilliesii ,plant,0,Connector,-0.15417618,0.39578417
+Oxalis erythrorhiza,plant,0,Connector,0.031262353,-0.59382343
+Perezia pilifera,plant,0,Connector,-0.15417615,0.3957841
+Phacelia secunda,plant,2,Keystone,-2.8817925,0.9551749
+Senecio looseri ,plant,2,Keystone,-2.6233392,-0.3499963
+Senecio tricephalus ,plant,0,Connector,-0.6823816,-0.861032
+Sisyrinchium junceum,plant,2,Keystone,-2.6256456,-0.37196323
+Tarasa humilis ,plant,0,Connector,-0.80147195,-0.8486541
+Agrotis ipsilon ,pollinator,1,Specialist,2.314205,1.0324343
+Alloscirtetica antarctica ,pollinator,0,Connector,0.31383136,-1.2755783
+Alloscirtetica sp1 M_PL_022,pollinator,0,Connector,0.31383136,-1.2755783
+Anthidium chubuti,pollinator,0,Connector,-1.2331454,-1.0605812
+Astylus sp1 M_PL_022,pollinator,0,Connector,-0.061622597,-0.8973647
+Calliphoridae sp1 M_PL_022,pollinator,0,Connector,1.0552627,-0.9278443
+Chilimelissa farellones ,pollinator,0,Connector,0.48747694,-0.49078035
+Chilimelissa sp1 M_PL_022,pollinator,2,Keystone,-1.5197362,0.07373077
+Chironomidae sp1 M_PL_022,pollinator,0,Connector,0.30843908,0.66373825
+Chlorobrachycoma versicolor ,pollinator,1,Specialist,0.77431536,0.5704142
+Coccinela anchoralis,pollinator,0,Connector,0.7217664,-0.4166449
+Dasybaris chillan ,pollinator,1,Specialist,2.314205,1.0324343
+Dolichogyna sp1 M_PL_022,pollinator,1,Specialist,2.314205,1.0324343
+Geron sp1 M_PL_022,pollinator,2,Keystone,-1.36466,1.2579674
+Hypodinerus sp1 M_PL_022,pollinator,0,Connector,0.06669245,0.53047115
+Hypodinerus sp2 M_PL_022,pollinator,1,Specialist,2.314205,1.0324345
+Ichneumonidae sp1 M_PL_022,pollinator,0,Connector,-0.44028026,-0.76658577
+Issoria lathonioides,pollinator,1,Specialist,2.314205,1.0324345
+Liphantus sp1 M_PL_022,pollinator,0,Connector,-0.2833383,-1.0319607
+Liphantus sp2 M_PL_022,pollinator,0,Connector,-0.42925137,-0.94511646
+Megachile sp1 M_PL_022,pollinator,2,Keystone,-2.5796735,0.07400681
+Megachile sp2 M_PL_022,pollinator,2,Keystone,-1.7865704,-0.53158444
+Microcerella rusca ,pollinator,1,Specialist,0.7743154,0.57041407
+Mosillus sp1 M_PL_022,pollinator,0,Connector,-0.42925137,-0.94511646
+Peridroma saucia ,pollinator,1,Specialist,2.314205,1.0324345
+Phulia sp1 M_PL_022,pollinator,1,Specialist,2.314205,1.0324345
+Phulia sp2 M_PL_022,pollinator,0,Connector,0.06473014,-1.2479128
+Podagritus sp1 M_PL_022,pollinator,0,Connector,0.7217664,-0.41664493
+Pseudoleucania nobilis ,pollinator,1,Specialist,2.314205,1.0324345
+Pseudoleucania sp1 M_PL_022,pollinator,1,Specialist,2.314205,1.0324345
+Pyrgus fides ,pollinator,0,Connector,0.11985478,-1.2329481
+Spinoliella sp1 M_PL_022,pollinator,0,Connector,-0.7420812,-1.1415228
+Tamseuxoa ingoufii ,pollinator,1,Specialist,2.314205,1.0324345
+Thyridanthrax sp1 M_PL_022,pollinator,1,Specialist,2.314205,1.0324345
+Thyridanthrax sp2 M_PL_022,pollinator,1,Specialist,0.7743154,0.57041407
+Thyridanthrax sp3 M_PL_022,pollinator,1,Specialist,2.3142042,1.0324343
+Thyridanthrax sp4 M_PL_022,pollinator,0,Connector,0.72176635,-0.41664505
+Thysanoptera sp1 M_PL_022,pollinator,0,Connector,-1.1090673,-1.0814501
+Tropidia notata,pollinator,0,Connector,0.19846602,0.49265245
+Unidentified sp1 M_PL_022,pollinator,0,Connector,-0.42925155,-0.9451166
+Unidentified sp2 M_PL_022,pollinator,2,Keystone,-1.0190228,0.3780452
+Unidentified sp3 M_PL_022,pollinator,1,Specialist,2.3142042,1.0324343
+Unidentified sp4 M_PL_022,pollinator,0,Connector,0.25108254,-1.6345348
+Unidentified sp5 M_PL_022,pollinator,2,Keystone,-1.6176497,-0.18311505
+Unidentified sp6 M_PL_022,pollinator,0,Connector,0.48747694,-0.4907802

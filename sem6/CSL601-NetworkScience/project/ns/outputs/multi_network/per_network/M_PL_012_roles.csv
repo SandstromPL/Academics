@@ -1,0 +1,85 @@
+species,kind,gnn_cluster,gnn_role,pca1,pca2
+Adenocarpus foliosus,plant,1,Connector,-0.62499195,1.886524
+Ageretina adenophora,plant,1,Connector,-0.04477071,1.6876026
+Aichryson laxum,plant,1,Connector,0.45929694,2.1502078
+Anacyclus radiatus,plant,3,Generalist,-4.5686545,0.17413083
+Andryala pinnatifida,plant,3,Generalist,-4.003831,0.26082942
+Appolonias barbujana,plant,1,Connector,0.45929602,2.150207
+Argyranthemum broussonetti,plant,1,Connector,0.46542206,1.323862
+Carduus tenuiflorus,plant,1,Connector,0.4592962,2.150207
+Cedronella canariensis,plant,3,Generalist,-5.7474613,0.09424069
+Cistus monspeliensis,plant,1,Connector,-0.9034597,1.611519
+Echium plantagineum,plant,1,Connector,-1.9544207,1.1509925
+Erica arborea,plant,1,Connector,-0.23367313,1.8798233
+Galactites tomentosa,plant,3,Generalist,-5.026963,0.024988065
+Geranium canariense,plant,3,Generalist,-3.3969622,0.21842834
+Geranium robertianum,plant,1,Connector,0.6710947,1.4738097
+Hypericum grandifolium,plant,1,Connector,0.45929626,2.1502075
+Ilex canarienis,plant,1,Connector,0.25739655,2.2903197
+Laurus azorica,plant,3,Generalist,-3.233836,0.26170182
+Leontodon taraxacoides,plant,1,Connector,0.007972776,2.0234663
+Picconia excelsa,plant,1,Connector,-0.5636912,2.4381952
+Psoralia bituminosa,plant,1,Connector,-0.364154,2.3779104
+Ranunculus cortusaefolius,plant,1,Connector,-0.44111216,2.047225
+Raphanus raphanistrum,plant,1,Connector,-0.3800948,0.83838755
+Rhamnus glandulosa,plant,1,Connector,1.2387265,2.9224072
+Senecio steetzii,plant,3,Generalist,-2.958692,0.5072549
+Silene gallica,plant,1,Connector,0.67109466,1.4738097
+Sonchus cf. ortunoi,plant,3,Generalist,-2.1551466,0.3214358
+Sonchus tenerrimus,plant,1,Connector,-0.76094127,1.9024332
+Viola riviniana,plant,1,Connector,0.007972784,2.0234663
+Acmaeodera cisti ,pollinator,0,Keystone,1.9186118,-0.83368444
+Anaspis proteus ,pollinator,0,Keystone,0.6629134,-1.1273457
+Andrena sp1 M_PL_012,pollinator,2,Specialist,2.1751587,0.5237289
+Anthophora alluaudi,pollinator,3,Generalist,-2.4006796,-1.6185703
+Apis mellifera,pollinator,0,Keystone,-1.4378084,-1.4853429
+Aricia cramera ,pollinator,2,Specialist,1.1660604,-0.4308342
+Artogeia rapae ,pollinator,0,Keystone,-0.9776046,-1.2287558
+Attalus sp1 M_PL_012,pollinator,0,Keystone,0.16309527,-0.57562804
+Bibio elmoi,pollinator,0,Keystone,1.35177,-0.68355405
+Bombus canariensis ,pollinator,3,Generalist,-3.848834,-1.510342
+Brachypterus sp1 M_PL_012,pollinator,0,Keystone,1.35177,-0.68355405
+Bruchidius wollastoni ,pollinator,0,Keystone,0.912907,-1.11923
+Chrysotoxum triarcuatum ,pollinator,0,Keystone,1.6137927,-1.5082866
+Cleora fortunata ,pollinator,2,Specialist,2.1751587,0.5237289
+Colias crocea ,pollinator,0,Keystone,0.9932788,-1.0084032
+Cornutiplusia circumflexa ,pollinator,2,Specialist,2.1751587,0.5237289
+Cyclyrius webbianus,pollinator,0,Keystone,-0.16213398,-0.9544634
+Dasyphora albofasciata ,pollinator,0,Keystone,1.35177,-0.68355405
+Delia platura ,pollinator,0,Keystone,0.5163467,-1.1567807
+Drosophila sp1 M_PL_012,pollinator,0,Keystone,1.9186118,-0.83368444
+Empis sp1 M_PL_012,pollinator,0,Keystone,0.41479683,-0.5102243
+Eristalis tenax,pollinator,0,Keystone,-1.2533392,-1.6477864
+Gonepteryx cleopatra,pollinator,0,Keystone,-0.2413724,-1.0026942
+Halictus sp1 M_PL_012,pollinator,0,Keystone,0.06099614,-0.69323856
+Heringia adpropinquans ,pollinator,2,Specialist,2.1751587,0.5237289
+Lampides boeticus ,pollinator,2,Specialist,2.1751587,0.5237289
+Lasioglossum chalcodes,pollinator,0,Keystone,-0.06378363,-1.1929678
+Lasioglossum loetum ,pollinator,0,Keystone,-0.37539503,-0.9597559
+Lycaena phlaeas ,pollinator,0,Keystone,0.02953256,-1.1700641
+Macroglossum stellatarum,pollinator,0,Keystone,-1.4080836,-1.4832026
+Maniola jurtina,pollinator,0,Keystone,0.39565933,-0.63773084
+Meliscaeva auricollis ,pollinator,0,Keystone,-0.08093236,-0.26436117
+Mordella israelsoni ,pollinator,0,Keystone,1.1128029,-0.9324669
+Myotropa florea ,pollinator,2,Specialist,2.1751587,0.5237289
+Pandoriana pandora ,pollinator,2,Specialist,1.1250881,-0.13859965
+Pararge xiphioides ,pollinator,0,Keystone,0.07504561,-0.8551482
+Piezodorus punctipes ,pollinator,0,Keystone,1.3517702,-0.68355405
+Podalonia tydei ,pollinator,0,Keystone,0.9932788,-1.0084032
+Pontia daplidice ,pollinator,0,Keystone,0.029532574,-1.1700641
+Pseudogonia fasciata ,pollinator,0,Keystone,1.112803,-0.93246716
+Sapromyza sp1 M_PL_012,pollinator,0,Keystone,1.1181066,-0.89947
+Siphona sp1 M_PL_012,pollinator,0,Keystone,1.112803,-0.93246716
+Sphecodes marginatus ,pollinator,0,Keystone,1.134435,-0.9143236
+Sphecodes ruficrus ,pollinator,0,Keystone,1.134435,-0.9143236
+Tachina canariensis,pollinator,0,Keystone,-0.35967842,-1.6181749
+Thaumatomyia notata ,pollinator,0,Keystone,1.9186114,-0.8336843
+Thyreus histrionicus ,pollinator,0,Keystone,0.39565933,-0.6377308
+Tricimba humeralis ,pollinator,0,Keystone,1.9186114,-0.8336843
+Unidentified sp1 M_PL_012,pollinator,3,Generalist,-3.793447,-1.3858826
+Unidentified sp2 M_PL_012,pollinator,2,Specialist,2.1751583,0.52372885
+Unidentified sp3 M_PL_012,pollinator,0,Keystone,1.3517699,-0.6835539
+Unidentified sp4 M_PL_012,pollinator,0,Keystone,1.9186118,-0.83368444
+Vanessa atalanta ,pollinator,2,Specialist,1.1660602,-0.43083426
+Vanessa cardui ,pollinator,2,Specialist,1.1660602,-0.43083426
+Vanessa indica ,pollinator,0,Keystone,-1.5744281,-1.4082965

@@ -1,0 +1,14 @@
+species,kind,gnn_cluster,gnn_role,pca1,pca2
+Excoecaria benthiamiana,plant,1,Connector,2.4137194,-1.4249687
+Memecylon eleagni,plant,3,Generalist,-2.3971248,-2.6627014
+Mimusops sechellarum,plant,0,Keystone,-1.5402118,2.575096
+Roscheria melanochaetes,plant,0,Keystone,0.7386404,0.45417878
+Apis mellifera,pollinator,3,Generalist,-2.761591,-0.6662698
+Cratopus aurostriatus,pollinator,0,Keystone,0.0014720875,1.3174658
+Diptera sp1 M_PL_124,pollinator,0,Keystone,-0.043518964,1.3445076
+Diptera sp3 M_PL_124,pollinator,1,Connector,1.57368,-0.5368648
+Diptera sp4 M_PL_124,pollinator,1,Connector,1.4684489,-0.6116434
+Lasioglossum mahense,pollinator,2,Specialist,-0.14410084,-0.80159086
+Lygistorrhina sp1 M_PL_124,pollinator,0,Keystone,0.0014722438,1.3174661
+Simosyrphus aegyptius,pollinator,2,Specialist,-0.14410092,-0.80159116
+Unidentified sp2 M_PL_124,pollinator,0,Keystone,0.8332145,0.49691394

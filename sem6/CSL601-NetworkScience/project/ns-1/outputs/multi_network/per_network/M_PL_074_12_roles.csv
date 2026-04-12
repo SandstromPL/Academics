@@ -1,0 +1,39 @@
+species,kind,gnn_cluster,gnn_role,pca1,pca2
+Berberis lutea,plant,0,Specialist,-1.7799649,0.53255445
+Bomarea brevis,plant,0,Specialist,-1.7781111,0.5217886
+Bomarea setacea,plant,0,Specialist,-1.7789623,0.5256485
+Brachyotum lutescens,plant,1,Generalist,1.2406011,-0.33490014
+Brachyotum naudinii,plant,0,Specialist,-1.7781113,0.52178884
+Centropogon isahellinus,plant,2,Connector,0.9372638,0.09195724
+Desfontainia spinosa,plant,1,Generalist,-0.06479982,-1.6646338
+Disterigma sp1 M_PL_074_12,plant,0,Specialist,-1.7789623,0.52564794
+Dunalia brachyacantha,plant,0,Specialist,-1.7796713,0.5300881
+Fuchsia decussata,plant,1,Generalist,0.8984204,-1.025733
+Gaiadendron punctatum,plant,2,Connector,0.97723645,-0.09796174
+Gaultheria bracteata,plant,0,Specialist,-1.7796713,0.5300881
+Gentianella fruticulosa,plant,0,Specialist,-1.7796713,0.5300881
+Gentianella violacea,plant,2,Connector,0.282051,0.010593427
+Greigia macbrideana,plant,0,Specialist,-1.7796713,0.5300881
+Meriania radula,plant,0,Specialist,-1.7781113,0.52178884
+Miconia alpina,plant,2,Connector,0.48196235,-0.06279706
+Monnina salicifolia,plant,2,Connector,0.008138907,0.3561049
+Pellegrinia hirsuta,plant,0,Specialist,-1.7802061,0.53520364
+Puya pseudoeryngioides,plant,2,Connector,0.93224657,-0.25627685
+Ribes incarnatum,plant,0,Specialist,-1.779963,0.53255516
+Rubus sp1 M_PL_074_12,plant,2,Connector,0.2860996,0.008191386
+Saracha punctata,plant,0,Specialist,-1.7802061,0.53520364
+Tristerix longebracteatus,plant,1,Generalist,1.2340757,-0.69139713
+Tropaeolum bicolor,plant,1,Generalist,-0.016696893,-1.8119006
+Vaccinium floribundum,plant,0,Specialist,-1.7793366,0.5277897
+Aglaeactis cupripennis,pollinator,2,Connector,2.0582993,0.26767263
+Coeligena torquata,pollinator,1,Generalist,1.0606977,-0.5410835
+Coeligena violifer,pollinator,1,Generalist,1.131894,-1.4310609
+Ensifera ensifera,pollinator,1,Generalist,0.2628002,-1.2162474
+Heliangelus amethysticollis,pollinator,2,Connector,1.2916163,0.008392891
+Lafresnaya lafresnayi,pollinator,2,Connector,0.90951425,-0.24991274
+Lesbia victoriae,pollinator,1,Generalist,0.5111664,-0.73357844
+Metallura theresiae,pollinator,3,Keystone,5.101631,3.9785504
+Metallura tyrianthina,pollinator,2,Connector,1.5789475,0.08158288
+Patagona gigas,pollinator,1,Generalist,0.93881327,-0.7922398
+Pterophanes cyanopterus,pollinator,1,Generalist,1.286742,-1.3837292
+Ramphomicron microrhynchum,pollinator,2,Connector,1.5819004,0.09008474

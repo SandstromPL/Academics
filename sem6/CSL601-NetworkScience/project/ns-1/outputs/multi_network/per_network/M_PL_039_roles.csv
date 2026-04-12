@@ -1,0 +1,69 @@
+species,kind,gnn_cluster,gnn_role,pca1,pca2
+Argyranthemum frutescens,plant,1,Generalist,4.263322,1.7558542
+Bituminaria bituminosa,plant,3,Keystone,2.1332598,-0.8899733
+Ceballosia fruticosa,plant,3,Keystone,1.0052629,0.41323835
+Convolvulus floridus,plant,1,Generalist,3.8139672,1.9597076
+Echium aculeatum,plant,3,Keystone,1.7900357,-1.2661974
+Echium plantagineum,plant,3,Keystone,2.0842795,-1.0202646
+Euphorbia canariensis,plant,1,Generalist,3.9038746,2.036659
+Euphorbia obtusifolia,plant,1,Generalist,4.619666,2.2450912
+Fagonia albiflora,plant,3,Keystone,0.74772334,-1.0325209
+Galactites tomentosa,plant,1,Generalist,3.2764359,-0.37161452
+Lavandula buchii,plant,1,Generalist,3.6512046,-0.54548293
+Lotus glaucus,plant,3,Keystone,1.7385823,-1.5188798
+Oxalis pes-caprae,plant,3,Keystone,1.875347,-0.8999488
+Plocama pendula,plant,1,Generalist,3.1100168,0.5646751
+Scandix pecten-veneris,plant,2,Specialist,0.7437658,0.8482152
+Sideritis argosphacelus,plant,3,Keystone,1.5694903,-0.32641298
+Sideritis nervosa,plant,3,Keystone,1.1380051,-0.22403361
+Amegilla canifrons,pollinator,3,Keystone,0.7487828,-2.148367
+Amegilla quadrifasciata,pollinator,3,Keystone,-0.2606237,-1.7485107
+Amegilla sp1 M_PL_058,pollinator,3,Keystone,1.8710129,-1.3266093
+Andrena vucana,pollinator,0,Connector,-1.7357389,0.5276582
+Anthophora alluardii,pollinator,3,Keystone,0.96795076,-2.2572012
+Anthophora orotavae,pollinator,3,Keystone,0.84805804,-1.9392394
+Apis mellifera,pollinator,3,Keystone,1.3326031,-0.97509205
+Camponotus rufoglaucus,pollinator,0,Connector,-1.7111303,-0.5824082
+Coleoptera sp14 M_PL_058,pollinator,0,Connector,-0.92905587,1.0925971
+Coleoptera sp15 M_PL_058,pollinator,0,Connector,-1.3433762,-1.1578608
+Coleoptera sp16 M_PL_058,pollinator,0,Connector,-1.4212756,0.7388833
+Coleoptera sp2 M_PL_058,pollinator,0,Connector,0.44583854,0.9905657
+Coleoptera sp29 M_PL_058,pollinator,0,Connector,-1.6304114,0.9346425
+Coleoptera sp32 M_PL_058,pollinator,0,Connector,-1.6304114,0.9346425
+Coleoptera sp33 M_PL_058,pollinator,0,Connector,-1.7111303,-0.5824082
+Coleoptera sp7 M_PL_058,pollinator,0,Connector,-0.92905587,1.0925971
+Cyclyrius webbianus,pollinator,0,Connector,-1.1579939,-1.0239084
+Diptera sp10 M_PL_058,pollinator,0,Connector,-0.9269987,0.9150236
+Diptera sp12 M_PL_058,pollinator,0,Connector,-0.9269987,0.9150236
+Diptera sp19 M_PL_058,pollinator,0,Connector,-1.4212756,0.7388833
+Diptera sp20 M_PL_058,pollinator,0,Connector,-1.735739,0.5276582
+Diptera sp25 M_PL_058,pollinator,2,Specialist,-2.83882,-0.34324595
+Diptera sp26 M_PL_058,pollinator,2,Specialist,-2.83882,-0.34324598
+Diptera sp27 M_PL_058,pollinator,2,Specialist,-2.83882,-0.34324598
+Diptera sp28 M_PL_058,pollinator,0,Connector,-1.4617617,1.2437172
+Eucera gracilipes,pollinator,1,Generalist,3.2171688,-0.8283976
+Hylaeus sp1 M_PL_058,pollinator,0,Connector,-0.92699873,0.9150236
+Hymenoptera sp24 M_PL_058,pollinator,0,Connector,-1.3433762,-1.1578608
+Lasioglossum evylaeus,pollinator,1,Generalist,3.3369772,-0.115744635
+Lucilia sp1 M_PL_058,pollinator,0,Connector,-0.44407603,0.85793924
+Macroglossum stellatarum,pollinator,0,Connector,-1.1579938,-1.0239081
+Sphecodes marginatus ,pollinator,2,Specialist,-1.9740208,-0.7696236
+Tachina canariensis,pollinator,0,Connector,-1.7357389,0.5276583
+Thysanoptera sp1 M_PL_058,pollinator,0,Connector,-1.4212756,0.7388833
+Unidentified sp1 M_PL_058,pollinator,3,Keystone,0.67162997,0.28992784
+Unidentified sp11 M_PL_058,pollinator,0,Connector,-0.88023347,0.9952614
+Unidentified sp13 M_PL_058,pollinator,0,Connector,-0.5907826,-0.12766135
+Unidentified sp17 M_PL_058,pollinator,0,Connector,-1.7357389,0.5276583
+Unidentified sp18 M_PL_058,pollinator,0,Connector,-1.7111303,-0.5824082
+Unidentified sp21 M_PL_058,pollinator,2,Specialist,-1.7246648,-1.8290284
+Unidentified sp22 M_PL_058,pollinator,0,Connector,-1.4212759,0.7388834
+Unidentified sp23 M_PL_058,pollinator,0,Connector,-1.4212759,0.7388834
+Unidentified sp3 M_PL_058,pollinator,0,Connector,0.14322771,0.05996136
+Unidentified sp30 M_PL_058,pollinator,0,Connector,-1.6304115,0.9346425
+Unidentified sp31 M_PL_058,pollinator,0,Connector,-1.6304115,0.9346425
+Unidentified sp34 M_PL_058,pollinator,0,Connector,-1.4617618,1.2437173
+Unidentified sp4 M_PL_058,pollinator,3,Keystone,-0.27543005,-1.4448916
+Unidentified sp5 M_PL_058,pollinator,0,Connector,-0.44407612,0.85793924
+Unidentified sp6 M_PL_058,pollinator,3,Keystone,-0.056164347,-1.6317148
+Unidentified sp8 M_PL_058,pollinator,0,Connector,-0.6821647,0.44894996
+Unidentified sp9 M_PL_058,pollinator,0,Connector,-0.92905563,1.0925974

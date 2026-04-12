@@ -1,0 +1,23 @@
+species,kind,gnn_cluster,gnn_role,pca1,pca2
+Canthium bibracteatum,plant,2,Keystone,2.4656048,-0.7209063
+Erythroxylum sechellarum,plant,2,Keystone,2.3847861,-0.95507574
+Memecylon eleagni,plant,2,Keystone,2.4366505,0.123055376
+Nephrosperma vanhoutteanum,plant,0,Generalist,0.13937259,-1.7777919
+Paragenipa wrightii,plant,2,Keystone,2.471936,-0.7277798
+Phoenicophorium borsigianum,plant,2,Keystone,1.604078,-0.93993324
+Psychotria pervillei,plant,2,Keystone,2.3082552,-0.678474
+Syzygium wrightii,plant,3,Specialist,2.8472717,3.217642
+Apis mellifera,pollinator,0,Generalist,-0.6436416,-1.200238
+Chalcidoma disjunctum,pollinator,1,Connector,-0.8910254,0.8602234
+Cratopus aurostriatus,pollinator,1,Connector,-1.4113852,-0.22593024
+Diptera sp1 M_PL_087,pollinator,1,Connector,-1.0961006,-0.258635
+Diptera sp3 M_PL_087,pollinator,1,Connector,-1.8613356,0.30075616
+Hemipyrellia sp1 M_PL_087,pollinator,1,Connector,-1.8635085,0.26715404
+Lasioglossum mahense,pollinator,0,Generalist,-0.5538034,-1.1709504
+Mabuya sechellensis,pollinator,3,Specialist,0.34945694,3.3556378
+Megachile seychellensis,pollinator,1,Connector,-0.5919164,-0.26536366
+Nectarinia dussumieri,pollinator,1,Connector,-0.63853765,-0.2692058
+Neophyllomyza approximatonervis,pollinator,1,Connector,-1.8619401,0.2860438
+Rhiparida seychellensis,pollinator,1,Connector,-1.862637,0.27651244
+Unidentified sp2 M_PL_087,pollinator,1,Connector,-1.8689418,0.22674729
+Unidentified sp4 M_PL_087,pollinator,1,Connector,-1.862637,0.27651244

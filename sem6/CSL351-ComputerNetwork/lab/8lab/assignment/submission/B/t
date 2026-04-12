@@ -1,0 +1,191 @@
+================================================================================
+  CSL351: Computer Networks — Assignment 7, Part 1
+  TCP Congestion Control Algorithms
+  Algorithms: TCP Cubic | TCP Tahoe | FAST TCP | Compound TCP
+================================================================================
+
+
+================================================================================
+1. TCP CUBIC  [Loss-Based / Estimation]
+================================================================================
+
+ALGORITHM DETAILS:
+  Cubic uses a cubic polynomial to control cwnd, making growth independent of RTT.
+
+  Formula:  W(t) = C * (t - K)^3 + W_max
+    - W_max = cwnd just before last loss
+    - K     = time to recover back to W_max  =  cbrt(W_max * beta / C)
+    - C     = 0.4 (scaling constant),  beta = 0.7 (reduction factor)
+    - t     = wall-clock time since last loss event
+
+  Phases:
+    1. Slow Start     : cwnd doubles each RTT until ssthresh.
+    2. Concave Growth : fast recovery toward W_max after loss.
+    3. Plateau        : growth slows near W_max (network stabilizes).
+    4. Convex Growth  : accelerates beyond W_max, probing for new bandwidth.
+
+  On loss: cwnd *= 0.7  (gentle 30% cut, NOT reset to 1 MSS)
+  RTT-independent: yes — window grows based on time, not RTT count.
+  TCP-friendly mode: activates on low-BDP networks to not starve Reno flows.
+
+SUITABLE SCENARIOS:
+  - High-bandwidth, high-latency (high-BDP) links — intercontinental fiber.
+  - Linux servers and data centers (it is the OS default since kernel 2.6.19).
+  - Mixed-RTT environments where RTT-fairness matters.
+
+WHERE IT FAILS:
+  - Wireless networks: treats random channel errors as congestion, cuts cwnd needlessly.
+  - Latency-sensitive apps: no delay awareness causes buffer bloat.
+  - Short-distance LAN: cubic growth provides no advantage over simple Reno.
+
+
+================================================================================
+2. TCP TAHOE  [Loss-Based]
+================================================================================
+
+ALGORITHM DETAILS:
+  The original TCP congestion control (Van Jacobson, 1988). Three mechanisms:
+
+  1. Slow Start:
+       cwnd starts at 1 MSS. Doubles every RTT (exponential) until ssthresh.
+
+  2. Congestion Avoidance:
+       Once cwnd >= ssthresh, grows linearly: +1 MSS per RTT (AIMD).
+
+  3. Fast Retransmit:
+       On 3 duplicate ACKs, retransmit lost segment immediately (no timeout wait).
+
+  On ANY loss (timeout or 3 DupACKs):
+       ssthresh = max(cwnd / 2,  2 * MSS)
+       cwnd     = 1 MSS   <-- always resets to 1, the key weakness
+
+SUITABLE SCENARIOS:
+  - Teaching and research baselines — the canonical example of TCP congestion control.
+  - Short-RTT, low-loss, reliable wired networks where resets are rare.
+
+WHERE IT FAILS:
+  - High-BDP networks: recovering from cwnd = 1 takes many RTTs, throughput collapses.
+  - Wireless / lossy links: frequent resets to 1 MSS devastate performance.
+  - Cannot distinguish random loss from congestion-caused loss.
+
+
+================================================================================
+3. FAST TCP  [Delay-Based]
+================================================================================
+
+ALGORITHM DETAILS:
+  Uses queuing delay (not packet loss) as the congestion signal. Adjusts cwnd
+  before any packet is dropped — proactive rather than reactive.
+
+  Formula:  cwnd = min(2*cwnd,  (baseRTT / RTT) * cwnd + alpha)
+    - baseRTT = minimum ever-observed RTT (pure propagation, no queuing)
+    - RTT     = current measured round-trip time
+    - alpha   = target number of packets in the network (typically 10–100)
+
+  How it works:
+    - If RTT = baseRTT (no queue): cwnd grows by alpha each update.
+    - If RTT > baseRTT (queue forming): factor (baseRTT/RTT) < 1, cwnd shrinks.
+    - Equilibrium: ~alpha packets always sit in the queue; latency stays low.
+    - No packet loss needed — achieves high utilization without drops.
+
+SUITABLE SCENARIOS:
+  - Dedicated high-speed research/institutional networks (10 Gbps+).
+  - Latency-sensitive apps: minimizes queue buildup and jitter.
+  - Stable, controlled data centers where RTT measurement is accurate.
+
+WHERE IT FAILS:
+  - Mixed deployments: loss-based flows (Cubic, Reno) ignore delay signals and
+    take all bandwidth that FAST TCP gives up. FAST flows get starved.
+  - Wireless networks: RTT fluctuates due to channel, not congestion — causes
+    incorrect cwnd reductions.
+  - Alpha tuning is sensitive: wrong value leads to under-utilization or queuing.
+
+
+================================================================================
+4. COMPOUND TCP  [Hybrid: Loss + Delay]
+================================================================================
+
+ALGORITHM DETAILS:
+  Combines a standard AIMD component (cwnd) with a scalable delay-based
+  component (dwnd). Default TCP in Windows Vista and later.
+
+  Effective window:  W = min(cwnd + dwnd,  rwnd)
+
+  cwnd: standard AIMD — grows +1 MSS/RTT, halves on loss (ensures fairness).
+  dwnd: delay-based scaling component:
+    - No congestion (delay low):  dwnd += alpha * dwnd^k   (superlinear growth)
+    - Congestion (delay high):    dwnd -= zeta * dwnd      (proportional cut)
+    - On loss event:              dwnd = 0                 (full reset)
+
+  Congestion is detected when observed throughput gap exceeds threshold gamma
+  (similar to TCP Vegas delay estimation).
+
+SUITABLE SCENARIOS:
+  - Windows enterprise and WAN environments (it is the Windows default).
+  - Mixed networks with both legacy Reno and modern flows — cwnd ensures fairness.
+  - High-BDP intercontinental links where scalable growth is needed.
+
+WHERE IT FAILS:
+  - High-loss wireless: frequent loss events reset dwnd = 0 and halve cwnd repeatedly.
+  - RTT noise degrades dwnd component (same sensitivity as FAST TCP).
+  - Not available natively on Linux — creates asymmetry in Windows↔Linux transfers.
+
+
+================================================================================
+5. COMPARISON AND INFERENCES
+================================================================================
+
+FEATURE COMPARISON:
+  +--------------------+------------+-----------+-----------+--------------+
+  | Feature            | Cubic      | Tahoe     | FAST TCP  | Compound TCP |
+  +--------------------+------------+-----------+-----------+--------------+
+  | Category           | Loss+Est.  | Loss      | Delay     | Hybrid       |
+  | Congestion Signal  | Loss       | Loss      | Delay     | Loss+Delay   |
+  | Loss Response      | cwnd*=0.7  | cwnd=1MSS | None      | cwnd/2,dwnd=0|
+  | RTT-Independent    | Yes        | No        | Partial   | Partial      |
+  | High BDP Perf.     | Excellent  | Very Poor | Excellent | Very Good    |
+  | Wireless Perf.     | Poor       | Very Poor | Poor      | Moderate     |
+  | Coexistence        | Good       | Good      | Poor      | Good         |
+  | OS Default         | Linux      | None      | None      | Windows      |
+  +--------------------+------------+-----------+-----------+--------------+
+
+INFERENCES:
+
+  1. No single algorithm fits all scenarios.
+     Tahoe suits teaching; Cubic suits high-BDP; FAST suits dedicated links;
+     Compound suits mixed enterprise. Choice depends on network and application.
+
+  2. RTT-independence is essential for high-BDP performance.
+     Tahoe's cwnd grows at 1/RTT — too slow for long-distance, high-bandwidth paths.
+     Cubic (wall-clock based) and FAST TCP (baseRTT/RTT ratio) solve this.
+     RTT-independence is a mandatory property for any modern scalable TCP.
+
+  3. Loss-based algorithms fail in wireless environments.
+     Tahoe and Cubic cannot distinguish congestion loss from random channel errors.
+     Tahoe hits cwnd=1 on every wireless drop; Cubic cuts 30% unnecessarily.
+     Delay-aware algorithms (FAST, Compound) handle this more gracefully.
+
+  4. Delay-based algorithms are starved in mixed deployments.
+     FAST TCP backs off when delay rises, freeing bandwidth that Cubic/Reno grabs.
+     This coexistence problem makes pure delay-based TCP impractical in production.
+     Compound TCP avoids this by keeping the AIMD cwnd component as a floor.
+
+  5. Cubic's cubic growth profile is uniquely adaptive.
+     Fast concave recovery + stable plateau near W_max + aggressive convex probing
+     gives Cubic the right behavior at every phase — explaining its Linux dominance.
+
+  6. Compound TCP's hybrid design is the most practically robust.
+     AIMD cwnd guarantees TCP-friendliness; superlinear dwnd drives throughput;
+     dwnd reset on loss provides a safety net missing in FAST TCP.
+     Best average performance across diverse real-world conditions.
+
+
+================================================================================
+REFERENCES
+================================================================================
+  [1] Ha, Rhee, Xu — CUBIC: A New TCP-Friendly High-Speed TCP Variant. ACM SIGOPS, 2008.
+  [2] Jacobson, Karels — Congestion Avoidance and Control. ACM SIGCOMM, 1988.
+  [3] Jin, Wei, Low — FAST TCP. IEEE/ACM Transactions on Networking, 2006.
+  [4] Tan, Song, Zhang, Sridharan — A Compound TCP Approach. IEEE INFOCOM, 2006.
+  [5] RFC 5681 — TCP Congestion Control. IETF, 2009.
+================================================================================

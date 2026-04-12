@@ -1,0 +1,23 @@
+species,kind,gnn_cluster,gnn_role,pca1,pca2
+Erythroxylum sechellarum,plant,0,Connector,1.4074594,0.059040315
+Medusagyne oppositifolia,plant,0,Connector,1.4013268,0.41147617
+Memecylon eleagni,plant,0,Connector,1.9365617,-0.51525635
+Mimusops sechellarum,plant,3,Keystone,0.20248465,1.1647291
+Nephrosperma vanhoutteanum,plant,2,Generalist,-0.809047,2.1098866
+Apis mellifera,pollinator,0,Connector,0.8934738,0.98222005
+Chalcidoma disjunctum,pollinator,1,Specialist,-0.6824224,-0.46749482
+Coleoptera sp4 M_PL_085,pollinator,1,Specialist,-0.6824224,-0.46749482
+Coleoptera sp5 M_PL_085,pollinator,3,Keystone,-0.31312796,-0.38345093
+Diptera sp1 M_PL_085,pollinator,3,Keystone,0.21572195,0.5658717
+Diptera sp3 M_PL_085,pollinator,1,Specialist,-0.6824224,-0.46749482
+Eristalinus vicarians,pollinator,1,Specialist,-0.6481788,-0.4443025
+Geron seychellarum,pollinator,1,Specialist,-0.67542547,-0.46250373
+Hemipyrellia germana,pollinator,1,Specialist,-0.6824224,-0.46749482
+Lasioglossum mahense,pollinator,3,Keystone,0.13317634,0.5174919
+Lygistorrhina sp1 M_PL_085,pollinator,1,Specialist,-0.55983937,-0.39357886
+Nectarinia dussumieri,pollinator,3,Keystone,-0.3035852,-0.37226447
+Parasarcophaga hirticeps,pollinator,0,Connector,0.5516722,0.24228892
+Phelsuma sp1 M_PL_085,pollinator,3,Keystone,-0.9805954,0.4475258
+Rhiparida seychellensis,pollinator,1,Specialist,-0.6548918,-0.44859162
+Simosyrphus aegyptius,pollinator,0,Connector,1.5350103,-1.1921386
+Unidentified sp2 M_PL_085,pollinator,1,Specialist,-0.6025061,-0.4184633

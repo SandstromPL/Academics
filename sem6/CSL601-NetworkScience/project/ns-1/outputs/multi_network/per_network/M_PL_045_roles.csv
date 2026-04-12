@@ -1,0 +1,44 @@
+species,kind,gnn_cluster,gnn_role,pca1,pca2
+Campanula gieseckiana,plant,1,Keystone,3.5264301,0.72297174
+Cassiope tetragona,plant,3,Specialist,-0.852736,3.651913
+Cerastium alpinum,plant,1,Keystone,1.12338,0.63669276
+Dryas integrifolia,plant,1,Keystone,3.960728,-0.7178751
+Epilobium latifolium,plant,2,Connector,-0.6436423,1.0334299
+Ledum palustre,plant,1,Keystone,2.0940626,0.28803337
+Pedicularis flammea,plant,2,Connector,-1.3171716,-0.6721887
+Polygonum viviparum,plant,1,Keystone,1.650089,0.735121
+Potentilla rubricaulis,plant,2,Connector,-0.66266924,1.0400205
+Pyrola grandiflora,plant,2,Connector,-0.47324523,0.7617262
+Rhododendron lapponicum,plant,2,Connector,0.24024555,-0.22646937
+Salix sp1 M_PL_045,plant,1,Keystone,1.4136857,0.23536101
+Saxifraga caespitosa,plant,2,Connector,-0.7563324,-0.2723572
+Saxifraga tricuspidata,plant,0,Generalist,2.6292455,-0.9166404
+Silene acaulis,plant,1,Keystone,1.9346955,-0.3090595
+Vaccinium uliginosum,plant,2,Connector,-0.15615727,-0.74513215
+Viscaria alpina,plant,2,Connector,-0.64364225,1.0334299
+Acarina sp1 M_PL_045,pollinator,2,Connector,-1.3423183,-0.23411033
+Coccinella transversoguttata,pollinator,2,Connector,-0.4338996,0.5368777
+Delia sp1 M_PL_045,pollinator,2,Connector,-1.4830747,-0.1411071
+Dolichopus sp1 M_PL_045,pollinator,2,Connector,-0.6786894,-0.18004274
+Eupeodes curtus,pollinator,1,Keystone,1.1473787,0.29263464
+Eupeodes luniger,pollinator,2,Connector,-1.8804698,-1.4971803
+Lasiomma sp1 M_PL_045,pollinator,2,Connector,-1.8804698,-1.4971803
+Nysius groenlandicus,pollinator,1,Keystone,1.4169813,1.0748043
+Pegomya sp1 M_PL_045,pollinator,2,Connector,-0.38636163,-0.88196903
+Platycheirus groenlandicus,pollinator,2,Connector,-1.4996862,-0.13052057
+Platycheirus hyperboreus,pollinator,2,Connector,-0.3959296,-0.9017537
+Platycheirus lundbecki,pollinator,2,Connector,-1.1647929,-0.94353646
+Protophormia terranovae,pollinator,2,Connector,-1.4996862,-0.13052057
+Sphaerophoria scripta,pollinator,2,Connector,-0.32398808,-0.024048483
+Spilogona sp1 M_PL_045,pollinator,2,Connector,-0.110117815,-0.8826365
+Sympsitis zetterstedtii,pollinator,2,Connector,-0.9236121,0.52119964
+Thysanoptera sp1 M_PL_045,pollinator,1,Keystone,0.94049203,-0.3233935
+Unidentified sp1 M_PL_045,pollinator,0,Generalist,2.2932844,-1.2367349
+Unidentified sp2 M_PL_045,pollinator,1,Keystone,2.242387,-0.3273306
+Unidentified sp3 M_PL_045,pollinator,2,Connector,0.29664102,-0.9864276
+Unidentified sp4 M_PL_045,pollinator,2,Connector,-0.47213826,0.20236158
+Unidentified sp5 M_PL_045,pollinator,2,Connector,-0.9556459,0.06538849
+Unidentified sp6 M_PL_045,pollinator,3,Specialist,-1.2417355,3.620929
+Unidentified sp7 M_PL_045,pollinator,2,Connector,-1.3513588,-0.6469793
+Unidentified sp8 M_PL_045,pollinator,2,Connector,-1.4996862,-0.13052052
+Unidentified sp9 M_PL_045,pollinator,2,Connector,-1.8804694,-1.4971802

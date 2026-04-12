@@ -1,0 +1,53 @@
+species,kind,gnn_cluster,gnn_role,pca1,pca2
+Antirhea borbonica,plant,2,Specialist,0.78108126,0.83443624
+Aphloia theiformis,plant,3,Generalist,-2.6931198,0.20461048
+Bertiera zaluzania ,plant,3,Generalist,-1.7628187,-0.7309819
+Chassalia coriacea,plant,1,Keystone,-0.21936648,0.20731927
+Cordemoya integrifolia,plant,2,Specialist,0.37882468,0.080097735
+Croton fothergillifolius,plant,3,Generalist,-1.9938413,0.6961744
+Erythroxylum macrocarpum,plant,1,Keystone,-1.009392,0.34034875
+Faujasiopsis flexuosa,plant,3,Generalist,-2.4124005,0.29878566
+Homalanthus populifolius,plant,3,Generalist,-1.4834465,0.85205615
+Molinaea alternifolia,plant,3,Generalist,-2.5933423,-0.09600735
+Myonima violacea,plant,3,Generalist,-2.8520427,-0.82162327
+Ochna mauritiana,plant,3,Generalist,-3.7927048,-0.5560961
+Olea lancea,plant,2,Specialist,0.99137545,0.76672715
+Psiadia terebinthina,plant,3,Generalist,-2.1032636,1.4855688
+Psidium cattleianum,plant,1,Keystone,-1.075426,1.0000716
+Sideroxylon puberulum,plant,3,Generalist,-3.670519,-2.0391066
+Stillingia lineata,plant,3,Generalist,-3.0361507,0.17682804
+Allograpta nasuta,pollinator,1,Keystone,-0.11024033,0.9901514
+Apis mellifera,pollinator,1,Keystone,-1.254563,-1.9379867
+Atherigona orientalis,pollinator,0,Connector,2.2670386,-1.9021552
+Brachymyrmex sp1 M_PL_076,pollinator,0,Connector,1.2118695,-1.4689884
+Calopsilia florella,pollinator,2,Specialist,1.6454448,0.53283054
+Campopleginae sp1 M_PL_076,pollinator,0,Connector,1.9694413,-0.60504997
+Chaetocnema sp1 M_PL_076,pollinator,3,Generalist,-2.307217,0.6180429
+Chrysomya megacephala ,pollinator,0,Connector,1.0903213,-1.1257787
+Cratopus psittacus,pollinator,2,Specialist,1.6755561,0.25399578
+Cryptocephalinae sp1 M_PL_076,pollinator,0,Connector,1.7722678,-0.69853866
+Dioxyna sororcula ,pollinator,2,Specialist,2.030679,1.6817908
+Dysauxes florida,pollinator,1,Keystone,-1.2199954,-0.36665565
+Episyrphus sp1 M_PL_076,pollinator,2,Specialist,1.8560854,0.31205955
+Eristalinus flaveolus,pollinator,2,Specialist,1.8560854,0.31205955
+Fannia pusio ,pollinator,1,Keystone,0.5170551,0.5653841
+Gelechioidea sp1 M_PL_076,pollinator,2,Specialist,2.0337088,0.74941534
+Gelechioidea sp2 M_PL_076,pollinator,2,Specialist,1.8899813,0.5853518
+Ischiodon aegyptius ,pollinator,1,Keystone,0.18334106,0.26280543
+Lecithoceridae sp1 M_PL_076,pollinator,2,Specialist,2.0306792,1.6817908
+Lygistorrhina sp1 M_PL_076,pollinator,1,Keystone,-1.1927756,0.017580958
+Mauritiborium undulatus ,pollinator,2,Specialist,1.6755561,0.25399578
+Melanostoma bituberculatum ,pollinator,0,Connector,1.9694413,-0.60505
+Musca domestica,pollinator,1,Keystone,-0.14814721,-0.16199185
+Nacoleia sp1 M_PL_076,pollinator,1,Keystone,-0.57484215,0.54224885
+Nyctemera insulare,pollinator,2,Specialist,2.194221,-0.60307634
+Ornidia obesa,pollinator,2,Specialist,1.4284977,0.28430957
+Pachycerina crinicornis ,pollinator,1,Keystone,-1.5524664,0.8399504
+Panara naso,pollinator,1,Keystone,-0.076549,-0.00635217
+Polistes hebraeus,pollinator,1,Keystone,-0.3628002,-0.131621
+Sarcophaga arno ,pollinator,0,Connector,1.9802338,-0.5967521
+Siphona sp1 M_PL_076,pollinator,2,Specialist,2.194221,-0.60307634
+Stomorhina lunata,pollinator,1,Keystone,-1.0143644,-0.55630827
+Stomoxys calcitrans,pollinator,0,Connector,2.205873,-1.944674
+Syritta nigrofemorata,pollinator,0,Connector,0.9256304,-0.18242568
+Technomyrmex albipes ,pollinator,1,Keystone,-0.24271868,0.31351274

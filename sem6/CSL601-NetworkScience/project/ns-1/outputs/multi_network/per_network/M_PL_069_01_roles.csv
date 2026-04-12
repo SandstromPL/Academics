@@ -1,0 +1,26 @@
+species,kind,gnn_cluster,gnn_role,pca1,pca2
+"Abundance""",plant,0,Keystone,-1.1496028,-0.8267897
+Aechmea blumenavii,plant,2,Specialist,1.0578837,0.77993727
+Billbergia amoena,plant,2,Specialist,1.7795365,0.490517
+Fuchsia regia,plant,3,Connector,0.47020617,0.4658715
+Hedychium coronarium,plant,0,Keystone,1.1262723,-2.0587447
+Heliconia farinosa,plant,2,Specialist,1.0416088,0.8240435
+Hippeastrum aulicum,plant,2,Specialist,1.0409213,0.8257057
+Ipomea sp1 M_PL_069_01,plant,0,Keystone,-0.53303427,-0.7837574
+Justicia brasiliana,plant,2,Specialist,1.7041861,0.5896144
+Justicia carnea,plant,2,Specialist,0.47595605,1.1759491
+Nematanthus australis,plant,3,Connector,0.596732,0.14094162
+Nidularium inocentii,plant,2,Specialist,1.7729869,0.5111141
+Psychotria suterella,plant,2,Specialist,1.7136508,1.1807413
+Sinningia douglasii,plant,0,Keystone,0.55388343,-0.75507313
+Tillandsia sp1 M_PL_069_01,plant,2,Specialist,1.7302707,1.1447148
+Vriesea carinata,plant,2,Specialist,1.7807297,0.48466238
+Vriesea erythrodactylon,plant,3,Connector,1.3860679,-0.78533375
+Vriesea incurvata,plant,0,Keystone,1.2032189,-1.906743
+Vriesea vagans,plant,0,Keystone,-0.68473613,-0.17776117
+Amazilia fimbriata,pollinator,0,Keystone,-1.6620814,-1.1861972
+Amazilia versicolor,pollinator,0,Keystone,-1.8603162,-1.7795016
+Clytolaema rubricauda,pollinator,1,Generalist,-2.728106,-0.14502375
+Phaethornis eurynome,pollinator,1,Generalist,-4.3251243,1.459654
+Ramphodon naevius,pollinator,0,Keystone,-1.8566424,-1.5319035
+Thalurania glaucopis,pollinator,1,Generalist,-4.6344676,1.8633633

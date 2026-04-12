@@ -1,0 +1,111 @@
+species,kind,gnn_cluster,gnn_role,pca1,pca2
+Achillea millefolium,plant,1,Generalist,-3.1379573,-0.1480106
+Aegopodium podagraria,plant,2,Connector,-2.1848938,-1.2550246
+Cerastium glomeratum,plant,2,Connector,-0.25335923,-2.2193584
+Chaerophyllum temulentum,plant,2,Connector,-2.5993223,-0.774033
+Chamomilla recutita,plant,2,Connector,-1.3136605,-1.2891834
+Chrysanthemum maximum,plant,2,Connector,-0.5447391,-1.7714072
+Cirsium arvense,plant,1,Generalist,-2.7874975,-0.684411
+Cirsium vulgare,plant,1,Generalist,-3.5608046,-0.27631372
+Daucus carota,plant,2,Connector,-2.0924234,-1.1670387
+Echium vulgare,plant,2,Connector,-2.2059267,-1.0290248
+Epilobium montanum,plant,2,Connector,-1.7946486,-0.72987026
+Geranium robertianum,plant,2,Connector,-0.2533593,-2.219358
+Hypericum perforatum,plant,2,Connector,-0.07332497,-2.7654474
+Lapsana communis,plant,2,Connector,-2.152894,-1.0817304
+Malva sylvestris,plant,2,Connector,-0.78906846,-1.4308481
+Melilotus albus,plant,1,Generalist,-3.425964,-0.13980137
+Myosotis palustris,plant,2,Connector,-2.2739532,-0.54150814
+Prunella vulgaris,plant,2,Connector,-0.9647792,-1.4489894
+Ranunculus repens,plant,2,Connector,-2.232806,-1.0926887
+Senecio jacobea,plant,1,Generalist,-3.2581267,-0.21607648
+Silene dioica,plant,1,Generalist,-3.1801767,-0.18202694
+Stachys sylvatica,plant,2,Connector,-1.2964966,-1.9260126
+Tanacetum vulgare,plant,1,Generalist,-3.7306395,0.037500136
+Trifolium dubium,plant,2,Connector,-1.6940501,-1.0145049
+Trifolium repens,plant,1,Generalist,-3.6408913,-0.110992186
+Tripleurospermum inodorum,plant,1,Generalist,-5.500122,0.9463109
+Verbascum thapsus,plant,1,Generalist,-2.9823089,-0.18751106
+Vicia hirsuta,plant,1,Generalist,-2.7720993,-0.3806398
+Adscita statices,pollinator,3,Keystone,-0.21102348,1.3971845
+Apion aeneum,pollinator,0,Specialist,1.8925732,0.85806715
+Apion flavipes,pollinator,0,Specialist,1.5116117,-0.5035667
+Apion hookeri ,pollinator,0,Specialist,0.32691452,-0.16648562
+Apion meliloti ,pollinator,0,Specialist,1.3093238,-0.13017291
+Apion rufirostre ,pollinator,0,Specialist,1.0774968,0.869457
+Apocrita sp1 M_PL_043,pollinator,3,Keystone,-1.7051041,1.7225888
+Bombus hortorum,pollinator,3,Keystone,-0.93653226,1.2573395
+Bombus lapidarius,pollinator,3,Keystone,0.1578343,0.74160606
+Bombus lucorum,pollinator,0,Specialist,1.4746743,-0.3163903
+Bombus pascuorum,pollinator,3,Keystone,-1.1483461,1.7130151
+Bombus pratorum,pollinator,0,Specialist,0.5060673,-0.26585636
+Bombus ruderatus,pollinator,0,Specialist,1.4746743,-0.3163903
+Bombus soroeensis,pollinator,0,Specialist,0.9118104,0.18917532
+Bombus terrestris,pollinator,3,Keystone,0.5920018,0.7332009
+Byturus aestivus,pollinator,0,Specialist,1.8398538,0.5430474
+Ceuthorrhynchus assimilis ,pollinator,3,Keystone,0.72066426,0.9260401
+Ceutorrhynchus rugulosus ,pollinator,0,Specialist,1.3161293,0.013330972
+Cheilosia albitarsis,pollinator,0,Specialist,1.3656332,0.37548378
+Cheilosia impressa ,pollinator,0,Specialist,1.5244825,0.81918347
+Cheilosia velutina ,pollinator,0,Specialist,1.4078094,0.3576823
+Chrysogaster cemiteriorum,pollinator,0,Specialist,1.4078094,0.3576823
+Clytus arietis,pollinator,0,Specialist,0.8844671,-0.6830711
+Coccinella septempunctata,pollinator,3,Keystone,0.34476843,1.2868775
+Corticarina gibbosa ,pollinator,0,Specialist,1.2209457,0.67391765
+Crambus pratella,pollinator,3,Keystone,-0.39922267,0.7374266
+Diptera sp1 M_PL_043,pollinator,0,Specialist,1.3934667,-0.38412878
+Enicmus transversus,pollinator,0,Specialist,1.8767005,0.9591536
+Eoseristalis abusivus,pollinator,3,Keystone,-0.2559549,0.52338034
+Eoseristalis arbustorum,pollinator,0,Specialist,2.5165436,-1.6813363
+Episyrphus balteatus,pollinator,3,Keystone,-0.41425124,0.60656714
+Epuraea depressa ,pollinator,0,Specialist,1.3915793,0.33300096
+Eristalinus sepulchralis,pollinator,0,Specialist,2.5165436,-1.6813363
+Eumerus tuberculatus ,pollinator,3,Keystone,-0.17259459,0.74422425
+Leptura rubra,pollinator,3,Keystone,-0.27093396,0.5020341
+Malachius viridis,pollinator,0,Specialist,1.5116117,-0.5035667
+Maniola jurtina,pollinator,3,Keystone,-0.46477425,0.6396161
+Melanostoma scalare,pollinator,0,Specialist,1.5282449,0.48201793
+Meligethes sp1 M_PL_043,pollinator,1,Generalist,-2.5669692,1.9564768
+Meliscaeva cinctella,pollinator,3,Keystone,0.07711058,1.0220315
+Miarus campanulae ,pollinator,0,Specialist,2.5165436,-1.6813363
+Miccotrogus picirostris ,pollinator,0,Specialist,1.3656332,0.37548378
+Nemophora degeerella,pollinator,0,Specialist,1.1059989,0.598318
+Olibrus aeneus ,pollinator,3,Keystone,-0.70749635,1.1141405
+Oulema melanopus,pollinator,0,Specialist,1.0820268,0.76207924
+Parasyrphus malinellus,pollinator,0,Specialist,1.3934667,-0.38412878
+Pieris napi,pollinator,0,Specialist,0.9875346,-0.7244766
+Polyommatus icarus ,pollinator,3,Keystone,-0.34368384,0.6211934
+Psithyrus campestris,pollinator,0,Specialist,0.9399621,0.25119013
+Psithyrus rupestris,pollinator,0,Specialist,1.4746743,-0.3163903
+Sitona lineatus,pollinator,0,Specialist,1.3093238,-0.13017291
+Sphaerophoria menthastri,pollinator,3,Keystone,0.04852744,0.07928995
+Sphaerophoria scripta,pollinator,0,Specialist,1.2411207,-0.88770944
+Sphaerophoria taeniata,pollinator,0,Specialist,1.5116117,-0.5035667
+Strangalia maculata,pollinator,0,Specialist,2.5165436,-1.6813363
+Strophosomus capitatus,pollinator,0,Specialist,1.8398538,0.5430474
+Syrphus ribesii,pollinator,3,Keystone,0.6339946,0.86969864
+Thymelicus sylvestris,pollinator,0,Specialist,1.0108678,0.5252322
+Unidentified sp1 M_PL_043,pollinator,3,Keystone,-1.2278814,1.5312675
+Unidentified sp10 M_PL_043,pollinator,0,Specialist,0.49162748,-0.13731687
+Unidentified sp11 M_PL_043,pollinator,3,Keystone,0.5347409,0.68138635
+Unidentified sp12 M_PL_043,pollinator,0,Specialist,0.9360253,0.5633394
+Unidentified sp13 M_PL_043,pollinator,0,Specialist,0.86395234,-0.47818357
+Unidentified sp14 M_PL_043,pollinator,0,Specialist,0.9840657,-0.7686679
+Unidentified sp15 M_PL_043,pollinator,0,Specialist,0.97495484,0.7790829
+Unidentified sp16 M_PL_043,pollinator,0,Specialist,0.5998294,-0.57578987
+Unidentified sp17 M_PL_043,pollinator,0,Specialist,2.5165436,-1.6813363
+Unidentified sp18 M_PL_043,pollinator,0,Specialist,1.5116117,-0.5035667
+Unidentified sp19 M_PL_043,pollinator,0,Specialist,1.4746743,-0.3163903
+Unidentified sp2 M_PL_043,pollinator,3,Keystone,-1.0589699,1.2749485
+Unidentified sp20 M_PL_043,pollinator,0,Specialist,1.6896821,0.7769855
+Unidentified sp21 M_PL_043,pollinator,0,Specialist,1.5282447,0.48201808
+Unidentified sp22 M_PL_043,pollinator,0,Specialist,1.3565907,0.11418665
+Unidentified sp23 M_PL_043,pollinator,0,Specialist,1.5116116,-0.5035666
+Unidentified sp3 M_PL_043,pollinator,3,Keystone,-0.1804744,1.4014356
+Unidentified sp4 M_PL_043,pollinator,3,Keystone,-0.16212164,1.3837559
+Unidentified sp5 M_PL_043,pollinator,3,Keystone,-0.6133747,1.0619578
+Unidentified sp6 M_PL_043,pollinator,3,Keystone,-0.15241191,0.56571716
+Unidentified sp7 M_PL_043,pollinator,3,Keystone,-0.031674586,1.1808982
+Unidentified sp8 M_PL_043,pollinator,3,Keystone,0.45207614,1.3451844
+Unidentified sp9 M_PL_043,pollinator,3,Keystone,-0.15473631,0.44859284
+Zygaena filipendulae ,pollinator,0,Specialist,1.3915795,0.333001

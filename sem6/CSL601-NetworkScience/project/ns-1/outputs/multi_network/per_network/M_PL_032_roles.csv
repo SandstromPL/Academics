@@ -1,0 +1,41 @@
+species,kind,gnn_cluster,gnn_role,pca1,pca2
+Claytonia virginica,plant,0,Generalist,5.296416,-2.4994264
+Dentaria laciniata,plant,0,Generalist,4.014538,0.04704417
+Dicentra canadensis,plant,2,Connector,0.40082592,1.7793168
+Dicentra cucullaria,plant,2,Connector,1.0466866,1.5211622
+Erythronium albidum,plant,2,Connector,3.0525331,0.81928545
+Isopyrum biternatum,plant,0,Generalist,5.231356,-2.0615857
+Sanguinaria canadensis,plant,2,Connector,1.7133083,0.9320911
+Andrena carlini,pollinator,1,Keystone,0.76769805,0.46335423
+Andrena cressoni,pollinator,3,Specialist,-1.034081,-0.54849005
+Andrena erythronii,pollinator,2,Connector,-0.055708546,2.018069
+Andrena forbesii,pollinator,1,Keystone,0.2861478,0.24313198
+Andrena irgeniae,pollinator,1,Keystone,0.76769805,0.46335423
+Andrena mansonii,pollinator,1,Keystone,0.2861478,0.24313198
+Andrena miserabilis,pollinator,3,Specialist,-1.034081,-0.54849005
+Andrena personata,pollinator,3,Specialist,-1.2912678,-0.29395473
+Andrena rugosa,pollinator,1,Keystone,0.07418588,0.02759004
+Andrena sp1 M_PL_032,pollinator,3,Specialist,-1.7358856,-0.6745036
+Apis mellifera,pollinator,1,Keystone,1.6101092,0.88185877
+Augochlora pura,pollinator,3,Specialist,-1.2912678,-0.29395473
+Augochlorella striata,pollinator,3,Specialist,-1.2912678,-0.29395473
+Bombus griseocollis,pollinator,2,Connector,1.3429548,1.3350495
+Carposcalis obscura,pollinator,3,Specialist,-1.7358856,-0.6745036
+Ceratina metallica,pollinator,3,Specialist,-1.7358856,-0.6745036
+Dialictus coeruleus,pollinator,3,Specialist,-1.7358856,-0.6745036
+Dialictus imitatus,pollinator,3,Specialist,-1.2912678,-0.29395473
+Dialictus oblongus,pollinator,3,Specialist,-1.2912678,-0.29395473
+Dialictus obscurus,pollinator,3,Specialist,-1.7358856,-0.6745036
+Dialictus zephyrus,pollinator,3,Specialist,-1.2912678,-0.29395473
+Eristalis dimidiatus,pollinator,1,Keystone,-0.0787093,0.34930372
+Erylaeus macroupinensis,pollinator,3,Specialist,-1.2912678,-0.29395473
+Halictus confusus,pollinator,1,Keystone,-0.15641119,1.4514709
+Helophilus fasciatus,pollinator,1,Keystone,0.07418588,0.02759004
+Lasioglossum forbesii,pollinator,3,Specialist,-1.7358855,-0.6745036
+Melanostoma sp1 M_PL_032,pollinator,1,Keystone,0.07418589,0.027590042
+Mesograpta marginata,pollinator,3,Specialist,-1.7358855,-0.6745036
+Metasyrphus americanus,pollinator,1,Keystone,0.54176754,0.39837176
+Nomada luteola,pollinator,3,Specialist,-1.7358855,-0.6745036
+Syrphus sp1 M_PL_032,pollinator,1,Keystone,-0.0787093,0.3493037
+Syrphus torvus,pollinator,1,Keystone,0.07418589,0.027590025
+Xylota nemorum,pollinator,3,Specialist,-1.2912678,-0.29395455
