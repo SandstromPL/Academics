@@ -1,0 +1,349 @@
+% Pollination poster in LaTeX (16:9)
+% Compile: pdflatex pollination_poster_v2.tex
+% Notes:
+% - PDF output is vector quality (not pixel-limited).
+% - For raster export at 300 DPI, convert PDF using a 300-DPI setting.
+% - 16:9 profiles below:
+%   * poster300: 16in x 9in (recommended for large print; 4800x2700 at 300 DPI)
+%   * hd:        6.4in x 3.6in (1920x1080 at 300 DPI)
+
+\newif\ifhdexport
+\hdexportfalse % set true for exact 1920x1080-at-300DPI profile
+
+\ifhdexport
+  \def\paperw{6.4in}
+  \def\paperh{3.6in}
+\else
+  \def\paperw{16in}
+  \def\paperh{9in}
+\fi
+
+\documentclass[10pt]{article}
+\usepackage[paperwidth=\paperw,paperheight=\paperh,margin=0.28in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{graphicx}
+\usepackage[dvipsnames,table]{xcolor}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{amsmath}
+\usepackage{enumitem}
+\usepackage[most]{tcolorbox}
+\usepackage{ragged2e}
+\usepackage{multicol}
+\usepackage{adjustbox}
+\usepackage{hyperref}
+\hypersetup{hidelinks}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{2pt}
+\renewcommand{\arraystretch}{1.12}
+
+% Colors inspired by the HTML theme
+\definecolor{ink}{HTML}{0D1A0F}
+\definecolor{forest}{HTML}{122A18}
+\definecolor{panel}{HTML}{F7F4EE}
+\definecolor{panel2}{HTML}{EEF5F0}
+\definecolor{gold}{HTML}{C8952A}
+\definecolor{gold2}{HTML}{F0C050}
+\definecolor{lime}{HTML}{7EC850}
+\definecolor{teal}{HTML}{2EC4A0}
+\definecolor{coral}{HTML}{E8624A}
+\definecolor{sky}{HTML}{4FA8D8}
+\definecolor{muted}{HTML}{5A7060}
+
+\tcbset{
+  frame hidden,
+  colback=panel,
+  boxrule=0.5pt,
+  arc=2mm,
+  left=1.6mm,
+  right=1.6mm,
+  top=1.2mm,
+  bottom=1.2mm
+}
+
+\newtcolorbox{headerbox}{
+  colback=white,
+  colframe=gold,
+  boxrule=0.9pt,
+  arc=2.3mm,
+  left=2mm,
+  right=2mm,
+  top=1.8mm,
+  bottom=1.6mm
+}
+
+\newtcolorbox{abstractbox}{
+  colback=panel2,
+  colframe=gold,
+  boxrule=0.7pt,
+  arc=2mm,
+  left=1.8mm,
+  right=1.8mm,
+  top=1.3mm,
+  bottom=1.3mm
+}
+
+\newtcolorbox{card}[2]{
+  colback=white,
+  colframe=#1,
+  boxrule=0.8pt,
+  arc=1.8mm,
+  title={\textbf{#2}},
+  coltitle=forest,
+  colbacktitle=panel,
+  fonttitle=\small,
+  left=1.6mm,
+  right=1.6mm,
+  top=1.0mm,
+  bottom=1.0mm
+}
+
+\newtcolorbox{finding}[1]{
+  colback=panel2,
+  colframe=gold,
+  boxrule=0.7pt,
+  arc=1.8mm,
+  title={\textbf{#1}},
+  coltitle=forest,
+  colbacktitle=white,
+  fonttitle=\small
+}
+
+\begin{document}
+\color{ink}
+\small
+
+\begin{adjustbox}{max totalsize={\textwidth}{\textheight},center}
+\begin{minipage}{\textwidth}
+
+% Header
+\begin{headerbox}
+  \begin{minipage}[t]{0.11\textwidth}
+    \centering
+    \IfFileExists{iit-bhilai-logo.png}{%
+      \includegraphics[width=0.78\linewidth]{iit-bhilai-logo.png}
+    }{%
+      \fbox{\parbox[c][2.8cm][c]{0.75\linewidth}{\centering IIT\\Bhilai}}
+    }
+  \end{minipage}\hfill
+  \begin{minipage}[t]{0.68\textwidth}
+    {\footnotesize\textbf{Network Science} \textbullet\ April 2026}\par
+    {\LARGE\bfseries Stability and \textit{Collapse} of Pollination Networks}\par
+    {\small A Network Science Perspective \textbullet\ Indian Institute of Technology Bhilai}\par
+    \vspace{1mm}
+    {\footnotesize
+      \fcolorbox{gold}{panel2}{\strut Agastya Nath}\,
+      \fcolorbox{gold}{panel2}{\strut Aman Pratap Singh}\,
+      \fcolorbox{gold}{panel2}{\strut Dhananjoy Doley}\,
+      \fcolorbox{gold}{panel2}{\strut Paritosh Lahre}\,
+      \fcolorbox{gold}{panel2}{\strut Rahul Dev Reddy}
+    }
+  \end{minipage}\hfill
+  \begin{minipage}[t]{0.18\textwidth}
+    \footnotesize
+    \begin{tabularx}{\linewidth}{@{}l>{\RaggedLeft\arraybackslash}X@{}}
+      \textbf{Networks} & \textbf{172}\\
+      \textbf{Continents} & \textbf{6}\\
+      \textbf{GNN AUC} & \textbf{0.960}\\
+      \textbf{Species} & \textbf{11.5K}
+    \end{tabularx}
+  \end{minipage}
+\end{headerbox}
+
+\vspace{1.5mm}
+
+% Abstract
+\begin{abstractbox}
+  \textbf{Abstract:} Pollination networks sustain \textbf{about 88\% of flowering plants} and \textbf{75\% of global food crops}. We analyse \textbf{172 real-world bipartite networks} across 6 continents using cascading co-extinction simulation, climate stress modelling, adaptive rewiring, early warning signal detection, Random Forest extinction risk prediction, \textbf{GraphSAGE-based role discovery}, and species transplantation to characterise structural vulnerability and collapse dynamics at continent scale.
+\end{abstractbox}
+
+\vspace{1.4mm}
+
+% Three-column body
+\begin{minipage}[t]{0.327\textwidth}
+
+\begin{card}{gold}{1. Dataset \& Network Model}
+Bipartite graph $G=(U\cup V,E)$: pollinators ($U$), plants ($V$). \textbf{172 city-level datasets} from Web of Life were grouped into 6 continental meta-networks for macro-scale comparison, while all 172 were retained for network-level GNN analysis.
+
+\begin{itemize}[leftmargin=*,nosep]
+  \item \textbf{Degree centrality}: generalist identification
+  \item \textbf{Betweenness centrality}: bridge species
+  \item \textbf{Eigenvector centrality}: systemic influence
+  \item \textbf{NODF nestedness}: specialist-generalist hierarchy
+  \item \textbf{Modularity $Q$}: community compartmentalisation
+\end{itemize}
+\end{card}
+
+\vspace{1.0mm}
+\begin{card}{teal}{2. Continental Network Properties}
+\footnotesize
+\begin{tabularx}{\linewidth}{@{}lrrrrr@{}}
+\toprule
+Continent & Plants & Pollin. & NODF & $Q$ & Conn. \\
+\midrule
+Africa & 147 & 737 & 18.2 & 0.453 & 0.15 \\
+Asia & 543 & 2947 & 4.3 & 0.602 & 0.12 \\
+Europe & 417 & 1988 & 5.4 & 0.627 & 0.13 \\
+N. America & 909 & 1855 & 3.2 & 0.270 & 0.09 \\
+Oceania & 127 & 299 & 9.4 & 0.488 & 0.16 \\
+S. America & 1089 & 907 & 3.9 & 0.773 & 0.08 \\
+\bottomrule
+\end{tabularx}
+
+\vspace{0.5mm}
+\textbf{South America} ($Q=0.773$) is most modular; \textbf{North America} ($Q=0.270$) is most integrated and most vulnerable to targeted attack.
+\end{card}
+
+\vspace{1.0mm}
+\begin{card}{Orchid}{3. GNN Functional Role Discovery}
+Two-layer \textbf{GraphSAGE} on all 172 networks. Link-prediction pre-training $\rightarrow$ k-means ($k=4$) $\rightarrow$ Generalist / Specialist / Connector / Keystone.
+
+\begin{itemize}[leftmargin=*,nosep]
+  \item Connector: \textbf{38\%}
+  \item Specialist: \textbf{37\%}
+  \item Keystone: \textbf{15\%}
+  \item Generalist: \textbf{10\%}
+\end{itemize}
+
+\textbf{Mean GNN AUC: 0.960} (171/172 networks $\ge 0.85$). \textbf{Mean silhouette: 0.384} ($k=4$). Connectance-generalism correlation: $r=0.48,\ p<0.001$.
+\end{card}
+
+\end{minipage}\hfill
+\begin{minipage}[t]{0.327\textwidth}
+
+\begin{card}{coral}{4. Cascading Co-extinction}
+Pollinators removed sequentially; plants co-extinct when all links are lost. 50 repeats for random-removal average.
+
+\begin{itemize}[leftmargin=*,nosep]
+  \item Targeted-removal half-life near \textbf{20\%} pollinator loss
+  \item Random-removal half-life near \textbf{65\%} pollinator loss
+  \item \textbf{2.5x to 4x} difference in network half-life
+\end{itemize}
+
+North America ($Q=0.270$) collapses earliest; targeted removal generates 80--300 isolated components.
+\end{card}
+
+\vspace{1.0mm}
+\begin{card}{sky}{5. Climate Stress Simulation}
+Climate stress is modelled as gradual reduction in interaction strength ($s:0\rightarrow1$). All networks collapse rapidly beyond $s\approx0.75$--$0.85$.
+
+\begin{itemize}[leftmargin=*,nosep]
+  \item S. America threshold: about 0.85
+  \item Asia threshold: about 0.85
+  \item Europe threshold: about 0.80
+  \item N. America threshold: about 0.75
+\end{itemize}
+
+\textbf{Pollinators decline before plants} across all networks; pollinator monitoring provides earlier stress warning.
+\end{card}
+
+\vspace{1.0mm}
+\begin{card}{gold2}{6. Early Warning Signal Detection}
+\textbf{Critical Slowing Down (CSD):} rising variance and lag-1 autocorrelation precede collapse bifurcation.
+
+\begin{itemize}[leftmargin=*,nosep]
+  \item CSD autocorrelation threshold: 0.9
+  \item Variance rises near stress $\approx 0.70$--$0.75$
+  \item Warning window: \textbf{10 to 30 years} before transition
+  \item Oceania shows earliest warning (limited island redundancy)
+\end{itemize}
+\end{card}
+
+\end{minipage}\hfill
+\begin{minipage}[t]{0.327\textwidth}
+
+\begin{card}{lime}{7. Adaptive Rewiring ($p=0.6$)}
+Surviving plants seek alternative pollinators proportional to degree when a partner is lost. Resilience gain is the area between rewiring and no-rewiring trajectories.
+
+\begin{itemize}[leftmargin=*,nosep]
+  \item Largest gain: Europe and Oceania (high nestedness)
+  \item Smallest gain: Asia and N. America (modular, locally saturated)
+  \item Rewiring benefit is positively correlated with nestedness
+\end{itemize}
+
+Conservation implication: habitat corridors enabling novel encounters can improve resilience beyond species-level protection.
+\end{card}
+
+\vspace{1.0mm}
+\begin{card}{gold}{8. ML Extinction Risk Prediction}
+\textbf{Random Forest} classifier (100 trees, 5-fold CV) on node-structural features.
+
+\begin{itemize}[leftmargin=*,nosep]
+  \item Eigenvector centrality: about 40\% importance
+  \item Degree centrality: about 20\%
+  \item Betweenness centrality: about 15\%
+  \item Module connectivity: about 10\%
+\end{itemize}
+
+Eigenvector centrality consistently outperforms raw degree for extinction risk prediction.
+\end{card}
+
+\vspace{1.0mm}
+\begin{card}{coral}{9. Species Transplantation}
+Introduced \texttt{Unidentified sp16 M\_PL\_050} into target community M\_PL\_050 (17 plants $\times$ 51 pollinators).
+
+\footnotesize
+\begin{tabularx}{\linewidth}{@{}lrrr@{}}
+\toprule
+Metric & Before & After & $\Delta$ \\
+\midrule
+Interactions & 129 & 132 & +3 \\
+NODF & 38.94 & 38.06 & -0.88 \\
+Modularity $Q$ & 0.4627 & 0.4502 & -0.013 \\
+LCC size & 68 & 69 & +1 \\
+\bottomrule
+\end{tabularx}
+
+\textbf{Key constraint:} transplanted species should target bridge plants (high betweenness), not already over-connected hubs.
+\end{card}
+
+\end{minipage}
+
+\vspace{1.4mm}
+
+% Findings strip
+\begin{tcolorbox}[colback=panel2,colframe=gold,boxrule=0.8pt,arc=2mm,title=\textbf{Key Findings \& Conclusions},colbacktitle=white,coltitle=forest]
+\begin{minipage}[t]{0.32\textwidth}
+\begin{finding}{01. Continental Architecture Diversity}
+\textbf{South America} ($Q=0.773$) is most stress-resistant. \textbf{North America} ($Q=0.270$) is most vulnerable, with 2.5x--4x faster collapse under targeted versus random removal. Africa's high nestedness (NODF=18.2) drives synchronous tipping-point collapse.
+\end{finding}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.32\textwidth}
+\begin{finding}{02. GNN Corpus \& Eigenvector Dominance}
+Across 172 networks, \textbf{Connector (38\%)} and \textbf{Specialist (37\%)} are co-dominant regimes. \textbf{Eigenvector centrality} outperforms raw degree as extinction-risk predictor.
+\end{finding}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.32\textwidth}
+\begin{finding}{03. Early Warning \& Rewiring Buffer}
+\textbf{CSD signals} are detectable \textbf{10--30 years} before collapse. \textbf{Adaptive rewiring} improves resilience across all networks; managed transplantation helps when species bridge structural gaps.
+\end{finding}
+\end{minipage}
+\end{tcolorbox}
+
+\vspace{1.0mm}
+
+% Footer
+\begin{tcolorbox}[colback=white,colframe=gold,boxrule=0.8pt,arc=2mm]
+\begin{minipage}[t]{0.73\textwidth}
+\textbf{Reference}\par
+J. Bascompte, P. Jordano, C. J. Melian, and J. M. Olesen, "The nested assembly of plant-animal mutualistic networks," \emph{Proc. Natl. Acad. Sci. U.S.A.}, vol. 100, no. 16, pp. 9383--9387, 2003.\par
+\textbf{Data source:} Web of Life (\url{https://www.web-of-life.es})
+\end{minipage}\hfill
+\begin{minipage}[t]{0.24\textwidth}
+\RaggedLeft
+\textbf{IIT Bhilai -- Dept. of CSE}\par
+Network Science Project\par
+Bhilai, Chhattisgarh -- April 2026
+\end{minipage}
+\end{tcolorbox}
+
+\end{minipage}
+\end{adjustbox}
+
+\end{document}

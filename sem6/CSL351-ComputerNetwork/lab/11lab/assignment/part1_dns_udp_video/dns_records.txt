@@ -1,0 +1,5 @@
+video.server.com 127.0.0.1
+cam.local 127.0.0.1
+node1.lab 127.0.0.1
+stream.example 127.0.0.1
+dns.test 127.0.0.1

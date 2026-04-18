@@ -1,0 +1,1317 @@
+<!DOCTYPE html>
+<html lang="en" data-export="poster300">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Poster on stability and collapse dynamics of pollination networks using simulation, machine learning, and graph neural networks.">
+<title>Pollination Networks — IIT Bhilai</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Jost:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --ink:     #0d1a0f;
+  --forest:  #122a18;
+  --panel:   #f7f4ee;
+  --panel2:  #eef5f0;
+  --panel3:  #0f2217;
+  --gold:    #c8952a;
+  --gold2:   #f0c050;
+  --lime:    #7ec850;
+  --teal:    #2ec4a0;
+  --coral:   #e8624a;
+  --sky:     #4fa8d8;
+  --cream:   #faf6ef;
+  --ivory:   #fffdf7;
+  --border:  rgba(200,149,42,.3);
+  --text:    #1a2e1e;
+  --muted:   #5a7060;
+  --white:   #ffffff;
+
+  /* Export presets (override via html[data-export]) */
+  --print-w: 16in;
+  --print-h: 9in;
+}
+
+html[data-export="hd"] {
+  /* 1920x1080 at 300 DPI => 6.4in x 3.6in */
+  --print-w: 6.4in;
+  --print-h: 3.6in;
+}
+
+html[data-export="poster300"] {
+  /* Larger print-ready 16:9 profile at 300 DPI => 4800x2700 */
+  --print-w: 16in;
+  --print-h: 9in;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+@keyframes pulse { 0%,100%{opacity:.6} 50%{opacity:1} }
+@keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-4px)} }
+@keyframes spin { from{transform:rotate(0deg)} to{transform:rotate(360deg)} }
+@keyframes glow { 0%,100%{filter:drop-shadow(0 0 3px rgba(200,149,42,.4))} 50%{filter:drop-shadow(0 0 8px rgba(200,149,42,.8))} }
+
+body {
+  background: #ffffff;
+  font-family: 'Jost', sans-serif;
+  font-size: 12.5px;
+  color: var(--text);
+  padding: 0 8px 24px;
+}
+
+.poster {
+  width: min(1120px, calc(100% - 24px));
+  margin: 16px auto;
+  background: #ffffff;
+  box-shadow: 0 6px 28px rgba(15,34,23,.18);
+  position: relative;
+  overflow: hidden;
+}
+
+/* ═══ SUBTLE NETWORK SCIENCE BACKGROUND ═══ */
+.poster::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='220' viewBox='0 0 320 220'%3E%3Cg fill='none' stroke='rgba(79,168,216,0.14)' stroke-width='1'%3E%3Cline x1='24' y1='34' x2='92' y2='66'/%3E%3Cline x1='92' y1='66' x2='158' y2='42'/%3E%3Cline x1='158' y1='42' x2='222' y2='86'/%3E%3Cline x1='92' y1='66' x2='122' y2='136'/%3E%3Cline x1='122' y1='136' x2='210' y2='150'/%3E%3Cline x1='222' y1='86' x2='210' y2='150'/%3E%3Cline x1='210' y1='150' x2='286' y2='118'/%3E%3Cline x1='158' y1='42' x2='122' y2='136'/%3E%3C/g%3E%3Cg fill='rgba(126,200,80,0.22)'%3E%3Ccircle cx='24' cy='34' r='3'/%3E%3Ccircle cx='92' cy='66' r='4'/%3E%3Ccircle cx='158' cy='42' r='3'/%3E%3Ccircle cx='222' cy='86' r='4'/%3E%3Ccircle cx='122' cy='136' r='5'/%3E%3Ccircle cx='210' cy='150' r='4'/%3E%3Ccircle cx='286' cy='118' r='3'/%3E%3C/g%3E%3Cg fill='rgba(200,149,42,0.3)'%3E%3Ccircle cx='24' cy='34' r='1.6'/%3E%3Ccircle cx='158' cy='42' r='1.6'/%3E%3Ccircle cx='286' cy='118' r='1.4'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 320px 220px;
+  background-repeat: repeat;
+  opacity: .38;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.poster::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(280px 180px at 12% 78%, rgba(126,200,80,.08), transparent 70%),
+    radial-gradient(320px 200px at 88% 22%, rgba(79,168,216,.08), transparent 72%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ═══ HEADER ═══════════════════════════════════════ */
+.header {
+  position: relative;
+  z-index: 1;
+  background: linear-gradient(160deg, #ffffff 0%, #f4f8f6 58%, #eef6f1 100%);
+  border-bottom: 2px solid var(--gold);
+  padding: 0;
+  overflow: hidden;
+}
+
+.header-bg-net {
+  position: absolute;
+  top: 0; right: 0;
+  width: 420px; height: 100%;
+  opacity: .10;
+}
+
+.header-inner {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 80px 1fr 180px;
+  gap: 0;
+  align-items: stretch;
+}
+
+.header-logo {
+  background: rgba(200,149,42,.10);
+  border-right: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 10px;
+  gap: 8px;
+}
+
+.logo-hex {
+  width: 52px; height: 52px;
+  animation: glow 3s ease-in-out infinite;
+}
+
+.logo-img {
+  width: 66px;
+  height: 66px;
+  object-fit: contain;
+  image-rendering: auto;
+  filter: drop-shadow(0 0 2px rgba(200,149,42,.26));
+}
+
+.logo-fallback { display: none; }
+
+.header-main {
+  padding: 20px 28px 16px;
+}
+
+.header-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(200,149,42,.15);
+  border: 1px solid rgba(200,149,42,.4);
+  border-radius: 20px;
+  padding: 2px 10px;
+  font-size: 9.5px;
+  font-weight: 600;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--gold2);
+  margin-bottom: 10px;
+}
+.header-tag::before {
+  content: '◆';
+  font-size: 6px;
+  animation: pulse 2s infinite;
+}
+
+h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: #132a1a;
+  line-height: 1.15;
+  letter-spacing: -.01em;
+}
+h1 em { color: var(--gold2); font-style: normal; }
+
+.header-sub {
+  font-size: 12px;
+  color: rgba(26,46,30,.72);
+  margin-top: 6px;
+  font-weight: 300;
+  letter-spacing: .04em;
+}
+
+.authors-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px 14px;
+  margin-top: 10px;
+}
+.author-chip {
+  background: rgba(18,42,24,.06);
+  border: 1px solid rgba(18,42,24,.14);
+  border-radius: 20px;
+  padding: 2px 10px;
+  font-size: 11px;
+  color: rgba(26,46,30,.85);
+  font-weight: 500;
+}
+
+.header-stats {
+  border-left: 1px solid var(--border);
+  background: rgba(200,149,42,.09);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 16px 14px;
+  gap: 10px;
+}
+
+.hstat {
+  text-align: center;
+}
+.hstat .n {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--gold2);
+  line-height: 1;
+  display: block;
+}
+.hstat .l {
+  font-size: 9px;
+  color: rgba(26,46,30,.62);
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  display: block;
+  margin-top: 2px;
+}
+.hstat-div { height: 1px; background: var(--border); }
+
+/* ═══ ABSTRACT STRIP ═══════════════════════════════ */
+.abstract-strip {
+  position: relative;
+  z-index: 1;
+  background: var(--gold);
+  padding: 10px 24px;
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+.abstract-strip .abs-label {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 11px;
+  font-weight: 700;
+  color: rgba(0,0,0,.5);
+  text-transform: uppercase;
+  letter-spacing: .12em;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.abstract-strip p {
+  font-size: 11.5px;
+  line-height: 1.5;
+  color: #1a1000;
+  font-weight: 400;
+}
+.abstract-strip p b { font-weight: 700; }
+
+/* ═══ BODY ══════════════════════════════════════════ */
+.body-wrap {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1.05fr 1fr 0.95fr;
+  gap: 0;
+}
+
+/* ═══ CARDS ═════════════════════════════════════════ */
+.col {
+  border-right: 1px solid rgba(200,149,42,.2);
+  padding: 14px 0 0;
+}
+.col:last-child { border-right: none; }
+
+.card {
+  margin: 0 12px 12px;
+  background: var(--panel);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 14px rgba(0,0,0,.25), 0 0 0 1px rgba(200,149,42,.1);
+}
+
+.card-head {
+  padding: 6px 12px 5px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  border-bottom: 1px solid rgba(0,0,0,.08);
+}
+.card-head h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 13.5px;
+  font-weight: 700;
+  color: var(--ivory);
+  letter-spacing: .01em;
+}
+.card-head .num {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 9px;
+  font-weight: 600;
+  width: 18px; height: 18px;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+  color: var(--forest);
+}
+
+.card-body { padding: 10px 12px; background: var(--panel); }
+
+p.txt { font-size: 11px; line-height: 1.6; color: #2a3e2e; }
+p.txt + p.txt { margin-top: 5px; }
+p.txt b { color: #0d2214; font-weight: 700; }
+
+/* ═══ COLOUR HEADS ═══════════════════════════════════ */
+.ch-gold  .card-head { background: #b5820f; }
+.ch-teal  .card-head { background: #1a7a65; }
+.ch-coral .card-head { background: #b84030; }
+.ch-sky   .card-head { background: #2a7aa8; }
+.ch-lime  .card-head { background: #4e9828; }
+.ch-plum  .card-head { background: #6a3a8a; }
+.ch-slate .card-head { background: #2e4a5a; }
+.ch-amber .card-head { background: #a06010; }
+
+/* ═══ BULLETS ═════════════════════════════════════════ */
+ul.b { list-style: none; margin-top: 6px; }
+ul.b li {
+  font-size: 11px;
+  line-height: 1.5;
+  padding: 3px 0 3px 14px;
+  position: relative;
+  color: #2a3e2e;
+  border-bottom: 1px solid rgba(0,0,0,.06);
+}
+ul.b li:last-child { border-bottom: none; }
+ul.b li::before {
+  content: '▸';
+  position: absolute; left: 0; top: 5px;
+  font-size: 8px;
+  color: var(--gold);
+}
+ul.b li b { color: #0d2214; }
+ul.b li .hi { color: #1a7a65; font-weight: 700; font-family: 'JetBrains Mono', monospace; font-size: 10px; }
+ul.b li .lo { color: #b84030; font-weight: 700; font-family: 'JetBrains Mono', monospace; font-size: 10px; }
+
+/* ═══ CALLOUT BOX ══════════════════════════════════════ */
+.callout {
+  border-radius: 5px;
+  padding: 7px 10px;
+  font-size: 10.5px;
+  line-height: 1.5;
+  margin-top: 7px;
+  border-left: 3px solid;
+}
+.callout.gold  { background: #fef8e8; border-color: var(--gold);  color: #5a3c00; }
+.callout.teal  { background: #e8f8f4; border-color: var(--teal);  color: #0a3e30; }
+.callout.coral { background: #fdf0ee; border-color: var(--coral); color: #5a1a0a; }
+.callout.sky   { background: #e8f4fc; border-color: var(--sky);   color: #0a2a4a; }
+.callout b { font-weight: 700; }
+
+.species-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+  margin-top: 7px;
+}
+
+.species-mini {
+  width: 100%;
+  max-width: 220px;
+  height: auto;
+  justify-self: center;
+  background: #f0f8f4;
+  border-radius: 4px;
+  border: 1px solid #cde;
+}
+
+/* ═══ TABLES ═══════════════════════════════════════════ */
+table.t {
+  width: 100%; border-collapse: collapse; margin-top: 6px;
+  font-size: 10.5px;
+}
+table.t thead tr { background: #1a3020; }
+table.t th {
+  color: var(--gold2);
+  padding: 4px 6px;
+  font-weight: 600;
+  font-size: 9.5px;
+  letter-spacing: .05em;
+  text-align: center;
+}
+table.t td {
+  padding: 3.5px 6px;
+  text-align: center;
+  color: #2a3e2e;
+  border-bottom: 1px solid rgba(0,0,0,.06);
+}
+table.t tr:nth-child(even) td { background: #f0f5f1; }
+.tc { color: var(--teal); font-weight: 700; font-family: 'JetBrains Mono', monospace; }
+.rc { color: var(--coral); font-weight: 700; font-family: 'JetBrains Mono', monospace; }
+.gc { color: #4e9828; font-weight: 700; font-family: 'JetBrains Mono', monospace; }
+.oc { color: #a06010; font-weight: 700; font-family: 'JetBrains Mono', monospace; }
+
+/* ═══ METRIC GRID ══════════════════════════════════════ */
+.mgrid { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; margin-top: 7px; }
+.mbox {
+  background: #eef5f0;
+  border: 1px solid rgba(0,0,0,.08);
+  border-radius: 6px;
+  padding: 7px 8px;
+  text-align: center;
+}
+.mbox .v {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 19px;
+  font-weight: 600;
+  line-height: 1;
+  display: block;
+}
+.mbox .d { font-size: 9px; color: var(--muted); margin-top: 2px; line-height: 1.3; }
+
+/* ═══ FINDINGS STRIP ═══════════════════════════════════ */
+.findings-strip {
+  position: relative;
+  z-index: 1;
+  background: linear-gradient(135deg, #ffffff 0%, #f4f9f6 50%, #edf5f0 100%);
+  border-top: 2px solid var(--gold);
+  border-bottom: 1px solid rgba(200,149,42,.3);
+  padding: 14px 0 0;
+}
+.findings-label {
+  text-align: center;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--gold2);
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  opacity: .8;
+}
+.findings-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+}
+.fg {
+  border-right: 1px solid rgba(200,149,42,.2);
+  padding: 0 18px 16px;
+}
+.fg:last-child { border-right: none; }
+.fg-num {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 42px;
+  font-weight: 700;
+  color: rgba(200,149,42,.2);
+  line-height: 1;
+}
+.fg-head {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--gold2);
+  margin-top: -4px;
+  margin-bottom: 5px;
+}
+.fg-text { font-size: 11px; color: rgba(255,255,255,.65); line-height: 1.6; }
+.fg-text { color: rgba(18,42,24,.75); }
+.fg-text b { color: #a06010; }
+
+/* ═══ FOOTER ════════════════════════════════════════════ */
+.footer {
+  position: relative;
+  z-index: 1;
+  background: #ffffff;
+  border-top: 1px solid rgba(200,149,42,.2);
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+.footer .refs {
+  flex: 1;
+  min-width: 0;
+}
+.refs-title {
+  font-size: 9px;
+  color: rgba(18,42,24,.78);
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+.refs-list {
+  margin: 0;
+  padding-left: 0;
+  columns: 2;
+  column-gap: 18px;
+  list-style: none;
+  counter-reset: ref;
+}
+.refs-list li {
+  counter-increment: ref;
+  position: relative;
+  padding-left: 20px;
+  break-inside: avoid;
+  font-size: 8.4px;
+  color: rgba(18,42,24,.72);
+  line-height: 1.55;
+  margin-bottom: 2px;
+}
+.refs-list li::before {
+  content: '[' counter(ref) ']';
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 7.8px;
+  color: rgba(240,192,80,.9);
+}
+.refs-list em { color: rgba(18,42,24,.86); }
+.data-note {
+  font-size: 8.3px;
+  color: rgba(18,42,24,.72);
+  margin-top: 5px;
+}
+.data-note b { color: rgba(18,42,24,.86); }
+.footer .contact {
+  font-size: 9.5px;
+  color: rgba(18,42,24,.72);
+  text-align: right;
+  line-height: 1.8;
+  flex-shrink: 0;
+}
+.footer .contact b { color: var(--gold2); }
+
+@media (max-width: 1180px) {
+  .header-inner { grid-template-columns: 72px 1fr 160px; }
+  h1 { font-size: 29px; }
+}
+
+@media (max-width: 980px) {
+  body { padding: 0 6px 18px; }
+  .poster {
+    width: min(1120px, calc(100% - 12px));
+    margin: 8px auto 14px;
+  }
+  .header-bg-net { display: none; }
+  .header-inner { grid-template-columns: 72px 1fr; }
+  .header-stats {
+    grid-column: 1 / -1;
+    border-left: none;
+    border-top: 1px solid var(--border);
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px 12px;
+    gap: 12px;
+  }
+  .hstat-div { width: 1px; height: auto; }
+  .abstract-strip {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+    padding: 10px 14px;
+  }
+  .body-wrap { grid-template-columns: 1fr; }
+  .col {
+    border-right: none;
+    border-bottom: 1px solid rgba(200,149,42,.2);
+    padding-top: 10px;
+  }
+  .col:last-child { border-bottom: none; }
+  .findings-grid { grid-template-columns: 1fr; }
+  .fg {
+    border-right: none;
+    border-bottom: 1px solid rgba(200,149,42,.2);
+    padding: 0 14px 14px;
+  }
+  .fg:last-child { border-bottom: none; }
+  .footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 12px 14px;
+  }
+  .footer .contact { text-align: left; }
+  .refs-list { columns: 1; }
+}
+
+@media (max-width: 640px) {
+  h1 { font-size: 24px; }
+  .header-main { padding: 14px 14px 12px; }
+  .authors-row { gap: 5px 8px; }
+  .author-chip {
+    font-size: 10px;
+    padding: 2px 8px;
+  }
+  .card {
+    margin: 0 8px 10px;
+    border-radius: 7px;
+  }
+  .card-head h2 { font-size: 12.5px; }
+  .findings-label {
+    letter-spacing: .14em;
+    font-size: 10px;
+  }
+  .species-grid { grid-template-columns: 1fr; }
+  .species-mini { max-width: 100%; }
+}
+
+@media print {
+  @page {
+    size: var(--print-w) var(--print-h);
+    margin: 0;
+  }
+  * {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  html, body {
+    width: var(--print-w) !important;
+    height: var(--print-h) !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+  }
+  body {
+    background: #fff;
+    font-size: 11.2px;
+  }
+  .poster {
+    width: 100% !important;
+    height: 100% !important;
+    aspect-ratio: 16 / 9;
+    margin: 0;
+    box-shadow: none;
+    break-inside: avoid-page;
+    page-break-inside: avoid;
+    overflow: hidden;
+  }
+  .poster::before { opacity: .24; }
+  .poster::after { opacity: .75; }
+  .header-bg-net { display: block !important; }
+  .header-inner { grid-template-columns: 98px 1fr 172px !important; }
+  .header-logo {
+    padding: 12px 8px;
+    gap: 6px;
+  }
+  .logo-img {
+    width: 86px;
+    height: 86px;
+    filter: none;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+  }
+  .logo-fallback {
+    width: 86px;
+    height: 86px;
+  }
+  .header-stats {
+    border-left: 1px solid var(--border);
+    border-top: none;
+    flex-direction: column;
+    justify-content: center;
+    padding: 12px 10px;
+    gap: 8px;
+  }
+  .hstat-div { width: auto; height: 1px; }
+  .abstract-strip {
+    flex-direction: row;
+    align-items: baseline;
+    padding: 8px 16px;
+  }
+  .body-wrap { grid-template-columns: 1.05fr 1fr 0.95fr !important; }
+  .col {
+    border-right: 1px solid rgba(200,149,42,.2);
+    border-bottom: none;
+    padding-top: 10px;
+  }
+  .col:last-child { border-right: none; }
+  .card {
+    margin: 0 8px 8px;
+    break-inside: avoid-page;
+    page-break-inside: avoid;
+  }
+  .card-body { padding: 8px 10px; }
+  .findings-strip {
+    padding-top: 10px;
+    break-inside: avoid-page;
+    page-break-inside: avoid;
+  }
+  .findings-grid { grid-template-columns: repeat(3, 1fr) !important; }
+  .fg {
+    border-right: 1px solid rgba(200,149,42,.2);
+    border-bottom: none;
+    padding: 0 12px 12px;
+  }
+  .fg:last-child { border-right: none; }
+  .footer {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 14px;
+    padding: 8px 12px;
+    break-inside: avoid-page;
+    page-break-inside: avoid;
+  }
+  .species-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 6px;
+  }
+  .species-mini { max-width: 180px; }
+  .refs-list { column-gap: 12px; }
+  .refs-list li {
+    font-size: 7.6px;
+    line-height: 1.35;
+    margin-bottom: 1px;
+  }
+  .data-note { font-size: 7.6px; margin-top: 3px; }
+  .footer .contact {
+    text-align: right;
+    font-size: 8.5px;
+    line-height: 1.5;
+  }
+}
+</style>
+</head>
+<body>
+<main class="poster" role="main" aria-label="Pollination networks poster content">
+
+<!-- ═══ HEADER ════════════════════════════════════════ -->
+<div class="header">
+  <!-- decorative background network -->
+  <svg class="header-bg-net" viewBox="0 0 420 160" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <g stroke="#7ec850" stroke-width=".7">
+      <line x1="60" y1="20" x2="120" y2="60"/><line x1="120" y1="60" x2="200" y2="30"/>
+      <line x1="200" y1="30" x2="280" y2="80"/><line x1="280" y1="80" x2="360" y2="40"/>
+      <line x1="60" y1="20" x2="160" y2="100"/><line x1="160" y1="100" x2="240" y2="130"/>
+      <line x1="200" y1="30" x2="160" y2="100"/><line x1="280" y1="80" x2="240" y2="130"/>
+      <line x1="360" y1="40" x2="400" y2="110"/><line x1="240" y1="130" x2="400" y2="110"/>
+      <line x1="120" y1="60" x2="160" y2="100"/><line x1="60" y1="120" x2="160" y2="100"/>
+      <line x1="60" y1="120" x2="120" y2="60"/>
+    </g>
+    <g fill="#7ec850">
+      <circle cx="60"  cy="20"  r="5"/>
+      <circle cx="120" cy="60"  r="7"/>
+      <circle cx="200" cy="30"  r="5"/>
+      <circle cx="280" cy="80"  r="8"/>
+      <circle cx="360" cy="40"  r="4"/>
+      <circle cx="60"  cy="120" r="5"/>
+      <circle cx="160" cy="100" r="9"/>
+      <circle cx="240" cy="130" r="6"/>
+      <circle cx="400" cy="110" r="4"/>
+    </g>
+    <g fill="#f0c050">
+      <circle cx="60"  cy="20"  r="2.5"/>
+      <circle cx="200" cy="30"  r="2.5"/>
+      <circle cx="360" cy="40"  r="2"/>
+      <circle cx="60"  cy="120" r="2.5"/>
+      <circle cx="400" cy="110" r="2"/>
+    </g>
+  </svg>
+
+  <div class="header-inner">
+    <div class="header-logo">
+      <img
+        class="logo-img"
+        src="https://upload.wikimedia.org/wikipedia/en/2/27/IIT_Bhilai_Logo.svg"
+        alt="IIT Bhilai logo"
+        onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"
+      >
+      <!-- Fallback logo if image loading fails -->
+      <svg class="logo-hex logo-fallback" viewBox="0 0 52 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M26 2L50 15.5V42.5L26 56L2 42.5V15.5L26 2Z" stroke="#c8952a" stroke-width="1.5" fill="rgba(200,149,42,.08)"/>
+        <path d="M26 9L43 18.5V37.5L26 47L9 37.5V18.5L26 9Z" stroke="#c8952a" stroke-width=".8" fill="none" opacity=".5"/>
+        <text x="26" y="27" text-anchor="middle" font-family="Cormorant Garamond,serif" font-size="9" font-weight="700" fill="#f0c050">IIT</text>
+        <text x="26" y="37" text-anchor="middle" font-family="Cormorant Garamond,serif" font-size="7.5" font-weight="600" fill="#c8952a">BHILAI</text>
+      </svg>
+    </div>
+
+    <div class="header-main">
+      <div class="header-tag">Network Science · April 2026</div>
+      <h1>Stability and <em>Collapse</em> of<br>Pollination Networks</h1>
+      <div class="header-sub">A Network Science Perspective &nbsp;·&nbsp; Indian Institute of Technology Bhilai</div>
+      <div class="authors-row">
+        <span class="author-chip">Agastya Nath</span>
+        <span class="author-chip">Aman Pratap Singh</span>
+        <span class="author-chip">Dhananjoy Doley</span>
+        <span class="author-chip">Paritosh Lahre</span>
+        <span class="author-chip">Rahul Dev Reddy</span>
+      </div>
+    </div>
+
+    <div class="header-stats">
+      <div class="hstat"><span class="n">172</span><span class="l">Networks</span></div>
+      <div class="hstat-div"></div>
+      <div class="hstat"><span class="n">6</span><span class="l">Continents</span></div>
+      <div class="hstat-div"></div>
+      <div class="hstat"><span class="n">0.960</span><span class="l">GNN AUC</span></div>
+      <div class="hstat-div"></div>
+      <div class="hstat"><span class="n">11.5K</span><span class="l">Species</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ ABSTRACT STRIP ════════════════════════════════ -->
+<div class="abstract-strip">
+  <span class="abs-label">Abstract</span>
+  <p>Pollination networks sustain <b>~88% of flowering plants</b> and <b>75% of global food crops</b>. We analyse <b>172 real-world bipartite networks</b> across 6 continents using cascading co-extinction simulation, climate stress modelling, adaptive rewiring, early warning signal detection, Random Forest extinction risk prediction, <b>GraphSAGE-based role discovery</b>, and species transplantation to characterise structural vulnerability and collapse dynamics at continent scale.</p>
+</div>
+
+<!-- ═══ 3-COL BODY ════════════════════════════════════ -->
+<div class="body-wrap">
+
+<!-- ════ COL 1 ════════════════════════════════════════ -->
+<div class="col">
+
+  <!-- Dataset -->
+  <div class="card ch-gold">
+    <div class="card-head">
+      <div class="num" style="background:#f0c050">1</div>
+      <h2>Dataset &amp; Network Model</h2>
+    </div>
+    <div class="card-body">
+      <p class="txt">Bipartite graph <b>G = (U ∪ V, E)</b>: pollinators (U), plants (V). <b>172 city-level datasets</b> from Web of Life were grouped into 6 continental meta-networks for macro-scale comparison, while all 172 were retained for network-level GNN analysis.</p>
+
+      <!-- Pipeline SVG -->
+      <svg width="100%" height="42" viewBox="0 0 280 42" style="margin-top:8px">
+        <rect x="0"   y="8" width="54" height="24" rx="5" fill="#1a3020" stroke="#c8952a" stroke-width=".8"/>
+        <text x="27" y="18" text-anchor="middle" font-size="7.5" fill="#f0c050" font-family="Jost">Web of Life</text>
+        <text x="27" y="27" text-anchor="middle" font-size="7" fill="#a0b8a0" font-family="Jost">Database</text>
+        <path d="M55 20h12" stroke="#c8952a" stroke-width="1" marker-end="url(#arr)"/>
+        <rect x="68" y="8" width="54" height="24" rx="5" fill="#1a3020" stroke="#c8952a" stroke-width=".8"/>
+        <text x="95" y="18" text-anchor="middle" font-size="7.5" fill="#f0c050" font-family="Jost">Bipartite</text>
+        <text x="95" y="27" text-anchor="middle" font-size="7" fill="#a0b8a0" font-family="Jost">Graph G</text>
+        <path d="M123 20h12" stroke="#c8952a" stroke-width="1" marker-end="url(#arr)"/>
+        <rect x="136" y="8" width="54" height="24" rx="5" fill="#1a3020" stroke="#2ec4a0" stroke-width=".8"/>
+        <text x="163" y="18" text-anchor="middle" font-size="7.5" fill="#2ec4a0" font-family="Jost">Metrics</text>
+        <text x="163" y="27" text-anchor="middle" font-size="7" fill="#a0b8a0" font-family="Jost">+Simulations</text>
+        <path d="M191 20h12" stroke="#c8952a" stroke-width="1" marker-end="url(#arr)"/>
+        <rect x="204" y="8" width="54" height="24" rx="5" fill="#1a3020" stroke="#7ec850" stroke-width=".8"/>
+        <text x="231" y="18" text-anchor="middle" font-size="7.5" fill="#7ec850" font-family="Jost">GNN+ML</text>
+        <text x="231" y="27" text-anchor="middle" font-size="7" fill="#a0b8a0" font-family="Jost">Analysis</text>
+        <defs>
+          <marker id="arr" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto">
+            <path d="M0 0L6 3L0 6z" fill="#c8952a"/>
+          </marker>
+        </defs>
+      </svg>
+
+      <!-- Mini bipartite network diagram -->
+      <svg width="100%" height="80" viewBox="0 0 260 80" style="margin-top:4px;background:#eef5f0;border-radius:5px">
+        <text x="50"  y="12" text-anchor="middle" font-size="8" fill="#2a3e2e" font-family="Jost" font-weight="600">Pollinators</text>
+        <text x="210" y="12" text-anchor="middle" font-size="8" fill="#2a3e2e" font-family="Jost" font-weight="600">Plants</text>
+        <!-- edges -->
+        <g stroke="#2ec4a0" stroke-width=".7" opacity=".6">
+          <line x1="50" y1="25" x2="180" y2="25"/>
+          <line x1="50" y1="25" x2="180" y2="42"/>
+          <line x1="50" y1="25" x2="180" y2="58"/>
+          <line x1="50" y1="42" x2="180" y2="25"/>
+          <line x1="50" y1="42" x2="180" y2="42"/>
+          <line x1="50" y1="55" x2="180" y2="42"/>
+          <line x1="50" y1="55" x2="180" y2="58"/>
+          <line x1="50" y1="68" x2="180" y2="58"/>
+          <line x1="50" y1="68" x2="180" y2="70"/>
+          <line x1="50" y1="30" x2="180" y2="70"/>
+        </g>
+        <!-- pollinator nodes (circles) -->
+        <circle cx="50" cy="25" r="6" fill="#c8952a" stroke="#fff" stroke-width=".8"/>
+        <circle cx="50" cy="42" r="8" fill="#c8952a" stroke="#fff" stroke-width=".8"/>
+        <circle cx="50" cy="55" r="5" fill="#c8952a" stroke="#fff" stroke-width=".8"/>
+        <circle cx="50" cy="68" r="4" fill="#c8952a" stroke="#fff" stroke-width=".8"/>
+        <!-- plant nodes (squares) -->
+        <rect x="175" y="20" width="10" height="10" rx="2" fill="#7ec850" stroke="#fff" stroke-width=".8"/>
+        <rect x="175" y="37" width="10" height="10" rx="2" fill="#7ec850" stroke="#fff" stroke-width=".8"/>
+        <rect x="175" y="53" width="10" height="10" rx="2" fill="#7ec850" stroke="#fff" stroke-width=".8"/>
+        <rect x="175" y="65" width="10" height="10" rx="2" fill="#7ec850" stroke="#fff" stroke-width=".8"/>
+        <text x="130" y="76" text-anchor="middle" font-size="8" fill="#8a9e8a" font-family="Jost" font-style="italic">bipartite interaction structure</text>
+      </svg>
+
+      <ul class="b" style="margin-top:6px">
+        <li><b>Degree Centrality</b> — generalist identification</li>
+        <li><b>Betweenness Centrality</b> — bridge species</li>
+        <li><b>Eigenvector Centrality</b> — systemic influence</li>
+        <li><b>NODF Nestedness</b> — specialist–generalist hierarchy</li>
+        <li><b>Modularity Q</b> — community compartmentalisation</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Continental Table -->
+  <div class="card ch-teal">
+    <div class="card-head">
+      <div class="num" style="background:#2ec4a0">2</div>
+      <h2>Continental Network Properties</h2>
+    </div>
+    <div class="card-body">
+      <table class="t">
+        <thead>
+          <tr><th>Continent</th><th>Plants</th><th>Pollin.</th><th>NODF</th><th>Q</th><th>Conn.</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Africa</td><td>147</td><td>737</td><td class="oc">18.2↑</td><td>0.453</td><td>0.15</td></tr>
+          <tr><td>Asia</td><td>543</td><td class="rc">2947</td><td>4.3</td><td class="tc">0.602</td><td>0.12</td></tr>
+          <tr><td>Europe</td><td>417</td><td>1988</td><td>5.4</td><td class="tc">0.627</td><td>0.13</td></tr>
+          <tr><td>N. America</td><td class="rc">909</td><td>1855</td><td class="rc">3.2↓</td><td class="rc">0.270↓</td><td class="rc">0.09</td></tr>
+          <tr><td>Oceania</td><td>127</td><td>299</td><td>9.4</td><td>0.488</td><td>0.16</td></tr>
+          <tr><td>S. America</td><td class="tc">1089</td><td>907</td><td>3.9</td><td class="gc">0.773↑</td><td class="rc">0.08</td></tr>
+        </tbody>
+      </table>
+      <div class="callout gold" style="margin-top:7px">
+        <b>South America</b> (Q=0.773) most modular; <b>North America</b> (Q=0.270) most integrated and most vulnerable to targeted attack.
+      </div>
+    </div>
+  </div>
+
+  <!-- GNN -->
+  <div class="card ch-plum">
+    <div class="card-head">
+      <div class="num" style="background:#c084fc">3</div>
+      <h2>GNN Functional Role Discovery</h2>
+    </div>
+    <div class="card-body">
+      <p class="txt">Two-layer <b>GraphSAGE</b> on all 172 networks. Link-prediction pre-training → k-means (k=4) → Generalist / Specialist / Connector / Keystone.</p>
+
+      <!-- Donut SVG -->
+      <div style="display:flex;align-items:center;gap:10px;margin-top:9px">
+        <svg width="100" height="100" viewBox="0 0 100 100">
+          <circle cx="50" cy="50" r="38" fill="none" stroke="#e8ecef" stroke-width="18"/>
+          <circle cx="50" cy="50" r="38" fill="none" stroke="#e8624a" stroke-width="18"
+            stroke-dasharray="90 149" stroke-dashoffset="0" transform="rotate(-90 50 50)"/>
+          <circle cx="50" cy="50" r="38" fill="none" stroke="#4fa8d8" stroke-width="18"
+            stroke-dasharray="88 151" stroke-dashoffset="-90" transform="rotate(-90 50 50)"/>
+          <circle cx="50" cy="50" r="38" fill="none" stroke="#c8952a" stroke-width="18"
+            stroke-dasharray="36 203" stroke-dashoffset="-178" transform="rotate(-90 50 50)"/>
+          <circle cx="50" cy="50" r="38" fill="none" stroke="#7ec850" stroke-width="18"
+            stroke-dasharray="24 215" stroke-dashoffset="-214" transform="rotate(-90 50 50)"/>
+          <circle cx="50" cy="50" r="29" fill="#f7f4ee"/>
+          <text x="50" y="47" text-anchor="middle" font-size="9" fill="#5a7060" font-family="JetBrains Mono">n=172</text>
+          <text x="50" y="57" text-anchor="middle" font-size="7.5" fill="#8a9e8a" font-family="Jost">networks</text>
+        </svg>
+        <div style="font-size:11px;line-height:2.1">
+          <div><span style="display:inline-block;width:9px;height:9px;background:#e8624a;border-radius:2px;margin-right:5px;vertical-align:middle"></span>Connector <b style="color:#e8624a;font-family:'JetBrains Mono'">38%</b></div>
+          <div><span style="display:inline-block;width:9px;height:9px;background:#4fa8d8;border-radius:2px;margin-right:5px;vertical-align:middle"></span>Specialist <b style="color:#4fa8d8;font-family:'JetBrains Mono'">37%</b></div>
+          <div><span style="display:inline-block;width:9px;height:9px;background:#c8952a;border-radius:2px;margin-right:5px;vertical-align:middle"></span>Keystone <b style="color:#c8952a;font-family:'JetBrains Mono'">15%</b></div>
+          <div><span style="display:inline-block;width:9px;height:9px;background:#7ec850;border-radius:2px;margin-right:5px;vertical-align:middle"></span>Generalist <b style="color:#7ec850;font-family:'JetBrains Mono'">10%</b></div>
+        </div>
+      </div>
+
+      <div class="mgrid">
+        <div class="mbox"><span class="v" style="color:#6a3a8a">0.960</span><span class="d">Mean GNN AUC<br>(171/172 ≥ 0.85)</span></div>
+        <div class="mbox"><span class="v" style="color:#2ec4a0">0.384</span><span class="d">Mean Silhouette<br>score (k=4)</span></div>
+      </div>
+      <div class="callout sky" style="margin-top:7px"><b>Connectance–Generalism:</b> r = 0.48, p &lt; 0.001. Keystone prevalence is connectance-independent (r = 0.07, p = 0.345).</div>
+    </div>
+  </div>
+
+</div><!-- /col1 -->
+
+<!-- ════ COL 2 ════════════════════════════════════════ -->
+<div class="col">
+
+  <!-- Co-extinction -->
+  <div class="card ch-coral species-card">
+    <div class="card-head">
+      <div class="num" style="background:#f07060">4</div>
+      <h2>Cascading Co-extinction</h2>
+    </div>
+    <div class="card-body">
+      <p class="txt">Pollinators removed sequentially; plants co-extinct when all links lost. 50 repeats for random removal average.</p>
+
+      <!-- Co-extinction curves SVG -->
+      <svg width="100%" height="130" viewBox="0 0 260 130" style="margin-top:6px">
+        <rect x="0" y="0" width="260" height="130" rx="4" fill="#fdf5f3"/>
+        <!-- axes -->
+        <line x1="30" y1="10" x2="30" y2="108" stroke="#ccc" stroke-width=".8"/>
+        <line x1="30" y1="108" x2="255" y2="108" stroke="#ccc" stroke-width=".8"/>
+        <!-- Y labels -->
+        <text x="27" y="13"  text-anchor="end" font-size="7" fill="#8a9e8a" font-family="Jost">1.0</text>
+        <text x="27" y="40"  text-anchor="end" font-size="7" fill="#8a9e8a" font-family="Jost">.75</text>
+        <text x="27" y="68"  text-anchor="end" font-size="7" fill="#8a9e8a" font-family="Jost">.50</text>
+        <text x="27" y="90"  text-anchor="end" font-size="7" fill="#8a9e8a" font-family="Jost">.25</text>
+        <!-- 50% threshold line -->
+        <line x1="30" y1="68" x2="255" y2="68" stroke="#c8952a" stroke-width=".8" stroke-dasharray="4,3"/>
+        <text x="256" y="70" font-size="6.5" fill="#c8952a" font-family="Jost">50%</text>
+        <!-- X labels -->
+        <text x="30"  y="117" text-anchor="middle" font-size="7" fill="#8a9e8a" font-family="Jost">0</text>
+        <text x="142" y="117" text-anchor="middle" font-size="7" fill="#8a9e8a" font-family="Jost">0.5</text>
+        <text x="255" y="117" text-anchor="middle" font-size="7" fill="#8a9e8a" font-family="Jost">1.0</text>
+        <text x="142" y="127" text-anchor="middle" font-size="7.5" fill="#aaa" font-family="Jost" font-style="italic">Fraction of pollinators removed</text>
+        <text x="12" y="60" text-anchor="middle" font-size="7.5" fill="#aaa" font-family="Jost" transform="rotate(-90,12,60)">Plants surviving</text>
+        <!-- Targeted removal curve (red - drops fast) -->
+        <polyline points="30,12 55,24 80,42 100,62 120,75 145,88 170,95 200,100 255,105"
+          fill="none" stroke="#e8624a" stroke-width="2" stroke-linejoin="round"/>
+        <!-- Random removal curve (blue - stays high) -->
+        <polyline points="30,12 60,14 90,18 120,28 150,45 175,65 200,82 225,94 255,104"
+          fill="none" stroke="#4fa8d8" stroke-width="2" stroke-linejoin="round"/>
+        <!-- Fill between (resilience gap) -->
+        <polygon points="30,12 55,14 80,18 110,26 145,44 175,65 200,82 225,94 255,104 255,105 220,100 200,100 175,88 145,75 120,62 100,62 80,42 55,24"
+          fill="rgba(126,200,80,.12)"/>
+        <!-- Intersection markers -->
+        <circle cx="100" cy="68" r="3" fill="#e8624a"/>
+        <circle cx="178" cy="68" r="3" fill="#4fa8d8"/>
+        <line x1="100" y1="68" x2="100" y2="108" stroke="#e8624a" stroke-width=".8" stroke-dasharray="3,2"/>
+        <line x1="178" y1="68" x2="178" y2="108" stroke="#4fa8d8" stroke-width=".8" stroke-dasharray="3,2"/>
+        <text x="97" y="118" font-size="7" fill="#e8624a" text-anchor="middle" font-family="JetBrains Mono">~20%</text>
+        <text x="178" y="118" font-size="7" fill="#4fa8d8" text-anchor="middle" font-family="JetBrains Mono">~65%</text>
+        <!-- Legend -->
+        <rect x="32" y="90" width="8" height="4" fill="#e8624a" rx="1"/>
+        <text x="43" y="94" font-size="7" fill="#5a3a2a" font-family="Jost">Targeted</text>
+        <rect x="80" y="90" width="8" height="4" fill="#4fa8d8" rx="1"/>
+        <text x="91" y="94" font-size="7" fill="#2a3a5a" font-family="Jost">Random</text>
+      </svg>
+
+      <div class="callout coral"><b>2.5–4× difference</b> in network half-life. North America (Q=0.270) collapses earliest — targeted removal generates 80–300 isolated components.</div>
+    </div>
+  </div>
+
+  <!-- Climate Stress -->
+  <div class="card ch-sky">
+    <div class="card-head">
+      <div class="num" style="background:#4fa8d8">5</div>
+      <h2>Climate Stress Simulation</h2>
+    </div>
+    <div class="card-body">
+      <p class="txt">Climate stress modelled as gradual reduction in interaction strength (s: 0→1). All networks collapse rapidly beyond s ≈ 0.75–0.85.</p>
+
+      <!-- Climate stress curves SVG -->
+      <svg width="100%" height="110" viewBox="0 0 260 110" style="margin-top:6px">
+        <rect x="0" y="0" width="260" height="110" rx="4" fill="#eef4fc"/>
+        <line x1="30" y1="8" x2="30" y2="95" stroke="#ccc" stroke-width=".8"/>
+        <line x1="30" y1="95" x2="255" y2="95" stroke="#ccc" stroke-width=".8"/>
+        <!-- Critical zone shading -->
+        <rect x="190" y="8" width="65" height="87" fill="rgba(232,98,74,.07)" rx="2"/>
+        <text x="222" y="100" text-anchor="middle" font-size="6.5" fill="#e8624a" font-family="Jost">Critical Zone</text>
+        <!-- Species survival curves per continent -->
+        <!-- S. America - high threshold -->
+        <polyline points="30,12 100,12 150,13 190,14 210,30 230,60 250,88"
+          fill="none" stroke="#7ec850" stroke-width="1.5" stroke-linejoin="round"/>
+        <!-- Asia -->
+        <polyline points="30,12 95,12 145,13 188,15 208,35 228,65 248,90"
+          fill="none" stroke="#4fa8d8" stroke-width="1.5" stroke-linejoin="round"/>
+        <!-- Europe -->
+        <polyline points="30,12 90,12 142,13 185,16 205,38 225,68 248,90"
+          fill="none" stroke="#c8952a" stroke-width="1.5" stroke-linejoin="round"/>
+        <!-- N. America - low threshold, red -->
+        <polyline points="30,12 80,12 130,14 175,20 195,45 215,72 248,90"
+          fill="none" stroke="#e8624a" stroke-width="1.5" stroke-linejoin="round"/>
+        <!-- X labels -->
+        <text x="30"  y="103" text-anchor="middle" font-size="7" fill="#8a9e8a" font-family="Jost">0</text>
+        <text x="142" y="103" text-anchor="middle" font-size="7" fill="#8a9e8a" font-family="Jost">0.5</text>
+        <text x="255" y="103" text-anchor="middle" font-size="7" fill="#8a9e8a" font-family="Jost">1.0</text>
+        <text x="142" y="109" text-anchor="middle" font-size="7" fill="#aaa" font-family="Jost" font-style="italic">Environmental stress level</text>
+        <!-- Legend -->
+        <line x1="32" y1="20" x2="46" y2="20" stroke="#7ec850" stroke-width="1.5"/>
+        <text x="48" y="23" font-size="6.5" fill="#4e9828" font-family="Jost">S. America ~0.85</text>
+        <line x1="32" y1="30" x2="46" y2="30" stroke="#4fa8d8" stroke-width="1.5"/>
+        <text x="48" y="33" font-size="6.5" fill="#2a7aa8" font-family="Jost">Asia ~0.85</text>
+        <line x1="32" y1="40" x2="46" y2="40" stroke="#c8952a" stroke-width="1.5"/>
+        <text x="48" y="43" font-size="6.5" fill="#8a6010" font-family="Jost">Europe ~0.80</text>
+        <line x1="32" y1="50" x2="46" y2="50" stroke="#e8624a" stroke-width="1.5"/>
+        <text x="48" y="53" font-size="6.5" fill="#b84030" font-family="Jost">N. America ~0.75↓</text>
+      </svg>
+      <div class="callout sky"><b>Pollinators decline before plants</b> across all networks — monitoring pollinator abundance provides earlier ecosystem stress warning than monitoring plant abundance.</div>
+    </div>
+  </div>
+
+  <!-- Early Warning -->
+  <div class="card ch-amber">
+    <div class="card-head">
+      <div class="num" style="background:#f0a030">6</div>
+      <h2>Early Warning Signal Detection</h2>
+    </div>
+    <div class="card-body">
+      <p class="txt"><b>Critical Slowing Down (CSD):</b> rising variance and lag-1 autocorrelation precede collapse bifurcation. CSD autocorrelation threshold = 0.9.</p>
+
+      <!-- Variance + Autocorrelation dual chart -->
+      <svg width="100%" height="105" viewBox="0 0 260 105" style="margin-top:6px">
+        <rect x="0" y="0" width="127" height="105" rx="4" fill="#fef8e8"/>
+        <rect x="133" y="0" width="127" height="105" rx="4" fill="#fef8e8"/>
+        <!-- Critical zone -->
+        <rect x="94" y="2" width="31" height="90" fill="rgba(232,98,74,.12)" rx="2"/>
+        <rect x="227" y="2" width="31" height="90" fill="rgba(232,98,74,.12)" rx="2"/>
+        <!-- Axes -->
+        <line x1="22" y1="8" x2="22" y2="86" stroke="#ccc" stroke-width=".7"/>
+        <line x1="22" y1="86" x2="124" y2="86" stroke="#ccc" stroke-width=".7"/>
+        <line x1="155" y1="8" x2="155" y2="86" stroke="#ccc" stroke-width=".7"/>
+        <line x1="155" y1="86" x2="257" y2="86" stroke="#ccc" stroke-width=".7"/>
+        <!-- Variance curve (flat then spike) -->
+        <polyline points="22,80 40,79 60,78 80,76 94,68 100,50 110,25 124,12"
+          fill="none" stroke="#a06010" stroke-width="1.8" stroke-linejoin="round"/>
+        <!-- Autocorrelation curve (rises toward 1) -->
+        <polyline points="155,75 170,72 185,66 200,55 215,40 227,28 240,18 257,12"
+          fill="none" stroke="#4fa8d8" stroke-width="1.8" stroke-linejoin="round"/>
+        <!-- CSD 0.9 threshold line on right -->
+        <line x1="155" y1="20" x2="257" y2="20" stroke="#e8624a" stroke-width=".8" stroke-dasharray="4,2"/>
+        <text x="257" y="19" font-size="5.5" fill="#e8624a" text-anchor="end" font-family="JetBrains Mono">0.9</text>
+        <!-- Titles -->
+        <text x="73" y="97" text-anchor="middle" font-size="7" fill="#8a6010" font-family="Jost" font-weight="600">Variance</text>
+        <text x="206" y="97" text-anchor="middle" font-size="7" fill="#2a7aa8" font-family="Jost" font-weight="600">Autocorrelation (lag-1)</text>
+        <text x="73" y="104" text-anchor="middle" font-size="6.5" fill="#aaa" font-family="Jost" font-style="italic">Stress level →</text>
+        <text x="206" y="104" text-anchor="middle" font-size="6.5" fill="#aaa" font-family="Jost" font-style="italic">Stress level →</text>
+      </svg>
+
+      <ul class="b" style="margin-top:5px">
+        <li>Variance rises at stress <span class="hi">≈ 0.70–0.75</span>, before critical zone at ~0.79</li>
+        <li>Warning window: <span class="hi">10–30 years</span> before catastrophic transition</li>
+        <li><span class="lo">Oceania</span> shows earliest warning — limited island redundancy</li>
+      </ul>
+    </div>
+  </div>
+
+</div><!-- /col2 -->
+
+<!-- ════ COL 3 ════════════════════════════════════════ -->
+<div class="col">
+
+  <!-- Adaptive Rewiring -->
+  <div class="card ch-lime">
+    <div class="card-head">
+      <div class="num" style="background:#7ec850">7</div>
+      <h2>Adaptive Rewiring (p = 0.6)</h2>
+    </div>
+    <div class="card-body">
+      <p class="txt">Surviving plants seek alternative pollinators proportional to degree when a partner is lost. Resilience gain = area between rewiring and no-rewiring curves.</p>
+
+      <!-- Rewiring comparison SVG -->
+      <svg width="100%" height="95" viewBox="0 0 240 95" style="margin-top:6px">
+        <rect x="0" y="0" width="240" height="95" rx="4" fill="#f0f8ec"/>
+        <line x1="22" y1="8" x2="22" y2="80" stroke="#ccc" stroke-width=".7"/>
+        <line x1="22" y1="80" x2="235" y2="80" stroke="#ccc" stroke-width=".7"/>
+        <!-- Filled area (resilience gain) -->
+        <polygon points="22,12 60,18 100,30 140,52 180,68 220,78 235,80 235,80 220,82 180,76 140,65 100,50 60,35 22,22"
+          fill="rgba(126,200,80,.25)" stroke="none"/>
+        <!-- With rewiring -->
+        <polyline points="22,12 60,18 100,30 140,52 180,68 220,78 235,80"
+          fill="none" stroke="#4e9828" stroke-width="2" stroke-linejoin="round"/>
+        <!-- Without rewiring -->
+        <polyline points="22,22 60,35 100,50 140,65 180,76 220,82 235,80"
+          fill="none" stroke="#e8624a" stroke-width="2" stroke-linejoin="round" stroke-dasharray="5,3"/>
+        <!-- Labels -->
+        <text x="180" y="64" font-size="7" fill="#4e9828" font-family="Jost" font-weight="600">With rewiring</text>
+        <text x="175" y="80" font-size="7" fill="#e8624a" font-family="Jost">No rewiring</text>
+        <text x="80" y="48" font-size="7" fill="#4e9828" font-style="italic" font-family="Jost">resilience gain</text>
+        <text x="128" y="88" text-anchor="middle" font-size="6.5" fill="#aaa" font-family="Jost" font-style="italic">Fraction of pollinators removed →</text>
+      </svg>
+
+      <ul class="b" style="margin-top:5px">
+        <li><b>Largest gain:</b> Europe &amp; Oceania (high nestedness)</li>
+        <li><b>Smallest:</b> Asia &amp; N. America (modular, locally saturated)</li>
+        <li>Benefit positively correlated with nestedness</li>
+      </ul>
+      <div class="callout teal"><b>Conservation:</b> Habitat corridors enabling pollinators to encounter novel plants significantly boost resilience beyond species-level protection.</div>
+    </div>
+  </div>
+
+  <!-- ML Extinction Risk -->
+  <div class="card ch-gold">
+    <div class="card-head">
+      <div class="num" style="background:#f0c050">8</div>
+      <h2>ML Extinction Risk Prediction</h2>
+    </div>
+    <div class="card-body">
+      <p class="txt"><b>Random Forest</b> classifier (100 trees, 5-fold CV) on structural node features. Consistent feature importance across all 6 continental networks.</p>
+
+      <!-- Feature importance radial / bar hybrid -->
+      <svg width="100%" height="100" viewBox="0 0 240 100" style="margin-top:7px">
+        <rect x="0" y="0" width="240" height="100" rx="4" fill="#fef8e8"/>
+        <!-- background grid -->
+        <line x1="20" y1="10" x2="20" y2="82" stroke="#e8e0d0" stroke-width=".7"/>
+        <line x1="20" y1="82" x2="235" y2="82" stroke="#e8e0d0" stroke-width=".7"/>
+        <line x1="100" y1="10" x2="100" y2="82" stroke="#e8e0d0" stroke-width=".5" stroke-dasharray="3,2"/>
+        <line x1="180" y1="10" x2="180" y2="82" stroke="#e8e0d0" stroke-width=".5" stroke-dasharray="3,2"/>
+        <!-- Bars -->
+        <rect x="65" y="14" width="108" height="11" rx="3" fill="#a06010"/>
+        <rect x="65" y="31" width="60"  height="11" rx="3" fill="#2471a3"/>
+        <rect x="65" y="48" width="43"  height="11" rx="3" fill="#0e7c6b"/>
+        <rect x="65" y="65" width="28"  height="11" rx="3" fill="#8e44ad"/>
+        <!-- Labels left -->
+        <text x="62" y="23" text-anchor="end" font-size="8" fill="#5a7060" font-family="Jost">Eigenvector</text>
+        <text x="62" y="40" text-anchor="end" font-size="8" fill="#5a7060" font-family="Jost">Degree</text>
+        <text x="62" y="57" text-anchor="end" font-size="8" fill="#5a7060" font-family="Jost">Betweenness</text>
+        <text x="62" y="74" text-anchor="end" font-size="8" fill="#5a7060" font-family="Jost">Module conn.</text>
+        <!-- Value labels -->
+        <text x="178" y="23" font-size="8" fill="#a06010" font-family="JetBrains Mono" font-weight="600">~40%</text>
+        <text x="130" y="40" font-size="8" fill="#2471a3" font-family="JetBrains Mono" font-weight="600">~20%</text>
+        <text x="113" y="57" font-size="8" fill="#0e7c6b" font-family="JetBrains Mono" font-weight="600">~15%</text>
+        <text x="98"  y="74" font-size="8" fill="#8e44ad" font-family="JetBrains Mono" font-weight="600">~10%</text>
+        <!-- X axis labels -->
+        <text x="20"  y="90" text-anchor="middle" font-size="7" fill="#aaa" font-family="Jost">0%</text>
+        <text x="100" y="90" text-anchor="middle" font-size="7" fill="#aaa" font-family="Jost">20%</text>
+        <text x="180" y="90" text-anchor="middle" font-size="7" fill="#aaa" font-family="Jost">40%</text>
+      </svg>
+
+      <div class="callout gold"><b>Eigenvector dominates (~40%).</b> Conserving pollinators by interaction frequency alone misses systemically critical species at strategic positions.</div>
+    </div>
+  </div>
+
+  <!-- Species Transplantation -->
+  <div class="card ch-coral">
+    <div class="card-head">
+      <div class="num" style="background:#f07060">9</div>
+      <h2>Species Transplantation</h2>
+    </div>
+    <div class="card-body">
+      <p class="txt">Introduced <em>"Unidentified sp16 M_PL_050"</em> into M_PL_050 target community (17 plants × 51 pollinators).</p>
+
+      <!-- Before / After network mini diagrams -->
+      <div class="species-grid">
+        <svg class="species-mini" viewBox="0 0 100 60">
+          <text x="50" y="9" text-anchor="middle" font-size="6.5" fill="#5a7060" font-family="Jost" font-weight="600">BEFORE</text>
+          <g stroke="#2ec4a0" stroke-width=".5" opacity=".7">
+            <line x1="18" y1="18" x2="72" y2="18"/><line x1="18" y1="18" x2="72" y2="30"/>
+            <line x1="18" y1="30" x2="72" y2="18"/><line x1="18" y1="30" x2="72" y2="30"/>
+            <line x1="18" y1="30" x2="72" y2="42"/><line x1="18" y1="42" x2="72" y2="30"/>
+            <line x1="18" y1="42" x2="72" y2="42"/><line x1="18" y1="52" x2="72" y2="52"/>
+          </g>
+          <circle cx="18" cy="18" r="4" fill="#c8952a"/>
+          <circle cx="18" cy="30" r="5" fill="#c8952a"/>
+          <circle cx="18" cy="42" r="4" fill="#c8952a"/>
+          <circle cx="18" cy="52" r="3" fill="#c8952a"/>
+          <rect x="69" y="14" width="7" height="7" rx="1" fill="#7ec850"/>
+          <rect x="69" y="26" width="7" height="7" rx="1" fill="#7ec850"/>
+          <rect x="69" y="38" width="7" height="7" rx="1" fill="#7ec850"/>
+          <rect x="69" y="48" width="7" height="7" rx="1" fill="#7ec850"/>
+          <text x="50" y="58" text-anchor="middle" font-size="5.5" fill="#8a9e8a" font-family="Jost">129 interactions</text>
+        </svg>
+        <svg class="species-mini" viewBox="0 0 100 60">
+          <text x="50" y="9" text-anchor="middle" font-size="6.5" fill="#5a7060" font-family="Jost" font-weight="600">AFTER</text>
+          <g stroke="#2ec4a0" stroke-width=".5" opacity=".7">
+            <line x1="18" y1="18" x2="72" y2="18"/><line x1="18" y1="18" x2="72" y2="30"/>
+            <line x1="18" y1="30" x2="72" y2="18"/><line x1="18" y1="30" x2="72" y2="30"/>
+            <line x1="18" y1="30" x2="72" y2="42"/><line x1="18" y1="42" x2="72" y2="30"/>
+            <line x1="18" y1="42" x2="72" y2="42"/><line x1="18" y1="52" x2="72" y2="52"/>
+          </g>
+          <!-- new links in red -->
+          <g stroke="#e8624a" stroke-width="1" opacity=".9">
+            <line x1="18" y1="12" x2="72" y2="18"/>
+            <line x1="18" y1="12" x2="72" y2="30"/>
+            <line x1="18" y1="12" x2="72" y2="42"/>
+          </g>
+          <circle cx="18" cy="18" r="4" fill="#c8952a"/>
+          <circle cx="18" cy="30" r="5" fill="#c8952a"/>
+          <circle cx="18" cy="42" r="4" fill="#c8952a"/>
+          <circle cx="18" cy="52" r="3" fill="#c8952a"/>
+          <!-- new transplant node -->
+          <circle cx="18" cy="12" r="4" fill="#e8624a" stroke="#fff" stroke-width="1"/>
+          <rect x="69" y="14" width="7" height="7" rx="1" fill="#7ec850"/>
+          <rect x="69" y="26" width="7" height="7" rx="1" fill="#7ec850"/>
+          <rect x="69" y="38" width="7" height="7" rx="1" fill="#7ec850"/>
+          <rect x="69" y="48" width="7" height="7" rx="1" fill="#7ec850"/>
+          <text x="50" y="58" text-anchor="middle" font-size="5.5" fill="#8a9e8a" font-family="Jost">132 interactions (+3)</text>
+        </svg>
+      </div>
+
+      <!-- Delta table -->
+      <table class="t" style="margin-top:7px;font-size:10px">
+        <thead><tr><th>Metric</th><th>Before</th><th>After</th><th>Δ</th></tr></thead>
+        <tbody>
+          <tr><td>Interactions</td><td>129</td><td>132</td><td style="color:#0e7c6b;font-weight:700">+3</td></tr>
+          <tr><td>NODF</td><td>38.94</td><td>38.06</td><td style="color:#e8624a;font-weight:700">−0.88</td></tr>
+          <tr><td>Modularity Q</td><td>0.4627</td><td>0.4502</td><td style="color:#e8624a;font-weight:700">−0.013</td></tr>
+          <tr><td>LCC Size</td><td>68</td><td>69</td><td style="color:#0e7c6b;font-weight:700">+1</td></tr>
+        </tbody>
+      </table>
+      <div class="callout coral" style="margin-top:6px"><b>Key constraint:</b> transplanted species must target bridge plants (high betweenness) — not over-connected nodes — to improve resilience.</div>
+    </div>
+  </div>
+
+</div><!-- /col3 -->
+</div><!-- /body-wrap -->
+
+<!-- ═══ FINDINGS STRIP ════════════════════════════════ -->
+<div class="findings-strip">
+  <div class="findings-label">◆ &nbsp; Key Findings &amp; Conclusions &nbsp; ◆</div>
+  <div class="findings-grid">
+    <div class="fg">
+      <div class="fg-num">01</div>
+      <div class="fg-head">Continental Architecture Diversity</div>
+      <div class="fg-text"><b>South America</b> (Q=0.773) most stress-resistant. <b>North America</b> (Q=0.270) most vulnerable — 2.5–4× faster collapse under targeted vs. random removal. Africa's high nestedness (NODF=18.2) drives synchronous tipping-point collapse.</div>
+    </div>
+    <div class="fg">
+      <div class="fg-num">02</div>
+      <div class="fg-head">GNN Corpus &amp; Eigenvector Dominance</div>
+      <div class="fg-text">Across 172 networks, <b>Connector (38%)</b> and <b>Specialist (37%)</b> are co-dominant regimes. <b>Eigenvector centrality</b> consistently outperforms raw degree as extinction risk predictor (~40% RF importance), arguing for eigenvector-based conservation prioritisation.</div>
+    </div>
+    <div class="fg">
+      <div class="fg-num">03</div>
+      <div class="fg-head">Early Warning &amp; Rewiring Buffer</div>
+      <div class="fg-text"><b>CSD signals</b> detectable <b>10–30 years</b> before catastrophic collapse. <b>Adaptive rewiring</b> improves resilience across all networks — highest in nested communities. <b>Managed transplantation</b> modestly improves resilience when species bridges structural gaps.</div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ FOOTER ════════════════════════════════════════ -->
+<div class="footer">
+  <div class="refs">
+    <div class="refs-title">Reference</div>
+    <ol class="refs-list">
+      <li>J. Bascompte, P. Jordano, C. J. Melian, and J. M. Olesen, "The nested assembly of plant-animal mutualistic networks," <em>Proc. Natl. Acad. Sci. U.S.A.</em>, vol. 100, no. 16, pp. 9383-9387, 2003.</li>
+    </ol>
+    <div class="data-note"><b>Data Source:</b> Web of Life (www.web-of-life.es)</div>
+  </div>
+  <div class="contact">
+    <b>IIT Bhilai · Dept. of CSE</b><br>
+    Network Science Project<br>
+    Bhilai, Chhattisgarh · April 2026
+  </div>
+</div>
+
+</main><!-- /poster -->
+</body>
+</html>
