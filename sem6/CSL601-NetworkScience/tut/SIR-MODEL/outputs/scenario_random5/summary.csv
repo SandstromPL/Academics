@@ -1,0 +1,7 @@
+model,scenario,simulation,seed_nodes,final_infected,final_infected_fraction,peak_infected,peak_infected_fraction,peak_step,final_recovered,final_recovered_fraction
+Barabasi-Albert,random5,SI,"5726,8766,1100,9491,5248",10000.0,1.0,10000.0,1.0,35.0,0.0,0.0
+Barabasi-Albert,random5,SIR,"5726,8766,1100,9491,5248",125.0,0.0125,6468.0,0.6468,22.0,9724.0,0.9724
+Barabasi-Albert,random5,SIS,"5726,8766,1100,9491,5248",8687.0,0.8687,8731.0,0.8731,71.0,0.0,0.0
+Erdos-Renyi,random5,SI,"6438,5110,9009,778,980",9999.0,0.9999,9999.0,0.9999,34.0,0.0,0.0
+Erdos-Renyi,random5,SIR,"6438,5110,9009,778,980",110.0,0.011,7758.0,0.7758,17.0,9871.0,0.9871
+Erdos-Renyi,random5,SIS,"6438,5110,9009,778,980",9215.0,0.9215,9276.0,0.9276,51.0,0.0,0.0

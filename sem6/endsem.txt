@@ -1,5 +1,5 @@
 30 apr -> CSL511 -> Formal Verification -> 10 am to 1 pm
 30 apr -> CSL351 -> Computer Networks -> 2.30 pm to 5.30 pm
 02 may -> PHL509 -> Nuclear Physics -> 10 am to 1 pm
-02 may -> DSL253 -> Info Security ->  2.30 pm to 5.30 pm
+04 may -> DSL253 -> Info Security ->  2.30 pm to 5.30 pm
 05 may -> CSL601 -> Networks Science -> 10 am to 1 pm

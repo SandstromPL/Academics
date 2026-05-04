@@ -1,0 +1,7 @@
+model,scenario,simulation,seed_nodes,final_infected,final_infected_fraction,peak_infected,peak_infected_fraction,peak_step,final_recovered,final_recovered_fraction
+Barabasi-Albert,top5_degree,SI,"0,4,6,11,9",10000.0,1.0,10000.0,1.0,38.0,0.0,0.0
+Barabasi-Albert,top5_degree,SIR,"0,4,6,11,9",83.0,0.0083,6510.0,0.651,13.0,9763.0,0.9763
+Barabasi-Albert,top5_degree,SIS,"0,4,6,11,9",8601.0,0.8601,8750.0,0.875,60.0,0.0,0.0
+Erdos-Renyi,top5_degree,SI,"174,2567,3467,4668,3538",10000.0,1.0,10000.0,1.0,30.0,0.0,0.0
+Erdos-Renyi,top5_degree,SIR,"174,2567,3467,4668,3538",82.0,0.0082,7761.0,0.7761,14.0,9910.0,0.991
+Erdos-Renyi,top5_degree,SIS,"174,2567,3467,4668,3538",9218.0,0.9218,9273.0,0.9273,62.0,0.0,0.0
