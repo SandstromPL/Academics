@@ -1,0 +1,8 @@
+world/
+git_world/
+worlds/
+exec_world/
+harness_trace.jsonl
+server_log.jsonl
+__pycache__/
+.pytest_cache/
