@@ -1,0 +1,214 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage{tgheros}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[margin=2.2cm]{geometry}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+\usepackage{parskip}
+\usepackage{needspace}
+
+\definecolor{accent}{HTML}{0F766E}
+\definecolor{navy}{HTML}{1E3A5F}
+
+\titleformat{\section}{\large\bfseries\color{navy}}{}{0pt}{}
+\titleformat{\subsection}{\normalsize\bfseries\color{accent}}{}{0pt}{}
+\titlespacing*{\subsection}{0pt}{12pt}{3pt}
+\setlist[itemize]{leftmargin=1.2em, itemsep=1.5pt, parsep=0pt, topsep=3pt}
+
+% \project{title}{description}{research question}{data}{approach}{evaluation}{why it's distinct}
+\newcommand{\project}[7]{%
+  \needspace{14\baselineskip}
+  \subsection{#1}
+  #2
+  \begin{itemize}
+    \item \textbf{Research question:} #3
+    \item \textbf{Data:} #4
+    \item \textbf{Approach:} #5
+    \item \textbf{Evaluation:} #6
+    \item \textbf{Why it's distinct:} #7
+  \end{itemize}}
+
+\pagestyle{plain}
+
+\begin{document}
+
+\begin{center}
+  {\LARGE\bfseries\color{navy} Group 10 Project Shortlist}\\[4pt]
+  {\small DSL504 / DS504 · Natural Language Processing · IIT Bhilai · Jul--Nov 2026}\\[2pt]
+  {\small Agastya Nath · Y.\ Rahul Dev Reddy · Paritosh Lahre · Varun Rao}
+\end{center}
+
+\vspace{4pt}
+Nine ideas, ranked. None of them overlaps with the topics the other groups chose
+(RAG/fact-checking, sentiment, LLM efficiency, NL$\to$SQL, prompt injection).
+Each one is scoped for about four weeks of work by four people on free Colab/Kaggle GPUs.
+
+\section*{At a glance}
+
+\renewcommand{\arraystretch}{1.25}
+\begin{tabularx}{\textwidth}{@{}c l l >{\raggedright\arraybackslash}X@{}}
+\toprule
+\textbf{\#} & \textbf{Project} & \textbf{Direction} & \textbf{In one line} \\
+\midrule
+1 & Do Comments Still Tell the Truth? & Software & Flag code comments made outdated by a code change \\
+2 & From Scorecard to Story & Text generation & Accurate cricket commentary from ball-by-ball data \\
+3 & Ask, Don't Guess & Software & English$\to$regex that asks clarifying questions \\
+4 & When the Law Changes & Legal / India & Predict law sections after the IPC$\to$BNS switch \\
+5 & Who's the Doctor? & MT + coreference & Gender bias in English$\to$Hindi translation \\
+6 & Parse What You've Never Seen & Software & Log parsing on unseen software systems \\
+7 & Did the Minister Answer? & Civic NLP & Evasive answers in Parliament Question Hour \\
+8 & Near Hanuman Mandir & Practical / India & Parse messy Indian addresses \\
+9 & Unmangling JavaScript & Software & Recover variable names in minified code \\
+\bottomrule
+\end{tabularx}
+
+\section*{The projects}
+
+\project{1. Do Comments Still Tell the Truth?}
+  {When developers change code, they often leave the comment above it untouched, so the comment
+   now describes something the code no longer does. For example, a comment says
+   ``returns null if not found'', but the code now throws an exception. Given a code change (diff)
+   and its existing comment, the system predicts whether the comment has become outdated and
+   highlights the stale words.}
+  {Does training on artificially generated comment--code mismatches carry over to real ones from
+   actual commits?}
+  {Panthaplackel et al.\ (AAAI 2021) dataset of real Java inconsistencies; CodeSearchNet
+   docstring--code pairs, with the code deliberately changed to create synthetic mismatches.}
+  {TF-IDF + logistic regression baseline $\to$ BiGRU with cross-attention $\to$ fine-tuned
+   CodeBERT $\to$ few-shot small code LLM.}
+  {Precision, recall and F1 on real data; synthetic-only vs.\ real-only training; which kinds of
+   artificial change help most.}
+  {Group 5 searches for code; this project checks whether existing comments still agree with changed code.}
+
+\project{2. From Scorecard to Story}
+  {Generate lively cricket commentary and over/innings summaries from structured ball-by-ball data,
+   for example turning ``over 18.3, Bumrah to Buttler, bowled'' into a natural sentence. The main
+   problem in generating text from data is fluent text with wrong facts, so a rule-based checker
+   recomputes every claim (scores, wickets, milestones) from the data.}
+  {Does planning what to say before saying it reduce factual errors, compared with generating
+   everything in one step?}
+  {Cricsheet (free ball-by-ball data for thousands of matches). It has no commentary text, so
+   reference text is built from templates, LLM paraphrases kept only if they pass the checker, and
+   about 150 hand-written examples.}
+  {Template baseline $\to$ prompted LLM $\to$ fine-tuned T5 $\to$ plan-then-generate T5.}
+  {Fact precision and hallucination rate (from the checker), coverage of key events, human
+   fluency ratings, diversity.}
+  {No group generates text from structured data or uses sports data.}
+
+\project{3. Ask, Don't Guess}
+  {Requests like ``match a roll number like 12341550'' are ambiguous. Should any 8 digits match, or
+   only ones starting with 1234? Instead of guessing, the system generates several candidate regexes,
+   finds a test string they disagree on, and asks the user one question: ``Should 99990000 match?''.
+   Regexes can be compared exactly by converting them to automata (DFAs), so this is fully measurable.}
+  {How many clarifying questions does it take to reach the intended regex, compared with guessing once?}
+  {NL-RX and KB13 (Deep Regex repository), StructuredRegex, plus about 200 descriptions the team
+   rewrites to be deliberately vague.}
+  {Fine-tuned T5-small with beam search $\to$ group candidates that match exactly the same strings
+   $\to$ pick the most informative question $\to$ simulated user that answers automatically.}
+  {Exact regex-equivalence accuracy after 0, 1, 2 and 3 questions; whether the correct regex was
+   among the candidates at all; a small user study.}
+  {Group 4 tests whether NL$\to$SQL handles new combinations of conditions; this project is about
+   interaction and ambiguity, and targets regexes instead of SQL.}
+
+\project{4. When the Law Changes}
+  {India replaced the Indian Penal Code (IPC) with the Bharatiya Nyaya Sanhita (BNS) on 1 July 2024.
+   Sections were renumbered (e.g.\ IPC 420 $\to$ BNS 318), merged, split, or newly added. Every
+   existing model that predicts which sections apply to a case's facts was trained on IPC labels.
+   This project studies how to move such models to the new code.}
+  {Which approach works best: converting predictions afterwards, converting the training labels
+   first, or predicting directly from the text of the new BNS sections?}
+  {ILSI and IL-TUR (IPC-labelled case facts), the official IPC$\leftrightarrow$BNS mapping table,
+   the BNS section texts, and a small hand-labelled BNS test set.}
+  {TF-IDF baseline $\to$ InLegalBERT classifier (convert afterwards / convert first) $\to$ zero-shot
+   matching of facts to section text $\to$ hybrid.}
+  {Micro- and macro-F1, broken down by type of change (renumbered, merged, split, new); top-$k$ recall.}
+  {No legal-NLP group. The output is a set of section labels, not a generated answer.}
+
+\project{5. Who's the Doctor?}
+  {In Hindi, verbs and adjectives must agree in gender, so translating ``The doctor was tired because
+   she worked all night'' forces a choice between feminine and masculine forms. Biased systems pick
+   the stereotype (doctor = male) instead of following the pronoun. This project measures how often
+   that happens and reduces it.}
+  {Can re-ranking beam-search translations using a coreference model reduce gender bias without
+   hurting overall translation quality?}
+  {WinoMT (about 3,900 English test sentences with known gender), extended with Indian-context
+   occupations; FLORES-200 to check general quality.}
+  {Translate with IndicTrans2, NLLB, mBART and an LLM; read the Hindi gender automatically via word
+   alignment and a morphological tagger; fix the bias with coreference re-ranking and gender tags
+   in the source.}
+  {Gender accuracy; male--female and stereotype--anti-stereotype accuracy gaps; BLEU/chrF on FLORES.}
+  {No group works on machine translation or bias, and it uses coreference, the latest lecture topic.}
+
+\project{6. Parse What You've Never Seen}
+  {Software systems write millions of log lines such as
+   ``Received block blk\_-160\ldots{} of size 91178 from /10.250.10.6''. Before any monitoring or
+   debugging, each line must be split into a fixed template
+   (``Received block $\langle*\rangle$ of size $\langle*\rangle$ from $\langle*\rangle$'') and its
+   variables. This is a sequence-labelling problem; the challenge is software the model has never seen.}
+  {Which methods work on unseen systems, and how many labelled lines does a new system need?}
+  {Loghub-2.0 (14 real systems with correct templates) and Loghub-2k (16 systems, 2,000 lines each).}
+  {Drain heuristic parser $\to$ BiLSTM-CRF tagger $\to$ fine-tuned RoBERTa tagger $\to$ few-shot
+   LLM, evaluated by training on all systems except one and testing on the one left out.}
+  {Grouping accuracy, parsing accuracy and their F1 versions; lines per second; a learning curve
+   over the number of labelled lines.}
+  {No group works on logs or DevOps. This is the lowest-risk option on the list.}
+
+\project{7. Did the Minister Answer?}
+  {Lok Sabha questions usually have parts (a), (b), (c), and answers often deflect, e.g.\
+   ``(a) to (c): this is a continuous process''. The system splits each question into its parts,
+   matches each part to the answer, and labels it answered, partially answered, or not answered.
+   It then compares evasion rates across ministries and sessions.}
+  {Does transfer from an English political-evasion dataset work on Indian parliamentary answers?}
+  {Lok Sabha / Rajya Sabha Q\&A archives; QEvasion (US presidential interviews); about 500
+   question parts labelled by the team, with agreement between two annotators checked.}
+  {Deflection-phrase rules $\to$ zero-shot natural language inference (NLI) $\to$ DeBERTa transferred
+   from QEvasion $\to$ few-shot LLM.}
+  {Macro-F1; agreement between annotators (Cohen's $\kappa$); evasion rate by ministry and year.}
+  {No civic or political NLP group. It isn't fact-checking: it judges whether the question was
+   addressed, not whether the answer is true.}
+
+\project{8. Near Hanuman Mandir}
+  {Indian addresses look like ``flat 3b, behind SBI atm nr hanuman mandir, supela bhilai 490023'':
+   landmark-based, abbreviated, mixed-language, in no fixed order. The system tags each part (house,
+   building, landmark, locality, city, PIN) and standardizes it against the official PIN directory.
+   It is useful for delivery, banking KYC and emergency services.}
+  {How well do models trained on synthetic messy addresses work on real, hand-written ones?}
+  {OpenStreetMap India (public places only), the India Post PIN directory, a noise generator for
+   abbreviations, typos and transliteration, and about 300 real test addresses of public places.}
+  {Rules + list of place names $\to$ CRF $\to$ BiLSTM-CRF $\to$ fine-tuned MuRIL/XLM-R $\to$
+   few-shot LLM; edit-distance matching against the PIN directory.}
+  {Entity-level F1 for each field; exact match for the whole address; robustness as noise
+   increases; gap between synthetic and real data.}
+  {No similar project; it only shares the general technique of sequence labelling.}
+
+\project{9. Unmangling JavaScript}
+  {Minified JavaScript replaces meaningful names with single letters:
+   \begin{center}\small\texttt{function a(b,c)\{return b.filter(d=>d.price>c)\}}\end{center}
+   The system predicts readable names
+   (\texttt{items}, \texttt{maxPrice}, \texttt{item}) from how each variable is used. Training
+   data is free: minify open-source code and keep the original names as the labels.}
+  {Do models understand how a variable is used, or just memorize common names like
+   \texttt{i}, \texttt{e}, \texttt{err}?}
+  {Self-generated by minifying permissively licensed GitHub code with Terser, split by repository
+   so no code leaks between training and test.}
+  {Frequency baseline $\to$ n-gram/CRF model $\to$ fine-tuned CodeT5 $\to$ few-shot code LLM.}
+  {Exact-name accuracy; subtoken F1 (partial credit, e.g.\ \texttt{userList} vs.\ \texttt{users});
+   common vs.\ domain-specific names; human readability ratings.}
+  {Group 5 retrieves code from English queries; this project generates names inside the code.}
+
+\section*{Quick picks}
+\begin{itemize}
+  \item \textbf{Software direction:} \#1 (safest option: \#6)
+  \item \textbf{Best presentation:} \#2
+  \item \textbf{Most novel:} \#3 (or \#7 if you can start labelling data this week)
+  \item \textbf{India-specific relevance:} \#4 or \#5
+\end{itemize}
+
+\end{document}
