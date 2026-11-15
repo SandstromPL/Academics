@@ -1,0 +1,4 @@
+\DeclareFontFamily{T1}{jbm}{\hyphenchar\font=-1}
+\DeclareFontShape{T1}{jbm}{m}{n}{<-> rjbmonoregular}{}
+\DeclareFontShape{T1}{jbm}{b}{n}{<-> rjbmonobold}{}
+\DeclareFontShape{T1}{jbm}{bx}{n}{<->ssub * jbm/b/n}{}

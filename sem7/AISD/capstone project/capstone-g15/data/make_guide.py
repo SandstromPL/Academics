@@ -1,0 +1,91 @@
+import json
+
+sections = [
+    {
+        "id": "G01",
+        "title": "Rename get_balance to fetch_balance",
+        "text": "The function to fetch an account balance was renamed from `get_balance` to `fetch_balance`.",
+        "before": "balance = get_balance(account_id)",
+        "after": "balance = fetch_balance(account_id)"
+    },
+    {
+        "id": "G02",
+        "title": "Order of arguments in transfer changed: the amount moves to the end",
+        "text": "In v2 the amount is the last argument of `transfer`: v1 `transfer(amount, from_id, to_id)` becomes v2 `transfer(from_id, to_id, amount)`. Only the amount moves. The two account ids keep their order, so the money still goes from the same account to the same account. Do not swap the ids because of what their variable names suggest.",
+        "before": "transfer(25.0, acc_a, acc_b)  # acc_a pays acc_b 25.0",
+        "after": "transfer(acc_a, acc_b, 25.0)  # still acc_a pays acc_b"
+    },
+    {
+        "id": "G03",
+        "title": "get_transaction returns a Transaction dataclass",
+        "text": "The `get_transaction` function now returns a `Transaction` dataclass instead of a dictionary. Access the transaction ID with `tx.tx_id` instead of `tx['id']`.",
+        "before": "tx_id = tx['id']",
+        "after": "tx_id = tx.tx_id"
+    },
+    {
+        "id": "G04",
+        "title": "charge_and_receipt removed, use charge and make_receipt",
+        "text": "The `charge_and_receipt` function was removed. Use `charge` followed by `make_receipt` to create a charge and its receipt.",
+        "before": "receipt = charge_and_receipt(acc, 70.0)",
+        "after": "tx = charge(acc, Money(70.0, \"INR\"))\nreceipt = make_receipt(tx)"
+    },
+    {
+        "id": "G05",
+        "title": "Rename InsufficientFunds to BalanceTooLow",
+        "text": "The exception `InsufficientFunds` was renamed to `BalanceTooLow`.",
+        "before": "except InsufficientFunds:",
+        "after": "except BalanceTooLow:"
+    },
+    {
+        "id": "G06",
+        "title": "Rename AccountNotFound to UnknownAccount",
+        "text": "The exception `AccountNotFound` was renamed to `UnknownAccount`.",
+        "before": "except AccountNotFound:",
+        "after": "except UnknownAccount:"
+    },
+    {
+        "id": "G07",
+        "title": "charge takes a Money object",
+        "text": "The `charge` function now takes a `Money` object instead of separate `amount` and `currency` parameters.",
+        "before": "charge(acc, 70.0, 'INR')",
+        "after": "charge(acc, Money(70.0, 'INR'))"
+    },
+    {
+        "id": "G08",
+        "title": "format_amount takes integer paise",
+        "text": "The `format_amount` function now takes an integer representing paise instead of a float representing rupees.",
+        "before": "formatted = format_amount(70.0)",
+        "after": "formatted = format_amount(round(70.0 * 100))"
+    },
+    {
+        "id": "G09",
+        "title": "list_transactions needs a limit and returns Transaction objects",
+        "text": "In v2 `limit` has no default any more, so pass it explicitly. v1 used 10 when it was left out, so `list_transactions(acc)` becomes `list_transactions(acc, 10)`. The items are `Transaction` objects instead of dictionaries: read `tx.amount` and `tx.tx_id` instead of `tx['amount']` and `tx['id']`.",
+        "before": "recent = list_transactions(acc)\nfirst_id = recent[0]['id']",
+        "after": "recent = list_transactions(acc, 10)\nfirst_id = recent[0].tx_id"
+    },
+    {
+        "id": "G10",
+        "title": "open_account uses keyword-only arguments",
+        "text": "The `open_account` function now uses keyword-only arguments for `opening_balance`.",
+        "before": "acc_id = open_account('John', 100.0)",
+        "after": "acc_id = open_account('John', opening_balance=100.0)"
+    },
+    {
+        "id": "G11",
+        "title": "convert returns a Money object",
+        "text": "The `convert` function now returns a `Money` object instead of a float.",
+        "before": "converted = convert(70.0, 'USD')",
+        "after": "converted = convert(Money(70.0, 'INR'), 'USD')"
+    },
+    {
+        "id": "G12",
+        "title": "Rename PaymentError to PayError",
+        "text": "The base exception class `PaymentError` was renamed to `PayError`.",
+        "before": "except PaymentError:",
+        "after": "except PayError:"
+    }
+]
+
+with open('data/guide.json', 'w') as f:
+    json.dump(sections, f, indent=4)

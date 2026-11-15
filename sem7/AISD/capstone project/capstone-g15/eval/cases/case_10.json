@@ -1,0 +1,8 @@
+{
+  "id": "case_10",
+  "client_file": "data/clients/client_10.py",
+  "description": "A client file that passes a now keyword-only argument by position and uses a changed return type.",
+  "required_sections": ["G10", "G11"],
+  "expected": {"tests_pass": true, "v1_calls_remaining": 0},
+  "tags": ["edge"]
+}

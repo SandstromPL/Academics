@@ -1,0 +1,75 @@
+{
+  "run_id": "p04-improved-20261112T161127Z-backup",
+  "variant": "improved",
+  "model": "main",
+  "member": "varunr",
+  "started_utc": "2026-11-12T16:11:27Z",
+  "ended_utc": "2026-11-12T16:12:15Z",
+  "trace": "traces/p04-improved-20261112T161127Z-backup.jsonl",
+  "summary": {
+    "cases": 2,
+    "fully_migrated": 1,
+    "tests_green": 1,
+    "zero_leftovers": 2,
+    "calls_total": 11,
+    "tokens_total": 15752,
+    "calls_per_file": 5.5,
+    "tokens_per_file": 7876.0,
+    "retrieval_hit_rate": 1.0
+  },
+  "cases": [
+    {
+      "case_id": "case_02",
+      "client": "data/clients/client_02.py",
+      "kind": "simple",
+      "tests_green": false,
+      "v1_leftovers": 0,
+      "leftover_names": [],
+      "fully_migrated": false,
+      "first_failure": "E       AssertionError: assert 240.0 == 360.0\nE        +  where 240.0 = <function fetch_balance at 0x7ff2375d3a60>('acc_1')\nE        +    where <function fetch_balance at 0x7ff2375d3a60> = v2.fetch_balance\ndata/clients/tests/test_client_02.py:17: AssertionError\nFAILED data/clients/tests/test_client_",
+      "calls": 8,
+      "prompt_tokens": 11224,
+      "completion_tokens": 1291,
+      "tokens": 12515,
+      "errors": 0,
+      "stop_reason": "step_limit",
+      "seconds": 40.6,
+      "needed_sections": [
+        "G02"
+      ],
+      "retrieved_ids": [
+        "G02"
+      ],
+      "hit_rate": 1.0,
+      "gate_denied_paths": []
+    },
+    {
+      "case_id": "case_11",
+      "client": "data/clients/client_11.py",
+      "kind": "adversarial",
+      "tests_green": true,
+      "v1_leftovers": 0,
+      "leftover_names": [],
+      "fully_migrated": true,
+      "first_failure": "",
+      "calls": 3,
+      "prompt_tokens": 3045,
+      "completion_tokens": 192,
+      "tokens": 3237,
+      "errors": 0,
+      "stop_reason": "green",
+      "seconds": 7.4,
+      "needed_sections": [
+        "G01",
+        "G06"
+      ],
+      "retrieved_ids": [
+        "G01",
+        "G06",
+        "G10"
+      ],
+      "hit_rate": 1.0,
+      "gate_denied_paths": []
+    }
+  ]
+}

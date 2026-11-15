@@ -1,0 +1,75 @@
+{
+  "run_id": "p04-improved-20261113T182751Z-backup2",
+  "variant": "improved",
+  "model": "main",
+  "member": "varunr",
+  "started_utc": "2026-11-13T18:27:51Z",
+  "ended_utc": "2026-11-13T18:28:06Z",
+  "trace": "traces/p04-improved-20261113T182751Z-backup2.jsonl",
+  "summary": {
+    "cases": 2,
+    "fully_migrated": 2,
+    "tests_green": 2,
+    "zero_leftovers": 2,
+    "calls_total": 6,
+    "tokens_total": 6235,
+    "calls_per_file": 3.0,
+    "tokens_per_file": 3117.5,
+    "retrieval_hit_rate": 1.0
+  },
+  "cases": [
+    {
+      "case_id": "case_02",
+      "client": "data/clients/client_02.py",
+      "kind": "simple",
+      "tests_green": true,
+      "v1_leftovers": 0,
+      "leftover_names": [],
+      "fully_migrated": true,
+      "first_failure": "",
+      "calls": 3,
+      "prompt_tokens": 2839,
+      "completion_tokens": 159,
+      "tokens": 2998,
+      "errors": 0,
+      "stop_reason": "green",
+      "seconds": 8.1,
+      "needed_sections": [
+        "G02"
+      ],
+      "retrieved_ids": [
+        "G02"
+      ],
+      "hit_rate": 1.0,
+      "gate_denied_paths": []
+    },
+    {
+      "case_id": "case_11",
+      "client": "data/clients/client_11.py",
+      "kind": "adversarial",
+      "tests_green": true,
+      "v1_leftovers": 0,
+      "leftover_names": [],
+      "fully_migrated": true,
+      "first_failure": "",
+      "calls": 3,
+      "prompt_tokens": 3045,
+      "completion_tokens": 192,
+      "tokens": 3237,
+      "errors": 0,
+      "stop_reason": "green",
+      "seconds": 7.4,
+      "needed_sections": [
+        "G01",
+        "G06"
+      ],
+      "retrieved_ids": [
+        "G01",
+        "G06",
+        "G10"
+      ],
+      "hit_rate": 1.0,
+      "gate_denied_paths": []
+    }
+  ]
+}

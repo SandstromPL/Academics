@@ -1,0 +1,8 @@
+{
+  "id": "case_08",
+  "client_file": "data/clients/client_08.py",
+  "description": "A client file that charges with a plain amount and currency and reads the returned dict.",
+  "required_sections": ["G07", "G03"],
+  "expected": {"tests_pass": true, "v1_calls_remaining": 0},
+  "tags": ["edge"]
+}

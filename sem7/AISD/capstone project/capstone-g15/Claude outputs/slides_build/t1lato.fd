@@ -1,0 +1,6 @@
+\DeclareFontFamily{T1}{lato}{}
+\DeclareFontShape{T1}{lato}{m}{n}{<-> rlatoregular}{\fontdimen2\font=0.24\fontdimen6\font\fontdimen3\font=0.10\fontdimen6\font\fontdimen4\font=0.06\fontdimen6\font}
+\DeclareFontShape{T1}{lato}{b}{n}{<-> rlatobold}{\fontdimen2\font=0.24\fontdimen6\font\fontdimen3\font=0.10\fontdimen6\font\fontdimen4\font=0.06\fontdimen6\font}
+\DeclareFontShape{T1}{lato}{bx}{n}{<->ssub * lato/b/n}{}
+\DeclareFontShape{T1}{lato}{k}{n}{<-> rlatoblack}{\fontdimen2\font=0.24\fontdimen6\font\fontdimen3\font=0.10\fontdimen6\font\fontdimen4\font=0.06\fontdimen6\font}
+\DeclareFontShape{T1}{lato}{m}{it}{<->ssub * lato/m/n}{}

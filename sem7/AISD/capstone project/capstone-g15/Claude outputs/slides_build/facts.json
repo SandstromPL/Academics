@@ -1,0 +1,23 @@
+{
+ "freeze": "48ac6dbfd8f3",
+ "commits": {
+  "M1": "9",
+  "M2": "12",
+  "M3": "12",
+  "M4": "15"
+ },
+ "cases_hash": "x",
+ "f1": "8cc69d465f",
+ "f2": "f140d24cad",
+ "backup_run": "p04-improved-20261115T124945Z-backup3",
+ "backup_prefix": "backup-",
+ "backup_stats": "2/2 migrated, 6 calls, 25 s",
+ "backup_note": "2 earlier backups",
+ "calls_m2": [
+  52,
+  "11 Nov 16:29",
+  "15 Nov 12:50"
+ ],
+ "counted_up_to": "fe4dcf8c65bb",
+ "runs": 11
+}

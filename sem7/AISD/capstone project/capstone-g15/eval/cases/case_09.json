@@ -1,0 +1,8 @@
+{
+  "id": "case_09",
+  "client_file": "data/clients/client_09.py",
+  "description": "A client file that relies on a default argument v2 removed and reads list items as dicts.",
+  "required_sections": ["G09"],
+  "expected": {"tests_pass": true, "v1_calls_remaining": 0},
+  "tags": ["simple"]
+}

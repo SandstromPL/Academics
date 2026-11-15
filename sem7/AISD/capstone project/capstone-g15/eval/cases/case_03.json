@@ -1,0 +1,8 @@
+{
+  "id": "case_03",
+  "client_file": "data/clients/client_03.py",
+  "description": "A client file that uses a function with a changed return type.",
+  "required_sections": ["G03"],
+  "expected": {"tests_pass": true, "v1_calls_remaining": 0},
+  "tags": ["simple"]
+}

@@ -1,0 +1,8 @@
+{
+  "id": "case_01",
+  "client_file": "data/clients/client_01.py",
+  "description": "A client file that uses a renamed function.",
+  "required_sections": ["G01"],
+  "expected": {"tests_pass": true, "v1_calls_remaining": 0},
+  "tags": ["simple"]
+}

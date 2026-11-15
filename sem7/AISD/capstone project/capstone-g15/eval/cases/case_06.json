@@ -1,0 +1,8 @@
+{
+  "id": "case_06",
+  "client_file": "data/clients/client_06.py",
+  "description": "An adversarial client file with a variable or comment that looks like a v1 call but is not one.",
+  "required_sections": ["G05"],
+  "expected": {"tests_pass": true, "v1_calls_remaining": 0},
+  "tags": ["adversarial"]
+}

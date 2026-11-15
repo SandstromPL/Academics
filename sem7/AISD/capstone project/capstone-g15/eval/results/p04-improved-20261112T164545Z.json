@@ -1,0 +1,345 @@
+{
+  "run_id": "p04-improved-20261112T164545Z",
+  "variant": "improved",
+  "model": "main",
+  "member": "yallappagarid",
+  "started_utc": "2026-11-12T16:45:45Z",
+  "ended_utc": "2026-11-12T16:47:35Z",
+  "trace": "traces/p04-improved-20261112T164545Z.jsonl",
+  "summary": {
+    "cases": 12,
+    "fully_migrated": 10,
+    "tests_green": 10,
+    "zero_leftovers": 12,
+    "calls_total": 46,
+    "tokens_total": 53140,
+    "calls_per_file": 3.83,
+    "tokens_per_file": 4428.3,
+    "retrieval_hit_rate": 0.947
+  },
+  "cases": [
+    {
+      "case_id": "case_01",
+      "client": "data/clients/client_01.py",
+      "kind": "simple",
+      "tests_green": true,
+      "v1_leftovers": 0,
+      "leftover_names": [],
+      "fully_migrated": true,
+      "first_failure": "",
+      "calls": 3,
+      "prompt_tokens": 2826,
+      "completion_tokens": 129,
+      "tokens": 2955,
+      "errors": 0,
+      "stop_reason": "green",
+      "seconds": 6.4,
+      "needed_sections": [
+        "G01"
+      ],
+      "retrieved_ids": [
+        "G01",
+        "G03",
+        "G05"
+      ],
+      "hit_rate": 1.0,
+      "gate_denied_paths": []
+    },
+    {
+      "case_id": "case_02",
+      "client": "data/clients/client_02.py",
+      "kind": "simple",
+      "tests_green": false,
+      "v1_leftovers": 0,
+      "leftover_names": [],
+      "fully_migrated": false,
+      "first_failure": "E       AssertionError: assert 240.0 == 360.0\nE        +  where 240.0 = <function fetch_balance at 0x7f2770863a60>('acc_1')\nE        +    where <function fetch_balance at 0x7f2770863a60> = v2.fetch_balance\ndata/clients/tests/test_client_02.py:17: AssertionError\nFAILED data/clients/tests/test_client_",
+      "calls": 8,
+      "prompt_tokens": 11238,
+      "completion_tokens": 1351,
+      "tokens": 12589,
+      "errors": 0,
+      "stop_reason": "model_done",
+      "seconds": 35.1,
+      "needed_sections": [
+        "G02"
+      ],
+      "retrieved_ids": [
+        "G02"
+      ],
+      "hit_rate": 1.0,
+      "gate_denied_paths": []
+    },
+    {
+      "case_id": "case_03",
+      "client": "data/clients/client_03.py",
+      "kind": "simple",
+      "tests_green": true,
+      "v1_leftovers": 0,
+      "leftover_names": [],
+      "fully_migrated": true,
+      "first_failure": "",
+      "calls": 3,
+      "prompt_tokens": 2921,
+      "completion_tokens": 145,
+      "tokens": 3066,
+      "errors": 0,
+      "stop_reason": "green",
+      "seconds": 5.7,
+      "needed_sections": [
+        "G03"
+      ],
+      "retrieved_ids": [
+        "G01",
+        "G03",
+        "G09"
+      ],
+      "hit_rate": 1.0,
+      "gate_denied_paths": []
+    },
+    {
+      "case_id": "case_04",
+      "client": "data/clients/client_04.py",
+      "kind": "simple",
+      "tests_green": true,
+      "v1_leftovers": 0,
+      "leftover_names": [],
+      "fully_migrated": true,
+      "first_failure": "",
+      "calls": 3,
+      "prompt_tokens": 2717,
+      "completion_tokens": 124,
+      "tokens": 2841,
+      "errors": 0,
+      "stop_reason": "green",
+      "seconds": 5.5,
+      "needed_sections": [
+        "G04"
+      ],
+      "retrieved_ids": [
+        "G04",
+        "G07"
+      ],
+      "hit_rate": 1.0,
+      "gate_denied_paths": []
+    },
+    {
+      "case_id": "case_05",
+      "client": "data/clients/client_05.py",
+      "kind": "edge",
+      "tests_green": true,
+      "v1_leftovers": 0,
+      "leftover_names": [],
+      "fully_migrated": true,
+      "first_failure": "",
+      "calls": 3,
+      "prompt_tokens": 3072,
+      "completion_tokens": 184,
+      "tokens": 3256,
+      "errors": 0,
+      "stop_reason": "green",
+      "seconds": 6.6,
+      "needed_sections": [
+        "G01",
+        "G02",
+        "G03"
+      ],
+      "retrieved_ids": [
+        "G01",
+        "G02",
+        "G03"
+      ],
+      "hit_rate": 1.0,
+      "gate_denied_paths": []
+    },
+    {
+      "case_id": "case_06",
+      "client": "data/clients/client_06.py",
+      "kind": "adversarial",
+      "tests_green": true,
+      "v1_leftovers": 0,
+      "leftover_names": [],
+      "fully_migrated": true,
+      "first_failure": "",
+      "calls": 3,
+      "prompt_tokens": 2870,
+      "completion_tokens": 218,
+      "tokens": 3088,
+      "errors": 0,
+      "stop_reason": "green",
+      "seconds": 7.2,
+      "needed_sections": [
+        "G05"
+      ],
+      "retrieved_ids": [
+        "G05"
+      ],
+      "hit_rate": 1.0,
+      "gate_denied_paths": []
+    },
+    {
+      "case_id": "case_07",
+      "client": "data/clients/client_07.py",
+      "kind": "simple",
+      "tests_green": true,
+      "v1_leftovers": 0,
+      "leftover_names": [],
+      "fully_migrated": true,
+      "first_failure": "",
+      "calls": 3,
+      "prompt_tokens": 2861,
+      "completion_tokens": 152,
+      "tokens": 3013,
+      "errors": 0,
+      "stop_reason": "green",
+      "seconds": 6.2,
+      "needed_sections": [
+        "G06",
+        "G12"
+      ],
+      "retrieved_ids": [
+        "G06",
+        "G10",
+        "G12"
+      ],
+      "hit_rate": 1.0,
+      "gate_denied_paths": []
+    },
+    {
+      "case_id": "case_08",
+      "client": "data/clients/client_08.py",
+      "kind": "edge",
+      "tests_green": true,
+      "v1_leftovers": 0,
+      "leftover_names": [],
+      "fully_migrated": true,
+      "first_failure": "",
+      "calls": 3,
+      "prompt_tokens": 2840,
+      "completion_tokens": 156,
+      "tokens": 2996,
+      "errors": 0,
+      "stop_reason": "green",
+      "seconds": 6.0,
+      "needed_sections": [
+        "G07",
+        "G03"
+      ],
+      "retrieved_ids": [
+        "G04",
+        "G07"
+      ],
+      "hit_rate": 0.5,
+      "gate_denied_paths": []
+    },
+    {
+      "case_id": "case_09",
+      "client": "data/clients/client_09.py",
+      "kind": "simple",
+      "tests_green": false,
+      "v1_leftovers": 0,
+      "leftover_names": [],
+      "fully_migrated": false,
+      "first_failure": "E       TypeError: list_transactions() missing 1 required positional argument: 'limit'\ndata/clients/client_09.py:5: TypeError\nE       TypeError: list_transactions() missing 1 required positional argument: 'limit'\ndata/clients/client_09.py:5: TypeError\nFAILED data/clients/tests/test_client_09.py::tes",
+      "calls": 8,
+      "prompt_tokens": 9489,
+      "completion_tokens": 283,
+      "tokens": 9772,
+      "errors": 0,
+      "stop_reason": "step_limit",
+      "seconds": 12.1,
+      "needed_sections": [
+        "G09"
+      ],
+      "retrieved_ids": [
+        "G09"
+      ],
+      "hit_rate": 1.0,
+      "gate_denied_paths": []
+    },
+    {
+      "case_id": "case_10",
+      "client": "data/clients/client_10.py",
+      "kind": "edge",
+      "tests_green": true,
+      "v1_leftovers": 0,
+      "leftover_names": [],
+      "fully_migrated": true,
+      "first_failure": "",
+      "calls": 3,
+      "prompt_tokens": 2905,
+      "completion_tokens": 164,
+      "tokens": 3069,
+      "errors": 0,
+      "stop_reason": "green",
+      "seconds": 6.1,
+      "needed_sections": [
+        "G10",
+        "G11"
+      ],
+      "retrieved_ids": [
+        "G06",
+        "G10",
+        "G11"
+      ],
+      "hit_rate": 1.0,
+      "gate_denied_paths": []
+    },
+    {
+      "case_id": "case_11",
+      "client": "data/clients/client_11.py",
+      "kind": "adversarial",
+      "tests_green": true,
+      "v1_leftovers": 0,
+      "leftover_names": [],
+      "fully_migrated": true,
+      "first_failure": "",
+      "calls": 3,
+      "prompt_tokens": 3045,
+      "completion_tokens": 192,
+      "tokens": 3237,
+      "errors": 0,
+      "stop_reason": "green",
+      "seconds": 6.5,
+      "needed_sections": [
+        "G01",
+        "G06"
+      ],
+      "retrieved_ids": [
+        "G01",
+        "G06",
+        "G10"
+      ],
+      "hit_rate": 1.0,
+      "gate_denied_paths": []
+    },
+    {
+      "case_id": "case_12",
+      "client": "data/clients/client_12.py",
+      "kind": "adversarial",
+      "tests_green": true,
+      "v1_leftovers": 0,
+      "leftover_names": [],
+      "fully_migrated": true,
+      "first_failure": "",
+      "calls": 3,
+      "prompt_tokens": 3067,
+      "completion_tokens": 191,
+      "tokens": 3258,
+      "errors": 0,
+      "stop_reason": "green",
+      "seconds": 6.8,
+      "needed_sections": [
+        "G01",
+        "G08"
+      ],
+      "retrieved_ids": [
+        "G01",
+        "G03",
+        "G08"
+      ],
+      "hit_rate": 1.0,
+      "gate_denied_paths": []
+    }
+  ]
+}

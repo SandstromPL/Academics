@@ -1,0 +1,45 @@
+{
+  "run_id": "p04-baseline-20261109T140003Z",
+  "variant": "baseline",
+  "model": "main",
+  "member": "varunr",
+  "started_utc": "2026-11-09T14:00:03Z",
+  "ended_utc": "2026-11-09T14:00:10Z",
+  "trace": "traces/p04-baseline-20261109T140003Z.jsonl",
+  "summary": {
+    "cases": 1,
+    "fully_migrated": 1,
+    "tests_green": 1,
+    "zero_leftovers": 1,
+    "calls_total": 2,
+    "tokens_total": 1515,
+    "calls_per_file": 2.0,
+    "tokens_per_file": 1515.0,
+    "retrieval_hit_rate": null
+  },
+  "cases": [
+    {
+      "case_id": "case_01",
+      "client": "data/clients/client_01.py",
+      "kind": "simple",
+      "tests_green": true,
+      "v1_leftovers": 0,
+      "leftover_names": [],
+      "fully_migrated": true,
+      "first_failure": "",
+      "calls": 2,
+      "prompt_tokens": 1411,
+      "completion_tokens": 104,
+      "tokens": 1515,
+      "errors": 0,
+      "stop_reason": "green",
+      "seconds": 6.4,
+      "needed_sections": [
+        "G01"
+      ],
+      "retrieved_ids": [],
+      "hit_rate": null,
+      "gate_denied_paths": []
+    }
+  ]
+}

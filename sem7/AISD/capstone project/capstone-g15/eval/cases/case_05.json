@@ -1,0 +1,8 @@
+{
+  "id": "case_05",
+  "client_file": "data/clients/client_05.py",
+  "description": "An edge case client file that needs 3 guide sections.",
+  "required_sections": ["G01", "G02", "G03"],
+  "expected": {"tests_pass": true, "v1_calls_remaining": 0},
+  "tags": ["edge"]
+}
